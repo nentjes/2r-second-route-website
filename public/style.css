@@ -59,13 +59,11 @@ header.site {
 .site-nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; max-width: 1120px; margin: 0 auto; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
 .brand .brand-mark {
-  width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--serif); font-weight: 700; font-size: 13.5px; color: var(--ink);
-  flex: none;
+  width: 32px; height: 32px; border-radius: 9px;
+  display: block; object-fit: cover; flex: none;
+  box-shadow: 0 1px 2px rgba(23,36,43,0.15);
 }
 .brand span:not(.brand-mark) { font-family: var(--serif); font-weight: 600; font-size: 15.5px; color: var(--ink); }
-.brand img { display: none; }
 .nav-links { display: flex; align-items: center; gap: 24px; font-size: 13.5px; font-weight: 500; }
 .nav-links a { text-decoration: none; color: rgba(23,36,43,0.68); }
 .nav-links a:hover, .nav-links a.active { color: var(--ember); }
@@ -363,14 +361,14 @@ footer.site { min-height: 160px; padding: 46px 24px; background: var(--ink); col
 .footer-grid { max-width: 1120px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 30px; flex-wrap: wrap; }
 .footer-brand { display: flex; align-items: center; gap: 10px; }
 .footer-brand .brand-mark {
-  width: 30px; height: 30px; border-radius: 50%; border: 1px solid rgba(242,235,221,0.3);
-  display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-weight: 700; font-size: 12px;
-  flex: none;
+  width: 28px; height: 28px; border-radius: 8px;
+  display: block; object-fit: cover; flex: none;
 }
-.footer-brand img { display: none; }
 .footer-brand span:not(.brand-mark) { font-family: var(--serif); font-size: 14.5px; color: var(--paper); }
 .footer-links { display: flex; gap: 22px; flex-wrap: wrap; font-size: 13px; }
 .footer-links a { text-decoration: none; color: rgba(242,235,221,0.62); }
 .footer-links a:hover { color: var(--paper); }
 .footer-family { max-width: 1120px; margin: 18px auto 0; font-size: 12.5px; color: rgba(242,235,221,0.5); font-family: var(--serif); }
 .footer-family a { text-decoration: underline; text-underline-offset: 2px; color: rgba(242,235,221,0.7); }
+.footer-credit { max-width: 1120px; margin: 8px auto 0; font-size: 11.5px; color: rgba(242,235,221,0.4); font-family: var(--sans); }
+.footer-credit a { text-decoration: underline; text-underline-offset: 2px; color: rgba(242,235,221,0.6); }

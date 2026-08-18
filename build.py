@@ -44,6 +44,7 @@ SITE = {
     invite_label='Voor de volgende keer dat je instapt', invite_h2='Wat zal Route op jouw<br>volgende reis vertellen?',
     invite_p='Neem een warme stem, een levend reisboek en een beetje verwondering met je mee.', invite_btn='Neem Route mee',
     footer_tagline='Niet de bestemming, maar de reis maakt ons wijs.',
+    footer_credit='Gebouwd door Roel Nentjes, samen met Claude (Anthropic).',
     stat1_num='9', stat1_lbl='interesse-rubrieken — elk apart getest',
     stat2_num='6', stat2_lbl='talen, live in de app en op deze site',
     stat3_lbl='testers vandaag (live)', stat4_lbl='verhalen verteld vandaag (live)',
@@ -88,6 +89,7 @@ SITE = {
     invite_label='For the next time you get in', invite_h2='What will Route tell you<br>on your next trip?',
     invite_p='Bring a warm voice, a living travel journal, and a little wonder.', invite_btn='Take Route with you',
     footer_tagline='Not the destination — the journey makes us wise.',
+    footer_credit='Built by Roel Nentjes, together with Claude (Anthropic).',
     stat1_num='9', stat1_lbl='interest categories — each individually tested',
     stat2_num='6', stat2_lbl='languages, live in the app and on this site',
     stat3_lbl='testers today (live)', stat4_lbl='stories told today (live)',
@@ -132,6 +134,7 @@ SITE = {
     invite_label='Für das nächste Mal, wenn du einsteigst', invite_h2='Was wird Route dir auf<br>deiner nächsten Reise erzählen?',
     invite_p='Nimm eine warme Stimme, ein lebendiges Reisetagebuch und ein bisschen Staunen mit.', invite_btn='Nimm Route mit',
     footer_tagline='Nicht das Ziel — die Reise macht uns weise.',
+    footer_credit='Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic).',
     stat1_num='9', stat1_lbl='Interessen-Rubriken — jede einzeln getestet',
     stat2_num='6', stat2_lbl='Sprachen, live in der App und auf dieser Website',
     stat3_lbl='Tester heute (live)', stat4_lbl='Geschichten heute erzählt (live)',
@@ -176,6 +179,7 @@ SITE = {
     invite_label='Pour la prochaine fois que vous montez en voiture', invite_h2='Que vous racontera Route<br>lors de votre prochain trajet ?',
     invite_p="Emportez une voix chaleureuse, un carnet de voyage vivant et un peu d'émerveillement.", invite_btn='Emportez Route avec vous',
     footer_tagline="Pas la destination — c'est le voyage qui nous rend sages.",
+    footer_credit='Conçu par Roel Nentjes, avec Claude (Anthropic).',
     stat1_num='9', stat1_lbl="catégories d'intérêt — chacune testée individuellement",
     stat2_num='6', stat2_lbl="langues, disponibles dans l'app et sur ce site",
     stat3_lbl="testeurs aujourd'hui (en direct)", stat4_lbl="histoires racontées aujourd'hui (en direct)",
@@ -220,6 +224,7 @@ SITE = {
     invite_label='Para la próxima vez que subas al coche', invite_h2='¿Qué te contará Route<br>en tu próximo viaje?',
     invite_p='Llévate una voz cálida, un diario de viaje vivo y un poco de asombro.', invite_btn='Llévate a Route',
     footer_tagline='No el destino — el viaje es lo que nos hace sabios.',
+    footer_credit='Creado por Roel Nentjes, junto con Claude (Anthropic).',
     stat1_num='9', stat1_lbl='categorías de interés — cada una probada individualmente',
     stat2_num='6', stat2_lbl='idiomas, disponibles en la app y en este sitio',
     stat3_lbl='usuarios de prueba hoy (en vivo)', stat4_lbl='historias contadas hoy (en vivo)',
@@ -264,6 +269,7 @@ SITE = {
     invite_label='Para a próxima vez que você entrar no carro', invite_h2='O que a Route vai contar<br>na sua próxima viagem?',
     invite_p='Leve uma voz calorosa, um diário de viagem vivo e um pouco de encantamento.', invite_btn='Leve a Route com você',
     footer_tagline='Não o destino — a viagem é o que nos torna sábios.',
+    footer_credit='Criado por Roel Nentjes, com a Claude (Anthropic).',
     stat1_num='9', stat1_lbl='categorias de interesse — cada uma testada individualmente',
     stat2_num='6', stat2_lbl='idiomas, disponíveis no app e neste site',
     stat3_lbl='testadores hoje (ao vivo)', stat4_lbl='histórias contadas hoje (ao vivo)',
@@ -714,7 +720,7 @@ def nav(lang, active):
     return f'''<header class="site">
   <div class="site-nav">
     <a class="brand" href="/{lang}/">
-      <span class="brand-mark">2R</span>
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
       <span>Second Route</span>
     </a>
     <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
@@ -726,7 +732,6 @@ def nav(lang, active):
         {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
         {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
         {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
-        <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
       </span>
       <div class="lang-switch">{others}</div>
       <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">{s['nav_cta']}</a>
@@ -738,7 +743,6 @@ def nav(lang, active):
       {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
       {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
       {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
-      <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
     </div>
     <div class="lang-switch">{others}</div>
     <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">{s['nav_cta']}</a>
@@ -770,18 +774,18 @@ def footer(lang):
     return f'''<footer class="site">
   <div class="footer-grid">
     <a class="footer-brand" href="/{lang}/">
-      <span class="brand-mark">2R</span>
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
       <span>Second Route</span>
     </a>
     <div class="footer-links">
       <a href="/{lang}/roadmap.html">{s['nav_roadmap']}</a>
       <a href="/{lang}/stories/">{s['nav_stories']}</a>
       <a href="/{lang}/privacy.html">{s['nav_privacy']}</a>
-      <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
       <a href="mailto:nimco@nentjes.nl">{s['footer_contact']}</a>
     </div>
   </div>
   <p class="footer-family">{s['footer_tagline']}</p>
+  <p class="footer-credit">{s['footer_credit']} <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
 </footer>'''
 
 def page_shell(lang, title, description, active, body, extra_head=''):
