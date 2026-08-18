@@ -19,6 +19,9 @@
       <span class="brand-mark">2R</span>
       <span>Second Route</span>
     </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
     <nav class="nav-links">
       <span class="nav-only-links">
         <a href="/de/">Produkt</a>
@@ -31,7 +34,38 @@
       <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">2R testen →</a>
     </nav>
   </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/de/">Produkt</a>
+      <a href="/de/roadmap.html" class="active">Roadmap</a>
+      <a href="/de/stories/">Geschichten</a>
+      <a href="/de/privacy.html">Datenschutz</a>
+      <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/" class="active">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">2R testen →</a>
+  </div>
 </header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
 <main>
   <section class="page-intro"><div class="wrap" style="max-width:720px;">
     <div class="eyebrow">Roadmap</div>
