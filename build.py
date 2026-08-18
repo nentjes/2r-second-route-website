@@ -59,17 +59,17 @@ SITE = {
     f4_h='Privacy-eerst', f4_p='Geen locatie-opslag, geen account nodig. Elk verzoek staat op zichzelf.',
     f5_h='Individueel of familie', f5_p='Eigen interesses, of content voor de hele auto — met spelletjes en quizjes onderweg in de maak.',
     f6_h='Werkt overal', f6_p='Getest in Nederland én tijdens een rit door Lombardije — dezelfde kwaliteit, in jouw taal verteld.',
-    stories_eyebrow='03 · Uit het reisboek', stories_h2='Verhalen die onderweg<br>zijn blijven hangen.',
-    stories_p='Drie echte plaatsen. Drie momenten waarop een gewone weg ineens betekenis kreeg.',
+    stories_eyebrow='03 · De steden spreken', stories_h2='Vijf steden.<br>Vijf verschillende stemmen.',
+    stories_p='Van Amsterdam naar Parijs, Wenen, Rome en Lissabon: iedere stad heeft haar eigen ritme, maar onderweg worden de verhalen van Europa één levend reisboek.',
     stories_view_all='Bekijk alle verhalen →',
-    cta_h='2R is nu in besloten test', cta_p='De app draait live in TestFlight en op het web. Wil je meetesten, of wil je 2R gebruiken om jouw regio, museum of restaurant onder de aandacht te brengen?', cta_btn='✉️ Neem contact op',
+    cta_h='2R is nu in besloten test', cta_p='De app draait live in TestFlight en op het web. Wil je meetesten, of wil je 2R gebruiken om jouw regio, museum of restaurant onder de aandacht te brengen?', cta_btn='Neem contact op',
     footer_contact='Contact',
     footer_family='Onderdeel van de <a href="https://nentjes.nl">1R</a>-familie — zie ook <a href="https://autestme.com">Autestme</a> en <a href="https://kindertekening.com">Kindertekening</a>, andere projecten van dezelfde makers.',
-    rm_eyebrow='🧭 Roadmap', rm_h1="Waar 2R vandaan komt, en waar we naartoe gaan",
+    rm_eyebrow='Roadmap', rm_h1="Waar 2R vandaan komt, en waar we naartoe gaan",
     rm_lede='2R begon als een idee tijdens een autorit: onderweg viel er zoveel te zien, maar niemand om het uit te leggen. Dit is wat er sindsdien is gebouwd, en wat hierna komt.',
     rm_live='Vandaag live', rm_testflight='In TestFlight', rm_soon='Hierna', rm_later='Later',
     rm_cta_h='Wil je meebouwen aan dit verhaal?', rm_cta_p='Als tester, als lokale partner, of gewoon omdat je het idee net zo leuk vindt als wij.',
-    stories_index_eyebrow='📚 Archief', stories_index_h1='Verhalen die Route heeft verteld',
+    stories_index_eyebrow='Archief', stories_index_h1='Verhalen die Route heeft verteld',
     stories_index_lede='Elk verhaal hieronder is echt door 2R gegenereerd tijdens het testen — inclusief bron, zodat je kunt nalezen waar het vandaan komt.',
     story_source_lbl='Bron', story_told_by='verteld door Route',
     story_back='← Terug naar alle verhalen',
@@ -103,17 +103,17 @@ SITE = {
     f4_h='Privacy-first', f4_p='No location storage, no account required. Every request stands on its own.',
     f5_h='Solo or family', f5_p='Your own interests, or content for the whole car — with games and quizzes for the road in the works.',
     f6_h='Works anywhere', f6_p='Tested in the Netherlands and on a drive through Lombardy, Italy — same quality, narrated in your own language.',
-    stories_eyebrow='03 · From the travel journal', stories_h2='Stories that stayed with us<br>along the way.',
-    stories_p='Three real places. Three moments a plain road suddenly meant something.',
+    stories_eyebrow='03 · The cities speak', stories_h2='Five cities.<br>Five different voices.',
+    stories_p='From Amsterdam to Paris, Vienna, Rome and Lisbon: every city has its own rhythm, but on the road the stories of Europe become one living travel journal.',
     stories_view_all='View all stories →',
-    cta_h='2R is currently in closed testing', cta_p='The app is live in TestFlight and on the web. Want to help test, or use 2R to put your region, museum or restaurant on the map?', cta_btn='✉️ Get in touch',
+    cta_h='2R is currently in closed testing', cta_p='The app is live in TestFlight and on the web. Want to help test, or use 2R to put your region, museum or restaurant on the map?', cta_btn='Get in touch',
     footer_contact='Contact',
     footer_family='Part of the <a href="https://nentjes.nl">1R</a> family — see also <a href="https://autestme.com">Autestme</a> and <a href="https://kindertekening.com">Kindertekening</a>, other projects by the same makers.',
-    rm_eyebrow='🧭 Roadmap', rm_h1="Where 2R came from, and where we're going",
+    rm_eyebrow='Roadmap', rm_h1="Where 2R came from, and where we're going",
     rm_lede="2R started as an idea during a road trip: there was so much to see along the way, and no one to explain it. Here's what's been built since, and what's next.",
     rm_live='Live today', rm_testflight='In TestFlight', rm_soon='Coming soon', rm_later='Later',
     rm_cta_h='Want to help build this?', rm_cta_p='As a tester, as a local partner, or simply because you like the idea as much as we do.',
-    stories_index_eyebrow='📚 Archive', stories_index_h1='Stories Route has told',
+    stories_index_eyebrow='Archive', stories_index_h1='Stories Route has told',
     stories_index_lede='Every story below was genuinely generated by 2R while testing — with its source attached, so you can check where it came from.',
     story_source_lbl='Source', story_told_by='narrated by Route',
     story_back='← Back to all stories',
@@ -147,17 +147,17 @@ SITE = {
     f4_h='Datenschutz zuerst', f4_p='Keine Standortspeicherung, kein Konto nötig. Jede Anfrage steht für sich.',
     f5_h='Einzeln oder Familie', f5_p='Eigene Interessen, oder Inhalte für das ganze Auto — mit Spielen und Quiz für unterwegs in Arbeit.',
     f6_h='Funktioniert überall', f6_p='Getestet in den Niederlanden und auf einer Fahrt durch die Lombardei — gleiche Qualität, in deiner Sprache erzählt.',
-    stories_eyebrow='03 · Aus dem Reisetagebuch', stories_h2='Geschichten, die unterwegs<br>hängen geblieben sind.',
-    stories_p='Drei echte Orte. Drei Momente, in denen eine gewöhnliche Straße plötzlich Bedeutung bekam.',
+    stories_eyebrow='03 · Die Städte sprechen', stories_h2='Fünf Städte.<br>Fünf verschiedene Stimmen.',
+    stories_p='Von Amsterdam über Paris, Wien, Rom bis Lissabon: Jede Stadt hat ihren eigenen Rhythmus, doch unterwegs werden die Geschichten Europas zu einem einzigen lebendigen Reisetagebuch.',
     stories_view_all='Alle Geschichten ansehen →',
-    cta_h='2R befindet sich derzeit im geschlossenen Test', cta_p='Die App läuft live in TestFlight und im Web. Möchtest du mittesten oder 2R nutzen, um deine Region, dein Museum oder Restaurant bekannt zu machen?', cta_btn='✉️ Kontakt aufnehmen',
+    cta_h='2R befindet sich derzeit im geschlossenen Test', cta_p='Die App läuft live in TestFlight und im Web. Möchtest du mittesten oder 2R nutzen, um deine Region, dein Museum oder Restaurant bekannt zu machen?', cta_btn='Kontakt aufnehmen',
     footer_contact='Kontakt',
     footer_family='Teil der <a href="https://nentjes.nl">1R</a>-Familie — siehe auch <a href="https://autestme.com">Autestme</a> und <a href="https://kindertekening.com">Kindertekening</a>, weitere Projekte derselben Macher.',
-    rm_eyebrow='🧭 Roadmap', rm_h1='Woher 2R kommt, und wohin es geht',
+    rm_eyebrow='Roadmap', rm_h1='Woher 2R kommt, und wohin es geht',
     rm_lede='2R begann als Idee während einer Autofahrt: Unterwegs gab es so viel zu sehen, aber niemanden, der es erklärte. Das wurde seitdem gebaut, und das kommt als Nächstes.',
     rm_live='Heute live', rm_testflight='In TestFlight', rm_soon='Demnächst', rm_later='Später',
     rm_cta_h='Möchtest du mitbauen?', rm_cta_p='Als Tester, als lokaler Partner, oder einfach weil dir die Idee genauso gut gefällt wie uns.',
-    stories_index_eyebrow='📚 Archiv', stories_index_h1='Geschichten, die Route erzählt hat',
+    stories_index_eyebrow='Archiv', stories_index_h1='Geschichten, die Route erzählt hat',
     stories_index_lede='Jede Geschichte unten wurde tatsächlich von 2R während der Tests generiert — mit Quellenangabe, damit du nachlesen kannst, woher sie stammt.',
     story_source_lbl='Quelle', story_told_by='erzählt von Route',
     story_back='← Zurück zu allen Geschichten',
@@ -191,17 +191,17 @@ SITE = {
     f4_h="La confidentialité d'abord", f4_p="Aucune conservation de localisation, aucun compte requis. Chaque requête est indépendante.",
     f5_h='Solo ou en famille', f5_p="Vos propres centres d'intérêt, ou du contenu pour toute la voiture — avec des jeux et des quiz pour la route en préparation.",
     f6_h='Fonctionne partout', f6_p='Testé aux Pays-Bas et lors d\'un trajet en Lombardie, en Italie — même qualité, racontée dans votre propre langue.',
-    stories_eyebrow='03 · Extrait du carnet de voyage', stories_h2='Des histoires restées<br>en chemin.',
-    stories_p="Trois lieux réels. Trois instants où une route ordinaire a soudain pris tout son sens.",
+    stories_eyebrow='03 · Les villes prennent la parole', stories_h2='Cinq villes.<br>Cinq voix différentes.',
+    stories_p="D'Amsterdam à Paris, Vienne, Rome et Lisbonne : chaque ville a son propre rythme, mais en chemin, les histoires de l'Europe deviennent un seul carnet de voyage vivant.",
     stories_view_all='Voir toutes les histoires →',
-    cta_h="2R est actuellement en test fermé", cta_p="L'application fonctionne en direct sur TestFlight et sur le web. Envie de participer aux tests, ou d'utiliser 2R pour mettre en avant votre région, musée ou restaurant ?", cta_btn='✉️ Nous contacter',
+    cta_h="2R est actuellement en test fermé", cta_p="L'application fonctionne en direct sur TestFlight et sur le web. Envie de participer aux tests, ou d'utiliser 2R pour mettre en avant votre région, musée ou restaurant ?", cta_btn='Nous contacter',
     footer_contact='Contact',
     footer_family='Fait partie de la famille <a href="https://nentjes.nl">1R</a> — voir aussi <a href="https://autestme.com">Autestme</a> et <a href="https://kindertekening.com">Kindertekening</a>, d\'autres projets des mêmes créateurs.',
-    rm_eyebrow='🧭 Feuille de route', rm_h1="D'où vient 2R, et où nous allons",
+    rm_eyebrow='Feuille de route', rm_h1="D'où vient 2R, et où nous allons",
     rm_lede="2R est né d'une idée pendant un road trip : il y avait tant à voir en chemin, et personne pour l'expliquer. Voici ce qui a été construit depuis, et ce qui arrive ensuite.",
     rm_live="En direct aujourd'hui", rm_testflight='Sur TestFlight', rm_soon='Bientôt', rm_later='Plus tard',
     rm_cta_h='Envie de nous aider à construire cela ?', rm_cta_p="En tant que testeur, partenaire local, ou tout simplement parce que vous aimez cette idée autant que nous.",
-    stories_index_eyebrow='📚 Archives', stories_index_h1='Histoires racontées par Route',
+    stories_index_eyebrow='Archives', stories_index_h1='Histoires racontées par Route',
     stories_index_lede="Chaque histoire ci-dessous a réellement été générée par 2R lors de nos tests — avec sa source jointe, pour que vous puissiez vérifier d'où elle vient.",
     story_source_lbl='Source', story_told_by='racontée par Route',
     story_back='← Retour à toutes les histoires',
@@ -235,17 +235,17 @@ SITE = {
     f4_h='La privacidad primero', f4_p='Sin almacenamiento de ubicación, sin necesidad de cuenta. Cada solicitud es independiente.',
     f5_h='Individual o en familia', f5_p='Tus propios intereses, o contenido para todo el coche —con juegos y quizzes para el camino en desarrollo.',
     f6_h='Funciona en cualquier lugar', f6_p='Probado en los Países Bajos y en un viaje por Lombardía, Italia —misma calidad, narrada en tu propio idioma.',
-    stories_eyebrow='03 · Del diario de viaje', stories_h2='Historias que se quedaron<br>por el camino.',
-    stories_p='Tres lugares reales. Tres momentos en los que una carretera cualquiera cobró de repente sentido.',
+    stories_eyebrow='03 · Las ciudades hablan', stories_h2='Cinco ciudades.<br>Cinco voces distintas.',
+    stories_p='De Ámsterdam a París, Viena, Roma y Lisboa: cada ciudad tiene su propio ritmo, pero en el camino las historias de Europa se convierten en un único diario de viaje vivo.',
     stories_view_all='Ver todas las historias →',
-    cta_h='2R está actualmente en pruebas cerradas', cta_p='La app funciona en vivo en TestFlight y en la web. ¿Quieres ayudar a probarla, o usar 2R para dar a conocer tu región, museo o restaurante?', cta_btn='✉️ Contáctanos',
+    cta_h='2R está actualmente en pruebas cerradas', cta_p='La app funciona en vivo en TestFlight y en la web. ¿Quieres ayudar a probarla, o usar 2R para dar a conocer tu región, museo o restaurante?', cta_btn='Contáctanos',
     footer_contact='Contacto',
     footer_family='Parte de la familia <a href="https://nentjes.nl">1R</a> —mira también <a href="https://autestme.com">Autestme</a> y <a href="https://kindertekening.com">Kindertekening</a>, otros proyectos de los mismos creadores.',
-    rm_eyebrow='🧭 Hoja de ruta', rm_h1='De dónde viene 2R y hacia dónde vamos',
+    rm_eyebrow='Hoja de ruta', rm_h1='De dónde viene 2R y hacia dónde vamos',
     rm_lede='2R nació como una idea durante un viaje en coche: había tanto que ver en el camino, y nadie para explicarlo. Esto es lo que se ha construido desde entonces, y lo que viene después.',
     rm_live='En vivo hoy', rm_testflight='En TestFlight', rm_soon='Próximamente', rm_later='Más adelante',
     rm_cta_h='¿Quieres ayudar a construir esto?', rm_cta_p='Como probador, como socio local, o simplemente porque te gusta la idea tanto como a nosotros.',
-    stories_index_eyebrow='📚 Archivo', stories_index_h1='Historias que Route ha contado',
+    stories_index_eyebrow='Archivo', stories_index_h1='Historias que Route ha contado',
     stories_index_lede='Cada historia a continuación fue generada realmente por 2R durante las pruebas —con su fuente incluida, para que puedas comprobar de dónde viene.',
     story_source_lbl='Fuente', story_told_by='narrado por Route',
     story_back='← Volver a todas las historias',
@@ -279,17 +279,17 @@ SITE = {
     f4_h='Privacidade em primeiro lugar', f4_p='Sem armazenamento de localização, sem conta necessária. Cada solicitação é independente.',
     f5_h='Individual ou em família', f5_p='Seus próprios interesses, ou conteúdo para todo o carro — com jogos e quizzes para a estrada a caminho.',
     f6_h='Funciona em qualquer lugar', f6_p='Testado nos Países Baixos e em uma viagem pela Lombardia, Itália — mesma qualidade, narrada no seu próprio idioma.',
-    stories_eyebrow='03 · Do diário de viagem', stories_h2='Histórias que ficaram<br>pelo caminho.',
-    stories_p='Três lugares reais. Três momentos em que uma estrada comum ganhou, de repente, significado.',
+    stories_eyebrow='03 · As cidades falam', stories_h2='Cinco cidades.<br>Cinco vozes diferentes.',
+    stories_p='De Amsterdã a Paris, Viena, Roma e Lisboa: cada cidade tem seu próprio ritmo, mas pelo caminho as histórias da Europa se tornam um único diário de viagem vivo.',
     stories_view_all='Ver todas as histórias →',
-    cta_h='O 2R está atualmente em teste fechado', cta_p='O app está ao vivo no TestFlight e na web. Quer ajudar a testar, ou usar o 2R para divulgar sua região, museu ou restaurante?', cta_btn='✉️ Entrar em contato',
+    cta_h='O 2R está atualmente em teste fechado', cta_p='O app está ao vivo no TestFlight e na web. Quer ajudar a testar, ou usar o 2R para divulgar sua região, museu ou restaurante?', cta_btn='Entrar em contato',
     footer_contact='Contato',
     footer_family='Parte da família <a href="https://nentjes.nl">1R</a> — veja também <a href="https://autestme.com">Autestme</a> e <a href="https://kindertekening.com">Kindertekening</a>, outros projetos dos mesmos criadores.',
-    rm_eyebrow='🧭 Roteiro', rm_h1='De onde o 2R veio, e para onde vamos',
+    rm_eyebrow='Roteiro', rm_h1='De onde o 2R veio, e para onde vamos',
     rm_lede='O 2R começou como uma ideia durante uma viagem de carro: havia tanto para ver pelo caminho, e ninguém para explicar. Isto é o que foi construído desde então, e o que vem a seguir.',
     rm_live='Ao vivo hoje', rm_testflight='No TestFlight', rm_soon='Em breve', rm_later='Mais tarde',
     rm_cta_h='Quer ajudar a construir isso?', rm_cta_p='Como testador, como parceiro local, ou simplesmente porque gosta da ideia tanto quanto nós.',
-    stories_index_eyebrow='📚 Arquivo', stories_index_h1='Histórias que a Route contou',
+    stories_index_eyebrow='Arquivo', stories_index_h1='Histórias que a Route contou',
     stories_index_lede='Cada história abaixo foi genuinamente gerada pelo 2R durante os testes — com a fonte anexada, para que você possa conferir de onde veio.',
     story_source_lbl='Fonte', story_told_by='narrado pela Route',
     story_back='← Voltar para todas as histórias',
@@ -302,7 +302,7 @@ SITE = {
 # ---------------------------------------------------------------------------
 PRIVACY = {
 'nl': dict(
-    eyebrow='🔒 Privacy', title='Privacybeleid — 2R', updated='Laatst bijgewerkt: augustus 2026',
+    eyebrow='Privacy', title='Privacybeleid — 2R', updated='Laatst bijgewerkt: augustus 2026',
     intro='2R (werktitel: MapsInfo) is een reisgids-app die tijdens het rijden, fietsen of wandelen gesproken verhalen vertelt over de omgeving. Dit beleid legt uit welke gegevens de app gebruikt en waarom — haarfijn, zonder kleine lettertjes.',
     h_location='Locatie',
     location_items=[
@@ -324,7 +324,7 @@ PRIVACY = {
     contact_text='Vragen over dit beleid? Mail naar <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
 'en': dict(
-    eyebrow='🔒 Privacy', title='Privacy Policy — 2R', updated='Last updated: August 2026',
+    eyebrow='Privacy', title='Privacy Policy — 2R', updated='Last updated: August 2026',
     intro="2R (working title: MapsInfo) is a travel-guide app that narrates the world around you while you drive, cycle or walk. This policy explains exactly what data the app uses and why — no fine print.",
     h_location='Location',
     location_items=[
@@ -346,7 +346,7 @@ PRIVACY = {
     contact_text='Questions about this policy? Email <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
 'de': dict(
-    eyebrow='🔒 Datenschutz', title='Datenschutzerklärung — 2R', updated='Zuletzt aktualisiert: August 2026',
+    eyebrow='Datenschutz', title='Datenschutzerklärung — 2R', updated='Zuletzt aktualisiert: August 2026',
     intro='2R (Arbeitstitel: MapsInfo) ist eine Reiseführer-App, die während der Fahrt, beim Radfahren oder Wandern gesprochene Geschichten über die Umgebung erzählt. Diese Erklärung beschreibt genau, welche Daten die App verwendet und warum — ohne Kleingedrucktes.',
     h_location='Standort',
     location_items=[
@@ -368,7 +368,7 @@ PRIVACY = {
     contact_text='Fragen zu dieser Erklärung? Schreib an <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
 'fr': dict(
-    eyebrow='🔒 Confidentialité', title='Politique de confidentialité — 2R', updated='Dernière mise à jour : août 2026',
+    eyebrow='Confidentialité', title='Politique de confidentialité — 2R', updated='Dernière mise à jour : août 2026',
     intro="2R (nom de travail : MapsInfo) est une application de guide de voyage qui raconte à voix haute ce qui vous entoure pendant que vous conduisez, roulez à vélo ou marchez. Cette politique explique précisément quelles données l'application utilise, et pourquoi — sans petits caractères.",
     h_location='Localisation',
     location_items=[
@@ -390,7 +390,7 @@ PRIVACY = {
     contact_text='Des questions sur cette politique ? Écrivez à <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
 'es': dict(
-    eyebrow='🔒 Privacidad', title='Política de privacidad — 2R', updated='Última actualización: agosto de 2026',
+    eyebrow='Privacidad', title='Política de privacidad — 2R', updated='Última actualización: agosto de 2026',
     intro='2R (nombre provisional: MapsInfo) es una app de guía de viaje que narra en voz alta lo que te rodea mientras conduces, pedaleas o caminas. Esta política explica con precisión qué datos usa la app y por qué — sin letra pequeña.',
     h_location='Ubicación',
     location_items=[
@@ -412,7 +412,7 @@ PRIVACY = {
     contact_text='¿Preguntas sobre esta política? Escribe a <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
 'pt': dict(
-    eyebrow='🔒 Privacidade', title='Política de Privacidade — 2R', updated='Última atualização: agosto de 2026',
+    eyebrow='Privacidade', title='Política de Privacidade — 2R', updated='Última atualização: agosto de 2026',
     intro='O 2R (nome provisório: MapsInfo) é um app de guia de viagem que narra em voz alta o que está à sua volta enquanto você dirige, pedala ou caminha. Esta política explica exatamente quais dados o app usa e por quê — sem letras miúdas.',
     h_location='Localização',
     location_items=[
@@ -480,6 +480,59 @@ EUROPE_STOPS = {
     ('Oeste · Borgonha, França', '13:20 · Depois da chuva', 'Uma abadia aparece entre os plátanos.', 'Não é um cartão-postal, mas uma vila que ainda vive em torno de pedras que guardam histórias há gerações.'),
     ('Leste · Boêmia do Sul, Tchéquia', '09:10 · Através da névoa da manhã', 'A torre transforma o horizonte num capítulo.', 'A forma da torre revela uma história que viajou de Viena até esta pequena cidade na colina.'),
     ('Sul · Apúlia, Itália', '19:12 · Entre as oliveiras', 'A luz da tarde traz a todos, por um instante, quietude.', 'Então a Route conta como pessoas, pedra e árvores aprendem aqui há séculos a conviver com o calor, a seca e uns com os outros.'),
+],
+}
+
+# ---------------------------------------------------------------------------
+# "Vijf steden, vijf stemmen": redactionele showcase op de homepage van wat
+# Route zou kunnen vertellen — illustratief, dus bewust los van het echte,
+# feitelijk gecontroleerde verhalen-archief (STORIES/dat leeft onder /stories/).
+# Per taal: lijst van (categorie, plaats, titel, tekst); image via CITY_IMAGES.
+# ---------------------------------------------------------------------------
+CITY_IMAGES = ['city-amsterdam.jpg', 'city-paris.jpg', 'city-vienna.jpg', 'city-rome.jpg', 'city-lisbon.jpg']
+
+CITY_STORIES = {
+'nl': [
+    ('Water & handel', 'Amsterdam, Nederland', 'De stad die haar straten van water maakte', 'Langs de grachten vertelt Route hoe kooplieden, ambachtslieden en nieuwkomers samen een wereldstad bouwden op palen en vertrouwen.'),
+    ('Stad & revolutie', 'Parijs, Frankrijk', 'De boulevard die een oude stad opnieuw leerde ademen', 'Voorbij het natte trottoir hoor je waarom Parijs werd opengebroken — en hoe brede lanen het leven, de macht en de ontmoeting veranderden.'),
+    ('Muziek & architectuur', 'Wenen, Oostenrijk', 'Waar iedere gevel het ritme van een rijk bewaart', 'Een tram schuift langs de Ringstraße. Route laat horen hoe hofcultuur, koffiehuizen en muziek nog altijd in het dagelijkse Wenen meeklinken.'),
+    ('Geschiedenis & leven', 'Rome, Italië', 'Een stad die nooit op één tijdstip leeft', 'Achter een scooter verschijnen tempelzuilen en woonhuizen. In Rome liggen het oude rijk en het gewone leven niet naast, maar door elkaar.'),
+    ('Zee & verlangen', 'Lissabon, Portugal', 'De heuvels die altijd naar de oceaan kijken', 'Terwijl de straat naar de Taag afdaalt, vertelt Route over ontdekkingsreizen, aardbevingen en het Portugese verlangen naar wat achter de horizon ligt.'),
+],
+'en': [
+    ('Water & trade', 'Amsterdam, Netherlands', 'The city that made its streets from water', 'Along the canals, Route tells how merchants, craftspeople and newcomers built a world city together — on piles and on trust.'),
+    ('City & revolution', 'Paris, France', 'The boulevard that taught an old city to breathe again', 'Beyond the wet pavement you hear why Paris was cut open — and how wide avenues changed life, power and encounter.'),
+    ('Music & architecture', 'Vienna, Austria', 'Where every façade keeps the rhythm of an empire', 'A tram glides along the Ringstraße. Route lets you hear how court culture, coffeehouses and music still echo through everyday Vienna.'),
+    ('History & life', 'Rome, Italy', 'A city that never lives in just one era', "Behind a scooter, temple columns and apartment blocks appear. In Rome, the old empire and everyday life don't sit side by side — they run through each other."),
+    ('Sea & longing', 'Lisbon, Portugal', 'The hills that always look toward the ocean', 'As the street descends toward the Tagus, Route tells of voyages of discovery, earthquakes, and the Portuguese longing for what lies beyond the horizon.'),
+],
+'de': [
+    ('Wasser & Handel', 'Amsterdam, Niederlande', 'Die Stadt, die ihre Straßen aus Wasser baute', 'Entlang der Grachten erzählt Route, wie Kaufleute, Handwerker und Neuankömmlinge gemeinsam eine Weltstadt bauten — auf Pfählen und auf Vertrauen.'),
+    ('Stadt & Revolution', 'Paris, Frankreich', 'Der Boulevard, der eine alte Stadt neu atmen lehrte', 'Jenseits des nassen Bürgersteigs hörst du, warum Paris aufgebrochen wurde — und wie breite Alleen das Leben, die Macht und die Begegnung veränderten.'),
+    ('Musik & Architektur', 'Wien, Österreich', 'Wo jede Fassade den Rhythmus eines Reiches bewahrt', 'Eine Straßenbahn gleitet die Ringstraße entlang. Route lässt hören, wie Hofkultur, Kaffeehäuser und Musik noch immer im Wiener Alltag mitschwingen.'),
+    ('Geschichte & Leben', 'Rom, Italien', 'Eine Stadt, die nie in nur einer Zeit lebt', 'Hinter einem Motorroller erscheinen Tempelsäulen und Wohnhäuser. In Rom liegen das alte Reich und der Alltag nicht nebeneinander, sondern ineinander.'),
+    ('Meer & Sehnsucht', 'Lissabon, Portugal', 'Die Hügel, die immer zum Ozean blicken', 'Während die Straße zum Tejo hinabführt, erzählt Route von Entdeckungsreisen, Erdbeben und der portugiesischen Sehnsucht nach dem, was hinter dem Horizont liegt.'),
+],
+'fr': [
+    ('Eau & commerce', 'Amsterdam, Pays-Bas', "La ville qui a fait ses rues avec de l'eau", "Le long des canaux, Route raconte comment marchands, artisans et nouveaux venus ont bâti ensemble une ville-monde — sur des pieux, et sur la confiance."),
+    ('Ville & révolution', 'Paris, France', "Le boulevard qui a réappris à une vieille ville à respirer", "Au-delà du trottoir mouillé, on entend pourquoi Paris fut éventrée — et comment de larges avenues ont changé la vie, le pouvoir et la rencontre."),
+    ('Musique & architecture', 'Vienne, Autriche', "Où chaque façade garde le rythme d'un empire", "Un tram glisse le long du Ring. Route fait entendre comment la culture de cour, les cafés et la musique résonnent encore dans le Vienne quotidien."),
+    ('Histoire & vie', 'Rome, Italie', 'Une ville qui ne vit jamais à une seule époque', "Derrière un scooter apparaissent des colonnes de temple et des immeubles. À Rome, l'ancien empire et la vie quotidienne ne sont pas côte à côte, mais entremêlés."),
+    ('Mer & désir', 'Lisbonne, Portugal', "Les collines qui regardent toujours vers l'océan", "Tandis que la rue descend vers le Tage, Route raconte les voyages de découverte, les tremblements de terre et le désir portugais pour ce qui se trouve au-delà de l'horizon."),
+],
+'es': [
+    ('Agua y comercio', 'Ámsterdam, Países Bajos', 'La ciudad que construyó sus calles con agua', 'A lo largo de los canales, Route cuenta cómo comerciantes, artesanos y recién llegados construyeron juntos una ciudad global —sobre pilotes y sobre la confianza.'),
+    ('Ciudad y revolución', 'París, Francia', 'El bulevar que enseñó a respirar de nuevo a una ciudad antigua', 'Más allá de la acera mojada se oye por qué se abrió París en canal —y cómo las grandes avenidas cambiaron la vida, el poder y el encuentro.'),
+    ('Música y arquitectura', 'Viena, Austria', 'Donde cada fachada guarda el ritmo de un imperio', 'Un tranvía se desliza por el Ring. Route deja oír cómo la cultura de corte, los cafés y la música aún resuenan en el día a día vienés.'),
+    ('Historia y vida', 'Roma, Italia', 'Una ciudad que nunca vive en una sola época', 'Detrás de una vespa aparecen columnas de templos y bloques de viviendas. En Roma, el imperio antiguo y la vida cotidiana no están uno junto al otro, sino entrelazados.'),
+    ('Mar y anhelo', 'Lisboa, Portugal', 'Las colinas que siempre miran hacia el océano', 'Mientras la calle desciende hacia el Tajo, Route habla de viajes de descubrimiento, terremotos y el anhelo portugués por lo que hay más allá del horizonte.'),
+],
+'pt': [
+    ('Água e comércio', 'Amsterdã, Países Baixos', 'A cidade que fez suas ruas de água', 'Ao longo dos canais, a Route conta como mercadores, artesãos e recém-chegados construíram juntos uma cidade global — sobre estacas e sobre confiança.'),
+    ('Cidade e revolução', 'Paris, França', 'O boulevard que ensinou uma cidade antiga a respirar de novo', 'Além da calçada molhada, ouve-se por que Paris foi reaberta — e como largas avenidas mudaram a vida, o poder e o encontro.'),
+    ('Música e arquitetura', 'Viena, Áustria', 'Onde cada fachada guarda o ritmo de um império', 'Um bonde desliza pela Ringstraße. A Route deixa ouvir como a cultura da corte, os cafés e a música ainda ecoam no dia a dia vienense.'),
+    ('História e vida', 'Roma, Itália', 'Uma cidade que nunca vive numa única época', 'Atrás de uma vespa aparecem colunas de templos e prédios residenciais. Em Roma, o antigo império e a vida cotidiana não ficam lado a lado, mas entrelaçados.'),
+    ('Mar e desejo', 'Lisboa, Portugal', 'As colinas que sempre olham para o oceano', 'Enquanto a rua desce em direção ao Tejo, a Route conta sobre viagens de descobrimento, terremotos e o desejo português por aquilo que está além do horizonte.'),
 ],
 }
 
@@ -710,7 +763,7 @@ def page_shell(lang, title, description, active, body, extra_head=''):
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(description)}">
-<meta property="og:image" content="/icon-2r.png">
+<meta property="og:image" content="/og.jpg">
 </head>
 <body>
 {nav(lang, active)}
@@ -731,23 +784,23 @@ def story_card(lang, st):
   <span class="story-cat">{cat}</span>
   <h3>{html.escape(st['title'][lang])}</h3>
   <p>{html.escape(excerpt)}</p>
-  <span class="story-meta">📍 {html.escape(st['location'])}</span>
+  <span class="story-meta">{html.escape(st['location'])}</span>
 </a>'''
 
 # Editorial verhaalkaart voor de homepage-showcase (met foto-crop uit de
 # moodboard-beelden), i.p.v. de eenvoudige kaart van het volledige archief.
-def home_story_card(lang, st, index):
-    cat = CATEGORIES[st['category']][lang]
-    excerpt = st['text'][lang][:170].rsplit(' ', 1)[0] + '…'
-    crop = f'crop-{(index % 6) + 1}'
+# Redactionele stads-kaart voor de homepage-showcase ("vijf steden, vijf
+# stemmen") — schone cover-foto per stad, geen uitsnede-trucje nodig.
+def city_story_card(lang, index):
+    cat, place, title, copy = CITY_STORIES[lang][index]
     card_cls = f'story story-{index + 1}'
-    return f'''<a class="{card_cls}" href="/{lang}/stories/{st['slug']}.html">
-  <div class="story-photo {crop}"></div>
+    return f'''<a class="{card_cls}" href="https://mapsinfo.roelnentjes.workers.dev">
+  <div class="story-photo" style="background-image:url('/images/{CITY_IMAGES[index]}')"></div>
   <div class="story-body">
-    <div class="story-topline"><span>{cat}</span><span>{html.escape(st['location'])}</span></div>
-    <h3>{html.escape(st['title'][lang])}</h3>
-    <p>{html.escape(excerpt)}</p>
-    <span class="story-cta">{SITE[lang]['story_told_by']} <span>▶</span></span>
+    <div class="story-topline"><span>{html.escape(cat)}</span><span>{html.escape(place)}</span></div>
+    <h3>{html.escape(title)}</h3>
+    <p>{html.escape(copy)}</p>
+    <span class="story-cta">{SITE[lang]['listen_now']} <span>▶</span></span>
   </div>
 </a>'''
 
@@ -760,14 +813,14 @@ def build_home(lang):
         <div class="step"><span class="num-badge">III</span><h3>{s['step3_h']}</h3><p>{s['step3_p']}</p></div>
       </div>'''
     features = f'''<div class="features">
-        <div class="feature"><span class="icon">📍</span><h3>{s['f1_h']}</h3><p>{s['f1_p']}</p></div>
-        <div class="feature"><span class="icon">🎙️</span><h3>{s['f2_h']}</h3><p>{s['f2_p']}</p></div>
-        <div class="feature"><span class="icon">🤥</span><h3>{s['f3_h']}</h3><p>{s['f3_p']}</p></div>
-        <div class="feature"><span class="icon">🔒</span><h3>{s['f4_h']}</h3><p>{s['f4_p']}</p></div>
-        <div class="feature"><span class="icon">👨‍👩‍👧‍👦</span><h3>{s['f5_h']}</h3><p>{s['f5_p']}</p></div>
-        <div class="feature"><span class="icon">🌍</span><h3>{s['f6_h']}</h3><p>{s['f6_p']}</p></div>
+        <div class="feature"><span class="num-mark">I</span><h3>{s['f1_h']}</h3><p>{s['f1_p']}</p></div>
+        <div class="feature"><span class="num-mark">II</span><h3>{s['f2_h']}</h3><p>{s['f2_p']}</p></div>
+        <div class="feature"><span class="num-mark">III</span><h3>{s['f3_h']}</h3><p>{s['f3_p']}</p></div>
+        <div class="feature"><span class="num-mark">IV</span><h3>{s['f4_h']}</h3><p>{s['f4_p']}</p></div>
+        <div class="feature"><span class="num-mark">V</span><h3>{s['f5_h']}</h3><p>{s['f5_p']}</p></div>
+        <div class="feature"><span class="num-mark">VI</span><h3>{s['f6_h']}</h3><p>{s['f6_p']}</p></div>
       </div>'''
-    story_cards = ''.join(home_story_card(lang, st, i) for i, st in enumerate(STORIES[:5]))
+    story_cards = ''.join(city_story_card(lang, i) for i in range(5))
 
     journey_scenes_html = ''.join(
         f'<div class="journey-scene{" active" if i == 0 else ""}" data-scene="{i}" style="background-image:url(\'/images/{EUROPE_IMAGES[i]}\')"></div>'
@@ -985,7 +1038,7 @@ def build_story_detail(lang, st):
     <p><a href="/{lang}/stories/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">{s['story_back']}</a></p>
     <span class="story-cat" style="margin-top:10px; display:inline-block;">{cat}</span>
     <h1 style="font-size:clamp(28px,4vw,40px); margin:14px 0 8px;">{html.escape(st['title'][lang])}</h1>
-    <p style="color:var(--text-faint); font-size:14px; margin-bottom:28px;">📍 {html.escape(st['location'])} &middot; {st['date']} &middot; {s['story_told_by']}</p>
+    <p style="color:var(--text-faint); font-size:14px; margin-bottom:28px;">{html.escape(st['location'])} &middot; {st['date']} &middot; {s['story_told_by']}</p>
     <div class="story-body"><p style="font-size:17px; color:var(--text); max-width:none;">{html.escape(st['text'][lang])}</p></div>
     <p style="margin-top:26px; font-size:13.5px; color:var(--text-faint); border-top:1px solid var(--border); padding-top:16px;">
       {s['story_source_lbl']}: <a href="{st['source_url']}" target="_blank" rel="noopener" style="color:var(--text-dim);">{html.escape(st['source_label'])}</a>
