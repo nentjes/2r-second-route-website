@@ -255,6 +255,145 @@ SITE = {
 }
 
 # ---------------------------------------------------------------------------
+# Privacybeleid — zelfde juridische tekst als worker/src/index.js PRIVACY_HTML,
+# vertaald. Bij inhoudelijke wijzigingen: hier én daar aanpassen.
+# ---------------------------------------------------------------------------
+PRIVACY = {
+'nl': dict(
+    eyebrow='🔒 Privacy', title='Privacybeleid — 2R', updated='Laatst bijgewerkt: augustus 2026',
+    intro='2R (werktitel: MapsInfo) is een reisgids-app die tijdens het rijden, fietsen of wandelen gesproken verhalen vertelt over de omgeving. Dit beleid legt uit welke gegevens de app gebruikt en waarom — haarfijn, zonder kleine lettertjes.',
+    h_location='Locatie',
+    location_items=[
+        'Je GPS-locatie wordt gebruikt om te bepalen welke verhalen relevant zijn.',
+        'Je locatie wordt <strong>niet opgeslagen</strong> op onze servers en niet gelogd. Elk verzoek aan de server bevat alleen de naam en context van een specifieke plek — geen locatiegeschiedenis, geen rittenregistratie.',
+    ],
+    h_stories='Verhalen &amp; spraak (verwerkers)',
+    stories_items=[
+        'Om verhalen te genereren sturen we plaatsnamen en korte context naar <strong>Google (Gemini API)</strong>.',
+        'Om de tekst voor te lezen sturen we die tekst naar <strong>ElevenLabs</strong> voor spraaksynthese.',
+        'Voor feitelijke informatie wordt rechtstreeks vanaf je toestel <strong>Wikipedia</strong> geraadpleegd, en voor routes <strong>OpenStreetMap / OSRM</strong> — deze verzoeken lopen niet via onze server.',
+        'Gegenereerde verhalen en spraakfragmenten worden tijdelijk gecachet (hergebruikt voor andere gebruikers op dezelfde plek) om kosten en wachttijd te beperken.',
+    ],
+    h_limits='Gebruikslimieten',
+    limits_text='Om misbruik te voorkomen houden we per IP-adres een technische, tijdelijke teller bij (maximaal 48 uur bewaard). Dit is uitsluitend een aantal, nooit gekoppeld aan een profiel, naam of account, en wordt nooit gedeeld met derden.',
+    h_accounts='Accounts',
+    accounts_text='De app vereist geen account, inloggen of registratie.',
+    h_contact='Contact',
+    contact_text='Vragen over dit beleid? Mail naar <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
+),
+'en': dict(
+    eyebrow='🔒 Privacy', title='Privacy Policy — 2R', updated='Last updated: August 2026',
+    intro="2R (working title: MapsInfo) is a travel-guide app that narrates the world around you while you drive, cycle or walk. This policy explains exactly what data the app uses and why — no fine print.",
+    h_location='Location',
+    location_items=[
+        'Your GPS location is used to determine which stories are relevant.',
+        'Your location is <strong>never stored</strong> on our servers and never logged. Every request to the server contains only the name and context of a specific place — no location history, no trip logging.',
+    ],
+    h_stories='Stories &amp; voice (processors)',
+    stories_items=[
+        'To generate stories we send place names and brief context to <strong>Google (Gemini API)</strong>.',
+        'To narrate the text aloud, that text is sent to <strong>ElevenLabs</strong> for voice synthesis.',
+        'Factual information is fetched directly from your device from <strong>Wikipedia</strong>, and route data from <strong>OpenStreetMap / OSRM</strong> — these requests never pass through our server.',
+        'Generated stories and audio fragments are cached temporarily (reused for other users at the same location) to reduce cost and wait time.',
+    ],
+    h_limits='Usage limits',
+    limits_text='To prevent abuse we keep a technical, temporary counter per IP address (kept for a maximum of 48 hours). This is only a number, never linked to a profile, name or account, and never shared with third parties.',
+    h_accounts='Accounts',
+    accounts_text='The app requires no account, login or registration.',
+    h_contact='Contact',
+    contact_text='Questions about this policy? Email <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
+),
+'de': dict(
+    eyebrow='🔒 Datenschutz', title='Datenschutzerklärung — 2R', updated='Zuletzt aktualisiert: August 2026',
+    intro='2R (Arbeitstitel: MapsInfo) ist eine Reiseführer-App, die während der Fahrt, beim Radfahren oder Wandern gesprochene Geschichten über die Umgebung erzählt. Diese Erklärung beschreibt genau, welche Daten die App verwendet und warum — ohne Kleingedrucktes.',
+    h_location='Standort',
+    location_items=[
+        'Dein GPS-Standort wird verwendet, um zu bestimmen, welche Geschichten relevant sind.',
+        'Dein Standort wird <strong>nicht auf unseren Servern gespeichert</strong> und nicht protokolliert. Jede Anfrage an den Server enthält nur den Namen und Kontext eines bestimmten Ortes — kein Standortverlauf, keine Fahrtenaufzeichnung.',
+    ],
+    h_stories='Geschichten &amp; Sprache (Auftragsverarbeiter)',
+    stories_items=[
+        'Um Geschichten zu generieren, senden wir Ortsnamen und kurzen Kontext an <strong>Google (Gemini API)</strong>.',
+        'Um den Text vorzulesen, wird dieser Text zur Sprachsynthese an <strong>ElevenLabs</strong> gesendet.',
+        'Sachinformationen werden direkt von deinem Gerät aus bei <strong>Wikipedia</strong> abgerufen, Routendaten bei <strong>OpenStreetMap / OSRM</strong> — diese Anfragen laufen nicht über unseren Server.',
+        'Generierte Geschichten und Audiofragmente werden vorübergehend zwischengespeichert (wiederverwendet für andere Nutzer am selben Ort), um Kosten und Wartezeit zu verringern.',
+    ],
+    h_limits='Nutzungsgrenzen',
+    limits_text='Um Missbrauch zu verhindern, führen wir pro IP-Adresse einen technischen, temporären Zähler (maximal 48 Stunden gespeichert). Das ist ausschließlich eine Zahl, nie mit einem Profil, Namen oder Konto verknüpft, und wird nie an Dritte weitergegeben.',
+    h_accounts='Konten',
+    accounts_text='Die App erfordert kein Konto, keine Anmeldung und keine Registrierung.',
+    h_contact='Kontakt',
+    contact_text='Fragen zu dieser Erklärung? Schreib an <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
+),
+'fr': dict(
+    eyebrow='🔒 Confidentialité', title='Politique de confidentialité — 2R', updated='Dernière mise à jour : août 2026',
+    intro="2R (nom de travail : MapsInfo) est une application de guide de voyage qui raconte à voix haute ce qui vous entoure pendant que vous conduisez, roulez à vélo ou marchez. Cette politique explique précisément quelles données l'application utilise, et pourquoi — sans petits caractères.",
+    h_location='Localisation',
+    location_items=[
+        'Votre position GPS est utilisée pour déterminer quelles histoires sont pertinentes.',
+        "Votre position n'est <strong>jamais stockée</strong> sur nos serveurs ni journalisée. Chaque requête envoyée au serveur ne contient que le nom et le contexte d'un lieu précis — pas d'historique de localisation, pas de suivi de trajet.",
+    ],
+    h_stories='Histoires et voix (sous-traitants)',
+    stories_items=[
+        'Pour générer les histoires, nous envoyons les noms de lieux et un court contexte à <strong>Google (API Gemini)</strong>.',
+        'Pour lire le texte à voix haute, ce texte est envoyé à <strong>ElevenLabs</strong> pour la synthèse vocale.',
+        'Les informations factuelles sont récupérées directement depuis votre appareil sur <strong>Wikipédia</strong>, et les données d\'itinéraire via <strong>OpenStreetMap / OSRM</strong> — ces requêtes ne passent jamais par notre serveur.',
+        'Les histoires générées et les fragments audio sont mis en cache temporairement (réutilisés pour d\'autres utilisateurs au même endroit) afin de réduire les coûts et le temps d\'attente.',
+    ],
+    h_limits="Limites d'utilisation",
+    limits_text="Pour prévenir les abus, nous conservons un compteur technique temporaire par adresse IP (conservé 48 heures maximum). Il ne s'agit que d'un nombre, jamais lié à un profil, un nom ou un compte, et jamais partagé avec des tiers.",
+    h_accounts='Comptes',
+    accounts_text="L'application ne nécessite aucun compte, connexion ni inscription.",
+    h_contact='Contact',
+    contact_text='Des questions sur cette politique ? Écrivez à <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
+),
+'es': dict(
+    eyebrow='🔒 Privacidad', title='Política de privacidad — 2R', updated='Última actualización: agosto de 2026',
+    intro='2R (nombre provisional: MapsInfo) es una app de guía de viaje que narra en voz alta lo que te rodea mientras conduces, pedaleas o caminas. Esta política explica con precisión qué datos usa la app y por qué — sin letra pequeña.',
+    h_location='Ubicación',
+    location_items=[
+        'Tu ubicación GPS se usa para determinar qué historias son relevantes.',
+        'Tu ubicación <strong>nunca se almacena</strong> en nuestros servidores ni se registra. Cada solicitud al servidor contiene solo el nombre y el contexto de un lugar concreto — sin historial de ubicación, sin registro de trayectos.',
+    ],
+    h_stories='Historias y voz (encargados del tratamiento)',
+    stories_items=[
+        'Para generar historias enviamos nombres de lugares y contexto breve a <strong>Google (API de Gemini)</strong>.',
+        'Para narrar el texto en voz alta, ese texto se envía a <strong>ElevenLabs</strong> para la síntesis de voz.',
+        'La información factual se obtiene directamente desde tu dispositivo en <strong>Wikipedia</strong>, y los datos de ruta desde <strong>OpenStreetMap / OSRM</strong> — estas solicitudes nunca pasan por nuestro servidor.',
+        'Las historias generadas y los fragmentos de audio se almacenan en caché temporalmente (reutilizados para otros usuarios en el mismo lugar) para reducir el coste y el tiempo de espera.',
+    ],
+    h_limits='Límites de uso',
+    limits_text='Para prevenir abusos mantenemos un contador técnico y temporal por dirección IP (conservado un máximo de 48 horas). Es solo un número, nunca vinculado a un perfil, nombre o cuenta, y nunca se comparte con terceros.',
+    h_accounts='Cuentas',
+    accounts_text='La app no requiere ninguna cuenta, inicio de sesión ni registro.',
+    h_contact='Contacto',
+    contact_text='¿Preguntas sobre esta política? Escribe a <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
+),
+'pt': dict(
+    eyebrow='🔒 Privacidade', title='Política de Privacidade — 2R', updated='Última atualização: agosto de 2026',
+    intro='O 2R (nome provisório: MapsInfo) é um app de guia de viagem que narra em voz alta o que está à sua volta enquanto você dirige, pedala ou caminha. Esta política explica exatamente quais dados o app usa e por quê — sem letras miúdas.',
+    h_location='Localização',
+    location_items=[
+        'Sua localização GPS é usada para determinar quais histórias são relevantes.',
+        'Sua localização <strong>nunca é armazenada</strong> em nossos servidores nem registrada. Cada solicitação ao servidor contém apenas o nome e o contexto de um local específico — sem histórico de localização, sem registro de trajetos.',
+    ],
+    h_stories='Histórias e voz (operadores)',
+    stories_items=[
+        'Para gerar histórias, enviamos nomes de locais e um breve contexto para o <strong>Google (API Gemini)</strong>.',
+        'Para narrar o texto em voz alta, esse texto é enviado à <strong>ElevenLabs</strong> para síntese de voz.',
+        'Informações factuais são obtidas diretamente do seu dispositivo na <strong>Wikipédia</strong>, e dados de rota via <strong>OpenStreetMap / OSRM</strong> — essas solicitações nunca passam pelo nosso servidor.',
+        'Histórias geradas e fragmentos de áudio ficam em cache temporariamente (reutilizados para outros usuários no mesmo local) para reduzir custo e tempo de espera.',
+    ],
+    h_limits='Limites de uso',
+    limits_text='Para evitar abusos, mantemos um contador técnico e temporário por endereço IP (guardado por no máximo 48 horas). Isso é apenas um número, nunca vinculado a um perfil, nome ou conta, e nunca compartilhado com terceiros.',
+    h_accounts='Contas',
+    accounts_text='O app não exige conta, login ou registro.',
+    h_contact='Contato',
+    contact_text='Dúvidas sobre esta política? Escreva para <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
+),
+}
+
+# ---------------------------------------------------------------------------
 # Roadmap-items: (status_key, title-dict, desc-dict)  status: live/testflight/soon/later
 # ---------------------------------------------------------------------------
 ROADMAP_ITEMS = [
@@ -440,7 +579,7 @@ def nav(lang, active):
         {link(f'/{lang}/', s['nav_product'], 'product')}
         {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
         {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
-        <a href="https://mapsinfo.roelnentjes.workers.dev/privacy" target="_blank" rel="noopener">{s['nav_privacy']}</a>
+        {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
         <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
       </span>
       <div class="lang-switch">{others}</div>
@@ -461,7 +600,7 @@ def footer(lang):
       <div class="footer-links">
         <a href="/{lang}/roadmap.html">{s['nav_roadmap']}</a>
         <a href="/{lang}/stories/">{s['nav_stories']}</a>
-        <a href="https://mapsinfo.roelnentjes.workers.dev/privacy" target="_blank" rel="noopener">{s['nav_privacy']}</a>
+        <a href="/{lang}/privacy.html">{s['nav_privacy']}</a>
         <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
         <a href="mailto:nimco@nentjes.nl">{s['footer_contact']}</a>
       </div>
@@ -613,6 +752,36 @@ def build_roadmap(lang):
 '''
     return page_shell(lang, f"Roadmap — 2R (Second Route)", s['rm_lede'], 'roadmap', body)
 
+def build_privacy(lang):
+    p = PRIVACY[lang]
+    location_lis = '\n'.join(f'<li>{item}</li>' for item in p['location_items'])
+    stories_lis = '\n'.join(f'<li>{item}</li>' for item in p['stories_items'])
+    body = f'''  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
+    <div class="eyebrow">{p['eyebrow']}</div>
+    <h1 style="font-size:clamp(28px,4vw,40px); margin:18px 0 6px;">{p['title']}</h1>
+    <p style="color:var(--text-faint); font-size:14px; margin-bottom:28px;">{p['updated']}</p>
+    <div class="story-body" style="font-size:16px;">
+      <p style="max-width:none;">{p['intro']}</p>
+
+      <h2 style="font-size:19px; margin-top:34px;">{p['h_location']}</h2>
+      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;">{location_lis}</ul>
+
+      <h2 style="font-size:19px; margin-top:34px;">{p['h_stories']}</h2>
+      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;">{stories_lis}</ul>
+
+      <h2 style="font-size:19px; margin-top:34px;">{p['h_limits']}</h2>
+      <p style="max-width:none;">{p['limits_text']}</p>
+
+      <h2 style="font-size:19px; margin-top:34px;">{p['h_accounts']}</h2>
+      <p style="max-width:none;">{p['accounts_text']}</p>
+
+      <h2 style="font-size:19px; margin-top:34px;">{p['h_contact']}</h2>
+      <p style="max-width:none;">{p['contact_text']}</p>
+    </div>
+  </div></section>
+'''
+    return page_shell(lang, p['title'], p['intro'][:150], 'privacy', body)
+
 def build_stories_index(lang):
     s = SITE[lang]
     cards = '\n'.join(story_card(lang, st) for st in STORIES)
@@ -655,8 +824,9 @@ def write(path, content):
 for lang in LANGS:
     write(f'{lang}/index.html', build_home(lang))
     write(f'{lang}/roadmap.html', build_roadmap(lang))
+    write(f'{lang}/privacy.html', build_privacy(lang))
     write(f'{lang}/stories/index.html', build_stories_index(lang))
     for st in STORIES:
         write(f'{lang}/stories/{st["slug"]}.html', build_story_detail(lang, st))
 
-print(f"Klaar: {len(LANGS)} talen x ({2 + 1 + len(STORIES)} pagina's) = {len(LANGS) * (3 + len(STORIES))} bestanden")
+print(f"Klaar: {len(LANGS)} talen x ({3 + len(STORIES)} pagina's) = {len(LANGS) * (4 + len(STORIES))} bestanden")
