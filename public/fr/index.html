@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2R (Second Route) — Le compagnon de voyage qui raconte ce que vous voyez</title>
-<meta name="description" content="2R est un guide de voyage IA qui accompagne votre navigation. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d&#x27;un point A à un point B, Route — la voix de 2R — vous raconte en direct l&#x27;histoire, la nature et les récits locaux que vous croisez. Le tout adapté à vos propres centres d&#x27;intérêt.">
+<meta name="description" content="2R ne se contente pas de raconter ce que vous voyez. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d&#x27;un point A à un point B, Route apporte en chemin de la connaissance, de l&#x27;émerveillement et des conversations.">
 <link rel="icon" href="/icon-2r.png">
 <link rel="apple-touch-icon" href="/icon-2r.png">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="2R (Second Route) — Le compagnon de voyage qui raconte ce que vous voyez">
-<meta property="og:description" content="2R est un guide de voyage IA qui accompagne votre navigation. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d&#x27;un point A à un point B, Route — la voix de 2R — vous raconte en direct l&#x27;histoire, la nature et les récits locaux que vous croisez. Le tout adapté à vos propres centres d&#x27;intérêt.">
+<meta property="og:description" content="2R ne se contente pas de raconter ce que vous voyez. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d&#x27;un point A à un point B, Route apporte en chemin de la connaissance, de l&#x27;émerveillement et des conversations.">
 <meta property="og:image" content="/icon-2r.png">
 </head>
 <body>
 <header class="site">
   <div class="site-nav">
     <a class="brand" href="/fr/">
-      <img src="/icon-2r.png" alt="2R">
-      <span>2R</span>
+      <span class="brand-mark">2R</span>
+      <span>Second Route</span>
     </a>
     <nav class="nav-links">
       <span class="nav-only-links">
@@ -33,94 +33,172 @@
   </div>
 </header>
 <main>
-  <section class="hero">
-    <div class="hero-banner"><img src="/hero-banner.svg" alt=""></div>
-    <p class="hero-banner-note">Illustration de bannière provisoire — sera bientôt remplacée par une œuvre originale.</p>
-    <div class="wrap"><div class="hero-text">
-      <div class="eyebrow">🗺️ 2R · Second Route</div>
-      <h1>Un premier itinéraire vous y mène.<br>Le second vous raconte ce que vous voyez.</h1>
-      <p class="lede">2R est un guide de voyage IA qui accompagne votre navigation. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d'un point A à un point B, <b>Route</b> — la voix de 2R — vous raconte en direct l'histoire, la nature et les récits locaux que vous croisez. Le tout adapté à vos propres centres d'intérêt.</p>
+  <section class="hero" id="top">
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">2R · le compagnon de voyage qui voit les histoires</p>
+      <h1>Pas la destination —<br>c'est le voyage qui nous rend sages.</h1>
+      <p class="hero-lede">2R ne se contente pas de raconter ce que vous voyez. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d'un point A à un point B, <b>Route</b> apporte en chemin de la connaissance, de l'émerveillement et des conversations.</p>
       <div class="hero-actions">
-        <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">▶️ Essayer la démo</a>
-        <a class="btn-secondary" href="/fr/roadmap.html">Voir la feuille de route</a>
+        <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">Écouter une histoire <span>↗</span></a>
+        <a class="text-link" href="#reis">Faire un bout de route <span>↓</span></a>
       </div>
-    </div></div>
+    </div>
+    <div class="hero-caption"><span>52,1045° N</span><span>Une soirée sur la route · Utrecht</span></div>
   </section>
 
-  <section class="wrap"><div class="stat-strip">
-    <div class="stat"><div class="num">9</div><div class="lbl">catégories d'intérêt — chacune testée individuellement</div></div>
-    <div class="stat"><div class="num">6</div><div class="lbl">langues, disponibles dans l'app et sur ce site</div></div>
-    <div class="stat"><div class="num" id="stat-testers">—</div><div class="lbl">testeurs aujourd'hui (en direct)</div></div>
-    <div class="stat"><div class="num" id="stat-verhalen">—</div><div class="lbl">histoires racontées aujourd'hui (en direct)</div></div>
-  </div></section>
+  <section class="listening" id="luisteren">
+    <div class="section-label">01 · Une voix à vos côtés</div>
+    <div class="listening-copy">
+      <h2>Le monde extérieur devient<br>une histoire intérieure.</h2>
+      <p>Pas une liste de faits. Route choisit une histoire qui a du sens, la raconte calmement, puis laisse de nouveau place au paysage — et à vous.</p>
+    </div>
+    <div class="audio-experience">
+      <div class="audio-halo">
+        <span class="play-button">▶</span>
+      </div>
+      <div class="audio-meta">
+        <span>Route raconte</span>
+        <strong>L'histoire cachée<br>du paysage</strong>
+        <small>Mode guide · extrait réel</small>
+      </div>
+    </div>
+  </section>
 
-  <section class="block"><div class="wrap">
+  <section class="journey" id="reis">
+    <div class="journey-visual" aria-hidden="true">
+      <div class="window-frame">
+        <div class="window-photo"></div>
+        <span class="window-reflection"></span>
+      </div>
+      <div class="map-card">
+        <span class="lbl">Itinéraire 02</span>
+        <strong>Région du Vecht</strong>
+        <div class="route-line"><i></i><i></i><i></i></div>
+        <span class="lbl">31 km · trois histoires</span>
+      </div>
+    </div>
+    <div class="journey-narrative">
+      <div class="section-label">02 · Faire un bout de route</div>
+      <article class="journey-step">
+          <span>08 h 42 · Départ</span>
+          <h3>La ville devient silencieuse derrière nous.</h3>
+          <p>Route attend. D'abord, il n'y a que le bruit des pneus sur la route et la première lumière sur l'eau.</p>
+        </article><article class="journey-step">
+          <span>08 h 57 · Le long du Vecht</span>
+          <h3>« Regardez à gauche. »</h3>
+          <p>Une maison de campagne apparaît entre les arbres. La voix raconte qui y vivait, et pourquoi la rivière est bordée de telles demeures.</p>
+        </article><article class="journey-step">
+          <span>09 h 11 · Un peu plus tard</span>
+          <h3>L'histoire continue de vous accompagner.</h3>
+          <p>Quelqu'un dans la voiture pose une question. Un autre se souvient de quelque chose. La route est la même, mais le voyage a changé.</p>
+        </article>
+    </div>
+  </section>
+
+  <section class="block" style="padding-bottom:0;"><div class="wrap">
     <div class="section-head"><div class="eyebrow">Comment ça marche</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">De la route à l'écoute, en trois étapes</h2></div>
     <div class="steps">
-        <div class="step"><div class="num-badge">1</div><h3>Activez Route</h3><p>Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, football, photo — ou saisissez les vôtres.</p></div>
-        <div class="step"><div class="num-badge">2</div><h3>Roulez, pédalez ou marchez</h3><p>2R suit votre itinéraire par GPS et cherche en direct ce qui vaut la peine d'être raconté — à partir de sources locales, pas seulement Wikipédia.</p></div>
-        <div class="step"><div class="num-badge">3</div><h3>Écoutez Route</h3><p>Une voix chaleureuse et expressive raconte — honnêtement, sur ce que vous pouvez réellement voir, jamais en faisant semblant.</p></div>
+        <div class="step"><span class="num-badge">I</span><h3>Activez Route</h3><p>Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, football, photo — ou saisissez les vôtres.</p></div>
+        <div class="step"><span class="num-badge">II</span><h3>Roulez, pédalez ou marchez</h3><p>2R suit votre itinéraire par GPS et cherche en direct ce qui vaut la peine d'être raconté — à partir de sources locales, pas seulement Wikipédia.</p></div>
+        <div class="step"><span class="num-badge">III</span><h3>Écoutez Route</h3><p>Une voix chaleureuse et expressive raconte — honnêtement, sur ce que vous pouvez réellement voir, jamais en faisant semblant.</p></div>
       </div>
-  </div></section>
-
-  <section class="block alt"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">Pourquoi 2R est différent</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">Pas une encyclopédie. Un compagnon de voyage.</h2><p>Les applications de guide de voyage existantes reposent sur des scripts préenregistrés — limitées aux itinéraires populaires, la même histoire pour tout le monde. 2R génère en direct, partout, et s'adapte à vos centres d'intérêt.</p></div>
-    <div class="features">
-        <div class="feature"><div class="icon">📍</div><div><h3>Les sources locales d'abord</h3><p>Sites municipaux, offices de tourisme et organisations patrimoniales — pas seulement Wikipédia. À l'étranger, les sources en langue locale sont utilisées puis racontées dans votre propre langue.</p></div></div>
-        <div class="feature"><div class="icon">🎙️</div><div><h3>Mode guide</h3><p>Un récit continu avec la région comme fil conducteur — pays, province, terroir, ville — plutôt que des faits isolés.</p></div></div>
-        <div class="feature"><div class="icon">🤥</div><div><h3>Toujours honnête</h3><p>Route ne prétend jamais savoir ce que vous voyez. Tout près : "regardez". Plus loin : "vaut le détour" — jamais l'inverse.</p></div></div>
-        <div class="feature"><div class="icon">🔒</div><div><h3>La confidentialité d'abord</h3><p>Aucune conservation de localisation, aucun compte requis. Chaque requête est indépendante.</p></div></div>
-        <div class="feature"><div class="icon">👨‍👩‍👧‍👦</div><div><h3>Solo ou en famille</h3><p>Vos propres centres d'intérêt, ou du contenu pour toute la voiture — avec des jeux et des quiz pour la route en préparation.</p></div></div>
-        <div class="feature"><div class="icon">🌍</div><div><h3>Fonctionne partout</h3><p>Testé aux Pays-Bas et lors d'un trajet en Lombardie, en Italie — même qualité, racontée dans votre propre langue.</p></div></div>
-      </div>
+    <div class="stat-strip">
+      <div class="stat"><div class="num">9</div><div class="lbl">catégories d'intérêt — chacune testée individuellement</div></div>
+      <div class="stat"><div class="num">6</div><div class="lbl">langues, disponibles dans l'app et sur ce site</div></div>
+      <div class="stat"><div class="num" id="stat-testers">—</div><div class="lbl">testeurs aujourd'hui (en direct)</div></div>
+      <div class="stat"><div class="num" id="stat-verhalen">—</div><div class="lbl">histoires racontées aujourd'hui (en direct)</div></div>
+    </div>
   </div></section>
 
   <section class="block"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">Issues des tests</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">Histoires que Route a déjà racontées</h2><p>Une archive vivante d'histoires réelles, générées par IA lors de nos tests — avec la source jointe, pour que vous puissiez vérifier par vous-même.</p></div>
-    <div class="story-grid"><a class="story-card" href="/fr/stories/villa-horev-bilthoven.html">
-  <span class="story-cat">Histoire</span>
-  <h3>Villa Horev</h3>
-  <p>Regardez la Villa Horev, ici à l&#x27;angle de la Soestdijkseweg Zuid et de la Boslaan. Le nom est un bel acronyme pour « Espoir de Repos et de Paix ».…</p>
-  <span class="story-meta">📍 Bilthoven, Nederland</span>
-</a>
-<a class="story-card" href="/fr/stories/dvsu-timber-broers.html">
-  <span class="story-cat">Football</span>
-  <h3>Le club de football DVSU et les frères Timber</h3>
-  <p>Sur votre gauche, à quelques centaines de mètres, se trouve un morceau de pure histoire du football : le club amateur DVSU. Ce nom signifie « Unis…</p>
-  <span class="story-meta">📍 De Bilt, Nederland</span>
-</a>
-<a class="story-card" href="/fr/stories/chiesa-santi-pietro-paolo-luino.html">
-  <span class="story-cat">Architecture</span>
-  <h3>L&#x27;église paroissiale de Luino</h3>
-  <p>Regardez comme l&#x27;église paroissiale des Saints Pierre et Paul s&#x27;élève majestueusement au cœur de Luino. Ce que vous voyez là est le chef-d&#x27;œuvre de…</p>
-  <span class="story-meta">📍 Luino, Italië</span>
-</a></div>
-    <p style="margin-top:20px;"><a class="btn-secondary" href="/fr/stories/">Voir toutes les histoires →</a></p>
+    <div class="section-head"><div class="eyebrow">Pourquoi 2R est différent</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">Pas une encyclopédie. Un compagnon de voyage.</h2><p>Les applications de guide de voyage existantes reposent sur des scripts préenregistrés — limitées aux itinéraires populaires, la même histoire pour tout le monde. 2R génère en direct, partout, et s'adapte à vos centres d'intérêt.</p></div>
+    <div class="features">
+        <div class="feature"><span class="icon">📍</span><h3>Les sources locales d'abord</h3><p>Sites municipaux, offices de tourisme et organisations patrimoniales — pas seulement Wikipédia. À l'étranger, les sources en langue locale sont utilisées puis racontées dans votre propre langue.</p></div>
+        <div class="feature"><span class="icon">🎙️</span><h3>Mode guide</h3><p>Un récit continu avec la région comme fil conducteur — pays, province, terroir, ville — plutôt que des faits isolés.</p></div>
+        <div class="feature"><span class="icon">🤥</span><h3>Toujours honnête</h3><p>Route ne prétend jamais savoir ce que vous voyez. Tout près : "regardez". Plus loin : "vaut le détour" — jamais l'inverse.</p></div>
+        <div class="feature"><span class="icon">🔒</span><h3>La confidentialité d'abord</h3><p>Aucune conservation de localisation, aucun compte requis. Chaque requête est indépendante.</p></div>
+        <div class="feature"><span class="icon">👨‍👩‍👧‍👦</span><h3>Solo ou en famille</h3><p>Vos propres centres d'intérêt, ou du contenu pour toute la voiture — avec des jeux et des quiz pour la route en préparation.</p></div>
+        <div class="feature"><span class="icon">🌍</span><h3>Fonctionne partout</h3><p>Testé aux Pays-Bas et lors d'un trajet en Lombardie, en Italie — même qualité, racontée dans votre propre langue.</p></div>
+      </div>
   </div></section>
 
-  <section class="block"><div class="wrap"><div class="cta-band">
-    <h2>2R est actuellement en test fermé</h2><p>L'application fonctionne en direct sur TestFlight et sur le web. Envie de participer aux tests, ou d'utiliser 2R pour mettre en avant votre région, musée ou restaurant ?</p>
-    <a class="btn-primary" href="mailto:nimco@nentjes.nl">✉️ Nous contacter</a>
-  </div></div></section>
+  <section class="block" id="verhalen"><div class="wrap">
+    <div class="stories-head">
+      <div><div class="section-label">03 · Extrait du carnet de voyage</div><h2>Des histoires restées<br>en chemin.</h2></div>
+      <p>Trois lieux réels. Trois instants où une route ordinaire a soudain pris tout son sens.</p>
+    </div>
+    <div class="story-grid"><a class="story story-1" href="/fr/stories/villa-horev-bilthoven.html">
+  <div class="story-photo crop-1"></div>
+  <div class="story-body">
+    <div class="story-topline"><span>Histoire</span><span>Bilthoven, Nederland</span></div>
+    <h3>Villa Horev</h3>
+    <p>Regardez la Villa Horev, ici à l&#x27;angle de la Soestdijkseweg Zuid et de la Boslaan. Le nom est un bel acronyme pour « Espoir de Repos et de Paix ». C&#x27;est ce repos que…</p>
+    <span class="story-cta">racontée par Route <span>▶</span></span>
+  </div>
+</a><a class="story story-2" href="/fr/stories/dvsu-timber-broers.html">
+  <div class="story-photo crop-2"></div>
+  <div class="story-body">
+    <div class="story-topline"><span>Football</span><span>De Bilt, Nederland</span></div>
+    <h3>Le club de football DVSU et les frères Timber</h3>
+    <p>Sur votre gauche, à quelques centaines de mètres, se trouve un morceau de pure histoire du football : le club amateur DVSU. Ce nom signifie « Unis par l&#x27;amitié, Utrecht…</p>
+    <span class="story-cta">racontée par Route <span>▶</span></span>
+  </div>
+</a><a class="story story-3" href="/fr/stories/chiesa-santi-pietro-paolo-luino.html">
+  <div class="story-photo crop-3"></div>
+  <div class="story-body">
+    <div class="story-topline"><span>Architecture</span><span>Luino, Italië</span></div>
+    <h3>L&#x27;église paroissiale de Luino</h3>
+    <p>Regardez comme l&#x27;église paroissiale des Saints Pierre et Paul s&#x27;élève majestueusement au cœur de Luino. Ce que vous voyez là est le chef-d&#x27;œuvre de l&#x27;architecte local…</p>
+    <span class="story-cta">racontée par Route <span>▶</span></span>
+  </div>
+</a><a class="story story-4" href="/fr/stories/kasteel-nijenrode-breukelen.html">
+  <div class="story-photo crop-4"></div>
+  <div class="story-body">
+    <div class="story-topline"><span>Histoire</span><span>Breukelen, Nederland</span></div>
+    <h3>Le château de Nijenrode</h3>
+    <p>À moins de cinq cents mètres de notre itinéraire, niché dans les bois au bord de l&#x27;eau, se trouve la véritable icône de ce coin : le château de Nijenrode. Fondé vers…</p>
+    <span class="story-cta">racontée par Route <span>▶</span></span>
+  </div>
+</a><a class="story story-5" href="/fr/stories/daan-boom-utrecht.html">
+  <div class="story-photo crop-5"></div>
+  <div class="story-body">
+    <div class="story-topline"><span>Influenceurs</span><span>Utrecht, Nederland</span></div>
+    <h3>Daan Boom, talent médiatique d&#x27;Utrecht</h3>
+    <p>Utrecht est bien sûr connue pour son passé de pêche et ses costumes traditionnels, mais c&#x27;est tout autant le berceau ultime des tendances et des chouchous du public…</p>
+    <span class="story-cta">racontée par Route <span>▶</span></span>
+  </div>
+</a></div>
+    <p style="margin-top:26px;"><a class="text-link on-paper" href="/fr/stories/">Voir toutes les histoires → <span>→</span></a></p>
+  </div></section>
+
+  <section class="invitation" id="meenemen">
+    <div class="invitation-image" aria-hidden="true"></div>
+    <div class="invitation-content">
+      <p class="eyebrow on-photo">Pour la prochaine fois que vous montez en voiture</p>
+      <h2>Que vous racontera Route<br>lors de votre prochain trajet ?</h2>
+      <p>Emportez une voix chaleureuse, un carnet de voyage vivant et un peu d'émerveillement.</p>
+      <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">Emportez Route avec vous <span>↗</span></a>
+    </div>
+  </section>
 
 </main>
 <footer class="site">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="/icon-2r.png" alt="2R">
-        <span style="font-family:'Outfit',sans-serif; font-weight:700;">2R · Second Route</span>
-      </div>
-      <div class="footer-links">
-        <a href="/fr/roadmap.html">Roadmap</a>
-        <a href="/fr/stories/">Histoires</a>
-        <a href="/fr/privacy.html">Confidentialité</a>
-        <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
-        <a href="mailto:nimco@nentjes.nl">Contact</a>
-      </div>
+  <div class="footer-grid">
+    <a class="footer-brand" href="/fr/">
+      <span class="brand-mark">2R</span>
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/fr/roadmap.html">Roadmap</a>
+      <a href="/fr/stories/">Histoires</a>
+      <a href="/fr/privacy.html">Confidentialité</a>
+      <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
+      <a href="mailto:nimco@nentjes.nl">Contact</a>
     </div>
-    <p class="footer-family">Fait partie de la famille <a href="https://nentjes.nl">1R</a> — voir aussi <a href="https://autestme.com">Autestme</a> et <a href="https://kindertekening.com">Kindertekening</a>, d'autres projets des mêmes créateurs.</p>
   </div>
+  <p class="footer-family">Pas la destination — c'est le voyage qui nous rend sages.</p>
 </footer>
 <script>
 fetch('https://mapsinfo.roelnentjes.workers.dev/api/stats')

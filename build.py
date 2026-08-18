@@ -32,11 +32,18 @@ CATEGORIES = {
 SITE = {
 'nl': dict(
     nav_product='Product', nav_roadmap='Roadmap', nav_stories='Verhalen', nav_privacy='Privacy', nav_cta='Probeer 2R →',
-    hero_eyebrow='🗺️ 2R · Second Route',
-    hero_h1='Eén route brengt je er.<br>De tweede vertelt je wat je ziet.',
-    hero_lede='2R is een AI-reisgids die naast je navigatie meerijdt. Terwijl 1 Route (Google Maps, Waze) je van A naar B brengt, vertelt <b>Route</b> — de stem van 2R — je onderweg live over de geschiedenis, de natuur en de lokale verhalen die je passeert. Precies afgestemd op jouw interesses.',
-    hero_btn_demo='▶️ Probeer de demo', hero_btn_roadmap='Bekijk de roadmap',
-    hero_banner_note='Tijdelijke bannerillustratie — wordt binnenkort vervangen door eigen beeldmateriaal.',
+    hero_eyebrow='2R · de reisgenoot die verhalen ziet',
+    hero_h1='Niet de bestemming,<br>maar de reis maakt ons wijs.',
+    hero_lede='2R vertelt niet alleen wat je ziet. Terwijl je eerste route (Google Maps, Waze) je van A naar B brengt, brengt <b>Route</b> onderweg kennis, verwondering en gesprekken op gang.',
+    hero_btn_demo='Hoor een verhaal', hero_btn_roadmap='Rijd een stukje mee',
+    hero_caption_coord='52.1045° N', hero_caption_note='Een avond onderweg · Utrecht',
+    listen_label='01 · Een stem naast je', listen_h2='De wereld buiten wordt<br>een verhaal binnen.',
+    listen_p='Geen lijst met weetjes. Route kiest één betekenisvol verhaal, vertelt het rustig en laat daarna weer ruimte voor het landschap — en voor elkaar.',
+    listen_now='Route vertelt', listen_title='De verborgen geschiedenis<br>van het landschap', listen_sub='Gidsmodus · echt fragment',
+    journey_label='02 · Rijd een stukje mee', journey_route_label='Route 02', journey_route_name='Vechtstreek', journey_route_meta='31 km · drie verhalen',
+    invite_label='Voor de volgende keer dat je instapt', invite_h2='Wat zal Route op jouw<br>volgende reis vertellen?',
+    invite_p='Neem een warme stem, een levend reisboek en een beetje verwondering met je mee.', invite_btn='Neem Route mee',
+    footer_tagline='Niet de bestemming, maar de reis maakt ons wijs.',
     stat1_num='9', stat1_lbl='interesse-rubrieken — elk apart getest',
     stat2_num='6', stat2_lbl='talen, live in de app en op deze site',
     stat3_lbl='testers vandaag (live)', stat4_lbl='verhalen verteld vandaag (live)',
@@ -52,8 +59,8 @@ SITE = {
     f4_h='Privacy-eerst', f4_p='Geen locatie-opslag, geen account nodig. Elk verzoek staat op zichzelf.',
     f5_h='Individueel of familie', f5_p='Eigen interesses, of content voor de hele auto — met spelletjes en quizjes onderweg in de maak.',
     f6_h='Werkt overal', f6_p='Getest in Nederland én tijdens een rit door Lombardije — dezelfde kwaliteit, in jouw taal verteld.',
-    stories_eyebrow='Uit de test', stories_h2='Verhalen die Route al heeft verteld',
-    stories_p='Een levend archief van echte, AI-gegenereerde verhalen uit onze tests — met bron erbij, zodat je zelf kunt controleren dat het klopt.',
+    stories_eyebrow='03 · Uit het reisboek', stories_h2='Verhalen die onderweg<br>zijn blijven hangen.',
+    stories_p='Drie echte plaatsen. Drie momenten waarop een gewone weg ineens betekenis kreeg.',
     stories_view_all='Bekijk alle verhalen →',
     cta_h='2R is nu in besloten test', cta_p='De app draait live in TestFlight en op het web. Wil je meetesten, of wil je 2R gebruiken om jouw regio, museum of restaurant onder de aandacht te brengen?', cta_btn='✉️ Neem contact op',
     footer_contact='Contact',
@@ -69,11 +76,18 @@ SITE = {
 ),
 'en': dict(
     nav_product='Product', nav_roadmap='Roadmap', nav_stories='Stories', nav_privacy='Privacy', nav_cta='Try 2R →',
-    hero_eyebrow='🗺️ 2R · Second Route',
-    hero_h1="One route gets you there.<br>The second one tells you what you're seeing.",
-    hero_lede='2R is an AI travel guide that rides along with your navigation. While your first route (Google Maps, Waze) gets you from A to B, <b>Route</b> — the voice of 2R — narrates live what you\'re passing: the history, the nature, the local stories. Tuned to your own interests.',
-    hero_btn_demo='▶️ Try the live demo', hero_btn_roadmap='See the roadmap',
-    hero_banner_note='Temporary banner artwork — will be replaced with custom illustration soon.',
+    hero_eyebrow='2R · the travel companion that sees stories',
+    hero_h1='Not the destination —<br>the journey makes us wise.',
+    hero_lede="2R doesn't just tell you what you're seeing. While your first route (Google Maps, Waze) gets you from A to B, <b>Route</b> brings knowledge, wonder and conversation along the way.",
+    hero_btn_demo='Hear a story', hero_btn_roadmap='Ride along for a bit',
+    hero_caption_coord='52.1045° N', hero_caption_note='An evening on the road · Utrecht',
+    listen_label='01 · A voice beside you', listen_h2='The world outside becomes<br>a story within.',
+    listen_p='No list of facts. Route picks one meaningful story, tells it calmly, then makes room again for the landscape — and for each other.',
+    listen_now='Route is telling', listen_title='The hidden history<br>of the landscape', listen_sub='Guide mode · real fragment',
+    journey_label='02 · Ride along for a bit', journey_route_label='Route 02', journey_route_name='Vecht region', journey_route_meta='31 km · three stories',
+    invite_label='For the next time you get in', invite_h2='What will Route tell you<br>on your next trip?',
+    invite_p='Bring a warm voice, a living travel journal, and a little wonder.', invite_btn='Take Route with you',
+    footer_tagline='Not the destination — the journey makes us wise.',
     stat1_num='9', stat1_lbl='interest categories — each individually tested',
     stat2_num='6', stat2_lbl='languages, live in the app and on this site',
     stat3_lbl='testers today (live)', stat4_lbl='stories told today (live)',
@@ -89,8 +103,8 @@ SITE = {
     f4_h='Privacy-first', f4_p='No location storage, no account required. Every request stands on its own.',
     f5_h='Solo or family', f5_p='Your own interests, or content for the whole car — with games and quizzes for the road in the works.',
     f6_h='Works anywhere', f6_p='Tested in the Netherlands and on a drive through Lombardy, Italy — same quality, narrated in your own language.',
-    stories_eyebrow='From testing', stories_h2='Stories Route has already told',
-    stories_p='A living archive of real, AI-generated stories from our tests — with the source attached, so you can check for yourself that it holds up.',
+    stories_eyebrow='03 · From the travel journal', stories_h2='Stories that stayed with us<br>along the way.',
+    stories_p='Three real places. Three moments a plain road suddenly meant something.',
     stories_view_all='View all stories →',
     cta_h='2R is currently in closed testing', cta_p='The app is live in TestFlight and on the web. Want to help test, or use 2R to put your region, museum or restaurant on the map?', cta_btn='✉️ Get in touch',
     footer_contact='Contact',
@@ -106,11 +120,18 @@ SITE = {
 ),
 'de': dict(
     nav_product='Produkt', nav_roadmap='Roadmap', nav_stories='Geschichten', nav_privacy='Datenschutz', nav_cta='2R testen →',
-    hero_eyebrow='🗺️ 2R · Second Route',
-    hero_h1='Eine Route bringt dich hin.<br>Die zweite erzählt dir, was du siehst.',
-    hero_lede='2R ist ein KI-Reiseführer, der neben deiner Navigation mitfährt. Während deine erste Route (Google Maps, Waze) dich von A nach B bringt, erzählt dir <b>Route</b> — die Stimme von 2R — live von der Geschichte, der Natur und den lokalen Geschichten, an denen du vorbeikommst. Genau abgestimmt auf deine Interessen.',
-    hero_btn_demo='▶️ Live-Demo testen', hero_btn_roadmap='Roadmap ansehen',
-    hero_banner_note='Vorläufige Banner-Illustration — wird bald durch eigenes Bildmaterial ersetzt.',
+    hero_eyebrow='2R · der Reisebegleiter, der Geschichten sieht',
+    hero_h1='Nicht das Ziel —<br>die Reise macht uns weise.',
+    hero_lede='2R erzählt nicht nur, was du siehst. Während deine erste Route (Google Maps, Waze) dich von A nach B bringt, bringt <b>Route</b> unterwegs Wissen, Staunen und Gespräche in Gang.',
+    hero_btn_demo='Höre eine Geschichte', hero_btn_roadmap='Fahr ein Stück mit',
+    hero_caption_coord='52,1045° N', hero_caption_note='Ein Abend unterwegs · Utrecht',
+    listen_label='01 · Eine Stimme neben dir', listen_h2='Die Welt draußen wird<br>zur Geschichte drinnen.',
+    listen_p='Keine Liste von Fakten. Route wählt eine bedeutsame Geschichte, erzählt sie ruhig und lässt danach wieder Raum für die Landschaft — und füreinander.',
+    listen_now='Route erzählt', listen_title='Die verborgene Geschichte<br>der Landschaft', listen_sub='Guide-Modus · echter Ausschnitt',
+    journey_label='02 · Fahr ein Stück mit', journey_route_label='Route 02', journey_route_name='Vecht-Region', journey_route_meta='31 km · drei Geschichten',
+    invite_label='Für das nächste Mal, wenn du einsteigst', invite_h2='Was wird Route dir auf<br>deiner nächsten Reise erzählen?',
+    invite_p='Nimm eine warme Stimme, ein lebendiges Reisetagebuch und ein bisschen Staunen mit.', invite_btn='Nimm Route mit',
+    footer_tagline='Nicht das Ziel — die Reise macht uns weise.',
     stat1_num='9', stat1_lbl='Interessen-Rubriken — jede einzeln getestet',
     stat2_num='6', stat2_lbl='Sprachen, live in der App und auf dieser Website',
     stat3_lbl='Tester heute (live)', stat4_lbl='Geschichten heute erzählt (live)',
@@ -126,8 +147,8 @@ SITE = {
     f4_h='Datenschutz zuerst', f4_p='Keine Standortspeicherung, kein Konto nötig. Jede Anfrage steht für sich.',
     f5_h='Einzeln oder Familie', f5_p='Eigene Interessen, oder Inhalte für das ganze Auto — mit Spielen und Quiz für unterwegs in Arbeit.',
     f6_h='Funktioniert überall', f6_p='Getestet in den Niederlanden und auf einer Fahrt durch die Lombardei — gleiche Qualität, in deiner Sprache erzählt.',
-    stories_eyebrow='Aus dem Test', stories_h2='Geschichten, die Route schon erzählt hat',
-    stories_p='Ein lebendiges Archiv echter, KI-generierter Geschichten aus unseren Tests — mit Quelle, damit du selbst nachprüfen kannst, dass alles stimmt.',
+    stories_eyebrow='03 · Aus dem Reisetagebuch', stories_h2='Geschichten, die unterwegs<br>hängen geblieben sind.',
+    stories_p='Drei echte Orte. Drei Momente, in denen eine gewöhnliche Straße plötzlich Bedeutung bekam.',
     stories_view_all='Alle Geschichten ansehen →',
     cta_h='2R befindet sich derzeit im geschlossenen Test', cta_p='Die App läuft live in TestFlight und im Web. Möchtest du mittesten oder 2R nutzen, um deine Region, dein Museum oder Restaurant bekannt zu machen?', cta_btn='✉️ Kontakt aufnehmen',
     footer_contact='Kontakt',
@@ -143,11 +164,18 @@ SITE = {
 ),
 'fr': dict(
     nav_product='Produit', nav_roadmap='Roadmap', nav_stories='Histoires', nav_privacy='Confidentialité', nav_cta='Essayer 2R →',
-    hero_eyebrow='🗺️ 2R · Second Route',
-    hero_h1='Un premier itinéraire vous y mène.<br>Le second vous raconte ce que vous voyez.',
-    hero_lede="2R est un guide de voyage IA qui accompagne votre navigation. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d'un point A à un point B, <b>Route</b> — la voix de 2R — vous raconte en direct l'histoire, la nature et les récits locaux que vous croisez. Le tout adapté à vos propres centres d'intérêt.",
-    hero_btn_demo='▶️ Essayer la démo', hero_btn_roadmap='Voir la feuille de route',
-    hero_banner_note='Illustration de bannière provisoire — sera bientôt remplacée par une œuvre originale.',
+    hero_eyebrow="2R · le compagnon de voyage qui voit les histoires",
+    hero_h1="Pas la destination —<br>c'est le voyage qui nous rend sages.",
+    hero_lede="2R ne se contente pas de raconter ce que vous voyez. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d'un point A à un point B, <b>Route</b> apporte en chemin de la connaissance, de l'émerveillement et des conversations.",
+    hero_btn_demo='Écouter une histoire', hero_btn_roadmap='Faire un bout de route',
+    hero_caption_coord='52,1045° N', hero_caption_note='Une soirée sur la route · Utrecht',
+    listen_label='01 · Une voix à vos côtés', listen_h2='Le monde extérieur devient<br>une histoire intérieure.',
+    listen_p='Pas une liste de faits. Route choisit une histoire qui a du sens, la raconte calmement, puis laisse de nouveau place au paysage — et à vous.',
+    listen_now='Route raconte', listen_title="L'histoire cachée<br>du paysage", listen_sub='Mode guide · extrait réel',
+    journey_label='02 · Faire un bout de route', journey_route_label='Itinéraire 02', journey_route_name='Région du Vecht', journey_route_meta='31 km · trois histoires',
+    invite_label='Pour la prochaine fois que vous montez en voiture', invite_h2='Que vous racontera Route<br>lors de votre prochain trajet ?',
+    invite_p="Emportez une voix chaleureuse, un carnet de voyage vivant et un peu d'émerveillement.", invite_btn='Emportez Route avec vous',
+    footer_tagline="Pas la destination — c'est le voyage qui nous rend sages.",
     stat1_num='9', stat1_lbl="catégories d'intérêt — chacune testée individuellement",
     stat2_num='6', stat2_lbl="langues, disponibles dans l'app et sur ce site",
     stat3_lbl="testeurs aujourd'hui (en direct)", stat4_lbl="histoires racontées aujourd'hui (en direct)",
@@ -163,8 +191,8 @@ SITE = {
     f4_h="La confidentialité d'abord", f4_p="Aucune conservation de localisation, aucun compte requis. Chaque requête est indépendante.",
     f5_h='Solo ou en famille', f5_p="Vos propres centres d'intérêt, ou du contenu pour toute la voiture — avec des jeux et des quiz pour la route en préparation.",
     f6_h='Fonctionne partout', f6_p='Testé aux Pays-Bas et lors d\'un trajet en Lombardie, en Italie — même qualité, racontée dans votre propre langue.',
-    stories_eyebrow='Issues des tests', stories_h2='Histoires que Route a déjà racontées',
-    stories_p='Une archive vivante d\'histoires réelles, générées par IA lors de nos tests — avec la source jointe, pour que vous puissiez vérifier par vous-même.',
+    stories_eyebrow='03 · Extrait du carnet de voyage', stories_h2='Des histoires restées<br>en chemin.',
+    stories_p="Trois lieux réels. Trois instants où une route ordinaire a soudain pris tout son sens.",
     stories_view_all='Voir toutes les histoires →',
     cta_h="2R est actuellement en test fermé", cta_p="L'application fonctionne en direct sur TestFlight et sur le web. Envie de participer aux tests, ou d'utiliser 2R pour mettre en avant votre région, musée ou restaurant ?", cta_btn='✉️ Nous contacter',
     footer_contact='Contact',
@@ -180,11 +208,18 @@ SITE = {
 ),
 'es': dict(
     nav_product='Producto', nav_roadmap='Roadmap', nav_stories='Historias', nav_privacy='Privacidad', nav_cta='Prueba 2R →',
-    hero_eyebrow='🗺️ 2R · Second Route',
-    hero_h1='Una ruta te lleva.<br>La segunda te cuenta lo que ves.',
-    hero_lede='2R es una guía de viaje con IA que te acompaña junto a tu navegación. Mientras tu primera ruta (Google Maps, Waze) te lleva de A a B, <b>Route</b> —la voz de 2R— te cuenta en vivo la historia, la naturaleza y las historias locales que vas dejando atrás. Todo ajustado a tus propios intereses.',
-    hero_btn_demo='▶️ Probar la demo', hero_btn_roadmap='Ver la hoja de ruta',
-    hero_banner_note='Ilustración de banner provisional — pronto será reemplazada por arte propio.',
+    hero_eyebrow='2R · el compañero de viaje que ve historias',
+    hero_h1='No el destino —<br>el viaje es lo que nos hace sabios.',
+    hero_lede='El 2R no solo cuenta lo que ves. Mientras tu primera ruta (Google Maps, Waze) te lleva de A a B, <b>Route</b> aporta conocimiento, asombro y conversación por el camino.',
+    hero_btn_demo='Escucha una historia', hero_btn_roadmap='Recorre un tramo con nosotros',
+    hero_caption_coord='52,1045° N', hero_caption_note='Una tarde en la carretera · Utrecht',
+    listen_label='01 · Una voz a tu lado', listen_h2='El mundo de fuera se convierte<br>en una historia dentro.',
+    listen_p='Sin listas de datos. Route elige una historia con sentido, la cuenta con calma y luego vuelve a dejar espacio para el paisaje —y para vosotros.',
+    listen_now='Route está contando', listen_title='La historia oculta<br>del paisaje', listen_sub='Modo guía · fragmento real',
+    journey_label='02 · Recorre un tramo con nosotros', journey_route_label='Ruta 02', journey_route_name='Región del Vecht', journey_route_meta='31 km · tres historias',
+    invite_label='Para la próxima vez que subas al coche', invite_h2='¿Qué te contará Route<br>en tu próximo viaje?',
+    invite_p='Llévate una voz cálida, un diario de viaje vivo y un poco de asombro.', invite_btn='Llévate a Route',
+    footer_tagline='No el destino — el viaje es lo que nos hace sabios.',
     stat1_num='9', stat1_lbl='categorías de interés — cada una probada individualmente',
     stat2_num='6', stat2_lbl='idiomas, disponibles en la app y en este sitio',
     stat3_lbl='usuarios de prueba hoy (en vivo)', stat4_lbl='historias contadas hoy (en vivo)',
@@ -200,8 +235,8 @@ SITE = {
     f4_h='La privacidad primero', f4_p='Sin almacenamiento de ubicación, sin necesidad de cuenta. Cada solicitud es independiente.',
     f5_h='Individual o en familia', f5_p='Tus propios intereses, o contenido para todo el coche —con juegos y quizzes para el camino en desarrollo.',
     f6_h='Funciona en cualquier lugar', f6_p='Probado en los Países Bajos y en un viaje por Lombardía, Italia —misma calidad, narrada en tu propio idioma.',
-    stories_eyebrow='De las pruebas', stories_h2='Historias que Route ya ha contado',
-    stories_p='Un archivo vivo de historias reales generadas por IA durante nuestras pruebas —con la fuente incluida, para que puedas comprobarlo tú mismo.',
+    stories_eyebrow='03 · Del diario de viaje', stories_h2='Historias que se quedaron<br>por el camino.',
+    stories_p='Tres lugares reales. Tres momentos en los que una carretera cualquiera cobró de repente sentido.',
     stories_view_all='Ver todas las historias →',
     cta_h='2R está actualmente en pruebas cerradas', cta_p='La app funciona en vivo en TestFlight y en la web. ¿Quieres ayudar a probarla, o usar 2R para dar a conocer tu región, museo o restaurante?', cta_btn='✉️ Contáctanos',
     footer_contact='Contacto',
@@ -217,11 +252,18 @@ SITE = {
 ),
 'pt': dict(
     nav_product='Produto', nav_roadmap='Roadmap', nav_stories='Histórias', nav_privacy='Privacidade', nav_cta='Experimente 2R →',
-    hero_eyebrow='🗺️ 2R · Second Route',
-    hero_h1='Uma rota te leva até lá.<br>A segunda conta o que você está vendo.',
-    hero_lede='2R é um guia de viagem com IA que acompanha a sua navegação. Enquanto a sua primeira rota (Google Maps, Waze) o leva de A a B, <b>Route</b> — a voz do 2R — narra ao vivo a história, a natureza e as histórias locais que você vai encontrando pelo caminho. Tudo ajustado aos seus próprios interesses.',
-    hero_btn_demo='▶️ Experimentar a demo', hero_btn_roadmap='Ver o roteiro',
-    hero_banner_note='Ilustração de banner provisória — em breve será substituída por arte própria.',
+    hero_eyebrow='2R · o companheiro de viagem que vê histórias',
+    hero_h1='Não o destino —<br>a viagem é o que nos torna sábios.',
+    hero_lede='O 2R não conta apenas o que você vê. Enquanto sua primeira rota (Google Maps, Waze) o leva de A a B, <b>Route</b> traz conhecimento, encantamento e boas conversas pelo caminho.',
+    hero_btn_demo='Ouça uma história', hero_btn_roadmap='Ande um trecho com a gente',
+    hero_caption_coord='52,1045° N', hero_caption_note='Uma noite na estrada · Utrecht',
+    listen_label='01 · Uma voz ao seu lado', listen_h2='O mundo de fora se torna<br>uma história por dentro.',
+    listen_p='Nenhuma lista de fatos. A Route escolhe uma história com significado, narra com calma e depois abre espaço de novo para a paisagem — e para vocês.',
+    listen_now='A Route está narrando', listen_title='A história escondida<br>da paisagem', listen_sub='Modo guia · trecho real',
+    journey_label='02 · Ande um trecho com a gente', journey_route_label='Rota 02', journey_route_name='Região do Vecht', journey_route_meta='31 km · três histórias',
+    invite_label='Para a próxima vez que você entrar no carro', invite_h2='O que a Route vai contar<br>na sua próxima viagem?',
+    invite_p='Leve uma voz calorosa, um diário de viagem vivo e um pouco de encantamento.', invite_btn='Leve a Route com você',
+    footer_tagline='Não o destino — a viagem é o que nos torna sábios.',
     stat1_num='9', stat1_lbl='categorias de interesse — cada uma testada individualmente',
     stat2_num='6', stat2_lbl='idiomas, disponíveis no app e neste site',
     stat3_lbl='testadores hoje (ao vivo)', stat4_lbl='histórias contadas hoje (ao vivo)',
@@ -237,8 +279,8 @@ SITE = {
     f4_h='Privacidade em primeiro lugar', f4_p='Sem armazenamento de localização, sem conta necessária. Cada solicitação é independente.',
     f5_h='Individual ou em família', f5_p='Seus próprios interesses, ou conteúdo para todo o carro — com jogos e quizzes para a estrada a caminho.',
     f6_h='Funciona em qualquer lugar', f6_p='Testado nos Países Baixos e em uma viagem pela Lombardia, Itália — mesma qualidade, narrada no seu próprio idioma.',
-    stories_eyebrow='Dos testes', stories_h2='Histórias que a Route já contou',
-    stories_p='Um arquivo vivo de histórias reais, geradas por IA durante nossos testes — com a fonte anexada, para que você mesmo possa conferir.',
+    stories_eyebrow='03 · Do diário de viagem', stories_h2='Histórias que ficaram<br>pelo caminho.',
+    stories_p='Três lugares reais. Três momentos em que uma estrada comum ganhou, de repente, significado.',
     stories_view_all='Ver todas as histórias →',
     cta_h='O 2R está atualmente em teste fechado', cta_p='O app está ao vivo no TestFlight e na web. Quer ajudar a testar, ou usar o 2R para divulgar sua região, museu ou restaurante?', cta_btn='✉️ Entrar em contato',
     footer_contact='Contato',
@@ -391,6 +433,44 @@ PRIVACY = {
     h_contact='Contato',
     contact_text='Dúvidas sobre esta política? Escreva para <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
+}
+
+# ---------------------------------------------------------------------------
+# De "rijd een stukje mee"-sectie op de homepage: drie momenten van een
+# fictieve, illustratieve rit (sfeerbeeld, geen letterlijke reisverhaal-
+# claim) — per taal (tijd, kop, tekst).
+# ---------------------------------------------------------------------------
+JOURNEY = {
+'nl': [
+    ('08:42 · Vertrek', 'De stad wordt stil achter ons.', 'Route wacht. Eerst is er alleen het geluid van banden op de weg en het eerste licht boven het water.'),
+    ('08:57 · Langs de Vecht', '"Kijk eens naar links."', 'Een buitenplaats verschijnt tussen de bomen. De stem vertelt wie hier woonde en waarom de rivier vol staat met zulke huizen.'),
+    ('09:11 · Even later', 'Het verhaal rijdt nog mee.', 'Iemand in de auto stelt een vraag. Een ander herinnert zich iets. De weg is dezelfde, maar de reis is veranderd.'),
+],
+'en': [
+    ('08:42 · Departure', 'The city falls quiet behind us.', 'Route waits. At first there is only the sound of tyres on the road and the first light over the water.'),
+    ('08:57 · Along the Vecht', '"Look to your left."', 'A country estate appears between the trees. The voice tells you who lived here, and why the river is lined with houses like it.'),
+    ('09:11 · A little later', 'The story is still riding along.', 'Someone in the car asks a question. Someone else remembers something. The road is the same, but the journey has changed.'),
+],
+'de': [
+    ('08:42 · Abfahrt', 'Die Stadt wird still hinter uns.', 'Route wartet. Zuerst ist da nur das Geräusch der Reifen auf der Straße und das erste Licht über dem Wasser.'),
+    ('08:57 · Entlang der Vecht', '„Schau mal nach links."', 'Ein Landgut erscheint zwischen den Bäumen. Die Stimme erzählt, wer hier lebte und warum der Fluss voller solcher Häuser steht.'),
+    ('09:11 · Etwas später', 'Die Geschichte fährt noch mit.', 'Jemand im Auto stellt eine Frage. Ein anderer erinnert sich an etwas. Die Straße ist dieselbe, aber die Reise hat sich verändert.'),
+],
+'fr': [
+    ('08 h 42 · Départ', 'La ville devient silencieuse derrière nous.', "Route attend. D'abord, il n'y a que le bruit des pneus sur la route et la première lumière sur l'eau."),
+    ('08 h 57 · Le long du Vecht', '« Regardez à gauche. »', "Une maison de campagne apparaît entre les arbres. La voix raconte qui y vivait, et pourquoi la rivière est bordée de telles demeures."),
+    ('09 h 11 · Un peu plus tard', "L'histoire continue de vous accompagner.", "Quelqu'un dans la voiture pose une question. Un autre se souvient de quelque chose. La route est la même, mais le voyage a changé."),
+],
+'es': [
+    ('08:42 · Salida', 'La ciudad queda en silencio detrás de nosotros.', 'Route espera. Al principio solo se oye el sonido de los neumáticos sobre el asfalto y la primera luz sobre el agua.'),
+    ('08:57 · Junto al Vecht', '«Mira a la izquierda.»', 'Una finca aparece entre los árboles. La voz cuenta quién vivió aquí y por qué el río está lleno de casas así.'),
+    ('09:11 · Un poco más tarde', 'La historia sigue con nosotros.', 'Alguien en el coche hace una pregunta. Otro recuerda algo. La carretera es la misma, pero el viaje ha cambiado.'),
+],
+'pt': [
+    ('08:42 · Partida', 'A cidade fica em silêncio atrás de nós.', 'A Route espera. No início, só se ouve o som dos pneus na estrada e a primeira luz sobre a água.'),
+    ('08:57 · Ao longo do Vecht', '"Olhe para a esquerda."', 'Uma casa de campo aparece entre as árvores. A voz conta quem viveu ali, e por que o rio está cheio de casas assim.'),
+    ('09:11 · Um pouco depois', 'A história ainda viaja com a gente.', 'Alguém no carro faz uma pergunta. Outro se lembra de algo. A estrada é a mesma, mas a viagem mudou.'),
+],
 }
 
 # ---------------------------------------------------------------------------
@@ -571,8 +651,8 @@ def nav(lang, active):
     return f'''<header class="site">
   <div class="site-nav">
     <a class="brand" href="/{lang}/">
-      <img src="/icon-2r.png" alt="2R">
-      <span>2R</span>
+      <span class="brand-mark">2R</span>
+      <span>Second Route</span>
     </a>
     <nav class="nav-links">
       <span class="nav-only-links">
@@ -591,22 +671,20 @@ def nav(lang, active):
 def footer(lang):
     s = SITE[lang]
     return f'''<footer class="site">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="/icon-2r.png" alt="2R">
-        <span style="font-family:'Outfit',sans-serif; font-weight:700;">2R · Second Route</span>
-      </div>
-      <div class="footer-links">
-        <a href="/{lang}/roadmap.html">{s['nav_roadmap']}</a>
-        <a href="/{lang}/stories/">{s['nav_stories']}</a>
-        <a href="/{lang}/privacy.html">{s['nav_privacy']}</a>
-        <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
-        <a href="mailto:nimco@nentjes.nl">{s['footer_contact']}</a>
-      </div>
+  <div class="footer-grid">
+    <a class="footer-brand" href="/{lang}/">
+      <span class="brand-mark">2R</span>
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/{lang}/roadmap.html">{s['nav_roadmap']}</a>
+      <a href="/{lang}/stories/">{s['nav_stories']}</a>
+      <a href="/{lang}/privacy.html">{s['nav_privacy']}</a>
+      <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a>
+      <a href="mailto:nimco@nentjes.nl">{s['footer_contact']}</a>
     </div>
-    <p class="footer-family">{s['footer_family']}</p>
   </div>
+  <p class="footer-family">{s['footer_tagline']}</p>
 </footer>'''
 
 def page_shell(lang, title, description, active, body, extra_head=''):
@@ -646,63 +724,131 @@ def story_card(lang, st):
   <span class="story-meta">📍 {html.escape(st['location'])}</span>
 </a>'''
 
+# Editorial verhaalkaart voor de homepage-showcase (met foto-crop uit de
+# moodboard-beelden), i.p.v. de eenvoudige kaart van het volledige archief.
+def home_story_card(lang, st, index):
+    cat = CATEGORIES[st['category']][lang]
+    excerpt = st['text'][lang][:170].rsplit(' ', 1)[0] + '…'
+    crop = f'crop-{(index % 6) + 1}'
+    card_cls = f'story story-{index + 1}'
+    return f'''<a class="{card_cls}" href="/{lang}/stories/{st['slug']}.html">
+  <div class="story-photo {crop}"></div>
+  <div class="story-body">
+    <div class="story-topline"><span>{cat}</span><span>{html.escape(st['location'])}</span></div>
+    <h3>{html.escape(st['title'][lang])}</h3>
+    <p>{html.escape(excerpt)}</p>
+    <span class="story-cta">{SITE[lang]['story_told_by']} <span>▶</span></span>
+  </div>
+</a>'''
+
 def build_home(lang):
     s = SITE[lang]
+    j = JOURNEY[lang]
     steps = f'''<div class="steps">
-        <div class="step"><div class="num-badge">1</div><h3>{s['step1_h']}</h3><p>{s['step1_p']}</p></div>
-        <div class="step"><div class="num-badge">2</div><h3>{s['step2_h']}</h3><p>{s['step2_p']}</p></div>
-        <div class="step"><div class="num-badge">3</div><h3>{s['step3_h']}</h3><p>{s['step3_p']}</p></div>
+        <div class="step"><span class="num-badge">I</span><h3>{s['step1_h']}</h3><p>{s['step1_p']}</p></div>
+        <div class="step"><span class="num-badge">II</span><h3>{s['step2_h']}</h3><p>{s['step2_p']}</p></div>
+        <div class="step"><span class="num-badge">III</span><h3>{s['step3_h']}</h3><p>{s['step3_p']}</p></div>
       </div>'''
     features = f'''<div class="features">
-        <div class="feature"><div class="icon">📍</div><div><h3>{s['f1_h']}</h3><p>{s['f1_p']}</p></div></div>
-        <div class="feature"><div class="icon">🎙️</div><div><h3>{s['f2_h']}</h3><p>{s['f2_p']}</p></div></div>
-        <div class="feature"><div class="icon">🤥</div><div><h3>{s['f3_h']}</h3><p>{s['f3_p']}</p></div></div>
-        <div class="feature"><div class="icon">🔒</div><div><h3>{s['f4_h']}</h3><p>{s['f4_p']}</p></div></div>
-        <div class="feature"><div class="icon">👨‍👩‍👧‍👦</div><div><h3>{s['f5_h']}</h3><p>{s['f5_p']}</p></div></div>
-        <div class="feature"><div class="icon">🌍</div><div><h3>{s['f6_h']}</h3><p>{s['f6_p']}</p></div></div>
+        <div class="feature"><span class="icon">📍</span><h3>{s['f1_h']}</h3><p>{s['f1_p']}</p></div>
+        <div class="feature"><span class="icon">🎙️</span><h3>{s['f2_h']}</h3><p>{s['f2_p']}</p></div>
+        <div class="feature"><span class="icon">🤥</span><h3>{s['f3_h']}</h3><p>{s['f3_p']}</p></div>
+        <div class="feature"><span class="icon">🔒</span><h3>{s['f4_h']}</h3><p>{s['f4_p']}</p></div>
+        <div class="feature"><span class="icon">👨‍👩‍👧‍👦</span><h3>{s['f5_h']}</h3><p>{s['f5_p']}</p></div>
+        <div class="feature"><span class="icon">🌍</span><h3>{s['f6_h']}</h3><p>{s['f6_p']}</p></div>
       </div>'''
-    story_cards = '\n'.join(story_card(lang, st) for st in STORIES[:3])
-    body = f'''  <section class="hero">
-    <div class="hero-banner"><img src="/hero-banner.svg" alt=""></div>
-    <p class="hero-banner-note">{s['hero_banner_note']}</p>
-    <div class="wrap"><div class="hero-text">
-      <div class="eyebrow">{s['hero_eyebrow']}</div>
+    story_cards = ''.join(home_story_card(lang, st, i) for i, st in enumerate(STORIES[:5]))
+    journey_steps_html = ''.join(f'''<article class="journey-step">
+          <span>{time}</span>
+          <h3>{h}</h3>
+          <p>{p}</p>
+        </article>''' for time, h, p in j)
+    body = f'''  <section class="hero" id="top">
+    <div class="hero-photo" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">{s['hero_eyebrow']}</p>
       <h1>{s['hero_h1']}</h1>
-      <p class="lede">{s['hero_lede']}</p>
+      <p class="hero-lede">{s['hero_lede']}</p>
       <div class="hero-actions">
-        <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">{s['hero_btn_demo']}</a>
-        <a class="btn-secondary" href="/{lang}/roadmap.html">{s['hero_btn_roadmap']}</a>
+        <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">{s['hero_btn_demo']} <span>↗</span></a>
+        <a class="text-link" href="#reis">{s['hero_btn_roadmap']} <span>↓</span></a>
       </div>
-    </div></div>
+    </div>
+    <div class="hero-caption"><span>{s['hero_caption_coord']}</span><span>{s['hero_caption_note']}</span></div>
   </section>
 
-  <section class="wrap"><div class="stat-strip">
-    <div class="stat"><div class="num">{s['stat1_num']}</div><div class="lbl">{s['stat1_lbl']}</div></div>
-    <div class="stat"><div class="num">{s['stat2_num']}</div><div class="lbl">{s['stat2_lbl']}</div></div>
-    <div class="stat"><div class="num" id="stat-testers">—</div><div class="lbl">{s['stat3_lbl']}</div></div>
-    <div class="stat"><div class="num" id="stat-verhalen">—</div><div class="lbl">{s['stat4_lbl']}</div></div>
+  <section class="listening" id="luisteren">
+    <div class="section-label">{s['listen_label']}</div>
+    <div class="listening-copy">
+      <h2>{s['listen_h2']}</h2>
+      <p>{s['listen_p']}</p>
+    </div>
+    <div class="audio-experience">
+      <div class="audio-halo">
+        <span class="play-button">▶</span>
+      </div>
+      <div class="audio-meta">
+        <span>{s['listen_now']}</span>
+        <strong>{s['listen_title']}</strong>
+        <small>{s['listen_sub']}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="journey" id="reis">
+    <div class="journey-visual" aria-hidden="true">
+      <div class="window-frame">
+        <div class="window-photo"></div>
+        <span class="window-reflection"></span>
+      </div>
+      <div class="map-card">
+        <span class="lbl">{s['journey_route_label']}</span>
+        <strong>{s['journey_route_name']}</strong>
+        <div class="route-line"><i></i><i></i><i></i></div>
+        <span class="lbl">{s['journey_route_meta']}</span>
+      </div>
+    </div>
+    <div class="journey-narrative">
+      <div class="section-label">{s['journey_label']}</div>
+      {journey_steps_html}
+    </div>
+  </section>
+
+  <section class="block" style="padding-bottom:0;"><div class="wrap">
+    <div class="section-head"><div class="eyebrow">{s['steps_eyebrow']}</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">{s['steps_h2']}</h2></div>
+    {steps}
+    <div class="stat-strip">
+      <div class="stat"><div class="num">{s['stat1_num']}</div><div class="lbl">{s['stat1_lbl']}</div></div>
+      <div class="stat"><div class="num">{s['stat2_num']}</div><div class="lbl">{s['stat2_lbl']}</div></div>
+      <div class="stat"><div class="num" id="stat-testers">—</div><div class="lbl">{s['stat3_lbl']}</div></div>
+      <div class="stat"><div class="num" id="stat-verhalen">—</div><div class="lbl">{s['stat4_lbl']}</div></div>
+    </div>
   </div></section>
 
   <section class="block"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">{s['steps_eyebrow']}</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">{s['steps_h2']}</h2></div>
-    {steps}
-  </div></section>
-
-  <section class="block alt"><div class="wrap">
     <div class="section-head"><div class="eyebrow">{s['why_eyebrow']}</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">{s['why_h2']}</h2><p>{s['why_p']}</p></div>
     {features}
   </div></section>
 
-  <section class="block"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">{s['stories_eyebrow']}</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">{s['stories_h2']}</h2><p>{s['stories_p']}</p></div>
+  <section class="block" id="verhalen"><div class="wrap">
+    <div class="stories-head">
+      <div><div class="section-label">{s['stories_eyebrow']}</div><h2>{s['stories_h2']}</h2></div>
+      <p>{s['stories_p']}</p>
+    </div>
     <div class="story-grid">{story_cards}</div>
-    <p style="margin-top:20px;"><a class="btn-secondary" href="/{lang}/stories/">{s['stories_view_all']}</a></p>
+    <p style="margin-top:26px;"><a class="text-link on-paper" href="/{lang}/stories/">{s['stories_view_all']} <span>→</span></a></p>
   </div></section>
 
-  <section class="block"><div class="wrap"><div class="cta-band">
-    <h2>{s['cta_h']}</h2><p>{s['cta_p']}</p>
-    <a class="btn-primary" href="mailto:nimco@nentjes.nl">{s['cta_btn']}</a>
-  </div></div></section>
+  <section class="invitation" id="meenemen">
+    <div class="invitation-image" aria-hidden="true"></div>
+    <div class="invitation-content">
+      <p class="eyebrow on-photo">{s['invite_label']}</p>
+      <h2>{s['invite_h2']}</h2>
+      <p>{s['invite_p']}</p>
+      <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">{s['invite_btn']} <span>↗</span></a>
+    </div>
+  </section>
 '''
     title = {'nl': '2R (Second Route) — De reisgezel die vertelt wat je onderweg ziet',
              'en': '2R (Second Route) — The travel companion that narrates what you see',
@@ -735,9 +881,9 @@ def build_roadmap(lang):
         <div class="rm-marker"><span class="rm-status {status_css[key]}">{status_mark[key]}{label}</span></div>
         <div class="rm-body"><h3>{title_d[lang]}</h3><p>{desc_d[lang]}</p></div>
       </div>\n'''
-    body = f'''  <section class="hero" style="padding-bottom:20px;"><div class="wrap" style="max-width:720px;">
+    body = f'''  <section class="page-intro"><div class="wrap" style="max-width:720px;">
     <div class="eyebrow">{s['rm_eyebrow']}</div>
-    <h1 style="font-size:clamp(30px,4.4vw,44px); margin:18px 0 14px;">{s['rm_h1']}</h1>
+    <h1>{s['rm_h1']}</h1>
     <p class="lede">{s['rm_lede']}</p>
   </div></section>
 
@@ -785,13 +931,13 @@ def build_privacy(lang):
 def build_stories_index(lang):
     s = SITE[lang]
     cards = '\n'.join(story_card(lang, st) for st in STORIES)
-    body = f'''  <section class="hero" style="padding-bottom:20px;"><div class="wrap" style="max-width:720px;">
+    body = f'''  <section class="page-intro"><div class="wrap" style="max-width:720px;">
     <div class="eyebrow">{s['stories_index_eyebrow']}</div>
-    <h1 style="font-size:clamp(30px,4.4vw,44px); margin:18px 0 14px;">{s['stories_index_h1']}</h1>
+    <h1>{s['stories_index_h1']}</h1>
     <p class="lede">{s['stories_index_lede']}</p>
   </div></section>
   <section class="block"><div class="wrap">
-    <div class="story-grid">{cards}</div>
+    <div class="story-grid-simple">{cards}</div>
   </div></section>
 '''
     return page_shell(lang, f"{s['nav_stories']} — 2R (Second Route)", s['stories_index_lede'], 'stories', body)
