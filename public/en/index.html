@@ -69,33 +69,56 @@
   <section class="journey" id="reis">
     <div class="journey-visual" aria-hidden="true">
       <div class="window-frame">
-        <div class="window-photo"></div>
+        <div class="journey-scene active" data-scene="0" style="background-image:url('/images/europe-north-norway.jpg')"></div><div class="journey-scene" data-scene="1" style="background-image:url('/images/europe-west-france.jpg')"></div><div class="journey-scene" data-scene="2" style="background-image:url('/images/europe-east-czechia.jpg')"></div><div class="journey-scene" data-scene="3" style="background-image:url('/images/europe-south-italy.jpg')"></div>
         <span class="window-reflection"></span>
       </div>
       <div class="map-card">
-        <span class="lbl">Route 02</span>
-        <strong>Vecht region</strong>
+        <span class="lbl">Europe · Route 02</span>
+        <strong id="journey-region">Sognefjord, Norway</strong>
         <div class="route-line"><i></i><i></i><i></i></div>
-        <span class="lbl">31 km · three stories</span>
+        <span class="lbl">four compass points · one journey</span>
       </div>
     </div>
     <div class="journey-narrative">
-      <div class="section-label">02 · Ride along for a bit</div>
-      <article class="journey-step">
-          <span>08:42 · Departure</span>
-          <h3>The city falls quiet behind us.</h3>
-          <p>Route waits. At first there is only the sound of tyres on the road and the first light over the water.</p>
-        </article><article class="journey-step">
-          <span>08:57 · Along the Vecht</span>
-          <h3>"Look to your left."</h3>
-          <p>A country estate appears between the trees. The voice tells you who lived here, and why the river is lined with houses like it.</p>
-        </article><article class="journey-step">
-          <span>09:11 · A little later</span>
-          <h3>The story is still riding along.</h3>
-          <p>Someone in the car asks a question. Someone else remembers something. The road is the same, but the journey has changed.</p>
+      <div class="section-label">02 · Europe rides along with you</div>
+      <article class="journey-step" data-journey-stop="0">
+          <span>North · Sognefjord, Norway<br>06:50 · Along the fjord</span>
+          <h3>The morning begins where the mountains meet the water.</h3>
+          <p>Route tells how the ice shaped this road — thousands of years before we could ever drive it.</p>
+        </article><article class="journey-step" data-journey-stop="1">
+          <span>West · Burgundy, France<br>13:20 · After the rain</span>
+          <h3>An abbey appears between the plane trees.</h3>
+          <p>Not a postcard, but a village that still lives around stones that have kept stories for generations.</p>
+        </article><article class="journey-step" data-journey-stop="2">
+          <span>East · South Bohemia, Czechia<br>09:10 · Through the morning mist</span>
+          <h3>The tower turns the horizon into a chapter.</h3>
+          <p>The shape of the spire reveals a history that travelled from Vienna to this small hilltop town.</p>
+        </article><article class="journey-step" data-journey-stop="3">
+          <span>South · Puglia, Italy<br>19:12 · Among the olive trees</span>
+          <h3>The evening light brings everyone to a brief stillness.</h3>
+          <p>Then Route tells how people, stone and trees have learned to live here for centuries — with heat, drought and each other.</p>
         </article>
     </div>
   </section>
+
+  <script>
+  (function(){
+    var regions = ["Sognefjord, Norway", "Burgundy, France", "South Bohemia, Czechia", "Puglia, Italy"];
+    var scenes = document.querySelectorAll('.journey-scene');
+    var regionEl = document.getElementById('journey-region');
+    var steps = document.querySelectorAll('[data-journey-stop]');
+    if (!steps.length || !('IntersectionObserver' in window)) return;
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        var idx = Number(entry.target.dataset.journeyStop);
+        scenes.forEach(function(sc){ sc.classList.toggle('active', Number(sc.dataset.scene) === idx); });
+        if (regionEl && regions[idx]) regionEl.textContent = regions[idx];
+      });
+    }, { rootMargin: '-32% 0px -52% 0px', threshold: 0 });
+    steps.forEach(function(el){ observer.observe(el); });
+  })();
+  </script>
 
   <section class="block" style="padding-bottom:0;"><div class="wrap">
     <div class="section-head"><div class="eyebrow">How it works</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">From driving to listening, in three steps</h2></div>

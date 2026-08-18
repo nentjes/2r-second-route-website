@@ -69,33 +69,56 @@
   <section class="journey" id="reis">
     <div class="journey-visual" aria-hidden="true">
       <div class="window-frame">
-        <div class="window-photo"></div>
+        <div class="journey-scene active" data-scene="0" style="background-image:url('/images/europe-north-norway.jpg')"></div><div class="journey-scene" data-scene="1" style="background-image:url('/images/europe-west-france.jpg')"></div><div class="journey-scene" data-scene="2" style="background-image:url('/images/europe-east-czechia.jpg')"></div><div class="journey-scene" data-scene="3" style="background-image:url('/images/europe-south-italy.jpg')"></div>
         <span class="window-reflection"></span>
       </div>
       <div class="map-card">
-        <span class="lbl">Route 02</span>
-        <strong>Vecht-Region</strong>
+        <span class="lbl">Europa · Route 02</span>
+        <strong id="journey-region">Sognefjord, Norwegen</strong>
         <div class="route-line"><i></i><i></i><i></i></div>
-        <span class="lbl">31 km · drei Geschichten</span>
+        <span class="lbl">vier Himmelsrichtungen · eine Reise</span>
       </div>
     </div>
     <div class="journey-narrative">
-      <div class="section-label">02 · Fahr ein Stück mit</div>
-      <article class="journey-step">
-          <span>08:42 · Abfahrt</span>
-          <h3>Die Stadt wird still hinter uns.</h3>
-          <p>Route wartet. Zuerst ist da nur das Geräusch der Reifen auf der Straße und das erste Licht über dem Wasser.</p>
-        </article><article class="journey-step">
-          <span>08:57 · Entlang der Vecht</span>
-          <h3>„Schau mal nach links."</h3>
-          <p>Ein Landgut erscheint zwischen den Bäumen. Die Stimme erzählt, wer hier lebte und warum der Fluss voller solcher Häuser steht.</p>
-        </article><article class="journey-step">
-          <span>09:11 · Etwas später</span>
-          <h3>Die Geschichte fährt noch mit.</h3>
-          <p>Jemand im Auto stellt eine Frage. Ein anderer erinnert sich an etwas. Die Straße ist dieselbe, aber die Reise hat sich verändert.</p>
+      <div class="section-label">02 · Europa fährt mit dir mit</div>
+      <article class="journey-step" data-journey-stop="0">
+          <span>Norden · Sognefjord, Norwegen<br>06:50 · Entlang des Fjords</span>
+          <h3>Der Morgen beginnt dort, wo die Berge das Wasser berühren.</h3>
+          <p>Route erzählt, wie das Eis diesen Weg vorbereitet hat — Jahrtausende bevor wir ihn befahren konnten.</p>
+        </article><article class="journey-step" data-journey-stop="1">
+          <span>Westen · Burgund, Frankreich<br>13:20 · Nach dem Regen</span>
+          <h3>Eine Abtei erscheint zwischen den Platanen.</h3>
+          <p>Keine Postkarte, sondern ein Dorf, das noch immer um Steine herum lebt, die seit Generationen Geschichten bewahren.</p>
+        </article><article class="journey-step" data-journey-stop="2">
+          <span>Osten · Südböhmen, Tschechien<br>09:10 · Durch den Morgennebel</span>
+          <h3>Der Turm macht den Horizont zu einem Kapitel.</h3>
+          <p>Die Form der Turmspitze verrät eine Geschichte, die von Wien bis in dieses kleine Hügelstädtchen reiste.</p>
+        </article><article class="journey-step" data-journey-stop="3">
+          <span>Süden · Apulien, Italien<br>19:12 · Zwischen den Olivenbäumen</span>
+          <h3>Das Abendlicht bringt alle für einen Moment zur Ruhe.</h3>
+          <p>Dann erzählt Route, wie Menschen, Stein und Bäume hier seit Jahrhunderten lernen, mit Hitze, Trockenheit und einander zu leben.</p>
         </article>
     </div>
   </section>
+
+  <script>
+  (function(){
+    var regions = ["Sognefjord, Norwegen", "Burgund, Frankreich", "Südböhmen, Tschechien", "Apulien, Italien"];
+    var scenes = document.querySelectorAll('.journey-scene');
+    var regionEl = document.getElementById('journey-region');
+    var steps = document.querySelectorAll('[data-journey-stop]');
+    if (!steps.length || !('IntersectionObserver' in window)) return;
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        var idx = Number(entry.target.dataset.journeyStop);
+        scenes.forEach(function(sc){ sc.classList.toggle('active', Number(sc.dataset.scene) === idx); });
+        if (regionEl && regions[idx]) regionEl.textContent = regions[idx];
+      });
+    }, { rootMargin: '-32% 0px -52% 0px', threshold: 0 });
+    steps.forEach(function(el){ observer.observe(el); });
+  })();
+  </script>
 
   <section class="block" style="padding-bottom:0;"><div class="wrap">
     <div class="section-head"><div class="eyebrow">So funktioniert es</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">In drei Schritten vom Fahren zum Zuhören</h2></div>

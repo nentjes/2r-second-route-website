@@ -5,7 +5,7 @@
 in zes talen uit de data hieronder. Nieuw verhaal toevoegen? Voeg een
 item toe aan STORIES en run: python3 build.py
 """
-import os, html
+import os, html, json
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'public')
@@ -40,7 +40,7 @@ SITE = {
     listen_label='01 · Een stem naast je', listen_h2='De wereld buiten wordt<br>een verhaal binnen.',
     listen_p='Geen lijst met weetjes. Route kiest één betekenisvol verhaal, vertelt het rustig en laat daarna weer ruimte voor het landschap — en voor elkaar.',
     listen_now='Route vertelt', listen_title='De verborgen geschiedenis<br>van het landschap', listen_sub='Gidsmodus · echt fragment',
-    journey_label='02 · Rijd een stukje mee', journey_route_label='Route 02', journey_route_name='Vechtstreek', journey_route_meta='31 km · drie verhalen',
+    journey_label='02 · Europa rijdt met je mee', journey_route_label='Europa · Route 02', journey_route_meta='vier windstreken · één reis',
     invite_label='Voor de volgende keer dat je instapt', invite_h2='Wat zal Route op jouw<br>volgende reis vertellen?',
     invite_p='Neem een warme stem, een levend reisboek en een beetje verwondering met je mee.', invite_btn='Neem Route mee',
     footer_tagline='Niet de bestemming, maar de reis maakt ons wijs.',
@@ -84,7 +84,7 @@ SITE = {
     listen_label='01 · A voice beside you', listen_h2='The world outside becomes<br>a story within.',
     listen_p='No list of facts. Route picks one meaningful story, tells it calmly, then makes room again for the landscape — and for each other.',
     listen_now='Route is telling', listen_title='The hidden history<br>of the landscape', listen_sub='Guide mode · real fragment',
-    journey_label='02 · Ride along for a bit', journey_route_label='Route 02', journey_route_name='Vecht region', journey_route_meta='31 km · three stories',
+    journey_label='02 · Europe rides along with you', journey_route_label='Europe · Route 02', journey_route_meta='four compass points · one journey',
     invite_label='For the next time you get in', invite_h2='What will Route tell you<br>on your next trip?',
     invite_p='Bring a warm voice, a living travel journal, and a little wonder.', invite_btn='Take Route with you',
     footer_tagline='Not the destination — the journey makes us wise.',
@@ -128,7 +128,7 @@ SITE = {
     listen_label='01 · Eine Stimme neben dir', listen_h2='Die Welt draußen wird<br>zur Geschichte drinnen.',
     listen_p='Keine Liste von Fakten. Route wählt eine bedeutsame Geschichte, erzählt sie ruhig und lässt danach wieder Raum für die Landschaft — und füreinander.',
     listen_now='Route erzählt', listen_title='Die verborgene Geschichte<br>der Landschaft', listen_sub='Guide-Modus · echter Ausschnitt',
-    journey_label='02 · Fahr ein Stück mit', journey_route_label='Route 02', journey_route_name='Vecht-Region', journey_route_meta='31 km · drei Geschichten',
+    journey_label='02 · Europa fährt mit dir mit', journey_route_label='Europa · Route 02', journey_route_meta='vier Himmelsrichtungen · eine Reise',
     invite_label='Für das nächste Mal, wenn du einsteigst', invite_h2='Was wird Route dir auf<br>deiner nächsten Reise erzählen?',
     invite_p='Nimm eine warme Stimme, ein lebendiges Reisetagebuch und ein bisschen Staunen mit.', invite_btn='Nimm Route mit',
     footer_tagline='Nicht das Ziel — die Reise macht uns weise.',
@@ -172,7 +172,7 @@ SITE = {
     listen_label='01 · Une voix à vos côtés', listen_h2='Le monde extérieur devient<br>une histoire intérieure.',
     listen_p='Pas une liste de faits. Route choisit une histoire qui a du sens, la raconte calmement, puis laisse de nouveau place au paysage — et à vous.',
     listen_now='Route raconte', listen_title="L'histoire cachée<br>du paysage", listen_sub='Mode guide · extrait réel',
-    journey_label='02 · Faire un bout de route', journey_route_label='Itinéraire 02', journey_route_name='Région du Vecht', journey_route_meta='31 km · trois histoires',
+    journey_label="02 · L'Europe vous accompagne", journey_route_label='Europe · Itinéraire 02', journey_route_meta='quatre points cardinaux · un seul voyage',
     invite_label='Pour la prochaine fois que vous montez en voiture', invite_h2='Que vous racontera Route<br>lors de votre prochain trajet ?',
     invite_p="Emportez une voix chaleureuse, un carnet de voyage vivant et un peu d'émerveillement.", invite_btn='Emportez Route avec vous',
     footer_tagline="Pas la destination — c'est le voyage qui nous rend sages.",
@@ -216,7 +216,7 @@ SITE = {
     listen_label='01 · Una voz a tu lado', listen_h2='El mundo de fuera se convierte<br>en una historia dentro.',
     listen_p='Sin listas de datos. Route elige una historia con sentido, la cuenta con calma y luego vuelve a dejar espacio para el paisaje —y para vosotros.',
     listen_now='Route está contando', listen_title='La historia oculta<br>del paisaje', listen_sub='Modo guía · fragmento real',
-    journey_label='02 · Recorre un tramo con nosotros', journey_route_label='Ruta 02', journey_route_name='Región del Vecht', journey_route_meta='31 km · tres historias',
+    journey_label='02 · Europa viaja contigo', journey_route_label='Europa · Ruta 02', journey_route_meta='cuatro puntos cardinales · un solo viaje',
     invite_label='Para la próxima vez que subas al coche', invite_h2='¿Qué te contará Route<br>en tu próximo viaje?',
     invite_p='Llévate una voz cálida, un diario de viaje vivo y un poco de asombro.', invite_btn='Llévate a Route',
     footer_tagline='No el destino — el viaje es lo que nos hace sabios.',
@@ -260,7 +260,7 @@ SITE = {
     listen_label='01 · Uma voz ao seu lado', listen_h2='O mundo de fora se torna<br>uma história por dentro.',
     listen_p='Nenhuma lista de fatos. A Route escolhe uma história com significado, narra com calma e depois abre espaço de novo para a paisagem — e para vocês.',
     listen_now='A Route está narrando', listen_title='A história escondida<br>da paisagem', listen_sub='Modo guia · trecho real',
-    journey_label='02 · Ande um trecho com a gente', journey_route_label='Rota 02', journey_route_name='Região do Vecht', journey_route_meta='31 km · três histórias',
+    journey_label='02 · A Europa viaja com você', journey_route_label='Europa · Rota 02', journey_route_meta='quatro pontos cardeais · uma só viagem',
     invite_label='Para a próxima vez que você entrar no carro', invite_h2='O que a Route vai contar<br>na sua próxima viagem?',
     invite_p='Leve uma voz calorosa, um diário de viagem vivo e um pouco de encantamento.', invite_btn='Leve a Route com você',
     footer_tagline='Não o destino — a viagem é o que nos torna sábios.',
@@ -436,40 +436,50 @@ PRIVACY = {
 }
 
 # ---------------------------------------------------------------------------
-# De "rijd een stukje mee"-sectie op de homepage: drie momenten van een
-# fictieve, illustratieve rit (sfeerbeeld, geen letterlijke reisverhaal-
-# claim) — per taal (tijd, kop, tekst).
+# De "rijd een stukje mee"-sectie op de homepage: vier windstreken van
+# Europa, elk met een eigen scène-foto die meebeweegt met de tekst terwijl
+# je scrollt (net als het gekozen Codex-voorbeeld). Per taal: lijst van
+# (regio, tijd, kop, tekst); de afbeelding is per windstreek hetzelfde
+# volgnummer in alle talen (zie EUROPE_IMAGES).
 # ---------------------------------------------------------------------------
-JOURNEY = {
+EUROPE_IMAGES = ['europe-north-norway.jpg', 'europe-west-france.jpg', 'europe-east-czechia.jpg', 'europe-south-italy.jpg']
+
+EUROPE_STOPS = {
 'nl': [
-    ('08:42 · Vertrek', 'De stad wordt stil achter ons.', 'Route wacht. Eerst is er alleen het geluid van banden op de weg en het eerste licht boven het water.'),
-    ('08:57 · Langs de Vecht', '"Kijk eens naar links."', 'Een buitenplaats verschijnt tussen de bomen. De stem vertelt wie hier woonde en waarom de rivier vol staat met zulke huizen.'),
-    ('09:11 · Even later', 'Het verhaal rijdt nog mee.', 'Iemand in de auto stelt een vraag. Een ander herinnert zich iets. De weg is dezelfde, maar de reis is veranderd.'),
+    ('Noord · Sognefjord, Noorwegen', '06:50 · Langs het fjord', 'De ochtend begint waar de bergen het water raken.', 'Route vertelt hoe het ijs hier de weg heeft voorbereid — duizenden jaren voordat wij hem konden rijden.'),
+    ('West · Bourgogne, Frankrijk', '13:20 · Na de regen', 'Een abdij verschijnt tussen de platanen.', 'Geen ansichtkaart, maar een dorp dat nog altijd leeft rond stenen die al generaties verhalen bewaren.'),
+    ('Oost · Zuid-Bohemen, Tsjechië', '09:10 · Door de ochtendmist', 'De toren maakt van de horizon een hoofdstuk.', 'De vorm van de spits verraadt een geschiedenis die vanuit Wenen naar deze kleine heuvelstad reisde.'),
+    ('Zuid · Puglia, Italië', '19:12 · Tussen de olijfbomen', 'Het avondlicht brengt iedereen even tot stilte.', 'Dan vertelt Route hoe mensen, steen en bomen hier al eeuwen leren leven met hitte, droogte en elkaar.'),
 ],
 'en': [
-    ('08:42 · Departure', 'The city falls quiet behind us.', 'Route waits. At first there is only the sound of tyres on the road and the first light over the water.'),
-    ('08:57 · Along the Vecht', '"Look to your left."', 'A country estate appears between the trees. The voice tells you who lived here, and why the river is lined with houses like it.'),
-    ('09:11 · A little later', 'The story is still riding along.', 'Someone in the car asks a question. Someone else remembers something. The road is the same, but the journey has changed.'),
+    ('North · Sognefjord, Norway', '06:50 · Along the fjord', 'The morning begins where the mountains meet the water.', 'Route tells how the ice shaped this road — thousands of years before we could ever drive it.'),
+    ('West · Burgundy, France', '13:20 · After the rain', 'An abbey appears between the plane trees.', 'Not a postcard, but a village that still lives around stones that have kept stories for generations.'),
+    ('East · South Bohemia, Czechia', '09:10 · Through the morning mist', 'The tower turns the horizon into a chapter.', 'The shape of the spire reveals a history that travelled from Vienna to this small hilltop town.'),
+    ('South · Puglia, Italy', '19:12 · Among the olive trees', 'The evening light brings everyone to a brief stillness.', 'Then Route tells how people, stone and trees have learned to live here for centuries — with heat, drought and each other.'),
 ],
 'de': [
-    ('08:42 · Abfahrt', 'Die Stadt wird still hinter uns.', 'Route wartet. Zuerst ist da nur das Geräusch der Reifen auf der Straße und das erste Licht über dem Wasser.'),
-    ('08:57 · Entlang der Vecht', '„Schau mal nach links."', 'Ein Landgut erscheint zwischen den Bäumen. Die Stimme erzählt, wer hier lebte und warum der Fluss voller solcher Häuser steht.'),
-    ('09:11 · Etwas später', 'Die Geschichte fährt noch mit.', 'Jemand im Auto stellt eine Frage. Ein anderer erinnert sich an etwas. Die Straße ist dieselbe, aber die Reise hat sich verändert.'),
+    ('Norden · Sognefjord, Norwegen', '06:50 · Entlang des Fjords', 'Der Morgen beginnt dort, wo die Berge das Wasser berühren.', 'Route erzählt, wie das Eis diesen Weg vorbereitet hat — Jahrtausende bevor wir ihn befahren konnten.'),
+    ('Westen · Burgund, Frankreich', '13:20 · Nach dem Regen', 'Eine Abtei erscheint zwischen den Platanen.', 'Keine Postkarte, sondern ein Dorf, das noch immer um Steine herum lebt, die seit Generationen Geschichten bewahren.'),
+    ('Osten · Südböhmen, Tschechien', '09:10 · Durch den Morgennebel', 'Der Turm macht den Horizont zu einem Kapitel.', 'Die Form der Turmspitze verrät eine Geschichte, die von Wien bis in dieses kleine Hügelstädtchen reiste.'),
+    ('Süden · Apulien, Italien', '19:12 · Zwischen den Olivenbäumen', 'Das Abendlicht bringt alle für einen Moment zur Ruhe.', 'Dann erzählt Route, wie Menschen, Stein und Bäume hier seit Jahrhunderten lernen, mit Hitze, Trockenheit und einander zu leben.'),
 ],
 'fr': [
-    ('08 h 42 · Départ', 'La ville devient silencieuse derrière nous.', "Route attend. D'abord, il n'y a que le bruit des pneus sur la route et la première lumière sur l'eau."),
-    ('08 h 57 · Le long du Vecht', '« Regardez à gauche. »', "Une maison de campagne apparaît entre les arbres. La voix raconte qui y vivait, et pourquoi la rivière est bordée de telles demeures."),
-    ('09 h 11 · Un peu plus tard', "L'histoire continue de vous accompagner.", "Quelqu'un dans la voiture pose une question. Un autre se souvient de quelque chose. La route est la même, mais le voyage a changé."),
+    ('Nord · Sognefjord, Norvège', '06 h 50 · Le long du fjord', "Le matin commence là où les montagnes rencontrent l'eau.", "Route raconte comment la glace a façonné cette route — des millénaires avant que nous puissions la parcourir."),
+    ('Ouest · Bourgogne, France', '13 h 20 · Après la pluie', 'Une abbaye apparaît entre les platanes.', "Pas une carte postale, mais un village qui vit encore autour de pierres gardiennes d'histoires depuis des générations."),
+    ('Est · Bohême du Sud, Tchéquie', '09 h 10 · Dans la brume matinale', "La tour transforme l'horizon en chapitre.", "La forme de la flèche trahit une histoire qui a voyagé de Vienne jusqu'à cette petite ville sur la colline."),
+    ('Sud · Pouilles, Italie', '19 h 12 · Entre les oliviers', "La lumière du soir apaise chacun, l'espace d'un instant.", "Route raconte alors comment les habitants, la pierre et les arbres apprennent ici depuis des siècles à vivre avec la chaleur, la sécheresse et les uns les autres."),
 ],
 'es': [
-    ('08:42 · Salida', 'La ciudad queda en silencio detrás de nosotros.', 'Route espera. Al principio solo se oye el sonido de los neumáticos sobre el asfalto y la primera luz sobre el agua.'),
-    ('08:57 · Junto al Vecht', '«Mira a la izquierda.»', 'Una finca aparece entre los árboles. La voz cuenta quién vivió aquí y por qué el río está lleno de casas así.'),
-    ('09:11 · Un poco más tarde', 'La historia sigue con nosotros.', 'Alguien en el coche hace una pregunta. Otro recuerda algo. La carretera es la misma, pero el viaje ha cambiado.'),
+    ('Norte · Sognefjord, Noruega', '06:50 · A lo largo del fiordo', 'La mañana empieza donde las montañas tocan el agua.', 'Route cuenta cómo el hielo preparó esta carretera —miles de años antes de que pudiéramos recorrerla.'),
+    ('Oeste · Borgoña, Francia', '13:20 · Después de la lluvia', 'Una abadía aparece entre los plátanos.', 'No es una postal, sino un pueblo que aún vive alrededor de piedras que guardan historias desde hace generaciones.'),
+    ('Este · Bohemia del Sur, Chequia', '09:10 · Entre la niebla matinal', 'La torre convierte el horizonte en un capítulo.', 'La forma de la aguja delata una historia que viajó desde Viena hasta esta pequeña ciudad en la colina.'),
+    ('Sur · Apulia, Italia', '19:12 · Entre los olivos', 'La luz del atardecer trae a todos, por un momento, la calma.', 'Entonces Route cuenta cómo las personas, la piedra y los árboles llevan siglos aprendiendo a convivir aquí con el calor, la sequía y los unos con los otros.'),
 ],
 'pt': [
-    ('08:42 · Partida', 'A cidade fica em silêncio atrás de nós.', 'A Route espera. No início, só se ouve o som dos pneus na estrada e a primeira luz sobre a água.'),
-    ('08:57 · Ao longo do Vecht', '"Olhe para a esquerda."', 'Uma casa de campo aparece entre as árvores. A voz conta quem viveu ali, e por que o rio está cheio de casas assim.'),
-    ('09:11 · Um pouco depois', 'A história ainda viaja com a gente.', 'Alguém no carro faz uma pergunta. Outro se lembra de algo. A estrada é a mesma, mas a viagem mudou.'),
+    ('Norte · Sognefjord, Noruega', '06:50 · Ao longo do fiorde', 'A manhã começa onde as montanhas tocam a água.', 'A Route conta como o gelo preparou esta estrada — milhares de anos antes de podermos percorrê-la.'),
+    ('Oeste · Borgonha, França', '13:20 · Depois da chuva', 'Uma abadia aparece entre os plátanos.', 'Não é um cartão-postal, mas uma vila que ainda vive em torno de pedras que guardam histórias há gerações.'),
+    ('Leste · Boêmia do Sul, Tchéquia', '09:10 · Através da névoa da manhã', 'A torre transforma o horizonte num capítulo.', 'A forma da torre revela uma história que viajou de Viena até esta pequena cidade na colina.'),
+    ('Sul · Apúlia, Itália', '19:12 · Entre as oliveiras', 'A luz da tarde traz a todos, por um instante, quietude.', 'Então a Route conta como pessoas, pedra e árvores aprendem aqui há séculos a conviver com o calor, a seca e uns com os outros.'),
 ],
 }
 
@@ -743,7 +753,7 @@ def home_story_card(lang, st, index):
 
 def build_home(lang):
     s = SITE[lang]
-    j = JOURNEY[lang]
+    stops = EUROPE_STOPS[lang]
     steps = f'''<div class="steps">
         <div class="step"><span class="num-badge">I</span><h3>{s['step1_h']}</h3><p>{s['step1_p']}</p></div>
         <div class="step"><span class="num-badge">II</span><h3>{s['step2_h']}</h3><p>{s['step2_p']}</p></div>
@@ -758,11 +768,18 @@ def build_home(lang):
         <div class="feature"><span class="icon">🌍</span><h3>{s['f6_h']}</h3><p>{s['f6_p']}</p></div>
       </div>'''
     story_cards = ''.join(home_story_card(lang, st, i) for i, st in enumerate(STORIES[:5]))
-    journey_steps_html = ''.join(f'''<article class="journey-step">
-          <span>{time}</span>
+
+    journey_scenes_html = ''.join(
+        f'<div class="journey-scene{" active" if i == 0 else ""}" data-scene="{i}" style="background-image:url(\'/images/{EUROPE_IMAGES[i]}\')"></div>'
+        for i in range(len(stops))
+    )
+    journey_steps_html = ''.join(f'''<article class="journey-step" data-journey-stop="{i}">
+          <span>{region}<br>{time}</span>
           <h3>{h}</h3>
           <p>{p}</p>
-        </article>''' for time, h, p in j)
+        </article>''' for i, (region, time, h, p) in enumerate(stops))
+    first_region_short = stops[0][0].split(' · ')[-1]
+
     body = f'''  <section class="hero" id="top">
     <div class="hero-photo" aria-hidden="true"></div>
     <div class="hero-shade" aria-hidden="true"></div>
@@ -799,12 +816,12 @@ def build_home(lang):
   <section class="journey" id="reis">
     <div class="journey-visual" aria-hidden="true">
       <div class="window-frame">
-        <div class="window-photo"></div>
+        {journey_scenes_html}
         <span class="window-reflection"></span>
       </div>
       <div class="map-card">
         <span class="lbl">{s['journey_route_label']}</span>
-        <strong>{s['journey_route_name']}</strong>
+        <strong id="journey-region">{first_region_short}</strong>
         <div class="route-line"><i></i><i></i><i></i></div>
         <span class="lbl">{s['journey_route_meta']}</span>
       </div>
@@ -814,6 +831,25 @@ def build_home(lang):
       {journey_steps_html}
     </div>
   </section>
+
+  <script>
+  (function(){{
+    var regions = {json.dumps([stop[0].split(' · ')[-1] for stop in stops], ensure_ascii=False)};
+    var scenes = document.querySelectorAll('.journey-scene');
+    var regionEl = document.getElementById('journey-region');
+    var steps = document.querySelectorAll('[data-journey-stop]');
+    if (!steps.length || !('IntersectionObserver' in window)) return;
+    var observer = new IntersectionObserver(function(entries){{
+      entries.forEach(function(entry){{
+        if (!entry.isIntersecting) return;
+        var idx = Number(entry.target.dataset.journeyStop);
+        scenes.forEach(function(sc){{ sc.classList.toggle('active', Number(sc.dataset.scene) === idx); }});
+        if (regionEl && regions[idx]) regionEl.textContent = regions[idx];
+      }});
+    }}, {{ rootMargin: '-32% 0px -52% 0px', threshold: 0 }});
+    steps.forEach(function(el){{ observer.observe(el); }});
+  }})();
+  </script>
 
   <section class="block" style="padding-bottom:0;"><div class="wrap">
     <div class="section-head"><div class="eyebrow">{s['steps_eyebrow']}</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">{s['steps_h2']}</h2></div>
