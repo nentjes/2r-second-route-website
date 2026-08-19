@@ -872,7 +872,9 @@ def build_home(lang):
     first_region_short = stops[0][0].split(' · ')[-1]
 
     body = f'''  <section class="hero" id="top">
-    <div class="hero-photo" aria-hidden="true"></div>
+    <video class="hero-photo" aria-hidden="true" autoplay muted loop playsinline preload="auto" poster="/images/europe-south-italy.jpg">
+      <source src="/images/hero-drive.mp4" type="video/mp4">
+    </video>
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-content">
       <p class="eyebrow on-photo">{s['hero_eyebrow']}</p>
