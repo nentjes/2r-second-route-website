@@ -74,7 +74,8 @@
 
       <h2 style="font-size:19px; margin-top:34px;">Ubicación</h2>
       <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Tu ubicación GPS se usa para determinar qué historias son relevantes.</li>
-<li>Tu ubicación <strong>nunca se almacena</strong> en nuestros servidores ni se registra. Cada solicitud al servidor contiene solo el nombre y el contexto de un lugar concreto — sin historial de ubicación, sin registro de trayectos.</li></ul>
+<li><strong>Durante esta fase de pruebas</strong> registramos deliberadamente más información de lo habitual — incluida tu posición GPS, dirección y velocidad en el momento de generar una historia — para detectar y corregir errores e incoherencias en las historias. Esto solo se aplica a los testers que lo han aceptado, nunca se comparte con terceros, y termina en cuanto la app pase a una versión de producción pública.</li>
+<li><strong>En el lanzamiento público</strong> volverá a aplicarse la promesa completa: tu ubicación nunca se almacena en nuestros servidores ni se registra. Cada solicitud al servidor contendrá entonces solo el nombre y el contexto de un lugar concreto — sin historial de ubicación, sin registro de trayectos.</li></ul>
 
       <h2 style="font-size:19px; margin-top:34px;">Historias y voz (encargados del tratamiento)</h2>
       <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Para generar historias enviamos nombres de lugares y contexto breve a <strong>Google (API de Gemini)</strong>.</li>
