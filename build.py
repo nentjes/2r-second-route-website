@@ -873,7 +873,7 @@ def build_home(lang):
 
     body = f'''  <section class="hero" id="top">
     <video class="hero-photo" aria-hidden="true" autoplay muted loop playsinline preload="auto" poster="/images/europe-south-italy.jpg">
-      <source src="/images/hero-drive.mp4" type="video/mp4">
+      <source src="/images/hero-drive-loop.mp4" type="video/mp4">
     </video>
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-content">
