@@ -1064,48 +1064,145 @@ def build_privacy(lang):
     return page_shell(lang, p['title'], p['intro'][:150], 'privacy', body)
 
 # --- Live verhalen uit de app (goedgekeurd op de besloten leespagina) ------
+# Zoekbaar en met kaart, zodat het archief bruikbaar blijft als het groeit.
 LIVE_STORIES_LABELS = {
-    'nl': dict(kop='Vers van onderweg', lede='Deze verhalen zijn onlangs door 2R verteld tijdens echte ritten en door ons nagelezen voordat ze hier kwamen.', leeg='Nog geen verhalen vrijgegeven — kom straks terug.'),
-    'en': dict(kop='Fresh from the road', lede='These stories were recently told by 2R on real journeys, and checked by us before they appeared here.', leeg='No stories released yet — check back soon.'),
-    'de': dict(kop='Frisch von unterwegs', lede='Diese Geschichten hat 2R kürzlich auf echten Fahrten erzählt; wir haben sie geprüft, bevor sie hier erschienen.', leeg='Noch keine Geschichten freigegeben — schau später wieder vorbei.'),
-    'fr': dict(kop='Fraîchement récoltées', lede='Ces récits ont été racontés récemment par 2R lors de vrais trajets, et vérifiés par nos soins avant de paraître ici.', leeg="Aucun récit publié pour l'instant — revenez bientôt."),
-    'es': dict(kop='Recién llegadas del camino', lede='2R contó estas historias hace poco en viajes reales, y las revisamos antes de publicarlas aquí.', leeg='Todavía no hay historias publicadas — vuelve pronto.'),
-    'pt': dict(kop='Fresquinhas da estrada', lede='Estas histórias foram contadas recentemente pelo 2R em viagens reais e revistas por nós antes de aparecerem aqui.', leeg='Ainda não há histórias publicadas — volte em breve.'),
+    'nl': {'kop': 'Vers van onderweg', 'lede': 'Deze verhalen zijn onderweg door 2R verteld en door ons nagelezen. Zoek op een plaats, een streek, een land of gewoon op een woord.', 'zoek': 'Zoek op plaats, streek, land of woord…', 'alles': 'Alles', 'leeg': 'Niets gevonden — probeer een ander woord.', 'nog': 'Nog geen verhalen vrijgegeven.', 'resultaat': 'verhalen', 'kaart': 'Op de kaart'},
+    'en': {'kop': 'Fresh from the road', 'lede': 'These stories were told by 2R along the way and checked by us. Search by place, region, country or simply a word.', 'zoek': 'Search place, region, country or word…', 'alles': 'All', 'leeg': 'Nothing found — try another word.', 'nog': 'No stories released yet.', 'resultaat': 'stories', 'kaart': 'On the map'},
+    'de': {'kop': 'Frisch von unterwegs', 'lede': 'Diese Geschichten hat 2R unterwegs erzählt; wir haben sie geprüft. Suche nach Ort, Region, Land oder einfach einem Wort.', 'zoek': 'Ort, Region, Land oder Wort suchen…', 'alles': 'Alle', 'leeg': 'Nichts gefunden — versuch ein anderes Wort.', 'nog': 'Noch keine Geschichten freigegeben.', 'resultaat': 'Geschichten', 'kaart': 'Auf der Karte'},
+    'fr': {'kop': 'Fraîchement récoltées', 'lede': 'Ces récits ont été racontés par 2R en chemin, puis vérifiés par nos soins. Cherchez par lieu, région, pays ou simplement un mot.', 'zoek': 'Chercher un lieu, une région, un pays ou un mot…', 'alles': 'Tout', 'leeg': 'Rien trouvé — essayez un autre mot.', 'nog': "Aucun récit publié pour l'instant.", 'resultaat': 'récits', 'kaart': 'Sur la carte'},
+    'es': {'kop': 'Recién llegadas del camino', 'lede': '2R contó estas historias por el camino y nosotros las revisamos. Busca por lugar, comarca, país o simplemente una palabra.', 'zoek': 'Busca lugar, comarca, país o palabra…', 'alles': 'Todo', 'leeg': 'No se encontró nada — prueba otra palabra.', 'nog': 'Todavía no hay historias publicadas.', 'resultaat': 'historias', 'kaart': 'En el mapa'},
+    'pt': {'kop': 'Fresquinhas da estrada', 'lede': 'Estas histórias foram contadas pelo 2R durante a viagem e revistas por nós. Procure por lugar, região, país ou apenas uma palavra.', 'zoek': 'Procurar lugar, região, país ou palavra…', 'alles': 'Tudo', 'leeg': 'Nada encontrado — tente outra palavra.', 'nog': 'Ainda não há histórias publicadas.', 'resultaat': 'histórias', 'kaart': 'No mapa'},
 }
 
 LIVE_STORIES_API = 'https://mapsinfo.roelnentjes.workers.dev/api/published'
 
-def live_stories_section(lang):
-    L = LIVE_STORIES_LABELS[lang]
-    return f"""  <section class="block" id="live-verhalen"><div class="wrap">
-    <div class="eyebrow">{L['kop']}</div>
-    <p class="lede" style="max-width:60ch;margin-bottom:28px;">{L['lede']}</p>
-    <div id="live-lijst" class="story-grid-simple"><p style="color:var(--text-dim);">…</p></div>
+LIVE_TEMPLATE = """  <section class="block" id="live-verhalen"><div class="wrap">
+    <div class="eyebrow">__KOP__</div>
+    <p class="lede" style="max-width:62ch;margin-bottom:22px;">__LEDE__</p>
+
+    <div class="verhaal-zoek">
+      <input type="search" id="vz-zoek" placeholder="__ZOEK__" autocomplete="off">
+      <div id="vz-chips" class="vz-chips"></div>
+      <div id="vz-telling" class="vz-telling"></div>
+    </div>
+
+    <div id="vz-kaart" class="vz-kaart" aria-label="__KAART__"></div>
+    <div id="live-lijst" class="story-grid-simple"></div>
   </div></section>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-  (async function () {{
-    const doel = document.getElementById('live-lijst');
-    try {{
-      const r = await fetch({LIVE_STORIES_API!r});
-      if (!r.ok) throw new Error('offline');
-      const d = await r.json();
-      if (!d.verhalen || !d.verhalen.length) {{
-        doel.innerHTML = '<p style="color:var(--text-dim);">{L['leeg']}</p>';
-        return;
-      }}
-      const esc = s => String(s || '').replace(/[&<>"]/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
-      doel.innerHTML = d.verhalen.map(v => `
-        <article class="story-card">
-          <div class="story-card-meta">${{esc(v.gebied)}}${{v.onderwerp ? ' · ' + esc(v.onderwerp) : ''}}</div>
-          <h3>${{esc(v.plek)}}</h3>
-          <p>${{esc(v.tekst)}}</p>
-        </article>`).join('');
-    }} catch (e) {{
-      doel.innerHTML = '<p style="color:var(--text-dim);">{L['leeg']}</p>';
-    }}
-  }})();
+  (function () {
+    var API = "__API__";
+    var T = { leeg: "__LEEG__", nog: "__NOG__", resultaat: "__RESULTAAT__", alles: "__ALLES__" };
+    var lijst = document.getElementById('live-lijst');
+    var chips = document.getElementById('vz-chips');
+    var telling = document.getElementById('vz-telling');
+    var zoekveld = document.getElementById('vz-zoek');
+    var kaartEl = document.getElementById('vz-kaart');
+    var kaart = null, laag = null, timer = null;
+    var filter = { q: '', land: '', onderwerp: '' };
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
+    }
+
+    function toonKaart(verhalen) {
+      var metPunt = verhalen.filter(function (v) { return v.lat && v.lng; });
+      if (!metPunt.length) { kaartEl.style.display = 'none'; return; }
+      kaartEl.style.display = 'block';
+      if (!kaart) {
+        kaart = L.map(kaartEl, { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 18
+        }).addTo(kaart);
+      }
+      if (laag) kaart.removeLayer(laag);
+      laag = L.layerGroup(metPunt.map(function (v) {
+        return L.marker([v.lat, v.lng]).bindPopup(
+          '<b>' + esc(v.plek) + '</b><br>' + esc(v.gebied) +
+          '<br><a href="#verhaal-' + v.id + '">lees het verhaal</a>'
+        );
+      })).addTo(kaart);
+      var bounds = L.latLngBounds(metPunt.map(function (v) { return [v.lat, v.lng]; }));
+      kaart.fitBounds(bounds, { padding: [40, 40], maxZoom: 11 });
+    }
+
+    function toonChips(f) {
+      var html = '';
+      function groep(items, sleutel) {
+        return items.map(function (it) {
+          var actief = filter[sleutel] === it.waarde ? ' actief' : '';
+          return '<button class="vz-chip' + actief + '" data-sleutel="' + sleutel +
+                 '" data-waarde="' + esc(it.waarde) + '">' + esc(it.waarde) +
+                 ' <span>' + it.n + '</span></button>';
+        }).join('');
+      }
+      var leeg = !filter.land && !filter.onderwerp;
+      html += '<button class="vz-chip' + (leeg ? ' actief' : '') + '" data-sleutel="wis">' + esc(T.alles) + '</button>';
+      html += groep(f.landen || [], 'land');
+      html += groep(f.onderwerpen || [], 'onderwerp');
+      chips.innerHTML = html;
+    }
+
+    async function laden() {
+      var p = new URLSearchParams();
+      if (filter.q) p.set('q', filter.q);
+      if (filter.land) p.set('land', filter.land);
+      if (filter.onderwerp) p.set('onderwerp', filter.onderwerp);
+      try {
+        var r = await fetch(API + (p.toString() ? '?' + p.toString() : ''));
+        if (!r.ok) throw new Error('offline');
+        var d = await r.json();
+        if (!d.totaal) { lijst.innerHTML = '<p class="vz-leeg">' + esc(T.nog) + '</p>'; kaartEl.style.display = 'none'; telling.textContent = ''; return; }
+        toonChips(d.facetten || {});
+        telling.textContent = d.gevonden + ' / ' + d.totaal + ' ' + T.resultaat;
+        if (!d.verhalen.length) { lijst.innerHTML = '<p class="vz-leeg">' + esc(T.leeg) + '</p>'; kaartEl.style.display = 'none'; return; }
+        lijst.innerHTML = d.verhalen.map(function (v) {
+          return '<article class="story-card" id="verhaal-' + v.id + '">' +
+            '<div class="story-card-meta">' + esc(v.gebied) + (v.land ? ' · ' + esc(v.land) : '') +
+            (v.onderwerp ? ' · ' + esc(v.onderwerp) : '') + '</div>' +
+            '<h3>' + esc(v.plek) + '</h3><p>' + esc(v.tekst) + '</p></article>';
+        }).join('');
+        toonKaart(d.verhalen);
+      } catch (e) {
+        lijst.innerHTML = '<p class="vz-leeg">' + esc(T.nog) + '</p>';
+        kaartEl.style.display = 'none';
+      }
+    }
+
+    zoekveld.addEventListener('input', function (e) {
+      clearTimeout(timer);
+      timer = setTimeout(function () { filter.q = e.target.value.trim(); laden(); }, 300);
+    });
+    chips.addEventListener('click', function (e) {
+      var knop = e.target.closest('.vz-chip');
+      if (!knop) return;
+      if (knop.dataset.sleutel === 'wis') { filter.land = ''; filter.onderwerp = ''; }
+      else {
+        var s = knop.dataset.sleutel;
+        filter[s] = filter[s] === knop.dataset.waarde ? '' : knop.dataset.waarde;
+      }
+      laden();
+    });
+    laden();
+  })();
   </script>
 """
+
+
+def live_stories_section(lang):
+    L = LIVE_STORIES_LABELS[lang]
+    return (LIVE_TEMPLATE
+            .replace('__KOP__', L['kop']).replace('__LEDE__', L['lede'])
+            .replace('__ZOEK__', L['zoek']).replace('__ALLES__', L['alles'])
+            .replace('__LEEG__', L['leeg']).replace('__NOG__', L['nog'])
+            .replace('__RESULTAAT__', L['resultaat']).replace('__KAART__', L['kaart'])
+            .replace('__API__', LIVE_STORIES_API))
+
 
 def build_stories_index(lang):
     s = SITE[lang]

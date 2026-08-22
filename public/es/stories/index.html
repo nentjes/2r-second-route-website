@@ -110,30 +110,117 @@
   </div></section>
   <section class="block" id="live-verhalen"><div class="wrap">
     <div class="eyebrow">Recién llegadas del camino</div>
-    <p class="lede" style="max-width:60ch;margin-bottom:28px;">2R contó estas historias hace poco en viajes reales, y las revisamos antes de publicarlas aquí.</p>
-    <div id="live-lijst" class="story-grid-simple"><p style="color:var(--text-dim);">…</p></div>
+    <p class="lede" style="max-width:62ch;margin-bottom:22px;">2R contó estas historias por el camino y nosotros las revisamos. Busca por lugar, comarca, país o simplemente una palabra.</p>
+
+    <div class="verhaal-zoek">
+      <input type="search" id="vz-zoek" placeholder="Busca lugar, comarca, país o palabra…" autocomplete="off">
+      <div id="vz-chips" class="vz-chips"></div>
+      <div id="vz-telling" class="vz-telling"></div>
+    </div>
+
+    <div id="vz-kaart" class="vz-kaart" aria-label="En el mapa"></div>
+    <div id="live-lijst" class="story-grid-simple"></div>
   </div></section>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
-  (async function () {
-    const doel = document.getElementById('live-lijst');
-    try {
-      const r = await fetch('https://mapsinfo.roelnentjes.workers.dev/api/published');
-      if (!r.ok) throw new Error('offline');
-      const d = await r.json();
-      if (!d.verhalen || !d.verhalen.length) {
-        doel.innerHTML = '<p style="color:var(--text-dim);">Todavía no hay historias publicadas — vuelve pronto.</p>';
-        return;
-      }
-      const esc = s => String(s || '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-      doel.innerHTML = d.verhalen.map(v => `
-        <article class="story-card">
-          <div class="story-card-meta">${esc(v.gebied)}${v.onderwerp ? ' · ' + esc(v.onderwerp) : ''}</div>
-          <h3>${esc(v.plek)}</h3>
-          <p>${esc(v.tekst)}</p>
-        </article>`).join('');
-    } catch (e) {
-      doel.innerHTML = '<p style="color:var(--text-dim);">Todavía no hay historias publicadas — vuelve pronto.</p>';
+  (function () {
+    var API = "https://mapsinfo.roelnentjes.workers.dev/api/published";
+    var T = { leeg: "No se encontró nada — prueba otra palabra.", nog: "Todavía no hay historias publicadas.", resultaat: "historias", alles: "Todo" };
+    var lijst = document.getElementById('live-lijst');
+    var chips = document.getElementById('vz-chips');
+    var telling = document.getElementById('vz-telling');
+    var zoekveld = document.getElementById('vz-zoek');
+    var kaartEl = document.getElementById('vz-kaart');
+    var kaart = null, laag = null, timer = null;
+    var filter = { q: '', land: '', onderwerp: '' };
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+      });
     }
+
+    function toonKaart(verhalen) {
+      var metPunt = verhalen.filter(function (v) { return v.lat && v.lng; });
+      if (!metPunt.length) { kaartEl.style.display = 'none'; return; }
+      kaartEl.style.display = 'block';
+      if (!kaart) {
+        kaart = L.map(kaartEl, { scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+          attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 18
+        }).addTo(kaart);
+      }
+      if (laag) kaart.removeLayer(laag);
+      laag = L.layerGroup(metPunt.map(function (v) {
+        return L.marker([v.lat, v.lng]).bindPopup(
+          '<b>' + esc(v.plek) + '</b><br>' + esc(v.gebied) +
+          '<br><a href="#verhaal-' + v.id + '">lees het verhaal</a>'
+        );
+      })).addTo(kaart);
+      var bounds = L.latLngBounds(metPunt.map(function (v) { return [v.lat, v.lng]; }));
+      kaart.fitBounds(bounds, { padding: [40, 40], maxZoom: 11 });
+    }
+
+    function toonChips(f) {
+      var html = '';
+      function groep(items, sleutel) {
+        return items.map(function (it) {
+          var actief = filter[sleutel] === it.waarde ? ' actief' : '';
+          return '<button class="vz-chip' + actief + '" data-sleutel="' + sleutel +
+                 '" data-waarde="' + esc(it.waarde) + '">' + esc(it.waarde) +
+                 ' <span>' + it.n + '</span></button>';
+        }).join('');
+      }
+      var leeg = !filter.land && !filter.onderwerp;
+      html += '<button class="vz-chip' + (leeg ? ' actief' : '') + '" data-sleutel="wis">' + esc(T.alles) + '</button>';
+      html += groep(f.landen || [], 'land');
+      html += groep(f.onderwerpen || [], 'onderwerp');
+      chips.innerHTML = html;
+    }
+
+    async function laden() {
+      var p = new URLSearchParams();
+      if (filter.q) p.set('q', filter.q);
+      if (filter.land) p.set('land', filter.land);
+      if (filter.onderwerp) p.set('onderwerp', filter.onderwerp);
+      try {
+        var r = await fetch(API + (p.toString() ? '?' + p.toString() : ''));
+        if (!r.ok) throw new Error('offline');
+        var d = await r.json();
+        if (!d.totaal) { lijst.innerHTML = '<p class="vz-leeg">' + esc(T.nog) + '</p>'; kaartEl.style.display = 'none'; telling.textContent = ''; return; }
+        toonChips(d.facetten || {});
+        telling.textContent = d.gevonden + ' / ' + d.totaal + ' ' + T.resultaat;
+        if (!d.verhalen.length) { lijst.innerHTML = '<p class="vz-leeg">' + esc(T.leeg) + '</p>'; kaartEl.style.display = 'none'; return; }
+        lijst.innerHTML = d.verhalen.map(function (v) {
+          return '<article class="story-card" id="verhaal-' + v.id + '">' +
+            '<div class="story-card-meta">' + esc(v.gebied) + (v.land ? ' · ' + esc(v.land) : '') +
+            (v.onderwerp ? ' · ' + esc(v.onderwerp) : '') + '</div>' +
+            '<h3>' + esc(v.plek) + '</h3><p>' + esc(v.tekst) + '</p></article>';
+        }).join('');
+        toonKaart(d.verhalen);
+      } catch (e) {
+        lijst.innerHTML = '<p class="vz-leeg">' + esc(T.nog) + '</p>';
+        kaartEl.style.display = 'none';
+      }
+    }
+
+    zoekveld.addEventListener('input', function (e) {
+      clearTimeout(timer);
+      timer = setTimeout(function () { filter.q = e.target.value.trim(); laden(); }, 300);
+    });
+    chips.addEventListener('click', function (e) {
+      var knop = e.target.closest('.vz-chip');
+      if (!knop) return;
+      if (knop.dataset.sleutel === 'wis') { filter.land = ''; filter.onderwerp = ''; }
+      else {
+        var s = knop.dataset.sleutel;
+        filter[s] = filter[s] === knop.dataset.waarde ? '' : knop.dataset.waarde;
+      }
+      laden();
+    });
+    laden();
   })();
   </script>
 
