@@ -1063,6 +1063,50 @@ def build_privacy(lang):
 '''
     return page_shell(lang, p['title'], p['intro'][:150], 'privacy', body)
 
+# --- Live verhalen uit de app (goedgekeurd op de besloten leespagina) ------
+LIVE_STORIES_LABELS = {
+    'nl': dict(kop='Vers van onderweg', lede='Deze verhalen zijn onlangs door 2R verteld tijdens echte ritten en door ons nagelezen voordat ze hier kwamen.', leeg='Nog geen verhalen vrijgegeven — kom straks terug.'),
+    'en': dict(kop='Fresh from the road', lede='These stories were recently told by 2R on real journeys, and checked by us before they appeared here.', leeg='No stories released yet — check back soon.'),
+    'de': dict(kop='Frisch von unterwegs', lede='Diese Geschichten hat 2R kürzlich auf echten Fahrten erzählt; wir haben sie geprüft, bevor sie hier erschienen.', leeg='Noch keine Geschichten freigegeben — schau später wieder vorbei.'),
+    'fr': dict(kop='Fraîchement récoltées', lede='Ces récits ont été racontés récemment par 2R lors de vrais trajets, et vérifiés par nos soins avant de paraître ici.', leeg="Aucun récit publié pour l'instant — revenez bientôt."),
+    'es': dict(kop='Recién llegadas del camino', lede='2R contó estas historias hace poco en viajes reales, y las revisamos antes de publicarlas aquí.', leeg='Todavía no hay historias publicadas — vuelve pronto.'),
+    'pt': dict(kop='Fresquinhas da estrada', lede='Estas histórias foram contadas recentemente pelo 2R em viagens reais e revistas por nós antes de aparecerem aqui.', leeg='Ainda não há histórias publicadas — volte em breve.'),
+}
+
+LIVE_STORIES_API = 'https://mapsinfo.roelnentjes.workers.dev/api/published'
+
+def live_stories_section(lang):
+    L = LIVE_STORIES_LABELS[lang]
+    return f"""  <section class="block" id="live-verhalen"><div class="wrap">
+    <div class="eyebrow">{L['kop']}</div>
+    <p class="lede" style="max-width:60ch;margin-bottom:28px;">{L['lede']}</p>
+    <div id="live-lijst" class="story-grid-simple"><p style="color:var(--text-dim);">…</p></div>
+  </div></section>
+  <script>
+  (async function () {{
+    const doel = document.getElementById('live-lijst');
+    try {{
+      const r = await fetch({LIVE_STORIES_API!r});
+      if (!r.ok) throw new Error('offline');
+      const d = await r.json();
+      if (!d.verhalen || !d.verhalen.length) {{
+        doel.innerHTML = '<p style="color:var(--text-dim);">{L['leeg']}</p>';
+        return;
+      }}
+      const esc = s => String(s || '').replace(/[&<>"]/g, c => ({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]));
+      doel.innerHTML = d.verhalen.map(v => `
+        <article class="story-card">
+          <div class="story-card-meta">${{esc(v.gebied)}}${{v.onderwerp ? ' · ' + esc(v.onderwerp) : ''}}</div>
+          <h3>${{esc(v.plek)}}</h3>
+          <p>${{esc(v.tekst)}}</p>
+        </article>`).join('');
+    }} catch (e) {{
+      doel.innerHTML = '<p style="color:var(--text-dim);">{L['leeg']}</p>';
+    }}
+  }})();
+  </script>
+"""
+
 def build_stories_index(lang):
     s = SITE[lang]
     cards = '\n'.join(story_card(lang, st) for st in STORIES)
@@ -1074,6 +1118,7 @@ def build_stories_index(lang):
   <section class="block"><div class="wrap">
     <div class="story-grid-simple">{cards}</div>
   </div></section>
+{live_stories_section(lang)}
 '''
     return page_shell(lang, f"{s['nav_stories']} — 2R (Second Route)", s['stories_index_lede'], 'stories', body)
 
