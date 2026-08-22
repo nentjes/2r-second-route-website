@@ -178,13 +178,13 @@ header.site {
 .text-link span { color: var(--ember); }
 
 /* ---------- Sections (general) ---------- */
-section.block { padding: 100px 0; }
+section.block { padding: 62px 0; }
 .section-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--moss); margin: 0 0 20px; }
 .section-head { max-width: 640px; margin: 0 0 36px; }
 
 /* Eenvoudige tekst-only paginakop (roadmap, privacy, verhalen-index) */
-.page-intro { padding: 64px 0 8px; }
-.page-intro h1 { font-size: clamp(30px, 4.6vw, 48px); margin: 16px 0 14px; }
+.page-intro { padding: 48px 0 4px; }
+.page-intro h1 { font-size: clamp(30px, 4.6vw, 48px); margin: 12px 0 12px; }
 .page-intro .lede { font-size: 17px; color: rgba(23,36,43,0.68); max-width: 60ch; }
 
 /* ---------- Listening / audio section ---------- */
@@ -413,3 +413,16 @@ footer.site { min-height: 160px; padding: 46px 24px; background: var(--ink); col
 .story-grid-simple:has(> .story-card:only-child) { grid-template-columns: 1fr; }
 .story-grid-simple:has(> .story-card:nth-child(2):last-child) { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 600px) { .vz-kaart { height: 260px; } }
+
+
+/* ---- Compactere pagina-opbouw ---- */
+/* De ruimte tussen de inleiding en het eerste blok telde op tot 174px
+   (kop-sectie + blok-padding). Een blok dat meteen op de inleiding volgt
+   heeft die bovenmarge niet nodig. */
+.page-intro + section.block { padding-top: 26px; }
+section.block + section.block { padding-top: 44px; }
+@media (max-width: 700px) {
+  section.block { padding: 44px 0; }
+  .page-intro { padding: 34px 0 4px; }
+  .page-intro + section.block { padding-top: 18px; }
+}
