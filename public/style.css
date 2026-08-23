@@ -435,3 +435,45 @@ section.block + section.block { padding-top: 44px; }
   background: var(--line-soft);
 }
 @media (max-width: 600px) { .story-card .verhaal-foto { height: 200px; } }
+
+/* ---- Hero op een staande telefoon ----
+   Het filmpje is breedbeeld (16:9). Vullend tonen op een staand scherm
+   snijdt 71% van de breedte weg: precies de mensen links en rechts, zodat
+   je alleen de spiegel en het dashboard overhoudt. Een staande uitsnede
+   maken zou de kwaliteit kosten (er blijft maar 405 px breed over).
+   Daarom: het VOLLEDIGE beeld tonen als band, met de tekst eronder.
+   Zelfde bestand, zelfde scherpte, hele compositie zichtbaar. */
+@media (max-width: 760px) and (orientation: portrait) {
+  .hero {
+    min-height: 0;
+    display: block;
+    background: var(--petrol-deep);
+    overflow: visible;
+  }
+  .hero-photo {
+    position: static;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;      /* even breed als het filmpje: niets wordt weggesneden */
+    display: block;
+  }
+  /* De donkere sluier hoorde bij tekst óp het beeld; die staat nu eronder.
+     Alleen een zachte overgang van beeld naar tekstvlak blijft over. */
+  .hero-shade {
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 90px;
+    background: linear-gradient(0deg, var(--petrol-deep) 8%, transparent 100%);
+    pointer-events: none;
+  }
+  .hero { position: relative; }
+  .hero-content {
+    width: 100%;
+    padding: 22px 22px 34px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero h1 { font-size: clamp(30px, 8.6vw, 40px); line-height: 1.1; }
+  .hero-lede { margin-top: 16px; font-size: 15.5px; }
+  .hero-actions { margin-top: 22px; }
+}
