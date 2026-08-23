@@ -154,9 +154,13 @@
       }
       if (laag) kaart.removeLayer(laag);
       laag = L.layerGroup(metPunt.map(function (v) {
+        var mf = v.foto ? '<img src="' + esc(v.foto) + '" alt="" referrerpolicy="no-referrer" ' +
+          'style="width:100%;height:96px;object-fit:cover;border-radius:6px;margin-bottom:6px" ' +
+          '>' : '';
         return L.marker([v.lat, v.lng]).bindPopup(
-          '<b>' + esc(v.plek) + '</b><br>' + esc(v.gebied) +
-          '<br><a href="#verhaal-' + v.id + '">lees het verhaal</a>'
+          mf + '<b>' + esc(v.plek) + '</b><br>' + esc(v.gebied) +
+          '<br><a href="#verhaal-' + v.id + '">lees het verhaal</a>',
+          { maxWidth: 240, minWidth: 200 }
         );
       })).addTo(kaart);
       var bounds = L.latLngBounds(metPunt.map(function (v) { return [v.lat, v.lng]; }));
@@ -194,10 +198,14 @@
         telling.textContent = d.gevonden + ' / ' + d.totaal + ' ' + T.resultaat;
         if (!d.verhalen.length) { lijst.innerHTML = '<p class="vz-leeg">' + esc(T.leeg) + '</p>'; kaartEl.style.display = 'none'; return; }
         lijst.innerHTML = d.verhalen.map(function (v) {
-          return '<article class="story-card" id="verhaal-' + v.id + '">' +
+          var foto = v.foto ? '<img class="verhaal-foto" src="' + esc(v.foto) +
+            '" alt="" referrerpolicy="no-referrer">' : '';
+          return '<article class="story-card' + (v.foto ? ' met-foto' : '') + '" id="verhaal-' + v.id + '">' +
+            foto +
+            '<div class="story-card-body">' +
             '<div class="story-card-meta">' + esc(v.gebied) + (v.land ? ' · ' + esc(v.land) : '') +
             (v.onderwerp ? ' · ' + esc(v.onderwerp) : '') + '</div>' +
-            '<h3>' + esc(v.plek) + '</h3><p>' + esc(v.tekst) + '</p></article>';
+            '<h3>' + esc(v.plek) + '</h3><p>' + esc(v.tekst) + '</p></div></article>';
         }).join('');
         toonKaart(d.verhalen);
       } catch (e) {
@@ -205,6 +213,13 @@
         kaartEl.style.display = 'none';
       }
     }
+
+    // Kapotte afbeeldingen netjes verbergen. Eén afvanger voor de hele
+    // sectie in plaats van een onerror per afbeelding: dat scheelt geneste
+    // aanhalingstekens, die eerder de hele pagina sloopten.
+    document.getElementById('live-verhalen').addEventListener('error', function (e) {
+      if (e.target && e.target.tagName === 'IMG') e.target.style.display = 'none';
+    }, true);
 
     zoekveld.addEventListener('input', function (e) {
       clearTimeout(timer);

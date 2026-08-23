@@ -426,3 +426,12 @@ section.block + section.block { padding-top: 44px; }
   .page-intro { padding: 34px 0 4px; }
   .page-intro + section.block { padding-top: 18px; }
 }
+
+/* ---- Foto bij een verteld verhaal ---- */
+.story-card.met-foto { padding: 0; display: flex; flex-direction: column; }
+.story-card.met-foto .story-card-body { padding: 20px 24px 24px; }
+.story-card .verhaal-foto {
+  width: 100%; height: 170px; object-fit: cover; display: block;
+  background: var(--line-soft);
+}
+@media (max-width: 600px) { .story-card .verhaal-foto { height: 200px; } }
