@@ -74,8 +74,8 @@
 
       <h2 style="font-size:19px; margin-top:34px;">Localisation</h2>
       <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Votre position GPS est utilisée pour déterminer quelles histoires sont pertinentes.</li>
-<li><strong>Pendant cette phase de test</strong>, nous enregistrons volontairement plus d'informations que d'habitude — dont votre position GPS, votre direction et votre vitesse au moment où une histoire est générée — afin de repérer et corriger les erreurs et incohérences dans les récits. Cela ne concerne que les testeurs qui l'ont accepté, n'est jamais partagé avec des tiers, et s'arrête dès que l'application passe en version de production publique.</li>
-<li><strong>Lors du lancement public</strong>, la promesse complète s'applique de nouveau : votre position n'est jamais stockée sur nos serveurs ni journalisée. Chaque requête envoyée au serveur ne contient alors que le nom et le contexte d'un lieu précis — pas d'historique de localisation, pas de suivi de trajet.</li></ul>
+<li><strong>Par défaut, votre position n'est jamais stockée ni journalisée.</strong> Chaque requête envoyée au serveur ne contient que le nom et le contexte d'un lieu précis — pas d'historique de localisation, pas de suivi de trajet.</li>
+<li><strong>La journalisation étendue est une option (opt-in) pour notre équipe de test.</strong> Ce n'est que si vous l'activez vous-même (déverrouillée par un code de diagnostic que nous partageons avec nos testeurs réguliers) que nous enregistrons davantage — dont votre position GPS, votre direction et votre vitesse au moment où une histoire est générée — afin de repérer les erreurs et d'améliorer l'application. C'est désactivé par défaut, ne s'applique que tant que vous l'avez activé, n'est jamais partagé avec des tiers, et peut être désactivé à tout moment.</li></ul>
 
       <h2 style="font-size:19px; margin-top:34px;">Histoires et voix (sous-traitants)</h2>
       <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Pour générer les histoires, nous envoyons les noms de lieux et un court contexte à <strong>Google (API Gemini)</strong>.</li>

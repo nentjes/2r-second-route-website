@@ -313,8 +313,8 @@ PRIVACY = {
     h_location='Locatie',
     location_items=[
         'Je GPS-locatie wordt gebruikt om te bepalen welke verhalen relevant zijn.',
-        '<strong>Tijdens deze testfase</strong> leggen we bewust uitgebreider vast wat er gebeurt — waaronder je GPS-positie, rijrichting en snelheid op het moment dat een verhaal wordt gegenereerd — om fouten en onduidelijkheden in de verhalen op te sporen en te verhelpen. Dit geldt alleen voor testers die hiermee hebben ingestemd, wordt nooit gedeeld met derden, en stopt zodra de app naar een publieke productieversie gaat.',
-        '<strong>Bij een publieke lancering</strong> geldt weer de volledige belofte: je locatie wordt niet opgeslagen op onze servers en niet gelogd. Elk verzoek aan de server bevat dan alleen de naam en context van een specifieke plek — geen locatiegeschiedenis, geen rittenregistratie.',
+        '<strong>Standaard wordt je locatie niet opgeslagen en niet gelogd.</strong> Elk verzoek aan de server bevat alleen de naam en context van een specifieke plek — geen locatiegeschiedenis, geen rittenregistratie.',
+        '<strong>Uitgebreide logboeken zijn een opt-in voor het testteam.</strong> Alleen als je het zélf aanzet (ontgrendeld met een diagnose-code die we met onze vaste testers delen) leggen we meer vast — waaronder je GPS-positie, rijrichting en snelheid op het moment dat een verhaal wordt gemaakt — om fouten in de verhalen op te sporen en de app te verbeteren. Dit staat standaard uit, geldt alleen zolang jij het zelf aan hebt staan, wordt nooit met derden gedeeld, en kun je op elk moment weer uitzetten.',
     ],
     h_stories='Verhalen &amp; spraak (verwerkers)',
     stories_items=[
@@ -336,8 +336,8 @@ PRIVACY = {
     h_location='Location',
     location_items=[
         'Your GPS location is used to determine which stories are relevant.',
-        '<strong>During this testing phase</strong> we deliberately log more than usual — including your GPS position, heading and speed at the moment a story is generated — to track down and fix bugs and inconsistencies in the storytelling. This only applies to testers who have agreed to it, is never shared with third parties, and stops once the app moves to a public production release.',
-        '<strong>At public launch</strong> the full promise applies again: your location is never stored on our servers and never logged. Every request to the server then contains only the name and context of a specific place — no location history, no trip logging.',
+        '<strong>By default your location is never stored and never logged.</strong> Every request to the server contains only the name and context of a specific place — no location history, no trip logging.',
+        '<strong>Extended logging is an opt-in for our testing team.</strong> Only if you switch it on yourself (unlocked with a diagnostics code we share with our regular testers) do we record more — including your GPS position, heading and speed at the moment a story is generated — to track down bugs and improve the app. This is off by default, applies only while you have it enabled, is never shared with third parties, and can be turned off at any time.',
     ],
     h_stories='Stories &amp; voice (processors)',
     stories_items=[
@@ -359,8 +359,8 @@ PRIVACY = {
     h_location='Standort',
     location_items=[
         'Dein GPS-Standort wird verwendet, um zu bestimmen, welche Geschichten relevant sind.',
-        '<strong>Während dieser Testphase</strong> protokollieren wir bewusst mehr als üblich — einschließlich deiner GPS-Position, Fahrtrichtung und Geschwindigkeit im Moment der Geschichtenerstellung — um Fehler und Unstimmigkeiten in den Geschichten aufzuspüren und zu beheben. Dies betrifft nur Tester, die dem zugestimmt haben, wird nie an Dritte weitergegeben und endet, sobald die App in eine öffentliche Produktionsversion übergeht.',
-        '<strong>Bei einem öffentlichen Start</strong> gilt wieder das volle Versprechen: Dein Standort wird nicht auf unseren Servern gespeichert und nicht protokolliert. Jede Anfrage an den Server enthält dann nur den Namen und Kontext eines bestimmten Ortes — kein Standortverlauf, keine Fahrtenaufzeichnung.',
+        '<strong>Standardmäßig wird dein Standort nicht gespeichert und nicht protokolliert.</strong> Jede Anfrage an den Server enthält nur den Namen und Kontext eines bestimmten Ortes — kein Standortverlauf, keine Fahrtenaufzeichnung.',
+        '<strong>Erweiterte Protokolle sind ein Opt-in für unser Testteam.</strong> Nur wenn du es selbst aktivierst (freigeschaltet mit einem Diagnose-Code, den wir mit unseren festen Testern teilen), erfassen wir mehr — einschließlich deiner GPS-Position, Fahrtrichtung und Geschwindigkeit im Moment der Geschichtenerstellung — um Fehler aufzuspüren und die App zu verbessern. Das ist standardmäßig aus, gilt nur solange du es aktiviert hast, wird nie an Dritte weitergegeben und kann jederzeit wieder ausgeschaltet werden.',
     ],
     h_stories='Geschichten &amp; Sprache (Auftragsverarbeiter)',
     stories_items=[
@@ -382,8 +382,8 @@ PRIVACY = {
     h_location='Localisation',
     location_items=[
         'Votre position GPS est utilisée pour déterminer quelles histoires sont pertinentes.',
-        "<strong>Pendant cette phase de test</strong>, nous enregistrons volontairement plus d'informations que d'habitude — dont votre position GPS, votre direction et votre vitesse au moment où une histoire est générée — afin de repérer et corriger les erreurs et incohérences dans les récits. Cela ne concerne que les testeurs qui l'ont accepté, n'est jamais partagé avec des tiers, et s'arrête dès que l'application passe en version de production publique.",
-        "<strong>Lors du lancement public</strong>, la promesse complète s'applique de nouveau : votre position n'est jamais stockée sur nos serveurs ni journalisée. Chaque requête envoyée au serveur ne contient alors que le nom et le contexte d'un lieu précis — pas d'historique de localisation, pas de suivi de trajet.",
+        "<strong>Par défaut, votre position n'est jamais stockée ni journalisée.</strong> Chaque requête envoyée au serveur ne contient que le nom et le contexte d'un lieu précis — pas d'historique de localisation, pas de suivi de trajet.",
+        "<strong>La journalisation étendue est une option (opt-in) pour notre équipe de test.</strong> Ce n'est que si vous l'activez vous-même (déverrouillée par un code de diagnostic que nous partageons avec nos testeurs réguliers) que nous enregistrons davantage — dont votre position GPS, votre direction et votre vitesse au moment où une histoire est générée — afin de repérer les erreurs et d'améliorer l'application. C'est désactivé par défaut, ne s'applique que tant que vous l'avez activé, n'est jamais partagé avec des tiers, et peut être désactivé à tout moment.",
     ],
     h_stories='Histoires et voix (sous-traitants)',
     stories_items=[
@@ -405,8 +405,8 @@ PRIVACY = {
     h_location='Ubicación',
     location_items=[
         'Tu ubicación GPS se usa para determinar qué historias son relevantes.',
-        '<strong>Durante esta fase de pruebas</strong> registramos deliberadamente más información de lo habitual — incluida tu posición GPS, dirección y velocidad en el momento de generar una historia — para detectar y corregir errores e incoherencias en las historias. Esto solo se aplica a los testers que lo han aceptado, nunca se comparte con terceros, y termina en cuanto la app pase a una versión de producción pública.',
-        '<strong>En el lanzamiento público</strong> volverá a aplicarse la promesa completa: tu ubicación nunca se almacena en nuestros servidores ni se registra. Cada solicitud al servidor contendrá entonces solo el nombre y el contexto de un lugar concreto — sin historial de ubicación, sin registro de trayectos.',
+        '<strong>Por defecto, tu ubicación nunca se almacena ni se registra.</strong> Cada solicitud al servidor contiene solo el nombre y el contexto de un lugar concreto — sin historial de ubicación, sin registro de trayectos.',
+        '<strong>El registro ampliado es opcional (opt-in) para nuestro equipo de pruebas.</strong> Solo si lo activas tú mismo (desbloqueado con un código de diagnóstico que compartimos con nuestros testers habituales) registramos más información — incluida tu posición GPS, dirección y velocidad en el momento de generar una historia — para detectar errores y mejorar la app. Está desactivado por defecto, solo se aplica mientras lo tengas activado, nunca se comparte con terceros y puedes desactivarlo en cualquier momento.',
     ],
     h_stories='Historias y voz (encargados del tratamiento)',
     stories_items=[
@@ -428,8 +428,8 @@ PRIVACY = {
     h_location='Localização',
     location_items=[
         'Sua localização GPS é usada para determinar quais histórias são relevantes.',
-        '<strong>Durante esta fase de testes</strong>, registramos deliberadamente mais informações do que o habitual — incluindo sua posição GPS, direção e velocidade no momento em que uma história é gerada — para identificar e corrigir erros e inconsistências nas histórias. Isso só se aplica a testadores que concordaram com isso, nunca é compartilhado com terceiros, e termina assim que o app passar para uma versão de produção pública.',
-        '<strong>No lançamento público</strong>, a promessa completa volta a valer: sua localização nunca é armazenada em nossos servidores nem registrada. Cada solicitação ao servidor conterá então apenas o nome e o contexto de um local específico — sem histórico de localização, sem registro de trajetos.',
+        '<strong>Por padrão, sua localização nunca é armazenada nem registrada.</strong> Cada solicitação ao servidor contém apenas o nome e o contexto de um local específico — sem histórico de localização, sem registro de trajetos.',
+        '<strong>O registro ampliado é opcional (opt-in) para a nossa equipe de testes.</strong> Só se você mesmo ativar (desbloqueado com um código de diagnóstico que compartilhamos com nossos testadores habituais) registramos mais informações — incluindo sua posição GPS, direção e velocidade no momento em que uma história é gerada — para identificar erros e melhorar o app. Fica desativado por padrão, só se aplica enquanto você o mantiver ativado, nunca é compartilhado com terceiros e pode ser desativado a qualquer momento.',
     ],
     h_stories='Histórias e voz (operadores)',
     stories_items=[
