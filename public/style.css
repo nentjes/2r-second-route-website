@@ -859,3 +859,43 @@ section.block + section.block { padding-top: 44px; }
 .story-invite .wrap { max-width: 680px; text-align: center; padding-top: clamp(40px, 6vw, 64px); padding-bottom: clamp(40px, 6vw, 64px); }
 .story-invite h2 { font-family: var(--serif); font-size: clamp(22px, 3vw, 32px); color: #fff; margin: 0 0 10px; font-weight: 500; }
 .story-invite p { color: rgba(250,246,237,0.82); font-size: 16px; line-height: 1.65; max-width: 46ch; margin: 0 auto 22px; }
+
+/* ============================================================
+   PERSISTENTE LUISTERSPELER (blijvende siteshell, /nl/) — 29 aug
+   Diep petrol, coral start/pauze, kaarsgoud voortgang; geen emoji.
+   ============================================================ */
+.site-player {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: 16px; z-index: 1000;
+  display: flex; align-items: center; gap: 12px;
+  background: var(--petrol-deep); color: var(--paper-light);
+  border: 1px solid rgba(216, 168, 95, 0.28); border-radius: 999px;
+  padding: 9px 12px 9px 10px; box-shadow: 0 12px 36px rgba(11, 37, 37, 0.42);
+  max-width: min(440px, calc(100vw - 24px));
+}
+@supports (padding: max(0px)) { .site-player { bottom: max(16px, env(safe-area-inset-bottom, 16px)); } }
+.site-player[hidden] { display: none; }
+.sp-toggle {
+  flex: none; width: 42px; height: 42px; border-radius: 50%;
+  background: var(--ember); border: none; color: #fff8ee; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+}
+.sp-toggle:hover { background: var(--ember-hover); }
+.sp-play { width: 0; height: 0; border-style: solid; border-width: 7px 0 7px 12px; border-color: transparent transparent transparent #fff8ee; margin-left: 3px; }
+.sp-wave { display: none; align-items: flex-end; gap: 3px; height: 16px; }
+.site-player[data-state="playing"] .sp-play { display: none; }
+.site-player[data-state="playing"] .sp-wave { display: inline-flex; }
+.sp-wave i { width: 3px; height: 6px; background: #fff8ee; border-radius: 2px; animation: sp-bounce 0.9s ease-in-out infinite; }
+.sp-wave i:nth-child(2) { animation-delay: .15s; } .sp-wave i:nth-child(3) { animation-delay: .3s; }
+@keyframes sp-bounce { 0%, 100% { height: 5px; } 50% { height: 15px; } }
+.sp-info { display: flex; flex-direction: column; min-width: 0; }
+.sp-title { font-family: var(--serif); font-size: 15px; font-weight: 500; line-height: 1.15; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sp-sub { font-size: 12px; color: var(--gold); font-variant-numeric: tabular-nums; }
+.sp-vol { width: 66px; accent-color: var(--gold); flex: none; cursor: pointer; }
+.sp-close { flex: none; background: none; border: none; color: rgba(242, 235, 221, 0.72); font-size: 22px; line-height: 1; cursor: pointer; padding: 0 4px; }
+.sp-close:hover { color: var(--paper-light); }
+@media (max-width: 520px) {
+  .site-player { gap: 9px; padding: 8px 10px; max-width: calc(100vw - 20px); }
+  .sp-vol { display: none; }
+  .sp-toggle { width: 38px; height: 38px; }
+}
+@media (prefers-reduced-motion: reduce) { .sp-wave i { animation: none; height: 10px; } }

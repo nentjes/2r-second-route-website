@@ -259,6 +259,7 @@
       laden();
     });
     laden();
+    window.__2rCleanup = function () { try { if (kaart) kaart.remove(); } catch (e) {} if (timer) clearTimeout(timer); };
   })();
   </script>
 
@@ -280,6 +281,7 @@
   <p class="footer-family">Pas la destination — c'est le voyage qui nous rend sages.</p>
   <p class="footer-credit">Conçu par Roel Nentjes, avec Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
 </footer>
+
 
 </body>
 </html>

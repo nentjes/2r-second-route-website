@@ -259,6 +259,7 @@
       laden();
     });
     laden();
+    window.__2rCleanup = function () { try { if (kaart) kaart.remove(); } catch (e) {} if (timer) clearTimeout(timer); };
   })();
   </script>
 
@@ -280,6 +281,135 @@
   <p class="footer-family">Niet de bestemming, maar de reis maakt ons wijs.</p>
   <p class="footer-credit">Gebouwd door Roel Nentjes, samen met Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
 </footer>
+
+
+<div id="site-player" class="site-player" data-state="invite" hidden>
+  <audio id="sp-audio" src="/audio/2r-intro.mp3" preload="none"></audio>
+  <button id="sp-toggle" class="sp-toggle" type="button" aria-label="Speel het verhaal af">
+    <span class="sp-wave" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="sp-play" aria-hidden="true"></span>
+  </button>
+  <div class="sp-info">
+    <span class="sp-title">Tussen hier en verder</span>
+    <span class="sp-sub" id="sp-sub">Luister onderweg</span>
+  </div>
+  <input id="sp-vol" class="sp-vol" type="range" min="0" max="100" value="70" aria-label="Volume">
+  <button id="sp-close" class="sp-close" type="button" aria-label="Sluit speler">&times;</button>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('site-player');
+  var au = document.getElementById('sp-audio');
+  if (!box || !au) return;
+  var toggle = document.getElementById('sp-toggle'), sub = document.getElementById('sp-sub');
+  var vol = document.getElementById('sp-vol'), closeBtn = document.getElementById('sp-close');
+  var LSVOL = 'siteAudioVol', SSCLOSED = 'sitePlayerClosed', SSPOS = 'sitePlayerPos';
+  function lees(s, k) { try { return s.getItem(k); } catch (e) { return null; } }
+  function schrijf(s, k, v) { try { s.setItem(k, v); } catch (e) {} }
+  var v0 = parseInt(lees(localStorage, LSVOL), 10); if (isNaN(v0)) v0 = 70; vol.value = v0; au.volume = v0 / 100;
+  var gesloten = lees(sessionStorage, SSCLOSED) === '1';
+  function fmt(t) { t = Math.max(0, Math.floor(t || 0)); var m = Math.floor(t / 60), s = t % 60; return m + ':' + (s < 10 ? '0' : '') + s; }
+  function toon() {
+    if (gesloten) { box.hidden = true; return; }
+    box.hidden = false;
+    var st = box.dataset.state;
+    if (st === 'playing' || st === 'paused') sub.textContent = fmt(au.currentTime) + ' / ' + fmt(au.duration);
+    else if (st === 'ended') sub.textContent = 'Luister opnieuw';
+    toggle.setAttribute('aria-label', st === 'playing' ? 'Pauzeer verhaal' : (st === 'paused' ? 'Hervat verhaal' : (st === 'ended' ? 'Luister opnieuw' : 'Speel het verhaal af')));
+  }
+  function setMedia() {
+    if (!('mediaSession' in navigator)) return;
+    try {
+      navigator.mediaSession.metadata = new MediaMetadata({ title: 'Tussen hier en verder', artist: '2R \u00b7 Second Route' });
+      navigator.mediaSession.setActionHandler('play', function () { speel(); });
+      navigator.mediaSession.setActionHandler('pause', function () { au.pause(); });
+      navigator.mediaSession.setActionHandler('stop', function () { au.pause(); });
+    } catch (e) {}
+  }
+  function speel() { au.play().then(function () { box.dataset.state = 'playing'; toon(); setMedia(); }).catch(function () { box.dataset.state = 'paused'; toon(); }); }
+  au.addEventListener('play', function () { box.dataset.state = 'playing'; toon(); });
+  au.addEventListener('pause', function () { if (box.dataset.state !== 'ended') { box.dataset.state = 'paused'; toon(); } });
+  au.addEventListener('ended', function () { box.dataset.state = 'ended'; try { sessionStorage.removeItem(SSPOS); } catch (e) {} toon(); });
+  au.addEventListener('timeupdate', function () {
+    if (box.dataset.state === 'playing') sub.textContent = fmt(au.currentTime) + ' / ' + fmt(au.duration);
+    schrijf(sessionStorage, SSPOS, JSON.stringify({ t: au.currentTime, p: !au.paused, ts: Date.now() }));
+  });
+  toggle.addEventListener('click', function () {
+    var st = box.dataset.state;
+    if (st === 'playing') au.pause();
+    else if (st === 'ended') { au.currentTime = 0; speel(); }
+    else speel();
+  });
+  vol.addEventListener('input', function () { au.volume = vol.value / 100; schrijf(localStorage, LSVOL, vol.value); });
+  closeBtn.addEventListener('click', function () { au.pause(); gesloten = true; schrijf(sessionStorage, SSCLOSED, '1'); box.hidden = true; });
+  // Herstel na een onvermijdelijke volledige reload: alleen als knop, nooit autoplay.
+  (function () {
+    if (gesloten) return;
+    var raw = lees(sessionStorage, SSPOS); if (!raw) return;
+    try { var d = JSON.parse(raw); if (d && d.ts && (Date.now() - d.ts) < 3600000 && d.t > 1) { au.currentTime = d.t; box.dataset.state = 'paused'; box.hidden = false; sub.textContent = 'Ga verder \u00b7 ' + fmt(d.t); } } catch (e) {}
+  })();
+  toon();
+
+  // ---------- Lichte client-side router voor interne /nl/-navigatie ----------
+  var origin = location.origin, bezig = false;
+  function interneNl(a) {
+    if (!a || a.target || a.hasAttribute('download')) return false;
+    var href = a.getAttribute('href'); if (!href) return false;
+    if (href.charAt(0) === '#' || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0) return false;
+    if (a.origin !== origin) return false;
+    if (a.pathname.indexOf('/nl/') !== 0) return false;
+    return true;
+  }
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest ? e.target.closest('a') : null;
+    if (!a || !interneNl(a)) return;
+    e.preventDefault(); ga(a.href, true);
+  });
+  window.addEventListener('popstate', function () { ga(location.href, false); });
+  function updateNav(href) {
+    document.querySelectorAll('.nav-links a, .mobile-panel-links a').forEach(function (a) {
+      a.classList.toggle('active', !!href && a.getAttribute('href') === href);
+    });
+  }
+  function runScripts(container) {
+    var scripts = [].slice.call(container.querySelectorAll('script'));
+    return scripts.reduce(function (chain, old) {
+      return chain.then(function () {
+        var src = old.getAttribute('src');
+        if (src) {
+          if (document.querySelector('script[src="' + src + '"]')) return;
+          return new Promise(function (res) { var s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = res; document.head.appendChild(s); });
+        }
+        var s = document.createElement('script'); s.textContent = old.textContent; document.body.appendChild(s); s.remove();
+      });
+    }, Promise.resolve());
+  }
+  function ga(url, push) {
+    if (bezig) return; bezig = true;
+    fetch(url, { credentials: 'same-origin' }).then(function (r) { if (!r.ok) throw 0; return r.text(); }).then(function (htmlStr) {
+      var doc = new DOMParser().parseFromString(htmlStr, 'text/html');
+      var nieuw = doc.querySelector('main'), oud = document.querySelector('main');
+      if (!nieuw || !oud) throw 0;
+      try { if (window.__2rCleanup) { window.__2rCleanup(); window.__2rCleanup = null; } } catch (e) {}
+      oud.innerHTML = nieuw.innerHTML;
+      document.title = doc.title;
+      var lg = doc.documentElement.getAttribute('lang'); if (lg) document.documentElement.setAttribute('lang', lg);
+      var act = doc.querySelector('.nav-links a.active');
+      updateNav(act ? act.getAttribute('href') : null);
+      var panel = document.querySelector('.mobile-panel.open, .mobile-panel[aria-hidden="false"]');
+      if (panel) { panel.classList.remove('open'); }
+      if (push) history.pushState({ r: 1 }, '', url);
+      runScripts(oud).then(function () {
+        window.scrollTo(0, 0);
+        var h1 = oud.querySelector('h1');
+        if (h1) { h1.setAttribute('tabindex', '-1'); try { h1.focus({ preventScroll: true }); } catch (e) { try { h1.focus(); } catch (e2) {} } }
+        bezig = false;
+      });
+    }).catch(function () { bezig = false; window.location.href = url; });
+  }
+})();
+</script>
 
 </body>
 </html>
