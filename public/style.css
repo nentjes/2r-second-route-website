@@ -518,3 +518,27 @@ section.block + section.block { padding-top: 44px; }
 .howto-faq p { padding: 0 0 18px; color: var(--text-dim); max-width: none; }
 .howto-cta { margin-top: 46px; padding-top: 28px; border-top: 1px solid var(--border); }
 .howto-cta h2 { font-size: 22px; margin: 0 0 6px; }
+
+/* --- Site-audio: subtiele geluidsknop op de NL-homepage (29 aug).
+   Typografisch + een CSS-golfje; geen emoji/icoon-glyphs (vaste site-regel). --- */
+.site-audio {
+  position: fixed; right: 18px; bottom: 18px; z-index: 950;
+  display: flex; align-items: center; gap: 12px;
+  background: var(--ink); color: var(--paper-light);
+  border: 1px solid rgba(242, 235, 221, 0.16);
+  border-radius: 999px; padding: 9px 16px;
+  box-shadow: 0 8px 24px rgba(11, 37, 37, 0.28);
+  font-size: 13px; font-weight: 500;
+}
+.sa-toggle { display: flex; align-items: center; gap: 9px; background: none; border: 0; color: inherit; font: inherit; cursor: pointer; padding: 0; }
+.sa-wave { display: inline-flex; align-items: center; gap: 2.5px; height: 15px; }
+.sa-wave i { width: 2.5px; height: 4px; background: var(--gold); border-radius: 2px; transition: height 0.2s ease, opacity 0.2s ease; }
+.site-audio[data-state="uit"] .sa-wave i { height: 4px; opacity: 0.55; }
+.site-audio[data-state="aan"] .sa-wave i { animation: sa-bounce 0.9s ease-in-out infinite; }
+.site-audio[data-state="aan"] .sa-wave i:nth-child(2) { animation-delay: 0.18s; }
+.site-audio[data-state="aan"] .sa-wave i:nth-child(3) { animation-delay: 0.34s; }
+@keyframes sa-bounce { 0%, 100% { height: 4px; } 50% { height: 14px; } }
+.sa-label { letter-spacing: 0.02em; white-space: nowrap; }
+.sa-vol { width: 74px; accent-color: var(--gold); cursor: pointer; }
+@media (prefers-reduced-motion: reduce) { .site-audio[data-state="aan"] .sa-wave i { animation: none; height: 9px; } }
+@media (max-width: 560px) { .site-audio { right: 12px; bottom: 12px; padding: 8px 13px; gap: 9px; } .sa-vol { width: 56px; } }

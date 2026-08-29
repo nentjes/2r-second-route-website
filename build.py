@@ -1011,6 +1011,65 @@ def city_story_card(lang, index):
   </div>
 </a>'''
 
+# Site-audio (alleen NL-homepage): een filmische introvertelling die begint zodra
+# de bezoeker iets aanraakt (browsers staan geluid niet toe vóór interactie), met
+# een altijd-zichtbare geluidsknop die 'm direct dempt en de keuze onthoudt.
+# Het audiobestand heeft bewust een vaste naam (/audio/2r-intro.mp3): een nieuwe
+# muziek/stem-master hoeft alleen dat ene bestand te vervangen — geen code-wijziging.
+# Geen emoji/icoon-glyphs (vaste 2route.nl-regel): alleen type + een CSS-golfje.
+# Zet op True zodra de DEFINITIEVE muziek/stem-master klaarstaat als
+# public/audio/2r-intro.mp3. Zolang False verschijnt de speler NERGENS op de
+# live site (Robins proefstem is te jong voor de filmische kwaliteit — 29 aug).
+# Go-live: (1) definitieve mp3 op die vaste naam zetten, (2) AUDIO_LIVE = True,
+# (3) python3 build.py, (4) npx wrangler deploy.
+AUDIO_LIVE = False
+
+SITE_AUDIO_NL = '''
+<div id="site-audio" class="site-audio" data-state="uit">
+  <audio id="sa-el" src="/audio/2r-intro.mp3" preload="none"></audio>
+  <button id="sa-toggle" class="sa-toggle" type="button" aria-pressed="false" title="Geluid aan of uit">
+    <span class="sa-wave" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="sa-label">Geluid uit</span>
+  </button>
+  <input id="sa-vol" class="sa-vol" type="range" min="0" max="100" value="70" aria-label="Volume">
+</div>
+<script>
+(function () {
+  var box = document.getElementById('site-audio');
+  var el = document.getElementById('sa-el');
+  if (!box || !el) return;
+  var toggle = document.getElementById('sa-toggle');
+  var label = toggle.querySelector('.sa-label');
+  var vol = document.getElementById('sa-vol');
+  var MUTE = 'siteAudioMuted', VOL = 'siteAudioVol', GESTART = 'siteAudioGestart';
+  function lees(k){ try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function schrijf(k, v){ try { localStorage.setItem(k, v); } catch (e) {} }
+  var startVol = parseInt(lees(VOL), 10); if (isNaN(startVol)) startVol = 70;
+  vol.value = startVol; el.volume = startVol / 100;
+  function toon(staat){ box.dataset.state = staat; label.textContent = (staat === 'aan' ? 'Geluid aan' : 'Geluid uit'); toggle.setAttribute('aria-pressed', staat === 'aan' ? 'true' : 'false'); }
+  toon('uit');
+  function speel(){ el.play().then(function(){ toon('aan'); try { sessionStorage.setItem(GESTART, '1'); } catch (e) {} }).catch(function(){ toon('uit'); }); }
+  var gedempt = lees(MUTE) === '1';
+  var alGestart = false; try { alGestart = sessionStorage.getItem(GESTART) === '1'; } catch (e) {}
+  if (!gedempt && !alGestart) {
+    var evs = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+    var start = function (e){ if (e && box.contains(e.target)) return; speel(); af(); };
+    var af = function (){ evs.forEach(function (ev){ window.removeEventListener(ev, start, true); }); };
+    evs.forEach(function (ev){ window.addEventListener(ev, start, true); });
+  }
+  el.addEventListener('play', function(){ toon('aan'); });
+  el.addEventListener('pause', function(){ toon('uit'); });
+  el.addEventListener('ended', function(){ toon('uit'); });
+  toggle.addEventListener('click', function (e){
+    e.stopPropagation();
+    if (el.paused) { schrijf(MUTE, '0'); speel(); }
+    else { el.pause(); schrijf(MUTE, '1'); toon('uit'); }
+  });
+  vol.addEventListener('input', function(){ el.volume = vol.value / 100; schrijf(VOL, vol.value); });
+})();
+</script>
+'''
+
 def build_home(lang):
     s = SITE[lang]
     stops = EUROPE_STOPS[lang]
@@ -1157,7 +1216,7 @@ def build_home(lang):
     # Live tellers (testers/verhalen vandaag) zijn van de publieke pagina
     # gehaald: dat was interne telemetrie en liet ongewild de prille schaal
     # zien. De strip toont nu stabiele productfeiten (stat3/stat4 in SITE).
-    return page_shell(lang, title, s['hero_lede'].replace('<b>', '').replace('</b>', ''), 'product', body, extra_head='')
+    return page_shell(lang, title, s['hero_lede'].replace('<b>', '').replace('</b>', ''), 'product', body, extra_head=(SITE_AUDIO_NL if (lang == 'nl' and AUDIO_LIVE) else ''))
 
 def build_roadmap(lang):
     s = SITE[lang]
