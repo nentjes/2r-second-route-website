@@ -1689,33 +1689,129 @@ def live_stories_section(lang):
             .replace('__API__', LIVE_STORIES_API))
 
 
+# Verhalen-archief als levend reisboek (herbouw 29 aug). Nieuwe redactionele
+# omlijsting; de verhalen zelf blijven de bron. Foto's per verhaal volgen later —
+# nu papieren composities (geen verzonnen documentairefoto's van echte plekken).
+FEATURED_SLUG = 'kasteel-nijenrode-breukelen'
+STORIES_EXTRA = {
+'nl': dict(hero_eyebrow='Het levende reisboek', hero_h1='Verhalen die onderweg begonnen.',
+    hero_lede='Iedere plek draagt een verhaal. Soms hoef je er alleen maar langs te rijden. Deze verhalen werden tijdens echte ritten door 2R verteld, door ons nagelezen en voorzien van hun bron.',
+    hero_cta='Lees het eerste verhaal', hero_alt='Een reiziger kijkt vanuit de auto naar een voorbijtrekkend Europees dorp, met een reisboek op schoot.',
+    featured_label='Uitgelicht', read_story='Lees het verhaal', detail_source_h='Waar dit verhaal vandaan komt',
+    related='Verder lezen', invite_h='Neem Route mee op je volgende reis'),
+'en': dict(hero_eyebrow='The living travel book', hero_h1='Stories that began on the road.',
+    hero_lede='Every place carries a story. Sometimes you only have to drive past it. These stories were told by 2R during real trips, checked by us and given their source.',
+    hero_cta='Read the first story', hero_alt='A traveler looks from the car at a passing European village, with a travel book on their lap.',
+    featured_label='Featured', read_story='Read the story', detail_source_h='Where this story comes from',
+    related='Read on', invite_h='Take Route along on your next trip'),
+'de': dict(hero_eyebrow='Das lebendige Reisebuch', hero_h1='Geschichten, die unterwegs begannen.',
+    hero_lede='Jeder Ort trägt eine Geschichte. Manchmal musst du nur daran vorbeifahren. Diese Geschichten wurden von 2R während echter Fahrten erzählt, von uns geprüft und mit ihrer Quelle versehen.',
+    hero_cta='Lies die erste Geschichte', hero_alt='Ein Reisender blickt aus dem Auto auf ein vorbeiziehendes europäisches Dorf, ein Reisebuch auf dem Schoß.',
+    featured_label='Ausgewählt', read_story='Geschichte lesen', detail_source_h='Woher diese Geschichte stammt',
+    related='Weiterlesen', invite_h='Nimm Route mit auf deine nächste Reise'),
+'fr': dict(hero_eyebrow='Le carnet de voyage vivant', hero_h1='Des histoires nées en chemin.',
+    hero_lede="Chaque lieu porte une histoire. Parfois, il suffit de passer devant. Ces récits ont été racontés par 2R lors de vrais trajets, vérifiés par nous et accompagnés de leur source.",
+    hero_cta='Lire le premier récit', hero_alt="Un voyageur regarde depuis la voiture un village européen qui défile, un carnet de voyage sur les genoux.",
+    featured_label='À la une', read_story='Lire le récit', detail_source_h="D'où vient cette histoire",
+    related='À lire aussi', invite_h='Emportez Route lors de votre prochain voyage'),
+'es': dict(hero_eyebrow='El libro de viaje vivo', hero_h1='Historias que empezaron en el camino.',
+    hero_lede='Cada lugar guarda una historia. A veces solo tienes que pasar por delante. Estas historias fueron contadas por 2R durante viajes reales, revisadas por nosotros y con su fuente.',
+    hero_cta='Lee la primera historia', hero_alt='Un viajero mira desde el coche un pueblo europeo que pasa, con un libro de viaje en el regazo.',
+    featured_label='Destacado', read_story='Leer la historia', detail_source_h='De dónde viene esta historia',
+    related='Sigue leyendo', invite_h='Lleva Route en tu próximo viaje'),
+'pt': dict(hero_eyebrow='O livro de viagem vivo', hero_h1='Histórias que começaram no caminho.',
+    hero_lede='Cada lugar guarda uma história. Às vezes basta passar por ela. Estas histórias foram contadas pelo 2R durante viagens reais, revistas por nós e com a sua fonte.',
+    hero_cta='Leia a primeira história', hero_alt='Um viajante olha do carro para uma vila europeia que passa, com um livro de viagem no colo.',
+    featured_label='Em destaque', read_story='Ler a história', detail_source_h='De onde vem esta história',
+    related='Continue a ler', invite_h='Leve o Route na sua próxima viagem'),
+}
+
+def _story_excerpt(st, lang, n=150):
+    return st['text'][lang][:n].rsplit(' ', 1)[0] + '…'
+
+def magazine_card(lang, st, size='klein'):
+    cat = CATEGORIES[st['category']][lang]
+    return f'''<a class="mag-card mag-{size}" href="/{lang}/stories/{st['slug']}.html">
+    <div class="mag-cover" aria-hidden="true"><span class="mag-cat-mark">{html.escape(cat)}</span></div>
+    <div class="mag-body">
+      <span class="mag-cat">{html.escape(cat)}</span>
+      <h3>{html.escape(st['title'][lang])}</h3>
+      <p>{html.escape(_story_excerpt(st, lang, 120 if size != 'groot' else 200))}</p>
+      <span class="mag-meta">{html.escape(st['location'])} &middot; {st['date']}</span>
+    </div>
+  </a>'''
+
 def build_stories_index(lang):
     s = SITE[lang]
-    cards = '\n'.join(story_card(lang, st) for st in STORIES)
-    body = f'''  <section class="page-intro"><div class="wrap" style="max-width:720px;">
-    <div class="eyebrow">{s['stories_index_eyebrow']}</div>
-    <h1>{s['stories_index_h1']}</h1>
-    <p class="lede">{s['stories_index_lede']}</p>
-  </div></section>
-  <section class="block"><div class="wrap">
-    <div class="story-grid-simple">{cards}</div>
+    se = STORIES_EXTRA[lang]
+    featured = next((st for st in STORIES if st['slug'] == FEATURED_SLUG), STORIES[0])
+    rest = [st for st in STORIES if st is not featured]
+    first_slug = STORIES[0]['slug']
+    fcat = CATEGORIES[featured['category']][lang]
+    featured_html = f'''<a class="mag-featured" href="/{lang}/stories/{featured['slug']}.html">
+      <div class="mag-featured-cover" aria-hidden="true"><span class="mag-cat-mark">{html.escape(fcat)}</span></div>
+      <div class="mag-featured-body">
+        <span class="mag-featured-label">{se['featured_label']}</span>
+        <span class="mag-cat">{html.escape(fcat)} &middot; {html.escape(featured['location'])}</span>
+        <h2>{html.escape(featured['title'][lang])}</h2>
+        <p>{html.escape(_story_excerpt(featured, lang, 240))}</p>
+        <span class="mag-cta">{se['read_story']} <span aria-hidden="true">&#8594;</span></span>
+      </div>
+    </a>'''
+    grid = ''.join(magazine_card(lang, st, 'middel' if i < 2 else 'klein') for i, st in enumerate(rest))
+    body = f'''  <section class="stories-hero">
+    <img class="stories-hero-img" src="/images/stories-hero-levend-reisboek.jpg" alt="{se['hero_alt']}" width="1536" height="1024" fetchpriority="high">
+    <div class="stories-hero-shade" aria-hidden="true"></div>
+    <div class="stories-hero-content">
+      <p class="eyebrow on-photo">{se['hero_eyebrow']}</p>
+      <h1>{se['hero_h1']}</h1>
+      <p class="stories-hero-lede">{se['hero_lede']}</p>
+      <a class="stories-hero-cta" href="/{lang}/stories/{first_slug}.html">{se['hero_cta']} <span aria-hidden="true">&#8594;</span></a>
+    </div>
+  </section>
+
+  <section class="mag"><div class="wrap">
+    {featured_html}
+    <div class="mag-grid">{grid}</div>
   </div></section>
 {live_stories_section(lang)}
 '''
-    return page_shell(lang, f"{s['nav_stories']} — 2R (Second Route)", s['stories_index_lede'], 'stories', body)
+    return page_shell(lang, f"{s['nav_stories']} — 2R (Second Route)", se['hero_lede'][:150], 'stories', body)
 
 def build_story_detail(lang, st):
     s = SITE[lang]
+    se = STORIES_EXTRA[lang]
     cat = CATEGORIES[st['category']][lang]
-    body = f'''  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
-    <p><a href="/{lang}/stories/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">{s['story_back']}</a></p>
-    <span class="story-cat" style="margin-top:10px; display:inline-block;">{cat}</span>
-    <h1 style="font-size:clamp(28px,4vw,40px); margin:14px 0 8px;">{html.escape(st['title'][lang])}</h1>
-    <p style="color:var(--text-faint); font-size:14px; margin-bottom:28px;">{html.escape(st['location'])} &middot; {st['date']} &middot; {s['story_told_by']}</p>
-    <div class="story-body"><p style="font-size:17px; color:var(--text); max-width:none;">{html.escape(st['text'][lang])}</p></div>
-    <p style="margin-top:26px; font-size:13.5px; color:var(--text-faint); border-top:1px solid var(--border); padding-top:16px;">
-      {s['story_source_lbl']}: <a href="{st['source_url']}" target="_blank" rel="noopener" style="color:var(--text-dim);">{html.escape(st['source_label'])}</a>
-    </p>
+    related = [x for x in STORIES if x is not st and x['category'] == st['category']]
+    for x in STORIES:
+        if len(related) >= 2:
+            break
+        if x is not st and x not in related:
+            related.append(x)
+    related_html = ''.join(magazine_card(lang, x, 'klein') for x in related[:2])
+    body = f'''  <article class="story-detail">
+    <div class="story-cover" aria-hidden="true"><span class="mag-cat-mark">{html.escape(cat)}</span></div>
+    <div class="wrap story-detail-wrap">
+      <p class="story-back-row"><a class="story-back" href="/{lang}/stories/">{s['story_back']}</a></p>
+      <p class="story-topline">{html.escape(cat)} &middot; {html.escape(st['location'])} &middot; {st['date']}</p>
+      <h1>{html.escape(st['title'][lang])}</h1>
+      <div class="story-read"><p>{html.escape(st['text'][lang])}</p></div>
+      <div class="story-source">
+        <p class="story-source-h">{se['detail_source_h']}</p>
+        <p class="story-source-line">{s['story_told_by']} &middot; {s['story_source_lbl']}: <a href="{st['source_url']}" target="_blank" rel="noopener">{html.escape(st['source_label'])}</a></p>
+      </div>
+    </div>
+  </article>
+
+  <section class="story-related"><div class="wrap">
+    <p class="story-related-h">{se['related']}</p>
+    <div class="mag-grid">{related_html}</div>
+  </div></section>
+
+  <section class="story-invite"><div class="wrap">
+    <h2>{se['invite_h']}</h2>
+    <p>{s['invite_p']}</p>
+    <a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span aria-hidden="true">&#8599;</span></a>
   </div></section>
 '''
     return page_shell(lang, f"{st['title'][lang]} — 2R", st['text'][lang][:150], 'stories', body)

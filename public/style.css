@@ -753,3 +753,94 @@ section.block + section.block { padding-top: 44px; }
   .priv-fieldnote { border-left: 2px solid #000; background: none; }
   a { color: #000 !important; text-decoration: underline; }
 }
+
+/* ============================================================
+   VERHALEN — levend reisboek (herbouw 29 aug)
+   Filmische hero + magazine-raster met papieren composities
+   (geen verzonnen documentairefoto's) + detailsjabloon.
+   ============================================================ */
+.stories-hero {
+  position: relative; display: flex; align-items: flex-end; overflow: hidden;
+  min-height: clamp(520px, 68vh, 720px); color: var(--paper-light); margin-top: -1px;
+}
+.stories-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% center; filter: saturate(0.88) contrast(1.04); }
+.stories-hero-shade {
+  position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(100deg, rgba(11,37,37,0.9) 0%, rgba(11,37,37,0.55) 38%, rgba(11,37,37,0.1) 64%, rgba(11,37,37,0) 84%),
+    linear-gradient(0deg, rgba(11,37,37,0.62) 0%, rgba(11,37,37,0) 44%);
+}
+.stories-hero-content { position: relative; z-index: 2; width: min(920px, 94vw); padding: 128px 24px 8vh; }
+@media (min-width: 700px) { .stories-hero-content { padding-left: clamp(24px, 7vw, 96px); } }
+.stories-hero h1 { font-size: clamp(32px, 5vw, 62px); color: #fff; margin: 12px 0 0; max-width: 15ch; font-weight: 500; }
+.stories-hero-lede { font-size: clamp(15px, 1.5vw, 19px); line-height: 1.6; color: rgba(250,246,237,0.9); max-width: 50ch; margin: 20px 0 0; }
+.stories-hero-cta { display: inline-flex; align-items: center; gap: 8px; margin-top: 24px; color: #fff; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--ember); padding-bottom: 3px; }
+.stories-hero-cta:hover { border-bottom-color: #fff; }
+
+/* Papieren cover (typografisch, i.p.v. foto) */
+.mag-cover, .mag-featured-cover, .story-cover {
+  background: linear-gradient(135deg, var(--paper-light) 0%, #efe6d3 55%, #e6dbc4 100%);
+  position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center;
+}
+.mag-cat-mark { font-family: var(--serif); font-style: italic; color: rgba(169,102,66,0.30); text-align: center; padding: 0 18px; line-height: 1.1; }
+
+/* Magazine */
+.mag { background: var(--paper); }
+.mag .wrap { max-width: 1080px; padding-top: clamp(44px, 6vw, 80px); padding-bottom: clamp(56px, 8vw, 96px); }
+.mag-featured {
+  display: grid; grid-template-columns: 45% 1fr; gap: 0; text-decoration: none;
+  border: 1px solid rgba(169,102,66,0.22); border-radius: 16px; overflow: hidden; margin-bottom: clamp(28px, 4vw, 44px);
+  transition: box-shadow .2s ease;
+}
+.mag-featured:hover { box-shadow: 0 14px 40px rgba(11,37,37,0.12); }
+.mag-featured-cover { min-height: 320px; }
+.mag-featured-cover .mag-cat-mark { font-size: clamp(30px, 4vw, 52px); }
+.mag-featured-body { padding: clamp(24px, 3vw, 40px); display: flex; flex-direction: column; justify-content: center; }
+.mag-featured-label { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
+.mag-featured-body .mag-cat { color: var(--moss); font-size: 13px; margin: 14px 0 0; }
+.mag-featured-body h2 { font-family: var(--serif); font-size: clamp(24px, 3vw, 36px); color: var(--ink); margin: 8px 0 0; font-weight: 500; }
+.mag-featured-body p { color: var(--text-dim); font-size: 16px; line-height: 1.6; margin: 14px 0 0; max-width: 52ch; }
+.mag-cta { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; color: var(--ember); font-weight: 600; font-size: 15px; }
+
+.mag-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: clamp(18px, 2.4vw, 30px); }
+.mag-card { grid-column: span 2; text-decoration: none; display: flex; flex-direction: column; border-radius: 14px; overflow: hidden; border: 1px solid rgba(169,102,66,0.18); background: var(--paper-light); transition: transform .2s ease, box-shadow .2s ease; }
+.mag-card.mag-middel { grid-column: span 3; }
+.mag-card:hover { transform: scale(1.015); box-shadow: 0 12px 34px rgba(11,37,37,0.12); }
+.mag-cover { min-height: 130px; }
+.mag-middel .mag-cover { min-height: 180px; }
+.mag-cover .mag-cat-mark { font-size: clamp(18px, 2.4vw, 30px); }
+.mag-body { padding: 16px 18px 20px; }
+.mag-cat { color: var(--moss); font-size: 12px; letter-spacing: 0.02em; }
+.mag-card h3 { font-family: var(--serif); font-size: clamp(17px, 1.7vw, 21px); font-weight: 500; color: var(--ink); margin: 6px 0 0; }
+.mag-card p { color: var(--text-dim); font-size: 14px; line-height: 1.55; margin: 8px 0 0; }
+.mag-meta { display: block; color: var(--text-faint); font-size: 12.5px; margin-top: 12px; }
+@media (max-width: 860px) { .mag-featured { grid-template-columns: 1fr; } .mag-featured-cover { min-height: 190px; } .mag-card, .mag-card.mag-middel { grid-column: span 3; } }
+@media (max-width: 560px) { .mag-grid { grid-template-columns: 1fr; } .mag-card, .mag-card.mag-middel { grid-column: auto; } }
+
+/* Detailpagina */
+.story-detail { background: var(--paper); }
+.story-cover { min-height: clamp(150px, 22vh, 230px); }
+.story-cover .mag-cat-mark { font-size: clamp(26px, 4vw, 46px); }
+.story-detail-wrap { max-width: 680px; padding-top: 28px; padding-bottom: clamp(40px, 5vw, 64px); }
+.story-back-row { margin: 0 0 18px; }
+.story-back { color: var(--text-faint); text-decoration: none; font-size: 14px; }
+.story-back:hover { color: var(--cognac); }
+.story-topline { color: var(--moss); font-size: 13.5px; margin: 0; }
+.story-detail-wrap h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 44px); color: var(--ink); margin: 10px 0 22px; font-weight: 500; }
+.story-read p { font-size: 18px; line-height: 1.8; color: var(--ink); }
+.story-source { margin-top: 32px; border-top: 1px solid rgba(169,102,66,0.28); padding-top: 18px; }
+.story-source-h { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--moss); margin: 0 0 6px; }
+.story-source-line { font-size: 14px; color: var(--text-dim); margin: 0; }
+.story-source-line a { color: var(--cognac); }
+
+.story-related { background: var(--paper); }
+.story-related .wrap { max-width: 1080px; padding-top: 8px; padding-bottom: clamp(40px, 6vw, 72px); }
+.story-related-h { font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--ink); margin: 0 0 18px; }
+.story-related .mag-grid { grid-template-columns: repeat(2, 1fr); }
+.story-related .mag-card, .story-related .mag-card.mag-middel { grid-column: auto; }
+@media (max-width: 560px) { .story-related .mag-grid { grid-template-columns: 1fr; } }
+
+.story-invite { background: var(--petrol-deep); color: var(--paper-light); }
+.story-invite .wrap { max-width: 680px; text-align: center; padding-top: clamp(40px, 6vw, 64px); padding-bottom: clamp(40px, 6vw, 64px); }
+.story-invite h2 { font-family: var(--serif); font-size: clamp(22px, 3vw, 32px); color: #fff; margin: 0 0 10px; font-weight: 500; }
+.story-invite p { color: rgba(250,246,237,0.82); font-size: 16px; line-height: 1.65; max-width: 46ch; margin: 0 auto 22px; }
