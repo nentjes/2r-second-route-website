@@ -762,26 +762,88 @@ HOWTO = {
 ),
 }
 
+# "Zo werkt het" als vijf filmische scènes (beelden van Codex, 29 aug).
+# Volgorde/beeld gedeeld over alle talen; tekst per taal (nl/en; rest valt op en).
+HOWTO_IMAGES = ['howto-01-vertrek.jpg', 'howto-02-onderweg.jpg', 'howto-03-verhaal.jpg', 'howto-04-muziek.jpg', 'howto-05-ritme.jpg']
+
+FAQ_LABEL = {'nl': 'Goed om te weten voor vertrek', 'en': 'Good to know before you go',
+             'de': 'Gut zu wissen vor der Abfahrt', 'fr': 'Bon à savoir avant de partir',
+             'es': 'Bueno saber antes de salir', 'pt': 'Bom saber antes de partir'}
+
+HOWTO_SCENES = {
+'nl': [
+    ('Hoofdstuk 01 · Voor je vertrekt', 'Eén knop. Daarna krijgt de wereld buiten een stem.',
+     'Start Route voordat je wegrijdt en kies hoe je reist. Terwijl jij rijdt, kijkt Route vooruit en kiest het verhaal dat deze plek betekenis geeft.'),
+    ('Hoofdstuk 02 · Onderweg', 'Vanaf hier rijdt de verteller met je mee.',
+     'Eén tik en de reis begint. Route volgt je via GPS en zoekt live wat er om je heen te vertellen valt — met voorrang voor lokale bronnen, niet alleen Wikipedia.'),
+    ('Hoofdstuk 03 · Het verhaal', 'Route kiest één betekenisvol verhaal.',
+     'Geen lijst met weetjes. Per plek één verhaal, rustig verteld, met ruimte voor de weg en voor elkaar — en je hoort waar het vandaan komt.'),
+    ('Hoofdstuk 04 · Jouw muziek', 'De muziek zakt. Een stem komt naast je zitten.',
+     'Je eigen muziek — Spotify, radio, podcast — duikt vanzelf zachtjes weg zodra de verteller begint, en zwelt weer aan als het verhaal klaar is.'),
+    ('Hoofdstuk 05 · Jouw ritme', 'Luisteren, even stil zijn, of samen spelen.',
+     'Luister, tik op "stil" als je rust wilt, of speel samen een reisquiz. Jij bepaalt het ritme; Route past zich aan.'),
+],
+'en': [
+    ('Chapter 01 · Before you leave', 'One tap. Then the world outside finds a voice.',
+     'Start Route before you set off and choose how you travel. As you drive, Route looks ahead and picks the story that gives this place meaning.'),
+    ('Chapter 02 · On the road', 'From here, the narrator rides along with you.',
+     'One tap and the journey begins. Route follows your GPS and finds, live, what there is to tell around you — favouring local sources, not just Wikipedia.'),
+    ('Chapter 03 · The story', 'Route picks one meaningful story.',
+     'Not a list of facts. One story per place, calmly told, with room for the road and for each other — and you hear where it comes from.'),
+    ('Chapter 04 · Your music', 'The music softens. A voice sits down beside you.',
+     'Your own music — Spotify, radio, podcast — automatically ducks the moment the narrator starts, and swells back up when the story ends.'),
+    ('Chapter 05 · Your pace', 'Listen, fall quiet, or play together.',
+     'Listen, tap "quiet" when you want a pause, or play a travel quiz together. You set the pace; Route adapts.'),
+],
+}
+
+
+def _strip_lead_glyph(s):
+    # Verwijder leidende emoji/symbolen + spatie (geen emoji-koppen op de site).
+    i = 0
+    while i < len(s) and not (s[i].isalnum() or s[i] == '<'):
+        i += 1
+    return s[i:].lstrip()
+
+
 def build_howto(lang):
     h = HOWTO.get(lang, HOWTO['en'])
-    items = '\n'.join(
-        f'''      <h2 style="font-size:19px; margin-top:34px;">{s['h']}</h2>
-      <p style="max-width:none;">{s['p']}</p>''' for s in h['sections'])
-    body = f'''  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
-    <div class="eyebrow">{h['eyebrow']}</div>
-    <h1 style="font-size:clamp(28px,4vw,40px); margin:18px 0 10px;">{h['title']}</h1>
-    <div class="story-body" style="font-size:16px;">
-      <p style="max-width:none; color:var(--text-dim);">{h['lede']}</p>
-{items}
-      <div style="margin-top:40px; padding:22px 24px; border:1px solid var(--line, rgba(255,255,255,.1)); border-radius:16px;">
-        <h2 style="font-size:19px; margin:0 0 6px;">{h['cta_h']}</h2>
-        <p style="max-width:none; margin:0 0 14px;">{h['cta_p']}</p>
-        <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">{h['cta_btn']}</a>
-      </div>
+    scenes_data = HOWTO_SCENES.get(lang, HOWTO_SCENES['en'])
+    scenes = ''
+    for i, (eyebrow, kop, tekst) in enumerate(scenes_data):
+        laad = 'fetchpriority="high"' if i == 0 else 'loading="lazy"'
+        scenes += f'''  <section class="howto-scene">
+    <img class="howto-photo" src="/images/{HOWTO_IMAGES[i]}" alt="{html.escape(kop)}" {laad} decoding="async">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">{html.escape(eyebrow)}</p>
+      <h2>{html.escape(kop)}</h2>
+      <p class="howto-lede">{html.escape(tekst)}</p>
+    </div>
+  </section>
+'''
+    faq = ''.join(f'''      <details class="howto-faq">
+        <summary>{_strip_lead_glyph(sec['h'])}</summary>
+        <p>{sec['p']}</p>
+      </details>
+''' for sec in h['sections'])
+    body = f'''  <section class="howto-intro"><div class="wrap" style="max-width:720px;">
+    <div class="eyebrow">{NAV_HOWTO[lang]}</div>
+    <h1>{h['title']}</h1>
+    <p class="howto-intro-lede">{h['lede']}</p>
+  </div></section>
+{scenes}  <section class="block"><div class="wrap" style="max-width:720px;">
+    <div class="section-label">{FAQ_LABEL.get(lang, FAQ_LABEL['en'])}</div>
+    <div class="howto-faq-list">
+{faq}    </div>
+    <div class="howto-cta">
+      <h2>{h['cta_h']}</h2>
+      <p>{h['cta_p']}</p>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">{h['cta_btn']}</a>
     </div>
   </div></section>
 '''
-    return page_shell(lang, h['title'] + ' — 2R', h['lede'][:150], 'howto', body)
+    return page_shell(lang, h['title'] + ' — 2R (Second Route)', h['lede'][:150], 'howto', body)
 
 def nav(lang, active):
     s = SITE[lang]
