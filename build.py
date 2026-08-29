@@ -1022,7 +1022,7 @@ def city_story_card(lang, index):
 # live site (Robins proefstem is te jong voor de filmische kwaliteit — 29 aug).
 # Go-live: (1) definitieve mp3 op die vaste naam zetten, (2) AUDIO_LIVE = True,
 # (3) python3 build.py, (4) npx wrangler deploy.
-AUDIO_LIVE = False
+AUDIO_LIVE = True
 
 SITE_AUDIO_NL = '''
 <div id="site-audio" class="site-audio" data-state="uit">

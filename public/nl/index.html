@@ -260,5 +260,49 @@
   <p class="footer-credit">Gebouwd door Roel Nentjes, samen met Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
 </footer>
 
+<div id="site-audio" class="site-audio" data-state="uit">
+  <audio id="sa-el" src="/audio/2r-intro.mp3" preload="none"></audio>
+  <button id="sa-toggle" class="sa-toggle" type="button" aria-pressed="false" title="Geluid aan of uit">
+    <span class="sa-wave" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="sa-label">Geluid uit</span>
+  </button>
+  <input id="sa-vol" class="sa-vol" type="range" min="0" max="100" value="70" aria-label="Volume">
+</div>
+<script>
+(function () {
+  var box = document.getElementById('site-audio');
+  var el = document.getElementById('sa-el');
+  if (!box || !el) return;
+  var toggle = document.getElementById('sa-toggle');
+  var label = toggle.querySelector('.sa-label');
+  var vol = document.getElementById('sa-vol');
+  var MUTE = 'siteAudioMuted', VOL = 'siteAudioVol', GESTART = 'siteAudioGestart';
+  function lees(k){ try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function schrijf(k, v){ try { localStorage.setItem(k, v); } catch (e) {} }
+  var startVol = parseInt(lees(VOL), 10); if (isNaN(startVol)) startVol = 70;
+  vol.value = startVol; el.volume = startVol / 100;
+  function toon(staat){ box.dataset.state = staat; label.textContent = (staat === 'aan' ? 'Geluid aan' : 'Geluid uit'); toggle.setAttribute('aria-pressed', staat === 'aan' ? 'true' : 'false'); }
+  toon('uit');
+  function speel(){ el.play().then(function(){ toon('aan'); try { sessionStorage.setItem(GESTART, '1'); } catch (e) {} }).catch(function(){ toon('uit'); }); }
+  var gedempt = lees(MUTE) === '1';
+  var alGestart = false; try { alGestart = sessionStorage.getItem(GESTART) === '1'; } catch (e) {}
+  if (!gedempt && !alGestart) {
+    var evs = ['pointerdown', 'keydown', 'scroll', 'touchstart'];
+    var start = function (e){ if (e && box.contains(e.target)) return; speel(); af(); };
+    var af = function (){ evs.forEach(function (ev){ window.removeEventListener(ev, start, true); }); };
+    evs.forEach(function (ev){ window.addEventListener(ev, start, true); });
+  }
+  el.addEventListener('play', function(){ toon('aan'); });
+  el.addEventListener('pause', function(){ toon('uit'); });
+  el.addEventListener('ended', function(){ toon('uit'); });
+  toggle.addEventListener('click', function (e){
+    e.stopPropagation();
+    if (el.paused) { schrijf(MUTE, '0'); speel(); }
+    else { el.pause(); schrijf(MUTE, '1'); toon('uit'); }
+  });
+  vol.addEventListener('input', function(){ el.volume = vol.value / 100; schrijf(VOL, vol.value); });
+})();
+</script>
+
 </body>
 </html>
