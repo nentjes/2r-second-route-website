@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Política de privacidad — 2R</title>
-<meta name="description" content="2R (nombre provisional: MapsInfo) es una app de guía de viaje que narra en voz alta lo que te rodea mientras conduces, pedaleas o caminas. Esta políti">
+<meta name="description" content="2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada.">
 <link rel="icon" href="/icon-2r.png">
 <link rel="apple-touch-icon" href="/icon-2r.png">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="Política de privacidad — 2R">
-<meta property="og:description" content="2R (nombre provisional: MapsInfo) es una app de guía de viaje que narra en voz alta lo que te rodea mientras conduces, pedaleas o caminas. Esta políti">
+<meta property="og:description" content="2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada.">
 <meta property="og:image" content="/og.jpg">
 </head>
 <body>
@@ -67,33 +67,66 @@
 })();
 </script>
 <main>
-  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
-    <div class="eyebrow">Privacidad</div>
-    <h1 style="font-size:clamp(28px,4vw,40px); margin:18px 0 6px;">Política de privacidad — 2R</h1>
-    <p style="color:var(--text-faint); font-size:14px; margin-bottom:28px;">Última actualización: agosto de 2026</p>
-    <div class="story-body" style="font-size:16px;">
-      <p style="max-width:none;">2R (nombre provisional: MapsInfo) es una app de guía de viaje que narra en voz alta lo que te rodea mientras conduces, pedaleas o caminas. Esta política explica con precisión qué datos usa la app y por qué — sin letra pequeña.</p>
+  <section class="priv-hero">
+    <img class="priv-hero-img" src="/images/privacy-header-stille-telefoon.jpg" alt="Un teléfono boca abajo junto a un diario de viaje y un mapa de carreteras en un coche aparcado." width="1536" height="1024" fetchpriority="high">
+    <div class="priv-hero-shade" aria-hidden="true"></div>
+    <div class="priv-hero-content">
+      <p class="eyebrow on-photo">Privacidad</p>
+      <h1>Tu viaje sigue siendo tuyo.</h1>
+      <p class="priv-hero-lede">2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada. Aquí explicamos exactamente qué sí ocurre.</p>
+      <p class="priv-updated">Última actualización: agosto de 2026</p>
+    </div>
+  </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Ubicación</h2>
-      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Tu ubicación GPS se usa para determinar qué historias son relevantes.</li>
+  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Sin cuenta</h3><p>No necesitas iniciar sesión ni dejar tu nombre.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Sin registro de trayectos</h3><p>Por defecto no creamos un historial de dónde has estado.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Registros de prueba solo con permiso</h3><p>Los diagnósticos más detallados están desactivados por defecto y son solo opt-in.</p></div></div></div></section>
+
+  <section class="priv-body"><div class="wrap priv-grid">
+    <nav class="priv-toc" aria-label="En esta página">
+      <p class="priv-toc-label">En esta página</p>
+      <ul><li><a href="#loc">Ubicación</a></li><li><a href="#verhalen">Historias y voz (encargados del tratamiento)</a></li><li><a href="#limieten">Límites de uso</a></li><li><a href="#accounts">Cuentas</a></li><li><a href="#contact">Contacto</a></li></ul>
+    </nav>
+    <div class="priv-text">
+      <p class="priv-intro">2R (nombre provisional: MapsInfo) es una app de guía de viaje que narra en voz alta lo que te rodea mientras conduces, pedaleas o caminas. Esta política explica con precisión qué datos usa la app y por qué — sin letra pequeña.</p>
+
+      <section id="loc" class="priv-sec">
+        <h2>Ubicación</h2>
+        <p class="priv-fieldnote">Por defecto tu ubicación no se guarda ni se registra.</p>
+        <p class="priv-fieldnote">Los registros ampliados solo están disponibles como opt-in para el equipo de pruebas.</p>
+        <ul><li>Tu ubicación GPS se usa para determinar qué historias son relevantes.</li>
 <li><strong>Por defecto, tu ubicación nunca se almacena ni se registra.</strong> Cada solicitud al servidor contiene solo el nombre y el contexto de un lugar concreto — sin historial de ubicación, sin registro de trayectos.</li>
 <li><strong>El registro ampliado es opcional (opt-in) para nuestro equipo de pruebas.</strong> Solo si lo activas tú mismo (desbloqueado con un código de diagnóstico que compartimos con nuestros testers habituales) registramos más información — incluida tu posición GPS, dirección y velocidad en el momento de generar una historia — para detectar errores y mejorar la app. Está desactivado por defecto, solo se aplica mientras lo tengas activado, nunca se comparte con terceros y puedes desactivarlo en cualquier momento.</li></ul>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Historias y voz (encargados del tratamiento)</h2>
-      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Para generar historias enviamos nombres de lugares y contexto breve a <strong>Google (API de Gemini)</strong>.</li>
-<li>Para narrar el texto en voz alta, ese texto se envía a <strong>ElevenLabs</strong> para la síntesis de voz.</li>
-<li>La información factual se obtiene directamente desde tu dispositivo en <strong>Wikipedia</strong>, y los datos de ruta desde <strong>OpenStreetMap / OSRM</strong> — estas solicitudes nunca pasan por nuestro servidor.</li>
-<li>Las historias generadas y los fragmentos de audio se almacenan en caché temporalmente (reutilizados para otros usuarios en el mismo lugar) para reducir el coste y el tiempo de espera.</li></ul>
+      <section id="verhalen" class="priv-sec">
+        <h2>Historias y voz (encargados del tratamiento)</h2>
+        <table class="priv-table">
+          <thead><tr><th scope="col">Servicio</th><th scope="col">Para qué</th><th scope="col">Qué información</th></tr></thead>
+          <tbody><tr><th scope="row">Google / Gemini API</th><td data-label="Para qué">generar la historia</td><td data-label="Qué información">nombre del lugar y breve contexto</td></tr><tr><th scope="row">ElevenLabs</th><td data-label="Para qué">crear la voz</td><td data-label="Qué información">el texto de la historia</td></tr><tr><th scope="row">Wikipedia</th><td data-label="Para qué">información factual</td><td data-label="Qué información">solicitud directa desde el dispositivo</td></tr><tr><th scope="row">OpenStreetMap / OSRM</th><td data-label="Para qué">mapa y ruta</td><td data-label="Qué información">solicitud directa desde el dispositivo</td></tr></tbody>
+        </table>
+        <p class="priv-cache">Las historias generadas y los fragmentos de audio se almacenan en caché temporalmente (reutilizados para otros usuarios en el mismo lugar) para reducir el coste y el tiempo de espera.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Límites de uso</h2>
-      <p style="max-width:none;">Para prevenir abusos mantenemos un contador técnico y temporal por dirección IP (conservado un máximo de 48 horas). Es solo un número, nunca vinculado a un perfil, nombre o cuenta, y nunca se comparte con terceros.</p>
+      <section id="limieten" class="priv-sec">
+        <h2>Límites de uso</h2>
+        <p>Para prevenir abusos mantenemos un contador técnico y temporal por dirección IP (conservado un máximo de 48 horas). Es solo un número, nunca vinculado a un perfil, nombre o cuenta, y nunca se comparte con terceros.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Cuentas</h2>
-      <p style="max-width:none;">La app no requiere ninguna cuenta, inicio de sesión ni registro.</p>
+      <section id="accounts" class="priv-sec">
+        <h2>Cuentas</h2>
+        <p>La app no requiere ninguna cuenta, inicio de sesión ni registro.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Contacto</h2>
-      <p style="max-width:none;">¿Preguntas sobre esta política? Escribe a <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.</p>
+      <section id="contact" class="priv-sec">
+        <h2>Contacto</h2>
+        <p>¿Preguntas sobre esta política? Escribe a <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.</p>
+      </section>
     </div>
+  </div></section>
+
+  <section class="priv-close"><div class="wrap">
+    <h2>¿Alguna otra pregunta?</h2>
+    <p>La privacidad debe ser comprensible. Si algo no está claro, nos gustaría saberlo.</p>
+    <a class="btn-primary" href="mailto:nimco@nentjes.nl">Escríbenos</a>
   </div></section>
 
 </main>

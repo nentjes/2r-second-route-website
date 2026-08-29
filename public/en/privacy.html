@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — 2R</title>
-<meta name="description" content="2R (working title: MapsInfo) is a travel-guide app that narrates the world around you while you drive, cycle or walk. This policy explains exactly wha">
+<meta name="description" content="2R uses only what it needs to tell the right story along the way. No account, no trip logging and no stored location by default. Here we explain exact">
 <link rel="icon" href="/icon-2r.png">
 <link rel="apple-touch-icon" href="/icon-2r.png">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="Privacy Policy — 2R">
-<meta property="og:description" content="2R (working title: MapsInfo) is a travel-guide app that narrates the world around you while you drive, cycle or walk. This policy explains exactly wha">
+<meta property="og:description" content="2R uses only what it needs to tell the right story along the way. No account, no trip logging and no stored location by default. Here we explain exact">
 <meta property="og:image" content="/og.jpg">
 </head>
 <body>
@@ -67,33 +67,66 @@
 })();
 </script>
 <main>
-  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
-    <div class="eyebrow">Privacy</div>
-    <h1 style="font-size:clamp(28px,4vw,40px); margin:18px 0 6px;">Privacy Policy — 2R</h1>
-    <p style="color:var(--text-faint); font-size:14px; margin-bottom:28px;">Last updated: August 2026</p>
-    <div class="story-body" style="font-size:16px;">
-      <p style="max-width:none;">2R (working title: MapsInfo) is a travel-guide app that narrates the world around you while you drive, cycle or walk. This policy explains exactly what data the app uses and why — no fine print.</p>
+  <section class="priv-hero">
+    <img class="priv-hero-img" src="/images/privacy-header-stille-telefoon.jpg" alt="A phone lies face down next to a travel journal and road map in a parked car." width="1536" height="1024" fetchpriority="high">
+    <div class="priv-hero-shade" aria-hidden="true"></div>
+    <div class="priv-hero-content">
+      <p class="eyebrow on-photo">Privacy</p>
+      <h1>Your journey stays yours.</h1>
+      <p class="priv-hero-lede">2R uses only what it needs to tell the right story along the way. No account, no trip logging and no stored location by default. Here we explain exactly what does happen.</p>
+      <p class="priv-updated">Last updated: August 2026</p>
+    </div>
+  </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Location</h2>
-      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Your GPS location is used to determine which stories are relevant.</li>
+  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>No account needed</h3><p>You don't need to log in or leave your name.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>No trip logging</h3><p>By default we don't build a history of where you've been.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Test logs only with consent</h3><p>More detailed diagnostics are off by default and opt-in only.</p></div></div></div></section>
+
+  <section class="priv-body"><div class="wrap priv-grid">
+    <nav class="priv-toc" aria-label="On this page">
+      <p class="priv-toc-label">On this page</p>
+      <ul><li><a href="#loc">Location</a></li><li><a href="#verhalen">Stories &amp; voice (processors)</a></li><li><a href="#limieten">Usage limits</a></li><li><a href="#accounts">Accounts</a></li><li><a href="#contact">Contact</a></li></ul>
+    </nav>
+    <div class="priv-text">
+      <p class="priv-intro">2R (working title: MapsInfo) is a travel-guide app that narrates the world around you while you drive, cycle or walk. This policy explains exactly what data the app uses and why — no fine print.</p>
+
+      <section id="loc" class="priv-sec">
+        <h2>Location</h2>
+        <p class="priv-fieldnote">By default your location is never stored and never logged.</p>
+        <p class="priv-fieldnote">Extended logging is only available as an opt-in for the testing team.</p>
+        <ul><li>Your GPS location is used to determine which stories are relevant.</li>
 <li><strong>By default your location is never stored and never logged.</strong> Every request to the server contains only the name and context of a specific place — no location history, no trip logging.</li>
 <li><strong>Extended logging is an opt-in for our testing team.</strong> Only if you switch it on yourself (unlocked with a diagnostics code we share with our regular testers) do we record more — including your GPS position, heading and speed at the moment a story is generated — to track down bugs and improve the app. This is off by default, applies only while you have it enabled, is never shared with third parties, and can be turned off at any time.</li></ul>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Stories &amp; voice (processors)</h2>
-      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>To generate stories we send place names and brief context to <strong>Google (Gemini API)</strong>.</li>
-<li>To narrate the text aloud, that text is sent to <strong>ElevenLabs</strong> for voice synthesis.</li>
-<li>Factual information is fetched directly from your device from <strong>Wikipedia</strong>, and route data from <strong>OpenStreetMap / OSRM</strong> — these requests never pass through our server.</li>
-<li>Generated stories and audio fragments are cached temporarily (reused for other users at the same location) to reduce cost and wait time.</li></ul>
+      <section id="verhalen" class="priv-sec">
+        <h2>Stories &amp; voice (processors)</h2>
+        <table class="priv-table">
+          <thead><tr><th scope="col">Service</th><th scope="col">What for</th><th scope="col">What information</th></tr></thead>
+          <tbody><tr><th scope="row">Google / Gemini API</th><td data-label="What for">generate a story</td><td data-label="What information">place name and brief context</td></tr><tr><th scope="row">ElevenLabs</th><td data-label="What for">create speech</td><td data-label="What information">the story text</td></tr><tr><th scope="row">Wikipedia</th><td data-label="What for">factual information</td><td data-label="What information">direct request from your device</td></tr><tr><th scope="row">OpenStreetMap / OSRM</th><td data-label="What for">map and route</td><td data-label="What information">direct request from your device</td></tr></tbody>
+        </table>
+        <p class="priv-cache">Generated stories and audio fragments are cached temporarily (reused for other users at the same location) to reduce cost and wait time.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Usage limits</h2>
-      <p style="max-width:none;">To prevent abuse we keep a technical, temporary counter per IP address (kept for a maximum of 48 hours). This is only a number, never linked to a profile, name or account, and never shared with third parties.</p>
+      <section id="limieten" class="priv-sec">
+        <h2>Usage limits</h2>
+        <p>To prevent abuse we keep a technical, temporary counter per IP address (kept for a maximum of 48 hours). This is only a number, never linked to a profile, name or account, and never shared with third parties.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Accounts</h2>
-      <p style="max-width:none;">The app requires no account, login or registration.</p>
+      <section id="accounts" class="priv-sec">
+        <h2>Accounts</h2>
+        <p>The app requires no account, login or registration.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Contact</h2>
-      <p style="max-width:none;">Questions about this policy? Email <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.</p>
+      <section id="contact" class="priv-sec">
+        <h2>Contact</h2>
+        <p>Questions about this policy? Email <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.</p>
+      </section>
     </div>
+  </div></section>
+
+  <section class="priv-close"><div class="wrap">
+    <h2>Still have a question?</h2>
+    <p>Privacy should be understandable. If anything is unclear, we'd like to hear it.</p>
+    <a class="btn-primary" href="mailto:nimco@nentjes.nl">Email us</a>
   </div></section>
 
 </main>

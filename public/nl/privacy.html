@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacybeleid — 2R</title>
-<meta name="description" content="2R (werktitel: MapsInfo) is een reisgids-app die tijdens het rijden, fietsen of wandelen gesproken verhalen vertelt over de omgeving. Dit beleid legt ">
+<meta name="description" content="2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie">
 <link rel="icon" href="/icon-2r.png">
 <link rel="apple-touch-icon" href="/icon-2r.png">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="Privacybeleid — 2R">
-<meta property="og:description" content="2R (werktitel: MapsInfo) is een reisgids-app die tijdens het rijden, fietsen of wandelen gesproken verhalen vertelt over de omgeving. Dit beleid legt ">
+<meta property="og:description" content="2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie">
 <meta property="og:image" content="/og.jpg">
 </head>
 <body>
@@ -67,33 +67,66 @@
 })();
 </script>
 <main>
-  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
-    <div class="eyebrow">Privacy</div>
-    <h1 style="font-size:clamp(28px,4vw,40px); margin:18px 0 6px;">Privacybeleid — 2R</h1>
-    <p style="color:var(--text-faint); font-size:14px; margin-bottom:28px;">Laatst bijgewerkt: augustus 2026</p>
-    <div class="story-body" style="font-size:16px;">
-      <p style="max-width:none;">2R (werktitel: MapsInfo) is een reisgids-app die tijdens het rijden, fietsen of wandelen gesproken verhalen vertelt over de omgeving. Dit beleid legt uit welke gegevens de app gebruikt en waarom — haarfijn, zonder kleine lettertjes.</p>
+  <section class="priv-hero">
+    <img class="priv-hero-img" src="/images/privacy-header-stille-telefoon.jpg" alt="Een telefoon ligt met het scherm naar beneden naast een reisboek en wegenkaart in een geparkeerde auto." width="1536" height="1024" fetchpriority="high">
+    <div class="priv-hero-shade" aria-hidden="true"></div>
+    <div class="priv-hero-content">
+      <p class="eyebrow on-photo">Privacy</p>
+      <h1>Jouw reis blijft van jou.</h1>
+      <p class="priv-hero-lede">2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie. Hier leggen we precies uit wat er wél gebeurt.</p>
+      <p class="priv-updated">Laatst bijgewerkt: augustus 2026</p>
+    </div>
+  </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Locatie</h2>
-      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Je GPS-locatie wordt gebruikt om te bepalen welke verhalen relevant zijn.</li>
+  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Geen account nodig</h3><p>Je hoeft niet in te loggen of je naam achter te laten.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Geen rittenregistratie</h3><p>Standaard bouwen we geen geschiedenis op van waar je bent geweest.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Testlogs alleen met toestemming</h3><p>Uitgebreidere diagnosegegevens staan standaard uit en zijn alleen opt-in.</p></div></div></div></section>
+
+  <section class="priv-body"><div class="wrap priv-grid">
+    <nav class="priv-toc" aria-label="Op deze pagina">
+      <p class="priv-toc-label">Op deze pagina</p>
+      <ul><li><a href="#loc">Locatie</a></li><li><a href="#verhalen">Verhalen &amp; spraak (verwerkers)</a></li><li><a href="#limieten">Gebruikslimieten</a></li><li><a href="#accounts">Accounts</a></li><li><a href="#contact">Contact</a></li></ul>
+    </nav>
+    <div class="priv-text">
+      <p class="priv-intro">2R (werktitel: MapsInfo) is een reisgids-app die tijdens het rijden, fietsen of wandelen gesproken verhalen vertelt over de omgeving. Dit beleid legt uit welke gegevens de app gebruikt en waarom — haarfijn, zonder kleine lettertjes.</p>
+
+      <section id="loc" class="priv-sec">
+        <h2>Locatie</h2>
+        <p class="priv-fieldnote">Standaard wordt je locatie niet opgeslagen en niet gelogd.</p>
+        <p class="priv-fieldnote">Uitgebreide logboeken zijn alleen beschikbaar als opt-in voor het testteam.</p>
+        <ul><li>Je GPS-locatie wordt gebruikt om te bepalen welke verhalen relevant zijn.</li>
 <li><strong>Standaard wordt je locatie niet opgeslagen en niet gelogd.</strong> Elk verzoek aan de server bevat alleen de naam en context van een specifieke plek — geen locatiegeschiedenis, geen rittenregistratie.</li>
 <li><strong>Uitgebreide logboeken zijn een opt-in voor het testteam.</strong> Alleen als je het zélf aanzet (ontgrendeld met een diagnose-code die we met onze vaste testers delen) leggen we meer vast — waaronder je GPS-positie, rijrichting en snelheid op het moment dat een verhaal wordt gemaakt — om fouten in de verhalen op te sporen en de app te verbeteren. Dit staat standaard uit, geldt alleen zolang jij het zelf aan hebt staan, wordt nooit met derden gedeeld, en kun je op elk moment weer uitzetten.</li></ul>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Verhalen &amp; spraak (verwerkers)</h2>
-      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;"><li>Om verhalen te genereren sturen we plaatsnamen en korte context naar <strong>Google (Gemini API)</strong>.</li>
-<li>Om de tekst voor te lezen sturen we die tekst naar <strong>ElevenLabs</strong> voor spraaksynthese.</li>
-<li>Voor feitelijke informatie wordt rechtstreeks vanaf je toestel <strong>Wikipedia</strong> geraadpleegd, en voor routes <strong>OpenStreetMap / OSRM</strong> — deze verzoeken lopen niet via onze server.</li>
-<li>Gegenereerde verhalen en spraakfragmenten worden tijdelijk gecachet (hergebruikt voor andere gebruikers op dezelfde plek) om kosten en wachttijd te beperken.</li></ul>
+      <section id="verhalen" class="priv-sec">
+        <h2>Verhalen &amp; spraak (verwerkers)</h2>
+        <table class="priv-table">
+          <thead><tr><th scope="col">Dienst</th><th scope="col">Waarvoor</th><th scope="col">Welke informatie</th></tr></thead>
+          <tbody><tr><th scope="row">Google / Gemini API</th><td data-label="Waarvoor">verhaal genereren</td><td data-label="Welke informatie">plaatsnaam en korte context</td></tr><tr><th scope="row">ElevenLabs</th><td data-label="Waarvoor">spraak maken</td><td data-label="Welke informatie">tekst van het verhaal</td></tr><tr><th scope="row">Wikipedia</th><td data-label="Waarvoor">feitelijke informatie</td><td data-label="Welke informatie">rechtstreeks verzoek vanaf toestel</td></tr><tr><th scope="row">OpenStreetMap / OSRM</th><td data-label="Waarvoor">kaart en route</td><td data-label="Welke informatie">rechtstreeks verzoek vanaf toestel</td></tr></tbody>
+        </table>
+        <p class="priv-cache">Gegenereerde verhalen en spraakfragmenten worden tijdelijk gecachet (hergebruikt voor andere gebruikers op dezelfde plek) om kosten en wachttijd te beperken.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Gebruikslimieten</h2>
-      <p style="max-width:none;">Om misbruik te voorkomen houden we per IP-adres een technische, tijdelijke teller bij (maximaal 48 uur bewaard). Dit is uitsluitend een aantal, nooit gekoppeld aan een profiel, naam of account, en wordt nooit gedeeld met derden.</p>
+      <section id="limieten" class="priv-sec">
+        <h2>Gebruikslimieten</h2>
+        <p>Om misbruik te voorkomen houden we per IP-adres een technische, tijdelijke teller bij (maximaal 48 uur bewaard). Dit is uitsluitend een aantal, nooit gekoppeld aan een profiel, naam of account, en wordt nooit gedeeld met derden.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Accounts</h2>
-      <p style="max-width:none;">De app vereist geen account, inloggen of registratie.</p>
+      <section id="accounts" class="priv-sec">
+        <h2>Accounts</h2>
+        <p>De app vereist geen account, inloggen of registratie.</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">Contact</h2>
-      <p style="max-width:none;">Vragen over dit beleid? Mail naar <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.</p>
+      <section id="contact" class="priv-sec">
+        <h2>Contact</h2>
+        <p>Vragen over dit beleid? Mail naar <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.</p>
+      </section>
     </div>
+  </div></section>
+
+  <section class="priv-close"><div class="wrap">
+    <h2>Nog een vraag?</h2>
+    <p>Privacy hoort begrijpelijk te zijn. Als iets niet duidelijk is, horen we het graag.</p>
+    <a class="btn-primary" href="mailto:nimco@nentjes.nl">Mail ons</a>
   </div></section>
 
 </main>

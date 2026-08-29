@@ -1354,35 +1354,184 @@ def build_roadmap(lang):
 '''
     return page_shell(lang, f"Roadmap — 2R (Second Route)", s['rm_lede'], 'roadmap', body)
 
+# Nieuwe redactionele omlijsting voor de privacypagina (herbouw 29 aug). De
+# juridische kernteksten blijven in PRIVACY[lang]; hieronder alleen de rustige
+# samenvattingen, tabel en het slot. Faithful vertaald, geen nieuwe claims.
+PRIV_EXTRA = {
+'nl': dict(
+    h1='Jouw reis blijft van jou.', alt='Een telefoon ligt met het scherm naar beneden naast een reisboek en wegenkaart in een geparkeerde auto.',
+    lede='2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie. Hier leggen we precies uit wat er wél gebeurt.',
+    promises=[('01', 'Geen account nodig', 'Je hoeft niet in te loggen of je naam achter te laten.'),
+              ('02', 'Geen rittenregistratie', 'Standaard bouwen we geen geschiedenis op van waar je bent geweest.'),
+              ('03', 'Testlogs alleen met toestemming', 'Uitgebreidere diagnosegegevens staan standaard uit en zijn alleen opt-in.')],
+    toc_label='Op deze pagina',
+    table_head=('Dienst', 'Waarvoor', 'Welke informatie'),
+    table_rows=[('Google / Gemini API', 'verhaal genereren', 'plaatsnaam en korte context'),
+                ('ElevenLabs', 'spraak maken', 'tekst van het verhaal'),
+                ('Wikipedia', 'feitelijke informatie', 'rechtstreeks verzoek vanaf toestel'),
+                ('OpenStreetMap / OSRM', 'kaart en route', 'rechtstreeks verzoek vanaf toestel')],
+    note1='Standaard wordt je locatie niet opgeslagen en niet gelogd.',
+    note2='Uitgebreide logboeken zijn alleen beschikbaar als opt-in voor het testteam.',
+    close_h='Nog een vraag?', close_p='Privacy hoort begrijpelijk te zijn. Als iets niet duidelijk is, horen we het graag.', close_btn='Mail ons',
+),
+'en': dict(
+    h1='Your journey stays yours.', alt='A phone lies face down next to a travel journal and road map in a parked car.',
+    lede='2R uses only what it needs to tell the right story along the way. No account, no trip logging and no stored location by default. Here we explain exactly what does happen.',
+    promises=[('01', 'No account needed', "You don't need to log in or leave your name."),
+              ('02', 'No trip logging', "By default we don't build a history of where you've been."),
+              ('03', 'Test logs only with consent', 'More detailed diagnostics are off by default and opt-in only.')],
+    toc_label='On this page',
+    table_head=('Service', 'What for', 'What information'),
+    table_rows=[('Google / Gemini API', 'generate a story', 'place name and brief context'),
+                ('ElevenLabs', 'create speech', 'the story text'),
+                ('Wikipedia', 'factual information', 'direct request from your device'),
+                ('OpenStreetMap / OSRM', 'map and route', 'direct request from your device')],
+    note1='By default your location is never stored and never logged.',
+    note2='Extended logging is only available as an opt-in for the testing team.',
+    close_h='Still have a question?', close_p="Privacy should be understandable. If anything is unclear, we'd like to hear it.", close_btn='Email us',
+),
+'de': dict(
+    h1='Deine Reise bleibt deine.', alt='Ein Telefon liegt mit dem Bildschirm nach unten neben einem Reisetagebuch und einer Straßenkarte in einem geparkten Auto.',
+    lede='2R nutzt nur das, was nötig ist, um unterwegs die richtige Geschichte zu erzählen. Kein Konto, keine Fahrtenaufzeichnung und standardmäßig kein gespeicherter Standort. Hier erklären wir genau, was wirklich passiert.',
+    promises=[('01', 'Kein Konto nötig', 'Du musst dich nicht anmelden oder deinen Namen hinterlassen.'),
+              ('02', 'Keine Fahrtenaufzeichnung', 'Standardmäßig führen wir keine Historie darüber, wo du warst.'),
+              ('03', 'Testprotokolle nur mit Zustimmung', 'Ausführlichere Diagnosedaten sind standardmäßig aus und nur per Opt-in.')],
+    toc_label='Auf dieser Seite',
+    table_head=('Dienst', 'Wofür', 'Welche Informationen'),
+    table_rows=[('Google / Gemini API', 'Geschichte erzeugen', 'Ortsname und kurzer Kontext'),
+                ('ElevenLabs', 'Sprache erzeugen', 'Text der Geschichte'),
+                ('Wikipedia', 'Sachinformationen', 'direkte Anfrage vom Gerät'),
+                ('OpenStreetMap / OSRM', 'Karte und Route', 'direkte Anfrage vom Gerät')],
+    note1='Standardmäßig wird dein Standort nicht gespeichert und nicht protokolliert.',
+    note2='Ausführliche Protokolle gibt es nur als Opt-in für das Testteam.',
+    close_h='Noch eine Frage?', close_p='Datenschutz sollte verständlich sein. Wenn etwas unklar ist, hören wir gern davon.', close_btn='Schreib uns',
+),
+'fr': dict(
+    h1='Votre voyage reste le vôtre.', alt="Un téléphone posé écran vers le bas à côté d'un carnet de voyage et d'une carte routière dans une voiture garée.",
+    lede="2R n'utilise que ce qui est nécessaire pour raconter la bonne histoire en chemin. Pas de compte, pas d'enregistrement des trajets et, par défaut, aucune localisation conservée. Voici exactement ce qui se passe.",
+    promises=[('01', 'Aucun compte nécessaire', 'Pas besoin de vous connecter ni de laisser votre nom.'),
+              ('02', 'Aucun enregistrement des trajets', "Par défaut, nous ne conservons pas d'historique de vos déplacements."),
+              ('03', 'Journaux de test seulement avec accord', 'Les diagnostics détaillés sont désactivés par défaut et uniquement sur option.')],
+    toc_label='Sur cette page',
+    table_head=('Service', 'Pour quoi', 'Quelles informations'),
+    table_rows=[('Google / Gemini API', 'générer un récit', 'nom du lieu et bref contexte'),
+                ('ElevenLabs', 'créer la voix', 'le texte du récit'),
+                ('Wikipedia', 'informations factuelles', "requête directe depuis l'appareil"),
+                ('OpenStreetMap / OSRM', 'carte et itinéraire', "requête directe depuis l'appareil")],
+    note1="Par défaut, votre localisation n'est ni conservée ni enregistrée.",
+    note2="Les journaux détaillés ne sont disponibles qu'en option pour l'équipe de test.",
+    close_h='Encore une question ?', close_p="La confidentialité doit être compréhensible. Si quelque chose n'est pas clair, dites-le-nous.", close_btn='Écrivez-nous',
+),
+'es': dict(
+    h1='Tu viaje sigue siendo tuyo.', alt='Un teléfono boca abajo junto a un diario de viaje y un mapa de carreteras en un coche aparcado.',
+    lede='2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada. Aquí explicamos exactamente qué sí ocurre.',
+    promises=[('01', 'Sin cuenta', 'No necesitas iniciar sesión ni dejar tu nombre.'),
+              ('02', 'Sin registro de trayectos', 'Por defecto no creamos un historial de dónde has estado.'),
+              ('03', 'Registros de prueba solo con permiso', 'Los diagnósticos más detallados están desactivados por defecto y son solo opt-in.')],
+    toc_label='En esta página',
+    table_head=('Servicio', 'Para qué', 'Qué información'),
+    table_rows=[('Google / Gemini API', 'generar la historia', 'nombre del lugar y breve contexto'),
+                ('ElevenLabs', 'crear la voz', 'el texto de la historia'),
+                ('Wikipedia', 'información factual', 'solicitud directa desde el dispositivo'),
+                ('OpenStreetMap / OSRM', 'mapa y ruta', 'solicitud directa desde el dispositivo')],
+    note1='Por defecto tu ubicación no se guarda ni se registra.',
+    note2='Los registros ampliados solo están disponibles como opt-in para el equipo de pruebas.',
+    close_h='¿Alguna otra pregunta?', close_p='La privacidad debe ser comprensible. Si algo no está claro, nos gustaría saberlo.', close_btn='Escríbenos',
+),
+'pt': dict(
+    h1='A sua viagem continua sua.', alt='Um telefone virado para baixo ao lado de um diário de viagem e de um mapa rodoviário num carro estacionado.',
+    lede='O 2R usa apenas o necessário para contar a história certa pelo caminho. Sem conta, sem registo de trajetos e, por padrão, sem localização guardada. Aqui explicamos exatamente o que de facto acontece.',
+    promises=[('01', 'Sem conta necessária', 'Você não precisa fazer login nem deixar o seu nome.'),
+              ('02', 'Sem registo de trajetos', 'Por padrão, não criamos um histórico de onde você esteve.'),
+              ('03', 'Registos de teste apenas com consentimento', 'Diagnósticos mais detalhados estão desativados por padrão e são apenas opt-in.')],
+    toc_label='Nesta página',
+    table_head=('Serviço', 'Para quê', 'Que informação'),
+    table_rows=[('Google / Gemini API', 'gerar a história', 'nome do lugar e breve contexto'),
+                ('ElevenLabs', 'criar a voz', 'o texto da história'),
+                ('Wikipedia', 'informação factual', 'pedido direto a partir do aparelho'),
+                ('OpenStreetMap / OSRM', 'mapa e rota', 'pedido direto a partir do aparelho')],
+    note1='Por padrão, a sua localização não é guardada nem registada.',
+    note2='Registos detalhados só estão disponíveis como opt-in para a equipa de teste.',
+    close_h='Ainda tem uma pergunta?', close_p='A privacidade deve ser compreensível. Se algo não estiver claro, queremos saber.', close_btn='Escreva-nos',
+),
+}
+
 def build_privacy(lang):
     p = PRIVACY[lang]
+    pe = PRIV_EXTRA[lang]
     location_lis = '\n'.join(f'<li>{item}</li>' for item in p['location_items'])
-    stories_lis = '\n'.join(f'<li>{item}</li>' for item in p['stories_items'])
-    body = f'''  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
-    <div class="eyebrow">{p['eyebrow']}</div>
-    <h1 style="font-size:clamp(28px,4vw,40px); margin:18px 0 6px;">{p['title']}</h1>
-    <p style="color:var(--text-faint); font-size:14px; margin-bottom:28px;">{p['updated']}</p>
-    <div class="story-body" style="font-size:16px;">
-      <p style="max-width:none;">{p['intro']}</p>
+    promises = ''.join(
+        f'<div class="priv-promise"><span class="priv-pnum">{n}</span><div class="priv-pbody"><h3>{t}</h3><p>{d}</p></div></div>'
+        for n, t, d in pe['promises'])
+    toc_items = [('loc', p['h_location']), ('verhalen', p['h_stories']), ('limieten', p['h_limits']),
+                 ('accounts', p['h_accounts']), ('contact', p['h_contact'])]
+    toc = ''.join(f'<li><a href="#{aid}">{lbl}</a></li>' for aid, lbl in toc_items)
+    th = pe['table_head']
+    rows = ''.join(
+        f'<tr><th scope="row">{s}</th><td data-label="{th[1]}">{w}</td><td data-label="{th[2]}">{i}</td></tr>'
+        for s, w, i in pe['table_rows'])
+    caching = p['stories_items'][3] if len(p['stories_items']) > 3 else ''
+    body = f'''  <section class="priv-hero">
+    <img class="priv-hero-img" src="/images/privacy-header-stille-telefoon.jpg" alt="{pe['alt']}" width="1536" height="1024" fetchpriority="high">
+    <div class="priv-hero-shade" aria-hidden="true"></div>
+    <div class="priv-hero-content">
+      <p class="eyebrow on-photo">{p['eyebrow']}</p>
+      <h1>{pe['h1']}</h1>
+      <p class="priv-hero-lede">{pe['lede']}</p>
+      <p class="priv-updated">{p['updated']}</p>
+    </div>
+  </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">{p['h_location']}</h2>
-      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;">{location_lis}</ul>
+  <section class="priv-promises"><div class="wrap">{promises}</div></section>
 
-      <h2 style="font-size:19px; margin-top:34px;">{p['h_stories']}</h2>
-      <ul style="color:var(--text-dim); padding-left:20px; margin:0 0 14px;">{stories_lis}</ul>
+  <section class="priv-body"><div class="wrap priv-grid">
+    <nav class="priv-toc" aria-label="{pe['toc_label']}">
+      <p class="priv-toc-label">{pe['toc_label']}</p>
+      <ul>{toc}</ul>
+    </nav>
+    <div class="priv-text">
+      <p class="priv-intro">{p['intro']}</p>
 
-      <h2 style="font-size:19px; margin-top:34px;">{p['h_limits']}</h2>
-      <p style="max-width:none;">{p['limits_text']}</p>
+      <section id="loc" class="priv-sec">
+        <h2>{p['h_location']}</h2>
+        <p class="priv-fieldnote">{pe['note1']}</p>
+        <p class="priv-fieldnote">{pe['note2']}</p>
+        <ul>{location_lis}</ul>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">{p['h_accounts']}</h2>
-      <p style="max-width:none;">{p['accounts_text']}</p>
+      <section id="verhalen" class="priv-sec">
+        <h2>{p['h_stories']}</h2>
+        <table class="priv-table">
+          <thead><tr><th scope="col">{th[0]}</th><th scope="col">{th[1]}</th><th scope="col">{th[2]}</th></tr></thead>
+          <tbody>{rows}</tbody>
+        </table>
+        <p class="priv-cache">{caching}</p>
+      </section>
 
-      <h2 style="font-size:19px; margin-top:34px;">{p['h_contact']}</h2>
-      <p style="max-width:none;">{p['contact_text']}</p>
+      <section id="limieten" class="priv-sec">
+        <h2>{p['h_limits']}</h2>
+        <p>{p['limits_text']}</p>
+      </section>
+
+      <section id="accounts" class="priv-sec">
+        <h2>{p['h_accounts']}</h2>
+        <p>{p['accounts_text']}</p>
+      </section>
+
+      <section id="contact" class="priv-sec">
+        <h2>{p['h_contact']}</h2>
+        <p>{p['contact_text']}</p>
+      </section>
     </div>
   </div></section>
+
+  <section class="priv-close"><div class="wrap">
+    <h2>{pe['close_h']}</h2>
+    <p>{pe['close_p']}</p>
+    <a class="btn-primary" href="mailto:nimco@nentjes.nl">{pe['close_btn']}</a>
+  </div></section>
 '''
-    return page_shell(lang, p['title'], p['intro'][:150], 'privacy', body)
+    return page_shell(lang, p['title'], pe['lede'][:150], 'privacy', body)
 
 # --- Live verhalen uit de app (goedgekeurd op de besloten leespagina) ------
 # Zoekbaar en met kaart, zodat het archief bruikbaar blijft als het groeit.

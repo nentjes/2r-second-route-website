@@ -657,3 +657,99 @@ section.block + section.block { padding-top: 44px; }
   .rm-route .rm-chapter:nth-child(4) { animation-delay: 0.18s; }
 }
 @keyframes rm-rise { from { transform: translateY(16px); } to { transform: none; } }
+
+/* ============================================================
+   PRIVACY — rustige belofte aan de reiziger (herbouw 29 aug)
+   Boekpapier, geen slot/schild-clichés, geen blauw-paars.
+   ============================================================ */
+.priv-hero {
+  position: relative; display: flex; align-items: flex-end; overflow: hidden;
+  min-height: clamp(360px, 48vh, 520px); color: var(--paper-light); margin-top: -1px;
+}
+.priv-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 60% center; filter: saturate(0.9) contrast(1.03); }
+.priv-hero-shade {
+  position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(100deg, rgba(11,37,37,0.9) 0%, rgba(11,37,37,0.55) 38%, rgba(11,37,37,0.1) 64%, rgba(11,37,37,0) 84%),
+    linear-gradient(0deg, rgba(11,37,37,0.55) 0%, rgba(11,37,37,0) 45%);
+}
+.priv-hero-content { position: relative; z-index: 2; width: min(920px, 94vw); padding: 120px 24px 6vh; }
+@media (min-width: 700px) { .priv-hero-content { padding-left: clamp(24px, 7vw, 96px); } }
+.priv-hero h1 { font-size: clamp(30px, 4.6vw, 54px); color: #fff; margin: 12px 0 0; max-width: 16ch; font-weight: 500; }
+.priv-hero-lede { font-size: clamp(15px, 1.4vw, 18px); line-height: 1.6; color: rgba(250,246,237,0.9); max-width: 52ch; margin: 18px 0 0; }
+.priv-updated { font-size: 13px; color: rgba(250,246,237,0.62); margin: 16px 0 0; }
+
+/* Drie beloften in gewone taal */
+.priv-promises { background: var(--paper); }
+.priv-promises .wrap { max-width: 940px; padding-top: clamp(40px, 6vw, 72px); padding-bottom: 8px; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 3vw, 40px); }
+.priv-promise { display: flex; gap: 14px; align-items: flex-start; }
+.priv-pnum { font-family: var(--serif); font-style: italic; font-size: 22px; color: var(--gold); line-height: 1; flex: none; }
+.priv-promise h3 { font-family: var(--serif); font-size: 19px; font-weight: 500; color: var(--ink); margin: 0; }
+.priv-promise p { font-size: 14.5px; line-height: 1.55; color: var(--text-dim); margin: 6px 0 0; }
+@media (max-width: 720px) { .priv-promises .wrap { grid-template-columns: 1fr; gap: 22px; } }
+
+/* Volledige tekst met inhoudsopgave */
+.priv-body { background: var(--paper); }
+.priv-body .wrap { padding-top: clamp(36px, 5vw, 64px); padding-bottom: clamp(56px, 8vw, 96px); }
+.priv-grid { display: grid; grid-template-columns: 210px 1fr; gap: clamp(28px, 5vw, 72px); align-items: start; max-width: 1000px; }
+.priv-toc { position: sticky; top: 92px; }
+.priv-toc-label { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--moss); margin: 0 0 12px; }
+.priv-toc ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.priv-toc a { color: var(--text-dim); text-decoration: none; font-size: 14.5px; border-left: 2px solid transparent; padding-left: 12px; margin-left: -14px; display: block; }
+.priv-toc a:hover, .priv-toc a:focus-visible { color: var(--ink); border-left-color: var(--cognac); }
+.priv-text { max-width: 68ch; }
+.priv-intro { font-size: 17px; line-height: 1.7; color: var(--text-dim); margin: 0 0 8px; }
+.priv-sec { scroll-margin-top: 92px; padding-top: clamp(24px, 3vw, 36px); }
+.priv-sec h2 { font-family: var(--serif); font-size: clamp(21px, 2.4vw, 26px); color: var(--ink); margin: 0 0 12px; font-weight: 500; }
+.priv-text p { font-size: 17px; line-height: 1.75; color: var(--ink); max-width: 68ch; margin: 0 0 12px; }
+.priv-text ul { color: var(--text-dim); padding-left: 20px; margin: 6px 0 4px; display: flex; flex-direction: column; gap: 12px; }
+.priv-text li { font-size: 16px; line-height: 1.7; max-width: 66ch; }
+.priv-text strong { color: var(--ink); font-weight: 600; }
+.priv-cache { font-size: 15px !important; color: var(--text-dim) !important; }
+
+/* Mobiel/tablet: één kolom, TOC als horizontale sprongnavigatie boven de tekst */
+@media (max-width: 820px) {
+  .priv-grid { grid-template-columns: 1fr; gap: 20px; }
+  .priv-toc { position: static; top: auto; border-bottom: 1px solid rgba(169,102,66,0.22); padding-bottom: 16px; }
+  .priv-toc ul { flex-direction: row; flex-wrap: wrap; gap: 8px 18px; }
+  .priv-toc a { border-left: none; padding-left: 0; margin-left: 0; }
+  .priv-text { max-width: none; }
+}
+
+/* Veldnotitie: kernclaim rustig uitgelicht */
+.priv-fieldnote {
+  background: var(--paper-light); border-left: 3px solid var(--cognac);
+  border-radius: 8px; padding: 12px 16px; margin: 0 0 12px !important;
+  font-size: 15.5px !important; line-height: 1.6 !important; color: var(--ink) !important; max-width: none !important;
+}
+
+/* Verwerkers-tabel; op mobiel definitielijst via data-label */
+.priv-table { width: 100%; border-collapse: collapse; margin: 6px 0 8px; font-size: 15px; }
+.priv-table th, .priv-table td { text-align: left; padding: 11px 12px; border-bottom: 1px solid rgba(169,102,66,0.2); vertical-align: top; }
+.priv-table thead th { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--moss); border-bottom: 1px solid var(--cognac); }
+.priv-table tbody th { font-weight: 600; color: var(--ink); }
+.priv-table td { color: var(--text-dim); }
+@media (max-width: 620px) {
+  .priv-table, .priv-table tbody, .priv-table tr, .priv-table td, .priv-table th { display: block; }
+  .priv-table thead { position: absolute; left: -9999px; }
+  .priv-table tr { border: 1px solid rgba(169,102,66,0.2); border-radius: 10px; padding: 10px 12px; margin: 0 0 12px; }
+  .priv-table th, .priv-table td { border: none; padding: 3px 0; }
+  .priv-table tbody th { font-size: 16px; }
+  .priv-table td::before { content: attr(data-label) " · "; color: var(--moss); font-weight: 600; }
+}
+
+/* Menselijk slot in petrol */
+.priv-close { background: var(--petrol-deep); color: var(--paper-light); }
+.priv-close .wrap { max-width: 680px; padding-top: clamp(40px, 6vw, 64px); padding-bottom: clamp(40px, 6vw, 64px); text-align: center; }
+.priv-close h2 { font-family: var(--serif); font-size: clamp(22px, 3vw, 30px); color: #fff; margin: 0 0 10px; font-weight: 500; }
+.priv-close p { color: rgba(250,246,237,0.82); font-size: 16px; line-height: 1.65; max-width: 44ch; margin: 0 auto 22px; }
+
+/* Print: zwarte tekst op wit, zonder hero/nav */
+@media print {
+  .site-nav, .priv-hero, .priv-toc, .priv-close, footer, .site-footer { display: none !important; }
+  .priv-body, .priv-promises { background: #fff !important; }
+  .priv-grid { grid-template-columns: 1fr !important; }
+  .priv-text, .priv-text p, .priv-text li, .priv-sec h2, .priv-promise h3, .priv-promise p, .priv-fieldnote, .priv-table th, .priv-table td { color: #000 !important; }
+  .priv-fieldnote { border-left: 2px solid #000; background: none; }
+  a { color: #000 !important; text-decoration: underline; }
+}
