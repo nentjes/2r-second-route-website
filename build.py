@@ -15,15 +15,18 @@ LANG_LABEL = {'nl': 'NL', 'en': 'EN', 'de': 'DE', 'fr': 'FR', 'es': 'ES', 'pt': 
 HTML_LANG = {'nl': 'nl', 'en': 'en', 'de': 'de', 'fr': 'fr', 'es': 'es', 'pt': 'pt'}
 
 # ---------------------------------------------------------------------------
-# Categorie-labels (dezelfde 6 rubrieken als in de app, vertaald)
+# Categorie-labels (dezelfde 9 rubrieken als in de app, vertaald)
 # ---------------------------------------------------------------------------
 CATEGORIES = {
-    'geschiedenis':  {'nl': 'Geschiedenis',      'en': 'History',        'de': 'Geschichte',        'fr': 'Histoire',            'es': 'Historia',           'pt': 'História'},
-    'architectuur':  {'nl': 'Architectuur',      'en': 'Architecture',   'de': 'Architektur',       'fr': 'Architecture',        'es': 'Arquitectura',       'pt': 'Arquitetura'},
-    'natuur':        {'nl': 'Natuur',            'en': 'Nature',         'de': 'Natur',             'fr': 'Nature',              'es': 'Naturaleza',         'pt': 'Natureza'},
-    'voetbal':       {'nl': 'Voetbal',           'en': 'Football',       'de': 'Fußball',           'fr': 'Football',            'es': 'Fútbol',             'pt': 'Futebol'},
-    'influencers':   {'nl': 'Influencers',       'en': 'Influencers',    'de': 'Influencer',        'fr': 'Influenceurs',        'es': 'Influencers',        'pt': 'Influenciadores'},
-    'fotografie':    {'nl': 'Fotografie & Kunst','en': 'Photography & Art','de': 'Fotografie & Kunst','fr': 'Photo & Art',       'es': 'Fotografía y Arte',  'pt': 'Fotografia e Arte'},
+    'geschiedenis':    {'nl': 'Geschiedenis',        'en': 'History',            'de': 'Geschichte',            'fr': 'Histoire',              'es': 'Historia',               'pt': 'História'},
+    'architectuur':    {'nl': 'Architectuur',        'en': 'Architecture',       'de': 'Architektur',           'fr': 'Architecture',          'es': 'Arquitectura',           'pt': 'Arquitetura'},
+    'kunst':           {'nl': 'Kunst & Cultuur',     'en': 'Art & Culture',      'de': 'Kunst & Kultur',        'fr': 'Art & Culture',         'es': 'Arte y Cultura',         'pt': 'Arte e Cultura'},
+    'natuur':          {'nl': 'Natuur',              'en': 'Nature',             'de': 'Natur',                 'fr': 'Nature',                'es': 'Naturaleza',             'pt': 'Natureza'},
+    'eten en drinken': {'nl': 'Eten & Drinken',      'en': 'Food & Drink',       'de': 'Essen & Trinken',       'fr': 'Gastronomie',           'es': 'Comida y Bebida',        'pt': 'Comida e Bebida'},
+    'mensen':          {'nl': 'Mensen & Verhalen',   'en': 'People & Stories',   'de': 'Menschen & Geschichten','fr': 'Gens & Récits',         'es': 'Gente e Historias',      'pt': 'Pessoas e Histórias'},
+    'sport':           {'nl': 'Sport',               'en': 'Sport',              'de': 'Sport',                 'fr': 'Sport',                 'es': 'Deporte',                'pt': 'Desporto'},
+    'techniek':        {'nl': 'Techniek & Industrie','en': 'Tech & Industry',    'de': 'Technik & Industrie',   'fr': 'Technique & Industrie', 'es': 'Técnica e Industria',    'pt': 'Técnica e Indústria'},
+    'fotografie':      {'nl': 'Uitzicht & Fotografie','en': 'Views & Photography','de': 'Aussicht & Fotografie', 'fr': 'Panoramas & Photo',     'es': 'Miradores y Fotografía', 'pt': 'Miradouros e Fotografia'},
 }
 
 # ---------------------------------------------------------------------------
@@ -47,9 +50,9 @@ SITE = {
     footer_credit='Gebouwd door Roel Nentjes, samen met Claude (Anthropic).',
     stat1_num='9', stat1_lbl='interesse-rubrieken — elk apart getest',
     stat2_num='6', stat2_lbl='talen, live in de app en op deze site',
-    stat3_lbl='testers vandaag (live)', stat4_lbl='verhalen verteld vandaag (live)',
+    stat3_num='4', stat3_lbl='reismodi — auto, fiets, te voet, trein', stat4_num='∞', stat4_lbl='plekken — overal, live gegenereerd',
     steps_eyebrow='Hoe het werkt', steps_h2='Van rijden naar luisteren in drie stappen',
-    step1_h='Zet Route aan', step1_p='Eén knop. Kies je interesses — geschiedenis, natuur, voetbal, fotografie — of typ er zelf een in.',
+    step1_h='Zet Route aan', step1_p='Eén knop. Kies je interesses — geschiedenis, natuur, kunst, eten & drinken — of typ er zelf een in.',
     step2_h='Rijd, fiets of wandel', step2_p='2R volgt je route via GPS en zoekt live naar wat er om je heen te vertellen valt — bij lokale bronnen, niet alleen Wikipedia.',
     step3_h='Luister naar Route', step3_p='Een warme, expressieve stem vertelt — eerlijk over wat je écht kunt zien, nooit doen-alsof.',
     why_eyebrow='Waarom 2R anders is', why_h2='Geen encyclopedie. Een reisgezel.',
@@ -92,9 +95,9 @@ SITE = {
     footer_credit='Built by Roel Nentjes, together with Claude (Anthropic).',
     stat1_num='9', stat1_lbl='interest categories — each individually tested',
     stat2_num='6', stat2_lbl='languages, live in the app and on this site',
-    stat3_lbl='testers today (live)', stat4_lbl='stories told today (live)',
+    stat3_num='4', stat3_lbl='travel modes — car, bike, walk, train', stat4_num='∞', stat4_lbl='places — anywhere, generated live',
     steps_eyebrow='How it works', steps_h2='From driving to listening, in three steps',
-    step1_h='Turn Route on', step1_p='One switch. Pick your interests — history, nature, football, photography — or type in your own.',
+    step1_h='Turn Route on', step1_p='One switch. Pick your interests — history, nature, art, food & drink — or type in your own.',
     step2_h='Drive, cycle or walk', step2_p="2R follows your route via GPS and searches live for what's worth telling — from local sources, not just Wikipedia.",
     step3_h='Listen to Route', step3_p='A warm, expressive voice narrates — honestly about what you can actually see, never pretending.',
     why_eyebrow='Why 2R is different', why_h2='Not an encyclopedia. A travel companion.',
@@ -137,9 +140,9 @@ SITE = {
     footer_credit='Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic).',
     stat1_num='9', stat1_lbl='Interessen-Rubriken — jede einzeln getestet',
     stat2_num='6', stat2_lbl='Sprachen, live in der App und auf dieser Website',
-    stat3_lbl='Tester heute (live)', stat4_lbl='Geschichten heute erzählt (live)',
+    stat3_num='4', stat3_lbl='Reisemodi — Auto, Rad, zu Fuß, Bahn', stat4_num='∞', stat4_lbl='Orte — überall, live generiert',
     steps_eyebrow='So funktioniert es', steps_h2='In drei Schritten vom Fahren zum Zuhören',
-    step1_h='Route einschalten', step1_p='Ein Schalter. Wähle deine Interessen — Geschichte, Natur, Fußball, Fotografie — oder gib eigene ein.',
+    step1_h='Route einschalten', step1_p='Ein Schalter. Wähle deine Interessen — Geschichte, Natur, Kunst, Essen & Trinken — oder gib eigene ein.',
     step2_h='Fahren, radeln oder gehen', step2_p='2R folgt deiner Route per GPS und sucht live nach Erzählenswertem — aus lokalen Quellen, nicht nur Wikipedia.',
     step3_h='Route zuhören', step3_p='Eine warme, ausdrucksstarke Stimme erzählt — ehrlich über das, was du wirklich sehen kannst, nie vorgetäuscht.',
     why_eyebrow='Warum 2R anders ist', why_h2='Kein Lexikon. Ein Reisebegleiter.',
@@ -182,9 +185,9 @@ SITE = {
     footer_credit='Conçu par Roel Nentjes, avec Claude (Anthropic).',
     stat1_num='9', stat1_lbl="catégories d'intérêt — chacune testée individuellement",
     stat2_num='6', stat2_lbl="langues, disponibles dans l'app et sur ce site",
-    stat3_lbl="testeurs aujourd'hui (en direct)", stat4_lbl="histoires racontées aujourd'hui (en direct)",
+    stat3_num='4', stat3_lbl='modes — voiture, vélo, à pied, train', stat4_num='∞', stat4_lbl='lieux — partout, générés en direct',
     steps_eyebrow='Comment ça marche', steps_h2="De la route à l'écoute, en trois étapes",
-    step1_h='Activez Route', step1_p="Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, football, photo — ou saisissez les vôtres.",
+    step1_h='Activez Route', step1_p="Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, art, gastronomie — ou saisissez les vôtres.",
     step2_h='Roulez, pédalez ou marchez', step2_p="2R suit votre itinéraire par GPS et cherche en direct ce qui vaut la peine d'être raconté — à partir de sources locales, pas seulement Wikipédia.",
     step3_h='Écoutez Route', step3_p="Une voix chaleureuse et expressive raconte — honnêtement, sur ce que vous pouvez réellement voir, jamais en faisant semblant.",
     why_eyebrow='Pourquoi 2R est différent', why_h2='Pas une encyclopédie. Un compagnon de voyage.',
@@ -227,9 +230,9 @@ SITE = {
     footer_credit='Creado por Roel Nentjes, junto con Claude (Anthropic).',
     stat1_num='9', stat1_lbl='categorías de interés — cada una probada individualmente',
     stat2_num='6', stat2_lbl='idiomas, disponibles en la app y en este sitio',
-    stat3_lbl='usuarios de prueba hoy (en vivo)', stat4_lbl='historias contadas hoy (en vivo)',
+    stat3_num='4', stat3_lbl='modos — coche, bici, a pie, tren', stat4_num='∞', stat4_lbl='lugares — en cualquier sitio, en vivo',
     steps_eyebrow='Cómo funciona', steps_h2='De conducir a escuchar, en tres pasos',
-    step1_h='Activa Route', step1_p='Un interruptor. Elige tus intereses —historia, naturaleza, fútbol, fotografía— o escribe los tuyos.',
+    step1_h='Activa Route', step1_p='Un interruptor. Elige tus intereses —historia, naturaleza, arte, gastronomía— o escribe los tuyos.',
     step2_h='Conduce, pedalea o camina', step2_p='2R sigue tu ruta por GPS y busca en vivo qué vale la pena contar —a partir de fuentes locales, no solo Wikipedia.',
     step3_h='Escucha a Route', step3_p='Una voz cálida y expresiva narra —con honestidad sobre lo que realmente puedes ver, nunca fingiendo.',
     why_eyebrow='Por qué 2R es diferente', why_h2='No es una enciclopedia. Es un compañero de viaje.',
@@ -272,9 +275,9 @@ SITE = {
     footer_credit='Criado por Roel Nentjes, com a Claude (Anthropic).',
     stat1_num='9', stat1_lbl='categorias de interesse — cada uma testada individualmente',
     stat2_num='6', stat2_lbl='idiomas, disponíveis no app e neste site',
-    stat3_lbl='testadores hoje (ao vivo)', stat4_lbl='histórias contadas hoje (ao vivo)',
+    stat3_num='4', stat3_lbl='modos — carro, bici, a pé, comboio', stat4_num='∞', stat4_lbl='lugares — em qualquer lugar, ao vivo',
     steps_eyebrow='Como funciona', steps_h2='De dirigir a ouvir, em três passos',
-    step1_h='Ative a Route', step1_p='Um interruptor. Escolha seus interesses — história, natureza, futebol, fotografia — ou digite os seus.',
+    step1_h='Ative a Route', step1_p='Um interruptor. Escolha seus interesses — história, natureza, arte, gastronomia — ou digite os seus.',
     step2_h='Dirija, pedale ou caminhe', step2_p='O 2R segue sua rota por GPS e busca ao vivo o que vale a pena contar — de fontes locais, não só a Wikipédia.',
     step3_h='Ouça a Route', step3_p='Uma voz calorosa e expressiva narra — com honestidade sobre o que você realmente pode ver, nunca fingindo.',
     why_eyebrow='Por que o 2R é diferente', why_h2='Não é uma enciclopédia. É um companheiro de viagem.',
@@ -581,12 +584,12 @@ ROADMAP_ITEMS = [
           es='En el extranjero se usa la Wikipedia local (italiano, francés, alemán…) y se cuenta en tu propio idioma.',
           pt='No exterior, a Wikipédia local é usada (italiano, francês, alemão…) e recontada no seu próprio idioma.')),
     ('live', dict(nl='Negen interesses, en je eigen', en='Nine interests, and your own', de='Neun Interessen, und deine eigenen', fr='Neuf centres d\'intérêt, et les vôtres', es='Nueve intereses, y los tuyos', pt='Nove interesses, e os seus'),
-     dict(nl='Geschiedenis, natuur, voetbal, fotografie, influencers en meer — plus een vrij invoerveld voor elke andere interesse.',
-          en='History, nature, football, photography, influencers and more — plus a free-text field for any other interest.',
-          de='Geschichte, Natur, Fußball, Fotografie, Influencer und mehr — plus ein Freitextfeld für jedes andere Interesse.',
-          fr='Histoire, nature, football, photo, influenceurs et plus — plus un champ libre pour tout autre centre d\'intérêt.',
-          es='Historia, naturaleza, fútbol, fotografía, influencers y más —además de un campo libre para cualquier otro interés.',
-          pt='História, natureza, futebol, fotografia, influenciadores e mais — além de um campo livre para qualquer outro interesse.')),
+     dict(nl='Geschiedenis, natuur, kunst, sport, eten & drinken en meer — plus een vrij invoerveld voor elke andere interesse.',
+          en='History, nature, art, sport, food & drink and more — plus a free-text field for any other interest.',
+          de='Geschichte, Natur, Kunst, Sport, Essen & Trinken und mehr — plus ein Freitextfeld für jedes andere Interesse.',
+          fr='Histoire, nature, art, sport, gastronomie et plus — plus un champ libre pour tout autre centre d\'intérêt.',
+          es='Historia, naturaleza, arte, deporte, gastronomía y más —además de un campo libre para cualquier otro interés.',
+          pt='História, natureza, arte, desporto, gastronomia e mais — além de um campo livre para qualquer outro interesse.')),
     ('testflight', dict(nl='De iOS-app', en='The iOS app', de='Die iOS-App', fr="L'app iOS", es='La app de iOS', pt='O app iOS'),
      dict(nl='2R draait als echte iPhone-app in besloten test, met eigen 2R-icoon en achtergrond-locatie.',
           en='2R runs as a real iPhone app in closed testing, with its own 2R icon and background location.',
@@ -601,13 +604,13 @@ ROADMAP_ITEMS = [
           fr='Les personnes qui connaissent leur propre région peuvent ajouter leurs propres histoires — écrites ou enregistrées — avec attribution et validation humaine avant publication.',
           es='Las personas que conocen su propia región pueden añadir sus propias historias —escritas o grabadas— con atribución y aprobación humana antes de publicarse.',
           pt='Pessoas que conhecem sua própria região podem adicionar suas próprias histórias — digitadas ou gravadas — com atribuição e aprovação humana antes da publicação.')),
-    ('soon', dict(nl='Jouw reismuziek tussen de verhalen', en='Your road music between the stories', de='Deine Reisemusik zwischen den Geschichten', fr='Votre musique de voyage entre les récits', es='Tu música de viaje entre las historias', pt='A sua música de viagem entre as histórias'),
-     dict(nl='Muziek die de stiltes draagt en zachtjes wegduikt zodra de verteller begint. Welk genre dat is, bepaal je zelf — reismuziek is voor iedereen iets persoonlijks.',
-          en='Music that carries the quiet stretches and ducks away the moment the narrator starts. Which genre is up to you — road music is personal.',
-          de='Musik, die die stillen Strecken trägt und leiser wird, sobald der Erzähler beginnt. Welches Genre, entscheidest du selbst — Reisemusik ist etwas Persönliches.',
-          fr="Une musique qui porte les silences et s'efface dès que le narrateur commence. Le genre, c'est vous qui le choisissez — la musique de voyage est personnelle.",
-          es='Música que sostiene los silencios y se aparta en cuanto empieza el narrador. Qué género, lo eliges tú: la música de viaje es algo personal.',
-          pt='Música que preenche os silêncios e recua assim que o narrador começa. O género escolhe você — música de viagem é algo pessoal.')),
+    ('soon', dict(nl='Reismuziek van 2R zelf', en='Road music from 2R itself', de='Reisemusik von 2R selbst', fr='Musique de voyage de 2R', es='Música de viaje de 2R', pt='Música de viagem do próprio 2R'),
+     dict(nl='Naast je eigen muziek kan 2R straks ook zelf passende reismuziek tussen de verhalen laten spelen. Welk genre dat is, bepaal je zelf — reismuziek is voor iedereen iets persoonlijks.',
+          en='Beyond your own music, 2R will also be able to play fitting road music of its own between the stories. Which genre is up to you — road music is personal.',
+          de='Neben deiner eigenen Musik kann 2R künftig auch selbst passende Reisemusik zwischen den Geschichten abspielen. Welches Genre, entscheidest du selbst — Reisemusik ist etwas Persönliches.',
+          fr="En plus de votre propre musique, 2R pourra bientôt diffuser lui-même une musique de voyage adaptée entre les récits. Le genre, c'est vous qui le choisissez — la musique de voyage est personnelle.",
+          es='Además de tu propia música, 2R podrá reproducir también su propia música de viaje entre las historias. Qué género, lo eliges tú: la música de viaje es algo personal.',
+          pt='Além da sua própria música, o 2R poderá tocar também a sua própria música de viagem entre as histórias. O género escolhe você — música de viagem é algo pessoal.')),
     ('soon', dict(nl='Handsfree spraakfeedback', en='Hands-free voice feedback', de='Freihändiges Sprach-Feedback', fr='Retour vocal mains libres', es='Comentarios por voz manos libres', pt='Feedback por voz sem usar as mãos'),
      dict(nl='"Dat klopt niet", "vertel meer" of "vijf minuten stil" — allemaal via spraak, want de bestuurder raakt de telefoon niet aan.',
           en='"That\'s not right", "tell me more" or "five minutes of quiet" — all by voice, because the driver never touches the phone.',
@@ -615,13 +618,13 @@ ROADMAP_ITEMS = [
           fr='« Ce n\'est pas exact », « dis-m\'en plus » ou « cinq minutes de silence » — tout à la voix, car le conducteur ne touche jamais le téléphone.',
           es='"Eso no es correcto", "cuéntame más" o "cinco minutos de silencio" —todo por voz, porque quien conduce nunca toca el teléfono.',
           pt='"Isso não está certo", "conte mais" ou "cinco minutos de silêncio" — tudo por voz, porque quem dirige nunca toca no telefone.')),
-    ('soon', dict(nl='Achtergrond-audio naast Google Maps', en='Background audio alongside Google Maps', de='Hintergrund-Audio neben Google Maps', fr='Audio en arrière-plan à côté de Google Maps', es='Audio en segundo plano junto a Google Maps', pt='Áudio em segundo plano junto ao Google Maps'),
-     dict(nl='Route blijft vertellen terwijl je navigatie-app op het scherm staat, met automatisch dimmen tijdens navigatie-instructies.',
-          en='Route keeps narrating while your navigation app stays on screen, automatically ducking during turn-by-turn instructions.',
-          de='Route erzählt weiter, während deine Navigations-App auf dem Bildschirm bleibt, mit automatischer Lautstärkeabsenkung bei Ansagen.',
-          fr='Route continue de raconter pendant que votre app de navigation reste à l\'écran, en baissant automatiquement le volume pendant les instructions.',
-          es='Route sigue narrando mientras tu app de navegación permanece en pantalla, bajando automáticamente el volumen durante las indicaciones.',
-          pt='A Route continua narrando enquanto seu app de navegação permanece na tela, abaixando automaticamente o volume durante as instruções.')),
+    ('testflight', dict(nl='Achtergrond-audio, met je eigen muziek eronder', en='Background audio, with your own music underneath', de='Hintergrund-Audio, mit deiner eigenen Musik darunter', fr='Audio en arrière-plan, avec votre musique en dessous', es='Audio en segundo plano, con tu propia música debajo', pt='Áudio em segundo plano, com a sua música por baixo'),
+     dict(nl='Route vertelt door met het scherm uit of je navigatie-app ervoor, en je eigen muziek (Spotify, radio, podcast) duikt vanzelf zachtjes weg zodra de verteller begint — en zwelt weer aan als het verhaal klaar is.',
+          en='Route keeps narrating with the screen off or your navigation app in front, and your own music (Spotify, radio, podcast) automatically ducks the moment the narrator starts — and swells back when the story ends.',
+          de='Route erzählt weiter bei ausgeschaltetem Bildschirm oder mit deiner Navi-App im Vordergrund, und deine eigene Musik (Spotify, Radio, Podcast) wird automatisch leiser, sobald der Erzähler beginnt — und schwillt wieder an, wenn die Geschichte endet.',
+          fr="Route continue de raconter écran éteint ou avec votre app de navigation devant, et votre musique (Spotify, radio, podcast) baisse automatiquement dès que le narrateur commence — puis remonte quand l'histoire se termine.",
+          es='Route sigue narrando con la pantalla apagada o tu app de navegación delante, y tu propia música (Spotify, radio, podcast) baja automáticamente en cuanto empieza el narrador — y vuelve a subir cuando termina la historia.',
+          pt='A Route continua narrando com a tela desligada ou seu app de navegação à frente, e a sua música (Spotify, rádio, podcast) baixa automaticamente assim que o narrador começa — e volta a subir quando a história termina.')),
     ('soon', dict(nl='Familie-modus met spelletjes', en='Family mode with games', de='Familienmodus mit Spielen', fr='Mode famille avec des jeux', es='Modo familiar con juegos', pt='Modo família com jogos'),
      dict(nl='Content voor de hele auto, met quizjes en spelletjes onderweg.',
           en='Content for the whole car, with quizzes and games for the road.',
@@ -666,7 +669,7 @@ STORIES = [
             fr="Regardez la Villa Horev, ici à l'angle de la Soestdijkseweg Zuid et de la Boslaan. Le nom est un bel acronyme pour « Espoir de Repos et de Paix ». C'est ce repos que recherchait le premier habitant, M. Reijsenbach, après ses années en tant que président de la Javasche Bank dans les anciennes Indes orientales néerlandaises. Vers 1900, de nombreux rapatriés fortunés s'installèrent dans les forêts salubres de Bilthoven.",
             es="Mira la Villa Horev, aquí en la esquina de Soestdijkseweg Zuid y Boslaan. El nombre es un bonito acrónimo de «Esperanza de Descanso y Paz». Ese descanso era lo que buscaba el primer residente, el señor Reijsenbach, tras sus años como presidente del Banco de Java en las antiguas Indias Orientales Neerlandesas. Hacia 1900, muchos repatriados adinerados se trasladaron a los saludables bosques de Bilthoven.",
             pt="Olhe para a Villa Horev, aqui na esquina da Soestdijkseweg Zuid com a Boslaan. O nome é um belo acrônimo para \"Esperança de Descanso e Paz\". Foi esse descanso que o primeiro morador, o Sr. Reijsenbach, buscou após seus anos como presidente do Banco de Java nas então Índias Orientais Holandesas. Por volta de 1900, muitos repatriados abastados se mudaram para as saudáveis florestas de Bilthoven.")),
-    dict(slug='dvsu-timber-broers', category='voetbal', location='De Bilt, Nederland', date='17 augustus 2026',
+    dict(slug='dvsu-timber-broers', category='sport', location='De Bilt, Nederland', date='17 augustus 2026',
          source_label='Wikipedia — DVSU', source_url='https://nl.wikipedia.org/wiki/DVSU',
          title=dict(nl='Voetbalclub DVSU en de gebroeders Timber', en='Football club DVSU and the Timber brothers', de='Fußballverein DVSU und die Timber-Brüder', fr='Le club de football DVSU et les frères Timber', es='El club de fútbol DVSU y los hermanos Timber', pt='O clube de futebol DVSU e os irmãos Timber'),
          text=dict(
@@ -696,7 +699,7 @@ STORIES = [
             fr="À moins de cinq cents mètres de notre itinéraire, niché dans les bois au bord de l'eau, se trouve la véritable icône de ce coin : le château de Nijenrode. Fondé vers mille deux cent soixante-quinze par Gerard Splinter van Ruwiel et façonné au fil des siècles par la guerre, le feu et la reconstruction. Des maîtres hollandais comme Salomon van Ruysdael ont depuis longtemps capturé sur toile le reflet de ces tours fières. Aujourd'hui, une tout autre énergie y règne en tant qu'université, mais les pont-levis séculaires respirent encore un pur passé chevaleresque.",
             es="A menos de quinientos metros de nuestra ruta, escondido en los bosques junto al agua, se encuentra el verdadero icono de este rincón: el castillo de Nijenrode. Fundado hacia mil doscientos setenta y cinco por Gerard Splinter van Ruwiel y marcado a lo largo de los siglos por la guerra, el fuego y la reconstrucción. Maestros holandeses como Salomon van Ruysdael ya plasmaron en lienzo el reflejo de esas orgullosas torres. Hoy vibra allí una energía muy distinta como universidad, pero los puentes levadizos centenarios aún respiran puro pasado caballeresco.",
             pt="A pouco menos de quinhentos metros da nossa rota, escondido nos bosques junto à água, está o verdadeiro ícone deste canto: o castelo de Nijenrode. Fundado por volta de mil duzentos e setenta e cinco por Gerard Splinter van Ruwiel e moldado ao longo dos séculos por guerra, fogo e reconstrução. Mestres holandeses como Salomon van Ruysdael já registraram em tela o reflexo dessas torres orgulhosas. Hoje pulsa ali uma energia bem diferente como universidade, mas as pontes levadiças centenárias ainda respiram puro passado de cavaleiros.")),
-    dict(slug='daan-boom-utrecht', category='influencers', location='Utrecht, Nederland', date='17 augustus 2026',
+    dict(slug='daan-boom-utrecht', category='mensen', location='Utrecht, Nederland', date='17 augustus 2026',
          source_label='Wikipedia — Daan Boom', source_url='https://nl.wikipedia.org/wiki/Daan_Boom',
          title=dict(nl='Daan Boom, Utrechts mediatalent', en='Daan Boom, Utrecht media talent', de='Daan Boom, Medientalent aus Utrecht', fr='Daan Boom, talent médiatique d\'Utrecht', es='Daan Boom, talento mediático de Utrecht', pt='Daan Boom, talento midiático de Utrecht'),
          text=dict(
@@ -1024,8 +1027,8 @@ def build_home(lang):
     <div class="stat-strip">
       <div class="stat"><div class="num">{s['stat1_num']}</div><div class="lbl">{s['stat1_lbl']}</div></div>
       <div class="stat"><div class="num">{s['stat2_num']}</div><div class="lbl">{s['stat2_lbl']}</div></div>
-      <div class="stat"><div class="num" id="stat-testers">—</div><div class="lbl">{s['stat3_lbl']}</div></div>
-      <div class="stat"><div class="num" id="stat-verhalen">—</div><div class="lbl">{s['stat4_lbl']}</div></div>
+      <div class="stat"><div class="num">{s['stat3_num']}</div><div class="lbl">{s['stat3_lbl']}</div></div>
+      <div class="stat"><div class="num">{s['stat4_num']}</div><div class="lbl">{s['stat4_lbl']}</div></div>
     </div>
   </div></section>
 
@@ -1059,16 +1062,10 @@ def build_home(lang):
              'fr': '2R (Second Route) — Le compagnon de voyage qui raconte ce que vous voyez',
              'es': '2R (Second Route) — El compañero de viaje que narra lo que ves',
              'pt': '2R (Second Route) — O companheiro de viagem que narra o que você vê'}[lang]
-    stats_script = '''<script>
-fetch('https://mapsinfo.roelnentjes.workers.dev/api/stats')
-  .then(r => r.json())
-  .then(d => {
-    if (d.testersVandaag !== undefined) document.getElementById('stat-testers').textContent = d.testersVandaag;
-    if (d.verhalenVandaag !== undefined) document.getElementById('stat-verhalen').textContent = d.verhalenVandaag;
-  })
-  .catch(() => {});
-</script>'''
-    return page_shell(lang, title, s['hero_lede'].replace('<b>', '').replace('</b>', ''), 'product', body, extra_head=stats_script)
+    # Live tellers (testers/verhalen vandaag) zijn van de publieke pagina
+    # gehaald: dat was interne telemetrie en liet ongewild de prille schaal
+    # zien. De strip toont nu stabiele productfeiten (stat3/stat4 in SITE).
+    return page_shell(lang, title, s['hero_lede'].replace('<b>', '').replace('</b>', ''), 'product', body, extra_head='')
 
 def build_roadmap(lang):
     s = SITE[lang]
@@ -1184,8 +1181,8 @@ LIVE_TEMPLATE = """  <section class="block" id="live-verhalen"><div class="wrap"
       kaartEl.style.display = 'block';
       if (!kaart) {
         kaart = L.map(kaartEl, { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 18
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>', maxZoom: 19
         }).addTo(kaart);
       }
       if (laag) kaart.removeLayer(laag);

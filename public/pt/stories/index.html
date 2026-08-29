@@ -80,7 +80,7 @@
   <span class="story-meta">Bilthoven, Nederland</span>
 </a>
 <a class="story-card" href="/pt/stories/dvsu-timber-broers.html">
-  <span class="story-cat">Futebol</span>
+  <span class="story-cat">Desporto</span>
   <h3>O clube de futebol DVSU e os irmãos Timber</h3>
   <p>À sua esquerda, a poucas centenas de metros, está um pedaço de pura história do futebol: o clube amador DVSU. O nome significa &quot;Unidos pela Amizade,…</p>
   <span class="story-meta">De Bilt, Nederland</span>
@@ -98,7 +98,7 @@
   <span class="story-meta">Breukelen, Nederland</span>
 </a>
 <a class="story-card" href="/pt/stories/daan-boom-utrecht.html">
-  <span class="story-cat">Influenciadores</span>
+  <span class="story-cat">Pessoas e Histórias</span>
   <h3>Daan Boom, talento midiático de Utrecht</h3>
   <p>Utrecht é conhecida, claro, pelo seu passado de pesca e trajes tradicionais, mas é igualmente o berço definitivo de tendências e queridinhos do…</p>
   <span class="story-meta">Utrecht, Nederland</span>
@@ -150,8 +150,8 @@
       kaartEl.style.display = 'block';
       if (!kaart) {
         kaart = L.map(kaartEl, { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 18
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>', maxZoom: 19
         }).addTo(kaart);
       }
       if (laag) kaart.removeLayer(laag);

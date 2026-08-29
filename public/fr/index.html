@@ -159,15 +159,15 @@
   <section class="block" style="padding-bottom:0;"><div class="wrap">
     <div class="section-head"><div class="eyebrow">Comment ça marche</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">De la route à l'écoute, en trois étapes</h2></div>
     <div class="steps">
-        <div class="step"><span class="num-badge">I</span><h3>Activez Route</h3><p>Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, football, photo — ou saisissez les vôtres.</p></div>
+        <div class="step"><span class="num-badge">I</span><h3>Activez Route</h3><p>Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, art, gastronomie — ou saisissez les vôtres.</p></div>
         <div class="step"><span class="num-badge">II</span><h3>Roulez, pédalez ou marchez</h3><p>2R suit votre itinéraire par GPS et cherche en direct ce qui vaut la peine d'être raconté — à partir de sources locales, pas seulement Wikipédia.</p></div>
         <div class="step"><span class="num-badge">III</span><h3>Écoutez Route</h3><p>Une voix chaleureuse et expressive raconte — honnêtement, sur ce que vous pouvez réellement voir, jamais en faisant semblant.</p></div>
       </div>
     <div class="stat-strip">
       <div class="stat"><div class="num">9</div><div class="lbl">catégories d'intérêt — chacune testée individuellement</div></div>
       <div class="stat"><div class="num">6</div><div class="lbl">langues, disponibles dans l'app et sur ce site</div></div>
-      <div class="stat"><div class="num" id="stat-testers">—</div><div class="lbl">testeurs aujourd'hui (en direct)</div></div>
-      <div class="stat"><div class="num" id="stat-verhalen">—</div><div class="lbl">histoires racontées aujourd'hui (en direct)</div></div>
+      <div class="stat"><div class="num">4</div><div class="lbl">modes — voiture, vélo, à pied, train</div></div>
+      <div class="stat"><div class="num">∞</div><div class="lbl">lieux — partout, générés en direct</div></div>
     </div>
   </div></section>
 
@@ -259,14 +259,6 @@
   <p class="footer-family">Pas la destination — c'est le voyage qui nous rend sages.</p>
   <p class="footer-credit">Conçu par Roel Nentjes, avec Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
 </footer>
-<script>
-fetch('https://mapsinfo.roelnentjes.workers.dev/api/stats')
-  .then(r => r.json())
-  .then(d => {
-    if (d.testersVandaag !== undefined) document.getElementById('stat-testers').textContent = d.testersVandaag;
-    if (d.verhalenVandaag !== undefined) document.getElementById('stat-verhalen').textContent = d.verhalenVandaag;
-  })
-  .catch(() => {});
-</script>
+
 </body>
 </html>

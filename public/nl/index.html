@@ -159,15 +159,15 @@
   <section class="block" style="padding-bottom:0;"><div class="wrap">
     <div class="section-head"><div class="eyebrow">Hoe het werkt</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">Van rijden naar luisteren in drie stappen</h2></div>
     <div class="steps">
-        <div class="step"><span class="num-badge">I</span><h3>Zet Route aan</h3><p>Eén knop. Kies je interesses — geschiedenis, natuur, voetbal, fotografie — of typ er zelf een in.</p></div>
+        <div class="step"><span class="num-badge">I</span><h3>Zet Route aan</h3><p>Eén knop. Kies je interesses — geschiedenis, natuur, kunst, eten & drinken — of typ er zelf een in.</p></div>
         <div class="step"><span class="num-badge">II</span><h3>Rijd, fiets of wandel</h3><p>2R volgt je route via GPS en zoekt live naar wat er om je heen te vertellen valt — bij lokale bronnen, niet alleen Wikipedia.</p></div>
         <div class="step"><span class="num-badge">III</span><h3>Luister naar Route</h3><p>Een warme, expressieve stem vertelt — eerlijk over wat je écht kunt zien, nooit doen-alsof.</p></div>
       </div>
     <div class="stat-strip">
       <div class="stat"><div class="num">9</div><div class="lbl">interesse-rubrieken — elk apart getest</div></div>
       <div class="stat"><div class="num">6</div><div class="lbl">talen, live in de app en op deze site</div></div>
-      <div class="stat"><div class="num" id="stat-testers">—</div><div class="lbl">testers vandaag (live)</div></div>
-      <div class="stat"><div class="num" id="stat-verhalen">—</div><div class="lbl">verhalen verteld vandaag (live)</div></div>
+      <div class="stat"><div class="num">4</div><div class="lbl">reismodi — auto, fiets, te voet, trein</div></div>
+      <div class="stat"><div class="num">∞</div><div class="lbl">plekken — overal, live gegenereerd</div></div>
     </div>
   </div></section>
 
@@ -259,14 +259,6 @@
   <p class="footer-family">Niet de bestemming, maar de reis maakt ons wijs.</p>
   <p class="footer-credit">Gebouwd door Roel Nentjes, samen met Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
 </footer>
-<script>
-fetch('https://mapsinfo.roelnentjes.workers.dev/api/stats')
-  .then(r => r.json())
-  .then(d => {
-    if (d.testersVandaag !== undefined) document.getElementById('stat-testers').textContent = d.testersVandaag;
-    if (d.verhalenVandaag !== undefined) document.getElementById('stat-verhalen').textContent = d.verhalenVandaag;
-  })
-  .catch(() => {});
-</script>
+
 </body>
 </html>

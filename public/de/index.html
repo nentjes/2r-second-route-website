@@ -159,15 +159,15 @@
   <section class="block" style="padding-bottom:0;"><div class="wrap">
     <div class="section-head"><div class="eyebrow">So funktioniert es</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">In drei Schritten vom Fahren zum Zuhören</h2></div>
     <div class="steps">
-        <div class="step"><span class="num-badge">I</span><h3>Route einschalten</h3><p>Ein Schalter. Wähle deine Interessen — Geschichte, Natur, Fußball, Fotografie — oder gib eigene ein.</p></div>
+        <div class="step"><span class="num-badge">I</span><h3>Route einschalten</h3><p>Ein Schalter. Wähle deine Interessen — Geschichte, Natur, Kunst, Essen & Trinken — oder gib eigene ein.</p></div>
         <div class="step"><span class="num-badge">II</span><h3>Fahren, radeln oder gehen</h3><p>2R folgt deiner Route per GPS und sucht live nach Erzählenswertem — aus lokalen Quellen, nicht nur Wikipedia.</p></div>
         <div class="step"><span class="num-badge">III</span><h3>Route zuhören</h3><p>Eine warme, ausdrucksstarke Stimme erzählt — ehrlich über das, was du wirklich sehen kannst, nie vorgetäuscht.</p></div>
       </div>
     <div class="stat-strip">
       <div class="stat"><div class="num">9</div><div class="lbl">Interessen-Rubriken — jede einzeln getestet</div></div>
       <div class="stat"><div class="num">6</div><div class="lbl">Sprachen, live in der App und auf dieser Website</div></div>
-      <div class="stat"><div class="num" id="stat-testers">—</div><div class="lbl">Tester heute (live)</div></div>
-      <div class="stat"><div class="num" id="stat-verhalen">—</div><div class="lbl">Geschichten heute erzählt (live)</div></div>
+      <div class="stat"><div class="num">4</div><div class="lbl">Reisemodi — Auto, Rad, zu Fuß, Bahn</div></div>
+      <div class="stat"><div class="num">∞</div><div class="lbl">Orte — überall, live generiert</div></div>
     </div>
   </div></section>
 
@@ -259,14 +259,6 @@
   <p class="footer-family">Nicht das Ziel — die Reise macht uns weise.</p>
   <p class="footer-credit">Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
 </footer>
-<script>
-fetch('https://mapsinfo.roelnentjes.workers.dev/api/stats')
-  .then(r => r.json())
-  .then(d => {
-    if (d.testersVandaag !== undefined) document.getElementById('stat-testers').textContent = d.testersVandaag;
-    if (d.verhalenVandaag !== undefined) document.getElementById('stat-verhalen').textContent = d.verhalenVandaag;
-  })
-  .catch(() => {});
-</script>
+
 </body>
 </html>
