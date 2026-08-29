@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zo werkt 2R — 2R</title>
+<meta name="description" content="2R is je reisgezel die vertelt. Je start hem, je rijdt, en onderweg hoor je verhalen over de plekken die je passeert. Hieronder alles wat je moet wete">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Zo werkt 2R — 2R">
+<meta property="og:description" content="2R is je reisgezel die vertelt. Je start hem, je rijdt, en onderweg hoor je verhalen over de plekken die je passeert. Hieronder alles wat je moet wete">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/nl/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/nl/">Product</a>
+        <a href="/nl/zo-werkt-het.html" class="active">Zo werkt het</a>
+        <a href="/nl/roadmap.html">Roadmap</a>
+        <a href="/nl/stories/">Verhalen</a>
+        <a href="/nl/privacy.html">Privacy</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/" class="active">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Probeer 2R →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/nl/">Product</a>
+      <a href="/nl/zo-werkt-het.html" class="active">Zo werkt het</a>
+      <a href="/nl/roadmap.html">Roadmap</a>
+      <a href="/nl/stories/">Verhalen</a>
+      <a href="/nl/privacy.html">Privacy</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/" class="active">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Probeer 2R →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
+    <div class="eyebrow">Zo werkt 2R</div>
+    <h1 style="font-size:clamp(28px,4vw,40px); margin:18px 0 10px;">Zo werkt 2R</h1>
+    <div class="story-body" style="font-size:16px;">
+      <p style="max-width:none; color:var(--text-dim);">2R is je reisgezel die vertelt. Je start hem, je rijdt, en onderweg hoor je verhalen over de plekken die je passeert. Hieronder alles wat je moet weten — in een paar minuten.</p>
+      <h2 style="font-size:19px; margin-top:34px;">🚗 Beginnen</h2>
+      <p style="max-width:none;">Tik in de app op <b>Start de reis</b> en sta je locatie toe. 2R vertelt vanzelf over de plekken die je passeert — geen account, niets vooraf in te stellen.</p>
+      <h2 style="font-size:19px; margin-top:34px;">🎵 Samen met je muziek</h2>
+      <p style="max-width:none;">Speel gerust je eigen muziek (Spotify, Apple Music, de radio — wat dan ook). Die gaat automatisch <b>zachter</b> zodra een verhaal begint, en zwelt weer aan als het klaar is. Zet je “Muziektips per streek” aan, dan krijg je onderweg een tik naar passende muziek per gebied. 2R streamt zelf geen muziek.</p>
+      <h2 style="font-size:19px; margin-top:34px;">🔵 De blauwe balk onderweg</h2>
+      <p style="max-width:none;">Gebruik je ondertussen Maps of je muziek-app, dan toont iOS bovenin een blauwe balk dat 2R je locatie gebruikt. <b>Dat hoort zo</b> — zo blijft 2R doorvertellen op de achtergrond. Tik erop om terug te keren naar 2R.</p>
+      <h2 style="font-size:19px; margin-top:34px;">🔊 Je stem kiezen</h2>
+      <p style="max-width:none;">Kies bij <b>Instellingen → Stem</b> je vertelstem en de klank: natuurlijk (rustig en zuinig) of expressief (het meest menselijk, met aarzelingen en zuchtjes). Met “Beluister deze stem” hoor je ’m meteen.</p>
+      <h2 style="font-size:19px; margin-top:34px;">🧭 Hoe je reist</h2>
+      <p style="max-width:none;">Vertel 2R of je met de auto, fiets, te voet of de trein gaat. Hij past het tempo en de afstand van de verhalen daarop aan.</p>
+      <h2 style="font-size:19px; margin-top:34px;">🎯 Reisquiz voor het gezin</h2>
+      <p style="max-width:none;">Zet de reisquiz aan voor één vraag na elk verhaal. De bijrijder tikt het antwoord aan — met een scorebord per rit.</p>
+      <h2 style="font-size:19px; margin-top:34px;">🧪 Stilstaand uitproberen</h2>
+      <p style="max-width:none;">Wil je 2R proberen zonder te rijden? Gebruik de <b>Route Simulator</b> in het menu om een rit na te bootsen.</p>
+      <div style="margin-top:40px; padding:22px 24px; border:1px solid var(--line, rgba(255,255,255,.1)); border-radius:16px;">
+        <h2 style="font-size:19px; margin:0 0 6px;">Klaar om te rijden?</h2>
+        <p style="max-width:none; margin:0 0 14px;">2R draait live in TestFlight en op het web.</p>
+        <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Probeer 2R →</a>
+      </div>
+    </div>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/nl/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/nl/roadmap.html">Roadmap</a>
+      <a href="/nl/stories/">Verhalen</a>
+      <a href="/nl/privacy.html">Privacy</a>
+      <a href="mailto:nimco@nentjes.nl">Contact</a>
+    </div>
+  </div>
+  <p class="footer-family">Niet de bestemming, maar de reis maakt ons wijs.</p>
+  <p class="footer-credit">Gebouwd door Roel Nentjes, samen met Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>

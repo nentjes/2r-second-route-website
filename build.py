@@ -721,6 +721,65 @@ STORIES = [
 # ---------------------------------------------------------------------------
 # HTML-bouwstenen
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# "Zo werkt 2R" — praktische handleiding (de app linkt hiernaartoe).
+# ---------------------------------------------------------------------------
+NAV_HOWTO = {
+    'nl': 'Zo werkt het', 'en': 'How it works', 'de': "So geht's",
+    'fr': 'Utilisation', 'es': 'Cómo funciona', 'pt': 'Como funciona',
+}
+HOWTO = {
+'nl': dict(
+    eyebrow='Zo werkt 2R', title='Zo werkt 2R',
+    lede='2R is je reisgezel die vertelt. Je start hem, je rijdt, en onderweg hoor je verhalen over de plekken die je passeert. Hieronder alles wat je moet weten — in een paar minuten.',
+    sections=[
+        dict(h='🚗 Beginnen', p='Tik in de app op <b>Start de reis</b> en sta je locatie toe. 2R vertelt vanzelf over de plekken die je passeert — geen account, niets vooraf in te stellen.'),
+        dict(h='🎵 Samen met je muziek', p='Speel gerust je eigen muziek (Spotify, Apple Music, de radio — wat dan ook). Die gaat automatisch <b>zachter</b> zodra een verhaal begint, en zwelt weer aan als het klaar is. Zet je “Muziektips per streek” aan, dan krijg je onderweg een tik naar passende muziek per gebied. 2R streamt zelf geen muziek.'),
+        dict(h='🔵 De blauwe balk onderweg', p='Gebruik je ondertussen Maps of je muziek-app, dan toont iOS bovenin een blauwe balk dat 2R je locatie gebruikt. <b>Dat hoort zo</b> — zo blijft 2R doorvertellen op de achtergrond. Tik erop om terug te keren naar 2R.'),
+        dict(h='🔊 Je stem kiezen', p='Kies bij <b>Instellingen → Stem</b> je vertelstem en de klank: natuurlijk (rustig en zuinig) of expressief (het meest menselijk, met aarzelingen en zuchtjes). Met “Beluister deze stem” hoor je ’m meteen.'),
+        dict(h='🧭 Hoe je reist', p='Vertel 2R of je met de auto, fiets, te voet of de trein gaat. Hij past het tempo en de afstand van de verhalen daarop aan.'),
+        dict(h='🎯 Reisquiz voor het gezin', p='Zet de reisquiz aan voor één vraag na elk verhaal. De bijrijder tikt het antwoord aan — met een scorebord per rit.'),
+        dict(h='🧪 Stilstaand uitproberen', p='Wil je 2R proberen zonder te rijden? Gebruik de <b>Route Simulator</b> in het menu om een rit na te bootsen.'),
+    ],
+    cta_h='Klaar om te rijden?', cta_p='2R draait live in TestFlight en op het web.', cta_btn='Probeer 2R →',
+),
+'en': dict(
+    eyebrow='How 2R works', title='How 2R works',
+    lede='2R is your travelling companion that tells stories. You start it, you drive, and along the way you hear stories about the places you pass. Here is everything you need to know — in a few minutes.',
+    sections=[
+        dict(h='🚗 Getting started', p='In the app, tap <b>Start the journey</b> and allow location access. 2R automatically narrates the places you pass — no account, nothing to set up first.'),
+        dict(h='🎵 Alongside your music', p='Play your own music (Spotify, Apple Music, the radio — anything). It automatically <b>fades down</b> when a story starts and swells back up when it ends. Turn on “Music tips per region” for a tap toward fitting music along the way. 2R never streams music itself.'),
+        dict(h='🔵 The blue bar while driving', p='If you switch to Maps or your music app, iOS shows a blue bar at the top indicating 2R is using your location. <b>This is expected</b> — it lets 2R keep narrating in the background. Tap it to return to 2R.'),
+        dict(h='🔊 Choosing your voice', p='Under <b>Settings → Voice</b>, pick your narrating voice and the tone: natural (calm and economical) or expressive (the most human, with hesitations and sighs). “Preview this voice” lets you hear it right away.'),
+        dict(h='🧭 How you travel', p='Tell 2R whether you go by car, bike, on foot or by train. It adapts the pace and distance of the stories accordingly.'),
+        dict(h='🎯 Travel quiz for the family', p='Turn on the travel quiz for one question after each story. The passenger taps the answer — with a scoreboard per trip.'),
+        dict(h='🧪 Try it standing still', p='Want to try 2R without driving? Use the <b>Route Simulator</b> in the menu to simulate a trip.'),
+    ],
+    cta_h='Ready to drive?', cta_p='2R runs live in TestFlight and on the web.', cta_btn='Try 2R →',
+),
+}
+
+def build_howto(lang):
+    h = HOWTO.get(lang, HOWTO['en'])
+    items = '\n'.join(
+        f'''      <h2 style="font-size:19px; margin-top:34px;">{s['h']}</h2>
+      <p style="max-width:none;">{s['p']}</p>''' for s in h['sections'])
+    body = f'''  <section class="block" style="padding-top:44px;"><div class="wrap" style="max-width:680px;">
+    <div class="eyebrow">{h['eyebrow']}</div>
+    <h1 style="font-size:clamp(28px,4vw,40px); margin:18px 0 10px;">{h['title']}</h1>
+    <div class="story-body" style="font-size:16px;">
+      <p style="max-width:none; color:var(--text-dim);">{h['lede']}</p>
+{items}
+      <div style="margin-top:40px; padding:22px 24px; border:1px solid var(--line, rgba(255,255,255,.1)); border-radius:16px;">
+        <h2 style="font-size:19px; margin:0 0 6px;">{h['cta_h']}</h2>
+        <p style="max-width:none; margin:0 0 14px;">{h['cta_p']}</p>
+        <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">{h['cta_btn']}</a>
+      </div>
+    </div>
+  </div></section>
+'''
+    return page_shell(lang, h['title'] + ' — 2R', h['lede'][:150], 'howto', body)
+
 def nav(lang, active):
     s = SITE[lang]
     def link(href, label, key):
@@ -742,6 +801,7 @@ def nav(lang, active):
     <nav class="nav-links">
       <span class="nav-only-links">
         {link(f'/{lang}/', s['nav_product'], 'product')}
+        {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
         {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
         {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
         {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
@@ -753,6 +813,7 @@ def nav(lang, active):
   <div class="mobile-panel" id="mobile-panel">
     <div class="mobile-panel-links">
       {link(f'/{lang}/', s['nav_product'], 'product')}
+      {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
       {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
       {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
       {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
@@ -1269,6 +1330,7 @@ def write(path, content):
 for lang in LANGS:
     write(f'{lang}/index.html', build_home(lang))
     write(f'{lang}/roadmap.html', build_roadmap(lang))
+    write(f'{lang}/zo-werkt-het.html', build_howto(lang))
     write(f'{lang}/privacy.html', build_privacy(lang))
     write(f'{lang}/stories/index.html', build_stories_index(lang))
     for st in STORIES:
