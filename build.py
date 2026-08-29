@@ -1793,7 +1793,8 @@ def build_story_detail(lang, st):
     <div class="story-cover" aria-hidden="true"><span class="mag-cat-mark">{html.escape(cat)}</span></div>
     <div class="wrap story-detail-wrap">
       <p class="story-back-row"><a class="story-back" href="/{lang}/stories/">{s['story_back']}</a></p>
-      <p class="story-topline">{html.escape(cat)} &middot; {html.escape(st['location'])} &middot; {st['date']}</p>
+      <p class="story-place">{html.escape(st['location'])}</p>
+      <p class="story-cat-line">{html.escape(cat)} <span class="story-date">&middot; {st['date']}</span></p>
       <h1>{html.escape(st['title'][lang])}</h1>
       <div class="story-read"><p>{html.escape(st['text'][lang])}</p></div>
       <div class="story-source">
