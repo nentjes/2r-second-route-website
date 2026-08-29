@@ -11,6 +11,15 @@
 <meta property="og:title" content="Stories — 2R (Second Route)">
 <meta property="og:description" content="Every place carries a story. Sometimes you only have to drive past it. These stories were told by 2R during real trips, checked by us and given their ">
 <meta property="og:image" content="/og.jpg">
+<link rel="canonical" href="https://2route.nl/en/stories/">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/stories/">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/stories/">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/stories/">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/stories/">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/stories/">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/stories/">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/stories/">
+<meta property="og:url" content="https://2route.nl/en/stories/">
 </head>
 <body>
 <header class="site">
@@ -113,14 +122,6 @@
       <p>Look how stately the parish church of Saints Peter and Paul rises in the heart of Luino. What you&#x27;re seeing is the…</p>
       <span class="mag-meta">Luino, Italië &middot; 17 augustus 2026</span>
     </div>
-  </a><a class="mag-card mag-klein" href="/en/stories/daan-boom-utrecht.html">
-    <div class="mag-cover" aria-hidden="true"><span class="mag-cat-mark">People &amp; Stories</span></div>
-    <div class="mag-body">
-      <span class="mag-cat">People &amp; Stories</span>
-      <h3>Daan Boom, Utrecht media talent</h3>
-      <p>Utrecht is of course known for its fishing heritage and traditional dress, but it&#x27;s just as much the ultimate…</p>
-      <span class="mag-meta">Utrecht, Nederland &middot; 17 augustus 2026</span>
-    </div>
   </a><a class="mag-card mag-klein" href="/en/stories/loenderveense-plas.html">
     <div class="mag-cover" aria-hidden="true"><span class="mag-cat-mark">Nature</span></div>
     <div class="mag-body">
@@ -145,8 +146,8 @@
     <div id="live-lijst" class="story-grid-simple"></div>
   </div></section>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="/leaflet.css">
+  <script src="/leaflet.js"></script>
   <script>
   (function () {
     var API = "https://mapsinfo.roelnentjes.workers.dev/api/published";
@@ -166,6 +167,7 @@
     }
 
     function toonKaart(verhalen) {
+      if (typeof L === 'undefined') { kaartEl.style.display = 'none'; return; }
       var metPunt = verhalen.filter(function (v) { return v.lat && v.lng; });
       if (!metPunt.length) { kaartEl.style.display = 'none'; return; }
       kaartEl.style.display = 'block';
@@ -230,7 +232,7 @@
             (v.onderwerp ? ' · ' + esc(v.onderwerp) : '') + '</div>' +
             '<h3>' + esc(v.plek) + '</h3><p>' + esc(v.tekst) + '</p></div></article>';
         }).join('');
-        toonKaart(d.verhalen);
+        try { toonKaart(d.verhalen); } catch (e) { kaartEl.style.display = 'none'; }
       } catch (e) {
         lijst.innerHTML = '<p class="vz-leeg">' + esc(T.nog) + '</p>';
         kaartEl.style.display = 'none';

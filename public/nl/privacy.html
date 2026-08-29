@@ -11,6 +11,15 @@
 <meta property="og:title" content="Privacybeleid — 2R">
 <meta property="og:description" content="2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie">
 <meta property="og:image" content="/og.jpg">
+<link rel="canonical" href="https://2route.nl/nl/privacy.html">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/privacy.html">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/privacy.html">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/privacy.html">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/privacy.html">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/privacy.html">
+<meta property="og:url" content="https://2route.nl/nl/privacy.html">
 </head>
 <body>
 <header class="site">
@@ -78,12 +87,12 @@
     </div>
   </section>
 
-  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Geen account nodig</h3><p>Je hoeft niet in te loggen of je naam achter te laten.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Geen rittenregistratie</h3><p>Standaard bouwen we geen geschiedenis op van waar je bent geweest.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Testlogs alleen met toestemming</h3><p>Uitgebreidere diagnosegegevens staan standaard uit en zijn alleen opt-in.</p></div></div></div></section>
+  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Geen account nodig</h3><p>Je hoeft niet in te loggen. Alleen testers vullen vrijwillig een naam in.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Geen rittenregistratie</h3><p>Standaard bouwen we geen geschiedenis op van waar je bent geweest.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Testlogs alleen met toestemming</h3><p>Uitgebreidere diagnosegegevens staan standaard uit en zijn alleen opt-in.</p></div></div></div></section>
 
   <section class="priv-body"><div class="wrap priv-grid">
     <nav class="priv-toc" aria-label="Op deze pagina">
       <p class="priv-toc-label">Op deze pagina</p>
-      <ul><li><a href="#loc">Locatie</a></li><li><a href="#verhalen">Verhalen &amp; spraak (verwerkers)</a></li><li><a href="#limieten">Gebruikslimieten</a></li><li><a href="#accounts">Accounts</a></li><li><a href="#contact">Contact</a></li></ul>
+      <ul><li><a href="#loc">Locatie</a></li><li><a href="#verhalen">Verhalen &amp; spraak (verwerkers)</a></li><li><a href="#limieten">Gebruikslimieten</a></li><li><a href="#bewaard">Wat we wél bewaren</a></li><li><a href="#accounts">Accounts</a></li><li><a href="#contact">Contact</a></li></ul>
     </nav>
     <div class="priv-text">
       <p class="priv-intro">2R (werktitel: MapsInfo) is een reisgids-app die tijdens het rijden, fietsen of wandelen gesproken verhalen vertelt over de omgeving. Dit beleid legt uit welke gegevens de app gebruikt en waarom — haarfijn, zonder kleine lettertjes.</p>
@@ -93,7 +102,7 @@
         <p class="priv-fieldnote">Standaard wordt je locatie niet opgeslagen en niet gelogd.</p>
         <p class="priv-fieldnote">Uitgebreide logboeken zijn alleen beschikbaar als opt-in voor het testteam.</p>
         <ul><li>Je GPS-locatie wordt gebruikt om te bepalen welke verhalen relevant zijn.</li>
-<li><strong>Standaard wordt je locatie niet opgeslagen en niet gelogd.</strong> Elk verzoek aan de server bevat alleen de naam en context van een specifieke plek — geen locatiegeschiedenis, geen rittenregistratie.</li>
+<li><strong>Standaard wordt je locatie niet opgeslagen en niet gelogd.</strong> Om te bepalen wat je passeert stuurt de app je actuele positie mee met een verhaal-verzoek; de server gebruikt die om de juiste plek te kiezen en bewaart hem niet. Er wordt geen locatiegeschiedenis of rittenregistratie opgebouwd.</li>
 <li><strong>Uitgebreide logboeken zijn een opt-in voor het testteam.</strong> Alleen als je het zélf aanzet (ontgrendeld met een diagnose-code die we met onze vaste testers delen) leggen we meer vast — waaronder je GPS-positie, rijrichting en snelheid op het moment dat een verhaal wordt gemaakt — om fouten in de verhalen op te sporen en de app te verbeteren. Dit staat standaard uit, geldt alleen zolang jij het zelf aan hebt staan, wordt nooit met derden gedeeld, en kun je op elk moment weer uitzetten.</li></ul>
       </section>
 
@@ -111,9 +120,17 @@
         <p>Om misbruik te voorkomen houden we per IP-adres een technische, tijdelijke teller bij (maximaal 48 uur bewaard). Dit is uitsluitend een aantal, nooit gekoppeld aan een profiel, naam of account, en wordt nooit gedeeld met derden.</p>
       </section>
 
+      <section id="bewaard" class="priv-sec">
+        <h2>Wat we wél bewaren</h2>
+        <ul><li><strong>Technische gebeurtenissen.</strong> De app meldt aan onze server welk verhaal is verteld, over welke plek, hoelang het maken duurde en of er iets misging — met een willekeurig sessienummer per app-start. Zo zien we of 2R goed werkt. Deze logboeken bevatten standaard geen GPS-positie.</li>
+<li><strong>Het verhalenarchief.</strong> Elk verteld verhaal bewaren we integraal: de tekst, de plek waar het verhaal over gaat en, bij testers, de opgegeven naam. Zo kunnen we teruglezen wat er verteld is en de mooiste verhalen cureren voor deze site. De positie van de reiziger bewaren we daarbij niet.</li>
+<li><strong>Aankopen.</strong> Koop je een abonnement of tegoed, dan registreren we de transactie die Apple ons doorgeeft, samen met een anoniem apparaatnummer. Dat nummer staat los van je naam en is nodig om je aankoop te herkennen — ook na een herinstallatie. Betaalgegevens zien wij nooit; die blijven bij Apple.</li>
+<li><strong>Bewaartermijn &amp; wissen.</strong> Deze gegevens bewaren we zolang 2R in ontwikkeling is. Wil je dat we iets van jou wissen — bijvoorbeeld je testernaam of je verhalen — mail ons, dan verwijderen we het.</li></ul>
+      </section>
+
       <section id="accounts" class="priv-sec">
         <h2>Accounts</h2>
-        <p>De app vereist geen account, inloggen of registratie.</p>
+        <p>De app vereist geen account, inloggen of registratie. Testers kunnen vrijwillig een naam invullen; die naam reist mee met hun verhalen en aankopen zodat we de testfase kunnen volgen, en wordt op verzoek gewist.</p>
       </section>
 
       <section id="contact" class="priv-sec">

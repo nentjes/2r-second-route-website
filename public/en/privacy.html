@@ -11,6 +11,15 @@
 <meta property="og:title" content="Privacy Policy — 2R">
 <meta property="og:description" content="2R uses only what it needs to tell the right story along the way. No account, no trip logging and no stored location by default. Here we explain exact">
 <meta property="og:image" content="/og.jpg">
+<link rel="canonical" href="https://2route.nl/en/privacy.html">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/privacy.html">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/privacy.html">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/privacy.html">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/privacy.html">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/privacy.html">
+<meta property="og:url" content="https://2route.nl/en/privacy.html">
 </head>
 <body>
 <header class="site">
@@ -78,12 +87,12 @@
     </div>
   </section>
 
-  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>No account needed</h3><p>You don't need to log in or leave your name.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>No trip logging</h3><p>By default we don't build a history of where you've been.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Test logs only with consent</h3><p>More detailed diagnostics are off by default and opt-in only.</p></div></div></div></section>
+  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>No account needed</h3><p>No login needed. Only testers voluntarily enter a name.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>No trip logging</h3><p>By default we don't build a history of where you've been.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Test logs only with consent</h3><p>More detailed diagnostics are off by default and opt-in only.</p></div></div></div></section>
 
   <section class="priv-body"><div class="wrap priv-grid">
     <nav class="priv-toc" aria-label="On this page">
       <p class="priv-toc-label">On this page</p>
-      <ul><li><a href="#loc">Location</a></li><li><a href="#verhalen">Stories &amp; voice (processors)</a></li><li><a href="#limieten">Usage limits</a></li><li><a href="#accounts">Accounts</a></li><li><a href="#contact">Contact</a></li></ul>
+      <ul><li><a href="#loc">Location</a></li><li><a href="#verhalen">Stories &amp; voice (processors)</a></li><li><a href="#limieten">Usage limits</a></li><li><a href="#bewaard">What we do keep</a></li><li><a href="#accounts">Accounts</a></li><li><a href="#contact">Contact</a></li></ul>
     </nav>
     <div class="priv-text">
       <p class="priv-intro">2R (working title: MapsInfo) is a travel-guide app that narrates the world around you while you drive, cycle or walk. This policy explains exactly what data the app uses and why — no fine print.</p>
@@ -93,7 +102,7 @@
         <p class="priv-fieldnote">By default your location is never stored and never logged.</p>
         <p class="priv-fieldnote">Extended logging is only available as an opt-in for the testing team.</p>
         <ul><li>Your GPS location is used to determine which stories are relevant.</li>
-<li><strong>By default your location is never stored and never logged.</strong> Every request to the server contains only the name and context of a specific place — no location history, no trip logging.</li>
+<li><strong>By default your location is never stored and never logged.</strong> To work out what you are passing, the app sends your current position along with a story request; the server uses it to pick the right place and does not keep it. No location history or trip log is ever built up.</li>
 <li><strong>Extended logging is an opt-in for our testing team.</strong> Only if you switch it on yourself (unlocked with a diagnostics code we share with our regular testers) do we record more — including your GPS position, heading and speed at the moment a story is generated — to track down bugs and improve the app. This is off by default, applies only while you have it enabled, is never shared with third parties, and can be turned off at any time.</li></ul>
       </section>
 
@@ -111,9 +120,17 @@
         <p>To prevent abuse we keep a technical, temporary counter per IP address (kept for a maximum of 48 hours). This is only a number, never linked to a profile, name or account, and never shared with third parties.</p>
       </section>
 
+      <section id="bewaard" class="priv-sec">
+        <h2>What we do keep</h2>
+        <ul><li><strong>Technical events.</strong> The app tells our server which story was told, about which place, how long it took to generate and whether anything went wrong — with a random session number per app start. That is how we see whether 2R works well. These logs contain no GPS position by default.</li>
+<li><strong>The story archive.</strong> Every story that is told is kept in full: the text, the place the story is about and, for testers, the name they entered. It lets us read back what was told and curate the best stories for this site. The traveller's position is not stored with it.</li>
+<li><strong>Purchases.</strong> If you buy a subscription or credit, we record the transaction Apple passes on to us, together with an anonymous device number. That number is unrelated to your name and is needed to recognise your purchase — including after a reinstall. We never see payment details; those stay with Apple.</li>
+<li><strong>Retention &amp; deletion.</strong> We keep this data while 2R is in development. Want something of yours removed — your tester name, your stories? Email us and we will delete it.</li></ul>
+      </section>
+
       <section id="accounts" class="priv-sec">
         <h2>Accounts</h2>
-        <p>The app requires no account, login or registration.</p>
+        <p>The app requires no account, login or registration. Testers may voluntarily enter a name; it travels with their stories and purchases so we can follow the test phase, and is deleted on request.</p>
       </section>
 
       <section id="contact" class="priv-sec">

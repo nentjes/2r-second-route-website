@@ -49,7 +49,7 @@ SITE = {
     footer_tagline='Niet de bestemming, maar de reis maakt ons wijs.',
     footer_credit='Gebouwd door Roel Nentjes, samen met Claude (Anthropic).',
     stat1_num='9', stat1_lbl='interesse-rubrieken — elk apart getest',
-    stat2_num='6', stat2_lbl='talen, live in de app en op deze site',
+    stat2_num='6', stat2_lbl='talen op deze site — de app vertelt eerst in het Nederlands',
     stat3_num='4', stat3_lbl='reismodi — auto, fiets, te voet, trein', stat4_num='∞', stat4_lbl='plekken — overal, live gegenereerd',
     steps_eyebrow='Hoe het werkt', steps_h2='Van rijden naar luisteren in drie stappen',
     step1_h='Zet Route aan', step1_p='Eén knop. Kies je interesses — geschiedenis, natuur, kunst, eten & drinken — of typ er zelf een in.',
@@ -94,7 +94,7 @@ SITE = {
     footer_tagline='Not the destination — the journey makes us wise.',
     footer_credit='Built by Roel Nentjes, together with Claude (Anthropic).',
     stat1_num='9', stat1_lbl='interest categories — each individually tested',
-    stat2_num='6', stat2_lbl='languages, live in the app and on this site',
+    stat2_num='6', stat2_lbl='languages on this site — the app narrates in Dutch first',
     stat3_num='4', stat3_lbl='travel modes — car, bike, walk, train', stat4_num='∞', stat4_lbl='places — anywhere, generated live',
     steps_eyebrow='How it works', steps_h2='From driving to listening, in three steps',
     step1_h='Turn Route on', step1_p='One switch. Pick your interests — history, nature, art, food & drink — or type in your own.',
@@ -139,7 +139,7 @@ SITE = {
     footer_tagline='Nicht das Ziel — die Reise macht uns weise.',
     footer_credit='Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic).',
     stat1_num='9', stat1_lbl='Interessen-Rubriken — jede einzeln getestet',
-    stat2_num='6', stat2_lbl='Sprachen, live in der App und auf dieser Website',
+    stat2_num='6', stat2_lbl='Sprachen auf dieser Website — die App erzählt zunächst auf Niederländisch',
     stat3_num='4', stat3_lbl='Reisemodi — Auto, Rad, zu Fuß, Bahn', stat4_num='∞', stat4_lbl='Orte — überall, live generiert',
     steps_eyebrow='So funktioniert es', steps_h2='In drei Schritten vom Fahren zum Zuhören',
     step1_h='Route einschalten', step1_p='Ein Schalter. Wähle deine Interessen — Geschichte, Natur, Kunst, Essen & Trinken — oder gib eigene ein.',
@@ -184,7 +184,7 @@ SITE = {
     footer_tagline="Pas la destination — c'est le voyage qui nous rend sages.",
     footer_credit='Conçu par Roel Nentjes, avec Claude (Anthropic).',
     stat1_num='9', stat1_lbl="catégories d'intérêt — chacune testée individuellement",
-    stat2_num='6', stat2_lbl="langues, disponibles dans l'app et sur ce site",
+    stat2_num='6', stat2_lbl="langues sur ce site — l'app raconte d'abord en néerlandais",
     stat3_num='4', stat3_lbl='modes — voiture, vélo, à pied, train', stat4_num='∞', stat4_lbl='lieux — partout, générés en direct',
     steps_eyebrow='Comment ça marche', steps_h2="De la route à l'écoute, en trois étapes",
     step1_h='Activez Route', step1_p="Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, art, gastronomie — ou saisissez les vôtres.",
@@ -229,7 +229,7 @@ SITE = {
     footer_tagline='No el destino — el viaje es lo que nos hace sabios.',
     footer_credit='Creado por Roel Nentjes, junto con Claude (Anthropic).',
     stat1_num='9', stat1_lbl='categorías de interés — cada una probada individualmente',
-    stat2_num='6', stat2_lbl='idiomas, disponibles en la app y en este sitio',
+    stat2_num='6', stat2_lbl='idiomas en este sitio — la app narra primero en neerlandés',
     stat3_num='4', stat3_lbl='modos — coche, bici, a pie, tren', stat4_num='∞', stat4_lbl='lugares — en cualquier sitio, en vivo',
     steps_eyebrow='Cómo funciona', steps_h2='De conducir a escuchar, en tres pasos',
     step1_h='Activa Route', step1_p='Un interruptor. Elige tus intereses —historia, naturaleza, arte, gastronomía— o escribe los tuyos.',
@@ -274,7 +274,7 @@ SITE = {
     footer_tagline='Não o destino — a viagem é o que nos torna sábios.',
     footer_credit='Criado por Roel Nentjes, com a Claude (Anthropic).',
     stat1_num='9', stat1_lbl='categorias de interesse — cada uma testada individualmente',
-    stat2_num='6', stat2_lbl='idiomas, disponíveis no app e neste site',
+    stat2_num='6', stat2_lbl='idiomas neste site — o app narra primeiro em neerlandês',
     stat3_num='4', stat3_lbl='modos — carro, bici, a pé, comboio', stat4_num='∞', stat4_lbl='lugares — em qualquer lugar, ao vivo',
     steps_eyebrow='Como funciona', steps_h2='De dirigir a ouvir, em três passos',
     step1_h='Ative a Route', step1_p='Um interruptor. Escolha seus interesses — história, natureza, arte, gastronomia — ou digite os seus.',
@@ -316,7 +316,7 @@ PRIVACY = {
     h_location='Locatie',
     location_items=[
         'Je GPS-locatie wordt gebruikt om te bepalen welke verhalen relevant zijn.',
-        '<strong>Standaard wordt je locatie niet opgeslagen en niet gelogd.</strong> Elk verzoek aan de server bevat alleen de naam en context van een specifieke plek — geen locatiegeschiedenis, geen rittenregistratie.',
+        '<strong>Standaard wordt je locatie niet opgeslagen en niet gelogd.</strong> Om te bepalen wat je passeert stuurt de app je actuele positie mee met een verhaal-verzoek; de server gebruikt die om de juiste plek te kiezen en bewaart hem niet. Er wordt geen locatiegeschiedenis of rittenregistratie opgebouwd.',
         '<strong>Uitgebreide logboeken zijn een opt-in voor het testteam.</strong> Alleen als je het zélf aanzet (ontgrendeld met een diagnose-code die we met onze vaste testers delen) leggen we meer vast — waaronder je GPS-positie, rijrichting en snelheid op het moment dat een verhaal wordt gemaakt — om fouten in de verhalen op te sporen en de app te verbeteren. Dit staat standaard uit, geldt alleen zolang jij het zelf aan hebt staan, wordt nooit met derden gedeeld, en kun je op elk moment weer uitzetten.',
     ],
     h_stories='Verhalen &amp; spraak (verwerkers)',
@@ -328,8 +328,15 @@ PRIVACY = {
     ],
     h_limits='Gebruikslimieten',
     limits_text='Om misbruik te voorkomen houden we per IP-adres een technische, tijdelijke teller bij (maximaal 48 uur bewaard). Dit is uitsluitend een aantal, nooit gekoppeld aan een profiel, naam of account, en wordt nooit gedeeld met derden.',
+    h_data='Wat we wél bewaren',
+    data_items=[
+        "<strong>Technische gebeurtenissen.</strong> De app meldt aan onze server welk verhaal is verteld, over welke plek, hoelang het maken duurde en of er iets misging — met een willekeurig sessienummer per app-start. Zo zien we of 2R goed werkt. Deze logboeken bevatten standaard geen GPS-positie.",
+        "<strong>Het verhalenarchief.</strong> Elk verteld verhaal bewaren we integraal: de tekst, de plek waar het verhaal over gaat en, bij testers, de opgegeven naam. Zo kunnen we teruglezen wat er verteld is en de mooiste verhalen cureren voor deze site. De positie van de reiziger bewaren we daarbij niet.",
+        "<strong>Aankopen.</strong> Koop je een abonnement of tegoed, dan registreren we de transactie die Apple ons doorgeeft, samen met een anoniem apparaatnummer. Dat nummer staat los van je naam en is nodig om je aankoop te herkennen — ook na een herinstallatie. Betaalgegevens zien wij nooit; die blijven bij Apple.",
+        "<strong>Bewaartermijn &amp; wissen.</strong> Deze gegevens bewaren we zolang 2R in ontwikkeling is. Wil je dat we iets van jou wissen — bijvoorbeeld je testernaam of je verhalen — mail ons, dan verwijderen we het.",
+    ],
     h_accounts='Accounts',
-    accounts_text='De app vereist geen account, inloggen of registratie.',
+    accounts_text='De app vereist geen account, inloggen of registratie. Testers kunnen vrijwillig een naam invullen; die naam reist mee met hun verhalen en aankopen zodat we de testfase kunnen volgen, en wordt op verzoek gewist.',
     h_contact='Contact',
     contact_text='Vragen over dit beleid? Mail naar <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
@@ -339,7 +346,7 @@ PRIVACY = {
     h_location='Location',
     location_items=[
         'Your GPS location is used to determine which stories are relevant.',
-        '<strong>By default your location is never stored and never logged.</strong> Every request to the server contains only the name and context of a specific place — no location history, no trip logging.',
+        '<strong>By default your location is never stored and never logged.</strong> To work out what you are passing, the app sends your current position along with a story request; the server uses it to pick the right place and does not keep it. No location history or trip log is ever built up.',
         '<strong>Extended logging is an opt-in for our testing team.</strong> Only if you switch it on yourself (unlocked with a diagnostics code we share with our regular testers) do we record more — including your GPS position, heading and speed at the moment a story is generated — to track down bugs and improve the app. This is off by default, applies only while you have it enabled, is never shared with third parties, and can be turned off at any time.',
     ],
     h_stories='Stories &amp; voice (processors)',
@@ -351,8 +358,15 @@ PRIVACY = {
     ],
     h_limits='Usage limits',
     limits_text='To prevent abuse we keep a technical, temporary counter per IP address (kept for a maximum of 48 hours). This is only a number, never linked to a profile, name or account, and never shared with third parties.',
+    h_data='What we do keep',
+    data_items=[
+        "<strong>Technical events.</strong> The app tells our server which story was told, about which place, how long it took to generate and whether anything went wrong — with a random session number per app start. That is how we see whether 2R works well. These logs contain no GPS position by default.",
+        "<strong>The story archive.</strong> Every story that is told is kept in full: the text, the place the story is about and, for testers, the name they entered. It lets us read back what was told and curate the best stories for this site. The traveller's position is not stored with it.",
+        "<strong>Purchases.</strong> If you buy a subscription or credit, we record the transaction Apple passes on to us, together with an anonymous device number. That number is unrelated to your name and is needed to recognise your purchase — including after a reinstall. We never see payment details; those stay with Apple.",
+        "<strong>Retention &amp; deletion.</strong> We keep this data while 2R is in development. Want something of yours removed — your tester name, your stories? Email us and we will delete it.",
+    ],
     h_accounts='Accounts',
-    accounts_text='The app requires no account, login or registration.',
+    accounts_text='The app requires no account, login or registration. Testers may voluntarily enter a name; it travels with their stories and purchases so we can follow the test phase, and is deleted on request.',
     h_contact='Contact',
     contact_text='Questions about this policy? Email <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
@@ -362,7 +376,7 @@ PRIVACY = {
     h_location='Standort',
     location_items=[
         'Dein GPS-Standort wird verwendet, um zu bestimmen, welche Geschichten relevant sind.',
-        '<strong>Standardmäßig wird dein Standort nicht gespeichert und nicht protokolliert.</strong> Jede Anfrage an den Server enthält nur den Namen und Kontext eines bestimmten Ortes — kein Standortverlauf, keine Fahrtenaufzeichnung.',
+        '<strong>Standardmäßig wird dein Standort nicht gespeichert und nicht protokolliert.</strong> Um zu bestimmen, woran du gerade vorbeikommst, sendet die App deine aktuelle Position mit einer Geschichten-Anfrage mit; der Server nutzt sie, um den richtigen Ort zu wählen, und bewahrt sie nicht auf. Es entsteht kein Standortverlauf und keine Fahrtenaufzeichnung.',
         '<strong>Erweiterte Protokolle sind ein Opt-in für unser Testteam.</strong> Nur wenn du es selbst aktivierst (freigeschaltet mit einem Diagnose-Code, den wir mit unseren festen Testern teilen), erfassen wir mehr — einschließlich deiner GPS-Position, Fahrtrichtung und Geschwindigkeit im Moment der Geschichtenerstellung — um Fehler aufzuspüren und die App zu verbessern. Das ist standardmäßig aus, gilt nur solange du es aktiviert hast, wird nie an Dritte weitergegeben und kann jederzeit wieder ausgeschaltet werden.',
     ],
     h_stories='Geschichten &amp; Sprache (Auftragsverarbeiter)',
@@ -374,8 +388,15 @@ PRIVACY = {
     ],
     h_limits='Nutzungsgrenzen',
     limits_text='Um Missbrauch zu verhindern, führen wir pro IP-Adresse einen technischen, temporären Zähler (maximal 48 Stunden gespeichert). Das ist ausschließlich eine Zahl, nie mit einem Profil, Namen oder Konto verknüpft, und wird nie an Dritte weitergegeben.',
+    h_data='Was wir wohl aufbewahren',
+    data_items=[
+        "<strong>Technische Ereignisse.</strong> Die App meldet unserem Server, welche Geschichte erzählt wurde, über welchen Ort, wie lange die Erstellung dauerte und ob etwas schiefging — mit einer zufälligen Sitzungsnummer pro App-Start. So sehen wir, ob 2R gut funktioniert. Diese Protokolle enthalten standardmäßig keine GPS-Position.",
+        "<strong>Das Geschichtenarchiv.</strong> Jede erzählte Geschichte bewahren wir vollständig auf: den Text, den Ort, um den es geht, und bei Testern den angegebenen Namen. So können wir nachlesen, was erzählt wurde, und die schönsten Geschichten für diese Website kuratieren. Die Position des Reisenden speichern wir dabei nicht.",
+        "<strong>Käufe.</strong> Kaufst du ein Abonnement oder Guthaben, registrieren wir die Transaktion, die Apple uns übermittelt, zusammen mit einer anonymen Gerätenummer. Diese Nummer ist nicht mit deinem Namen verknüpft und wird gebraucht, um deinen Kauf wiederzuerkennen — auch nach einer Neuinstallation. Zahlungsdaten sehen wir nie; die bleiben bei Apple.",
+        "<strong>Aufbewahrung &amp; Löschung.</strong> Diese Daten bewahren wir auf, solange sich 2R in Entwicklung befindet. Sollen wir etwas von dir löschen — deinen Testernamen, deine Geschichten? Schreib uns eine E-Mail, dann entfernen wir es.",
+    ],
     h_accounts='Konten',
-    accounts_text='Die App erfordert kein Konto, keine Anmeldung und keine Registrierung.',
+    accounts_text='Die App erfordert kein Konto, keine Anmeldung und keine Registrierung. Tester können freiwillig einen Namen angeben; er begleitet ihre Geschichten und Käufe, damit wir die Testphase nachvollziehen können, und wird auf Wunsch gelöscht.',
     h_contact='Kontakt',
     contact_text='Fragen zu dieser Erklärung? Schreib an <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
@@ -385,7 +406,7 @@ PRIVACY = {
     h_location='Localisation',
     location_items=[
         'Votre position GPS est utilisée pour déterminer quelles histoires sont pertinentes.',
-        "<strong>Par défaut, votre position n'est jamais stockée ni journalisée.</strong> Chaque requête envoyée au serveur ne contient que le nom et le contexte d'un lieu précis — pas d'historique de localisation, pas de suivi de trajet.",
+        "<strong>Par défaut, votre position n'est jamais stockée ni journalisée.</strong> Pour déterminer ce que vous croisez, l'application joint votre position actuelle à une requête d'histoire ; le serveur s'en sert pour choisir le bon lieu et ne la conserve pas. Aucun historique de localisation ni suivi de trajet n'est constitué.",
         "<strong>La journalisation étendue est une option (opt-in) pour notre équipe de test.</strong> Ce n'est que si vous l'activez vous-même (déverrouillée par un code de diagnostic que nous partageons avec nos testeurs réguliers) que nous enregistrons davantage — dont votre position GPS, votre direction et votre vitesse au moment où une histoire est générée — afin de repérer les erreurs et d'améliorer l'application. C'est désactivé par défaut, ne s'applique que tant que vous l'avez activé, n'est jamais partagé avec des tiers, et peut être désactivé à tout moment.",
     ],
     h_stories='Histoires et voix (sous-traitants)',
@@ -397,8 +418,15 @@ PRIVACY = {
     ],
     h_limits="Limites d'utilisation",
     limits_text="Pour prévenir les abus, nous conservons un compteur technique temporaire par adresse IP (conservé 48 heures maximum). Il ne s'agit que d'un nombre, jamais lié à un profil, un nom ou un compte, et jamais partagé avec des tiers.",
+    h_data='Ce que nous conservons',
+    data_items=[
+        "<strong>Événements techniques.</strong> L'application signale à notre serveur quelle histoire a été racontée, sur quel lieu, combien de temps la génération a pris et si quelque chose a échoué — avec un numéro de session aléatoire à chaque démarrage. C'est ainsi que nous voyons si 2R fonctionne bien. Par défaut, ces journaux ne contiennent aucune position GPS.",
+        "<strong>L'archive des histoires.</strong> Chaque histoire racontée est conservée intégralement : le texte, le lieu dont elle parle et, pour les testeurs, le nom saisi. Cela nous permet de relire ce qui a été raconté et de sélectionner les plus belles histoires pour ce site. La position du voyageur n'y est pas conservée.",
+        "<strong>Achats.</strong> Si vous achetez un abonnement ou un crédit, nous enregistrons la transaction transmise par Apple, avec un numéro d'appareil anonyme. Ce numéro n'est pas lié à votre nom et sert à reconnaître votre achat — y compris après une réinstallation. Nous ne voyons jamais vos données de paiement ; elles restent chez Apple.",
+        "<strong>Conservation &amp; suppression.</strong> Nous conservons ces données tant que 2R est en développement. Vous voulez que nous supprimions quelque chose — votre nom de testeur, vos histoires ? Écrivez-nous et nous l'effacerons.",
+    ],
     h_accounts='Comptes',
-    accounts_text="L'application ne nécessite aucun compte, connexion ni inscription.",
+    accounts_text="L'application ne nécessite aucun compte, connexion ni inscription. Les testeurs peuvent saisir un nom volontairement ; il accompagne leurs histoires et achats afin de suivre la phase de test, et il est supprimé sur simple demande.",
     h_contact='Contact',
     contact_text='Des questions sur cette politique ? Écrivez à <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
@@ -408,7 +436,7 @@ PRIVACY = {
     h_location='Ubicación',
     location_items=[
         'Tu ubicación GPS se usa para determinar qué historias son relevantes.',
-        '<strong>Por defecto, tu ubicación nunca se almacena ni se registra.</strong> Cada solicitud al servidor contiene solo el nombre y el contexto de un lugar concreto — sin historial de ubicación, sin registro de trayectos.',
+        '<strong>Por defecto, tu ubicación nunca se almacena ni se registra.</strong> Para saber qué estás pasando, la app envía tu posición actual junto con la solicitud de una historia; el servidor la usa para elegir el lugar correcto y no la conserva. No se construye ningún historial de ubicación ni registro de trayectos.',
         '<strong>El registro ampliado es opcional (opt-in) para nuestro equipo de pruebas.</strong> Solo si lo activas tú mismo (desbloqueado con un código de diagnóstico que compartimos con nuestros testers habituales) registramos más información — incluida tu posición GPS, dirección y velocidad en el momento de generar una historia — para detectar errores y mejorar la app. Está desactivado por defecto, solo se aplica mientras lo tengas activado, nunca se comparte con terceros y puedes desactivarlo en cualquier momento.',
     ],
     h_stories='Historias y voz (encargados del tratamiento)',
@@ -420,8 +448,15 @@ PRIVACY = {
     ],
     h_limits='Límites de uso',
     limits_text='Para prevenir abusos mantenemos un contador técnico y temporal por dirección IP (conservado un máximo de 48 horas). Es solo un número, nunca vinculado a un perfil, nombre o cuenta, y nunca se comparte con terceros.',
+    h_data='Lo que sí guardamos',
+    data_items=[
+        "<strong>Eventos técnicos.</strong> La app comunica a nuestro servidor qué historia se contó, sobre qué lugar, cuánto tardó en generarse y si algo falló — con un número de sesión aleatorio por cada inicio. Así vemos si 2R funciona bien. Por defecto, estos registros no contienen ninguna posición GPS.",
+        "<strong>El archivo de historias.</strong> Cada historia contada se guarda íntegra: el texto, el lugar del que trata y, en el caso de los testers, el nombre introducido. Nos permite releer lo contado y seleccionar las mejores historias para este sitio. La posición del viajero no se guarda con ello.",
+        "<strong>Compras.</strong> Si compras una suscripción o un crédito, registramos la transacción que Apple nos comunica, junto con un número de dispositivo anónimo. Ese número no está vinculado a tu nombre y sirve para reconocer tu compra — también tras una reinstalación. Nunca vemos datos de pago; esos se quedan en Apple.",
+        "<strong>Conservación y borrado.</strong> Guardamos estos datos mientras 2R esté en desarrollo. ¿Quieres que borremos algo tuyo — tu nombre de tester, tus historias? Escríbenos y lo eliminamos.",
+    ],
     h_accounts='Cuentas',
-    accounts_text='La app no requiere ninguna cuenta, inicio de sesión ni registro.',
+    accounts_text='La app no requiere ninguna cuenta, inicio de sesión ni registro. Los testers pueden introducir un nombre de forma voluntaria; acompaña sus historias y compras para poder seguir la fase de pruebas, y se elimina si lo piden.',
     h_contact='Contacto',
     contact_text='¿Preguntas sobre esta política? Escribe a <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
@@ -431,7 +466,7 @@ PRIVACY = {
     h_location='Localização',
     location_items=[
         'Sua localização GPS é usada para determinar quais histórias são relevantes.',
-        '<strong>Por padrão, sua localização nunca é armazenada nem registrada.</strong> Cada solicitação ao servidor contém apenas o nome e o contexto de um local específico — sem histórico de localização, sem registro de trajetos.',
+        '<strong>Por padrão, sua localização nunca é armazenada nem registrada.</strong> Para saber por onde você está passando, o app envia sua posição atual junto com o pedido de uma história; o servidor a usa para escolher o lugar certo e não a guarda. Nenhum histórico de localização ou registro de trajetos é criado.',
         '<strong>O registro ampliado é opcional (opt-in) para a nossa equipe de testes.</strong> Só se você mesmo ativar (desbloqueado com um código de diagnóstico que compartilhamos com nossos testadores habituais) registramos mais informações — incluindo sua posição GPS, direção e velocidade no momento em que uma história é gerada — para identificar erros e melhorar o app. Fica desativado por padrão, só se aplica enquanto você o mantiver ativado, nunca é compartilhado com terceiros e pode ser desativado a qualquer momento.',
     ],
     h_stories='Histórias e voz (operadores)',
@@ -443,8 +478,15 @@ PRIVACY = {
     ],
     h_limits='Limites de uso',
     limits_text='Para evitar abusos, mantemos um contador técnico e temporário por endereço IP (guardado por no máximo 48 horas). Isso é apenas um número, nunca vinculado a um perfil, nome ou conta, e nunca compartilhado com terceiros.',
+    h_data='O que guardamos',
+    data_items=[
+        "<strong>Eventos técnicos.</strong> O app informa ao nosso servidor qual história foi contada, sobre qual lugar, quanto tempo levou para gerar e se algo deu errado — com um número de sessão aleatório a cada início. Assim vemos se o 2R funciona bem. Por padrão, esses registros não contêm nenhuma posição GPS.",
+        "<strong>O arquivo de histórias.</strong> Cada história contada é guardada na íntegra: o texto, o lugar de que trata e, no caso dos testadores, o nome informado. Isso nos permite reler o que foi contado e selecionar as melhores histórias para este site. A posição do viajante não é guardada.",
+        "<strong>Compras.</strong> Se você compra uma assinatura ou um crédito, registramos a transação que a Apple nos repassa, junto com um número de aparelho anônimo. Esse número não está ligado ao seu nome e serve para reconhecer sua compra — inclusive após uma reinstalação. Nunca vemos dados de pagamento; esses ficam com a Apple.",
+        "<strong>Retenção e exclusão.</strong> Guardamos esses dados enquanto o 2R estiver em desenvolvimento. Quer que apaguemos algo seu — seu nome de testador, suas histórias? Escreva para nós e removemos.",
+    ],
     h_accounts='Contas',
-    accounts_text='O app não exige conta, login ou registro.',
+    accounts_text='O app não exige conta, login ou registro. Testadores podem informar um nome voluntariamente; ele acompanha suas histórias e compras para acompanharmos a fase de testes, e é apagado mediante pedido.',
     h_contact='Contato',
     contact_text='Dúvidas sobre esta política? Escreva para <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.',
 ),
@@ -783,16 +825,6 @@ STORIES = [
             fr="À moins de cinq cents mètres de notre itinéraire, niché dans les bois au bord de l'eau, se trouve la véritable icône de ce coin : le château de Nijenrode. Fondé vers mille deux cent soixante-quinze par Gerard Splinter van Ruwiel et façonné au fil des siècles par la guerre, le feu et la reconstruction. Des maîtres hollandais comme Salomon van Ruysdael ont depuis longtemps capturé sur toile le reflet de ces tours fières. Aujourd'hui, une tout autre énergie y règne en tant qu'université, mais les pont-levis séculaires respirent encore un pur passé chevaleresque.",
             es="A menos de quinientos metros de nuestra ruta, escondido en los bosques junto al agua, se encuentra el verdadero icono de este rincón: el castillo de Nijenrode. Fundado hacia mil doscientos setenta y cinco por Gerard Splinter van Ruwiel y marcado a lo largo de los siglos por la guerra, el fuego y la reconstrucción. Maestros holandeses como Salomon van Ruysdael ya plasmaron en lienzo el reflejo de esas orgullosas torres. Hoy vibra allí una energía muy distinta como universidad, pero los puentes levadizos centenarios aún respiran puro pasado caballeresco.",
             pt="A pouco menos de quinhentos metros da nossa rota, escondido nos bosques junto à água, está o verdadeiro ícone deste canto: o castelo de Nijenrode. Fundado por volta de mil duzentos e setenta e cinco por Gerard Splinter van Ruwiel e moldado ao longo dos séculos por guerra, fogo e reconstrução. Mestres holandeses como Salomon van Ruysdael já registraram em tela o reflexo dessas torres orgulhosas. Hoje pulsa ali uma energia bem diferente como universidade, mas as pontes levadiças centenárias ainda respiram puro passado de cavaleiros.")),
-    dict(slug='daan-boom-utrecht', category='mensen', location='Utrecht, Nederland', date='17 augustus 2026',
-         source_label='Wikipedia — Daan Boom', source_url='https://nl.wikipedia.org/wiki/Daan_Boom',
-         title=dict(nl='Daan Boom, Utrechts mediatalent', en='Daan Boom, Utrecht media talent', de='Daan Boom, Medientalent aus Utrecht', fr='Daan Boom, talent médiatique d\'Utrecht', es='Daan Boom, talento mediático de Utrecht', pt='Daan Boom, talento midiático de Utrecht'),
-         text=dict(
-            nl="Utrecht staat natuurlijk bekend om zijn vissersverleden en klederdracht, maar het is evengoed de ultieme bakermat van Nederlandse smaakmakers en publiekslievelingen. Denk aan Daan Boom, geboren en getogen in de stad, die zijn carrière begon als kinderster en uitgroeide tot een waar media-icoon met het programma Streetlab. Lang voordat sociale media bestonden, wisten ze hier al hoe je een publiek inpakt.",
-            en="Utrecht is of course known for its fishing heritage and traditional dress, but it's just as much the ultimate birthplace of Dutch trendsetters and public darlings. Take Daan Boom, born and raised in the city, who started his career as a child star and grew into a true media icon with the show Streetlab. Long before social media existed, people here already knew how to win over an audience.",
-            de="Utrecht ist natürlich bekannt für seine Fischereivergangenheit und Trachten, aber genauso ist es die ultimative Geburtsstätte niederländischer Trendsetter und Publikumslieblinge. Denk an Daan Boom, geboren und aufgewachsen in der Stadt, der seine Karriere als Kinderstar begann und mit der Sendung Streetlab zu einer wahren Medienikone wurde. Lange bevor es soziale Medien gab, wusste man hier schon, wie man ein Publikum für sich gewinnt.",
-            fr="Utrecht est bien sûr connue pour son passé de pêche et ses costumes traditionnels, mais c'est tout autant le berceau ultime des tendances et des chouchous du public néerlandais. Prenez Daan Boom, né et élevé dans la ville, qui a commencé sa carrière comme enfant star et est devenu une véritable icône médiatique avec l'émission Streetlab. Bien avant l'existence des réseaux sociaux, on savait déjà ici comment conquérir un public.",
-            es="Utrecht es conocida, por supuesto, por su pasado pesquero y sus trajes tradicionales, pero es igualmente la cuna definitiva de las tendencias y los favoritos del público neerlandés. Fíjate en Daan Boom, nacido y criado en la ciudad, que comenzó su carrera como estrella infantil y se convirtió en un verdadero icono mediático con el programa Streetlab. Mucho antes de que existieran las redes sociales, aquí ya sabían cómo cautivar a un público.",
-            pt="Utrecht é conhecida, claro, pelo seu passado de pesca e trajes tradicionais, mas é igualmente o berço definitivo de tendências e queridinhos do público holandês. Veja o caso de Daan Boom, nascido e criado na cidade, que começou a carreira como estrela mirim e se tornou um verdadeiro ícone da mídia com o programa Streetlab. Muito antes de existirem as redes sociais, já se sabia por aqui como conquistar um público.")),
     dict(slug='loenderveense-plas', category='natuur', location='Wijdemeren, Nederland', date='17 augustus 2026',
          source_label='Wikipedia — Loenderveense Plas', source_url='https://nl.wikipedia.org/wiki/Loenderveense_Plas',
          title=dict(nl='De Loenderveense Plas', en='Loenderveense Plas', de='Der Loenderveense Plas', fr='Le Loenderveense Plas', es='El Loenderveense Plas', pt='O Loenderveense Plas'),
@@ -923,7 +955,7 @@ def build_howto(lang):
     </div>
   </div></section>
 '''
-    return page_shell(lang, h['title'] + ' — 2R (Second Route)', h['lede'][:150], 'howto', body)
+    return page_shell(lang, h['title'] + ' — 2R (Second Route)', h['lede'][:150], 'howto', body, path='zo-werkt-het.html')
 
 def nav(lang, active):
     s = SITE[lang]
@@ -1143,7 +1175,22 @@ SITE_SHELL_NL = '''
 </script>
 '''
 
-def page_shell(lang, title, description, active, body, extra_head=''):
+BASE_URL = 'https://2route.nl'
+
+def _seo_pad(path):
+    # index.html toont de site als mapadres
+    return path[:-len('index.html')] if path.endswith('index.html') else path
+
+def page_shell(lang, title, description, active, body, extra_head='', path=None):
+    seo = ''
+    if path is not None:
+        p = _seo_pad(path)
+        canon = f'{BASE_URL}/{lang}/{p}'
+        alts = ''.join(f'<link rel="alternate" hreflang="{l}" href="{BASE_URL}/{l}/{p}">\n' for l in LANGS)
+        seo = (f'<link rel="canonical" href="{canon}">\n'
+               f'{alts}'
+               f'<link rel="alternate" hreflang="x-default" href="{BASE_URL}/nl/{p}">\n'
+               f'<meta property="og:url" content="{canon}">\n')
     return f'''<!DOCTYPE html>
 <html lang="{HTML_LANG[lang]}">
 <head>
@@ -1157,7 +1204,7 @@ def page_shell(lang, title, description, active, body, extra_head=''):
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(description)}">
 <meta property="og:image" content="/og.jpg">
-</head>
+{seo}</head>
 <body>
 {nav(lang, active)}
 <main>
@@ -1216,7 +1263,7 @@ def build_city_story(lang, index):
     <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span>&#8599;</span></a></p>
   </div></section>
 '''
-    return page_shell(lang, f"{html.escape(title)} — 2R (Second Route)", teaser, 'product', body)
+    return page_shell(lang, f"{html.escape(title)} — 2R (Second Route)", teaser, 'product', body, path=f'stad/{CITY_SLUGS[index]}.html')
 
 
 def city_story_card(lang, index):
@@ -1416,7 +1463,7 @@ def build_home(lang):
       <p>{s['stories_p']}</p>
     </div>
     <div class="story-grid">{story_cards}</div>
-    <p style="margin-top:26px;"><a class="text-link on-paper" href="/{lang}/stories/">{s['stories_view_all']} <span>→</span></a></p>
+    <p style="margin-top:26px;"><a class="text-link on-paper" href="/{lang}/stories/">{s['stories_view_all']}</a></p>
   </div></section>
 
   <section class="invitation" id="meenemen">
@@ -1438,7 +1485,7 @@ def build_home(lang):
     # Live tellers (testers/verhalen vandaag) zijn van de publieke pagina
     # gehaald: dat was interne telemetrie en liet ongewild de prille schaal
     # zien. De strip toont nu stabiele productfeiten (stat3/stat4 in SITE).
-    return page_shell(lang, title, s['hero_lede'].replace('<b>', '').replace('</b>', ''), 'product', body)
+    return page_shell(lang, title, s['hero_lede'].replace('<b>', '').replace('</b>', ''), 'product', body, path='index.html')
 
 def build_roadmap(lang):
     s = SITE[lang]
@@ -1490,7 +1537,7 @@ def build_roadmap(lang):
     </div>
   </section>
 '''
-    return page_shell(lang, f"Roadmap — 2R (Second Route)", s['rm_lede'], 'roadmap', body)
+    return page_shell(lang, f"Roadmap — 2R (Second Route)", s['rm_lede'], 'roadmap', body, path='roadmap.html')
 
 # Nieuwe redactionele omlijsting voor de privacypagina (herbouw 29 aug). De
 # juridische kernteksten blijven in PRIVACY[lang]; hieronder alleen de rustige
@@ -1499,7 +1546,7 @@ PRIV_EXTRA = {
 'nl': dict(
     h1='Jouw reis blijft van jou.', alt='Een telefoon ligt met het scherm naar beneden naast een reisboek en wegenkaart in een geparkeerde auto.',
     lede='2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie. Hier leggen we precies uit wat er wél gebeurt.',
-    promises=[('01', 'Geen account nodig', 'Je hoeft niet in te loggen of je naam achter te laten.'),
+    promises=[('01', 'Geen account nodig', 'Je hoeft niet in te loggen. Alleen testers vullen vrijwillig een naam in.'),
               ('02', 'Geen rittenregistratie', 'Standaard bouwen we geen geschiedenis op van waar je bent geweest.'),
               ('03', 'Testlogs alleen met toestemming', 'Uitgebreidere diagnosegegevens staan standaard uit en zijn alleen opt-in.')],
     toc_label='Op deze pagina',
@@ -1515,7 +1562,7 @@ PRIV_EXTRA = {
 'en': dict(
     h1='Your journey stays yours.', alt='A phone lies face down next to a travel journal and road map in a parked car.',
     lede='2R uses only what it needs to tell the right story along the way. No account, no trip logging and no stored location by default. Here we explain exactly what does happen.',
-    promises=[('01', 'No account needed', "You don't need to log in or leave your name."),
+    promises=[('01', 'No account needed', "No login needed. Only testers voluntarily enter a name."),
               ('02', 'No trip logging', "By default we don't build a history of where you've been."),
               ('03', 'Test logs only with consent', 'More detailed diagnostics are off by default and opt-in only.')],
     toc_label='On this page',
@@ -1531,7 +1578,7 @@ PRIV_EXTRA = {
 'de': dict(
     h1='Deine Reise bleibt deine.', alt='Ein Telefon liegt mit dem Bildschirm nach unten neben einem Reisetagebuch und einer Straßenkarte in einem geparkten Auto.',
     lede='2R nutzt nur das, was nötig ist, um unterwegs die richtige Geschichte zu erzählen. Kein Konto, keine Fahrtenaufzeichnung und standardmäßig kein gespeicherter Standort. Hier erklären wir genau, was wirklich passiert.',
-    promises=[('01', 'Kein Konto nötig', 'Du musst dich nicht anmelden oder deinen Namen hinterlassen.'),
+    promises=[('01', 'Kein Konto nötig', 'Keine Anmeldung nötig. Nur Tester geben freiwillig einen Namen an.'),
               ('02', 'Keine Fahrtenaufzeichnung', 'Standardmäßig führen wir keine Historie darüber, wo du warst.'),
               ('03', 'Testprotokolle nur mit Zustimmung', 'Ausführlichere Diagnosedaten sind standardmäßig aus und nur per Opt-in.')],
     toc_label='Auf dieser Seite',
@@ -1547,7 +1594,7 @@ PRIV_EXTRA = {
 'fr': dict(
     h1='Votre voyage reste le vôtre.', alt="Un téléphone posé écran vers le bas à côté d'un carnet de voyage et d'une carte routière dans une voiture garée.",
     lede="2R n'utilise que ce qui est nécessaire pour raconter la bonne histoire en chemin. Pas de compte, pas d'enregistrement des trajets et, par défaut, aucune localisation conservée. Voici exactement ce qui se passe.",
-    promises=[('01', 'Aucun compte nécessaire', 'Pas besoin de vous connecter ni de laisser votre nom.'),
+    promises=[('01', 'Aucun compte nécessaire', 'Aucune connexion requise. Seuls les testeurs saisissent un nom, volontairement.'),
               ('02', 'Aucun enregistrement des trajets', "Par défaut, nous ne conservons pas d'historique de vos déplacements."),
               ('03', 'Journaux de test seulement avec accord', 'Les diagnostics détaillés sont désactivés par défaut et uniquement sur option.')],
     toc_label='Sur cette page',
@@ -1563,7 +1610,7 @@ PRIV_EXTRA = {
 'es': dict(
     h1='Tu viaje sigue siendo tuyo.', alt='Un teléfono boca abajo junto a un diario de viaje y un mapa de carreteras en un coche aparcado.',
     lede='2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada. Aquí explicamos exactamente qué sí ocurre.',
-    promises=[('01', 'Sin cuenta', 'No necesitas iniciar sesión ni dejar tu nombre.'),
+    promises=[('01', 'Sin cuenta', 'No hace falta iniciar sesión. Solo los testers introducen un nombre, de forma voluntaria.'),
               ('02', 'Sin registro de trayectos', 'Por defecto no creamos un historial de dónde has estado.'),
               ('03', 'Registros de prueba solo con permiso', 'Los diagnósticos más detallados están desactivados por defecto y son solo opt-in.')],
     toc_label='En esta página',
@@ -1579,7 +1626,7 @@ PRIV_EXTRA = {
 'pt': dict(
     h1='A sua viagem continua sua.', alt='Um telefone virado para baixo ao lado de um diário de viagem e de um mapa rodoviário num carro estacionado.',
     lede='O 2R usa apenas o necessário para contar a história certa pelo caminho. Sem conta, sem registo de trajetos e, por padrão, sem localização guardada. Aqui explicamos exatamente o que de facto acontece.',
-    promises=[('01', 'Sem conta necessária', 'Você não precisa fazer login nem deixar o seu nome.'),
+    promises=[('01', 'Sem conta necessária', 'Não é preciso fazer login. Só os testadores informam um nome, voluntariamente.'),
               ('02', 'Sem registo de trajetos', 'Por padrão, não criamos um histórico de onde você esteve.'),
               ('03', 'Registos de teste apenas com consentimento', 'Diagnósticos mais detalhados estão desativados por padrão e são apenas opt-in.')],
     toc_label='Nesta página',
@@ -1598,11 +1645,12 @@ def build_privacy(lang):
     p = PRIVACY[lang]
     pe = PRIV_EXTRA[lang]
     location_lis = '\n'.join(f'<li>{item}</li>' for item in p['location_items'])
+    data_lis = '\n'.join(f'<li>{item}</li>' for item in p['data_items'])
     promises = ''.join(
         f'<div class="priv-promise"><span class="priv-pnum">{n}</span><div class="priv-pbody"><h3>{t}</h3><p>{d}</p></div></div>'
         for n, t, d in pe['promises'])
     toc_items = [('loc', p['h_location']), ('verhalen', p['h_stories']), ('limieten', p['h_limits']),
-                 ('accounts', p['h_accounts']), ('contact', p['h_contact'])]
+                 ('bewaard', p['h_data']), ('accounts', p['h_accounts']), ('contact', p['h_contact'])]
     toc = ''.join(f'<li><a href="#{aid}">{lbl}</a></li>' for aid, lbl in toc_items)
     th = pe['table_head']
     rows = ''.join(
@@ -1651,6 +1699,11 @@ def build_privacy(lang):
         <p>{p['limits_text']}</p>
       </section>
 
+      <section id="bewaard" class="priv-sec">
+        <h2>{p['h_data']}</h2>
+        <ul>{data_lis}</ul>
+      </section>
+
       <section id="accounts" class="priv-sec">
         <h2>{p['h_accounts']}</h2>
         <p>{p['accounts_text']}</p>
@@ -1669,7 +1722,7 @@ def build_privacy(lang):
     <a class="btn-primary" href="mailto:nimco@nentjes.nl">{pe['close_btn']}</a>
   </div></section>
 '''
-    return page_shell(lang, p['title'], pe['lede'][:150], 'privacy', body)
+    return page_shell(lang, p['title'], pe['lede'][:150], 'privacy', body, path='privacy.html')
 
 # --- Live verhalen uit de app (goedgekeurd op de besloten leespagina) ------
 # Zoekbaar en met kaart, zodat het archief bruikbaar blijft als het groeit.
@@ -1698,8 +1751,8 @@ LIVE_TEMPLATE = """  <section class="block" id="live-verhalen"><div class="wrap"
     <div id="live-lijst" class="story-grid-simple"></div>
   </div></section>
 
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="/leaflet.css">
+  <script src="/leaflet.js"></script>
   <script>
   (function () {
     var API = "__API__";
@@ -1719,6 +1772,7 @@ LIVE_TEMPLATE = """  <section class="block" id="live-verhalen"><div class="wrap"
     }
 
     function toonKaart(verhalen) {
+      if (typeof L === 'undefined') { kaartEl.style.display = 'none'; return; }
       var metPunt = verhalen.filter(function (v) { return v.lat && v.lng; });
       if (!metPunt.length) { kaartEl.style.display = 'none'; return; }
       kaartEl.style.display = 'block';
@@ -1783,7 +1837,7 @@ LIVE_TEMPLATE = """  <section class="block" id="live-verhalen"><div class="wrap"
             (v.onderwerp ? ' · ' + esc(v.onderwerp) : '') + '</div>' +
             '<h3>' + esc(v.plek) + '</h3><p>' + esc(v.tekst) + '</p></div></article>';
         }).join('');
-        toonKaart(d.verhalen);
+        try { toonKaart(d.verhalen); } catch (e) { kaartEl.style.display = 'none'; }
       } catch (e) {
         lijst.innerHTML = '<p class="vz-leeg">' + esc(T.nog) + '</p>';
         kaartEl.style.display = 'none';
@@ -1915,7 +1969,7 @@ def build_stories_index(lang):
   </div></section>
 {live_stories_section(lang)}
 '''
-    return page_shell(lang, f"{s['nav_stories']} — 2R (Second Route)", se['hero_lede'][:150], 'stories', body)
+    return page_shell(lang, f"{s['nav_stories']} — 2R (Second Route)", se['hero_lede'][:150], 'stories', body, path='stories/index.html')
 
 def build_story_detail(lang, st):
     s = SITE[lang]
@@ -1954,7 +2008,7 @@ def build_story_detail(lang, st):
     <a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span aria-hidden="true">&#8599;</span></a>
   </div></section>
 '''
-    return page_shell(lang, f"{st['title'][lang]} — 2R", st['text'][lang][:150], 'stories', body)
+    return page_shell(lang, f"{st['title'][lang]} — 2R", st['text'][lang][:150], 'stories', body, path=f'stories/{st["slug"]}.html')
 
 # ---------------------------------------------------------------------------
 # Schrijf alles weg
@@ -1975,5 +2029,16 @@ for lang in LANGS:
         write(f'{lang}/stories/{st["slug"]}.html', build_story_detail(lang, st))
     for i in range(len(CITY_SLUGS)):
         write(f'{lang}/stad/{CITY_SLUGS[i]}.html', build_city_story(lang, i))
+
+# Sitemap + robots: alle publieke pagina's in zes talen
+_paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/']
+_paden += [f'stories/{st["slug"]}.html' for st in STORIES]
+_paden += [f'stad/{sl}.html' for sl in CITY_SLUGS]
+_urls = [f'{BASE_URL}/{l}/{p}' for p in _paden for l in LANGS]
+write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n'
+      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+      + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in _urls)
+      + '</urlset>\n')
+write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n')
 
 print(f"Klaar: {len(LANGS)} talen x ({5 + len(STORIES) + len(CITY_SLUGS)} pagina's) = {len(LANGS) * (5 + len(STORIES) + len(CITY_SLUGS))} bestanden")

@@ -11,6 +11,15 @@
 <meta property="og:title" content="Política de privacidad — 2R">
 <meta property="og:description" content="2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada.">
 <meta property="og:image" content="/og.jpg">
+<link rel="canonical" href="https://2route.nl/es/privacy.html">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/privacy.html">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/privacy.html">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/privacy.html">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/privacy.html">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/privacy.html">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/privacy.html">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/privacy.html">
+<meta property="og:url" content="https://2route.nl/es/privacy.html">
 </head>
 <body>
 <header class="site">
@@ -78,12 +87,12 @@
     </div>
   </section>
 
-  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Sin cuenta</h3><p>No necesitas iniciar sesión ni dejar tu nombre.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Sin registro de trayectos</h3><p>Por defecto no creamos un historial de dónde has estado.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Registros de prueba solo con permiso</h3><p>Los diagnósticos más detallados están desactivados por defecto y son solo opt-in.</p></div></div></div></section>
+  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Sin cuenta</h3><p>No hace falta iniciar sesión. Solo los testers introducen un nombre, de forma voluntaria.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Sin registro de trayectos</h3><p>Por defecto no creamos un historial de dónde has estado.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Registros de prueba solo con permiso</h3><p>Los diagnósticos más detallados están desactivados por defecto y son solo opt-in.</p></div></div></div></section>
 
   <section class="priv-body"><div class="wrap priv-grid">
     <nav class="priv-toc" aria-label="En esta página">
       <p class="priv-toc-label">En esta página</p>
-      <ul><li><a href="#loc">Ubicación</a></li><li><a href="#verhalen">Historias y voz (encargados del tratamiento)</a></li><li><a href="#limieten">Límites de uso</a></li><li><a href="#accounts">Cuentas</a></li><li><a href="#contact">Contacto</a></li></ul>
+      <ul><li><a href="#loc">Ubicación</a></li><li><a href="#verhalen">Historias y voz (encargados del tratamiento)</a></li><li><a href="#limieten">Límites de uso</a></li><li><a href="#bewaard">Lo que sí guardamos</a></li><li><a href="#accounts">Cuentas</a></li><li><a href="#contact">Contacto</a></li></ul>
     </nav>
     <div class="priv-text">
       <p class="priv-intro">2R (nombre provisional: MapsInfo) es una app de guía de viaje que narra en voz alta lo que te rodea mientras conduces, pedaleas o caminas. Esta política explica con precisión qué datos usa la app y por qué — sin letra pequeña.</p>
@@ -93,7 +102,7 @@
         <p class="priv-fieldnote">Por defecto tu ubicación no se guarda ni se registra.</p>
         <p class="priv-fieldnote">Los registros ampliados solo están disponibles como opt-in para el equipo de pruebas.</p>
         <ul><li>Tu ubicación GPS se usa para determinar qué historias son relevantes.</li>
-<li><strong>Por defecto, tu ubicación nunca se almacena ni se registra.</strong> Cada solicitud al servidor contiene solo el nombre y el contexto de un lugar concreto — sin historial de ubicación, sin registro de trayectos.</li>
+<li><strong>Por defecto, tu ubicación nunca se almacena ni se registra.</strong> Para saber qué estás pasando, la app envía tu posición actual junto con la solicitud de una historia; el servidor la usa para elegir el lugar correcto y no la conserva. No se construye ningún historial de ubicación ni registro de trayectos.</li>
 <li><strong>El registro ampliado es opcional (opt-in) para nuestro equipo de pruebas.</strong> Solo si lo activas tú mismo (desbloqueado con un código de diagnóstico que compartimos con nuestros testers habituales) registramos más información — incluida tu posición GPS, dirección y velocidad en el momento de generar una historia — para detectar errores y mejorar la app. Está desactivado por defecto, solo se aplica mientras lo tengas activado, nunca se comparte con terceros y puedes desactivarlo en cualquier momento.</li></ul>
       </section>
 
@@ -111,9 +120,17 @@
         <p>Para prevenir abusos mantenemos un contador técnico y temporal por dirección IP (conservado un máximo de 48 horas). Es solo un número, nunca vinculado a un perfil, nombre o cuenta, y nunca se comparte con terceros.</p>
       </section>
 
+      <section id="bewaard" class="priv-sec">
+        <h2>Lo que sí guardamos</h2>
+        <ul><li><strong>Eventos técnicos.</strong> La app comunica a nuestro servidor qué historia se contó, sobre qué lugar, cuánto tardó en generarse y si algo falló — con un número de sesión aleatorio por cada inicio. Así vemos si 2R funciona bien. Por defecto, estos registros no contienen ninguna posición GPS.</li>
+<li><strong>El archivo de historias.</strong> Cada historia contada se guarda íntegra: el texto, el lugar del que trata y, en el caso de los testers, el nombre introducido. Nos permite releer lo contado y seleccionar las mejores historias para este sitio. La posición del viajero no se guarda con ello.</li>
+<li><strong>Compras.</strong> Si compras una suscripción o un crédito, registramos la transacción que Apple nos comunica, junto con un número de dispositivo anónimo. Ese número no está vinculado a tu nombre y sirve para reconocer tu compra — también tras una reinstalación. Nunca vemos datos de pago; esos se quedan en Apple.</li>
+<li><strong>Conservación y borrado.</strong> Guardamos estos datos mientras 2R esté en desarrollo. ¿Quieres que borremos algo tuyo — tu nombre de tester, tus historias? Escríbenos y lo eliminamos.</li></ul>
+      </section>
+
       <section id="accounts" class="priv-sec">
         <h2>Cuentas</h2>
-        <p>La app no requiere ninguna cuenta, inicio de sesión ni registro.</p>
+        <p>La app no requiere ninguna cuenta, inicio de sesión ni registro. Los testers pueden introducir un nombre de forma voluntaria; acompaña sus historias y compras para poder seguir la fase de pruebas, y se elimina si lo piden.</p>
       </section>
 
       <section id="contact" class="priv-sec">
