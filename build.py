@@ -735,7 +735,7 @@ HOWTO = {
     sections=[
         dict(h='🚗 Beginnen', p='Tik in de app op <b>Start de reis</b> en sta je locatie toe. 2R vertelt vanzelf over de plekken die je passeert — geen account, niets vooraf in te stellen.'),
         dict(h='🎵 Samen met je muziek', p='Speel gerust je eigen muziek (Spotify, Apple Music, de radio — wat dan ook). Die gaat automatisch <b>zachter</b> zodra een verhaal begint, en zwelt weer aan als het klaar is. Zet je “Muziektips per streek” aan, dan krijg je onderweg een tik naar passende muziek per gebied. 2R streamt zelf geen muziek.'),
-        dict(h='🔵 De blauwe balk onderweg', p='Gebruik je ondertussen Maps of je muziek-app, dan toont iOS bovenin een blauwe balk dat 2R je locatie gebruikt. <b>Dat hoort zo</b> — zo blijft 2R doorvertellen op de achtergrond. Tik erop om terug te keren naar 2R.'),
+        dict(h='➤ Het blauwe pijltje bovenin', p='Gebruik je ondertussen Maps of je muziek-app, dan toont iOS bovenin een <b>blauw pijltje</b> (➤) dat aangeeft dat 2R je locatie gebruikt. <b>Dat hoort zo</b> — zo blijft 2R doorvertellen op de achtergrond. Tik erop om terug te keren naar 2R.'),
         dict(h='🔊 Je stem kiezen', p='Kies bij <b>Instellingen → Stem</b> je vertelstem en de klank: natuurlijk (rustig en zuinig) of expressief (het meest menselijk, met aarzelingen en zuchtjes). Met “Beluister deze stem” hoor je ’m meteen.'),
         dict(h='🧭 Hoe je reist', p='Vertel 2R of je met de auto, fiets, te voet of de trein gaat. Hij past het tempo en de afstand van de verhalen daarop aan.'),
         dict(h='🎯 Reisquiz voor het gezin', p='Zet de reisquiz aan voor één vraag na elk verhaal. De bijrijder tikt het antwoord aan — met een scorebord per rit.'),
@@ -749,7 +749,7 @@ HOWTO = {
     sections=[
         dict(h='🚗 Getting started', p='In the app, tap <b>Start the journey</b> and allow location access. 2R automatically narrates the places you pass — no account, nothing to set up first.'),
         dict(h='🎵 Alongside your music', p='Play your own music (Spotify, Apple Music, the radio — anything). It automatically <b>fades down</b> when a story starts and swells back up when it ends. Turn on “Music tips per region” for a tap toward fitting music along the way. 2R never streams music itself.'),
-        dict(h='🔵 The blue bar while driving', p='If you switch to Maps or your music app, iOS shows a blue bar at the top indicating 2R is using your location. <b>This is expected</b> — it lets 2R keep narrating in the background. Tap it to return to 2R.'),
+        dict(h='➤ The blue arrow at the top', p='If you switch to Maps or your music app, iOS shows a small <b>blue arrow</b> (➤) at the top indicating 2R is using your location. <b>This is expected</b> — it lets 2R keep narrating in the background. Tap it to return to 2R.'),
         dict(h='🔊 Choosing your voice', p='Under <b>Settings → Voice</b>, pick your narrating voice and the tone: natural (calm and economical) or expressive (the most human, with hesitations and sighs). “Preview this voice” lets you hear it right away.'),
         dict(h='🧭 How you travel', p='Tell 2R whether you go by car, bike, on foot or by train. It adapts the pace and distance of the stories accordingly.'),
         dict(h='🎯 Travel quiz for the family', p='Turn on the travel quiz for one question after each story. The passenger taps the answer — with a scoreboard per trip.'),
