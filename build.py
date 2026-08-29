@@ -812,12 +812,13 @@ def build_howto(lang):
     scenes = ''
     for i, (eyebrow, kop, tekst) in enumerate(scenes_data):
         laad = 'fetchpriority="high"' if i == 0 else 'loading="lazy"'
+        kt = 'h1' if i == 0 else 'h2'   # de eerste scène draagt de H1 van de pagina
         scenes += f'''  <section class="howto-scene">
     <img class="howto-photo" src="/images/{HOWTO_IMAGES[i]}" alt="{html.escape(kop)}" {laad} decoding="async">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-content">
       <p class="eyebrow on-photo">{html.escape(eyebrow)}</p>
-      <h2>{html.escape(kop)}</h2>
+      <{kt}>{html.escape(kop)}</{kt}>
       <p class="howto-lede">{html.escape(tekst)}</p>
     </div>
   </section>
@@ -827,12 +828,7 @@ def build_howto(lang):
         <p>{sec['p']}</p>
       </details>
 ''' for sec in h['sections'])
-    body = f'''  <section class="howto-intro"><div class="wrap" style="max-width:720px;">
-    <div class="eyebrow">{NAV_HOWTO[lang]}</div>
-    <h1>{h['title']}</h1>
-    <p class="howto-intro-lede">{h['lede']}</p>
-  </div></section>
-{scenes}  <section class="block"><div class="wrap" style="max-width:720px;">
+    body = f'''{scenes}  <section class="block"><div class="wrap" style="max-width:720px;">
     <div class="section-label">{FAQ_LABEL.get(lang, FAQ_LABEL['en'])}</div>
     <div class="howto-faq-list">
 {faq}    </div>
