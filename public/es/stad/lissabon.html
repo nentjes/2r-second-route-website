@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Las colinas que siempre miran hacia el océano — 2R (Second Route)</title>
+<meta name="description" content="Mientras la calle desciende hacia el Tajo, Route habla de viajes de descubrimiento, terremotos y el anhelo portugués por lo que hay más allá del horizonte.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Las colinas que siempre miran hacia el océano — 2R (Second Route)">
+<meta property="og:description" content="Mientras la calle desciende hacia el Tajo, Route habla de viajes de descubrimiento, terremotos y el anhelo portugués por lo que hay más allá del horizonte.">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/es/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/es/" class="active">Producto</a>
+        <a href="/es/zo-werkt-het.html">Cómo funciona</a>
+        <a href="/es/roadmap.html">Roadmap</a>
+        <a href="/es/stories/">Historias</a>
+        <a href="/es/privacy.html">Privacidad</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/" class="active">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Prueba 2R →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/es/" class="active">Producto</a>
+      <a href="/es/zo-werkt-het.html">Cómo funciona</a>
+      <a href="/es/roadmap.html">Roadmap</a>
+      <a href="/es/stories/">Historias</a>
+      <a href="/es/privacy.html">Privacidad</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/" class="active">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Prueba 2R →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="city-hero" style="background-image:url('/images/city-lisbon.jpg')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">Mar y anhelo &middot; Lisboa, Portugal</p>
+      <h1>Las colinas que siempre miran hacia el océano</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/es/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; Producto</a></p>
+    <div class="city-story-body"><p>Subes por una de esas calles estrechas y, al llegar arriba, la ciudad se derrama de golpe hacia el agua: tejados de un rojo gastado, ropa tendida y el Tajo abriéndose, ancho y plateado, hacia el Atlántico. Lisboa está construida sobre colinas que parecen mirar todas en la misma dirección, hacia el mar. De aquí zarparon, durante siglos, barcos rumbo a tierras que aún no figuraban en ningún mapa, cargados de coraje y del temor callado de que algunos no volverían jamás. Esa nostalgia nunca se fue del todo. Los portugueses tienen una palabra para ello, saudade: el anhelo de lo que se ha perdido, o de lo que nunca llegó a ser tuyo. La oyes en el fado que escapa de una puerta al anochecer. Y la sientes al pensar que un gran terremoto derribó esta ciudad y que, aun así, se reconstruyó de cara al océano, porque una ciudad enamorada del horizonte siempre sigue esperando.</p></div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Llévate a Route <span>&#8599;</span></a></p>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/es/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/es/roadmap.html">Roadmap</a>
+      <a href="/es/stories/">Historias</a>
+      <a href="/es/privacy.html">Privacidad</a>
+      <a href="mailto:nimco@nentjes.nl">Contacto</a>
+    </div>
+  </div>
+  <p class="footer-family">No el destino — el viaje es lo que nos hace sabios.</p>
+  <p class="footer-credit">Creado por Roel Nentjes, junto con Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>

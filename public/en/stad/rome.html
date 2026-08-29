@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A city that never lives in just one era — 2R (Second Route)</title>
+<meta name="description" content="Behind a scooter, temple columns and apartment blocks appear. In Rome, the old empire and everyday life don&#x27;t sit side by side — they run through each other.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="A city that never lives in just one era — 2R (Second Route)">
+<meta property="og:description" content="Behind a scooter, temple columns and apartment blocks appear. In Rome, the old empire and everyday life don&#x27;t sit side by side — they run through each other.">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/en/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/en/" class="active">Product</a>
+        <a href="/en/zo-werkt-het.html">How it works</a>
+        <a href="/en/roadmap.html">Roadmap</a>
+        <a href="/en/stories/">Stories</a>
+        <a href="/en/privacy.html">Privacy</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/" class="active">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Try 2R →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/en/" class="active">Product</a>
+      <a href="/en/zo-werkt-het.html">How it works</a>
+      <a href="/en/roadmap.html">Roadmap</a>
+      <a href="/en/stories/">Stories</a>
+      <a href="/en/privacy.html">Privacy</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/" class="active">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Try 2R →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="city-hero" style="background-image:url('/images/city-rome.jpg')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">History &amp; life &middot; Rome, Italy</p>
+      <h1>A city that never lives in just one era</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/en/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; Product</a></p>
+    <div class="city-story-body"><p>You turn a corner and there it is — a line of columns two thousand years old, and a scooter buzzing past so close you feel the wind of it, and coffee steam drifting from a doorway. This is how Rome works. The old empire isn&#x27;t tucked behind a fence, kept apart from the day; it lives right in the middle of everything. A temple wall holds up somebody&#x27;s front room. Laundry sways above a cracked foundation. Children chase a ball across marble that emperors once crossed. In other cities, history sits behind glass; here it simply keeps living, between the washing and the shopping. You notice you&#x27;re never in only one moment at a time. Today&#x27;s clock ticks over a clock of centuries, and nobody finds it strange. Perhaps that&#x27;s the secret of this place: it never decided which age it belongs to, and it never had to.</p></div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Take Route with you <span>&#8599;</span></a></p>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/en/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/en/roadmap.html">Roadmap</a>
+      <a href="/en/stories/">Stories</a>
+      <a href="/en/privacy.html">Privacy</a>
+      <a href="mailto:nimco@nentjes.nl">Contact</a>
+    </div>
+  </div>
+  <p class="footer-family">Not the destination — the journey makes us wise.</p>
+  <p class="footer-credit">Built by Roel Nentjes, together with Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>

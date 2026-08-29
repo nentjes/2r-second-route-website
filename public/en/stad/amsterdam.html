@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The city that made its streets from water — 2R (Second Route)</title>
+<meta name="description" content="Along the canals, Route tells how merchants, craftspeople and newcomers built a world city together — on piles and on trust.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="The city that made its streets from water — 2R (Second Route)">
+<meta property="og:description" content="Along the canals, Route tells how merchants, craftspeople and newcomers built a world city together — on piles and on trust.">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/en/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/en/" class="active">Product</a>
+        <a href="/en/zo-werkt-het.html">How it works</a>
+        <a href="/en/roadmap.html">Roadmap</a>
+        <a href="/en/stories/">Stories</a>
+        <a href="/en/privacy.html">Privacy</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/" class="active">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Try 2R →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/en/" class="active">Product</a>
+      <a href="/en/zo-werkt-het.html">How it works</a>
+      <a href="/en/roadmap.html">Roadmap</a>
+      <a href="/en/stories/">Stories</a>
+      <a href="/en/privacy.html">Privacy</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/" class="active">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Try 2R →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="city-hero" style="background-image:url('/images/city-amsterdam.jpg')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">Water &amp; trade &middot; Amsterdam, Netherlands</p>
+      <h1>The city that made its streets from water</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/en/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; Product</a></p>
+    <div class="city-story-body"><p>You&#x27;re leaning on the rail of a low bridge, and the street beneath you is made of water. A bicycle bell, the soft knock of a boat against its mooring, and rows of narrow houses lean gently toward the canal as if to hear what passes. Look up: those tall, thin facades wear stepped gables and little hooks beneath the roof, and every one of them stands on a forest of wooden piles driven deep into soft, wet ground. To build here, you first had to strike a bargain with the mud. That is really how this city rose — not on stone, but on agreement and trust. Merchants, craftsmen and newcomers from every shore set their money, their skills and their beliefs side by side and turned the mixture into trade. They dug these canals as streets, not to shut the world out but to let it in. Tolerance, you realise, was simply good business.</p></div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Take Route with you <span>&#8599;</span></a></p>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/en/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/en/roadmap.html">Roadmap</a>
+      <a href="/en/stories/">Stories</a>
+      <a href="/en/privacy.html">Privacy</a>
+      <a href="mailto:nimco@nentjes.nl">Contact</a>
+    </div>
+  </div>
+  <p class="footer-family">Not the destination — the journey makes us wise.</p>
+  <p class="footer-credit">Built by Roel Nentjes, together with Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>

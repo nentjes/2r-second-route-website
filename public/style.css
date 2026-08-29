@@ -477,3 +477,19 @@ section.block + section.block { padding-top: 44px; }
   .hero-lede { margin-top: 16px; font-size: 15.5px; }
   .hero-actions { margin-top: 22px; }
 }
+
+/* Stad-verhaalpagina: filmische hero met de stadsfoto, in homepage-taal */
+.city-hero {
+  position: relative;
+  min-height: 58vh;
+  display: flex; align-items: flex-end;
+  overflow: hidden;
+  color: var(--paper-light);
+  background-size: cover; background-position: center;
+  margin-top: -1px;
+}
+.city-hero .hero-shade { position: absolute; inset: 0; }
+.city-hero .hero-content { position: relative; z-index: 2; width: min(920px, 94vw); padding: 130px 24px 8vh; }
+@media (min-width: 700px) { .city-hero .hero-content { padding-left: clamp(24px, 7vw, 96px); } }
+.city-hero h1 { font-size: clamp(30px, 5vw, 60px); color: #fff; margin: 10px 0 0; }
+.city-story-body p { font-size: 18px; line-height: 1.75; color: var(--text); margin: 0 0 20px; }

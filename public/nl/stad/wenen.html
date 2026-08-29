@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waar iedere gevel het ritme van een rijk bewaart — 2R (Second Route)</title>
+<meta name="description" content="Een tram schuift langs de Ringstraße. Route laat horen hoe hofcultuur, koffiehuizen en muziek nog altijd in het dagelijkse Wenen meeklinken.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Waar iedere gevel het ritme van een rijk bewaart — 2R (Second Route)">
+<meta property="og:description" content="Een tram schuift langs de Ringstraße. Route laat horen hoe hofcultuur, koffiehuizen en muziek nog altijd in het dagelijkse Wenen meeklinken.">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/nl/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/nl/" class="active">Product</a>
+        <a href="/nl/zo-werkt-het.html">Zo werkt het</a>
+        <a href="/nl/roadmap.html">Roadmap</a>
+        <a href="/nl/stories/">Verhalen</a>
+        <a href="/nl/privacy.html">Privacy</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/" class="active">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Probeer 2R →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/nl/" class="active">Product</a>
+      <a href="/nl/zo-werkt-het.html">Zo werkt het</a>
+      <a href="/nl/roadmap.html">Roadmap</a>
+      <a href="/nl/stories/">Verhalen</a>
+      <a href="/nl/privacy.html">Privacy</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/" class="active">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Probeer 2R →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="city-hero" style="background-image:url('/images/city-vienna.jpg')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">Muziek &amp; architectuur &middot; Wenen, Oostenrijk</p>
+      <h1>Waar iedere gevel het ritme van een rijk bewaart</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/nl/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; Product</a></p>
+    <div class="city-story-body"><p>Je loopt de Ringstraße op en de gebouwen staan opgesteld als een orkest dat wacht op het teken van de dirigent. Aan de ene kant een parlement met zuilen, aan de andere een opera die &#x27;s avonds oplicht als een lantaarn tegen het donker. Wenen droeg eeuwenlang een keizerrijk op de schouders, en dat lees je nog in de steen: elke gevel is gebouwd om indruk te maken, om macht in architectuur te vertalen. Maar luister ook. In deze stad hoorde muziek niet in een concertzaal thuis — ze klonk overal. Componisten liepen langs deze straten, speelden voor hoven en cafés, en die klanken zijn nooit helemaal weggeëbd. Ga een koffiehuis binnen, waar de tijd trager loopt, en je proeft dezelfde gewoonte: zitten, kijken, luisteren, blijven. Wenen vraagt je niet om te haasten. De stad wil dat je de maat voelt die onder alles doorloopt — het ritme van een rijk dat nog altijd zacht natrilt.</p></div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Neem Route mee <span>&#8599;</span></a></p>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/nl/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/nl/roadmap.html">Roadmap</a>
+      <a href="/nl/stories/">Verhalen</a>
+      <a href="/nl/privacy.html">Privacy</a>
+      <a href="mailto:nimco@nentjes.nl">Contact</a>
+    </div>
+  </div>
+  <p class="footer-family">Niet de bestemming, maar de reis maakt ons wijs.</p>
+  <p class="footer-credit">Gebouwd door Roel Nentjes, samen met Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wo jede Fassade den Rhythmus eines Reiches bewahrt — 2R (Second Route)</title>
+<meta name="description" content="Eine Straßenbahn gleitet die Ringstraße entlang. Route lässt hören, wie Hofkultur, Kaffeehäuser und Musik noch immer im Wiener Alltag mitschwingen.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Wo jede Fassade den Rhythmus eines Reiches bewahrt — 2R (Second Route)">
+<meta property="og:description" content="Eine Straßenbahn gleitet die Ringstraße entlang. Route lässt hören, wie Hofkultur, Kaffeehäuser und Musik noch immer im Wiener Alltag mitschwingen.">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/de/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/de/" class="active">Produkt</a>
+        <a href="/de/zo-werkt-het.html">So geht's</a>
+        <a href="/de/roadmap.html">Roadmap</a>
+        <a href="/de/stories/">Geschichten</a>
+        <a href="/de/privacy.html">Datenschutz</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/" class="active">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">2R testen →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/de/" class="active">Produkt</a>
+      <a href="/de/zo-werkt-het.html">So geht's</a>
+      <a href="/de/roadmap.html">Roadmap</a>
+      <a href="/de/stories/">Geschichten</a>
+      <a href="/de/privacy.html">Datenschutz</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/" class="active">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">2R testen →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="city-hero" style="background-image:url('/images/city-vienna.jpg')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">Musik &amp; Architektur &middot; Wien, Österreich</p>
+      <h1>Wo jede Fassade den Rhythmus eines Reiches bewahrt</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/de/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; Produkt</a></p>
+    <div class="city-story-body"><p>Du trittst auf die Ringstraße hinaus, und die Gebäude reihen sich auf wie ein Orchester, das auf den Einsatz wartet. Auf der einen Seite ein Parlament voller Säulen, auf der anderen ein Opernhaus, das am Abend leuchtet wie eine Laterne gegen die Dunkelheit. Jahrhundertelang trug Wien ein Kaiserreich auf den Schultern, und das liest du noch immer im Stein: Jede Fassade wurde gebaut, um zu beeindrucken, um Macht in Architektur zu verwandeln. Aber hör auch hin. In dieser Stadt gehörte die Musik nicht allein in den Konzertsaal — sie klang überall. Komponisten gingen durch diese Gassen, spielten für Höfe und Kaffeehäuser, und diese Klänge sind nie ganz verklungen. Tritt in ein Kaffeehaus, wo die Zeit langsamer geht, und du spürst dieselbe Gewohnheit: sitzen, schauen, zuhören, bleiben. Wien verlangt keine Eile. Es möchte, dass du den Takt spürst, der unter allem mitläuft — den Rhythmus eines Reiches, das noch immer leise nachklingt.</p></div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Nimm Route mit <span>&#8599;</span></a></p>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/de/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/de/roadmap.html">Roadmap</a>
+      <a href="/de/stories/">Geschichten</a>
+      <a href="/de/privacy.html">Datenschutz</a>
+      <a href="mailto:nimco@nentjes.nl">Kontakt</a>
+    </div>
+  </div>
+  <p class="footer-family">Nicht das Ziel — die Reise macht uns weise.</p>
+  <p class="footer-credit">Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una ciudad que nunca vive en una sola época — 2R (Second Route)</title>
+<meta name="description" content="Detrás de una vespa aparecen columnas de templos y bloques de viviendas. En Roma, el imperio antiguo y la vida cotidiana no están uno junto al otro, sino entrelazados.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Una ciudad que nunca vive en una sola época — 2R (Second Route)">
+<meta property="og:description" content="Detrás de una vespa aparecen columnas de templos y bloques de viviendas. En Roma, el imperio antiguo y la vida cotidiana no están uno junto al otro, sino entrelazados.">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/es/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/es/" class="active">Producto</a>
+        <a href="/es/zo-werkt-het.html">Cómo funciona</a>
+        <a href="/es/roadmap.html">Roadmap</a>
+        <a href="/es/stories/">Historias</a>
+        <a href="/es/privacy.html">Privacidad</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/" class="active">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Prueba 2R →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/es/" class="active">Producto</a>
+      <a href="/es/zo-werkt-het.html">Cómo funciona</a>
+      <a href="/es/roadmap.html">Roadmap</a>
+      <a href="/es/stories/">Historias</a>
+      <a href="/es/privacy.html">Privacidad</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/" class="active">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Prueba 2R →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="city-hero" style="background-image:url('/images/city-rome.jpg')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">Historia y vida &middot; Roma, Italia</p>
+      <h1>Una ciudad que nunca vive en una sola época</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/es/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; Producto</a></p>
+    <div class="city-story-body"><p>Doblas una esquina y ahí están — una hilera de columnas de dos mil años, mientras una moto pasa tan cerca que sientes el aire de su carrera, y de un portal escapa el olor a café recién hecho. Así funciona Roma. El viejo imperio no está guardado detrás de una verja, apartado del día de hoy; está justo en medio de todo. Un muro de templo sostiene la fachada de una casa habitada. Sobre unos cimientos agrietados cuelga la ropa tendida. Los niños corren sobre un mármol que pisaron los emperadores. En otras ciudades la historia duerme tras un cristal; aquí sigue viviendo sin más, entre la colada y la compra. Te das cuenta de que nunca estás en un solo momento a la vez. El reloj de hoy late sobre un reloj de siglos, y a nadie le parece extraño. Quizá ese sea su secreto: nunca decidió en qué época vivir, y nunca lo necesitó.</p></div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Llévate a Route <span>&#8599;</span></a></p>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/es/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/es/roadmap.html">Roadmap</a>
+      <a href="/es/stories/">Historias</a>
+      <a href="/es/privacy.html">Privacidad</a>
+      <a href="mailto:nimco@nentjes.nl">Contacto</a>
+    </div>
+  </div>
+  <p class="footer-family">No el destino — el viaje es lo que nos hace sabios.</p>
+  <p class="footer-credit">Creado por Roel Nentjes, junto con Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>

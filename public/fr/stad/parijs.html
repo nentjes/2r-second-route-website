@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le boulevard qui a réappris à une vieille ville à respirer — 2R (Second Route)</title>
+<meta name="description" content="Au-delà du trottoir mouillé, on entend pourquoi Paris fut éventrée — et comment de larges avenues ont changé la vie, le pouvoir et la rencontre.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Le boulevard qui a réappris à une vieille ville à respirer — 2R (Second Route)">
+<meta property="og:description" content="Au-delà du trottoir mouillé, on entend pourquoi Paris fut éventrée — et comment de larges avenues ont changé la vie, le pouvoir et la rencontre.">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/fr/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/fr/" class="active">Produit</a>
+        <a href="/fr/zo-werkt-het.html">Utilisation</a>
+        <a href="/fr/roadmap.html">Roadmap</a>
+        <a href="/fr/stories/">Histoires</a>
+        <a href="/fr/privacy.html">Confidentialité</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/" class="active">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Essayer 2R →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/fr/" class="active">Produit</a>
+      <a href="/fr/zo-werkt-het.html">Utilisation</a>
+      <a href="/fr/roadmap.html">Roadmap</a>
+      <a href="/fr/stories/">Histoires</a>
+      <a href="/fr/privacy.html">Confidentialité</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/" class="active">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Essayer 2R →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="city-hero" style="background-image:url('/images/city-paris.jpg')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">Ville &amp; révolution &middot; Paris, France</p>
+      <h1>Le boulevard qui a réappris à une vieille ville à respirer</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/fr/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; Produit</a></p>
+    <div class="city-story-body"><p>Le trottoir sous tes pas est assez large pour une foule entière, et la lumière descend tout droit le long de l&#x27;avenue, comme si la ville avait décidé de laisser revenir le ciel. Devant toi, le boulevard file, parfaitement droit, bordé d&#x27;arbres et de façades taillées dans la même pierre claire, toutes à la même hauteur tranquille. Difficile d&#x27;imaginer qu&#x27;ici s&#x27;entassait autrefois un lacis de ruelles médiévales, sombres et tortueuses, où le soleil touchait rarement le pavé. Au dix-neuvième siècle, tout cela fut ouvert. Des quartiers entiers tombèrent pour laisser passer l&#x27;air, la lumière, le mouvement. Pour les uns, c&#x27;était le progrès ; pour les autres, une blessure. Mais ce qui resta, ce fut une ville qui réapprenait à respirer. En avançant, le long d&#x27;une terrasse où tintent les verres et où quelqu&#x27;un rit, tu comprends qu&#x27;une rue n&#x27;est jamais seulement une rue. C&#x27;est une façon de décider comment les gens se rencontrent.</p></div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Emportez Route avec vous <span>&#8599;</span></a></p>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/fr/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/fr/roadmap.html">Roadmap</a>
+      <a href="/fr/stories/">Histoires</a>
+      <a href="/fr/privacy.html">Confidentialité</a>
+      <a href="mailto:nimco@nentjes.nl">Contact</a>
+    </div>
+  </div>
+  <p class="footer-family">Pas la destination — c'est le voyage qui nous rend sages.</p>
+  <p class="footer-credit">Conçu par Roel Nentjes, avec Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>

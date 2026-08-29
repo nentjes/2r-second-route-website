@@ -42,7 +42,7 @@ SITE = {
     hero_caption_coord='52.1045° N', hero_caption_note='Een avond onderweg · Utrecht',
     listen_label='01 · Een stem naast je', listen_h2='De wereld buiten wordt<br>een verhaal binnen.',
     listen_p='Geen lijst met weetjes. Route kiest één betekenisvol verhaal, vertelt het rustig en laat daarna weer ruimte voor het landschap — en voor elkaar.',
-    listen_now='Route vertelt', listen_title='De verborgen geschiedenis<br>van het landschap', listen_sub='Gidsmodus · echt fragment',
+    listen_now='Route vertelt', listen_title='De verborgen geschiedenis<br>van het landschap', listen_sub='Gidsmodus · fragment binnenkort',
     journey_label='02 · Europa rijdt met je mee', journey_route_label='Europa · Route 02', journey_route_meta='vier windstreken · één reis',
     invite_label='Voor de volgende keer dat je instapt', invite_h2='Wat zal Route op jouw<br>volgende reis vertellen?',
     invite_p='Neem een warme stem, een levend reisboek en een beetje verwondering met je mee.', invite_btn='Neem Route mee',
@@ -87,7 +87,7 @@ SITE = {
     hero_caption_coord='52.1045° N', hero_caption_note='An evening on the road · Utrecht',
     listen_label='01 · A voice beside you', listen_h2='The world outside becomes<br>a story within.',
     listen_p='No list of facts. Route picks one meaningful story, tells it calmly, then makes room again for the landscape — and for each other.',
-    listen_now='Route is telling', listen_title='The hidden history<br>of the landscape', listen_sub='Guide mode · real fragment',
+    listen_now='Route is telling', listen_title='The hidden history<br>of the landscape', listen_sub='Guide mode · sample coming soon',
     journey_label='02 · Europe rides along with you', journey_route_label='Europe · Route 02', journey_route_meta='four compass points · one journey',
     invite_label='For the next time you get in', invite_h2='What will Route tell you<br>on your next trip?',
     invite_p='Bring a warm voice, a living travel journal, and a little wonder.', invite_btn='Take Route with you',
@@ -132,7 +132,7 @@ SITE = {
     hero_caption_coord='52,1045° N', hero_caption_note='Ein Abend unterwegs · Utrecht',
     listen_label='01 · Eine Stimme neben dir', listen_h2='Die Welt draußen wird<br>zur Geschichte drinnen.',
     listen_p='Keine Liste von Fakten. Route wählt eine bedeutsame Geschichte, erzählt sie ruhig und lässt danach wieder Raum für die Landschaft — und füreinander.',
-    listen_now='Route erzählt', listen_title='Die verborgene Geschichte<br>der Landschaft', listen_sub='Guide-Modus · echter Ausschnitt',
+    listen_now='Route erzählt', listen_title='Die verborgene Geschichte<br>der Landschaft', listen_sub='Guide-Modus · Hörprobe folgt',
     journey_label='02 · Europa fährt mit dir mit', journey_route_label='Europa · Route 02', journey_route_meta='vier Himmelsrichtungen · eine Reise',
     invite_label='Für das nächste Mal, wenn du einsteigst', invite_h2='Was wird Route dir auf<br>deiner nächsten Reise erzählen?',
     invite_p='Nimm eine warme Stimme, ein lebendiges Reisetagebuch und ein bisschen Staunen mit.', invite_btn='Nimm Route mit',
@@ -177,7 +177,7 @@ SITE = {
     hero_caption_coord='52,1045° N', hero_caption_note='Une soirée sur la route · Utrecht',
     listen_label='01 · Une voix à vos côtés', listen_h2='Le monde extérieur devient<br>une histoire intérieure.',
     listen_p='Pas une liste de faits. Route choisit une histoire qui a du sens, la raconte calmement, puis laisse de nouveau place au paysage — et à vous.',
-    listen_now='Route raconte', listen_title="L'histoire cachée<br>du paysage", listen_sub='Mode guide · extrait réel',
+    listen_now='Route raconte', listen_title="L'histoire cachée<br>du paysage", listen_sub='Mode guide · extrait à venir',
     journey_label="02 · L'Europe vous accompagne", journey_route_label='Europe · Itinéraire 02', journey_route_meta='quatre points cardinaux · un seul voyage',
     invite_label='Pour la prochaine fois que vous montez en voiture', invite_h2='Que vous racontera Route<br>lors de votre prochain trajet ?',
     invite_p="Emportez une voix chaleureuse, un carnet de voyage vivant et un peu d'émerveillement.", invite_btn='Emportez Route avec vous',
@@ -222,7 +222,7 @@ SITE = {
     hero_caption_coord='52,1045° N', hero_caption_note='Una tarde en la carretera · Utrecht',
     listen_label='01 · Una voz a tu lado', listen_h2='El mundo de fuera se convierte<br>en una historia dentro.',
     listen_p='Sin listas de datos. Route elige una historia con sentido, la cuenta con calma y luego vuelve a dejar espacio para el paisaje —y para vosotros.',
-    listen_now='Route está contando', listen_title='La historia oculta<br>del paisaje', listen_sub='Modo guía · fragmento real',
+    listen_now='Route está contando', listen_title='La historia oculta<br>del paisaje', listen_sub='Modo guía · fragmento en breve',
     journey_label='02 · Europa viaja contigo', journey_route_label='Europa · Ruta 02', journey_route_meta='cuatro puntos cardinales · un solo viaje',
     invite_label='Para la próxima vez que subas al coche', invite_h2='¿Qué te contará Route<br>en tu próximo viaje?',
     invite_p='Llévate una voz cálida, un diario de viaje vivo y un poco de asombro.', invite_btn='Llévate a Route',
@@ -267,7 +267,7 @@ SITE = {
     hero_caption_coord='52,1045° N', hero_caption_note='Uma noite na estrada · Utrecht',
     listen_label='01 · Uma voz ao seu lado', listen_h2='O mundo de fora se torna<br>uma história por dentro.',
     listen_p='Nenhuma lista de fatos. A Route escolhe uma história com significado, narra com calma e depois abre espaço de novo para a paisagem — e para vocês.',
-    listen_now='A Route está narrando', listen_title='A história escondida<br>da paisagem', listen_sub='Modo guia · trecho real',
+    listen_now='A Route está narrando', listen_title='A história escondida<br>da paisagem', listen_sub='Modo guia · trecho em breve',
     journey_label='02 · A Europa viaja com você', journey_route_label='Europa · Rota 02', journey_route_meta='quatro pontos cardeais · uma só viagem',
     invite_label='Para a próxima vez que você entrar no carro', invite_h2='O que a Route vai contar<br>na sua próxima viagem?',
     invite_p='Leve uma voz calorosa, um diário de viagem vivo e um pouco de encantamento.', invite_btn='Leve a Route com você',
@@ -906,10 +906,44 @@ def story_card(lang, st):
 # moodboard-beelden), i.p.v. de eenvoudige kaart van het volledige archief.
 # Redactionele stads-kaart voor de homepage-showcase ("vijf steden, vijf
 # stemmen") — schone cover-foto per stad, geen uitsnede-trucje nodig.
+CITY_SLUGS = ['amsterdam', 'parijs', 'wenen', 'rome', 'lissabon']
+try:
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'city_texts.json'), encoding='utf-8') as _ctf:
+        CITY_STORY_TEXT = json.load(_ctf)   # slug -> {taal: volledig verhaal}
+except Exception:
+    CITY_STORY_TEXT = {}
+
+
+# Volledige stads-verhaalpagina in de filmische homepage-taal: de stadsfoto als
+# hero, daaronder het verhaal in een rustige leeskolom. Zo leidt "Route vertelt"
+# onder een stad naar HET verhaal van díe stad (wens Roel 29 aug), niet naar de
+# app op je huidige plek.
+def build_city_story(lang, index):
+    s = SITE[lang]
+    cat, place, title, teaser = CITY_STORIES[lang][index]
+    slug = CITY_SLUGS[index]
+    verhaal = (CITY_STORY_TEXT.get(slug) or {}).get(lang) or teaser
+    alineas = ''.join(f'<p>{html.escape(p.strip())}</p>' for p in verhaal.split('\n') if p.strip()) or f'<p>{html.escape(verhaal)}</p>'
+    body = f'''  <section class="city-hero" style="background-image:url('/images/{CITY_IMAGES[index]}')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">{html.escape(cat)} &middot; {html.escape(place)}</p>
+      <h1>{html.escape(title)}</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/{lang}/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; {html.escape(s['nav_product'])}</a></p>
+    <div class="city-story-body">{alineas}</div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span>&#8599;</span></a></p>
+  </div></section>
+'''
+    return page_shell(lang, f"{html.escape(title)} — 2R (Second Route)", teaser, 'product', body)
+
+
 def city_story_card(lang, index):
     cat, place, title, copy = CITY_STORIES[lang][index]
     card_cls = f'story story-{index + 1}'
-    return f'''<a class="{card_cls}" href="https://mapsinfo.roelnentjes.workers.dev">
+    return f'''<a class="{card_cls}" href="/{lang}/stad/{CITY_SLUGS[index]}.html">
   <div class="story-photo" style="background-image:url('/images/{CITY_IMAGES[index]}')"></div>
   <div class="story-body">
     <div class="story-topline"><span>{html.escape(cat)}</span><span>{html.escape(place)}</span></div>
@@ -1052,7 +1086,7 @@ def build_home(lang):
       <p class="eyebrow on-photo">{s['invite_label']}</p>
       <h2>{s['invite_h2']}</h2>
       <p>{s['invite_p']}</p>
-      <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">{s['invite_btn']} <span>↗</span></a>
+      <a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span>↗</span></a>
     </div>
   </section>
 '''
@@ -1332,5 +1366,7 @@ for lang in LANGS:
     write(f'{lang}/stories/index.html', build_stories_index(lang))
     for st in STORIES:
         write(f'{lang}/stories/{st["slug"]}.html', build_story_detail(lang, st))
+    for i in range(len(CITY_SLUGS)):
+        write(f'{lang}/stad/{CITY_SLUGS[i]}.html', build_city_story(lang, i))
 
-print(f"Klaar: {len(LANGS)} talen x ({3 + len(STORIES)} pagina's) = {len(LANGS) * (4 + len(STORIES))} bestanden")
+print(f"Klaar: {len(LANGS)} talen x ({5 + len(STORIES) + len(CITY_SLUGS)} pagina's) = {len(LANGS) * (5 + len(STORIES) + len(CITY_SLUGS))} bestanden")

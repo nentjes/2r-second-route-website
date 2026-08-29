@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Der Boulevard, der eine alte Stadt neu atmen lehrte — 2R (Second Route)</title>
+<meta name="description" content="Jenseits des nassen Bürgersteigs hörst du, warum Paris aufgebrochen wurde — und wie breite Alleen das Leben, die Macht und die Begegnung veränderten.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Der Boulevard, der eine alte Stadt neu atmen lehrte — 2R (Second Route)">
+<meta property="og:description" content="Jenseits des nassen Bürgersteigs hörst du, warum Paris aufgebrochen wurde — und wie breite Alleen das Leben, die Macht und die Begegnung veränderten.">
+<meta property="og:image" content="/og.jpg">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/de/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/de/" class="active">Produkt</a>
+        <a href="/de/zo-werkt-het.html">So geht's</a>
+        <a href="/de/roadmap.html">Roadmap</a>
+        <a href="/de/stories/">Geschichten</a>
+        <a href="/de/privacy.html">Datenschutz</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/" class="active">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">2R testen →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/de/" class="active">Produkt</a>
+      <a href="/de/zo-werkt-het.html">So geht's</a>
+      <a href="/de/roadmap.html">Roadmap</a>
+      <a href="/de/stories/">Geschichten</a>
+      <a href="/de/privacy.html">Datenschutz</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/" class="active">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">2R testen →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="city-hero" style="background-image:url('/images/city-paris.jpg')">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow on-photo">Stadt &amp; Revolution &middot; Paris, Frankreich</p>
+      <h1>Der Boulevard, der eine alte Stadt neu atmen lehrte</h1>
+    </div>
+  </section>
+  <section class="block"><div class="wrap" style="max-width:660px;">
+    <p><a href="/de/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; Produkt</a></p>
+    <div class="city-story-body"><p>Der Bürgersteig unter dir ist breit genug für eine ganze Menschenmenge, und das Licht fällt gerade die Straße hinunter, als hätte die Stadt beschlossen, den Himmel wieder hereinzulassen. Vor dir zieht sich ein Boulevard schnurgerade dahin, gesäumt von Bäumen und von Fassaden aus demselben hellen Stein, alle in derselben ruhigen Höhe. Kaum vorstellbar, dass hier einmal ein Gewirr enger, mittelalterlicher Gassen lag, dunkel und krumm, wo die Sonne den Boden selten berührte. Im neunzehnten Jahrhundert wurde all das aufgerissen. Ganze Viertel fielen, damit Luft und Licht und Bewegung hindurchziehen konnten. Für die einen war es Fortschritt, für die anderen ein Verlust. Doch was blieb, war eine Stadt, die wieder zu atmen lernte. Während du weitergehst, an einem Café vorbei, wo Gläser klingen und jemand lacht, verstehst du: Eine Straße ist nie nur eine Straße. Sie ist eine Entscheidung darüber, wie Menschen einander begegnen sollen.</p></div>
+    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Nimm Route mit <span>&#8599;</span></a></p>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/de/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/de/roadmap.html">Roadmap</a>
+      <a href="/de/stories/">Geschichten</a>
+      <a href="/de/privacy.html">Datenschutz</a>
+      <a href="mailto:nimco@nentjes.nl">Kontakt</a>
+    </div>
+  </div>
+  <p class="footer-family">Nicht das Ziel — die Reise macht uns weise.</p>
+  <p class="footer-credit">Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+</body>
+</html>
