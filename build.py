@@ -656,6 +656,90 @@ ROADMAP_ITEMS = [
 ]
 
 # ---------------------------------------------------------------------------
+# ROADMAP als filmische reis in vier hoofdstukken (herbouw 29 aug, Codex-briefing).
+# De items hierboven blijven de bron van waarheid; hieronder alleen de nieuwe
+# redactionele omlijsting (hero, hoofdstuktitels, slot). Statuslabels komen uit
+# SITE[lang] (rm_live/rm_testflight/rm_soon/rm_later) en worden per hoofdstuk
+# één keer getoond.
+# ---------------------------------------------------------------------------
+RM_HERO = dict(
+    eyebrow=dict(nl='Roadmap · Waar de weg begon', en='Roadmap · Where the road began',
+                 de='Roadmap · Wo der Weg begann', fr='Feuille de route · Où la route a commencé',
+                 es='Hoja de ruta · Donde empezó el camino', pt='Roteiro · Onde a estrada começou'),
+    h1=dict(nl='We zijn pas net vertrokken.', en="We've only just set off.",
+            de='Wir sind gerade erst aufgebrochen.', fr='Nous venons à peine de partir.',
+            es='Acabamos de ponernos en marcha.', pt='Mal partimos.'),
+    lede=dict(
+        nl='2R begon als een idee tijdens een autorit. Onderweg viel er zoveel te zien, maar niemand om het uit te leggen. Dit is wat er sindsdien is gebouwd — en wat er achter de volgende bocht op ons wacht.',
+        en="2R started as an idea during a road trip. There was so much to see along the way, and no one to explain it. Here's what's been built since — and what's waiting around the next bend.",
+        de='2R begann als Idee während einer Autofahrt. Unterwegs gab es so viel zu sehen, aber niemanden, der es erklärte. Das wurde seitdem gebaut — und das wartet hinter der nächsten Kurve auf uns.',
+        fr="2R est né d'une idée pendant un road trip. Il y avait tant à voir en chemin, et personne pour l'expliquer. Voici ce qui a été construit depuis — et ce qui nous attend au prochain tournant.",
+        es='2R nació como una idea durante un viaje en coche. Había tanto que ver en el camino, y nadie para explicarlo. Esto es lo que se ha construido desde entonces — y lo que nos espera a la vuelta de la próxima curva.',
+        pt='O 2R começou como uma ideia durante uma viagem de carro. Havia tanto para ver pelo caminho, e ninguém para explicar. Isto é o que foi construído desde então — e o que nos espera depois da próxima curva.'),
+)
+
+RM_CHAPTERS = [
+    dict(num='01', status='live',
+         title=dict(nl='Al onderweg', en='Already on the road', de='Schon unterwegs',
+                    fr='Déjà en route', es='Ya en camino', pt='Já a caminho'),
+         sub=dict(nl='Dit reist vandaag al met je mee.', en='This is already traveling with you today.',
+                  de='Das reist heute schon mit dir mit.', fr="Ceci voyage déjà avec vous aujourd'hui.",
+                  es='Esto ya viaja hoy contigo.', pt='Isto já viaja com você hoje.')),
+    dict(num='02', status='testflight',
+         title=dict(nl='Nu de weg op', en='Onto the road now', de='Jetzt auf die Straße',
+                    fr='Sur la route maintenant', es='Ahora a la carretera', pt='Agora na estrada'),
+         sub=dict(nl='Dit wordt nu buiten de werkplaats getest.', en='This is being tested outside the workshop now.',
+                  de='Das wird jetzt außerhalb der Werkstatt getestet.', fr="Ceci est maintenant testé hors de l'atelier.",
+                  es='Esto se está probando ahora fuera del taller.', pt='Isto já está sendo testado fora da oficina.')),
+    dict(num='03', status='soon',
+         title=dict(nl='Achter de volgende bocht', en='Around the next bend', de='Hinter der nächsten Kurve',
+                    fr='Au prochain tournant', es='A la vuelta de la próxima curva', pt='Depois da próxima curva'),
+         sub=dict(nl='Dit ligt achter de eerstvolgende bocht.', en='This lies just around the next bend.',
+                  de='Das liegt gleich hinter der nächsten Kurve.', fr='Ceci se trouve juste au prochain tournant.',
+                  es='Esto está justo a la vuelta de la próxima curva.', pt='Isto está logo depois da próxima curva.')),
+    dict(num='04', status='later',
+         title=dict(nl='Aan de horizon', en='On the horizon', de='Am Horizont',
+                    fr="À l'horizon", es='En el horizonte', pt='No horizonte'),
+         sub=dict(nl='Dit zien we verderop aan de horizon.', en='This is further off, on the horizon.',
+                  de='Das sehen wir weiter draußen am Horizont.', fr="Ceci se profile plus loin, à l'horizon.",
+                  es='Esto se ve más adelante, en el horizonte.', pt='Isto está mais adiante, no horizonte.')),
+]
+
+RM_CLOSE = dict(
+    eyebrow=dict(nl='Aan de horizon', en='On the horizon', de='Am Horizont',
+                 fr="À l'horizon", es='En el horizonte', pt='No horizonte'),
+    h=dict(nl='Rijd mee aan het vervolg.', en="Ride along for what's next.",
+           de='Fahr mit ins nächste Kapitel.', fr='Faites route avec nous pour la suite.',
+           es='Acompáñanos en lo que viene.', pt='Venha junto para o que vem a seguir.'),
+    p=dict(
+        nl='Als tester, lokale verteller of partner — of gewoon omdat je net zo benieuwd bent naar wat er achter de volgende bocht ligt als wij.',
+        en="As a tester, a local storyteller or a partner — or simply because you're as curious about what's around the next bend as we are.",
+        de='Als Tester, lokaler Erzähler oder Partner — oder einfach, weil du genauso neugierig bist wie wir, was hinter der nächsten Kurve liegt.',
+        fr="Comme testeur, conteur local ou partenaire — ou simplement parce que vous êtes aussi curieux que nous de ce qu'il y a au prochain tournant.",
+        es='Como probador, narrador local o socio — o simplemente porque tienes tanta curiosidad como nosotros por lo que hay a la vuelta de la próxima curva.',
+        pt='Como testador, narrador local ou parceiro — ou simplesmente porque você está tão curioso quanto nós para saber o que há depois da próxima curva.'),
+    btn=dict(nl='Neem contact op', en='Get in touch', de='Kontakt aufnehmen',
+             fr='Prenez contact', es='Ponte en contacto', pt='Entre em contato'),
+)
+
+RM_ALT = dict(
+    open=dict(
+        nl='Open reisjournaal op schoot tijdens een autorit naar een Europees dorp.',
+        en='Open travel journal on a lap during a car ride toward a European village.',
+        de='Aufgeschlagenes Reisetagebuch auf dem Schoß während einer Autofahrt zu einem europäischen Dorf.',
+        fr="Carnet de voyage ouvert sur les genoux pendant un trajet en voiture vers un village européen.",
+        es='Diario de viaje abierto sobre el regazo durante un trayecto en coche hacia un pueblo europeo.',
+        pt='Diário de viagem aberto no colo durante um trajeto de carro rumo a uma vila europeia.'),
+    close=dict(
+        nl='Twee reizigers kijken vanuit de auto uit over een weg naar de horizon.',
+        en='Two travelers look out from the car over a road toward the horizon.',
+        de='Zwei Reisende blicken aus dem Auto über eine Straße zum Horizont.',
+        fr="Deux voyageurs regardent depuis la voiture une route vers l'horizon.",
+        es='Dos viajeros miran desde el coche una carretera hacia el horizonte.',
+        pt='Dois viajantes olham do carro para uma estrada rumo ao horizonte.'),
+)
+
+# ---------------------------------------------------------------------------
 # VERHALEN — echte, tijdens het testen gegenereerde en gecheckte verhalen
 # ---------------------------------------------------------------------------
 STORIES = [
@@ -1220,32 +1304,53 @@ def build_home(lang):
 
 def build_roadmap(lang):
     s = SITE[lang]
-    groups = [('live', s['rm_live']), ('testflight', s['rm_testflight']), ('soon', s['rm_soon']), ('later', s['rm_later'])]
-    status_css = {'live': 'live', 'testflight': 'build', 'soon': 'next', 'later': 'later'}
-    status_mark = {'live': '✓ ', 'testflight': '', 'soon': '', 'later': ''}
-    items_html = ''
-    for key, label in groups:
-        items_html += f'<div class="section-head" style="margin-top:46px;"><div class="eyebrow">{label}</div></div>\n'
-        for gkey, title_d, desc_d in ROADMAP_ITEMS:
-            if gkey != key: continue
-            items_html += f'''<div class="roadmap-item">
-        <div class="rm-marker"><span class="rm-status {status_css[key]}">{status_mark[key]}{label}</span></div>
-        <div class="rm-body"><h3>{title_d[lang]}</h3><p>{desc_d[lang]}</p></div>
-      </div>\n'''
-    body = f'''  <section class="page-intro"><div class="wrap" style="max-width:720px;">
-    <div class="eyebrow">{s['rm_eyebrow']}</div>
-    <h1>{s['rm_h1']}</h1>
-    <p class="lede">{s['rm_lede']}</p>
+    status_label = {'live': s['rm_live'], 'testflight': s['rm_testflight'], 'soon': s['rm_soon'], 'later': s['rm_later']}
+    chapters = ''
+    for ch in RM_CHAPTERS:
+        st = ch['status']
+        items = ''.join(
+            f'''<div class="rm-item">
+            <h3>{t[lang]}</h3>
+            <p>{d[lang]}</p>
+          </div>\n'''
+            for gkey, t, d in ROADMAP_ITEMS if gkey == st
+        )
+        chapters += f'''<article class="rm-chapter rm-reveal">
+        <div class="rm-chapter-aside">
+          <span class="rm-chapter-num">{ch['num']}</span>
+          <span class="rm-chapter-status rm-st-{st}">{status_label[st]}</span>
+        </div>
+        <div class="rm-chapter-main">
+          <h2>{ch['title'][lang]}</h2>
+          <p class="rm-chapter-sub">{ch['sub'][lang]}</p>
+          <div class="rm-items">
+          {items}</div>
+        </div>
+      </article>\n'''
+    body = f'''  <section class="rm-hero">
+    <img class="rm-hero-img" src="/images/roadmap-01-waar-de-weg-begon.jpg" alt="{RM_ALT['open'][lang]}" width="1536" height="1024" fetchpriority="high">
+    <div class="rm-hero-shade" aria-hidden="true"></div>
+    <div class="rm-hero-content">
+      <p class="eyebrow on-photo">{RM_HERO['eyebrow'][lang]}</p>
+      <h1>{RM_HERO['h1'][lang]}</h1>
+      <p class="rm-hero-lede">{RM_HERO['lede'][lang]}</p>
+    </div>
+  </section>
+
+  <section class="rm-route"><div class="wrap">
+    {chapters}
   </div></section>
 
-  <section class="block"><div class="wrap" style="max-width:720px;">
-    {items_html}
-  </div></section>
-
-  <section class="block"><div class="wrap"><div class="cta-band">
-    <h2>{s['rm_cta_h']}</h2><p>{s['rm_cta_p']}</p>
-    <a class="btn-primary" href="mailto:nimco@nentjes.nl">{s['cta_btn']}</a>
-  </div></div></section>
+  <section class="rm-close">
+    <img class="rm-close-img" src="/images/roadmap-02-aan-de-horizon.jpg" alt="{RM_ALT['close'][lang]}" width="1536" height="1024" loading="lazy">
+    <div class="rm-close-shade" aria-hidden="true"></div>
+    <div class="rm-close-content rm-reveal">
+      <p class="eyebrow on-photo">{RM_CLOSE['eyebrow'][lang]}</p>
+      <h2>{RM_CLOSE['h'][lang]}</h2>
+      <p class="rm-close-p">{RM_CLOSE['p'][lang]}</p>
+      <a class="btn-primary" href="mailto:nimco@nentjes.nl">{RM_CLOSE['btn'][lang]}</a>
+    </div>
+  </section>
 '''
     return page_shell(lang, f"Roadmap — 2R (Second Route)", s['rm_lede'], 'roadmap', body)
 
