@@ -3,7 +3,17 @@
   // Deploy: npx wrangler deploy (vanuit deze map)
   "name": "2route",
   "compatibility_date": "2026-05-01",
+  "main": "src/worker.js",
   "assets": {
-    "directory": "./public"
-  }
+    "directory": "./public",
+    "binding": "ASSETS",
+    // Worker draait vóór de assets: nodig om www -> apex te kunnen
+    // doorverwijzen (anders serveert de asset-laag www rechtstreeks).
+    "run_worker_first": true
+  },
+  // www heeft al een eigen (door Roel aangemaakt, geproxied) DNS-record;
+  // een zone-route stuurt die verzoeken naar deze worker, die ze 301't.
+  "routes": [
+    { "pattern": "www.2route.nl/*", "zone_name": "2route.nl" }
+  ]
 }
