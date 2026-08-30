@@ -1641,7 +1641,9 @@ def build_home(lang):
     first_region_short = stops[0][0].split(' · ')[-1]
 
     body = f'''  <section class="hero hero-v2" id="top">
-    <img class="hero-photo" src="/images/hero-journey-v2.jpg" alt="{html.escape(h['hero_alt'])}" width="1672" height="941" fetchpriority="high" decoding="async">
+    <video class="hero-photo" aria-hidden="true" autoplay muted loop playsinline preload="metadata" poster="/images/hero-dame-poster.jpg">
+      <source src="/images/hero-drive-loop.mp4" type="video/mp4">
+    </video>
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-content">
       <p class="eyebrow on-photo">{h['hero_eyebrow']}</p>
