@@ -2385,7 +2385,7 @@ def build_story_detail(lang, st):
 # public/audio/routes/<slug>/; kaartdata uit de 2R-vectorkaartpijplijn.
 # ---------------------------------------------------------------------------
 ROUTES_TXT = {
-'nl': dict(nav='Luisterroutes', eyebrow='Het levende routeboek', h1='De eerste wandeling<br>heeft een stem.',
+'nl': dict(nav='Luisterroutes', eyebrow='Het levende routeboek', h1='De eerste wandeling<br>heeft een stem.', hero_alt='Twee wandelaars volgen samen een bospad langs heide en een oude kasteeltuin in het zachte ochtendlicht.',
     lede='Boswachterspad Stulp en Kasteeltuin is onze eerste complete luisterroute: officiële GPX, eigen kaart en twaalf hoofdstukken op precies de goede plek. Van hieruit groeit een bibliotheek door heel Nederland.',
     live='Beluister de route', productie='In productie', hoofdstukken='hoofdstukken', km='km',
     kwaliteit_h='Zo ontstaat kwaliteit', kwaliteit_p='Elk routeboek doorloopt dezelfde vijf stappen vóór het online komt:',
@@ -2394,7 +2394,7 @@ ROUTES_TXT = {
     gpx='Download de originele GPX', bronpagina='Routepagina van de beheerder', kaart_h='De route op de kaart',
     kaart_p='Een eigen 2R-kaart, getekend uit OpenStreetMap-geodata — zoom in tot op het wandelpad. Tik op een halte om naar het hoofdstuk te springen.',
     home_link='Beluister de hele wandeling →', terug='← Alle luisterroutes'),
-'en': dict(nav='Listening routes', eyebrow='The living route book', h1='The first walk<br>has found its voice.',
+'en': dict(nav='Listening routes', eyebrow='The living route book', h1='The first walk<br>has found its voice.', hero_alt='Two walkers follow a woodland path beside heath and an old castle garden in soft morning light.',
     lede='The Stulp and Castle Garden forester trail is our first complete listening route: official GPX, our own map and twelve chapters in exactly the right places. From here, a library across the Netherlands begins to grow.',
     live='Listen to this route', productie='In production', hoofdstukken='chapters', km='km',
     kwaliteit_h='How quality is made', kwaliteit_p='Every route book passes the same five steps before going live:',
@@ -2403,7 +2403,7 @@ ROUTES_TXT = {
     hoofdstuk='Chapter', bron_lbl='Sources', gpx='Download the original GPX', bronpagina="The steward's route page",
     kaart_h='The route on the map', kaart_p='Our own 2R map, drawn from OpenStreetMap geodata — zoom in to the footpath itself. Tap a stop to jump to its chapter.',
     home_link='Listen to the full walk →', terug='← All listening routes'),
-'de': dict(nav='Hörrouten', eyebrow='Das lebendige Routenbuch', h1='Die erste Wanderung<br>hat eine Stimme.',
+'de': dict(nav='Hörrouten', eyebrow='Das lebendige Routenbuch', h1='Die erste Wanderung<br>hat eine Stimme.', hero_alt='Zwei Wanderer folgen im sanften Morgenlicht einem Waldweg an Heide und altem Schlossgarten entlang.',
     lede='Der Boswachterspad Stulp en Kasteeltuin ist unsere erste vollständige Hörroute: offizieller GPX-Track, eigene Karte und zwölf Kapitel an genau den richtigen Orten. Von hier aus wächst eine Bibliothek in den ganzen Niederlanden.',
     live='Route anhören', productie='In Produktion', hoofdstukken='Kapitel', km='km',
     kwaliteit_h='So entsteht Qualität', kwaliteit_p='Jedes Routenbuch durchläuft vor der Veröffentlichung dieselben fünf Schritte:',
@@ -2412,7 +2412,7 @@ ROUTES_TXT = {
     hoofdstuk='Kapitel', bron_lbl='Quellen', gpx='Original-GPX herunterladen', bronpagina='Routenseite des Verwalters',
     kaart_h='Die Route auf der Karte', kaart_p='Eine eigene 2R-Karte aus OpenStreetMap-Geodaten — zoome bis auf den Wanderweg. Tippe auf einen Halt, um zum Kapitel zu springen.',
     home_link='Die ganze Wanderung anhören →', terug='← Alle Hörrouten'),
-'fr': dict(nav='Routes audio', eyebrow='Le carnet de route vivant', h1='La première promenade<br>a trouvé sa voix.',
+'fr': dict(nav='Routes audio', eyebrow='Le carnet de route vivant', h1='La première promenade<br>a trouvé sa voix.', hero_alt="Deux marcheurs suivent un sentier forestier entre lande et ancien jardin de château dans la douce lumière du matin.",
     lede="Le sentier forestier Stulp et Jardin du Château est notre première route audio complète : GPX officiel, carte maison et douze chapitres aux endroits justes. À partir d'ici se construit une bibliothèque dans tous les Pays-Bas.",
     live='Écouter cette route', productie='En production', hoofdstukken='chapitres', km='km',
     kwaliteit_h='Comment naît la qualité', kwaliteit_p='Chaque carnet de route passe par les cinq mêmes étapes avant sa mise en ligne :',
@@ -2421,7 +2421,7 @@ ROUTES_TXT = {
     hoofdstuk='Chapitre', bron_lbl='Sources', gpx='Télécharger le GPX original', bronpagina='Page officielle de la route',
     kaart_h='La route sur la carte', kaart_p="Une carte 2R maison, dessinée à partir des géodonnées OpenStreetMap — zoomez jusqu'au sentier. Touchez une halte pour rejoindre son chapitre.",
     home_link='Écouter toute la promenade →', terug='← Toutes les routes audio'),
-'es': dict(nav='Rutas de audio', eyebrow='El libro de ruta vivo', h1='El primer paseo<br>ya tiene voz.',
+'es': dict(nav='Rutas de audio', eyebrow='El libro de ruta vivo', h1='El primer paseo<br>ya tiene voz.', hero_alt='Dos caminantes siguen un sendero del bosque junto al brezal y un antiguo jardín de castillo bajo la suave luz de la mañana.',
     lede='El sendero forestal Stulp y Jardín del Castillo es nuestra primera ruta sonora completa: GPX oficial, mapa propio y doce capítulos en los lugares precisos. Desde aquí crecerá una biblioteca por todos los Países Bajos.',
     live='Escuchar esta ruta', productie='En producción', hoofdstukken='capítulos', km='km',
     kwaliteit_h='Así nace la calidad', kwaliteit_p='Cada libro de ruta pasa por los mismos cinco pasos antes de publicarse:',
@@ -2430,7 +2430,7 @@ ROUTES_TXT = {
     hoofdstuk='Capítulo', bron_lbl='Fuentes', gpx='Descargar el GPX original', bronpagina='Página oficial de la ruta',
     kaart_h='La ruta en el mapa', kaart_p='Un mapa 2R propio, dibujado con geodatos de OpenStreetMap — acércate hasta el propio sendero. Toca una parada para ir a su capítulo.',
     home_link='Escucha el paseo completo →', terug='← Todas las rutas de audio'),
-'pt': dict(nav='Rotas de áudio', eyebrow='O livro de rota vivo', h1='O primeiro passeio<br>já tem voz.',
+'pt': dict(nav='Rotas de áudio', eyebrow='O livro de rota vivo', h1='O primeiro passeio<br>já tem voz.', hero_alt='Dois caminhantes seguem um trilho florestal junto à charneca e a um antigo jardim de castelo na suave luz da manhã.',
     lede='O trilho florestal Stulp e Jardim do Castelo é a nossa primeira rota sonora completa: GPX oficial, mapa próprio e doze capítulos nos lugares certos. A partir daqui cresce uma biblioteca por todos os Países Baixos.',
     live='Ouvir esta rota', productie='Em produção', hoofdstukken='capítulos', km='km',
     kwaliteit_h='Assim nasce a qualidade', kwaliteit_p='Cada livro de rota passa pelos mesmos cinco passos antes de ir ao ar:',
@@ -2681,8 +2681,10 @@ def build_routes_index(lang):
         <span class="prov-status">{t['productie']}</span>
       </div>\n"""
     stappen = ''.join(f'<li>{s}</li>' for s in t['kwaliteit'])
-    body = f"""  <section class="routes-hero">
-    <div class="wrap">
+    body = f"""  <section class="routes-hero routes-library-hero">
+    <img class="routes-hero-photo" src="/images/routes-hero-listening.jpg" alt="{html.escape(t['hero_alt'])}" width="1672" height="941" fetchpriority="high" decoding="async">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="wrap routes-hero-copy">
       <p class="eyebrow on-dark">{t['eyebrow']}</p>
       <h1>{t['h1']}</h1>
       <p class="routes-lede">{t['lede']}</p>
