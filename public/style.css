@@ -899,3 +899,50 @@ section.block + section.block { padding-top: 44px; }
   .sp-toggle { width: 38px; height: 38px; }
 }
 @media (prefers-reduced-motion: reduce) { .sp-wave i { animation: none; height: 10px; } }
+
+/* --- Luisterroutes (website 2.0 ronde 2) ---------------------------------- */
+.routes-hero { background: var(--petrol); color: var(--paper-light); padding: 72px 0 52px; }
+.routes-hero h1 { color: var(--paper-light); margin: 10px 0 14px; }
+.routes-hero .eyebrow.on-dark { color: var(--gold); }
+.routes-lede { max-width: 62ch; color: rgba(250,246,237,.85); }
+.rt-feiten { display: flex; gap: 26px; flex-wrap: wrap; margin-top: 24px; }
+.hfeit b { font-family: var(--serif); font-weight: 500; font-size: 1.25rem; color: var(--gold); }
+.prov-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.prov-kaart { border-radius: 14px; padding: 20px 18px; display: flex; flex-direction: column; gap: 6px; min-height: 128px; }
+.prov-kaart.live { background: var(--paper-light); box-shadow: var(--card-shadow); text-decoration: none; color: var(--ink); border: 1px solid var(--line-soft); transition: transform .15s ease; }
+.prov-kaart.live:hover { transform: translateY(-2px); }
+.prov-kaart.stil { border: 1px dashed var(--line); color: rgba(23,36,43,.55); }
+.prov-naam { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--cognac); }
+.prov-kaart.stil .prov-naam { color: rgba(23,36,43,.45); }
+.prov-route { font-family: var(--serif); font-size: 1.12rem; font-weight: 500; line-height: 1.25; }
+.prov-meta { font-size: .82rem; color: rgba(23,36,43,.6); }
+.prov-cta { margin-top: auto; font-size: .86rem; font-weight: 600; color: var(--ember); }
+.prov-status { margin-top: auto; font-size: .82rem; font-style: italic; }
+.routes-kwaliteit h2 { margin-bottom: 8px; }
+.kwaliteit-lijst { max-width: 60ch; padding-left: 22px; }
+.kwaliteit-lijst li { margin-bottom: 8px; }
+#kaart { height: clamp(340px, 55vh, 540px); width: 100%; margin-top: 18px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line-soft); background: #F2EBDD; }
+.rt-kaart-p { max-width: 62ch; color: rgba(23,36,43,.7); }
+.rt-knoppen { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; margin-top: 18px; }
+.rt-stops { max-width: 760px; }
+.rt-taalnoot { font-style: italic; color: rgba(23,36,43,.6); border-left: 2px solid var(--gold); padding-left: 12px; max-width: 60ch; }
+.rt-stop { display: flex; gap: 20px; margin: 0 0 8px; }
+.rt-as { display: flex; flex-direction: column; align-items: center; flex: 0 0 40px; }
+.rt-nr { font-family: var(--serif); font-weight: 500; color: var(--cognac); font-size: 1.15rem; padding: 2px 0 6px; }
+.rt-lijn { flex: 1; width: 2px; background: var(--cognac); opacity: .35; }
+.rt-stop:last-of-type .rt-lijn { background: linear-gradient(var(--cognac), transparent); }
+.rt-body { padding-bottom: 26px; }
+.rt-body h3 { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; margin: 0 0 8px; }
+.rt-meta { font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--moss); margin-bottom: 2px; }
+.rt-speler { background: var(--paper-light); border: 1px solid var(--line-soft); border-radius: 12px; padding: 12px 14px; margin: 14px 0 10px; }
+.rt-speler-kop { display: block; font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--cognac); margin-bottom: 8px; }
+.rt-speler audio { width: 100%; }
+.rt-bron { font-size: .82rem; color: rgba(23,36,43,.6); border-left: 2px solid var(--gold); padding-left: 10px; }
+.listen-more { margin-top: 14px; }
+/* Leaflet-tooltips van de vectorkaart (2R-stijl) */
+.leaflet-tooltip.kl-plaats, .leaflet-tooltip.kl-gehucht, .leaflet-tooltip.kl-punt {
+  background: transparent; border: none; box-shadow: none; padding: 0; pointer-events: none; }
+.leaflet-tooltip.kl-plaats { font-family: var(--sans); font-weight: 600; font-size: 10.5px; letter-spacing: .09em; text-transform: uppercase; color: rgba(23,36,43,.72); text-shadow: 0 0 3px #F2EBDD, 0 0 5px #F2EBDD, 0 0 8px #F2EBDD; }
+.leaflet-tooltip.kl-gehucht { font-family: var(--sans); font-weight: 600; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: rgba(23,36,43,.58); text-shadow: 0 0 3px #F2EBDD, 0 0 5px #F2EBDD; }
+.leaflet-tooltip.kl-punt { font-family: var(--serif); font-style: italic; font-size: 11.5px; color: #A96642; text-shadow: 0 0 3px #F2EBDD, 0 0 5px #F2EBDD, 0 0 7px #F2EBDD; }
+.leaflet-tooltip.kl-punt:before, .leaflet-tooltip.kl-plaats:before, .leaflet-tooltip.kl-gehucht:before { display: none; }

@@ -979,6 +979,7 @@ def nav(lang, active):
       <span class="nav-only-links">
         {link(f'/{lang}/', s['nav_product'], 'product')}
         {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
+        {link(f'/{lang}/routes/', ROUTES_TXT[lang]['nav'], 'routes')}
         {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
         {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
         {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
@@ -991,6 +992,7 @@ def nav(lang, active):
     <div class="mobile-panel-links">
       {link(f'/{lang}/', s['nav_product'], 'product')}
       {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
+      {link(f'/{lang}/routes/', ROUTES_TXT[lang]['nav'], 'routes')}
       {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
       {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
       {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
@@ -1419,6 +1421,7 @@ def build_home(lang):
       audio.addEventListener('ended', function() {{ knop.textContent = '▶'; }});
     }})();
     </script>
+    <p class="listen-more"><a class="text-link" href="/{lang}/routes/drakensteyn/">{ROUTES_TXT[lang]['home_link']}</a></p>
   </section>
 
   <section class="journey" id="reis">
@@ -2029,6 +2032,229 @@ def build_story_detail(lang, st):
 '''
     return page_shell(lang, f"{st['title'][lang]} — 2R", st['text'][lang][:150], 'stories', body, path=f'stories/{st["slug"]}.html')
 
+
+# ---------------------------------------------------------------------------
+# Luisterroutes — provinciebibliotheek + routepagina's (website 2.0, ronde 2)
+# Inhoud per route in routes-content/<slug>.json; audio als losse mp3's in
+# public/audio/routes/<slug>/; kaartdata uit de 2R-vectorkaartpijplijn.
+# ---------------------------------------------------------------------------
+ROUTES_TXT = {
+'nl': dict(nav='Luisterroutes', eyebrow='Luisterroutes', h1='Twaalf provincies,<br>twaalf luisterwandelingen.',
+    lede='Elke provincie krijgt minstens één wandelroute als levend luisterverhaal: een officiële route van de beheerder, een eigen kaart, en hoofdstukken die vertellen op precies de goede plek. Utrecht is live — de rest is in productie.',
+    live='Beluister de route', productie='In productie', hoofdstukken='hoofdstukken', km='km',
+    kwaliteit_h='Zo ontstaat kwaliteit', kwaliteit_p='Elk routeboek doorloopt dezelfde vijf stappen vóór het online komt:',
+    kwaliteit=['Betrouwbare lokale bronnen — elk feit met bron-URL, dubbel gecontroleerd', 'Eén dragende verhaallijn van begin tot slot', 'Hoofdstukken op wandeltempo: elke vierhonderd tot zevenhonderd meter', 'Menselijke eindredactie, elke ingreep gelogd', 'Een warme vertelstem'],
+    detail_eyebrow='Luisterwandeling · Utrecht', taalnoot='', hoofdstuk='Hoofdstuk', bron_lbl='Bronnen',
+    gpx='Download de originele GPX', bronpagina='Routepagina van de beheerder', kaart_h='De route op de kaart',
+    kaart_p='Een eigen 2R-kaart, getekend uit OpenStreetMap-geodata — zoom in tot op het wandelpad. Tik op een halte om naar het hoofdstuk te springen.',
+    home_link='Beluister de hele wandeling →', terug='← Alle luisterroutes'),
+'en': dict(nav='Listening routes', eyebrow='Listening routes', h1='Twelve provinces,<br>twelve listening walks.',
+    lede="Every Dutch province gets at least one walking route as a living audio story: an official route, our own map, and chapters told in exactly the right place. Utrecht is live — the rest is in production.",
+    live='Listen to this route', productie='In production', hoofdstukken='chapters', km='km',
+    kwaliteit_h='How quality is made', kwaliteit_p='Every route book passes the same five steps before going live:',
+    kwaliteit=['Reliable local sources — every fact with its URL, double-checked', 'One carrying storyline from start to finish', 'Chapters at walking pace: every four to seven hundred metres', 'Human editing, every change logged', 'A warm narrating voice'],
+    detail_eyebrow='Listening walk · Utrecht', taalnoot='The chapters below are narrated in Dutch — the language the landscape speaks. Multilingual route books are on the roadmap.',
+    hoofdstuk='Chapter', bron_lbl='Sources', gpx='Download the original GPX', bronpagina="The steward's route page",
+    kaart_h='The route on the map', kaart_p='Our own 2R map, drawn from OpenStreetMap geodata — zoom in to the footpath itself. Tap a stop to jump to its chapter.',
+    home_link='Listen to the full walk →', terug='← All listening routes'),
+'de': dict(nav='Hörrouten', eyebrow='Hörrouten', h1='Zwölf Provinzen,<br>zwölf Hörwanderungen.',
+    lede='Jede niederländische Provinz bekommt mindestens eine Wanderroute als lebendige Hörgeschichte: offizielle Route, eigene Karte, Kapitel am genau richtigen Ort. Utrecht ist live — der Rest ist in Produktion.',
+    live='Route anhören', productie='In Produktion', hoofdstukken='Kapitel', km='km',
+    kwaliteit_h='So entsteht Qualität', kwaliteit_p='Jedes Routenbuch durchläuft vor der Veröffentlichung dieselben fünf Schritte:',
+    kwaliteit=['Verlässliche lokale Quellen — jeder Fakt mit URL, doppelt geprüft', 'Eine tragende Erzähllinie von Anfang bis Ende', 'Kapitel im Wandertempo: alle vier- bis siebenhundert Meter', 'Menschliche Redaktion, jeder Eingriff protokolliert', 'Eine warme Erzählstimme'],
+    detail_eyebrow='Hörwanderung · Utrecht', taalnoot='Die Kapitel unten werden auf Niederländisch erzählt — mehrsprachige Routenbücher stehen auf der Roadmap.',
+    hoofdstuk='Kapitel', bron_lbl='Quellen', gpx='Original-GPX herunterladen', bronpagina='Routenseite des Verwalters',
+    kaart_h='Die Route auf der Karte', kaart_p='Eine eigene 2R-Karte aus OpenStreetMap-Geodaten — zoome bis auf den Wanderweg. Tippe auf einen Halt, um zum Kapitel zu springen.',
+    home_link='Die ganze Wanderung anhören →', terug='← Alle Hörrouten'),
+'fr': dict(nav='Routes audio', eyebrow='Routes audio', h1='Douze provinces,<br>douze promenades sonores.',
+    lede="Chaque province néerlandaise reçoit au moins une randonnée sous forme de récit audio vivant : itinéraire officiel, carte maison, chapitres racontés exactement au bon endroit. Utrecht est en ligne — le reste est en production.",
+    live='Écouter cette route', productie='En production', hoofdstukken='chapitres', km='km',
+    kwaliteit_h='Comment naît la qualité', kwaliteit_p='Chaque carnet de route passe par les cinq mêmes étapes avant sa mise en ligne :',
+    kwaliteit=['Des sources locales fiables — chaque fait avec son URL, vérifié deux fois', 'Une seule ligne narrative du début à la fin', 'Des chapitres au rythme de la marche : tous les quatre à sept cents mètres', 'Une relecture humaine, chaque intervention consignée', 'Une voix chaleureuse'],
+    detail_eyebrow='Promenade sonore · Utrecht', taalnoot='Les chapitres ci-dessous sont racontés en néerlandais — les carnets multilingues sont sur la feuille de route.',
+    hoofdstuk='Chapitre', bron_lbl='Sources', gpx='Télécharger le GPX original', bronpagina='Page officielle de la route',
+    kaart_h='La route sur la carte', kaart_p="Une carte 2R maison, dessinée à partir des géodonnées OpenStreetMap — zoomez jusqu'au sentier. Touchez une halte pour rejoindre son chapitre.",
+    home_link='Écouter toute la promenade →', terug='← Toutes les routes audio'),
+'es': dict(nav='Rutas de audio', eyebrow='Rutas de audio', h1='Doce provincias,<br>doce paseos sonoros.',
+    lede='Cada provincia neerlandesa recibe al menos una ruta a pie como relato sonoro vivo: ruta oficial, mapa propio y capítulos contados justo en el lugar correcto. Utrecht ya está en línea — el resto, en producción.',
+    live='Escuchar esta ruta', productie='En producción', hoofdstukken='capítulos', km='km',
+    kwaliteit_h='Así nace la calidad', kwaliteit_p='Cada libro de ruta pasa por los mismos cinco pasos antes de publicarse:',
+    kwaliteit=['Fuentes locales fiables — cada dato con su URL, verificado dos veces', 'Una sola línea narrativa de principio a fin', 'Capítulos a ritmo de paseo: cada cuatrocientos a setecientos metros', 'Edición humana, cada cambio registrado', 'Una voz cálida'],
+    detail_eyebrow='Paseo sonoro · Utrecht', taalnoot='Los capítulos siguientes se narran en neerlandés — los libros multilingües están en la hoja de ruta.',
+    hoofdstuk='Capítulo', bron_lbl='Fuentes', gpx='Descargar el GPX original', bronpagina='Página oficial de la ruta',
+    kaart_h='La ruta en el mapa', kaart_p='Un mapa 2R propio, dibujado con geodatos de OpenStreetMap — acércate hasta el propio sendero. Toca una parada para ir a su capítulo.',
+    home_link='Escucha el paseo completo →', terug='← Todas las rutas de audio'),
+'pt': dict(nav='Rotas de áudio', eyebrow='Rotas de áudio', h1='Doze províncias,<br>doze passeios sonoros.',
+    lede='Cada província neerlandesa recebe pelo menos uma caminhada como história sonora viva: rota oficial, mapa próprio e capítulos contados exatamente no lugar certo. Utrecht já está no ar — o resto está em produção.',
+    live='Ouvir esta rota', productie='Em produção', hoofdstukken='capítulos', km='km',
+    kwaliteit_h='Assim nasce a qualidade', kwaliteit_p='Cada livro de rota passa pelos mesmos cinco passos antes de ir ao ar:',
+    kwaliteit=['Fontes locais confiáveis — cada fato com sua URL, verificado duas vezes', 'Uma única linha narrativa do início ao fim', 'Capítulos no ritmo da caminhada: a cada quatrocentos a setecentos metros', 'Edição humana, cada mudança registrada', 'Uma voz calorosa'],
+    detail_eyebrow='Passeio sonoro · Utrecht', taalnoot='Os capítulos abaixo são narrados em neerlandês — livros multilíngues estão no roteiro.',
+    hoofdstuk='Capítulo', bron_lbl='Fontes', gpx='Baixar o GPX original', bronpagina='Página oficial da rota',
+    kaart_h='A rota no mapa', kaart_p='Um mapa 2R próprio, desenhado com geodados do OpenStreetMap — aproxime até a própria trilha. Toque numa parada para ir ao capítulo.',
+    home_link='Ouça o passeio completo →', terug='← Todas as rotas de áudio'),
+}
+
+PROVINCIES = [
+    ('Groningen', None), ('Friesland', None), ('Drenthe', None), ('Overijssel', None),
+    ('Flevoland', None), ('Gelderland', None), ('Utrecht', 'drakensteyn'),
+    ('Noord-Holland', None), ('Zuid-Holland', None), ('Zeeland', None),
+    ('Noord-Brabant', None), ('Limburg', None),
+]
+
+with open(os.path.join(ROOT, 'routes-content', 'drakensteyn.json'), encoding='utf-8') as _f:
+    ROUTE_DRAKENSTEYN = json.load(_f)
+ROUTES = {'drakensteyn': ROUTE_DRAKENSTEYN}
+
+# Korte routelede per taal (de hoofdstukken zelf blijven Nederlands)
+ROUTE_LEDE = {
+ 'nl': 'Twaalf hoofdstukken over nonnen, boeren, een freule, boswachters en een koningin — duizend jaar landschap, verteld op precies de goede plek. Zeventig geverifieerde feiten, elk met bron.',
+ 'en': 'Twelve chapters about nuns, farmers, a baroness, foresters and a queen — a thousand years of landscape, told in exactly the right place. Seventy verified facts, each with its source.',
+ 'de': 'Zwölf Kapitel über Nonnen, Bauern, eine Freifrau, Förster und eine Königin — tausend Jahre Landschaft, erzählt am genau richtigen Ort. Siebzig verifizierte Fakten, jeder mit Quelle.',
+ 'fr': "Douze chapitres sur des religieuses, des paysans, une baronne, des forestiers et une reine — mille ans de paysage, racontés exactement au bon endroit. Soixante-dix faits vérifiés, chacun avec sa source.",
+ 'es': 'Doce capítulos sobre monjas, campesinos, una baronesa, guardabosques y una reina — mil años de paisaje, contados justo en el lugar correcto. Setenta datos verificados, cada uno con su fuente.',
+ 'pt': 'Doze capítulos sobre freiras, camponeses, uma baronesa, guardas florestais e uma rainha — mil anos de paisagem, contados no lugar certo. Setenta fatos verificados, cada um com sua fonte.',
+}
+
+FOCUS_LBL = {
+ 'nl': {'geschiedenis': 'Geschiedenis', 'natuur': 'Natuur', 'mensen': 'Mensen'},
+ 'en': {'geschiedenis': 'History', 'natuur': 'Nature', 'mensen': 'People'},
+ 'de': {'geschiedenis': 'Geschichte', 'natuur': 'Natur', 'mensen': 'Menschen'},
+ 'fr': {'geschiedenis': 'Histoire', 'natuur': 'Nature', 'mensen': 'Gens'},
+ 'es': {'geschiedenis': 'Historia', 'natuur': 'Naturaleza', 'mensen': 'Gente'},
+ 'pt': {'geschiedenis': 'História', 'natuur': 'Natureza', 'mensen': 'Pessoas'},
+}
+
+
+def build_routes_index(lang):
+    t = ROUTES_TXT[lang]
+    kaarten = ''
+    for prov, slug in PROVINCIES:
+        if slug:
+            r = ROUTES[slug]
+            kaarten += f"""      <a class="prov-kaart live" href="/{lang}/routes/{slug}/">
+        <span class="prov-naam">{prov}</span>
+        <span class="prov-route">{html.escape(r['naam'])}</span>
+        <span class="prov-meta">{str(r['lengte_km']).replace('.', ',')} {t['km']} · {r['hoofdstukken_n']} {t['hoofdstukken']}</span>
+        <span class="prov-cta">{t['live']} →</span>
+      </a>\n"""
+        else:
+            kaarten += f"""      <div class="prov-kaart stil">
+        <span class="prov-naam">{prov}</span>
+        <span class="prov-status">{t['productie']}</span>
+      </div>\n"""
+    stappen = ''.join(f'<li>{s}</li>' for s in t['kwaliteit'])
+    body = f"""  <section class="routes-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">{t['eyebrow']}</p>
+      <h1>{t['h1']}</h1>
+      <p class="routes-lede">{t['lede']}</p>
+    </div>
+  </section>
+  <section class="block"><div class="wrap">
+    <div class="prov-grid">
+{kaarten}    </div>
+  </div></section>
+  <section class="block routes-kwaliteit"><div class="wrap">
+    <h2>{t['kwaliteit_h']}</h2>
+    <p>{t['kwaliteit_p']}</p>
+    <ol class="kwaliteit-lijst">{stappen}</ol>
+  </div></section>
+"""
+    titel = {'nl': 'Luisterroutes — 2R (Second Route)', 'en': 'Listening routes — 2R (Second Route)',
+             'de': 'Hörrouten — 2R (Second Route)', 'fr': 'Routes audio — 2R (Second Route)',
+             'es': 'Rutas de audio — 2R (Second Route)', 'pt': 'Rotas de áudio — 2R (Second Route)'}[lang]
+    return page_shell(lang, titel, t['lede'][:150], 'routes', body, path='routes/index.html')
+
+
+def build_route_page(lang, r):
+    t = ROUTES_TXT[lang]
+    fl = FOCUS_LBL[lang]
+    stops_html = ''
+    for c in r['hoofdstukken']:
+        paras = ''.join(f'<p>{html.escape(p)}</p>' for p in c['paras'])
+        bronnen = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{html.escape(n)}</a>' for u, n in c['bronnen'])
+        km = str(c['km']).replace('.', ',')
+        stops_html += f"""    <article class="rt-stop" id="stop-{c['nr']}">
+      <div class="rt-as"><span class="rt-nr">{c['nr']:02d}</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">{fl.get(c['focus'], c['focus'])} · {km} {t['km']}</div>
+        <h3>{html.escape(c['titel'])}</h3>
+        {paras}
+        <div class="rt-speler"><span class="rt-speler-kop">{t['hoofdstuk']} {c['nr']:02d}</span>
+        <audio controls preload="none" src="{c['audio']}"></audio></div>
+        <div class="rt-bron">{t['bron_lbl']}: {bronnen}</div>
+      </div>
+    </article>\n"""
+    haltes_js = json.dumps([{'nr': c['nr'], 'naam': c['titel'], 'lat': c['lat'], 'lng': c['lng']}
+                            for c in r['hoofdstukken']], ensure_ascii=False)
+    lijnen_js = json.dumps(r['lijnen'])
+    taalnoot = f'<p class="rt-taalnoot">{t["taalnoot"]}</p>' if t['taalnoot'] else ''
+    lengte = str(r['lengte_km']).replace('.', ',')
+    body = f"""  <section class="routes-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">{t['detail_eyebrow']}</p>
+      <h1>{html.escape(r['naam'])}</h1>
+      <p class="routes-lede">{ROUTE_LEDE[lang]}</p>
+      <div class="rt-feiten">
+        <div class="hfeit"><b>{lengte} {t['km']}</b></div>
+        <div class="hfeit"><b>{r['duur']}</b></div>
+        <div class="hfeit"><b>{r['hoofdstukken_n']} {t['hoofdstukken']}</b></div>
+        <div class="hfeit"><b>{r['beheerder']}</b></div>
+      </div>
+    </div>
+  </section>
+  <section class="block"><div class="wrap">
+    <h2>{t['kaart_h']}</h2>
+    <p class="rt-kaart-p">{t['kaart_p']}</p>
+    <div id="kaart"></div>
+    <p class="rt-knoppen">
+      <a class="btn-primary" href="{r['gpx_url']}" target="_blank" rel="noopener">{t['gpx']} <span>↓</span></a>
+      <a class="text-link" href="{r['bron_url']}" target="_blank" rel="noopener">{t['bronpagina']} →</a>
+    </p>
+  </div></section>
+  <section class="block"><div class="wrap rt-stops">
+{taalnoot}
+{stops_html}    <p><a class="text-link" href="/{lang}/routes/">{t['terug']}</a></p>
+  </div></section>
+  <script src="/leaflet.js"></script>
+  <script src="{r['kaart_js']}"></script>
+  <script src="/vectorkaart.js"></script>
+  <script>
+  (function() {{
+    var L = window.L;
+    if (!L || !window.KAARTDATA || !window.bouwVectorKaart) return;
+    var kaartEl = document.getElementById('kaart');
+    function initKaart() {{
+      if (kaartEl.clientWidth === 0) {{ setTimeout(initKaart, 150); return; }}
+      var kaart = bouwVectorKaart(L, kaartEl);
+      var haltes = {haltes_js};
+      haltes.forEach(function(p) {{
+        var icoon = L.divIcon({{ className: '',
+          html: '<div style="background:#173B3A;color:#D8A85F;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Newsreader,serif;font-weight:500;font-size:13px;border:2px solid #FAF6ED;box-shadow:0 2px 6px rgba(0,0,0,.3)">' + p.nr + '</div>',
+          iconSize: [26, 26], iconAnchor: [13, 13] }});
+        L.marker([p.lat, p.lng], {{ icon: icoon }}).addTo(kaart)
+          .bindPopup('<b>' + p.naam + '</b>')
+          .on('click', function() {{
+            var el = document.getElementById('stop-' + p.nr);
+            if (el) el.scrollIntoView({{ behavior: 'smooth', block: 'center' }});
+          }});
+      }});
+      var lijnen = {lijnen_js};
+      lijnen.forEach(function(l) {{ L.polyline(l, {{ color: '#FAF6ED', weight: 7, opacity: 0.75 }}).addTo(kaart); }});
+      lijnen.forEach(function(l) {{ L.polyline(l, {{ color: '#D96552', weight: 4, opacity: 0.95 }}).addTo(kaart); }});
+      setTimeout(function() {{ kaart.invalidateSize(); }}, 300);
+    }}
+    initKaart();
+  }})();
+  </script>
+"""
+    titel = f"{r['naam']} — 2R"
+    extra = '<link rel="stylesheet" href="/leaflet.css">'
+    return page_shell(lang, titel, ROUTE_LEDE[lang][:150], 'routes', body,
+                      extra_head=extra, path=f"routes/{r['slug']}/index.html")
+
+
 # ---------------------------------------------------------------------------
 # Schrijf alles weg
 # ---------------------------------------------------------------------------
@@ -2044,13 +2270,17 @@ for lang in LANGS:
     write(f'{lang}/zo-werkt-het.html', build_howto(lang))
     write(f'{lang}/privacy.html', build_privacy(lang))
     write(f'{lang}/stories/index.html', build_stories_index(lang))
+    write(f'{lang}/routes/index.html', build_routes_index(lang))
+    for _r in ROUTES.values():
+        write(f'{lang}/routes/{_r["slug"]}/index.html', build_route_page(lang, _r))
     for st in STORIES:
         write(f'{lang}/stories/{st["slug"]}.html', build_story_detail(lang, st))
     for i in range(len(CITY_SLUGS)):
         write(f'{lang}/stad/{CITY_SLUGS[i]}.html', build_city_story(lang, i))
 
 # Sitemap + robots: alle publieke pagina's in zes talen
-_paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/']
+_paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/']
+_paden += [f'routes/{sl}/' for sl in ROUTES]
 _paden += [f'stories/{st["slug"]}.html' for st in STORIES]
 _paden += [f'stad/{sl}.html' for sl in CITY_SLUGS]
 _urls = [f'{BASE_URL}/{l}/{p}' for p in _paden for l in LANGS]

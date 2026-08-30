@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boswachterspad Stulp en Kasteeltuin — 2R</title>
+<meta name="description" content="Doze capítulos sobre freiras, camponeses, uma baronesa, guardas florestais e uma rainha — mil anos de paisagem, contados no lugar certo. Setenta fatos">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Boswachterspad Stulp en Kasteeltuin — 2R">
+<meta property="og:description" content="Doze capítulos sobre freiras, camponeses, uma baronesa, guardas florestais e uma rainha — mil anos de paisagem, contados no lugar certo. Setenta fatos">
+<meta property="og:image" content="/og.jpg">
+<link rel="canonical" href="https://2route.nl/pt/routes/drakensteyn/">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/routes/drakensteyn/">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/routes/drakensteyn/">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/routes/drakensteyn/">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/routes/drakensteyn/">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/routes/drakensteyn/">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/routes/drakensteyn/">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/routes/drakensteyn/">
+<meta property="og:url" content="https://2route.nl/pt/routes/drakensteyn/">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/pt/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/pt/">Produto</a>
+        <a href="/pt/zo-werkt-het.html">Como funciona</a>
+        <a href="/pt/routes/" class="active">Rotas de áudio</a>
+        <a href="/pt/roadmap.html">Roadmap</a>
+        <a href="/pt/stories/">Histórias</a>
+        <a href="/pt/privacy.html">Privacidade</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/" class="active">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Experimente 2R →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/pt/">Produto</a>
+      <a href="/pt/zo-werkt-het.html">Como funciona</a>
+      <a href="/pt/routes/" class="active">Rotas de áudio</a>
+      <a href="/pt/roadmap.html">Roadmap</a>
+      <a href="/pt/stories/">Histórias</a>
+      <a href="/pt/privacy.html">Privacidade</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/" class="active">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">Experimente 2R →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="routes-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Passeio sonoro · Utrecht</p>
+      <h1>Boswachterspad Stulp en Kasteeltuin</h1>
+      <p class="routes-lede">Doze capítulos sobre freiras, camponeses, uma baronesa, guardas florestais e uma rainha — mil anos de paisagem, contados no lugar certo. Setenta fatos verificados, cada um com sua fonte.</p>
+      <div class="rt-feiten">
+        <div class="hfeit"><b>5,7 km</b></div>
+        <div class="hfeit"><b>±1,5 uur</b></div>
+        <div class="hfeit"><b>12 capítulos</b></div>
+        <div class="hfeit"><b>Staatsbosbeheer</b></div>
+      </div>
+    </div>
+  </section>
+  <section class="block"><div class="wrap">
+    <h2>A rota no mapa</h2>
+    <p class="rt-kaart-p">Um mapa 2R próprio, desenhado com geodados do OpenStreetMap — aproxime até a própria trilha. Toque numa parada para ir ao capítulo.</p>
+    <div id="kaart"></div>
+    <p class="rt-knoppen">
+      <a class="btn-primary" href="https://www.staatsbosbeheer.nl/-/media/utrechtse-heuvelrug/boswachterspad-stulp-kasteeltuin-gpx.gpx" target="_blank" rel="noopener">Baixar o GPX original <span>↓</span></a>
+      <a class="text-link" href="https://www.staatsbosbeheer.nl/routes/utrechtse-heuvelrug/wandelroute-stulp" target="_blank" rel="noopener">Página oficial da rota →</a>
+    </p>
+  </div></section>
+  <section class="block"><div class="wrap rt-stops">
+<p class="rt-taalnoot">Os capítulos abaixo são narrados em neerlandês — livros multilíngues estão no roteiro.</p>
+    <article class="rt-stop" id="stop-1">
+      <div class="rt-as"><span class="rt-nr">01</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">História · 0,0 km</div>
+        <h3>Welkom in Lage Vuursche</h3>
+        <p>Welkom in Lage Vuursche, hier op de Utrechtse Heuvelrug. We beginnen vandaag aan een wandeling van vijf komma zeven kilometer, verdeeld over twee lussen door boswachterij De Vuursche van Staatsbosbeheer. Eerst lopen we de Kasteeltuinwandeling rond Kasteel Drakensteyn, en daarna de Wandelroute Stulp over de heide. Het bijzondere aan dit hele gebied is dat het landschap in bijna duizend jaar tijd is gemaakt, gebruikt en gered: door nonnen, boeren, een kasteelheer, een freule, boswachters en zelfs een koningin. Van ieder van hen gaan we straks tastbare sporen zien.</p><p>En dat begint eigenlijk al meteen hier, bij het startpunt. De naam van dit gebied is ontzettend oud: &#x27;Furs&#x27; duikt al op in een oorkonde gedateerd tienvijfentachtig. Dat bleek een zogeheten falsum, een middeleeuwse vervalsing, maar de naam bestond toen dus al. Het komt vermoedelijk van het Germaanse &#x27;fursa&#x27;, wat gaspeldoorn betekent, zo&#x27;n stekelige struik met gele bloemen.</p><p>Het dorp Lage Vuursche zelf ontstond in feite in één klap. Kasteelheer Gerard van Reede schonk in zestienzevenenvijftig grond voor een kerk. Hij wilde van De Vuursche een echte gemeenschap maken en liet meteen ook een pastorie, school, molen, tolhuis, boerderij en woningen bouwen. Tegenwoordig telt deze hechte dorpskern zo&#x27;n driehonderd inwoners. Sinds vier augustus negentienzesenzestig is het een rijksbeschermd dorpsgezicht van vierendertig hectare, met tientallen rijksmonumenten aan de Dorpsstraat.</p><p>En onderweg zal ik je laten zien hoe al die verschillende makers hun eigen stempel op dit bos en dit dorp hebben gedrukt. Wandel rustig mee.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 01</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/01.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://nl.wikipedia.org/wiki/Lage_Vuursche" target="_blank" rel="noopener">Wikipedia — Lage Vuursche</a> · <a href="https://www.vierklank.nl/nieuws/algemeen/1122518/stulpkerk-gebouwd-op-kloostermoppen" target="_blank" rel="noopener">De Vierklank</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-2">
+      <div class="rt-as"><span class="rt-nr">02</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">História · 0,5 km</div>
+        <h3>Het Nonnenland</h3>
+        <p>Hier vlakbij, ten zuiden van waar je nu loopt, ligt een bijzonder stuk natuur met een even bijzondere geschiedenis: het Nonnenland. Het is tegenwoordig zo&#x27;n veertig hectare nat grasland van Staatsbosbeheer, maar de wortels van dit landschap gaan eeuwen terug, naar de middeleeuwen.</p><p>De naam dankt het aan het Vrouwenklooster bij De Bilt, een klooster van benedictinessen dat rond elfhonderdnegenendertig werd gesticht. Op tweeëntwintig februari dertienhonderdacht kregen deze zusters een opmerkelijk geschenk. Bisschop Guy van Avesnes schonk het klooster acht hoeven wildernis in dit drassige veengebied. En de nonnen lieten die grond niet zomaar braak liggen. Rond dertienhonderd begonnen ze met grootschalige turfwinning. Ze lieten lange weteringen graven, van zuid naar noord, om het hoogveen te ontwateren. De gewonnen turf werd vervolgens op platte pramen geladen en via de Praamgracht — die daar dus zijn naam aan dankt — richting de rivier de Eem vervoerd. Maar het was bepaald geen vredig kloosterleven hier in het veen. Dit stuk land was namelijk eeuwenlang de inzet van een slepende ruzie tussen het Vrouwenklooster en het machtige kapittel van Sint Jan uit Utrecht. Aan die strijd kwam pas een einde met de Reformatie, toen het kloosterleven ophield en de kloosterkroniek in vijftienhonderddrieëntachtig voorgoed sloot.</p><p>Sinds circa tweeduizenddrie hebben Staatsbosbeheer en het waterschap het gebied weer bewust vernat. Het is nu opnieuw een weids, nat grasland waar ook een aparte gemarkeerde Wandelroute Nonnenland doorheen loopt. Zo heeft het water het landschap weer terug.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 02</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/02.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://nl.wikipedia.org/wiki/Nonnenland" target="_blank" rel="noopener">Wikipedia — Nonnenland</a> · <a href="https://historischekringdebilt.nl/wp-content/uploads/KB_ODB_Oude_Akten_Vrouwenklooster.pdf" target="_blank" rel="noopener">Historische Kring De Bilt/Bilthoven</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-3">
+      <div class="rt-as"><span class="rt-nr">03</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Natureza · 0,9 km</div>
+        <h3>De Stulpselaan en de lanen</h3>
+        <p>We laten de natte veengrond van het Nonnenland nu achter ons, en je merkt het meteen aan het landschap: de grond wordt steviger, het groen sluit zich om ons heen. Je loopt hier vlakbij de Stulpselaan, een oude zandlaan met een tastbare geschiedenis. De laan dankt haar naam aan een boerderij die hier ooit vlakbij heeft gestaan, al heet het onverharde, noordwestelijke deel tegenwoordig trouwens de Berkenlaan.</p><p>Kijk eens langs die machtige beuken en de kaarsrechte zichtlijnen die zich voor je uitstrekken. Deze statige lanen maken deel uit van de Kasteeltuinwandeling, een lus van ongeveer twee komma twee kilometer om het terrein van Kasteel Drakensteyn. En die brede bomenrijen staan er beslist niet toevallig. Ze herinneren aan de rijke buitenplaatsencultuur die dit deel van de Utrechtse Heuvelrug eeuwenlang heeft bepaald.</p><p>De mens plantte hier destijds de kaarsrechte, voorname lijnen om het landschap naar zijn hand te zetten, en het bos heeft die structuur door de eeuwen heen overgenomen. Tussen die monumentale lanen door zie je nu het jongere bos van de boswachterij opgroeien. Het is een prachtig contrast: de strenge, historische grandeur van de buitenplaatsen verweven met de natuur die langzaam haar eigen gang weer gaat. Een perfecte plek om even rustig onder het bladerdek door te stappen en die eeuwenoude sfeer in je op te nemen.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 03</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/03.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://www.staatsbosbeheer.nl/routes/utrechtse-heuvelrug/wandelroute-stulp" target="_blank" rel="noopener">Staatsbosbeheer</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-4">
+      <div class="rt-as"><span class="rt-nr">04</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">História · 1,2 km</div>
+        <h3>De Kuil van Drakensteyn</h3>
+        <p>Als je hier door het lommerrijke groen stapt, denk je al snel aan een puur natuurlijk landschap. Maar net als bij die statige lanen die we zojuist zagen, heeft de mens ook hier vlakbij flink ingegrepen. Op zo&#x27;n zestig meter afstand ligt de Kuil van Drakensteyn. Tegenwoordig is het een dagrecreatieterrein van Staatsbosbeheer, een officieel Toeristisch Overstappunt met een parkeerplaats en paviljoen Buiten in de Kuil. En sinds negentienhonderdvijfentachtig viert het dorp hier ieder jaar het Houthakkersfeest.</p><p>Maar de oorsprong van die enorme kuil? Dat is pure geschiedenis. Rond negentienhonderdzestig liet freule Diana Bosch van Drakestein hier namelijk op grote schaal zand afgraven. Dat zand ging rechtstreeks naar een tijdelijke betonsteenfabriek in de openlucht, midden in het bos. Moet je nagaan: er stond daar gewoon een Zwitserse trilpers met een transportband van wel honderdvijftig meter lang. Elke vijftien seconden perste dat gevaarte maar liefst tweeënveertig betonstenen uit de Utrechtse Heuvelrug.</p><p>En het had nog veel ingrijpender kunnen aflopen. Er lag destijds een plan om het Pluismeer af te graven tot een diepe plas van maar liefst zes en een halve meter, compleet met plannen voor een heuse autorenbaan. Gelukkig ging dat hele spektakel niet door. Deze kuil ontstond dus eigenlijk omdat het Pluismeer werd gered. Een bijzonder stukje historie onder onze voeten — en later op de wandeling komen we bij datzelfde Pluismeer nog langs.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 04</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/04.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://www.delpher.nl/nl/kranten/view?identifier=MMGAGM01:234874043:mpeg21:a00045&coll=ddd" target="_blank" rel="noopener">De Gooi- en Eemlander, 23 mei 1960 (Delpher)</a> · <a href="https://www.buitenindekuil.nl/over-buiten/" target="_blank" rel="noopener">Buiten in de Kuil</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-5">
+      <div class="rt-as"><span class="rt-nr">05</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">História · 1,9 km</div>
+        <h3>Kasteel Drakensteyn</h3>
+        <p>Achter het dichte groen van de bomen hier ligt een plek die doordrenkt is van geschiedenis: Kasteel Drakensteyn. Je kunt het vanaf het pad meestal niet zien liggen, want het is privéterrein.</p><p>Die naam Drakensteyn duikt al heel vroeg op in de archieven. In dertienhonderdzestig wordt het voor het eerst genoemd als hofstede van Werner van Drakenborg. Maar het markante kasteel zoals het er nu staat, stamt uit zestienhonderdveertig. Het is een volkomen symmetrisch, achthoekig huis, helemaal omringd door een slotgracht. Gerard van Reede gaf er destijds de opdracht voor — dezelfde man die later het hele dorp Lage Vuursche zou stichten. Er wordt gezegd dat de beroemde bouwmeester Jacob van Campen er mogelijk aan heeft meegewerkt, al is dat nooit helemaal zeker geworden.</p><p>Vanaf achttienhonderdzeven was het kasteel anderhalve eeuw in handen van de familie Bosch van Drakestein — jawel, dezelfde familie als van freule Diana, waar we het zojuist over hadden. In negentienhonderdnegenenvijftig kocht prinses Beatrix het vervallen kasteel over van Frederik Lodewijk Bosch van Drakestein. Ze liet het grondig restaureren en trok er in negentienhonderddrieënzestig in. Na haar huwelijk in negentienhonderdzesenzestig woonde ze er met prins Claus, en hun drie zonen — onder wie koning Willem-Alexander — groeiden hier tussen de bomen op, tot het gezin in negentienhonderdeenentachtig naar Paleis Huis ten Bosch verhuisde.</p><p>Maar het verhaal eindigt daar niet. Op vier februari tweeduizendveertien, na haar aftreden, keerde prinses Beatrix terug naar haar geliefde Drakensteyn, waar ze nu weer woont. Toen ze op eenendertig januari tweeduizendachttien tachtig werd, kwamen dorpsbewoners en bezoekers de hele dag door bloemen bij het hek leggen. Een bijzonder historisch toevluchtsoord, zo vlak naast ons pad.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 05</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/05.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://www.canonvannederland.nl/nl/utrecht/eemland/paleis-soestdijk/verdieping/drakensteyn" target="_blank" rel="noopener">Canon van Nederland</a> · <a href="https://www.koninklijkhuis.nl/actueel/nieuws/2014/02/04/prinses-beatrix-verhuisd-naar-kasteel-drakensteyn" target="_blank" rel="noopener">Het Koninklijk Huis</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-6">
+      <div class="rt-as"><span class="rt-nr">06</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Pessoas · 2,2 km</div>
+        <h3>Het dorp en de Stulpkerk</h3>
+        <p>We lopen nu echt weer het dorp Lage Vuursche in, en een klein stukje het dorp in, aan de Hoge Vuurseweg, vind je een monument dat diepe historische wortels heeft: de Stulpkerk. Als je wilt, kun je er zo even naartoe lopen.</p><p>De oorsprong van deze plek brengt ons eeuwen terug in de Utrechtse geschiedenis. De kerk dankt haar naam aan boerderij De Stulp, richting de heide. Daar, in de schuur van die boerderij, werd op vijf juli zestienhonderdzevenenvijftig de allereerste dienst gehouden. Het kerkje zelf, kruisvormig en in traditioneel gotische vormen, verrees in zestienhonderdachtenvijftig en werd een jaar later in gebruik genomen. In de muren zitten vermoedelijk hergebruikte kloostermoppen uit een afgebroken Utrechts klooster. Een tastbaar stukje middeleeuws Utrecht, gewoon hier in het metselwerk.</p><p>Binnen staat de befaamde koninginnebank met een eigen buitendeur. Naar overlevering namen vier opeenvolgende vorstinnen hier plaats: Emma, Wilhelmina, Juliana en tot negentienhonderdeenentachtig ook Beatrix, over wie we het net al hadden.</p><p>En de band met de koninklijke familie bleef. Op vrijdag zestien augustus tweeduizenddertien werd prins Friso hier begraven. Een intieme stoet van zo&#x27;n zeventig mensen liep vanaf Kasteel Drakensteyn hierheen; koning Willem-Alexander, prins Constantijn en vier vrienden droegen de kist. Volgens royaltykenners was het historisch, want niet eerder werd een familielid begraven in plaats van bijgezet in Delft. Beatrix schonk circa vierhonderd vierkante meter grond om de begraafplaats uit te breiden. Zo woont ze sinds haar terugkeer heel dicht bij haar zoon.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 06</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/06.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://monumentenregister.cultureelerfgoed.nl/monumenten/8561" target="_blank" rel="noopener">Monumentenregister RCE · nr. 8561</a> · <a href="https://nos.nl/artikel/541014-friso-begraven-in-lage-vuursche" target="_blank" rel="noopener">NOS</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-7">
+      <div class="rt-as"><span class="rt-nr">07</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Natureza · 2,8 km</div>
+        <h3>Het werkbos</h3>
+        <p>Terwijl je hier verder wandelt, merk je misschien dat de sfeer verandert. We laten de verhalen over de koninklijke geschiedenis en Drakensteyn even achter ons en stappen een heel ander verleden binnen. Want het bos waar je nu doorheen loopt lijkt misschien puur natuur, maar schijn bedriegt.</p><p>Dit is namelijk geen oerbos. Het is een aangeplant productiebos, een werkbos, dat ooit op schrale heide- en zandgrond werd aangelegd. Kijk maar eens goed om je heen: veel van die grove dennen en het andere naaldhout staan in opvallend kaarsrechte vakken. Dat gebeurde onder meer in de zware crisisjaren dertig. Het hout dat hier groeide had een heel specifiek, historisch doel: het diende onder meer als stuthout voor de diepe mijngangen in Limburg. Hout van hier hield honderden kilometers zuidelijker mijngangen overeind.</p><p>En het blijft een werkend landschap. Staatsbosbeheer oogst hier nog steeds hout, al is het altijd minder dan er bijgroeit. Het gebied is verdeeld in werkblokken die eens in de vijf jaar aan de beurt komen. Als je goed kijkt, zie je op sommige stammen gekleurde blesmarkeringen staan.</p><p>Toch schrijft de natuur ook haar eigen, soms harde geschiedenis. In tweeduizendnegentien sloeg de letterzetter toe, een schorskever, na een periode van extreme droogte. Honderden lariksen en fijnsparren stierven af. Maar op een kaalgevallen stuk van drieënhalve hectare zijn inmiddels jonge linden en eiken aangeplant. Het volgende hoofdstuk van dit bos groeit alweer geruisloos omhoog.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 07</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/07.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://nl.wikipedia.org/wiki/Boswachterij_De_Vuursche" target="_blank" rel="noopener">Wikipedia — Boswachterij De Vuursche</a> · <a href="https://www.buitenfonds.nl/crowdfunding/projecten/project/bosaanplant_lage_vuursche" target="_blank" rel="noopener">Buitenfonds/Staatsbosbeheer</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-8">
+      <div class="rt-as"><span class="rt-nr">08</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">História · 3,0 km</div>
+        <h3>De grafheuvels op de Stulpse heide</h3>
+        <p>We hadden het net over de bomen die hier groeien en verdwijnen, maar als je nu om je heen kijkt, sta je oog in oog met een veel diepere tijdslaag. Hier vlakbij, direct langs het pad op deze heide, liggen glooiingen in het landschap die geen toeval zijn. Het zijn grafheuvels.</p><p>Al vroeg werden ze gemarkeerd door de toenmalige Rijksdienst voor Oudheidkundig Bodemonderzoek. En moet je horen: in negentienhonderdzevenentwintig zette de beroemde archeoloog Albert van Giffen hier zijn schop in de aarde. Wat hij aantrof, waren bijzettingen uit het Laat-Neolithicum en de Vroege Bronstijd. We praten over vier- tot vijfduizend jaar geleden — duizenden jaren voordat er over deze streek ook maar één woord op papier stond. Deze heuvels zijn de enige vertellers uit die tijd.</p><p>In een van die heuvels deed Van Giffen een buitengewone ontdekking: een crematie-urn van een tot dan toe volstrekt onbekend type. Hij vernoemde die vondst direct naar deze omgeving: het Drakenstein-aardewerk. Vandaag de dag is dat nog altijd een heus begrip in de Nederlandse archeologie. Dit zijn werkelijk de alleroudste zichtbare menselijke sporen van de hele wandeling. Ouder dan welk kasteel, klooster of dorp hier in de streek dan ook. Terwijl de heide zachtjes meebeweegt met de wind, loop je even letterlijk langs de allereerste bewoners van de Utrechtse Heuvelrug.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 08</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/08.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://www.geopark-heuvelrug.nl/wp-content/uploads/Geopad-102-boekje-Heide-van-de-Stulp-bij-Lage-Vuursche.pdf" target="_blank" rel="noopener">Geopad 102 — Telluris/Geopark Heuvelrug</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-9">
+      <div class="rt-as"><span class="rt-nr">09</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Natureza · 3,5 km</div>
+        <h3>De Stulpse heide</h3>
+        <p>Kijk, het landschap opent zich: dit is De Stulpse heide. We hadden het net al over die duizenden jaren oude sporen in het landschap, maar moet je horen: ook de grond waar je nu zó dicht langs loopt, vertelt een heel eigen historisch verhaal.</p><p>Het gebied beslaat zo&#x27;n vijftig hectare open heide, al verschillen de bronnen over het precieze aantal. De naam zelf gaat al ontzettend ver terug: De Stulp wordt al in de veertiende eeuw genoemd. En een &#x27;stulp&#x27;, tja, dat is vermoedelijk een oud woord voor een eenvoudige hut of een klein boerderijtje.</p><p>Wat je hier zo meteen ervaart aan reliëf — die gekke steile klifjes, plateautjes en laagtes — is niet puur natuur. Het is gevormd door eeuwenlang menselijk boerengebruik. Eeuwenlang staken boeren hier plaggen voor in de potstal. Daardoor kwam het kale zand bloot te liggen en kreeg de wind vrij spel om het landschap letterlijk om te blazen. Maar er zit een verrassing aan dit stukje geschiedenis. Rond negentienhonderd was deze heide namelijk volledig dichtgegroeid met bos. Het open heidelandschap dat er nu ligt, is een bewuste herschepping uit het einde van de twintigste eeuw. Ze hebben toen het bos gekapt, de grond geplagd en dieren ingezet om het open te houden. Sinds eind april tweeduizendzesentwintig grazen er zes Hereford-ossen om het oprukkende pijpenstrootje, een vergrassingsgras, terug te dringen. En iets verderop, rond het Pluismeer, doen witte Charolais-koeien datzelfde werk. Zo blijft deze herstelde geschiedenis bewaard.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 09</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/09.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://nl.wikipedia.org/wiki/De_Stulp" target="_blank" rel="noopener">Wikipedia — De Stulp</a> · <a href="https://www.staatsbosbeheer.nl/wat-we-doen/nieuws/2026/04/herefords-op-de-stulp" target="_blank" rel="noopener">Staatsbosbeheer</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-10">
+      <div class="rt-as"><span class="rt-nr">10</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Natureza · 3,7 km</div>
+        <h3>Het Pluismeer</h3>
+        <p>We hadden het daarnet al even over de grazers hier in de buurt, en kijk, hier vlakbij ligt het Pluismeer. Een verstild stukje geschiedenis van de Utrechtse Heuvelrug.</p><p>Over het ontstaan lopen de meningen uiteen. Volgens de geologen is het een door de wind uitgeblazen kom in het stuifzandreliëf, al vermoeden anderen dat turfwinning een rol heeft gespeeld. Het water dat erin staat, is puur regenwater. De naam dankt het meer waarschijnlijk aan het veenpluis, of wollegras, dat in het voorjaar met zachte, witte pluizen langs de oever bloeit. Maar weet je... dit ven had er vandaag de dag helemaal niet meer hoeven zijn. Rond negentienhonderdzestig lag er namelijk een drastisch plan om het Pluismeer volledig af te graven tot een diepe recreatieplas van zes en een halve meter diep — hetzelfde plan waar elders op de route de Kuil van overbleef. Gelukkig werd het ven gered.</p><p>In negentienzesennegentig is het water grondig geschoond. Het voedselrijke slib werd verwijderd, waardoor zeldzame vennatuur weer een kans kreeg: denk aan zonnedauw en de klokjesgentiaan. Je kunt niet helemaal om het water heen lopen, want het is een beschermd, afgesloten natuurgebied, maar aan onze route staat een vogelkijkscherm.</p><p>&#x27;s Zomers scheren er talloze libellen over het wateroppervlak terwijl boomvalken en buizerds jagen. En in heel strenge winters gebeurt er iets moois: dan stelt Staatsbosbeheer het gebied tijdelijk open, en verandert dit eeuwenoude ven voor even in een schaatsbaan.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 10</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/10.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://www.geopark-heuvelrug.nl/onderbouwing-pluismeer-stulp-hoge-erf/" target="_blank" rel="noopener">Geopark Heuvelrug Gooi en Vecht</a> · <a href="https://www.rtvutrecht.nl/nieuws/417525/steeds-drukker-op-pluismeer-bij-lage-vuursche" target="_blank" rel="noopener">RTV Utrecht</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-11">
+      <div class="rt-as"><span class="rt-nr">11</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">História · 4,3 km</div>
+        <h3>De Hessenweg</h3>
+        <p>Aan de oostkant van de heide, een paar honderd meter van dit pad, ligt een bijzonder stukje geschiedenis verscholen in het landschap: een onverharde zandweg met de naam Hessenweg. Hij loopt van achter Paleis Soestdijk via De Zevenlinden helemaal door naar de oude weg tussen Baarn en Hilversum.</p><p>En de naam van zo&#x27;n weg vertelt een fascinerend verhaal. Hessenwegen waren namelijk van oudsher handelsroutes van Duitse voerlieden, de zogeheten hessen, vernoemd naar de streek Hessen rond Kassel. Zij reden met gigantische, zware karren die getrokken werden door vier tot wel twintig paarden. Hun karren hadden een spoorbreedte van honderdzevenenvijftig tot honderddrieënzeventig centimeter, terwijl de Nederlandse standaard slechts honderdachtentwintig centimeter was. Ze pasten simpelweg niet in de gewone karrensporen. Daarom liepen die routes bewust met een grote boog om dorpen, ingesleten wegen en tolwegen heen, dwars door de woeste grond.</p><p>Maar of over déze specifieke Hessenweg ooit echte hessenkarren hebben gereden? Dat is omstreden. Er is namelijk nog een tweede verklaring voor de naam, en die is opvallend goed gedocumenteerd. Het verhaal gaat over de Hessische grenadier Christoffel Pullmann, die leefde van circa zeventienhonderdnegenenvijftig tot zeventienhonderdzevenentachtig. Hij diende hier in de buurt en kwam hier ook om het leven.</p><p>Zo blijft de naam van dit zandpad een prachtig historisch raadsel met twee mogelijke antwoorden, die tot op de dag van vandaag vredig naast elkaar bestaan.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 11</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/11.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://www.leestekensvanhetlandschap.nl/hessenweg" target="_blank" rel="noopener">Leestekens van het Landschap</a> · <a href="https://nl.wikipedia.org/wiki/Christoffel_Pullmann" target="_blank" rel="noopener">Wikipedia — Christoffel Pullmann</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-12">
+      <div class="rt-as"><span class="rt-nr">12</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Pessoas · 5,7 km</div>
+        <h3>De cirkel rond</h3>
+        <p>En zo zijn we, hier vlakbij de recreatiekuil, weer terug bij het beginpunt van de heidelus. De cirkel is rond. Als je erover nadenkt, voel je pas hoe gelaagd dit stukje Utrechtse Heuvelrug werkelijk is. Het landschap dat je net onder je schoenen voelde, is door de eeuwen heen gemaakt, gebruikt en gered.</p><p>Weet je nog hoe het begon? De nonnen die turf wonnen, de noeste boeren die plaggen staken, en Van Reede die met zijn kasteel en dorp een blijvend stempel drukte. Later groef de freule de kuil, herstelden toegewijde boswachters het bos en de heide, en vond zelfs een koningin hier haar thuis.</p><p>Het dorpje zelf ligt op een paar minuten lopen verderop. Wat ooit begon als een bescheiden plek van slechts vier huisjes, groeide uit tot het beroemde pannenkoekendorp. Die traditie danken we aan Cornelia Seldenrijk, die leefde van achttienhonderdvierenvijftig tot negentienhonderdveertien. Als dochter van de dorpsbakker begon zij een herberg, die nu nog voortleeft als restaurant De Lage Vuursche aan de Dorpsstraat. Vandaag de dag telt het dorp vijf à zes restaurants, voornamelijk voor pannenkoeken. Het contrast is bijna niet voor te stellen: zo&#x27;n driehonderd vaste inwoners, tegenover ruim anderhalf miljoen bezoekers per jaar.</p><p>Als je straks door de Dorpsstraat loopt, kijk dan eens naar nummer tweeëntwintig. Daar dragen de muurankers trots het jaartal zeventienhonderdzesenzestig. Het dorp draagt zijn geschiedenis letterlijk op de gevel.</p><p>Het was me een waar genoegen om met je mee te lopen. Want onthoud maar: niet de bestemming, maar de reis maakt ons wijs.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 12</span>
+        <audio controls preload="none" src="/audio/routes/drakensteyn/12.mp3"></audio></div>
+        <div class="rt-bron">Fontes: <a href="https://oud-utrecht.nl/images/pdf-bestanden/Bijlagen/TSOU-2012-02-Lage%20Vuursche.pdf" target="_blank" rel="noopener">Tijdschrift Oud-Utrecht (2012)</a> · <a href="https://www.rtvutrecht.nl/nieuws/3760039/zo-werd-lage-vuursche-de-pannenkoekenhoofdstad-althans-zo-noemen-ze-het-zelf" target="_blank" rel="noopener">RTV Utrecht</a></div>
+      </div>
+    </article>
+    <p><a class="text-link" href="/pt/routes/">← Todas as rotas de áudio</a></p>
+  </div></section>
+  <script src="/leaflet.js"></script>
+  <script src="/routes-data/drakensteyn-kaart.js"></script>
+  <script src="/vectorkaart.js"></script>
+  <script>
+  (function() {
+    var L = window.L;
+    if (!L || !window.KAARTDATA || !window.bouwVectorKaart) return;
+    var kaartEl = document.getElementById('kaart');
+    function initKaart() {
+      if (kaartEl.clientWidth === 0) { setTimeout(initKaart, 150); return; }
+      var kaart = bouwVectorKaart(L, kaartEl);
+      var haltes = [{"nr": 1, "naam": "Welkom in Lage Vuursche", "lat": 52.178435, "lng": 5.231123}, {"nr": 2, "naam": "Het Nonnenland", "lat": 52.1789, "lng": 5.235044}, {"nr": 3, "naam": "De Stulpselaan en de lanen", "lat": 52.181973, "lng": 5.235019}, {"nr": 4, "naam": "De Kuil van Drakensteyn", "lat": 52.183652, "lng": 5.234658}, {"nr": 5, "naam": "Kasteel Drakensteyn", "lat": 52.180206, "lng": 5.232333}, {"nr": 6, "naam": "Het dorp en de Stulpkerk", "lat": 52.178574, "lng": 5.231064}, {"nr": 7, "naam": "Het werkbos", "lat": 52.186634, "lng": 5.240655}, {"nr": 8, "naam": "De grafheuvels op de Stulpse heide", "lat": 52.188283, "lng": 5.243493}, {"nr": 9, "naam": "De Stulpse heide", "lat": 52.189506, "lng": 5.247685}, {"nr": 10, "naam": "Het Pluismeer", "lat": 52.187762, "lng": 5.248619}, {"nr": 11, "naam": "De Hessenweg", "lat": 52.183591, "lng": 5.244923}, {"nr": 12, "naam": "De cirkel rond", "lat": 52.183542, "lng": 5.235046}];
+      haltes.forEach(function(p) {
+        var icoon = L.divIcon({ className: '',
+          html: '<div style="background:#173B3A;color:#D8A85F;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Newsreader,serif;font-weight:500;font-size:13px;border:2px solid #FAF6ED;box-shadow:0 2px 6px rgba(0,0,0,.3)">' + p.nr + '</div>',
+          iconSize: [26, 26], iconAnchor: [13, 13] });
+        L.marker([p.lat, p.lng], { icon: icoon }).addTo(kaart)
+          .bindPopup('<b>' + p.naam + '</b>')
+          .on('click', function() {
+            var el = document.getElementById('stop-' + p.nr);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+      });
+      var lijnen = [[[52.178435, 5.231123], [52.177593, 5.231488], [52.177616, 5.231624], [52.177932, 5.234862], [52.177983, 5.235054], [52.178036, 5.235118], [52.178094, 5.235165], [52.178165, 5.23519], [52.178238, 5.235199], [52.178476, 5.235156], [52.178896, 5.235049], [52.178947, 5.234982], [52.179007, 5.234937], [52.179084, 5.234315], [52.179103, 5.234255], [52.181587, 5.232972], [52.181629, 5.233243], [52.181648, 5.233324], [52.181713, 5.233442], [52.181752, 5.233542], [52.181812, 5.233781], [52.18202, 5.235381], [52.182052, 5.235456], [52.18214, 5.23549], [52.182191, 5.235548], [52.182204, 5.235606], [52.182226, 5.235696], [52.183642, 5.235055], [52.183643, 5.234962], [52.183653, 5.234623], [52.183605, 5.23456], [52.183372, 5.234367], [52.1832, 5.233355], [52.183171, 5.23324], [52.183122, 5.233114], [52.183058, 5.233009], [52.18299, 5.232931], [52.182661, 5.232612], [52.182115, 5.232053], [52.18175, 5.231697], [52.181317, 5.231326], [52.1813, 5.231266], [52.18125, 5.231267], [52.181162, 5.231345], [52.181102, 5.231421], [52.181, 5.231602], [52.180959, 5.231911], [52.180919, 5.232011], [52.180695, 5.232354], [52.180607, 5.232508], [52.18046, 5.233018], [52.180401, 5.233076], [52.18013, 5.233173], [52.17997, 5.23325], [52.179774, 5.233427], [52.179805, 5.233319], [52.179849, 5.233222], [52.179949, 5.233063], [52.180101, 5.232761], [52.180187, 5.232494], [52.180206, 5.232391], [52.180206, 5.232285], [52.180056, 5.231242], [52.180043, 5.231178], [52.180016, 5.231112], [52.179904, 5.230946], [52.17985, 5.230518], [52.178435, 5.231123]], [[52.183611, 5.235112], [52.183992, 5.237351], [52.184056, 5.237595], [52.184157, 5.237675], [52.184536, 5.237941], [52.184678, 5.238091], [52.184828, 5.238485], [52.184979, 5.238926], [52.185129, 5.239203], [52.185301, 5.239691], [52.185422, 5.240062], [52.185509, 5.240122], [52.185972, 5.240384], [52.186237, 5.240561], [52.186379, 5.240604], [52.186722, 5.240673], [52.186829, 5.240756], [52.187058, 5.241137], [52.187286, 5.241521], [52.187342, 5.241704], [52.187458, 5.242028], [52.18753, 5.242169], [52.187637, 5.242332], [52.18775, 5.242492], [52.187886, 5.242769], [52.188008, 5.243013], [52.188086, 5.24313], [52.188137, 5.2432], [52.188201, 5.243374], [52.18828, 5.243491], [52.188366, 5.243571], [52.188473, 5.243664], [52.188558, 5.243824], [52.188601, 5.243931], [52.188745, 5.244011], [52.188959, 5.244137], [52.189086, 5.244254], [52.189152, 5.244391], [52.189231, 5.244578], [52.189367, 5.244902], [52.189474, 5.245169], [52.189602, 5.245329], [52.189787, 5.245563], [52.189917, 5.245736], [52.190018, 5.24599], [52.190073, 5.246257], [52.190082, 5.246455], [52.190039, 5.246666], [52.189967, 5.246826], [52.18984, 5.24693], [52.18969, 5.246978], [52.189534, 5.247025], [52.189476, 5.247072], [52.189447, 5.247152], [52.189448, 5.24735], [52.189512, 5.247721], [52.189506, 5.247851], [52.189426, 5.247965], [52.189206, 5.248093], [52.189056, 5.24821], [52.188978, 5.248351], [52.1889, 5.248525], [52.188779, 5.248653], [52.188672, 5.248687], [52.188508, 5.2487], [52.1883, 5.248678], [52.188179, 5.248668], [52.188101, 5.248668], [52.18798, 5.248749], [52.187836, 5.248749], [52.187795, 5.248679], [52.187687, 5.248482], [52.187558, 5.248342], [52.187416, 5.248276], [52.187286, 5.248216], [52.187165, 5.248099], [52.186994, 5.247949], [52.186809, 5.24787], [52.186673, 5.247823], [52.186573, 5.247814], [52.186488, 5.247837], [52.186353, 5.247965], [52.186246, 5.248082], [52.18616, 5.248149], [52.186053, 5.24815], [52.185938, 5.24815], [52.185817, 5.248197], [52.185738, 5.248221], [52.185652, 5.248348], [52.185568, 5.248479], [52.185511, 5.248466], [52.185461, 5.248349], [52.185403, 5.248245], [52.185288, 5.248175], [52.185146, 5.248049], [52.184961, 5.247782], [52.184782, 5.247575], [52.184675, 5.247355], [52.184481, 5.247191], [52.184331, 5.246867], [52.184096, 5.246427], [52.183911, 5.24615], [52.183752, 5.246047], [52.183717, 5.24594], [52.183731, 5.245535], [52.183688, 5.245221], [52.183531, 5.244736], [52.183487, 5.244539], [52.183415, 5.244259], [52.183207, 5.243982], [52.183143, 5.243878], [52.183073, 5.243644], [52.18303, 5.243484], [52.182964, 5.243297], [52.18285, 5.242926], [52.182743, 5.242636], [52.182627, 5.242348], [52.182578, 5.242175], [52.1825, 5.241931], [52.182364, 5.241757], [52.182222, 5.241571], [52.182112, 5.241444], [52.182063, 5.241233], [52.182071, 5.240969], [52.182019, 5.240712], [52.182027, 5.240397], [52.182012, 5.239913], [52.181954, 5.239645], [52.18184, 5.239204], [52.181774, 5.239017], [52.181612, 5.23866], [52.181546, 5.238486], [52.18149, 5.238252], [52.181467, 5.238032], [52.181516, 5.237674], [52.181495, 5.2375], [52.180536, 5.238041], [52.180345, 5.237904], [52.180279, 5.237776], [52.180087, 5.237951], [52.179894, 5.238104], [52.179824, 5.238183], [52.179818, 5.237952], [52.179733, 5.237648], [52.179615, 5.237339], [52.179406, 5.236948], [52.18039, 5.236541], [52.181286, 5.236039], [52.183597, 5.235022]]];
+      lijnen.forEach(function(l) { L.polyline(l, { color: '#FAF6ED', weight: 7, opacity: 0.75 }).addTo(kaart); });
+      lijnen.forEach(function(l) { L.polyline(l, { color: '#D96552', weight: 4, opacity: 0.95 }).addTo(kaart); });
+      setTimeout(function() { kaart.invalidateSize(); }, 300);
+    }
+    initKaart();
+  })();
+  </script>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/pt/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/pt/roadmap.html">Roadmap</a>
+      <a href="/pt/stories/">Histórias</a>
+      <a href="/pt/privacy.html">Privacidade</a>
+      <a href="mailto:nimco@nentjes.nl">Contato</a>
+    </div>
+  </div>
+  <p class="footer-family">Não o destino — a viagem é o que nos torna sábios.</p>
+  <p class="footer-credit">Criado por Roel Nentjes, com a Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+<link rel="stylesheet" href="/leaflet.css">
+
+</body>
+</html>

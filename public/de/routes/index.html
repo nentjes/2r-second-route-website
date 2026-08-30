@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hörrouten — 2R (Second Route)</title>
+<meta name="description" content="Jede niederländische Provinz bekommt mindestens eine Wanderroute als lebendige Hörgeschichte: offizielle Route, eigene Karte, Kapitel am genau richtig">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Hörrouten — 2R (Second Route)">
+<meta property="og:description" content="Jede niederländische Provinz bekommt mindestens eine Wanderroute als lebendige Hörgeschichte: offizielle Route, eigene Karte, Kapitel am genau richtig">
+<meta property="og:image" content="/og.jpg">
+<link rel="canonical" href="https://2route.nl/de/routes/">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/routes/">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/routes/">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/routes/">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/routes/">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/routes/">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/routes/">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/routes/">
+<meta property="og:url" content="https://2route.nl/de/routes/">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/de/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/de/">Produkt</a>
+        <a href="/de/zo-werkt-het.html">So geht's</a>
+        <a href="/de/routes/" class="active">Hörrouten</a>
+        <a href="/de/roadmap.html">Roadmap</a>
+        <a href="/de/stories/">Geschichten</a>
+        <a href="/de/privacy.html">Datenschutz</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/" class="active">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">2R testen →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/de/">Produkt</a>
+      <a href="/de/zo-werkt-het.html">So geht's</a>
+      <a href="/de/routes/" class="active">Hörrouten</a>
+      <a href="/de/roadmap.html">Roadmap</a>
+      <a href="/de/stories/">Geschichten</a>
+      <a href="/de/privacy.html">Datenschutz</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/" class="active">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">2R testen →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="routes-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Hörrouten</p>
+      <h1>Zwölf Provinzen,<br>zwölf Hörwanderungen.</h1>
+      <p class="routes-lede">Jede niederländische Provinz bekommt mindestens eine Wanderroute als lebendige Hörgeschichte: offizielle Route, eigene Karte, Kapitel am genau richtigen Ort. Utrecht ist live — der Rest ist in Produktion.</p>
+    </div>
+  </section>
+  <section class="block"><div class="wrap">
+    <div class="prov-grid">
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Groningen</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Friesland</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Drenthe</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Overijssel</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Flevoland</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Gelderland</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <a class="prov-kaart live" href="/de/routes/drakensteyn/">
+        <span class="prov-naam">Utrecht</span>
+        <span class="prov-route">Boswachterspad Stulp en Kasteeltuin</span>
+        <span class="prov-meta">5,7 km · 12 Kapitel</span>
+        <span class="prov-cta">Route anhören →</span>
+      </a>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Noord-Holland</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Zuid-Holland</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Zeeland</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Noord-Brabant</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+      <div class="prov-kaart stil">
+        <span class="prov-naam">Limburg</span>
+        <span class="prov-status">In Produktion</span>
+      </div>
+    </div>
+  </div></section>
+  <section class="block routes-kwaliteit"><div class="wrap">
+    <h2>So entsteht Qualität</h2>
+    <p>Jedes Routenbuch durchläuft vor der Veröffentlichung dieselben fünf Schritte:</p>
+    <ol class="kwaliteit-lijst"><li>Verlässliche lokale Quellen — jeder Fakt mit URL, doppelt geprüft</li><li>Eine tragende Erzähllinie von Anfang bis Ende</li><li>Kapitel im Wandertempo: alle vier- bis siebenhundert Meter</li><li>Menschliche Redaktion, jeder Eingriff protokolliert</li><li>Eine warme Erzählstimme</li></ol>
+  </div></section>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/de/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/de/roadmap.html">Roadmap</a>
+      <a href="/de/stories/">Geschichten</a>
+      <a href="/de/privacy.html">Datenschutz</a>
+      <a href="mailto:nimco@nentjes.nl">Kontakt</a>
+    </div>
+  </div>
+  <p class="footer-family">Nicht das Ziel — die Reise macht uns weise.</p>
+  <p class="footer-credit">Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+
+
+</body>
+</html>
