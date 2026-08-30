@@ -261,7 +261,10 @@ section.block { padding: 62px 0; }
 .route-line i:nth-child(2) { left: 52%; top: 33px; }
 .route-line i:nth-child(3) { right: 2%; top: 23px; }
 .journey-narrative { padding: 110px clamp(28px, 6vw, 100px) 100px 28px; }
-.journey-narrative .section-label { color: #d5b978; margin-bottom: 30vh; }
+.journey-narrative .section-label { color: #d5b978; margin-bottom: 18px; }
+.journey-intro { min-height: 52vh; max-width: 540px; display: flex; flex-direction: column; justify-content: center; padding-bottom: 8vh; }
+.journey-intro h2 { color: var(--paper-light); font-size: clamp(36px, 4.8vw, 66px); max-width: 12ch; margin-bottom: 24px; }
+.journey-intro p { color: rgba(242,235,221,.76); font-size: 17px; line-height: 1.8; max-width: 48ch; }
 .journey-step { min-height: 54vh; max-width: 500px; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid rgba(242,235,221,0.16); }
 .journey-step > span { font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em; color: #d5b978; }
 .journey-step h3 { font-size: clamp(28px, 3.4vw, 50px); color: var(--paper-light); font-weight: 400; line-height: 1.08; margin: 18px 0; }
@@ -271,7 +274,8 @@ section.block { padding: 62px 0; }
   .journey-visual { position: relative; height: 70vh; }
   .window-frame { inset: 0 16px 60px 0; }
   .journey-narrative { padding: 60px 24px 70px; }
-  .journey-narrative .section-label { margin-bottom: 60px; }
+  .journey-intro { min-height: 48vh; padding-bottom: 54px; }
+  .journey-intro h2 { font-size: clamp(36px, 10vw, 52px); }
   .journey-step { min-height: 40vh; }
 }
 

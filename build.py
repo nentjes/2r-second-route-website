@@ -327,6 +327,9 @@ HOME_20 = {
     book_cta='Ontdek luisterroutes',
     modes_label='Vier reistempo’s', modes_h2='Ieder tempo ziet een andere wereld.',
     modes_p='2R vertelt niet simpelweg vaker of minder vaak. De blik, afstand en vertelvorm veranderen mee met de manier waarop je reist.',
+    europe_label='Overal in Europa', europe_h2='De bron is lokaal.<br>Het verhaal reist met je mee.',
+    europe_p='Van een Noors fjord tot de olijfgaarden van Puglia: 2R zoekt naar de verhalen die bij een plek horen — liefst in lokale bronnen — en vertelt ze opnieuw in jouw taal.',
+    europe_route='Europa · levend reisboek', europe_meta='vier streken · vier soorten kennis',
     modes=[
         ('Te voet', 'Dicht op het landschap. Paden, gebouwen en kleine sporen krijgen alle ruimte.'),
         ('Op de fiets', 'Het landschap ontvouwt zich. Dorpen en verhalen verbinden zich onderweg.'),
@@ -354,6 +357,9 @@ HOME_20 = {
     book_cta='Discover listening routes',
     modes_label='Four travelling rhythms', modes_h2='Every pace reveals a different world.',
     modes_p='2R does more than speak more or less often. Its perspective, range and storytelling change with the way you travel.',
+    europe_label='Across Europe', europe_h2='The source is local.<br>The story travels with you.',
+    europe_p='From a Norwegian fjord to the olive groves of Puglia, 2R looks for the stories that belong to a place — preferably in local sources — and retells them in your language.',
+    europe_route='Europe · living travel book', europe_meta='four regions · four kinds of knowledge',
     modes=[
         ('On foot', 'Close to the landscape. Paths, buildings and small traces are given room.'),
         ('By bicycle', 'The landscape unfolds. Villages and stories connect along the way.'),
@@ -381,6 +387,9 @@ HOME_20 = {
     book_cta='Hörrouten entdecken',
     modes_label='Vier Reiserhythmen', modes_h2='Jedes Tempo zeigt eine andere Welt.',
     modes_p='2R erzählt nicht einfach nur häufiger oder seltener. Blick, Entfernung und Erzählform verändern sich mit deiner Reiseart.',
+    europe_label='Überall in Europa', europe_h2='Die Quelle ist lokal.<br>Die Geschichte reist mit dir.',
+    europe_p='Vom norwegischen Fjord bis zu den Olivenhainen Apuliens sucht 2R die Geschichten, die zu einem Ort gehören — vorzugsweise in lokalen Quellen — und erzählt sie in deiner Sprache neu.',
+    europe_route='Europa · lebendiges Reisebuch', europe_meta='vier Regionen · vier Arten von Wissen',
     modes=[
         ('Zu Fuß', 'Ganz nah an der Landschaft. Wege, Gebäude und kleine Spuren bekommen Raum.'),
         ('Mit dem Rad', 'Die Landschaft entfaltet sich. Dörfer und Geschichten verbinden sich unterwegs.'),
@@ -408,6 +417,9 @@ HOME_20 = {
     book_cta="Découvrir les routes d'écoute",
     modes_label='Quatre rythmes de voyage', modes_h2='Chaque rythme révèle un autre monde.',
     modes_p='2R ne se contente pas de parler plus ou moins souvent. Le regard, la distance et la narration évoluent avec votre façon de voyager.',
+    europe_label='Partout en Europe', europe_h2='La source est locale.<br>Le récit voyage avec vous.',
+    europe_p="D'un fjord norvégien aux oliveraies des Pouilles, 2R cherche les histoires propres à chaque lieu — de préférence dans des sources locales — et les raconte dans votre langue.",
+    europe_route='Europe · carnet de voyage vivant', europe_meta='quatre régions · quatre formes de savoir',
     modes=[
         ('À pied', "Au plus près du paysage. Sentiers, bâtiments et petites traces ont tout l'espace nécessaire."),
         ('À vélo', 'Le paysage se déploie. Villages et histoires se relient en chemin.'),
@@ -435,6 +447,9 @@ HOME_20 = {
     book_cta='Descubre rutas sonoras',
     modes_label='Cuatro ritmos de viaje', modes_h2='Cada ritmo revela un mundo diferente.',
     modes_p='2R no se limita a hablar más o menos. La mirada, la distancia y la forma de narrar cambian según cómo viajes.',
+    europe_label='Por toda Europa', europe_h2='La fuente es local.<br>La historia viaja contigo.',
+    europe_p='Desde un fiordo noruego hasta los olivares de Apulia, 2R busca las historias que pertenecen a cada lugar — preferentemente en fuentes locales — y las vuelve a contar en tu idioma.',
+    europe_route='Europa · libro de viaje vivo', europe_meta='cuatro regiones · cuatro formas de conocimiento',
     modes=[
         ('A pie', 'Muy cerca del paisaje. Senderos, edificios y pequeñas huellas tienen su espacio.'),
         ('En bicicleta', 'El paisaje se despliega. Pueblos e historias se conectan por el camino.'),
@@ -462,6 +477,9 @@ HOME_20 = {
     book_cta='Descubra rotas para ouvir',
     modes_label='Quatro ritmos de viagem', modes_h2='Cada ritmo revela um mundo diferente.',
     modes_p='O 2R não se limita a falar mais ou menos. O olhar, a distância e a narrativa mudam com a forma de viajar.',
+    europe_label='Por toda a Europa', europe_h2='A fonte é local.<br>A história viaja consigo.',
+    europe_p='De um fiorde norueguês aos olivais da Apúlia, o 2R procura as histórias que pertencem a cada lugar — de preferência em fontes locais — e volta a contá-las na sua língua.',
+    europe_route='Europa · livro de viagem vivo', europe_meta='quatro regiões · quatro formas de conhecimento',
     modes=[
         ('A pé', 'Perto da paisagem. Caminhos, edifícios e pequenos vestígios ganham espaço.'),
         ('De bicicleta', 'A paisagem abre-se. Aldeias e histórias ligam-se pelo caminho.'),
@@ -672,40 +690,40 @@ EUROPE_IMAGES = ['europe-north-norway.jpg', 'europe-west-france.jpg', 'europe-ea
 
 EUROPE_STOPS = {
 'nl': [
-    ('Noord · Sognefjord, Noorwegen', '06:50 · Langs het fjord', 'De ochtend begint waar de bergen het water raken.', 'Route vertelt hoe het ijs hier de weg heeft voorbereid — duizenden jaren voordat wij hem konden rijden.'),
-    ('West · Bourgogne, Frankrijk', '13:20 · Na de regen', 'Een abdij verschijnt tussen de platanen.', 'Geen ansichtkaart, maar een dorp dat nog altijd leeft rond stenen die al generaties verhalen bewaren.'),
-    ('Oost · Zuid-Bohemen, Tsjechië', '09:10 · Door de ochtendmist', 'De toren maakt van de horizon een hoofdstuk.', 'De vorm van de spits verraadt een geschiedenis die vanuit Wenen naar deze kleine heuvelstad reisde.'),
-    ('Zuid · Puglia, Italië', '19:12 · Tussen de olijfbomen', 'Het avondlicht brengt iedereen even tot stilte.', 'Dan vertelt Route hoe mensen, steen en bomen hier al eeuwen leren leven met hitte, droogte en elkaar.'),
+    ('Noord · Sognefjord, Noorwegen', 'Landschap · geologie', 'De ochtend begint waar de bergen het water raken.', 'Met Noorse bronnen laat 2R horen hoe het ijs dit landschap vormde — duizenden jaren voordat hier een weg of spoorlijn verscheen.'),
+    ('West · Bourgogne, Frankrijk', 'Erfgoed · dorpsleven', 'Een abdij verschijnt tussen de platanen.', 'Lokale erfgoedbronnen verbinden de oude stenen met het dorp dat er nog altijd omheen leeft. Geen ansichtkaart, maar een plaats met een geheugen.'),
+    ('Oost · Zuid-Bohemen, Tsjechië', 'Architectuur · geschiedenis', 'De toren maakt van de horizon een hoofdstuk.', 'Tsjechische bronnen laten zien hoe bouwstijlen en ideeën vanuit Wenen tot in deze kleine heuvelstad reisden.'),
+    ('Zuid · Puglia, Italië', 'Mensen · landschap', 'Het avondlicht brengt iedereen even tot stilte.', 'Lokale verhalen over olijfbouw laten horen hoe mensen, steen en bomen hier al eeuwen samenleven met hitte en droogte.'),
 ],
 'en': [
-    ('North · Sognefjord, Norway', '06:50 · Along the fjord', 'The morning begins where the mountains meet the water.', 'Route tells how the ice shaped this road — thousands of years before we could ever drive it.'),
-    ('West · Burgundy, France', '13:20 · After the rain', 'An abbey appears between the plane trees.', 'Not a postcard, but a village that still lives around stones that have kept stories for generations.'),
-    ('East · South Bohemia, Czechia', '09:10 · Through the morning mist', 'The tower turns the horizon into a chapter.', 'The shape of the spire reveals a history that travelled from Vienna to this small hilltop town.'),
-    ('South · Puglia, Italy', '19:12 · Among the olive trees', 'The evening light brings everyone to a brief stillness.', 'Then Route tells how people, stone and trees have learned to live here for centuries — with heat, drought and each other.'),
+    ('North · Sognefjord, Norway', 'Landscape · geology', 'The morning begins where the mountains meet the water.', 'Drawing on Norwegian sources, 2R reveals how ice shaped this landscape thousands of years before a road or railway appeared.'),
+    ('West · Burgundy, France', 'Heritage · village life', 'An abbey appears between the plane trees.', 'Local heritage sources connect the old stones to the village still living around them. Not a postcard, but a place with a memory.'),
+    ('East · South Bohemia, Czechia', 'Architecture · history', 'The tower turns the horizon into a chapter.', 'Czech sources show how architectural styles and ideas travelled from Vienna to this small hilltop town.'),
+    ('South · Puglia, Italy', 'People · landscape', 'The evening light brings everyone to a brief stillness.', 'Local stories of olive growing reveal how people, stone and trees have lived together here for centuries, with heat and drought.'),
 ],
 'de': [
-    ('Norden · Sognefjord, Norwegen', '06:50 · Entlang des Fjords', 'Der Morgen beginnt dort, wo die Berge das Wasser berühren.', 'Route erzählt, wie das Eis diesen Weg vorbereitet hat — Jahrtausende bevor wir ihn befahren konnten.'),
-    ('Westen · Burgund, Frankreich', '13:20 · Nach dem Regen', 'Eine Abtei erscheint zwischen den Platanen.', 'Keine Postkarte, sondern ein Dorf, das noch immer um Steine herum lebt, die seit Generationen Geschichten bewahren.'),
-    ('Osten · Südböhmen, Tschechien', '09:10 · Durch den Morgennebel', 'Der Turm macht den Horizont zu einem Kapitel.', 'Die Form der Turmspitze verrät eine Geschichte, die von Wien bis in dieses kleine Hügelstädtchen reiste.'),
-    ('Süden · Apulien, Italien', '19:12 · Zwischen den Olivenbäumen', 'Das Abendlicht bringt alle für einen Moment zur Ruhe.', 'Dann erzählt Route, wie Menschen, Stein und Bäume hier seit Jahrhunderten lernen, mit Hitze, Trockenheit und einander zu leben.'),
+    ('Norden · Sognefjord, Norwegen', 'Landschaft · Geologie', 'Der Morgen beginnt dort, wo die Berge das Wasser berühren.', 'Mit norwegischen Quellen zeigt 2R, wie das Eis diese Landschaft formte — Jahrtausende bevor Straße oder Bahn erschienen.'),
+    ('Westen · Burgund, Frankreich', 'Kulturerbe · Dorfleben', 'Eine Abtei erscheint zwischen den Platanen.', 'Lokale Kulturerbe-Quellen verbinden die alten Steine mit dem Dorf, das noch immer um sie herum lebt. Keine Postkarte, sondern ein Ort mit Gedächtnis.'),
+    ('Osten · Südböhmen, Tschechien', 'Architektur · Geschichte', 'Der Turm macht den Horizont zu einem Kapitel.', 'Tschechische Quellen zeigen, wie Baustile und Ideen von Wien bis in dieses kleine Hügelstädtchen reisten.'),
+    ('Süden · Apulien, Italien', 'Menschen · Landschaft', 'Das Abendlicht bringt alle für einen Moment zur Ruhe.', 'Lokale Geschichten vom Olivenanbau erzählen, wie Menschen, Stein und Bäume hier seit Jahrhunderten mit Hitze und Trockenheit leben.'),
 ],
 'fr': [
-    ('Nord · Sognefjord, Norvège', '06 h 50 · Le long du fjord', "Le matin commence là où les montagnes rencontrent l'eau.", "Route raconte comment la glace a façonné cette route — des millénaires avant que nous puissions la parcourir."),
-    ('Ouest · Bourgogne, France', '13 h 20 · Après la pluie', 'Une abbaye apparaît entre les platanes.', "Pas une carte postale, mais un village qui vit encore autour de pierres gardiennes d'histoires depuis des générations."),
-    ('Est · Bohême du Sud, Tchéquie', '09 h 10 · Dans la brume matinale', "La tour transforme l'horizon en chapitre.", "La forme de la flèche trahit une histoire qui a voyagé de Vienne jusqu'à cette petite ville sur la colline."),
-    ('Sud · Pouilles, Italie', '19 h 12 · Entre les oliviers', "La lumière du soir apaise chacun, l'espace d'un instant.", "Route raconte alors comment les habitants, la pierre et les arbres apprennent ici depuis des siècles à vivre avec la chaleur, la sécheresse et les uns les autres."),
+    ('Nord · Sognefjord, Norvège', 'Paysage · géologie', "Le matin commence là où les montagnes rencontrent l'eau.", "À partir de sources norvégiennes, 2R raconte comment la glace a façonné ce paysage, bien avant l'arrivée des routes et du chemin de fer."),
+    ('Ouest · Bourgogne, France', 'Patrimoine · vie du village', 'Une abbaye apparaît entre les platanes.', "Les sources patrimoniales locales relient les vieilles pierres au village qui vit encore autour d'elles. Pas une carte postale, mais un lieu qui a une mémoire."),
+    ('Est · Bohême du Sud, Tchéquie', 'Architecture · histoire', "La tour transforme l'horizon en chapitre.", "Les sources tchèques montrent comment styles architecturaux et idées ont voyagé de Vienne jusqu'à cette petite ville sur la colline."),
+    ('Sud · Pouilles, Italie', 'Habitants · paysage', "La lumière du soir apaise chacun, l'espace d'un instant.", "Les récits locaux sur l'oléiculture racontent comment habitants, pierre et arbres vivent ici depuis des siècles avec la chaleur et la sécheresse."),
 ],
 'es': [
-    ('Norte · Sognefjord, Noruega', '06:50 · A lo largo del fiordo', 'La mañana empieza donde las montañas tocan el agua.', 'Route cuenta cómo el hielo preparó esta carretera —miles de años antes de que pudiéramos recorrerla.'),
-    ('Oeste · Borgoña, Francia', '13:20 · Después de la lluvia', 'Una abadía aparece entre los plátanos.', 'No es una postal, sino un pueblo que aún vive alrededor de piedras que guardan historias desde hace generaciones.'),
-    ('Este · Bohemia del Sur, Chequia', '09:10 · Entre la niebla matinal', 'La torre convierte el horizonte en un capítulo.', 'La forma de la aguja delata una historia que viajó desde Viena hasta esta pequeña ciudad en la colina.'),
-    ('Sur · Apulia, Italia', '19:12 · Entre los olivos', 'La luz del atardecer trae a todos, por un momento, la calma.', 'Entonces Route cuenta cómo las personas, la piedra y los árboles llevan siglos aprendiendo a convivir aquí con el calor, la sequía y los unos con los otros.'),
+    ('Norte · Sognefjord, Noruega', 'Paisaje · geología', 'La mañana empieza donde las montañas tocan el agua.', 'A partir de fuentes noruegas, 2R cuenta cómo el hielo modeló este paisaje miles de años antes de que aparecieran la carretera o el ferrocarril.'),
+    ('Oeste · Borgoña, Francia', 'Patrimonio · vida del pueblo', 'Una abadía aparece entre los plátanos.', 'Las fuentes patrimoniales locales conectan las piedras antiguas con el pueblo que aún vive a su alrededor. No una postal, sino un lugar con memoria.'),
+    ('Este · Bohemia del Sur, Chequia', 'Arquitectura · historia', 'La torre convierte el horizonte en un capítulo.', 'Las fuentes checas muestran cómo los estilos y las ideas viajaron desde Viena hasta esta pequeña ciudad en la colina.'),
+    ('Sur · Apulia, Italia', 'Personas · paisaje', 'La luz del atardecer trae a todos, por un momento, la calma.', 'Los relatos locales sobre el cultivo del olivo cuentan cómo personas, piedra y árboles conviven aquí desde hace siglos con el calor y la sequía.'),
 ],
 'pt': [
-    ('Norte · Sognefjord, Noruega', '06:50 · Ao longo do fiorde', 'A manhã começa onde as montanhas tocam a água.', 'A Route conta como o gelo preparou esta estrada — milhares de anos antes de podermos percorrê-la.'),
-    ('Oeste · Borgonha, França', '13:20 · Depois da chuva', 'Uma abadia aparece entre os plátanos.', 'Não é um cartão-postal, mas uma vila que ainda vive em torno de pedras que guardam histórias há gerações.'),
-    ('Leste · Boêmia do Sul, Tchéquia', '09:10 · Através da névoa da manhã', 'A torre transforma o horizonte num capítulo.', 'A forma da torre revela uma história que viajou de Viena até esta pequena cidade na colina.'),
-    ('Sul · Apúlia, Itália', '19:12 · Entre as oliveiras', 'A luz da tarde traz a todos, por um instante, quietude.', 'Então a Route conta como pessoas, pedra e árvores aprendem aqui há séculos a conviver com o calor, a seca e uns com os outros.'),
+    ('Norte · Sognefjord, Noruega', 'Paisagem · geologia', 'A manhã começa onde as montanhas tocam a água.', 'Com fontes norueguesas, o 2R conta como o gelo moldou esta paisagem milhares de anos antes de surgirem a estrada ou a ferrovia.'),
+    ('Oeste · Borgonha, França', 'Património · vida da aldeia', 'Uma abadia aparece entre os plátanos.', 'Fontes patrimoniais locais ligam as pedras antigas à aldeia que ainda vive ao seu redor. Não um cartão-postal, mas um lugar com memória.'),
+    ('Leste · Boêmia do Sul, Tchéquia', 'Arquitetura · história', 'A torre transforma o horizonte num capítulo.', 'Fontes checas mostram como estilos e ideias viajaram de Viena até esta pequena cidade na colina.'),
+    ('Sul · Apúlia, Itália', 'Pessoas · paisagem', 'A luz da tarde traz a todos, por um instante, quietude.', 'Histórias locais sobre o cultivo da oliveira contam como pessoas, pedra e árvores convivem aqui há séculos com o calor e a seca.'),
 ],
 }
 
@@ -1742,14 +1760,18 @@ def build_home(lang):
         <span class="window-reflection"></span>
       </div>
       <div class="map-card">
-        <span class="lbl">{s['journey_route_label']}</span>
+        <span class="lbl">{h['europe_route']}</span>
         <strong id="journey-region">{first_region_short}</strong>
         <div class="route-line"><i></i><i></i><i></i></div>
-        <span class="lbl">{s['journey_route_meta']}</span>
+        <span class="lbl">{h['europe_meta']}</span>
       </div>
     </div>
     <div class="journey-narrative">
-      <div class="section-label">{s['journey_label']}</div>
+      <div class="journey-intro">
+        <div class="section-label">{h['europe_label']}</div>
+        <h2>{h['europe_h2']}</h2>
+        <p>{h['europe_p']}</p>
+      </div>
       {journey_steps_html}
     </div>
   </section>
