@@ -306,6 +306,175 @@ SITE = {
 }
 
 # ---------------------------------------------------------------------------
+# Website 2.0 — multimodale positionering
+# De hero blijft poëtisch; productuitleg volgt pas in de hoofdstukken eronder.
+# ---------------------------------------------------------------------------
+HOME_20 = {
+'nl': dict(
+    nav_home='Ontdek 2R', nav_partners='Voor routebeheerders', nav_cta='Neem 2R mee →',
+    hero_alt='Twee reizigers wandelen langs een oude Europese stad; verderop staan een fiets, een regionale trein en een landweg voor vier manieren van reizen.',
+    hero_eyebrow='De reisgenoot die de wereld een stem geeft',
+    hero_lede='2R geeft de wereld onderweg een stem. Wandel, fiets, reis met de trein of rijd — en hoor de verhalen achter de plekken die je passeert.',
+    hero_primary='Hoor hoe 2R klinkt', hero_secondary='Ontdek luisterroutes',
+    hero_caption='Te voet, op de fiets, per trein of met de auto · Europa',
+    ways_label='Twee manieren om te luisteren', ways_h2='Laat je verrassen.<br>Of volg het hele verhaal.',
+    ways_p='Soms wil je zonder plan op pad. Soms wil je een route die van het eerste tot het laatste hoofdstuk klopt. 2R beweegt met beide reizen mee.',
+    free_label='01 · Vrij op pad', free_h='De wereld vertelt waar je bent.',
+    free_p='Zet 2R aan en luister naar wat zich om je heen aandient. De verteller kijkt vooruit, kiest uit lokale bronnen en stemt ieder verhaal af op jouw tempo en interesses.',
+    free_cta='Zo werkt vrij luisteren',
+    book_label='02 · Luisterroute', book_h='Een route met een begin en een einde.',
+    book_p='Volg een wandel- of fietsroute als levend reisboek: hoofdstukken op precies de goede plek, één rode draad en een slot dat de cirkel rond maakt.',
+    book_cta='Ontdek luisterroutes',
+    modes_label='Vier reistempo’s', modes_h2='Ieder tempo ziet een andere wereld.',
+    modes_p='2R vertelt niet simpelweg vaker of minder vaak. De blik, afstand en vertelvorm veranderen mee met de manier waarop je reist.',
+    modes=[
+        ('Te voet', 'Dicht op het landschap. Paden, gebouwen en kleine sporen krijgen alle ruimte.'),
+        ('Op de fiets', 'Het landschap ontvouwt zich. Dorpen en verhalen verbinden zich onderweg.'),
+        ('Met de trein', 'Kijk naar buiten terwijl streken, steden en tijdlagen aan het raam voorbijtrekken.'),
+        ('Met de auto', 'De weg wordt meer dan de afstand ertussenin — zonder je navigatie in de weg te zitten.'),
+    ],
+    partner_label='Voor routebeheerders en uitgevers', partner_h2='Uw route wijst de weg.<br>2R geeft haar een stem.',
+    partner_p='Van GPX, wandelgids of erfgoedarchief naar een zorgvuldig verteld, meertalig routeboek — te beleven in de app, op het web of via een QR-code.',
+    partner_cta='Laat één route proefvertellen', partner_more='Ontdek 2R voor routebeheerders',
+),
+'en': dict(
+    nav_home='Discover 2R', nav_partners='For route publishers', nav_cta='Take 2R with you →',
+    hero_alt='Two travellers walk beside an old European town; a bicycle, regional train and country road suggest four ways of travelling.',
+    hero_eyebrow='The travel companion that gives the world a voice',
+    hero_lede='2R gives the world a voice as you travel. Walk, cycle, take the train or drive — and hear the stories behind the places you pass.',
+    hero_primary='Hear what 2R sounds like', hero_secondary='Discover listening routes',
+    hero_caption='On foot, by bicycle, train or car · Europe',
+    ways_label='Two ways to listen', ways_h2='Let the world surprise you.<br>Or follow the whole story.',
+    ways_p='Sometimes you set out without a plan. Sometimes you want a route that makes sense from its first chapter to its last. 2R travels with both.',
+    free_label='01 · Roam freely', free_h='The world tells you where you are.',
+    free_p='Turn on 2R and listen to what appears around you. The narrator looks ahead, draws from local sources and adapts each story to your pace and interests.',
+    free_cta='How free listening works',
+    book_label='02 · Listening route', book_h='A route with a beginning and an ending.',
+    book_p='Follow a walk or cycle route as a living travel book: chapters in exactly the right place, one narrative thread and an ending that closes the circle.',
+    book_cta='Discover listening routes',
+    modes_label='Four travelling rhythms', modes_h2='Every pace reveals a different world.',
+    modes_p='2R does more than speak more or less often. Its perspective, range and storytelling change with the way you travel.',
+    modes=[
+        ('On foot', 'Close to the landscape. Paths, buildings and small traces are given room.'),
+        ('By bicycle', 'The landscape unfolds. Villages and stories connect along the way.'),
+        ('By train', 'Look outside as regions, cities and layers of time pass the window.'),
+        ('By car', 'The road becomes more than the distance in between — without getting in the way of navigation.'),
+    ],
+    partner_label='For route stewards and publishers', partner_h2='Your route shows the way.<br>2R gives it a voice.',
+    partner_p='From GPX file, walking guide or heritage archive to a carefully narrated, multilingual route book — in the app, on the web or through a QR code.',
+    partner_cta='Let us narrate one pilot route', partner_more='Discover 2R for route publishers',
+),
+'de': dict(
+    nav_home='2R entdecken', nav_partners='Für Routenanbieter', nav_cta='2R mitnehmen →',
+    hero_alt='Zwei Reisende wandern an einer alten europäischen Stadt entlang; Fahrrad, Regionalzug und Landstraße stehen für vier Arten des Reisens.',
+    hero_eyebrow='Der Reisebegleiter, der der Welt eine Stimme gibt',
+    hero_lede='2R gibt der Welt unterwegs eine Stimme. Wandere, fahre Rad, nimm den Zug oder das Auto — und höre die Geschichten hinter den Orten, an denen du vorbeikommst.',
+    hero_primary='Hör, wie 2R klingt', hero_secondary='Hörrouten entdecken',
+    hero_caption='Zu Fuß, mit dem Rad, der Bahn oder dem Auto · Europa',
+    ways_label='Zwei Arten zuzuhören', ways_h2='Lass dich überraschen.<br>Oder folge der ganzen Geschichte.',
+    ways_p='Manchmal ziehst du ohne Plan los. Manchmal möchtest du eine Route, die vom ersten bis zum letzten Kapitel trägt. 2R begleitet beides.',
+    free_label='01 · Frei unterwegs', free_h='Die Welt erzählt, wo du bist.',
+    free_p='Schalte 2R ein und höre, was dir unterwegs begegnet. Der Erzähler blickt voraus, nutzt lokale Quellen und stimmt jede Geschichte auf dein Tempo und deine Interessen ab.',
+    free_cta='So funktioniert freies Hören',
+    book_label='02 · Hörroute', book_h='Eine Route mit Anfang und Ende.',
+    book_p='Erlebe eine Wander- oder Radroute als lebendiges Reisebuch: Kapitel am richtigen Ort, ein roter Faden und ein Ende, das den Kreis schließt.',
+    book_cta='Hörrouten entdecken',
+    modes_label='Vier Reiserhythmen', modes_h2='Jedes Tempo zeigt eine andere Welt.',
+    modes_p='2R erzählt nicht einfach nur häufiger oder seltener. Blick, Entfernung und Erzählform verändern sich mit deiner Reiseart.',
+    modes=[
+        ('Zu Fuß', 'Ganz nah an der Landschaft. Wege, Gebäude und kleine Spuren bekommen Raum.'),
+        ('Mit dem Rad', 'Die Landschaft entfaltet sich. Dörfer und Geschichten verbinden sich unterwegs.'),
+        ('Mit der Bahn', 'Schau hinaus, während Regionen, Städte und Zeitschichten am Fenster vorbeiziehen.'),
+        ('Mit dem Auto', 'Die Straße wird mehr als die Entfernung dazwischen — ohne die Navigation zu stören.'),
+    ],
+    partner_label='Für Routenanbieter und Verlage', partner_h2='Ihre Route zeigt den Weg.<br>2R gibt ihr eine Stimme.',
+    partner_p='Von GPX-Datei, Wanderführer oder Kulturerbe-Archiv zum sorgfältig erzählten, mehrsprachigen Routenbuch — in der App, im Web oder per QR-Code.',
+    partner_cta='Eine Pilotroute erzählen lassen', partner_more='2R für Routenanbieter entdecken',
+),
+'fr': dict(
+    nav_home='Découvrir 2R', nav_partners='Pour les éditeurs', nav_cta='Emporter 2R →',
+    hero_alt="Deux voyageurs marchent près d'une ancienne ville européenne ; un vélo, un train régional et une route de campagne évoquent quatre façons de voyager.",
+    hero_eyebrow='Le compagnon de voyage qui donne une voix au monde',
+    hero_lede='2R donne une voix au monde en chemin. Marchez, pédalez, prenez le train ou la voiture — et écoutez les histoires qui se cachent derrière les lieux traversés.',
+    hero_primary='Écouter la voix de 2R', hero_secondary="Découvrir les routes d'écoute",
+    hero_caption='À pied, à vélo, en train ou en voiture · Europe',
+    ways_label="Deux façons d'écouter", ways_h2="Laissez-vous surprendre.<br>Ou suivez toute l'histoire.",
+    ways_p="Parfois, on part sans programme. Parfois, on veut un itinéraire qui se tient du premier au dernier chapitre. 2R accompagne les deux voyages.",
+    free_label='01 · Partir librement', free_h='Le monde raconte où vous êtes.',
+    free_p="Lancez 2R et écoutez ce qui se présente autour de vous. Le narrateur regarde devant, s'appuie sur des sources locales et adapte chaque récit à votre rythme et à vos intérêts.",
+    free_cta="Comment fonctionne l'écoute libre",
+    book_label="02 · Route d'écoute", book_h='Un itinéraire avec un début et une fin.',
+    book_p="Suivez une randonnée ou une route cyclable comme un livre de voyage vivant : des chapitres au bon endroit, un fil rouge et une fin qui boucle la boucle.",
+    book_cta="Découvrir les routes d'écoute",
+    modes_label='Quatre rythmes de voyage', modes_h2='Chaque rythme révèle un autre monde.',
+    modes_p='2R ne se contente pas de parler plus ou moins souvent. Le regard, la distance et la narration évoluent avec votre façon de voyager.',
+    modes=[
+        ('À pied', "Au plus près du paysage. Sentiers, bâtiments et petites traces ont tout l'espace nécessaire."),
+        ('À vélo', 'Le paysage se déploie. Villages et histoires se relient en chemin.'),
+        ('En train', 'Regardez dehors : régions, villes et strates du temps défilent à la fenêtre.'),
+        ('En voiture', "La route devient plus que la distance entre deux lieux — sans gêner la navigation."),
+    ],
+    partner_label='Pour les gestionnaires et éditeurs de routes', partner_h2='Votre route montre le chemin.<br>2R lui donne une voix.',
+    partner_p="D'un fichier GPX, guide de randonnée ou fonds patrimonial à un livre de route multilingue soigneusement raconté — dans l'app, sur le web ou par QR code.",
+    partner_cta='Faire raconter une route pilote', partner_more='Découvrir 2R pour les éditeurs',
+),
+'es': dict(
+    nav_home='Descubre 2R', nav_partners='Para editores de rutas', nav_cta='Lleva 2R contigo →',
+    hero_alt='Dos viajeros caminan junto a una antigua ciudad europea; una bicicleta, un tren regional y una carretera rural representan cuatro formas de viajar.',
+    hero_eyebrow='El compañero de viaje que da voz al mundo',
+    hero_lede='2R da voz al mundo mientras viajas. Camina, pedalea, toma el tren o conduce — y escucha las historias que hay detrás de los lugares por los que pasas.',
+    hero_primary='Escucha cómo suena 2R', hero_secondary='Descubre rutas sonoras',
+    hero_caption='A pie, en bicicleta, tren o coche · Europa',
+    ways_label='Dos maneras de escuchar', ways_h2='Déjate sorprender.<br>O sigue la historia completa.',
+    ways_p='A veces sales sin plan. Otras quieres una ruta que tenga sentido desde el primer capítulo hasta el último. 2R acompaña ambos viajes.',
+    free_label='01 · Viajar libremente', free_h='El mundo te cuenta dónde estás.',
+    free_p='Activa 2R y escucha lo que aparece a tu alrededor. El narrador mira hacia delante, consulta fuentes locales y adapta cada relato a tu ritmo e intereses.',
+    free_cta='Cómo funciona la escucha libre',
+    book_label='02 · Ruta sonora', book_h='Una ruta con principio y final.',
+    book_p='Sigue una ruta a pie o en bicicleta como un libro de viaje vivo: capítulos en el lugar adecuado, un hilo conductor y un final que cierra el círculo.',
+    book_cta='Descubre rutas sonoras',
+    modes_label='Cuatro ritmos de viaje', modes_h2='Cada ritmo revela un mundo diferente.',
+    modes_p='2R no se limita a hablar más o menos. La mirada, la distancia y la forma de narrar cambian según cómo viajes.',
+    modes=[
+        ('A pie', 'Muy cerca del paisaje. Senderos, edificios y pequeñas huellas tienen su espacio.'),
+        ('En bicicleta', 'El paisaje se despliega. Pueblos e historias se conectan por el camino.'),
+        ('En tren', 'Mira por la ventana mientras pasan regiones, ciudades y capas de tiempo.'),
+        ('En coche', 'La carretera se convierte en algo más que la distancia entre dos puntos, sin estorbar a la navegación.'),
+    ],
+    partner_label='Para gestores y editores de rutas', partner_h2='Tu ruta muestra el camino.<br>2R le da voz.',
+    partner_p='De un archivo GPX, una guía de senderismo o un archivo patrimonial a un libro de ruta multilingüe y cuidadosamente narrado — en la app, la web o mediante un código QR.',
+    partner_cta='Deja que narremos una ruta piloto', partner_more='Descubre 2R para editores',
+),
+'pt': dict(
+    nav_home='Descobrir 2R', nav_partners='Para editores de rotas', nav_cta='Levar 2R consigo →',
+    hero_alt='Dois viajantes caminham junto a uma antiga cidade europeia; uma bicicleta, um comboio regional e uma estrada rural sugerem quatro formas de viajar.',
+    hero_eyebrow='O companheiro de viagem que dá voz ao mundo',
+    hero_lede='O 2R dá voz ao mundo durante a viagem. Caminhe, pedale, apanhe o comboio ou conduza — e ouça as histórias por detrás dos lugares por onde passa.',
+    hero_primary='Ouça como soa o 2R', hero_secondary='Descubra rotas para ouvir',
+    hero_caption='A pé, de bicicleta, comboio ou carro · Europa',
+    ways_label='Duas formas de ouvir', ways_h2='Deixe-se surpreender.<br>Ou siga a história inteira.',
+    ways_p='Às vezes parte sem plano. Outras vezes quer uma rota que faça sentido do primeiro ao último capítulo. O 2R acompanha ambas.',
+    free_label='01 · Viajar livremente', free_h='O mundo conta onde está.',
+    free_p='Ligue o 2R e ouça o que surge à sua volta. O narrador olha em frente, recorre a fontes locais e adapta cada história ao seu ritmo e interesses.',
+    free_cta='Como funciona a escuta livre',
+    book_label='02 · Rota para ouvir', book_h='Uma rota com princípio e fim.',
+    book_p='Siga um percurso pedestre ou de bicicleta como um livro de viagem vivo: capítulos no lugar certo, um fio condutor e um final que fecha o círculo.',
+    book_cta='Descubra rotas para ouvir',
+    modes_label='Quatro ritmos de viagem', modes_h2='Cada ritmo revela um mundo diferente.',
+    modes_p='O 2R não se limita a falar mais ou menos. O olhar, a distância e a narrativa mudam com a forma de viajar.',
+    modes=[
+        ('A pé', 'Perto da paisagem. Caminhos, edifícios e pequenos vestígios ganham espaço.'),
+        ('De bicicleta', 'A paisagem abre-se. Aldeias e histórias ligam-se pelo caminho.'),
+        ('De comboio', 'Olhe pela janela enquanto regiões, cidades e camadas do tempo passam.'),
+        ('De carro', 'A estrada torna-se mais do que a distância entre lugares — sem interferir com a navegação.'),
+    ],
+    partner_label='Para gestores e editores de rotas', partner_h2='A sua rota mostra o caminho.<br>O 2R dá-lhe voz.',
+    partner_p='De um ficheiro GPX, guia pedestre ou arquivo patrimonial a um livro de rota multilingue e cuidadosamente narrado — na app, na web ou através de QR code.',
+    partner_cta='Deixe-nos narrar uma rota-piloto', partner_more='Descubra o 2R para editores',
+),
+}
+
+# ---------------------------------------------------------------------------
 # Privacybeleid — zelfde juridische tekst als worker/src/index.js PRIVACY_HTML,
 # vertaald. Bij inhoudelijke wijzigingen: hier én daar aanpassen.
 # ---------------------------------------------------------------------------
@@ -597,6 +766,13 @@ CITY_STORIES = {
 # Roadmap-items: (status_key, title-dict, desc-dict)  status: live/testflight/soon/later
 # ---------------------------------------------------------------------------
 ROADMAP_ITEMS = [
+    ('live', dict(nl='Het eerste levende routeboek', en='The first living route book', de='Das erste lebendige Routenbuch', fr='Le premier carnet de route vivant', es='El primer libro de ruta vivo', pt='O primeiro livro de rota vivo'),
+     dict(nl='Boswachterspad Stulp en Kasteeltuin is online met officiële GPX, eigen kaart, twaalf verbonden hoofdstukken, audio en zeventig geverifieerde feiten.',
+          en='The Stulp and Castle Garden forester trail is online with its official GPX, our own map, twelve connected chapters, audio and seventy verified facts.',
+          de='Der Boswachterspad Stulp en Kasteeltuin ist online: offizieller GPX-Track, eigene Karte, zwölf verbundene Kapitel, Audio und siebzig geprüfte Fakten.',
+          fr='Le sentier forestier Stulp et Jardin du Château est en ligne avec GPX officiel, carte maison, douze chapitres reliés, audio et soixante-dix faits vérifiés.',
+          es='El sendero forestal Stulp y Jardín del Castillo está en línea con GPX oficial, mapa propio, doce capítulos conectados, audio y setenta datos verificados.',
+          pt='O trilho florestal Stulp e Jardim do Castelo está online com GPX oficial, mapa próprio, doze capítulos conectados, áudio e setenta fatos verificados.')),
     ('live', dict(nl='AI-verhalen uit lokale bronnen', en='AI stories from local sources', de='KI-Geschichten aus lokalen Quellen', fr='Histoires IA à partir de sources locales', es='Historias de IA a partir de fuentes locales', pt='Histórias de IA a partir de fontes locais'),
      dict(nl="Live gegenereerd per locatie, met voorrang voor gemeentesites, VVV's en erfgoedorganisaties — niet alleen Wikipedia.",
           en='Generated live per location, prioritising municipal sites, tourism boards and heritage organisations — not just Wikipedia.',
@@ -712,12 +888,12 @@ RM_HERO = dict(
             de='Wir sind gerade erst aufgebrochen.', fr='Nous venons à peine de partir.',
             es='Acabamos de ponernos en marcha.', pt='Mal partimos.'),
     lede=dict(
-        nl='2R begon als een idee tijdens een autorit. Onderweg viel er zoveel te zien, maar niemand om het uit te leggen. Dit is wat er sindsdien is gebouwd — en wat er achter de volgende bocht op ons wacht.',
-        en="2R started as an idea during a road trip. There was so much to see along the way, and no one to explain it. Here's what's been built since — and what's waiting around the next bend.",
-        de='2R begann als Idee während einer Autofahrt. Unterwegs gab es so viel zu sehen, aber niemanden, der es erklärte. Das wurde seitdem gebaut — und das wartet hinter der nächsten Kurve auf uns.',
-        fr="2R est né d'une idée pendant un road trip. Il y avait tant à voir en chemin, et personne pour l'expliquer. Voici ce qui a été construit depuis — et ce qui nous attend au prochain tournant.",
-        es='2R nació como una idea durante un viaje en coche. Había tanto que ver en el camino, y nadie para explicarlo. Esto es lo que se ha construido desde entonces — y lo que nos espera a la vuelta de la próxima curva.',
-        pt='O 2R começou como uma ideia durante uma viagem de carro. Havia tanto para ver pelo caminho, e ninguém para explicar. Isto é o que foi construído desde então — e o que nos espera depois da próxima curva.'),
+        nl='2R begon met een vraag tijdens een autorit: wat leeft er eigenlijk achter al die plekken die je passeert? Die vraag bleek veel groter dan de auto. Nu leert 2R wandelen, fietsen, treinreizen en vrije routes verbinden met levende routeboeken.',
+        en='2R began with a question during a road trip: what lives behind all the places you pass? The question proved much bigger than the car. Now 2R is bringing walking, cycling, train travel and free exploration together with living route books.',
+        de='2R begann mit einer Frage während einer Autofahrt: Was lebt hinter all den Orten, an denen man vorbeikommt? Die Frage war größer als das Auto. Heute verbindet 2R Wandern, Radfahren, Bahnreisen und freies Entdecken mit lebendigen Routenbüchern.',
+        fr="2R est né d'une question en voiture : que vit-il derrière tous ces lieux traversés ? La question s'est révélée bien plus vaste que l'automobile. Aujourd'hui, 2R relie marche, vélo, train et exploration libre à des carnets de route vivants.",
+        es='2R nació de una pregunta durante un viaje en coche: ¿qué vive detrás de todos los lugares que pasamos? La pregunta resultó mucho mayor que el coche. Hoy 2R une caminar, pedalear, viajar en tren y explorar libremente con libros de ruta vivos.',
+        pt='O 2R nasceu de uma pergunta durante uma viagem de carro: o que vive por trás de todos os lugares por onde passamos? A pergunta revelou-se maior do que o carro. Hoje o 2R une caminhada, bicicleta, comboio e exploração livre a livros de rota vivos.'),
 )
 
 RM_CHAPTERS = [
@@ -750,9 +926,9 @@ RM_CHAPTERS = [
 RM_CLOSE = dict(
     eyebrow=dict(nl='Aan de horizon', en='On the horizon', de='Am Horizont',
                  fr="À l'horizon", es='En el horizonte', pt='No horizonte'),
-    h=dict(nl='Rijd mee aan het vervolg.', en="Ride along for what's next.",
-           de='Fahr mit ins nächste Kapitel.', fr='Faites route avec nous pour la suite.',
-           es='Acompáñanos en lo que viene.', pt='Venha junto para o que vem a seguir.'),
+    h=dict(nl='Reis mee naar het vervolg.', en="Travel with us into what's next.",
+           de='Reise mit uns ins nächste Kapitel.', fr='Voyagez avec nous vers la suite.',
+           es='Viaja con nosotros hacia lo que viene.', pt='Viaje connosco para o que vem a seguir.'),
     p=dict(
         nl='Als tester, lokale verteller of partner — of gewoon omdat je net zo benieuwd bent naar wat er achter de volgende bocht ligt als wij.',
         en="As a tester, a local storyteller or a partner — or simply because you're as curious about what's around the next bend as we are.",
@@ -852,35 +1028,94 @@ HOWTO = {
     eyebrow='Zo werkt 2R', title='Zo werkt 2R',
     lede='2R is je reisgezel die vertelt. Je start hem, je gaat op pad — te voet, met de fiets, in de trein of in de auto — en onderweg hoor je verhalen over de plekken die je passeert. Hieronder alles wat je moet weten — in een paar minuten.',
     sections=[
-        dict(h='🚗 Beginnen', p='Tik in de app op <b>Start de reis</b> en sta je locatie toe. 2R vertelt vanzelf over de plekken die je passeert — geen account, niets vooraf in te stellen.'),
-        dict(h='🎵 Samen met je muziek', p='Speel gerust je eigen muziek (Spotify, Apple Music, de radio — wat dan ook). Die gaat automatisch <b>zachter</b> zodra een verhaal begint, en zwelt weer aan als het klaar is. Zet je “Muziektips per streek” aan, dan krijg je onderweg een tik naar passende muziek per gebied. 2R streamt zelf geen muziek.'),
-        dict(h='➤ Het blauwe pijltje bovenin', p='Gebruik je ondertussen Maps of je muziek-app, dan toont iOS bovenin een <b>blauw pijltje</b> (➤) dat aangeeft dat 2R je locatie gebruikt. <b>Dat hoort zo</b> — zo blijft 2R doorvertellen op de achtergrond. Tik erop om terug te keren naar 2R.'),
-        dict(h='🔊 Je stem kiezen', p='Kies bij <b>Instellingen → Stem</b> je vertelstem en de klank: natuurlijk (rustig en zuinig) of expressief (het meest menselijk, met aarzelingen en zuchtjes). Met “Beluister deze stem” hoor je ’m meteen.'),
-        dict(h='🧭 Hoe je reist', p='Vertel 2R of je met de auto, fiets, te voet of de trein gaat. Hij past het tempo en de afstand van de verhalen daarop aan.'),
-        dict(h='🎯 Reisquiz voor het gezin', p='Zet de reisquiz aan voor één vraag na elk verhaal. De bijrijder tikt het antwoord aan — met een scorebord per rit.'),
-        dict(h='🧪 Stilstaand uitproberen', p='Wil je 2R proberen zonder op pad te gaan? Gebruik de <b>Route Simulator</b> in het menu om een rit na te bootsen.'),
+        dict(h='Beginnen', p='Tik op <b>Start de reis</b>, sta je locatie toe en kies hoe je reist. 2R vertelt vanzelf over de plekken die je passeert — zonder account of voorbereiding.'),
+        dict(h='Vrij luisteren of een luisterroute', p='Ga spontaan op pad voor verhalen die bij je actuele omgeving passen, of kies een zorgvuldig opgebouwd routeboek met vaste hoofdstukken en één rode draad.'),
+        dict(h='Samen met je muziek', p='Speel gerust je eigen muziek. Die gaat automatisch <b>zachter</b> zodra een verhaal begint en komt daarna weer terug. 2R streamt zelf geen muziek.'),
+        dict(h='Luisteren op de achtergrond', p='Gebruik je ondertussen Kaarten of je muziek-app, dan blijft 2R vertellen. Het blauwe locatiesymbool van iOS laat zien dat de app je positie gebruikt; tik erop om naar 2R terug te keren.'),
+        dict(h='Je stem kiezen', p='Kies bij <b>Instellingen → Stem</b> een vertelstem en klank die bij je past. Met “Beluister deze stem” hoor je het verschil meteen.'),
+        dict(h='Jouw reistempo', p='Wandelen, fietsen, trein en auto vragen elk om een andere blik. 2R past zoekafstand, vertelritme en onderwerpkeuze daarop aan.'),
+        dict(h='Rust en samenzijn', p='Pauzeer een verhaal, kies even stilte of speel samen een reisquiz. Jij bepaalt hoeveel ruimte de verteller krijgt.'),
+        dict(h='Thuis uitproberen', p='Wil je 2R eerst leren kennen? Gebruik de <b>Route Simulator</b> om een reis na te bootsen zonder echt op pad te gaan.'),
     ],
-    cta_h='Klaar om op pad te gaan?', cta_p='2R draait live in TestFlight en op het web.', cta_btn='Probeer 2R →',
+    cta_h='Klaar om op pad te gaan?', cta_p='2R is beschikbaar voor testers; de openbare release volgt.', cta_btn='Probeer 2R →',
 ),
 'en': dict(
     eyebrow='How 2R works', title='How 2R works',
     lede='2R is your travelling companion that tells stories. You start it, you head out — on foot, by bike, by train or by car — and along the way you hear stories about the places you pass. Here is everything you need to know — in a few minutes.',
     sections=[
-        dict(h='🚗 Getting started', p='In the app, tap <b>Start the journey</b> and allow location access. 2R automatically narrates the places you pass — no account, nothing to set up first.'),
-        dict(h='🎵 Alongside your music', p='Play your own music (Spotify, Apple Music, the radio — anything). It automatically <b>fades down</b> when a story starts and swells back up when it ends. Turn on “Music tips per region” for a tap toward fitting music along the way. 2R never streams music itself.'),
-        dict(h='➤ The blue arrow at the top', p='If you switch to Maps or your music app, iOS shows a small <b>blue arrow</b> (➤) at the top indicating 2R is using your location. <b>This is expected</b> — it lets 2R keep narrating in the background. Tap it to return to 2R.'),
-        dict(h='🔊 Choosing your voice', p='Under <b>Settings → Voice</b>, pick your narrating voice and the tone: natural (calm and economical) or expressive (the most human, with hesitations and sighs). “Preview this voice” lets you hear it right away.'),
-        dict(h='🧭 How you travel', p='Tell 2R whether you go by car, bike, on foot or by train. It adapts the pace and distance of the stories accordingly.'),
-        dict(h='🎯 Travel quiz for the family', p='Turn on the travel quiz for one question after each story. The passenger taps the answer — with a scoreboard per trip.'),
-        dict(h='🧪 Try it standing still', p='Want to try 2R without going anywhere? Use the <b>Route Simulator</b> in the menu to simulate a trip.'),
+        dict(h='Getting started', p='Tap <b>Start the journey</b>, allow location access and choose how you travel. 2R automatically narrates the places you pass — without an account or advance planning.'),
+        dict(h='Free listening or a listening route', p='Set out spontaneously for stories that fit your current surroundings, or choose a carefully composed route book with fixed chapters and one narrative thread.'),
+        dict(h='Alongside your music', p='Play your own music. It automatically <b>fades down</b> when a story starts and returns afterwards. 2R never streams music itself.'),
+        dict(h='Listening in the background', p='Switch to Maps or your music app and 2R keeps narrating. The blue iOS location indicator shows that the app is using your position; tap it to return to 2R.'),
+        dict(h='Choosing your voice', p='Under <b>Settings → Voice</b>, choose the narrator and tone that suit you. “Preview this voice” lets you hear the difference immediately.'),
+        dict(h='Your travel pace', p='Walking, cycling, train and car each reveal a different world. 2R adapts its search radius, narrative rhythm and subject choices accordingly.'),
+        dict(h='Quiet and togetherness', p='Pause a story, choose a moment of silence or play a travel quiz together. You decide how much space the narrator gets.'),
+        dict(h='Try it at home', p='Want to get to know 2R first? Use the <b>Route Simulator</b> to recreate a journey without actually setting out.'),
     ],
-    cta_h='Ready to head out?', cta_p='2R runs live in TestFlight and on the web.', cta_btn='Try 2R →',
+    cta_h='Ready to head out?', cta_p='2R is available to testers; the public release will follow.', cta_btn='Try 2R →',
+),
+'de': dict(
+    eyebrow='So funktioniert 2R', title='So funktioniert 2R',
+    lede='2R ist dein erzählender Reisebegleiter. Du gehst los — zu Fuß, mit dem Rad, per Bahn oder Auto — und hörst unterwegs die Geschichten der Orte, an denen du vorbeikommst.',
+    sections=[
+        dict(h='Loslegen', p='Tippe auf <b>Reise starten</b>, erlaube den Standortzugriff und wähle deine Reiseart. 2R erzählt automatisch — ohne Konto oder Vorbereitung.'),
+        dict(h='Frei hören oder einer Hörroute folgen', p='Lass dich spontan von deiner Umgebung überraschen oder wähle ein sorgfältig komponiertes Routenbuch mit festen Kapiteln und einem roten Faden.'),
+        dict(h='Mit deiner Musik', p='Deine eigene Musik wird automatisch <b>leiser</b>, sobald eine Geschichte beginnt, und kehrt danach zurück. 2R streamt selbst keine Musik.'),
+        dict(h='Im Hintergrund zuhören', p='Auch wenn du Karten oder deine Musik-App öffnest, erzählt 2R weiter. Das blaue iOS-Standortsymbol zeigt die Standortnutzung; tippe darauf, um zu 2R zurückzukehren.'),
+        dict(h='Stimme wählen', p='Wähle unter <b>Einstellungen → Stimme</b> Erzähler und Klang. Mit der Hörprobe erkennst du den Unterschied sofort.'),
+        dict(h='Dein Reisetempo', p='Wandern, Radfahren, Bahn und Auto zeigen jeweils eine andere Welt. 2R passt Suchradius, Erzählrhythmus und Themen daran an.'),
+        dict(h='Ruhe und Zusammensein', p='Pausiere, wähle einen stillen Moment oder spielt gemeinsam ein Reisequiz. Du bestimmst, wie viel Raum die Stimme bekommt.'),
+    ],
+    cta_h='Bereit aufzubrechen?', cta_p='2R ist für Tester verfügbar; die öffentliche Veröffentlichung folgt.', cta_btn='2R ausprobieren →',
+),
+'fr': dict(
+    eyebrow='Comment fonctionne 2R', title='Comment fonctionne 2R',
+    lede='2R est le compagnon qui raconte votre voyage. Vous partez — à pied, à vélo, en train ou en voiture — et entendez les histoires des lieux traversés.',
+    sections=[
+        dict(h='Commencer', p='Touchez <b>Démarrer le voyage</b>, autorisez la localisation et choisissez votre façon de voyager. 2R raconte automatiquement, sans compte ni préparation.'),
+        dict(h='Écoute libre ou route audio', p='Laissez-vous surprendre par ce qui vous entoure, ou choisissez un carnet de route soigneusement composé, avec des chapitres fixes et un fil narratif.'),
+        dict(h='Avec votre musique', p='Votre musique baisse automatiquement lorsqu’un récit commence, puis revient ensuite. 2R ne diffuse pas de musique lui-même.'),
+        dict(h='Écouter en arrière-plan', p='Ouvrez Plans ou votre application musicale : 2R continue de raconter. L’indicateur bleu d’iOS signale l’usage de votre position ; touchez-le pour revenir à 2R.'),
+        dict(h='Choisir la voix', p='Dans <b>Réglages → Voix</b>, choisissez le narrateur et la sonorité qui vous conviennent. L’aperçu permet d’entendre immédiatement la différence.'),
+        dict(h='Votre rythme de voyage', p='Marche, vélo, train et voiture révèlent chacun un monde différent. 2R adapte son rayon de recherche, son rythme et ses sujets.'),
+        dict(h='Silence et partage', p='Mettez un récit en pause, choisissez un instant de silence ou jouez ensemble à un quiz. Vous décidez de la place de la voix.'),
+    ],
+    cta_h='Prêt à partir ?', cta_p='2R est disponible pour les testeurs ; la sortie publique suivra.', cta_btn='Essayer 2R →',
+),
+'es': dict(
+    eyebrow='Cómo funciona 2R', title='Cómo funciona 2R',
+    lede='2R es el compañero que narra tu viaje. Sales — a pie, en bici, en tren o en coche — y escuchas las historias de los lugares por los que pasas.',
+    sections=[
+        dict(h='Empezar', p='Pulsa <b>Iniciar el viaje</b>, permite la ubicación y elige cómo viajas. 2R narra automáticamente, sin cuenta ni preparación.'),
+        dict(h='Escucha libre o ruta sonora', p='Déjate sorprender por tu entorno o elige un libro de ruta cuidadosamente compuesto, con capítulos fijos y un hilo narrativo.'),
+        dict(h='Con tu música', p='Tu música baja automáticamente al comenzar una historia y vuelve después. 2R no reproduce música por su cuenta.'),
+        dict(h='Escuchar en segundo plano', p='Abre Mapas o tu app de música y 2R seguirá narrando. El indicador azul de iOS muestra que usa tu ubicación; púlsalo para volver a 2R.'),
+        dict(h='Elegir la voz', p='En <b>Ajustes → Voz</b>, elige el narrador y el tono que prefieras. La muestra permite oír la diferencia al instante.'),
+        dict(h='Tu ritmo de viaje', p='Caminar, pedalear, viajar en tren o en coche revelan mundos distintos. 2R adapta el radio, el ritmo y los temas.'),
+        dict(h='Silencio y compañía', p='Pausa una historia, elige un momento de silencio o jugad juntos a un quiz. Tú decides cuánto espacio ocupa la voz.'),
+    ],
+    cta_h='¿Listo para salir?', cta_p='2R está disponible para testers; el lanzamiento público llegará después.', cta_btn='Probar 2R →',
+),
+'pt': dict(
+    eyebrow='Como funciona o 2R', title='Como funciona o 2R',
+    lede='O 2R é o companheiro que narra a sua viagem. Você parte — a pé, de bicicleta, de comboio ou de carro — e ouve as histórias dos lugares por onde passa.',
+    sections=[
+        dict(h='Começar', p='Toque em <b>Iniciar a viagem</b>, permita a localização e escolha como viaja. O 2R narra automaticamente, sem conta nem preparação.'),
+        dict(h='Escuta livre ou rota sonora', p='Deixe-se surpreender pelo que está ao seu redor ou escolha um livro de rota cuidadosamente composto, com capítulos fixos e um fio narrativo.'),
+        dict(h='Com a sua música', p='A sua música baixa automaticamente quando uma história começa e volta depois. O 2R não transmite música.'),
+        dict(h='Ouvir em segundo plano', p='Abra Mapas ou a aplicação de música e o 2R continua a narrar. O indicador azul do iOS mostra o uso da localização; toque nele para voltar ao 2R.'),
+        dict(h='Escolher a voz', p='Em <b>Definições → Voz</b>, escolha o narrador e o tom que combinam consigo. A amostra permite ouvir a diferença imediatamente.'),
+        dict(h='O seu ritmo de viagem', p='Caminhar, pedalar, viajar de comboio ou de carro revelam mundos diferentes. O 2R adapta o raio, o ritmo e os temas.'),
+        dict(h='Silêncio e companhia', p='Pause uma história, escolha um momento de silêncio ou joguem juntos um quiz. Você decide quanto espaço a voz ocupa.'),
+    ],
+    cta_h='Pronto para partir?', cta_p='O 2R está disponível para testadores; o lançamento público virá depois.', cta_btn='Experimentar o 2R →',
 ),
 }
 
 # "Zo werkt het" als vijf filmische scènes (beelden van Codex, 29 aug).
-# Volgorde/beeld gedeeld over alle talen; tekst per taal (nl/en; rest valt op en).
-HOWTO_IMAGES = ['howto-01-vertrek.jpg', 'howto-02-onderweg.jpg', 'howto-03-verhaal.jpg', 'howto-04-muziek.jpg', 'howto-05-ritme.jpg']
+# Volgorde/beeld gedeeld over alle talen. Het brede reisbeeld opent; de auto is
+# daarna nog maar één van de mogelijke reisruimtes.
+HOWTO_IMAGES = ['hero-journey-v2.jpg', 'reisjournaal.jpg', 'howto-03-verhaal.jpg', 'howto-04-muziek.jpg', 'howto-05-ritme.jpg']
 
 FAQ_LABEL = {'nl': 'Goed om te weten voor vertrek', 'en': 'Good to know before you go',
              'de': 'Gut zu wissen vor der Abfahrt', 'fr': 'Bon à savoir avant de partir',
@@ -889,9 +1124,9 @@ FAQ_LABEL = {'nl': 'Goed om te weten voor vertrek', 'en': 'Good to know before y
 HOWTO_SCENES = {
 'nl': [
     ('Hoofdstuk 01 · Voor je vertrekt', 'Eén knop. Daarna krijgt de wereld buiten een stem.',
-     'Start Route voordat je vertrekt en kies hoe je reist — te voet, met de fiets, de trein of de auto. Terwijl jij onderweg bent, kijkt Route vooruit en kiest het verhaal dat deze plek betekenis geeft.'),
-    ('Hoofdstuk 02 · Onderweg', 'Vanaf hier reist de verteller met je mee.',
-     'Eén tik en de reis begint. Route volgt je via GPS en zoekt live wat er om je heen te vertellen valt — met voorrang voor lokale bronnen, niet alleen Wikipedia.'),
+     'Kies je tempo — te voet, op de fiets, per trein of met de auto — en laat 2R weten waar je nieuwsgierig naar bent.'),
+    ('Hoofdstuk 02 · Kies je reis', 'Laat je verrassen. Of volg het hele verhaal.',
+     'Ga vrij op pad en hoor wat zich om je heen aandient. Of kies een luisterroute die van het eerste hoofdstuk tot de laatste stap zorgvuldig is opgebouwd.'),
     ('Hoofdstuk 03 · Het verhaal', 'Route kiest één betekenisvol verhaal.',
      'Geen lijst met weetjes. Per plek één verhaal, rustig verteld, met ruimte voor de weg en voor elkaar — en je hoort waar het vandaan komt.'),
     ('Hoofdstuk 04 · Jouw muziek', 'De muziek zakt. Een stem komt naast je zitten.',
@@ -901,15 +1136,43 @@ HOWTO_SCENES = {
 ],
 'en': [
     ('Chapter 01 · Before you leave', 'One tap. Then the world outside finds a voice.',
-     'Start Route before you set off and choose how you travel — on foot, by bike, by train or by car. As you travel, Route looks ahead and picks the story that gives this place meaning.'),
-    ('Chapter 02 · On the road', 'From here, the narrator travels along with you.',
-     'One tap and the journey begins. Route follows your GPS and finds, live, what there is to tell around you — favouring local sources, not just Wikipedia.'),
+     'Choose your pace — on foot, by bike, by train or by car — and tell 2R what makes you curious.'),
+    ('Chapter 02 · Choose your journey', 'Let yourself be surprised. Or follow the whole story.',
+     'Set out freely and hear what appears around you. Or choose a listening route composed with care from its opening chapter to the final step.'),
     ('Chapter 03 · The story', 'Route picks one meaningful story.',
      'Not a list of facts. One story per place, calmly told, with room for the road and for each other — and you hear where it comes from.'),
     ('Chapter 04 · Your music', 'The music softens. A voice sits down beside you.',
      'Your own music — Spotify, radio, podcast — automatically ducks the moment the narrator starts, and swells back up when the story ends.'),
     ('Chapter 05 · Your pace', 'Listen, fall quiet, or play together.',
      'Listen, tap "quiet" when you want a pause, or play a travel quiz together. You set the pace; Route adapts.'),
+],
+'de': [
+    ('Kapitel 01 · Vor dem Aufbruch', 'Ein Tippen. Dann bekommt die Welt draußen eine Stimme.', 'Wähle dein Tempo — zu Fuß, mit dem Rad, per Bahn oder Auto — und sag 2R, was dich neugierig macht.'),
+    ('Kapitel 02 · Wähle deine Reise', 'Lass dich überraschen. Oder folge der ganzen Geschichte.', 'Zieh frei los und höre, was um dich herum auftaucht. Oder wähle eine Hörroute, sorgfältig komponiert vom ersten Kapitel bis zum letzten Schritt.'),
+    ('Kapitel 03 · Die Geschichte', 'Route wählt eine bedeutsame Geschichte.', 'Keine Faktenliste. Pro Ort eine ruhig erzählte Geschichte, mit Raum für die Landschaft und füreinander — samt nachvollziehbarer Quelle.'),
+    ('Kapitel 04 · Deine Musik', 'Die Musik wird leiser. Eine Stimme setzt sich dazu.', 'Deine Musik wird automatisch leiser, sobald die Erzählung beginnt, und kehrt danach zurück.'),
+    ('Kapitel 05 · Dein Rhythmus', 'Zuhören, still werden oder gemeinsam spielen.', 'Höre zu, wähle Ruhe oder spielt gemeinsam ein Reisequiz. Du gibst den Rhythmus vor; 2R passt sich an.'),
+],
+'fr': [
+    ('Chapitre 01 · Avant le départ', 'Un geste. Puis le monde extérieur trouve une voix.', 'Choisissez votre rythme — à pied, à vélo, en train ou en voiture — et dites à 2R ce qui éveille votre curiosité.'),
+    ('Chapitre 02 · Choisissez le voyage', 'Laissez-vous surprendre. Ou suivez toute l’histoire.', 'Partez librement et écoutez ce qui se présente. Ou choisissez une route audio composée avec soin, du premier chapitre au dernier pas.'),
+    ('Chapitre 03 · Le récit', 'Route choisit une histoire qui compte.', 'Pas une liste de faits. Un récit par lieu, raconté calmement, avec de la place pour le paysage, pour vous et pour les sources.'),
+    ('Chapitre 04 · Votre musique', 'La musique s’apaise. Une voix prend place à vos côtés.', 'Votre musique baisse d’elle-même lorsque la narration commence, puis revient une fois le récit terminé.'),
+    ('Chapitre 05 · Votre rythme', 'Écouter, faire silence ou jouer ensemble.', 'Écoutez, choisissez le calme ou partagez un quiz. Vous donnez le rythme ; 2R s’adapte.'),
+],
+'es': [
+    ('Capítulo 01 · Antes de salir', 'Un toque. Entonces el mundo exterior encuentra su voz.', 'Elige tu ritmo — a pie, en bici, en tren o en coche — y cuenta a 2R qué despierta tu curiosidad.'),
+    ('Capítulo 02 · Elige tu viaje', 'Déjate sorprender. O sigue toda la historia.', 'Sal sin plan y escucha lo que aparece a tu alrededor. O elige una ruta sonora compuesta con cuidado desde el primer capítulo hasta el último paso.'),
+    ('Capítulo 03 · La historia', 'Route elige una historia con significado.', 'Nada de listas de datos. Una historia por lugar, narrada con calma y con espacio para el paisaje, para compartir y para sus fuentes.'),
+    ('Capítulo 04 · Tu música', 'La música baja. Una voz se sienta a tu lado.', 'Tu música baja por sí sola cuando comienza la narración y vuelve al terminar la historia.'),
+    ('Capítulo 05 · Tu ritmo', 'Escuchar, guardar silencio o jugar juntos.', 'Escucha, elige un momento de calma o compartid un quiz. Tú marcas el ritmo; 2R se adapta.'),
+],
+'pt': [
+    ('Capítulo 01 · Antes de partir', 'Um toque. Depois o mundo lá fora ganha voz.', 'Escolha o seu ritmo — a pé, de bicicleta, de comboio ou de carro — e diga ao 2R o que desperta a sua curiosidade.'),
+    ('Capítulo 02 · Escolha a viagem', 'Deixe-se surpreender. Ou acompanhe toda a história.', 'Parta livremente e ouça o que surge ao redor. Ou escolha uma rota sonora composta com cuidado, do primeiro capítulo ao último passo.'),
+    ('Capítulo 03 · A história', 'A Route escolhe uma história com significado.', 'Nada de listas de fatos. Uma história por lugar, narrada com calma e com espaço para a paisagem, para a companhia e para as fontes.'),
+    ('Capítulo 04 · A sua música', 'A música baixa. Uma voz senta-se ao seu lado.', 'A sua música baixa automaticamente quando a narração começa e volta quando a história termina.'),
+    ('Capítulo 05 · O seu ritmo', 'Ouvir, fazer silêncio ou jogar juntos.', 'Ouça, escolha um momento de calma ou partilhem um quiz. Você define o ritmo; o 2R adapta-se.'),
 ],
 }
 
@@ -959,6 +1222,7 @@ def build_howto(lang):
 
 def nav(lang, active):
     s = SITE[lang]
+    h = HOME_20[lang]
     def link(href, label, key):
         cls = ' class="active"' if key == active else ''
         return f'<a href="{href}"{cls}>{label}</a>'
@@ -977,28 +1241,26 @@ def nav(lang, active):
     </button>
     <nav class="nav-links">
       <span class="nav-only-links">
-        {link(f'/{lang}/', s['nav_product'], 'product')}
-        {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
+        {link(f'/{lang}/', h['nav_home'], 'product')}
         {link(f'/{lang}/routes/', ROUTES_TXT[lang]['nav'], 'routes')}
-        {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
         {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
-        {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
+        {link(f'/{lang}/partners/', h['nav_partners'], 'partners')}
+        {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
       </span>
       <div class="lang-switch">{others}</div>
-      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">{s['nav_cta']}</a>
+      <a class="nav-cta" href="https://apps.apple.com/app/id6802613397">{h['nav_cta']}</a>
     </nav>
   </div>
   <div class="mobile-panel" id="mobile-panel">
     <div class="mobile-panel-links">
-      {link(f'/{lang}/', s['nav_product'], 'product')}
-      {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
+      {link(f'/{lang}/', h['nav_home'], 'product')}
       {link(f'/{lang}/routes/', ROUTES_TXT[lang]['nav'], 'routes')}
-      {link(f'/{lang}/roadmap.html', s['nav_roadmap'], 'roadmap')}
       {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
-      {link(f'/{lang}/privacy.html', s['nav_privacy'], 'privacy')}
+      {link(f'/{lang}/partners/', h['nav_partners'], 'partners')}
+      {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
     </div>
     <div class="lang-switch">{others}</div>
-    <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">{s['nav_cta']}</a>
+    <a class="nav-cta" href="https://apps.apple.com/app/id6802613397">{h['nav_cta']}</a>
   </div>
 </header>
 <script>
@@ -1024,6 +1286,7 @@ def nav(lang, active):
 
 def footer(lang):
     s = SITE[lang]
+    h = HOME_20[lang]
     return f'''<footer class="site">
   <div class="footer-grid">
     <a class="footer-brand" href="/{lang}/">
@@ -1031,6 +1294,8 @@ def footer(lang):
       <span>Second Route</span>
     </a>
     <div class="footer-links">
+      <a href="/{lang}/routes/">{ROUTES_TXT[lang]['nav']}</a>
+      <a href="/{lang}/partners/">{h['nav_partners']}</a>
       <a href="/{lang}/roadmap.html">{s['nav_roadmap']}</a>
       <a href="/{lang}/stories/">{s['nav_stories']}</a>
       <a href="/{lang}/privacy.html">{s['nav_privacy']}</a>
@@ -1342,6 +1607,7 @@ SITE_AUDIO_NL = '''
 
 def build_home(lang):
     s = SITE[lang]
+    h = HOME_20[lang]
     stops = EUROPE_STOPS[lang]
     steps = f'''<div class="steps">
         <div class="step"><span class="num-badge">I</span><h3>{s['step1_h']}</h3><p>{s['step1_p']}</p></div>
@@ -1357,6 +1623,11 @@ def build_home(lang):
         <div class="feature"><span class="num-mark">VI</span><h3>{s['f6_h']}</h3><p>{s['f6_p']}</p></div>
       </div>'''
     story_cards = ''.join(city_story_card(lang, i) for i in range(5))
+    modes_html = ''.join(f'''<article class="travel-mode">
+        <span class="travel-mode-num">{i:02d}</span>
+        <h3>{title}</h3>
+        <p>{copy}</p>
+      </article>''' for i, (title, copy) in enumerate(h['modes'], 1))
 
     journey_scenes_html = ''.join(
         f'<div class="journey-scene{" active" if i == 0 else ""}" data-scene="{i}" style="background-image:url(\'/images/{EUROPE_IMAGES[i]}\')"></div>'
@@ -1369,21 +1640,19 @@ def build_home(lang):
         </article>''' for i, (region, time, h, p) in enumerate(stops))
     first_region_short = stops[0][0].split(' · ')[-1]
 
-    body = f'''  <section class="hero" id="top">
-    <video class="hero-photo" aria-hidden="true" autoplay muted loop playsinline preload="auto" poster="/images/europe-south-italy.jpg">
-      <source src="/images/hero-drive-loop.mp4" type="video/mp4">
-    </video>
+    body = f'''  <section class="hero hero-v2" id="top">
+    <img class="hero-photo" src="/images/hero-journey-v2.jpg" alt="{html.escape(h['hero_alt'])}" width="1672" height="941" fetchpriority="high" decoding="async">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-content">
-      <p class="eyebrow on-photo">{s['hero_eyebrow']}</p>
+      <p class="eyebrow on-photo">{h['hero_eyebrow']}</p>
       <h1>{s['hero_h1']}</h1>
-      <p class="hero-lede">{s['hero_lede']}</p>
+      <p class="hero-lede">{h['hero_lede']}</p>
       <div class="hero-actions">
-        <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">{s['hero_btn_demo']} <span>↗</span></a>
-        <a class="text-link" href="#reis">{s['hero_btn_roadmap']} <span>↓</span></a>
+        <a class="btn-primary" href="#luisteren">{h['hero_primary']} <span>↓</span></a>
+        <a class="text-link" href="/{lang}/routes/">{h['hero_secondary']} <span>→</span></a>
       </div>
     </div>
-    <div class="hero-caption"><span>{s['hero_caption_coord']}</span><span>{s['hero_caption_note']}</span></div>
+    <div class="hero-caption"><span>2R · Second Route</span><span>{h['hero_caption']}</span></div>
   </section>
 
   <section class="listening" id="luisteren">
@@ -1422,6 +1691,46 @@ def build_home(lang):
     }})();
     </script>
     <p class="listen-more"><a class="text-link" href="/{lang}/routes/drakensteyn/">{ROUTES_TXT[lang]['home_link']}</a></p>
+  </section>
+
+  <section class="listening-ways" id="manieren">
+    <div class="wrap">
+      <div class="ways-intro">
+        <div>
+          <p class="section-label">{h['ways_label']}</p>
+          <h2>{h['ways_h2']}</h2>
+        </div>
+        <p>{h['ways_p']}</p>
+      </div>
+      <div class="ways-grid">
+        <article class="way way-free">
+          <span class="way-label">{h['free_label']}</span>
+          <h3>{h['free_h']}</h3>
+          <p>{h['free_p']}</p>
+          <a class="text-link on-paper" href="/{lang}/zo-werkt-het.html">{h['free_cta']} →</a>
+        </article>
+        <article class="way way-book">
+          <span class="way-label">{h['book_label']}</span>
+          <h3>{h['book_h']}</h3>
+          <p>{h['book_p']}</p>
+          <div class="way-proof"><b>{PARTNER_TXT[lang]['facts'][0][0]}</b><b>12 {ROUTES_TXT[lang]['hoofdstukken']}</b><b>{PARTNER_TXT[lang]['facts'][2][0]} {PARTNER_TXT[lang]['facts'][2][1]}</b></div>
+          <a class="btn-primary" href="/{lang}/routes/">{h['book_cta']} <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="travel-rhythms">
+    <div class="wrap">
+      <div class="rhythms-head">
+        <div>
+          <p class="section-label">{h['modes_label']}</p>
+          <h2>{h['modes_h2']}</h2>
+        </div>
+        <p>{h['modes_p']}</p>
+      </div>
+      <div class="travel-modes">{modes_html}</div>
+    </div>
   </section>
 
   <section class="journey" id="reis">
@@ -1488,6 +1797,19 @@ def build_home(lang):
     <p style="margin-top:26px;"><a class="text-link on-paper" href="/{lang}/stories/">{s['stories_view_all']}</a></p>
   </div></section>
 
+  <section class="partner-invite">
+    <div class="partner-invite-image" aria-hidden="true"></div>
+    <div class="partner-invite-copy">
+      <p class="eyebrow on-photo">{h['partner_label']}</p>
+      <h2>{h['partner_h2']}</h2>
+      <p>{h['partner_p']}</p>
+      <div class="partner-actions">
+        <a class="btn-primary" href="mailto:nimco@nentjes.nl?subject=Pilotroute%20voor%202R">{h['partner_cta']} <span>↗</span></a>
+        <a class="text-link" href="/{lang}/partners/">{h['partner_more']} →</a>
+      </div>
+    </div>
+  </section>
+
   <section class="invitation" id="meenemen">
     <div class="invitation-image" aria-hidden="true"></div>
     <div class="invitation-content">
@@ -1507,7 +1829,7 @@ def build_home(lang):
     # Live tellers (testers/verhalen vandaag) zijn van de publieke pagina
     # gehaald: dat was interne telemetrie en liet ongewild de prille schaal
     # zien. De strip toont nu stabiele productfeiten (stat3/stat4 in SITE).
-    return page_shell(lang, title, s['hero_lede'].replace('<b>', '').replace('</b>', ''), 'product', body, path='index.html')
+    return page_shell(lang, title, h['hero_lede'], 'product', body, path='index.html')
 
 def build_roadmap(lang):
     s = SITE[lang]
@@ -1910,32 +2232,32 @@ def live_stories_section(lang):
 FEATURED_SLUG = 'kasteel-nijenrode-breukelen'
 STORIES_EXTRA = {
 'nl': dict(hero_eyebrow='Het levende reisboek', hero_h1='Verhalen die onderweg begonnen.',
-    hero_lede='Iedere plek draagt een verhaal. Soms hoef je er alleen maar langs te komen. Deze verhalen werden tijdens echte ritten door 2R verteld, door ons nagelezen en voorzien van hun bron.',
+    hero_lede='Iedere plek draagt een verhaal. Soms hoef je er alleen maar langs te komen. Deze verhalen ontstonden tijdens wandelingen, ritten en reizen met 2R, zijn door ons nagelezen en voorzien van hun bron.',
     hero_cta='Lees het eerste verhaal', hero_alt='Een reiziger kijkt vanuit de auto naar een voorbijtrekkend Europees dorp, met een reisboek op schoot.',
     featured_label='Uitgelicht', read_story='Lees het verhaal', detail_source_h='Waar dit verhaal vandaan komt',
     related='Verder lezen', invite_h='Neem Route mee op je volgende reis'),
 'en': dict(hero_eyebrow='The living travel book', hero_h1='Stories that began on the road.',
-    hero_lede='Every place carries a story. Sometimes you only have to pass by. These stories were told by 2R during real trips, checked by us and given their source.',
+    hero_lede='Every place carries a story. Sometimes you only have to pass by. These stories emerged on walks, rides and journeys with 2R, and were checked and sourced by us.',
     hero_cta='Read the first story', hero_alt='A traveler looks from the car at a passing European village, with a travel book on their lap.',
     featured_label='Featured', read_story='Read the story', detail_source_h='Where this story comes from',
     related='Read on', invite_h='Take Route along on your next trip'),
 'de': dict(hero_eyebrow='Das lebendige Reisebuch', hero_h1='Geschichten, die unterwegs begannen.',
-    hero_lede='Jeder Ort trägt eine Geschichte. Manchmal musst du nur daran vorbeikommen. Diese Geschichten wurden von 2R während echter Fahrten erzählt, von uns geprüft und mit ihrer Quelle versehen.',
+    hero_lede='Jeder Ort trägt eine Geschichte. Manchmal musst du nur daran vorbeikommen. Diese Geschichten entstanden auf Wanderungen, Fahrten und Reisen mit 2R und wurden von uns geprüft und mit Quellen versehen.',
     hero_cta='Lies die erste Geschichte', hero_alt='Ein Reisender blickt aus dem Auto auf ein vorbeiziehendes europäisches Dorf, ein Reisebuch auf dem Schoß.',
     featured_label='Ausgewählt', read_story='Geschichte lesen', detail_source_h='Woher diese Geschichte stammt',
     related='Weiterlesen', invite_h='Nimm Route mit auf deine nächste Reise'),
 'fr': dict(hero_eyebrow='Le carnet de voyage vivant', hero_h1='Des histoires nées en chemin.',
-    hero_lede="Chaque lieu porte une histoire. Parfois, il suffit de passer devant. Ces récits ont été racontés par 2R lors de vrais trajets, vérifiés par nous et accompagnés de leur source.",
+    hero_lede="Chaque lieu porte une histoire. Parfois, il suffit de passer devant. Ces récits sont nés de promenades et de voyages avec 2R, puis ont été vérifiés et sourcés par nos soins.",
     hero_cta='Lire le premier récit', hero_alt="Un voyageur regarde depuis la voiture un village européen qui défile, un carnet de voyage sur les genoux.",
     featured_label='À la une', read_story='Lire le récit', detail_source_h="D'où vient cette histoire",
     related='À lire aussi', invite_h='Emportez Route lors de votre prochain voyage'),
 'es': dict(hero_eyebrow='El libro de viaje vivo', hero_h1='Historias que empezaron en el camino.',
-    hero_lede='Cada lugar guarda una historia. A veces solo tienes que pasar por delante. Estas historias fueron contadas por 2R durante viajes reales, revisadas por nosotros y con su fuente.',
+    hero_lede='Cada lugar guarda una historia. A veces solo tienes que pasar por delante. Estas historias nacieron en paseos y viajes con 2R, y fueron revisadas y documentadas por nosotros.',
     hero_cta='Lee la primera historia', hero_alt='Un viajero mira desde el coche un pueblo europeo que pasa, con un libro de viaje en el regazo.',
     featured_label='Destacado', read_story='Leer la historia', detail_source_h='De dónde viene esta historia',
     related='Sigue leyendo', invite_h='Lleva Route en tu próximo viaje'),
 'pt': dict(hero_eyebrow='O livro de viagem vivo', hero_h1='Histórias que começaram no caminho.',
-    hero_lede='Cada lugar guarda uma história. Às vezes basta passar por ela. Estas histórias foram contadas pelo 2R durante viagens reais, revistas por nós e com a sua fonte.',
+    hero_lede='Cada lugar guarda uma história. Às vezes basta passar por ela. Estas histórias nasceram em caminhadas e viagens com o 2R, e foram revistas e documentadas por nós.',
     hero_cta='Leia a primeira história', hero_alt='Um viajante olha do carro para uma vila europeia que passa, com um livro de viagem no colo.',
     featured_label='Em destaque', read_story='Ler a história', detail_source_h='De onde vem esta história',
     related='Continue a ler', invite_h='Leve o Route na sua próxima viagem'),
@@ -2039,8 +2361,8 @@ def build_story_detail(lang, st):
 # public/audio/routes/<slug>/; kaartdata uit de 2R-vectorkaartpijplijn.
 # ---------------------------------------------------------------------------
 ROUTES_TXT = {
-'nl': dict(nav='Luisterroutes', eyebrow='Luisterroutes', h1='Twaalf provincies,<br>twaalf luisterwandelingen.',
-    lede='Elke provincie krijgt minstens één wandelroute als levend luisterverhaal: een officiële route van de beheerder, een eigen kaart, en hoofdstukken die vertellen op precies de goede plek. Utrecht is live — de rest is in productie.',
+'nl': dict(nav='Luisterroutes', eyebrow='Het levende routeboek', h1='De eerste wandeling<br>heeft een stem.',
+    lede='Boswachterspad Stulp en Kasteeltuin is onze eerste complete luisterroute: officiële GPX, eigen kaart en twaalf hoofdstukken op precies de goede plek. Van hieruit groeit een bibliotheek door heel Nederland.',
     live='Beluister de route', productie='In productie', hoofdstukken='hoofdstukken', km='km',
     kwaliteit_h='Zo ontstaat kwaliteit', kwaliteit_p='Elk routeboek doorloopt dezelfde vijf stappen vóór het online komt:',
     kwaliteit=['Betrouwbare lokale bronnen — elk feit met bron-URL, dubbel gecontroleerd', 'Eén dragende verhaallijn van begin tot slot', 'Hoofdstukken op wandeltempo: elke vierhonderd tot zevenhonderd meter', 'Menselijke eindredactie, elke ingreep gelogd', 'Een warme vertelstem'],
@@ -2048,8 +2370,8 @@ ROUTES_TXT = {
     gpx='Download de originele GPX', bronpagina='Routepagina van de beheerder', kaart_h='De route op de kaart',
     kaart_p='Een eigen 2R-kaart, getekend uit OpenStreetMap-geodata — zoom in tot op het wandelpad. Tik op een halte om naar het hoofdstuk te springen.',
     home_link='Beluister de hele wandeling →', terug='← Alle luisterroutes'),
-'en': dict(nav='Listening routes', eyebrow='Listening routes', h1='Twelve provinces,<br>twelve listening walks.',
-    lede="Every Dutch province gets at least one walking route as a living audio story: an official route, our own map, and chapters told in exactly the right place. Utrecht is live — the rest is in production.",
+'en': dict(nav='Listening routes', eyebrow='The living route book', h1='The first walk<br>has found its voice.',
+    lede='The Stulp and Castle Garden forester trail is our first complete listening route: official GPX, our own map and twelve chapters in exactly the right places. From here, a library across the Netherlands begins to grow.',
     live='Listen to this route', productie='In production', hoofdstukken='chapters', km='km',
     kwaliteit_h='How quality is made', kwaliteit_p='Every route book passes the same five steps before going live:',
     kwaliteit=['Reliable local sources — every fact with its URL, double-checked', 'One carrying storyline from start to finish', 'Chapters at walking pace: every four to seven hundred metres', 'Human editing, every change logged', 'A warm narrating voice'],
@@ -2057,8 +2379,8 @@ ROUTES_TXT = {
     hoofdstuk='Chapter', bron_lbl='Sources', gpx='Download the original GPX', bronpagina="The steward's route page",
     kaart_h='The route on the map', kaart_p='Our own 2R map, drawn from OpenStreetMap geodata — zoom in to the footpath itself. Tap a stop to jump to its chapter.',
     home_link='Listen to the full walk →', terug='← All listening routes'),
-'de': dict(nav='Hörrouten', eyebrow='Hörrouten', h1='Zwölf Provinzen,<br>zwölf Hörwanderungen.',
-    lede='Jede niederländische Provinz bekommt mindestens eine Wanderroute als lebendige Hörgeschichte: offizielle Route, eigene Karte, Kapitel am genau richtigen Ort. Utrecht ist live — der Rest ist in Produktion.',
+'de': dict(nav='Hörrouten', eyebrow='Das lebendige Routenbuch', h1='Die erste Wanderung<br>hat eine Stimme.',
+    lede='Der Boswachterspad Stulp en Kasteeltuin ist unsere erste vollständige Hörroute: offizieller GPX-Track, eigene Karte und zwölf Kapitel an genau den richtigen Orten. Von hier aus wächst eine Bibliothek in den ganzen Niederlanden.',
     live='Route anhören', productie='In Produktion', hoofdstukken='Kapitel', km='km',
     kwaliteit_h='So entsteht Qualität', kwaliteit_p='Jedes Routenbuch durchläuft vor der Veröffentlichung dieselben fünf Schritte:',
     kwaliteit=['Verlässliche lokale Quellen — jeder Fakt mit URL, doppelt geprüft', 'Eine tragende Erzähllinie von Anfang bis Ende', 'Kapitel im Wandertempo: alle vier- bis siebenhundert Meter', 'Menschliche Redaktion, jeder Eingriff protokolliert', 'Eine warme Erzählstimme'],
@@ -2066,8 +2388,8 @@ ROUTES_TXT = {
     hoofdstuk='Kapitel', bron_lbl='Quellen', gpx='Original-GPX herunterladen', bronpagina='Routenseite des Verwalters',
     kaart_h='Die Route auf der Karte', kaart_p='Eine eigene 2R-Karte aus OpenStreetMap-Geodaten — zoome bis auf den Wanderweg. Tippe auf einen Halt, um zum Kapitel zu springen.',
     home_link='Die ganze Wanderung anhören →', terug='← Alle Hörrouten'),
-'fr': dict(nav='Routes audio', eyebrow='Routes audio', h1='Douze provinces,<br>douze promenades sonores.',
-    lede="Chaque province néerlandaise reçoit au moins une randonnée sous forme de récit audio vivant : itinéraire officiel, carte maison, chapitres racontés exactement au bon endroit. Utrecht est en ligne — le reste est en production.",
+'fr': dict(nav='Routes audio', eyebrow='Le carnet de route vivant', h1='La première promenade<br>a trouvé sa voix.',
+    lede="Le sentier forestier Stulp et Jardin du Château est notre première route audio complète : GPX officiel, carte maison et douze chapitres aux endroits justes. À partir d'ici se construit une bibliothèque dans tous les Pays-Bas.",
     live='Écouter cette route', productie='En production', hoofdstukken='chapitres', km='km',
     kwaliteit_h='Comment naît la qualité', kwaliteit_p='Chaque carnet de route passe par les cinq mêmes étapes avant sa mise en ligne :',
     kwaliteit=['Des sources locales fiables — chaque fait avec son URL, vérifié deux fois', 'Une seule ligne narrative du début à la fin', 'Des chapitres au rythme de la marche : tous les quatre à sept cents mètres', 'Une relecture humaine, chaque intervention consignée', 'Une voix chaleureuse'],
@@ -2075,8 +2397,8 @@ ROUTES_TXT = {
     hoofdstuk='Chapitre', bron_lbl='Sources', gpx='Télécharger le GPX original', bronpagina='Page officielle de la route',
     kaart_h='La route sur la carte', kaart_p="Une carte 2R maison, dessinée à partir des géodonnées OpenStreetMap — zoomez jusqu'au sentier. Touchez une halte pour rejoindre son chapitre.",
     home_link='Écouter toute la promenade →', terug='← Toutes les routes audio'),
-'es': dict(nav='Rutas de audio', eyebrow='Rutas de audio', h1='Doce provincias,<br>doce paseos sonoros.',
-    lede='Cada provincia neerlandesa recibe al menos una ruta a pie como relato sonoro vivo: ruta oficial, mapa propio y capítulos contados justo en el lugar correcto. Utrecht ya está en línea — el resto, en producción.',
+'es': dict(nav='Rutas de audio', eyebrow='El libro de ruta vivo', h1='El primer paseo<br>ya tiene voz.',
+    lede='El sendero forestal Stulp y Jardín del Castillo es nuestra primera ruta sonora completa: GPX oficial, mapa propio y doce capítulos en los lugares precisos. Desde aquí crecerá una biblioteca por todos los Países Bajos.',
     live='Escuchar esta ruta', productie='En producción', hoofdstukken='capítulos', km='km',
     kwaliteit_h='Así nace la calidad', kwaliteit_p='Cada libro de ruta pasa por los mismos cinco pasos antes de publicarse:',
     kwaliteit=['Fuentes locales fiables — cada dato con su URL, verificado dos veces', 'Una sola línea narrativa de principio a fin', 'Capítulos a ritmo de paseo: cada cuatrocientos a setecientos metros', 'Edición humana, cada cambio registrado', 'Una voz cálida'],
@@ -2084,8 +2406,8 @@ ROUTES_TXT = {
     hoofdstuk='Capítulo', bron_lbl='Fuentes', gpx='Descargar el GPX original', bronpagina='Página oficial de la ruta',
     kaart_h='La ruta en el mapa', kaart_p='Un mapa 2R propio, dibujado con geodatos de OpenStreetMap — acércate hasta el propio sendero. Toca una parada para ir a su capítulo.',
     home_link='Escucha el paseo completo →', terug='← Todas las rutas de audio'),
-'pt': dict(nav='Rotas de áudio', eyebrow='Rotas de áudio', h1='Doze províncias,<br>doze passeios sonoros.',
-    lede='Cada província neerlandesa recebe pelo menos uma caminhada como história sonora viva: rota oficial, mapa próprio e capítulos contados exatamente no lugar certo. Utrecht já está no ar — o resto está em produção.',
+'pt': dict(nav='Rotas de áudio', eyebrow='O livro de rota vivo', h1='O primeiro passeio<br>já tem voz.',
+    lede='O trilho florestal Stulp e Jardim do Castelo é a nossa primeira rota sonora completa: GPX oficial, mapa próprio e doze capítulos nos lugares certos. A partir daqui cresce uma biblioteca por todos os Países Baixos.',
     live='Ouvir esta rota', productie='Em produção', hoofdstukken='capítulos', km='km',
     kwaliteit_h='Assim nasce a qualidade', kwaliteit_p='Cada livro de rota passa pelos mesmos cinco passos antes de ir ao ar:',
     kwaliteit=['Fontes locais confiáveis — cada fato com sua URL, verificado duas vezes', 'Uma única linha narrativa do início ao fim', 'Capítulos no ritmo da caminhada: a cada quatrocentos a setecentos metros', 'Edição humana, cada mudança registrada', 'Uma voz calorosa'],
@@ -2093,6 +2415,195 @@ ROUTES_TXT = {
     hoofdstuk='Capítulo', bron_lbl='Fontes', gpx='Baixar o GPX original', bronpagina='Página oficial da rota',
     kaart_h='A rota no mapa', kaart_p='Um mapa 2R próprio, desenhado com geodados do OpenStreetMap — aproxime até a própria trilha. Toque numa parada para ir ao capítulo.',
     home_link='Ouça o passeio completo →', terug='← Todas as rotas de áudio'),
+}
+
+PARTNER_TXT = {
+'nl': dict(
+    title='Voor routebeheerders — 2R (Second Route)',
+    description='Maak van een bestaande wandel- of fietsroute een levend, meertalig luisterverhaal met kaart, hoofdstukken, bronnen en een warme vertelstem.',
+    eyebrow='Voor routebeheerders, uitgevers en erfgoedmakers',
+    h1='Uw route wijst de weg.<br>2R geeft haar een stem.',
+    lede='Een GPX-bestand vertelt waar iemand moet lopen of fietsen. 2R voegt toe waarom die weg ertoe doet — als één zorgvuldig opgebouwd luisterverhaal.',
+    primary='Bespreek een pilotroute', secondary='Beluister onze eerste route',
+    proof_label='Van pad naar verhaal', proof_h='Eén wandeling bewijst de hele keten.',
+    proof_p='Voor Boswachterspad Stulp en Kasteeltuin brachten we de officiële route, lokale bronnen en OpenStreetMap-geodata samen in een routeboek dat op wandeltempo vertelt.',
+    facts=[('5,7 km', 'officiële wandelroute'), ('12', 'verbonden hoofdstukken'), ('70', 'geverifieerde feiten'), ('1', 'dragende verhaallijn')],
+    process_label='De werkwijze', process_h='Van bronmateriaal naar een levende route.',
+    process=[
+        ('De route', 'U levert een GPX-bestand, routebeschrijving of bestaande gids. Wij leggen het echte spoor en de relevante omgeving vast.'),
+        ('De kennis', 'Lokale bronnen, erfgoedarchieven en informatie van de beheerder vormen de grondstof. Elk feit blijft herleidbaar.'),
+        ('Het reisboek', 'Hoofdstukken krijgen één rode draad, het juiste ritme voor wandelen of fietsen en een menselijke eindredactie.'),
+        ('De beleving', 'Publicatie kan in 2R, op het web of via een QR-code — met kaart, audio, leestekst en bronvermelding.'),
+    ],
+    audience_label='Voor wie', audience_h='Bestaande routes, een nieuw publiek.',
+    audiences=[
+        ('Wandel- en fietsorganisaties', 'Maak van GPX, knooppunten en papieren gidsen een ervaring die onderweg vanzelf begint.'),
+        ('Natuur en erfgoed', 'Laat landschap, monumenten en lokale stemmen samen één betrouwbaar verhaal vertellen.'),
+        ('Steden en regio’s', 'Ontvang bezoekers in hun eigen taal, zonder opnieuw een complete app te hoeven bouwen.'),
+        ('Uitgevers', 'Voeg een luistereditie toe aan een bestaande gids of ontwikkel een nieuw digitaal routeboek.'),
+    ],
+    principle='Een GPX-bestand wijst de weg. 2R vertelt het verhaal van die weg.',
+    studio_label='De volgende horizon', studio_h='Van pilot naar 2R Studio.',
+    studio_p='We beginnen bewust met enkele routes die we samen met hun beheerders maken. Uit die praktijk groeit een Studio waarmee organisaties later zelf routes, bronnen en hoofdstukken kunnen beheren — terwijl 2R kwaliteit, stem en distributie bewaakt.',
+    final_h='Welke route verdient als eerste een stem?',
+    final_p='Stuur ons een GPX-bestand, gids of routepagina. We kiezen samen één route waarmee we de inhoud, techniek en publieksreactie kunnen bewijzen.',
+    final_cta='Laat één route proefvertellen',
+),
+'en': dict(
+    title='For route publishers — 2R (Second Route)',
+    description='Turn an existing walking or cycling route into a living, multilingual audio story with a map, chapters, sources and a warm narrative voice.',
+    eyebrow='For route stewards, publishers and heritage makers',
+    h1='Your route shows the way.<br>2R gives it a voice.',
+    lede='A GPX file tells people where to walk or cycle. 2R adds why that road matters — as one carefully composed listening story.',
+    primary='Discuss a pilot route', secondary='Listen to our first route',
+    proof_label='From path to story', proof_h='One walk proves the entire chain.',
+    proof_p='For the Stulp and Castle Garden forester trail, we brought together the official route, local sources and OpenStreetMap geodata in a route book paced for walking.',
+    facts=[('5.7 km', 'official walking route'), ('12', 'connected chapters'), ('70', 'verified facts'), ('1', 'carrying storyline')],
+    process_label='The method', process_h='From source material to a living route.',
+    process=[
+        ('The route', 'You supply a GPX file, route description or existing guide. We map the actual trail and its meaningful surroundings.'),
+        ('The knowledge', 'Local sources, heritage archives and steward information become the raw material. Every fact remains traceable.'),
+        ('The route book', 'Chapters gain one narrative thread, the right walking or cycling pace and a final human edit.'),
+        ('The experience', 'Publish in 2R, on the web or through a QR code — with map, audio, reading text and source notes.'),
+    ],
+    audience_label='Who it is for', audience_h='Existing routes, a new audience.',
+    audiences=[
+        ('Walking and cycling organisations', 'Turn GPX tracks, route networks and printed guides into an experience that starts by itself.'),
+        ('Nature and heritage', 'Let landscape, monuments and local voices form one reliable story.'),
+        ('Cities and regions', 'Welcome visitors in their own language without building an entire app from scratch.'),
+        ('Publishers', 'Add a listening edition to an existing guide or create a new digital route book.'),
+    ],
+    principle='A GPX file shows the way. 2R tells the story of that way.',
+    studio_label='The next horizon', studio_h='From pilot to 2R Studio.',
+    studio_p='We deliberately begin with a few routes made together with their stewards. That practice can grow into a Studio where organisations manage routes, sources and chapters themselves, while 2R safeguards quality, voice and distribution.',
+    final_h='Which route deserves a voice first?',
+    final_p='Send us a GPX file, guide or route page. Together we will choose one route to prove the content, technology and audience response.',
+    final_cta='Let us narrate one pilot route',
+),
+'de': dict(
+    title='Für Routenanbieter — 2R (Second Route)',
+    description='Verwandeln Sie eine Wander- oder Radroute in eine lebendige, mehrsprachige Hörgeschichte mit Karte, Kapiteln, Quellen und warmer Erzählstimme.',
+    eyebrow='Für Routenanbieter, Verlage und Kulturerbe-Initiativen',
+    h1='Ihre Route zeigt den Weg.<br>2R gibt ihr eine Stimme.',
+    lede='Eine GPX-Datei zeigt, wo man wandert oder Rad fährt. 2R ergänzt, warum dieser Weg bedeutsam ist — als sorgfältig komponierte Hörgeschichte.',
+    primary='Pilotroute besprechen', secondary='Unsere erste Route anhören',
+    proof_label='Vom Weg zur Geschichte', proof_h='Eine Wanderung beweist die ganze Kette.',
+    proof_p='Für den Boswachterspad Stulp en Kasteeltuin verbanden wir die offizielle Route, lokale Quellen und OpenStreetMap-Geodaten zu einem Routenbuch im Wandertempo.',
+    facts=[('5,7 km', 'offizielle Wanderroute'), ('12', 'verbundene Kapitel'), ('70', 'geprüfte Fakten'), ('1', 'tragende Erzähllinie')],
+    process_label='Die Arbeitsweise', process_h='Vom Quellenmaterial zur lebendigen Route.',
+    process=[
+        ('Die Route', 'Sie liefern GPX-Datei, Routenbeschreibung oder Reiseführer. Wir erfassen den echten Weg und sein relevantes Umfeld.'),
+        ('Das Wissen', 'Lokale Quellen, Archive und Informationen des Anbieters bilden das Material. Jeder Fakt bleibt nachvollziehbar.'),
+        ('Das Routenbuch', 'Kapitel erhalten einen roten Faden, das passende Wander- oder Radtempo und eine menschliche Schlussredaktion.'),
+        ('Das Erlebnis', 'Veröffentlichung in 2R, im Web oder per QR-Code — mit Karte, Audio, Lesetext und Quellen.'),
+    ],
+    audience_label='Für wen', audience_h='Bestehende Routen, ein neues Publikum.',
+    audiences=[
+        ('Wander- und Radorganisationen', 'Machen Sie aus GPX, Routennetzen und gedruckten Führern ein Erlebnis, das unterwegs von selbst beginnt.'),
+        ('Natur und Kulturerbe', 'Lassen Sie Landschaft, Denkmäler und lokale Stimmen eine verlässliche Geschichte erzählen.'),
+        ('Städte und Regionen', 'Begrüßen Sie Gäste in ihrer Sprache, ohne selbst eine vollständige App zu bauen.'),
+        ('Verlage', 'Ergänzen Sie einen Führer um eine Hörausgabe oder entwickeln Sie ein digitales Routenbuch.'),
+    ],
+    principle='Eine GPX-Datei zeigt den Weg. 2R erzählt die Geschichte dieses Weges.',
+    studio_label='Der nächste Horizont', studio_h='Von der Pilotroute zum 2R Studio.',
+    studio_p='Wir beginnen bewusst mit wenigen Routen, die gemeinsam mit ihren Anbietern entstehen. Daraus kann ein Studio wachsen, in dem Organisationen Routen, Quellen und Kapitel selbst verwalten — während 2R Qualität, Stimme und Distribution sichert.',
+    final_h='Welche Route verdient zuerst eine Stimme?',
+    final_p='Senden Sie uns GPX-Datei, Führer oder Routenseite. Gemeinsam wählen wir eine Route, an der Inhalt, Technik und Publikumsreaktion sichtbar werden.',
+    final_cta='Eine Pilotroute erzählen lassen',
+),
+'fr': dict(
+    title='Pour les éditeurs de routes — 2R (Second Route)',
+    description="Transformez une randonnée ou un itinéraire cyclable en récit audio vivant et multilingue, avec carte, chapitres, sources et voix chaleureuse.",
+    eyebrow='Pour les gestionnaires, éditeurs et acteurs du patrimoine',
+    h1='Votre route montre le chemin.<br>2R lui donne une voix.',
+    lede="Un fichier GPX indique où marcher ou pédaler. 2R ajoute pourquoi ce chemin compte — sous la forme d'un récit audio soigneusement construit.",
+    primary='Parler d’une route pilote', secondary='Écouter notre première route',
+    proof_label='Du sentier au récit', proof_h='Une randonnée démontre toute la chaîne.',
+    proof_p="Pour le sentier forestier Stulp et Jardin du Château, nous avons réuni la route officielle, les sources locales et les géodonnées OpenStreetMap dans un carnet rythmé pour la marche.",
+    facts=[('5,7 km', 'randonnée officielle'), ('12', 'chapitres reliés'), ('70', 'faits vérifiés'), ('1', 'fil narratif')],
+    process_label='La méthode', process_h="Des sources à l'itinéraire vivant.",
+    process=[
+        ("L'itinéraire", 'Vous fournissez un fichier GPX, une description ou un guide. Nous cartographions le tracé réel et son environnement pertinent.'),
+        ('Les connaissances', 'Sources locales, archives patrimoniales et informations du gestionnaire forment la matière. Chaque fait reste traçable.'),
+        ('Le carnet de route', 'Les chapitres reçoivent un fil rouge, le bon rythme de marche ou de vélo et une relecture humaine finale.'),
+        ("L'expérience", 'Publication dans 2R, sur le web ou par QR code — avec carte, audio, texte et sources.'),
+    ],
+    audience_label='Pour qui', audience_h='Des routes existantes, un nouveau public.',
+    audiences=[
+        ('Organisations de marche et de vélo', "Transformez GPX, réseaux et guides papier en expérience qui commence d'elle-même."),
+        ('Nature et patrimoine', 'Faites du paysage, des monuments et des voix locales une histoire fiable.'),
+        ('Villes et régions', 'Accueillez les visiteurs dans leur langue sans devoir construire une application complète.'),
+        ('Éditeurs', "Ajoutez une édition audio à un guide existant ou créez un nouveau carnet de route numérique."),
+    ],
+    principle='Un fichier GPX montre le chemin. 2R raconte l’histoire de ce chemin.',
+    studio_label="L'horizon suivant", studio_h='De la route pilote au 2R Studio.',
+    studio_p="Nous commençons volontairement par quelques routes créées avec leurs gestionnaires. Cette pratique pourra devenir un Studio où les organisations gèrent routes, sources et chapitres, tandis que 2R veille à la qualité, à la voix et à la diffusion.",
+    final_h='Quelle route mérite une voix en premier ?',
+    final_p='Envoyez-nous un fichier GPX, un guide ou une page de route. Ensemble, choisissons un itinéraire pour éprouver le contenu, la technologie et la réaction du public.',
+    final_cta='Faire raconter une route pilote',
+),
+'es': dict(
+    title='Para editores de rutas — 2R (Second Route)',
+    description='Convierte una ruta a pie o en bicicleta en un relato sonoro vivo y multilingüe, con mapa, capítulos, fuentes y una voz cálida.',
+    eyebrow='Para gestores de rutas, editores y creadores de patrimonio',
+    h1='Tu ruta muestra el camino.<br>2R le da voz.',
+    lede='Un archivo GPX indica por dónde caminar o pedalear. 2R añade por qué ese camino importa, como un relato sonoro cuidadosamente construido.',
+    primary='Hablar de una ruta piloto', secondary='Escuchar nuestra primera ruta',
+    proof_label='Del camino a la historia', proof_h='Una caminata demuestra toda la cadena.',
+    proof_p='Para el Boswachterspad Stulp en Kasteeltuin reunimos la ruta oficial, fuentes locales y geodatos de OpenStreetMap en un libro de ruta al ritmo del caminante.',
+    facts=[('5,7 km', 'ruta oficial a pie'), ('12', 'capítulos conectados'), ('70', 'datos verificados'), ('1', 'hilo narrativo')],
+    process_label='El método', process_h='Del material de origen a una ruta viva.',
+    process=[
+        ('La ruta', 'Aportas un archivo GPX, una descripción o una guía. Trazamos el recorrido real y su entorno relevante.'),
+        ('El conocimiento', 'Fuentes locales, archivos patrimoniales e información del gestor forman la materia prima. Cada dato sigue siendo rastreable.'),
+        ('El libro de ruta', 'Los capítulos reciben un hilo conductor, el ritmo adecuado para caminar o pedalear y una revisión humana final.'),
+        ('La experiencia', 'Publicación en 2R, en la web o mediante QR — con mapa, audio, texto y fuentes.'),
+    ],
+    audience_label='Para quién', audience_h='Rutas existentes, un público nuevo.',
+    audiences=[
+        ('Organizaciones de senderismo y ciclismo', 'Convierte GPX, redes y guías impresas en una experiencia que comienza sola.'),
+        ('Naturaleza y patrimonio', 'Haz que paisaje, monumentos y voces locales formen una historia fiable.'),
+        ('Ciudades y regiones', 'Recibe a los visitantes en su idioma sin tener que construir una aplicación completa.'),
+        ('Editoriales', 'Añade una edición sonora a una guía existente o crea un nuevo libro de ruta digital.'),
+    ],
+    principle='Un archivo GPX muestra el camino. 2R cuenta la historia de ese camino.',
+    studio_label='El siguiente horizonte', studio_h='De la ruta piloto a 2R Studio.',
+    studio_p='Empezamos deliberadamente con unas pocas rutas creadas junto a sus gestores. De esa práctica puede crecer un Studio donde las organizaciones gestionen rutas, fuentes y capítulos, mientras 2R cuida la calidad, la voz y la distribución.',
+    final_h='¿Qué ruta merece una voz primero?',
+    final_p='Envíanos un archivo GPX, una guía o una página de ruta. Juntos elegiremos una ruta para demostrar el contenido, la tecnología y la respuesta del público.',
+    final_cta='Deja que narremos una ruta piloto',
+),
+'pt': dict(
+    title='Para editores de rotas — 2R (Second Route)',
+    description='Transforme um percurso pedestre ou de bicicleta numa história sonora viva e multilingue, com mapa, capítulos, fontes e uma voz calorosa.',
+    eyebrow='Para gestores de rotas, editores e criadores de património',
+    h1='A sua rota mostra o caminho.<br>O 2R dá-lhe voz.',
+    lede='Um ficheiro GPX indica onde caminhar ou pedalar. O 2R acrescenta porque esse caminho importa — como uma história sonora cuidadosamente construída.',
+    primary='Conversar sobre uma rota-piloto', secondary='Ouvir a nossa primeira rota',
+    proof_label='Do caminho à história', proof_h='Uma caminhada demonstra toda a cadeia.',
+    proof_p='Para o Boswachterspad Stulp en Kasteeltuin reunimos a rota oficial, fontes locais e geodados OpenStreetMap num livro de rota ao ritmo da caminhada.',
+    facts=[('5,7 km', 'percurso oficial'), ('12', 'capítulos ligados'), ('70', 'factos verificados'), ('1', 'fio narrativo')],
+    process_label='O método', process_h='Das fontes a uma rota viva.',
+    process=[
+        ('A rota', 'Fornece um ficheiro GPX, descrição ou guia. Mapeamos o percurso real e o contexto relevante.'),
+        ('O conhecimento', 'Fontes locais, arquivos patrimoniais e informação do gestor formam a matéria-prima. Cada facto permanece rastreável.'),
+        ('O livro de rota', 'Os capítulos ganham um fio condutor, o ritmo certo para caminhar ou pedalar e uma revisão humana final.'),
+        ('A experiência', 'Publicação no 2R, na web ou por QR code — com mapa, áudio, texto e fontes.'),
+    ],
+    audience_label='Para quem', audience_h='Rotas existentes, um novo público.',
+    audiences=[
+        ('Organizações pedestres e de ciclismo', 'Transforme GPX, redes e guias impressos numa experiência que começa sozinha.'),
+        ('Natureza e património', 'Faça da paisagem, dos monumentos e das vozes locais uma história fiável.'),
+        ('Cidades e regiões', 'Receba visitantes na sua língua sem construir uma aplicação inteira.'),
+        ('Editoras', 'Acrescente uma edição sonora a um guia ou crie um novo livro de rota digital.'),
+    ],
+    principle='Um ficheiro GPX mostra o caminho. O 2R conta a história desse caminho.',
+    studio_label='O horizonte seguinte', studio_h='Da rota-piloto ao 2R Studio.',
+    studio_p='Começamos de propósito com algumas rotas feitas em conjunto com os gestores. Dessa prática poderá crescer um Studio onde as organizações gerem rotas, fontes e capítulos, enquanto o 2R protege a qualidade, a voz e a distribuição.',
+    final_h='Que rota merece primeiro uma voz?',
+    final_p='Envie-nos um ficheiro GPX, guia ou página de rota. Juntos escolhemos uma rota para provar o conteúdo, a tecnologia e a reação do público.',
+    final_cta='Deixe-nos narrar uma rota-piloto',
+),
 }
 
 PROVINCIES = [
@@ -2129,7 +2640,9 @@ FOCUS_LBL = {
 def build_routes_index(lang):
     t = ROUTES_TXT[lang]
     kaarten = ''
-    for prov, slug in PROVINCIES:
+    # De route die echt beluisterbaar is staat altijd vooraan. Toekomstige
+    # provincies tonen daarna de horizon, niet een blokkade vóór het product.
+    for prov, slug in sorted(PROVINCIES, key=lambda item: 0 if item[1] else 1):
         if slug:
             r = ROUTES[slug]
             kaarten += f"""      <a class="prov-kaart live" href="/{lang}/routes/{slug}/">
@@ -2255,6 +2768,76 @@ def build_route_page(lang, r):
                       extra_head=extra, path=f"routes/{r['slug']}/index.html")
 
 
+def build_partners(lang):
+    t = PARTNER_TXT[lang]
+    facts = ''.join(f'''<div class="partner-fact"><b>{value}</b><span>{label}</span></div>'''
+                    for value, label in t['facts'])
+    process = ''.join(f'''<article class="partner-step">
+        <span>{i:02d}</span><div><h3>{title}</h3><p>{copy}</p></div>
+      </article>''' for i, (title, copy) in enumerate(t['process'], 1))
+    audiences = ''.join(f'''<article class="partner-audience">
+        <span class="num-mark">{i:02d}</span><h3>{title}</h3><p>{copy}</p>
+      </article>''' for i, (title, copy) in enumerate(t['audiences'], 1))
+    mail = 'mailto:nimco@nentjes.nl?subject=Pilotroute%20voor%202R'
+    body = f'''  <section class="partner-hero">
+    <img src="/images/reisjournaal.jpg" alt="Een open reisjournaal en kaart als begin van een luisterroute." width="1536" height="1024" fetchpriority="high" decoding="async">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="partner-hero-copy">
+      <p class="eyebrow on-photo">{t['eyebrow']}</p>
+      <h1>{t['h1']}</h1>
+      <p>{t['lede']}</p>
+      <div class="partner-actions">
+        <a class="btn-primary" href="{mail}">{t['primary']} <span>↗</span></a>
+        <a class="text-link" href="/{lang}/routes/drakensteyn/">{t['secondary']} →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="partner-proof"><div class="wrap">
+    <div class="partner-proof-copy">
+      <p class="section-label">{t['proof_label']}</p>
+      <h2>{t['proof_h']}</h2>
+      <p>{t['proof_p']}</p>
+      <a class="text-link on-paper" href="/{lang}/routes/drakensteyn/">{t['secondary']} →</a>
+    </div>
+    <div class="partner-facts">{facts}</div>
+  </div></section>
+
+  <section class="partner-process"><div class="wrap">
+    <div class="partner-section-head">
+      <p class="section-label">{t['process_label']}</p>
+      <h2>{t['process_h']}</h2>
+    </div>
+    <div class="partner-steps">{process}</div>
+  </div></section>
+
+  <section class="partner-principle">
+    <blockquote>{t['principle']}</blockquote>
+  </section>
+
+  <section class="partner-audiences"><div class="wrap">
+    <div class="partner-section-head">
+      <p class="section-label">{t['audience_label']}</p>
+      <h2>{t['audience_h']}</h2>
+    </div>
+    <div class="partner-audience-grid">{audiences}</div>
+  </div></section>
+
+  <section class="partner-studio"><div class="wrap">
+    <p class="eyebrow on-dark">{t['studio_label']}</p>
+    <h2>{t['studio_h']}</h2>
+    <p>{t['studio_p']}</p>
+  </div></section>
+
+  <section class="partner-final"><div class="wrap">
+    <h2>{t['final_h']}</h2>
+    <p>{t['final_p']}</p>
+    <a class="btn-primary" href="{mail}">{t['final_cta']} <span>↗</span></a>
+  </div></section>
+'''
+    return page_shell(lang, t['title'], t['description'], 'partners', body, path='partners/index.html')
+
+
 # ---------------------------------------------------------------------------
 # Schrijf alles weg
 # ---------------------------------------------------------------------------
@@ -2271,6 +2854,7 @@ for lang in LANGS:
     write(f'{lang}/privacy.html', build_privacy(lang))
     write(f'{lang}/stories/index.html', build_stories_index(lang))
     write(f'{lang}/routes/index.html', build_routes_index(lang))
+    write(f'{lang}/partners/index.html', build_partners(lang))
     for _r in ROUTES.values():
         write(f'{lang}/routes/{_r["slug"]}/index.html', build_route_page(lang, _r))
     for st in STORIES:
@@ -2279,7 +2863,7 @@ for lang in LANGS:
         write(f'{lang}/stad/{CITY_SLUGS[i]}.html', build_city_story(lang, i))
 
 # Sitemap + robots: alle publieke pagina's in zes talen
-_paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/']
+_paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/', 'partners/']
 _paden += [f'routes/{sl}/' for sl in ROUTES]
 _paden += [f'stories/{st["slug"]}.html' for st in STORIES]
 _paden += [f'stad/{sl}.html' for sl in CITY_SLUGS]

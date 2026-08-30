@@ -1,42 +1,54 @@
-# 2R (Second Route) — Website
+# 2R (Second Route) — website
 
-Marketingwebsite voor **2R**, een AI-reisgids die tijdens het rijden, fietsen
-of wandelen live vertelt over de omgeving — geschiedenis, natuur en lokale
-verhalen, in jouw taal en op maat van jouw interesses.
+De publieke, filmische merk- en productwebsite voor **2R**: een reisgenoot die
+de wereld onderweg een stem geeft. De site presenteert twee manieren om te
+luisteren:
 
-**1 Route brengt je er. 2 Route vertelt je wat je ziet.**
+- **Vrij op pad** — live verhalen bij de omgeving, afgestemd op tempo en interesse.
+- **Luisterroutes** — redactioneel opgebouwde wandel- en fietsroutes met kaart,
+  hoofdstukken, audio en herleidbare bronnen.
 
-🔗 Live: https://2route.roelnentjes.workers.dev
-🔗 Probeer de app: https://mapsinfo.roelnentjes.workers.dev
+De website richt zich op reizigers te voet, op de fiets, per trein en met de
+auto. Daarnaast is er een eigen verhaal voor routebeheerders, uitgevers,
+erfgoedorganisaties en regio's.
 
-## Stack
+## Opbouw
 
-Statische, meertalige (NL/EN) site, gehost als Cloudflare Worker (Assets).
-Geen build-stap — platte HTML/CSS.
+De bronteksten, vertalingen en paginabouw staan in `build.py`. Die generator
+maakt de statische website in `public/` voor zes talen: Nederlands, Engels,
+Duits, Frans, Spaans en Portugees.
 
-```
-website/
-├── public/
-│   ├── nl/          Nederlandse pagina's
-│   ├── en/           English pages
-│   ├── style.css     Gedeelde stijl (2R-huisstijl)
-│   └── icon-2r.png
-├── wrangler.jsonc
-```
+Belangrijke pagina's:
 
-## Lokaal draaien
+- `/{taal}/` — merk- en productverhaal
+- `/{taal}/zo-werkt-het.html` — filmische uitleg
+- `/{taal}/routes/` — luisterroutes en routeboeken
+- `/{taal}/stories/` — het levende verhalenarchief
+- `/{taal}/partners/` — propositie voor routebeheerders en uitgevers
+- `/{taal}/roadmap.html` en `/{taal}/privacy.html`
+
+De visuele bron is `docs/2R-stijlgids-v1.0.md` in het bovenliggende 2Route-
+project. Route-inhoud en audio worden samen met de app beheerd en vallen buiten
+de redactionele websitegenerator.
+
+## Bouwen en lokaal bekijken
 
 ```bash
-npx wrangler dev
+python3 build.py
+python3 -m http.server 8000 --directory public
 ```
 
-## Deployen
+Open daarna `http://127.0.0.1:8000/nl/`.
+
+## Publiceren
+
+De statische bestanden worden als Cloudflare Worker Assets gepubliceerd. Bouw
+altijd eerst opnieuw, controleer `public/` en leg wijzigingen vast in Git vóór
+een deploy.
 
 ```bash
+python3 build.py
 npx wrangler deploy
 ```
 
----
-
-Onderdeel van de 1R-familie — zie ook [Autestme](https://autestme.com) en
-[Kindertekening](https://kindertekening.com).
+Live: [2route.nl](https://2route.nl/)
