@@ -1422,16 +1422,39 @@ SITE_SHELL_NL = '''
   }
   function runScripts(container) {
     var scripts = [].slice.call(container.querySelectorAll('script'));
+    // Scripts die via innerHTML in <main> terechtkomen, worden niet door de
+    // browser uitgevoerd. Verwijder die slapende kopieen eerst, anders ziet de
+    // controle hieronder ze ten onrechte aan voor reeds geladen scripts.
+    scripts.forEach(function (script) { script.remove(); });
     return scripts.reduce(function (chain, old) {
       return chain.then(function () {
         var src = old.getAttribute('src');
         if (src) {
-          if (document.querySelector('script[src="' + src + '"]')) return;
-          return new Promise(function (res) { var s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = res; document.head.appendChild(s); });
+          var volledig = new URL(src, location.href).href;
+          var geladen = [].some.call(document.scripts, function (script) { return script.src === volledig; });
+          if (geladen) return;
+          return new Promise(function (res) { var s = document.createElement('script'); s.src = volledig; s.onload = res; s.onerror = res; document.head.appendChild(s); });
         }
         var s = document.createElement('script'); s.textContent = old.textContent; document.body.appendChild(s); s.remove();
       });
     }, Promise.resolve());
+  }
+  function syncStyles(doc) {
+    var wachten = [];
+    doc.querySelectorAll('link[rel="stylesheet"][href]').forEach(function (link) {
+      var volledig = new URL(link.getAttribute('href'), location.href).href;
+      var bestaat = [].some.call(document.querySelectorAll('link[rel="stylesheet"][href]'), function (huidig) {
+        return huidig.href === volledig;
+      });
+      if (bestaat) return;
+      wachten.push(new Promise(function (res) {
+        var stijl = document.createElement('link');
+        stijl.rel = 'stylesheet'; stijl.href = volledig;
+        stijl.onload = res; stijl.onerror = res;
+        document.head.appendChild(stijl);
+      }));
+    });
+    return Promise.all(wachten);
   }
   function ga(url, push) {
     if (bezig) return; bezig = true;
@@ -1448,7 +1471,7 @@ SITE_SHELL_NL = '''
       var panel = document.querySelector('.mobile-panel.open, .mobile-panel[aria-hidden="false"]');
       if (panel) { panel.classList.remove('open'); }
       if (push) history.pushState({ r: 1 }, '', url);
-      runScripts(oud).then(function () {
+      syncStyles(doc).then(function () { return runScripts(oud); }).then(function () {
         window.scrollTo(0, 0);
         var h1 = oud.querySelector('h1');
         if (h1) { h1.setAttribute('tabindex', '-1'); try { h1.focus({ preventScroll: true }); } catch (e) { try { h1.focus(); } catch (e2) {} } }
@@ -2761,12 +2784,19 @@ def build_route_page(lang, r):
   <script src="/vectorkaart.js"></script>
   <script>
   (function() {{
-    var L = window.L;
-    if (!L || !window.KAARTDATA || !window.bouwVectorKaart) return;
-    var kaartEl = document.getElementById('kaart');
+    var kaart = null, wachttimer = null, gestopt = false, pogingen = 0;
     function initKaart() {{
-      if (kaartEl.clientWidth === 0) {{ setTimeout(initKaart, 150); return; }}
-      var kaart = bouwVectorKaart(L, kaartEl);
+      if (gestopt) return;
+      var L = window.L;
+      var kaartEl = document.getElementById('kaart');
+      if (!kaartEl) return;
+      if (!L || !window.KAARTDATA || !window.bouwVectorKaart || kaartEl.clientWidth === 0) {{
+        if (pogingen++ < 60) wachttimer = setTimeout(initKaart, 100);
+        return;
+      }}
+      if (kaartEl.dataset.kaartKlaar === '1') return;
+      kaartEl.dataset.kaartKlaar = '1';
+      kaart = window.bouwVectorKaart(L, kaartEl);
       var haltes = {haltes_js};
       haltes.forEach(function(p) {{
         var icoon = L.divIcon({{ className: '',
@@ -2782,8 +2812,13 @@ def build_route_page(lang, r):
       var lijnen = {lijnen_js};
       lijnen.forEach(function(l) {{ L.polyline(l, {{ color: '#FAF6ED', weight: 7, opacity: 0.75 }}).addTo(kaart); }});
       lijnen.forEach(function(l) {{ L.polyline(l, {{ color: '#D96552', weight: 4, opacity: 0.95 }}).addTo(kaart); }});
-      setTimeout(function() {{ kaart.invalidateSize(); }}, 300);
+      setTimeout(function() {{ if (kaart && !gestopt) kaart.invalidateSize(); }}, 300);
     }}
+    window.__2rCleanup = function() {{
+      gestopt = true;
+      if (wachttimer) clearTimeout(wachttimer);
+      if (kaart) {{ kaart.remove(); kaart = null; }}
+    }};
     initKaart();
   }})();
   </script>
