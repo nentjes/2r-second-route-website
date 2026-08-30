@@ -1,0 +1,13 @@
+{
+ "routeboeken": [
+  {
+   "slug": "drakensteyn",
+   "naam": "Boswachterspad Stulp en Kasteeltuin",
+   "provincie": "Utrecht",
+   "lengte_km": 5.7,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 12,
+   "manifest": "https://2route.nl/routes-data/drakensteyn-manifest.json"
+  }
+ ]
+}

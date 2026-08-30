@@ -9,6 +9,15 @@ export default {
             url.hostname = '2route.nl';
             return Response.redirect(url.toString(), 301);
         }
-        return env.ASSETS.fetch(request);
+        const antwoord = await env.ASSETS.fetch(request);
+        // Routeboek-data en -audio zijn publieke bestanden die de 2R-app
+        // (origin capacitor://localhost) met fetch ophaalt — dat vereist
+        // CORS. Alleen deze paden; de rest van de site blijft zonder.
+        if (url.pathname.startsWith('/routes-data/') || url.pathname.startsWith('/audio/routes/')) {
+            const open = new Response(antwoord.body, antwoord);
+            open.headers.set('Access-Control-Allow-Origin', '*');
+            return open;
+        }
+        return antwoord;
     }
 };
