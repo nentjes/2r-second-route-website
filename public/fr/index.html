@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2R (Second Route) — Le compagnon de voyage qui raconte ce que vous voyez</title>
-<meta name="description" content="2R ne se contente pas de raconter ce que vous voyez. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d&#x27;un point A à un point B, Route apporte en chemin de la connaissance, de l&#x27;émerveillement et des conversations.">
+<title>2R (Second Route) — Itinéraires d&#x27;écoute et récits à pied, à vélo, en train et en voiture</title>
+<meta name="description" content="2R ne se contente pas de raconter ce que vous voyez. Que vous marchiez, pédaliez, preniez le train ou conduisiez : votre premier itinéraire vous mène de A à B — Route raconte en chemin ce qui vit autour de vous, spontanément ou en carnet de route soigneusement composé.">
 <link rel="icon" href="/icon-2r.png">
 <link rel="apple-touch-icon" href="/icon-2r.png">
 <link rel="stylesheet" href="/style.css">
-<meta property="og:title" content="2R (Second Route) — Le compagnon de voyage qui raconte ce que vous voyez">
-<meta property="og:description" content="2R ne se contente pas de raconter ce que vous voyez. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d&#x27;un point A à un point B, Route apporte en chemin de la connaissance, de l&#x27;émerveillement et des conversations.">
+<meta property="og:title" content="2R (Second Route) — Itinéraires d&#x27;écoute et récits à pied, à vélo, en train et en voiture">
+<meta property="og:description" content="2R ne se contente pas de raconter ce que vous voyez. Que vous marchiez, pédaliez, preniez le train ou conduisiez : votre premier itinéraire vous mène de A à B — Route raconte en chemin ce qui vit autour de vous, spontanément ou en carnet de route soigneusement composé.">
 <meta property="og:image" content="/og.jpg">
 <link rel="canonical" href="https://2route.nl/fr/">
 <link rel="alternate" hreflang="nl" href="https://2route.nl/nl/">
@@ -84,10 +84,10 @@
     <div class="hero-content">
       <p class="eyebrow on-photo">2R · le compagnon de voyage qui voit les histoires</p>
       <h1>Pas la destination —<br>c'est le voyage qui nous rend sages.</h1>
-      <p class="hero-lede">2R ne se contente pas de raconter ce que vous voyez. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d'un point A à un point B, <b>Route</b> apporte en chemin de la connaissance, de l'émerveillement et des conversations.</p>
+      <p class="hero-lede">2R ne se contente pas de raconter ce que vous voyez. Que vous marchiez, pédaliez, preniez le train ou conduisiez : votre premier itinéraire vous mène de A à B — <b>Route</b> raconte en chemin ce qui vit autour de vous, spontanément ou en carnet de route soigneusement composé.</p>
       <div class="hero-actions">
         <a class="btn-primary" href="https://mapsinfo.roelnentjes.workers.dev">Écouter une histoire <span>↗</span></a>
-        <a class="text-link" href="#reis">Faire un bout de route <span>↓</span></a>
+        <a class="text-link" href="#reis">Faire un bout de chemin <span>↓</span></a>
       </div>
     </div>
     <div class="hero-caption"><span>52,1045° N</span><span>Une soirée sur la route · Utrecht</span></div>
@@ -99,16 +99,35 @@
       <h2>Le monde extérieur devient<br>une histoire intérieure.</h2>
       <p>Pas une liste de faits. Route choisit une histoire qui a du sens, la raconte calmement, puis laisse de nouveau place au paysage — et à vous.</p>
     </div>
-    <div class="audio-experience">
+    <div class="audio-experience" id="listen-demo" role="button" tabindex="0" aria-label="Route raconte: Extrait réel (en néerlandais) · la promenade sonore de Drakensteyn">
+      <audio id="listen-audio" preload="none" src="/audio/drakensteyn-grafheuvels.mp3"></audio>
       <div class="audio-halo">
-        <span class="play-button">▶</span>
+        <span class="play-button" id="listen-play" aria-hidden="true">▶</span>
       </div>
       <div class="audio-meta">
         <span>Route raconte</span>
-        <strong>L'histoire cachée<br>du paysage</strong>
-        <small>Mode guide · extrait à venir</small>
+        <strong>Les tumulus<br>de la lande de Stulp</strong>
+        <small>Extrait réel (en néerlandais) · la promenade sonore de Drakensteyn</small>
       </div>
     </div>
+    <script>
+    (function(){
+      var vak = document.getElementById('listen-demo');
+      var audio = document.getElementById('listen-audio');
+      var knop = document.getElementById('listen-play');
+      if (!vak || !audio) return;
+      vak.style.cursor = 'pointer';
+      function wissel() {
+        if (audio.paused) { audio.play(); knop.textContent = '❚❚'; }
+        else { audio.pause(); knop.textContent = '▶'; }
+      }
+      vak.addEventListener('click', wissel);
+      vak.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); wissel(); }
+      });
+      audio.addEventListener('ended', function() { knop.textContent = '▶'; });
+    })();
+    </script>
   </section>
 
   <section class="journey" id="reis">
@@ -167,16 +186,16 @@
   </script>
 
   <section class="block" style="padding-bottom:0;"><div class="wrap">
-    <div class="section-head"><div class="eyebrow">Comment ça marche</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">De la route à l'écoute, en trois étapes</h2></div>
+    <div class="section-head"><div class="eyebrow">Comment ça marche</div><h2 style="font-size:clamp(24px,3.4vw,34px);margin-top:14px;">Du départ à l'écoute, en trois étapes</h2></div>
     <div class="steps">
         <div class="step"><span class="num-badge">I</span><h3>Activez Route</h3><p>Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, art, gastronomie — ou saisissez les vôtres.</p></div>
-        <div class="step"><span class="num-badge">II</span><h3>Roulez, pédalez ou marchez</h3><p>2R suit votre itinéraire par GPS et cherche en direct ce qui vaut la peine d'être raconté — à partir de sources locales, pas seulement Wikipédia.</p></div>
+        <div class="step"><span class="num-badge">II</span><h3>Marchez, pédalez, roulez ou prenez le train</h3><p>2R suit votre itinéraire par GPS et cherche en direct ce qui vaut la peine d'être raconté — à partir de sources locales, pas seulement Wikipédia.</p></div>
         <div class="step"><span class="num-badge">III</span><h3>Écoutez Route</h3><p>Une voix chaleureuse et expressive raconte — honnêtement, sur ce que vous pouvez réellement voir, jamais en faisant semblant.</p></div>
       </div>
     <div class="stat-strip">
       <div class="stat"><div class="num">9</div><div class="lbl">catégories d'intérêt — chacune testée individuellement</div></div>
       <div class="stat"><div class="num">6</div><div class="lbl">langues sur ce site — l'app raconte d'abord en néerlandais</div></div>
-      <div class="stat"><div class="num">4</div><div class="lbl">modes — voiture, vélo, à pied, train</div></div>
+      <div class="stat"><div class="num">4</div><div class="lbl">modes — à pied, vélo, train, voiture</div></div>
       <div class="stat"><div class="num">∞</div><div class="lbl">lieux — partout, générés en direct</div></div>
     </div>
   </div></section>
@@ -188,7 +207,7 @@
         <div class="feature"><span class="num-mark">II</span><h3>Mode guide</h3><p>Un récit continu avec la région comme fil conducteur — pays, province, terroir, ville — plutôt que des faits isolés.</p></div>
         <div class="feature"><span class="num-mark">III</span><h3>Toujours honnête</h3><p>Route ne prétend jamais savoir ce que vous voyez. Tout près : "regardez". Plus loin : "vaut le détour" — jamais l'inverse.</p></div>
         <div class="feature"><span class="num-mark">IV</span><h3>La confidentialité d'abord</h3><p>Aucune conservation de localisation, aucun compte requis. Chaque requête est indépendante.</p></div>
-        <div class="feature"><span class="num-mark">V</span><h3>Solo ou en famille</h3><p>Vos propres centres d'intérêt, ou du contenu pour toute la voiture — avec des jeux et des quiz pour la route en préparation.</p></div>
+        <div class="feature"><span class="num-mark">V</span><h3>Solo ou en famille</h3><p>Vos propres centres d'intérêt, ou une écoute partagée — avec des jeux et des quiz pour la route en préparation.</p></div>
         <div class="feature"><span class="num-mark">VI</span><h3>Fonctionne partout</h3><p>Testé aux Pays-Bas et lors d'un trajet en Lombardie, en Italie — même qualité, racontée dans votre propre langue.</p></div>
       </div>
   </div></section>
@@ -245,7 +264,7 @@
   <section class="invitation" id="meenemen">
     <div class="invitation-image" aria-hidden="true"></div>
     <div class="invitation-content">
-      <p class="eyebrow on-photo">Pour la prochaine fois que vous montez en voiture</p>
+      <p class="eyebrow on-photo">Pour la prochaine fois que vous partez</p>
       <h2>Que vous racontera Route<br>lors de votre prochain trajet ?</h2>
       <p>Emportez une voix chaleureuse, un carnet de voyage vivant et un peu d'émerveillement.</p>
       <a class="btn-primary" href="https://apps.apple.com/app/id6802613397">Emportez Route avec vous <span>↗</span></a>

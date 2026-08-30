@@ -37,23 +37,23 @@ SITE = {
     nav_product='Product', nav_roadmap='Roadmap', nav_stories='Verhalen', nav_privacy='Privacy', nav_cta='Probeer 2R →',
     hero_eyebrow='2R · de reisgenoot die verhalen ziet',
     hero_h1='Niet de bestemming,<br>maar de reis maakt ons wijs.',
-    hero_lede='2R vertelt niet alleen wat je ziet. Terwijl je eerste route (Google Maps, Waze) je van A naar B brengt, brengt <b>Route</b> onderweg kennis, verwondering en gesprekken op gang.',
-    hero_btn_demo='Hoor een verhaal', hero_btn_roadmap='Rijd een stukje mee',
+    hero_lede='2R vertelt niet alleen wat je ziet. Of je nu wandelt, fietst, in de trein zit of rijdt: je eerste route brengt je van A naar B — <b>Route</b> vertelt onderweg wat er om je heen leeft, spontaan of als zorgvuldig opgebouwd routeboek.',
+    hero_btn_demo='Hoor een verhaal', hero_btn_roadmap='Reis een stukje mee',
     hero_caption_coord='52.1045° N', hero_caption_note='Een avond onderweg · Utrecht',
     listen_label='01 · Een stem naast je', listen_h2='De wereld buiten wordt<br>een verhaal binnen.',
     listen_p='Geen lijst met weetjes. Route kiest één betekenisvol verhaal, vertelt het rustig en laat daarna weer ruimte voor het landschap — en voor elkaar.',
-    listen_now='Route vertelt', listen_title='De verborgen geschiedenis<br>van het landschap', listen_sub='Gidsmodus · fragment binnenkort',
-    journey_label='02 · Europa rijdt met je mee', journey_route_label='Europa · Route 02', journey_route_meta='vier windstreken · één reis',
-    invite_label='Voor de volgende keer dat je instapt', invite_h2='Wat zal Route op jouw<br>volgende reis vertellen?',
+    listen_now='Route vertelt', listen_title='De grafheuvels<br>op de Stulpse heide', listen_sub='Echt fragment · luisterwandeling bij Kasteel Drakensteyn',
+    journey_label='02 · Europa reist met je mee', journey_route_label='Europa · Route 02', journey_route_meta='vier windstreken · één reis',
+    invite_label='Voor de volgende keer dat je op pad gaat', invite_h2='Wat zal Route op jouw<br>volgende reis vertellen?',
     invite_p='Neem een warme stem, een levend reisboek en een beetje verwondering met je mee.', invite_btn='Neem Route mee',
     footer_tagline='Niet de bestemming, maar de reis maakt ons wijs.',
     footer_credit='Gebouwd door Roel Nentjes, samen met Claude (Anthropic).',
     stat1_num='9', stat1_lbl='interesse-rubrieken — elk apart getest',
     stat2_num='6', stat2_lbl='talen op deze site — de app vertelt eerst in het Nederlands',
-    stat3_num='4', stat3_lbl='reismodi — auto, fiets, te voet, trein', stat4_num='∞', stat4_lbl='plekken — overal, live gegenereerd',
-    steps_eyebrow='Hoe het werkt', steps_h2='Van rijden naar luisteren in drie stappen',
+    stat3_num='4', stat3_lbl='reismodi — te voet, fiets, trein, auto', stat4_num='∞', stat4_lbl='plekken — overal, live gegenereerd',
+    steps_eyebrow='Hoe het werkt', steps_h2='Van onderweg zijn naar luisteren in drie stappen',
     step1_h='Zet Route aan', step1_p='Eén knop. Kies je interesses — geschiedenis, natuur, kunst, eten & drinken — of typ er zelf een in.',
-    step2_h='Rijd, fiets of wandel', step2_p='2R volgt je route via GPS en zoekt live naar wat er om je heen te vertellen valt — bij lokale bronnen, niet alleen Wikipedia.',
+    step2_h='Wandel, fiets, rijd of pak de trein', step2_p='2R volgt je route via GPS en zoekt live naar wat er om je heen te vertellen valt — bij lokale bronnen, niet alleen Wikipedia.',
     step3_h='Luister naar Route', step3_p='Een warme, expressieve stem vertelt — eerlijk over wat je écht kunt zien, nooit doen-alsof.',
     why_eyebrow='Waarom 2R anders is', why_h2='Geen encyclopedie. Een reisgezel.',
     why_p="Bestaande reisverteller-apps werken met vooraf ingesproken scripts — beperkt tot populaire routes, hetzelfde verhaal voor iedereen. 2R genereert live, overal, en past zich aan jouw interesses aan.",
@@ -61,7 +61,7 @@ SITE = {
     f2_h='Gidsmodus', f2_p='Eén doorlopend verhaal met het gebied als rode draad — land, provincie, streek, plaats — in plaats van losse weetjes.',
     f3_h='Eerlijk, altijd', f3_p='Route doet nooit alsof hij weet wat je ziet. Dichtbij: "kijk eens". Verder weg: "een omweg waard" — nooit andersom.',
     f4_h='Privacy-eerst', f4_p='Geen locatie-opslag, geen account nodig. Elk verzoek staat op zichzelf.',
-    f5_h='Individueel of familie', f5_p='Eigen interesses, of content voor de hele auto — met spelletjes en quizjes onderweg in de maak.',
+    f5_h='Individueel of familie', f5_p='Eigen interesses, of samen luisteren — met spelletjes en quizjes onderweg in de maak.',
     f6_h='Werkt overal', f6_p='Getest in Nederland én tijdens een rit door Lombardije — dezelfde kwaliteit, in jouw taal verteld.',
     stories_eyebrow='03 · De steden spreken', stories_h2='Vijf steden.<br>Vijf verschillende stemmen.',
     stories_p='Van Amsterdam naar Parijs, Wenen, Rome en Lissabon: iedere stad heeft haar eigen ritme, maar onderweg worden de verhalen van Europa één levend reisboek.',
@@ -82,23 +82,23 @@ SITE = {
     nav_product='Product', nav_roadmap='Roadmap', nav_stories='Stories', nav_privacy='Privacy', nav_cta='Try 2R →',
     hero_eyebrow='2R · the travel companion that sees stories',
     hero_h1='Not the destination —<br>the journey makes us wise.',
-    hero_lede="2R doesn't just tell you what you're seeing. While your first route (Google Maps, Waze) gets you from A to B, <b>Route</b> brings knowledge, wonder and conversation along the way.",
-    hero_btn_demo='Hear a story', hero_btn_roadmap='Ride along for a bit',
+    hero_lede="2R doesn't just tell you what you're seeing. Whether you walk, cycle, take the train or drive: your first route gets you from A to B — <b>Route</b> tells you what lives around you along the way, spontaneously or as a carefully built route book.",
+    hero_btn_demo='Hear a story', hero_btn_roadmap='Come along for a bit',
     hero_caption_coord='52.1045° N', hero_caption_note='An evening on the road · Utrecht',
     listen_label='01 · A voice beside you', listen_h2='The world outside becomes<br>a story within.',
     listen_p='No list of facts. Route picks one meaningful story, tells it calmly, then makes room again for the landscape — and for each other.',
-    listen_now='Route is telling', listen_title='The hidden history<br>of the landscape', listen_sub='Guide mode · sample coming soon',
-    journey_label='02 · Europe rides along with you', journey_route_label='Europe · Route 02', journey_route_meta='four compass points · one journey',
-    invite_label='For the next time you get in', invite_h2='What will Route tell you<br>on your next trip?',
+    listen_now='Route is telling', listen_title='The burial mounds<br>on the Stulp heath', listen_sub='Real excerpt (Dutch) · the Drakensteyn listening walk',
+    journey_label='02 · Europe travels along with you', journey_route_label='Europe · Route 02', journey_route_meta='four compass points · one journey',
+    invite_label='For the next time you head out', invite_h2='What will Route tell you<br>on your next trip?',
     invite_p='Bring a warm voice, a living travel journal, and a little wonder.', invite_btn='Take Route with you',
     footer_tagline='Not the destination — the journey makes us wise.',
     footer_credit='Built by Roel Nentjes, together with Claude (Anthropic).',
     stat1_num='9', stat1_lbl='interest categories — each individually tested',
     stat2_num='6', stat2_lbl='languages on this site — the app narrates in Dutch first',
-    stat3_num='4', stat3_lbl='travel modes — car, bike, walk, train', stat4_num='∞', stat4_lbl='places — anywhere, generated live',
-    steps_eyebrow='How it works', steps_h2='From driving to listening, in three steps',
+    stat3_num='4', stat3_lbl='travel modes — walk, bike, train, car', stat4_num='∞', stat4_lbl='places — anywhere, generated live',
+    steps_eyebrow='How it works', steps_h2='From setting out to listening, in three steps',
     step1_h='Turn Route on', step1_p='One switch. Pick your interests — history, nature, art, food & drink — or type in your own.',
-    step2_h='Drive, cycle or walk', step2_p="2R follows your route via GPS and searches live for what's worth telling — from local sources, not just Wikipedia.",
+    step2_h='Walk, cycle, drive or take the train', step2_p="2R follows your route via GPS and searches live for what's worth telling — from local sources, not just Wikipedia.",
     step3_h='Listen to Route', step3_p='A warm, expressive voice narrates — honestly about what you can actually see, never pretending.',
     why_eyebrow='Why 2R is different', why_h2='Not an encyclopedia. A travel companion.',
     why_p='Existing travel-narrator apps rely on pre-recorded scripts — limited to popular routes, the same story for everyone. 2R generates live, everywhere, and adapts to your interests.',
@@ -106,7 +106,7 @@ SITE = {
     f2_h='Guide mode', f2_p='One continuous story with the region as its through-line — country, province, area, town — instead of disconnected facts.',
     f3_h='Always honest', f3_p='Route never pretends to know what you can see. Close by: "look now." Further away: "worth a detour" — never the other way around.',
     f4_h='Privacy-first', f4_p='No location storage, no account required. Every request stands on its own.',
-    f5_h='Solo or family', f5_p='Your own interests, or content for the whole car — with games and quizzes for the road in the works.',
+    f5_h='Solo or family', f5_p='Your own interests, or listening together — with games and quizzes for the road in the works.',
     f6_h='Works anywhere', f6_p='Tested in the Netherlands and on a drive through Lombardy, Italy — same quality, narrated in your own language.',
     stories_eyebrow='03 · The cities speak', stories_h2='Five cities.<br>Five different voices.',
     stories_p='From Amsterdam to Paris, Vienna, Rome and Lisbon: every city has its own rhythm, but on the road the stories of Europe become one living travel journal.',
@@ -127,23 +127,23 @@ SITE = {
     nav_product='Produkt', nav_roadmap='Roadmap', nav_stories='Geschichten', nav_privacy='Datenschutz', nav_cta='2R testen →',
     hero_eyebrow='2R · der Reisebegleiter, der Geschichten sieht',
     hero_h1='Nicht das Ziel —<br>die Reise macht uns weise.',
-    hero_lede='2R erzählt nicht nur, was du siehst. Während deine erste Route (Google Maps, Waze) dich von A nach B bringt, bringt <b>Route</b> unterwegs Wissen, Staunen und Gespräche in Gang.',
-    hero_btn_demo='Höre eine Geschichte', hero_btn_roadmap='Fahr ein Stück mit',
+    hero_lede='2R erzählt nicht nur, was du siehst. Ob du wanderst, radelst, Bahn fährst oder Auto: Deine erste Route bringt dich von A nach B — <b>Route</b> erzählt unterwegs, was um dich herum lebt, spontan oder als sorgfältig aufgebautes Routenbuch.',
+    hero_btn_demo='Höre eine Geschichte', hero_btn_roadmap='Reis ein Stück mit',
     hero_caption_coord='52,1045° N', hero_caption_note='Ein Abend unterwegs · Utrecht',
     listen_label='01 · Eine Stimme neben dir', listen_h2='Die Welt draußen wird<br>zur Geschichte drinnen.',
     listen_p='Keine Liste von Fakten. Route wählt eine bedeutsame Geschichte, erzählt sie ruhig und lässt danach wieder Raum für die Landschaft — und füreinander.',
-    listen_now='Route erzählt', listen_title='Die verborgene Geschichte<br>der Landschaft', listen_sub='Guide-Modus · Hörprobe folgt',
-    journey_label='02 · Europa fährt mit dir mit', journey_route_label='Europa · Route 02', journey_route_meta='vier Himmelsrichtungen · eine Reise',
-    invite_label='Für das nächste Mal, wenn du einsteigst', invite_h2='Was wird Route dir auf<br>deiner nächsten Reise erzählen?',
+    listen_now='Route erzählt', listen_title='Die Hügelgräber<br>auf der Stulp-Heide', listen_sub='Echter Ausschnitt (Niederländisch) · Hörwanderung bei Schloss Drakensteyn',
+    journey_label='02 · Europa reist mit dir mit', journey_route_label='Europa · Route 02', journey_route_meta='vier Himmelsrichtungen · eine Reise',
+    invite_label='Für das nächste Mal, wenn du losziehst', invite_h2='Was wird Route dir auf<br>deiner nächsten Reise erzählen?',
     invite_p='Nimm eine warme Stimme, ein lebendiges Reisetagebuch und ein bisschen Staunen mit.', invite_btn='Nimm Route mit',
     footer_tagline='Nicht das Ziel — die Reise macht uns weise.',
     footer_credit='Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic).',
     stat1_num='9', stat1_lbl='Interessen-Rubriken — jede einzeln getestet',
     stat2_num='6', stat2_lbl='Sprachen auf dieser Website — die App erzählt zunächst auf Niederländisch',
-    stat3_num='4', stat3_lbl='Reisemodi — Auto, Rad, zu Fuß, Bahn', stat4_num='∞', stat4_lbl='Orte — überall, live generiert',
-    steps_eyebrow='So funktioniert es', steps_h2='In drei Schritten vom Fahren zum Zuhören',
+    stat3_num='4', stat3_lbl='Reisemodi — zu Fuß, Rad, Bahn, Auto', stat4_num='∞', stat4_lbl='Orte — überall, live generiert',
+    steps_eyebrow='So funktioniert es', steps_h2='In drei Schritten vom Unterwegssein zum Zuhören',
     step1_h='Route einschalten', step1_p='Ein Schalter. Wähle deine Interessen — Geschichte, Natur, Kunst, Essen & Trinken — oder gib eigene ein.',
-    step2_h='Fahren, radeln oder gehen', step2_p='2R folgt deiner Route per GPS und sucht live nach Erzählenswertem — aus lokalen Quellen, nicht nur Wikipedia.',
+    step2_h='Wandern, radeln, fahren oder Bahn nehmen', step2_p='2R folgt deiner Route per GPS und sucht live nach Erzählenswertem — aus lokalen Quellen, nicht nur Wikipedia.',
     step3_h='Route zuhören', step3_p='Eine warme, ausdrucksstarke Stimme erzählt — ehrlich über das, was du wirklich sehen kannst, nie vorgetäuscht.',
     why_eyebrow='Warum 2R anders ist', why_h2='Kein Lexikon. Ein Reisebegleiter.',
     why_p='Bestehende Reiseerzähler-Apps arbeiten mit vorab aufgenommenen Skripten — begrenzt auf beliebte Routen, dieselbe Geschichte für alle. 2R generiert live, überall, und passt sich deinen Interessen an.',
@@ -151,7 +151,7 @@ SITE = {
     f2_h='Guide-Modus', f2_p='Eine durchgehende Geschichte mit der Region als rotem Faden — Land, Provinz, Gegend, Ort — statt einzelner Fakten.',
     f3_h='Immer ehrlich', f3_p='Route tut nie so, als wüsste sie, was du siehst. Ganz nah: "schau mal". Weiter weg: "einen Umweg wert" — nie andersherum.',
     f4_h='Datenschutz zuerst', f4_p='Keine Standortspeicherung, kein Konto nötig. Jede Anfrage steht für sich.',
-    f5_h='Einzeln oder Familie', f5_p='Eigene Interessen, oder Inhalte für das ganze Auto — mit Spielen und Quiz für unterwegs in Arbeit.',
+    f5_h='Einzeln oder Familie', f5_p='Eigene Interessen, oder gemeinsam zuhören — mit Spielen und Quiz für unterwegs in Arbeit.',
     f6_h='Funktioniert überall', f6_p='Getestet in den Niederlanden und auf einer Fahrt durch die Lombardei — gleiche Qualität, in deiner Sprache erzählt.',
     stories_eyebrow='03 · Die Städte sprechen', stories_h2='Fünf Städte.<br>Fünf verschiedene Stimmen.',
     stories_p='Von Amsterdam über Paris, Wien, Rom bis Lissabon: Jede Stadt hat ihren eigenen Rhythmus, doch unterwegs werden die Geschichten Europas zu einem einzigen lebendigen Reisetagebuch.',
@@ -172,23 +172,23 @@ SITE = {
     nav_product='Produit', nav_roadmap='Roadmap', nav_stories='Histoires', nav_privacy='Confidentialité', nav_cta='Essayer 2R →',
     hero_eyebrow="2R · le compagnon de voyage qui voit les histoires",
     hero_h1="Pas la destination —<br>c'est le voyage qui nous rend sages.",
-    hero_lede="2R ne se contente pas de raconter ce que vous voyez. Pendant que votre premier itinéraire (Google Maps, Waze) vous mène d'un point A à un point B, <b>Route</b> apporte en chemin de la connaissance, de l'émerveillement et des conversations.",
-    hero_btn_demo='Écouter une histoire', hero_btn_roadmap='Faire un bout de route',
+    hero_lede="2R ne se contente pas de raconter ce que vous voyez. Que vous marchiez, pédaliez, preniez le train ou conduisiez : votre premier itinéraire vous mène de A à B — <b>Route</b> raconte en chemin ce qui vit autour de vous, spontanément ou en carnet de route soigneusement composé.",
+    hero_btn_demo='Écouter une histoire', hero_btn_roadmap='Faire un bout de chemin',
     hero_caption_coord='52,1045° N', hero_caption_note='Une soirée sur la route · Utrecht',
     listen_label='01 · Une voix à vos côtés', listen_h2='Le monde extérieur devient<br>une histoire intérieure.',
     listen_p='Pas une liste de faits. Route choisit une histoire qui a du sens, la raconte calmement, puis laisse de nouveau place au paysage — et à vous.',
-    listen_now='Route raconte', listen_title="L'histoire cachée<br>du paysage", listen_sub='Mode guide · extrait à venir',
+    listen_now='Route raconte', listen_title='Les tumulus<br>de la lande de Stulp', listen_sub='Extrait réel (en néerlandais) · la promenade sonore de Drakensteyn',
     journey_label="02 · L'Europe vous accompagne", journey_route_label='Europe · Itinéraire 02', journey_route_meta='quatre points cardinaux · un seul voyage',
-    invite_label='Pour la prochaine fois que vous montez en voiture', invite_h2='Que vous racontera Route<br>lors de votre prochain trajet ?',
+    invite_label='Pour la prochaine fois que vous partez', invite_h2='Que vous racontera Route<br>lors de votre prochain trajet ?',
     invite_p="Emportez une voix chaleureuse, un carnet de voyage vivant et un peu d'émerveillement.", invite_btn='Emportez Route avec vous',
     footer_tagline="Pas la destination — c'est le voyage qui nous rend sages.",
     footer_credit='Conçu par Roel Nentjes, avec Claude (Anthropic).',
     stat1_num='9', stat1_lbl="catégories d'intérêt — chacune testée individuellement",
     stat2_num='6', stat2_lbl="langues sur ce site — l'app raconte d'abord en néerlandais",
-    stat3_num='4', stat3_lbl='modes — voiture, vélo, à pied, train', stat4_num='∞', stat4_lbl='lieux — partout, générés en direct',
-    steps_eyebrow='Comment ça marche', steps_h2="De la route à l'écoute, en trois étapes",
+    stat3_num='4', stat3_lbl='modes — à pied, vélo, train, voiture', stat4_num='∞', stat4_lbl='lieux — partout, générés en direct',
+    steps_eyebrow='Comment ça marche', steps_h2="Du départ à l'écoute, en trois étapes",
     step1_h='Activez Route', step1_p="Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, art, gastronomie — ou saisissez les vôtres.",
-    step2_h='Roulez, pédalez ou marchez', step2_p="2R suit votre itinéraire par GPS et cherche en direct ce qui vaut la peine d'être raconté — à partir de sources locales, pas seulement Wikipédia.",
+    step2_h='Marchez, pédalez, roulez ou prenez le train', step2_p="2R suit votre itinéraire par GPS et cherche en direct ce qui vaut la peine d'être raconté — à partir de sources locales, pas seulement Wikipédia.",
     step3_h='Écoutez Route', step3_p="Une voix chaleureuse et expressive raconte — honnêtement, sur ce que vous pouvez réellement voir, jamais en faisant semblant.",
     why_eyebrow='Pourquoi 2R est différent', why_h2='Pas une encyclopédie. Un compagnon de voyage.',
     why_p="Les applications de guide de voyage existantes reposent sur des scripts préenregistrés — limitées aux itinéraires populaires, la même histoire pour tout le monde. 2R génère en direct, partout, et s'adapte à vos centres d'intérêt.",
@@ -196,7 +196,7 @@ SITE = {
     f2_h='Mode guide', f2_p='Un récit continu avec la région comme fil conducteur — pays, province, terroir, ville — plutôt que des faits isolés.',
     f3_h='Toujours honnête', f3_p='Route ne prétend jamais savoir ce que vous voyez. Tout près : "regardez". Plus loin : "vaut le détour" — jamais l\'inverse.',
     f4_h="La confidentialité d'abord", f4_p="Aucune conservation de localisation, aucun compte requis. Chaque requête est indépendante.",
-    f5_h='Solo ou en famille', f5_p="Vos propres centres d'intérêt, ou du contenu pour toute la voiture — avec des jeux et des quiz pour la route en préparation.",
+    f5_h='Solo ou en famille', f5_p="Vos propres centres d'intérêt, ou une écoute partagée — avec des jeux et des quiz pour la route en préparation.",
     f6_h='Fonctionne partout', f6_p='Testé aux Pays-Bas et lors d\'un trajet en Lombardie, en Italie — même qualité, racontée dans votre propre langue.',
     stories_eyebrow='03 · Les villes prennent la parole', stories_h2='Cinq villes.<br>Cinq voix différentes.',
     stories_p="D'Amsterdam à Paris, Vienne, Rome et Lisbonne : chaque ville a son propre rythme, mais en chemin, les histoires de l'Europe deviennent un seul carnet de voyage vivant.",
@@ -217,23 +217,23 @@ SITE = {
     nav_product='Producto', nav_roadmap='Roadmap', nav_stories='Historias', nav_privacy='Privacidad', nav_cta='Prueba 2R →',
     hero_eyebrow='2R · el compañero de viaje que ve historias',
     hero_h1='No el destino —<br>el viaje es lo que nos hace sabios.',
-    hero_lede='El 2R no solo cuenta lo que ves. Mientras tu primera ruta (Google Maps, Waze) te lleva de A a B, <b>Route</b> aporta conocimiento, asombro y conversación por el camino.',
+    hero_lede='El 2R no solo cuenta lo que ves. Camines, pedalees, vayas en tren o conduzcas: tu primera ruta te lleva de A a B — <b>Route</b> narra por el camino lo que vive a tu alrededor, de forma espontánea o como un libro de ruta cuidadosamente construido.',
     hero_btn_demo='Escucha una historia', hero_btn_roadmap='Recorre un tramo con nosotros',
     hero_caption_coord='52,1045° N', hero_caption_note='Una tarde en la carretera · Utrecht',
     listen_label='01 · Una voz a tu lado', listen_h2='El mundo de fuera se convierte<br>en una historia dentro.',
     listen_p='Sin listas de datos. Route elige una historia con sentido, la cuenta con calma y luego vuelve a dejar espacio para el paisaje —y para vosotros.',
-    listen_now='Route está contando', listen_title='La historia oculta<br>del paisaje', listen_sub='Modo guía · fragmento en breve',
+    listen_now='Route está contando', listen_title='Los túmulos<br>del brezal de Stulp', listen_sub='Fragmento real (en neerlandés) · el paseo sonoro de Drakensteyn',
     journey_label='02 · Europa viaja contigo', journey_route_label='Europa · Ruta 02', journey_route_meta='cuatro puntos cardinales · un solo viaje',
-    invite_label='Para la próxima vez que subas al coche', invite_h2='¿Qué te contará Route<br>en tu próximo viaje?',
+    invite_label='Para la próxima vez que salgas de camino', invite_h2='¿Qué te contará Route<br>en tu próximo viaje?',
     invite_p='Llévate una voz cálida, un diario de viaje vivo y un poco de asombro.', invite_btn='Llévate a Route',
     footer_tagline='No el destino — el viaje es lo que nos hace sabios.',
     footer_credit='Creado por Roel Nentjes, junto con Claude (Anthropic).',
     stat1_num='9', stat1_lbl='categorías de interés — cada una probada individualmente',
     stat2_num='6', stat2_lbl='idiomas en este sitio — la app narra primero en neerlandés',
-    stat3_num='4', stat3_lbl='modos — coche, bici, a pie, tren', stat4_num='∞', stat4_lbl='lugares — en cualquier sitio, en vivo',
-    steps_eyebrow='Cómo funciona', steps_h2='De conducir a escuchar, en tres pasos',
+    stat3_num='4', stat3_lbl='modos — a pie, bici, tren, coche', stat4_num='∞', stat4_lbl='lugares — en cualquier sitio, en vivo',
+    steps_eyebrow='Cómo funciona', steps_h2='De salir de camino a escuchar, en tres pasos',
     step1_h='Activa Route', step1_p='Un interruptor. Elige tus intereses —historia, naturaleza, arte, gastronomía— o escribe los tuyos.',
-    step2_h='Conduce, pedalea o camina', step2_p='2R sigue tu ruta por GPS y busca en vivo qué vale la pena contar —a partir de fuentes locales, no solo Wikipedia.',
+    step2_h='Camina, pedalea, conduce o toma el tren', step2_p='2R sigue tu ruta por GPS y busca en vivo qué vale la pena contar —a partir de fuentes locales, no solo Wikipedia.',
     step3_h='Escucha a Route', step3_p='Una voz cálida y expresiva narra —con honestidad sobre lo que realmente puedes ver, nunca fingiendo.',
     why_eyebrow='Por qué 2R es diferente', why_h2='No es una enciclopedia. Es un compañero de viaje.',
     why_p='Las apps de narración de viajes existentes usan guiones pregrabados —limitadas a rutas populares, la misma historia para todos. 2R genera en vivo, en cualquier lugar, y se adapta a tus intereses.',
@@ -241,7 +241,7 @@ SITE = {
     f2_h='Modo guía', f2_p='Una historia continua con la región como hilo conductor —país, provincia, comarca, localidad— en lugar de datos aislados.',
     f3_h='Siempre honesto', f3_p='Route nunca finge saber lo que puedes ver. Cerca: "mira ahora". Más lejos: "vale la pena el desvío" —nunca al revés.',
     f4_h='La privacidad primero', f4_p='Sin almacenamiento de ubicación, sin necesidad de cuenta. Cada solicitud es independiente.',
-    f5_h='Individual o en familia', f5_p='Tus propios intereses, o contenido para todo el coche —con juegos y quizzes para el camino en desarrollo.',
+    f5_h='Individual o en familia', f5_p='Tus propios intereses, o escuchar juntos —con juegos y quizzes para el camino en desarrollo.',
     f6_h='Funciona en cualquier lugar', f6_p='Probado en los Países Bajos y en un viaje por Lombardía, Italia —misma calidad, narrada en tu propio idioma.',
     stories_eyebrow='03 · Las ciudades hablan', stories_h2='Cinco ciudades.<br>Cinco voces distintas.',
     stories_p='De Ámsterdam a París, Viena, Roma y Lisboa: cada ciudad tiene su propio ritmo, pero en el camino las historias de Europa se convierten en un único diario de viaje vivo.',
@@ -262,23 +262,23 @@ SITE = {
     nav_product='Produto', nav_roadmap='Roadmap', nav_stories='Histórias', nav_privacy='Privacidade', nav_cta='Experimente 2R →',
     hero_eyebrow='2R · o companheiro de viagem que vê histórias',
     hero_h1='Não o destino —<br>a viagem é o que nos torna sábios.',
-    hero_lede='O 2R não conta apenas o que você vê. Enquanto sua primeira rota (Google Maps, Waze) o leva de A a B, <b>Route</b> traz conhecimento, encantamento e boas conversas pelo caminho.',
+    hero_lede='O 2R não conta apenas o que você vê. Caminhando, pedalando, de comboio ou dirigindo: sua primeira rota o leva de A a B — <b>Route</b> narra pelo caminho o que vive ao seu redor, de forma espontânea ou como um livro de rota cuidadosamente construído.',
     hero_btn_demo='Ouça uma história', hero_btn_roadmap='Ande um trecho com a gente',
     hero_caption_coord='52,1045° N', hero_caption_note='Uma noite na estrada · Utrecht',
     listen_label='01 · Uma voz ao seu lado', listen_h2='O mundo de fora se torna<br>uma história por dentro.',
     listen_p='Nenhuma lista de fatos. A Route escolhe uma história com significado, narra com calma e depois abre espaço de novo para a paisagem — e para vocês.',
-    listen_now='A Route está narrando', listen_title='A história escondida<br>da paisagem', listen_sub='Modo guia · trecho em breve',
+    listen_now='A Route está narrando', listen_title='Os túmulos<br>da charneca de Stulp', listen_sub='Trecho real (em neerlandês) · o passeio sonoro de Drakensteyn',
     journey_label='02 · A Europa viaja com você', journey_route_label='Europa · Rota 02', journey_route_meta='quatro pontos cardeais · uma só viagem',
-    invite_label='Para a próxima vez que você entrar no carro', invite_h2='O que a Route vai contar<br>na sua próxima viagem?',
+    invite_label='Para a próxima vez que você se puser a caminho', invite_h2='O que a Route vai contar<br>na sua próxima viagem?',
     invite_p='Leve uma voz calorosa, um diário de viagem vivo e um pouco de encantamento.', invite_btn='Leve a Route com você',
     footer_tagline='Não o destino — a viagem é o que nos torna sábios.',
     footer_credit='Criado por Roel Nentjes, com a Claude (Anthropic).',
     stat1_num='9', stat1_lbl='categorias de interesse — cada uma testada individualmente',
     stat2_num='6', stat2_lbl='idiomas neste site — o app narra primeiro em neerlandês',
-    stat3_num='4', stat3_lbl='modos — carro, bici, a pé, comboio', stat4_num='∞', stat4_lbl='lugares — em qualquer lugar, ao vivo',
-    steps_eyebrow='Como funciona', steps_h2='De dirigir a ouvir, em três passos',
+    stat3_num='4', stat3_lbl='modos — a pé, bici, comboio, carro', stat4_num='∞', stat4_lbl='lugares — em qualquer lugar, ao vivo',
+    steps_eyebrow='Como funciona', steps_h2='Do caminho ao ouvir, em três passos',
     step1_h='Ative a Route', step1_p='Um interruptor. Escolha seus interesses — história, natureza, arte, gastronomia — ou digite os seus.',
-    step2_h='Dirija, pedale ou caminhe', step2_p='O 2R segue sua rota por GPS e busca ao vivo o que vale a pena contar — de fontes locais, não só a Wikipédia.',
+    step2_h='Caminhe, pedale, dirija ou pegue o comboio', step2_p='O 2R segue sua rota por GPS e busca ao vivo o que vale a pena contar — de fontes locais, não só a Wikipédia.',
     step3_h='Ouça a Route', step3_p='Uma voz calorosa e expressiva narra — com honestidade sobre o que você realmente pode ver, nunca fingindo.',
     why_eyebrow='Por que o 2R é diferente', why_h2='Não é uma enciclopédia. É um companheiro de viagem.',
     why_p='Os apps de narração de viagem existentes usam roteiros pré-gravados — limitados a rotas populares, a mesma história para todos. O 2R gera ao vivo, em qualquer lugar, e se adapta aos seus interesses.',
@@ -286,7 +286,7 @@ SITE = {
     f2_h='Modo guia', f2_p='Uma história contínua com a região como fio condutor — país, província, região, cidade — em vez de fatos isolados.',
     f3_h='Sempre honesto', f3_p='A Route nunca finge saber o que você pode ver. Perto: "olhe agora". Mais longe: "vale o desvio" — nunca o contrário.',
     f4_h='Privacidade em primeiro lugar', f4_p='Sem armazenamento de localização, sem conta necessária. Cada solicitação é independente.',
-    f5_h='Individual ou em família', f5_p='Seus próprios interesses, ou conteúdo para todo o carro — com jogos e quizzes para a estrada a caminho.',
+    f5_h='Individual ou em família', f5_p='Seus próprios interesses, ou ouvir juntos — com jogos e quizzes para a estrada a caminho.',
     f6_h='Funciona em qualquer lugar', f6_p='Testado nos Países Baixos e em uma viagem pela Lombardia, Itália — mesma qualidade, narrada no seu próprio idioma.',
     stories_eyebrow='03 · As cidades falam', stories_h2='Cinco cidades.<br>Cinco vozes diferentes.',
     stories_p='De Amsterdã a Paris, Viena, Roma e Lisboa: cada cidade tem seu próprio ritmo, mas pelo caminho as histórias da Europa se tornam um único diário de viagem vivo.',
@@ -850,7 +850,7 @@ NAV_HOWTO = {
 HOWTO = {
 'nl': dict(
     eyebrow='Zo werkt 2R', title='Zo werkt 2R',
-    lede='2R is je reisgezel die vertelt. Je start hem, je rijdt, en onderweg hoor je verhalen over de plekken die je passeert. Hieronder alles wat je moet weten — in een paar minuten.',
+    lede='2R is je reisgezel die vertelt. Je start hem, je gaat op pad — te voet, met de fiets, in de trein of in de auto — en onderweg hoor je verhalen over de plekken die je passeert. Hieronder alles wat je moet weten — in een paar minuten.',
     sections=[
         dict(h='🚗 Beginnen', p='Tik in de app op <b>Start de reis</b> en sta je locatie toe. 2R vertelt vanzelf over de plekken die je passeert — geen account, niets vooraf in te stellen.'),
         dict(h='🎵 Samen met je muziek', p='Speel gerust je eigen muziek (Spotify, Apple Music, de radio — wat dan ook). Die gaat automatisch <b>zachter</b> zodra een verhaal begint, en zwelt weer aan als het klaar is. Zet je “Muziektips per streek” aan, dan krijg je onderweg een tik naar passende muziek per gebied. 2R streamt zelf geen muziek.'),
@@ -858,13 +858,13 @@ HOWTO = {
         dict(h='🔊 Je stem kiezen', p='Kies bij <b>Instellingen → Stem</b> je vertelstem en de klank: natuurlijk (rustig en zuinig) of expressief (het meest menselijk, met aarzelingen en zuchtjes). Met “Beluister deze stem” hoor je ’m meteen.'),
         dict(h='🧭 Hoe je reist', p='Vertel 2R of je met de auto, fiets, te voet of de trein gaat. Hij past het tempo en de afstand van de verhalen daarop aan.'),
         dict(h='🎯 Reisquiz voor het gezin', p='Zet de reisquiz aan voor één vraag na elk verhaal. De bijrijder tikt het antwoord aan — met een scorebord per rit.'),
-        dict(h='🧪 Stilstaand uitproberen', p='Wil je 2R proberen zonder te rijden? Gebruik de <b>Route Simulator</b> in het menu om een rit na te bootsen.'),
+        dict(h='🧪 Stilstaand uitproberen', p='Wil je 2R proberen zonder op pad te gaan? Gebruik de <b>Route Simulator</b> in het menu om een rit na te bootsen.'),
     ],
-    cta_h='Klaar om te rijden?', cta_p='2R draait live in TestFlight en op het web.', cta_btn='Probeer 2R →',
+    cta_h='Klaar om op pad te gaan?', cta_p='2R draait live in TestFlight en op het web.', cta_btn='Probeer 2R →',
 ),
 'en': dict(
     eyebrow='How 2R works', title='How 2R works',
-    lede='2R is your travelling companion that tells stories. You start it, you drive, and along the way you hear stories about the places you pass. Here is everything you need to know — in a few minutes.',
+    lede='2R is your travelling companion that tells stories. You start it, you head out — on foot, by bike, by train or by car — and along the way you hear stories about the places you pass. Here is everything you need to know — in a few minutes.',
     sections=[
         dict(h='🚗 Getting started', p='In the app, tap <b>Start the journey</b> and allow location access. 2R automatically narrates the places you pass — no account, nothing to set up first.'),
         dict(h='🎵 Alongside your music', p='Play your own music (Spotify, Apple Music, the radio — anything). It automatically <b>fades down</b> when a story starts and swells back up when it ends. Turn on “Music tips per region” for a tap toward fitting music along the way. 2R never streams music itself.'),
@@ -872,9 +872,9 @@ HOWTO = {
         dict(h='🔊 Choosing your voice', p='Under <b>Settings → Voice</b>, pick your narrating voice and the tone: natural (calm and economical) or expressive (the most human, with hesitations and sighs). “Preview this voice” lets you hear it right away.'),
         dict(h='🧭 How you travel', p='Tell 2R whether you go by car, bike, on foot or by train. It adapts the pace and distance of the stories accordingly.'),
         dict(h='🎯 Travel quiz for the family', p='Turn on the travel quiz for one question after each story. The passenger taps the answer — with a scoreboard per trip.'),
-        dict(h='🧪 Try it standing still', p='Want to try 2R without driving? Use the <b>Route Simulator</b> in the menu to simulate a trip.'),
+        dict(h='🧪 Try it standing still', p='Want to try 2R without going anywhere? Use the <b>Route Simulator</b> in the menu to simulate a trip.'),
     ],
-    cta_h='Ready to drive?', cta_p='2R runs live in TestFlight and on the web.', cta_btn='Try 2R →',
+    cta_h='Ready to head out?', cta_p='2R runs live in TestFlight and on the web.', cta_btn='Try 2R →',
 ),
 }
 
@@ -889,8 +889,8 @@ FAQ_LABEL = {'nl': 'Goed om te weten voor vertrek', 'en': 'Good to know before y
 HOWTO_SCENES = {
 'nl': [
     ('Hoofdstuk 01 · Voor je vertrekt', 'Eén knop. Daarna krijgt de wereld buiten een stem.',
-     'Start Route voordat je wegrijdt en kies hoe je reist. Terwijl jij rijdt, kijkt Route vooruit en kiest het verhaal dat deze plek betekenis geeft.'),
-    ('Hoofdstuk 02 · Onderweg', 'Vanaf hier rijdt de verteller met je mee.',
+     'Start Route voordat je vertrekt en kies hoe je reist — te voet, met de fiets, de trein of de auto. Terwijl jij onderweg bent, kijkt Route vooruit en kiest het verhaal dat deze plek betekenis geeft.'),
+    ('Hoofdstuk 02 · Onderweg', 'Vanaf hier reist de verteller met je mee.',
      'Eén tik en de reis begint. Route volgt je via GPS en zoekt live wat er om je heen te vertellen valt — met voorrang voor lokale bronnen, niet alleen Wikipedia.'),
     ('Hoofdstuk 03 · Het verhaal', 'Route kiest één betekenisvol verhaal.',
      'Geen lijst met weetjes. Per plek één verhaal, rustig verteld, met ruimte voor de weg en voor elkaar — en je hoort waar het vandaan komt.'),
@@ -901,8 +901,8 @@ HOWTO_SCENES = {
 ],
 'en': [
     ('Chapter 01 · Before you leave', 'One tap. Then the world outside finds a voice.',
-     'Start Route before you set off and choose how you travel. As you drive, Route looks ahead and picks the story that gives this place meaning.'),
-    ('Chapter 02 · On the road', 'From here, the narrator rides along with you.',
+     'Start Route before you set off and choose how you travel — on foot, by bike, by train or by car. As you travel, Route looks ahead and picks the story that gives this place meaning.'),
+    ('Chapter 02 · On the road', 'From here, the narrator travels along with you.',
      'One tap and the journey begins. Route follows your GPS and finds, live, what there is to tell around you — favouring local sources, not just Wikipedia.'),
     ('Chapter 03 · The story', 'Route picks one meaningful story.',
      'Not a list of facts. One story per place, calmly told, with room for the road and for each other — and you hear where it comes from.'),
@@ -1390,9 +1390,10 @@ def build_home(lang):
       <h2>{s['listen_h2']}</h2>
       <p>{s['listen_p']}</p>
     </div>
-    <div class="audio-experience">
+    <div class="audio-experience" id="listen-demo" role="button" tabindex="0" aria-label="{s['listen_now']}: {s['listen_sub']}">
+      <audio id="listen-audio" preload="none" src="/audio/drakensteyn-grafheuvels.mp3"></audio>
       <div class="audio-halo">
-        <span class="play-button">▶</span>
+        <span class="play-button" id="listen-play" aria-hidden="true">▶</span>
       </div>
       <div class="audio-meta">
         <span>{s['listen_now']}</span>
@@ -1400,6 +1401,24 @@ def build_home(lang):
         <small>{s['listen_sub']}</small>
       </div>
     </div>
+    <script>
+    (function(){{
+      var vak = document.getElementById('listen-demo');
+      var audio = document.getElementById('listen-audio');
+      var knop = document.getElementById('listen-play');
+      if (!vak || !audio) return;
+      vak.style.cursor = 'pointer';
+      function wissel() {{
+        if (audio.paused) {{ audio.play(); knop.textContent = '❚❚'; }}
+        else {{ audio.pause(); knop.textContent = '▶'; }}
+      }}
+      vak.addEventListener('click', wissel);
+      vak.addEventListener('keydown', function(e) {{
+        if (e.key === 'Enter' || e.key === ' ') {{ e.preventDefault(); wissel(); }}
+      }});
+      audio.addEventListener('ended', function() {{ knop.textContent = '▶'; }});
+    }})();
+    </script>
   </section>
 
   <section class="journey" id="reis">
@@ -1476,12 +1495,12 @@ def build_home(lang):
     </div>
   </section>
 '''
-    title = {'nl': '2R (Second Route) — De reisgezel die vertelt wat je onderweg ziet',
-             'en': '2R (Second Route) — The travel companion that narrates what you see',
-             'de': '2R (Second Route) — Der Reisebegleiter, der erzählt, was du siehst',
-             'fr': '2R (Second Route) — Le compagnon de voyage qui raconte ce que vous voyez',
-             'es': '2R (Second Route) — El compañero de viaje que narra lo que ves',
-             'pt': '2R (Second Route) — O companheiro de viagem que narra o que você vê'}[lang]
+    title = {'nl': '2R (Second Route) — Luisterroutes en verhalen voor wandelen, fietsen, trein en auto',
+             'en': '2R (Second Route) — Listening routes and stories for walking, cycling, train and car',
+             'de': '2R (Second Route) — Hörrouten und Geschichten zum Wandern, Radfahren, für Bahn und Auto',
+             'fr': "2R (Second Route) — Itinéraires d'écoute et récits à pied, à vélo, en train et en voiture",
+             'es': '2R (Second Route) — Rutas para escuchar e historias a pie, en bici, en tren y en coche',
+             'pt': '2R (Second Route) — Rotas para ouvir e histórias a pé, de bicicleta, de comboio e de carro'}[lang]
     # Live tellers (testers/verhalen vandaag) zijn van de publieke pagina
     # gehaald: dat was interne telemetrie en liet ongewild de prille schaal
     # zien. De strip toont nu stabiele productfeiten (stat3/stat4 in SITE).
@@ -1888,17 +1907,17 @@ def live_stories_section(lang):
 FEATURED_SLUG = 'kasteel-nijenrode-breukelen'
 STORIES_EXTRA = {
 'nl': dict(hero_eyebrow='Het levende reisboek', hero_h1='Verhalen die onderweg begonnen.',
-    hero_lede='Iedere plek draagt een verhaal. Soms hoef je er alleen maar langs te rijden. Deze verhalen werden tijdens echte ritten door 2R verteld, door ons nagelezen en voorzien van hun bron.',
+    hero_lede='Iedere plek draagt een verhaal. Soms hoef je er alleen maar langs te komen. Deze verhalen werden tijdens echte ritten door 2R verteld, door ons nagelezen en voorzien van hun bron.',
     hero_cta='Lees het eerste verhaal', hero_alt='Een reiziger kijkt vanuit de auto naar een voorbijtrekkend Europees dorp, met een reisboek op schoot.',
     featured_label='Uitgelicht', read_story='Lees het verhaal', detail_source_h='Waar dit verhaal vandaan komt',
     related='Verder lezen', invite_h='Neem Route mee op je volgende reis'),
 'en': dict(hero_eyebrow='The living travel book', hero_h1='Stories that began on the road.',
-    hero_lede='Every place carries a story. Sometimes you only have to drive past it. These stories were told by 2R during real trips, checked by us and given their source.',
+    hero_lede='Every place carries a story. Sometimes you only have to pass by. These stories were told by 2R during real trips, checked by us and given their source.',
     hero_cta='Read the first story', hero_alt='A traveler looks from the car at a passing European village, with a travel book on their lap.',
     featured_label='Featured', read_story='Read the story', detail_source_h='Where this story comes from',
     related='Read on', invite_h='Take Route along on your next trip'),
 'de': dict(hero_eyebrow='Das lebendige Reisebuch', hero_h1='Geschichten, die unterwegs begannen.',
-    hero_lede='Jeder Ort trägt eine Geschichte. Manchmal musst du nur daran vorbeifahren. Diese Geschichten wurden von 2R während echter Fahrten erzählt, von uns geprüft und mit ihrer Quelle versehen.',
+    hero_lede='Jeder Ort trägt eine Geschichte. Manchmal musst du nur daran vorbeikommen. Diese Geschichten wurden von 2R während echter Fahrten erzählt, von uns geprüft und mit ihrer Quelle versehen.',
     hero_cta='Lies die erste Geschichte', hero_alt='Ein Reisender blickt aus dem Auto auf ein vorbeiziehendes europäisches Dorf, ein Reisebuch auf dem Schoß.',
     featured_label='Ausgewählt', read_story='Geschichte lesen', detail_source_h='Woher diese Geschichte stammt',
     related='Weiterlesen', invite_h='Nimm Route mit auf deine nächste Reise'),
