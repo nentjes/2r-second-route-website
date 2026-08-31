@@ -2,11 +2,26 @@
  "slug": "zwarte-berg",
  "naam": "Wandelroute Zwarte Berg (Loonse en Drunense Duinen)",
  "provincie": "Noord-Brabant",
+ "soort": "routeboek",
  "lengte_km": 4.28,
  "duur": "±1,5 uur (officieel 1 uur 26 minuten; langzamer door mul zand)",
  "beheerder": "Natuurmonumenten",
  "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341485",
  "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 4.3,
+  "klim_m": 22,
+  "verharding": "onverhard",
+  "verhard_deel": 0.19,
+  "bankjes": null,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "4,3 km is lang voor wie kort loopt",
+   "overwegend onverhard pad"
+  ],
+  "deels_van": "2026-08-31"
+ },
  "lijnen": [
   [
    [

@@ -2,11 +2,25 @@
  "slug": "spaarndam",
  "naam": "Fortenroute (Spaarndam – Velserbroek)",
  "provincie": "Noord-Holland",
+ "soort": "routeboek",
  "lengte_km": 5.99,
  "duur": "±1,5 uur",
  "beheerder": "Wandelnetwerk Noord-Holland (provinciaal routebureau, uitgevoerd door Recreatie Noord-Holland)",
  "gpx_url": "https://www.wandelnetwerknoordholland.nl/api/export-gpx/30735",
  "bron_url": "https://www.wandelnetwerknoordholland.nl/themaroutes/fortenroute/30735",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 6.0,
+  "klim_m": 13,
+  "verharding": "verhard",
+  "verhard_deel": 0.9,
+  "bankjes": 2,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "6,0 km is lang voor wie kort loopt"
+  ],
+  "deels_van": "2026-08-31"
+ },
  "lijnen": [
   [
    [

@@ -2,11 +2,26 @@
  "slug": "drakensteyn",
  "naam": "Boswachterspad Stulp en Kasteeltuin",
  "provincie": "Utrecht",
+ "soort": "routeboek",
  "lengte_km": 5.7,
  "duur": "±1,5 uur",
  "beheerder": "Staatsbosbeheer",
  "gpx_url": "https://www.staatsbosbeheer.nl/-/media/utrechtse-heuvelrug/boswachterspad-stulp-kasteeltuin-gpx.gpx",
  "bron_url": "https://www.staatsbosbeheer.nl/routes/utrechtse-heuvelrug/wandelroute-stulp",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 6.3,
+  "klim_m": 49,
+  "verharding": "onverhard",
+  "verhard_deel": 0.05,
+  "bankjes": 4,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "6.3 km is lang voor wie kort loopt",
+   "49 m klimmen",
+   "overwegend onverhard pad"
+  ]
+ },
  "lijnen": [
   [
    [

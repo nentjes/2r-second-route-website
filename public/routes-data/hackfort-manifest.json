@@ -2,11 +2,24 @@
  "slug": "hackfort",
  "naam": "Eeuwenoud landgoed met kasteel Hackfort",
  "provincie": "Gelderland",
+ "soort": "routeboek",
  "lengte_km": 4.29,
  "duur": "±1,5 uur",
  "beheerder": "Natuurmonumenten",
  "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341736",
  "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 4.3,
+  "klim_m": 37,
+  "verharding": null,
+  "verhard_deel": null,
+  "bankjes": 10,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "4.3 km is lang voor wie kort loopt"
+  ]
+ },
  "lijnen": [
   [
    [

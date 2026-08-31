@@ -2,11 +2,24 @@
  "slug": "schokland",
  "naam": "Vluchthavenroute Schokland",
  "provincie": "Flevoland",
+ "soort": "routeboek",
  "lengte_km": 5.53,
  "duur": "±1,5 uur",
  "beheerder": "Het Flevo-landschap (routebeschrijving); GPX via Wandelnet / Roots-Natuurommetje van dezelfde route",
  "gpx_url": "https://wandelnet.api.routemaker.nl/content/gpx/wandelnet/1693.gpx",
  "bron_url": "https://www.flevo-landschap.nl/routes/wandelroute/vluchthavenroute-schokland",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 5.5,
+  "klim_m": 30,
+  "verharding": "half verhard",
+  "verhard_deel": 0.56,
+  "bankjes": 3,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "5.5 km is lang voor wie kort loopt"
+  ]
+ },
  "lijnen": [
   [
    [

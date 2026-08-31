@@ -2,11 +2,25 @@
  "slug": "bourtange",
  "naam": "Westerwolde Wandelroute 16: Rondom de Vesting Bourtange",
  "provincie": "Groningen",
+ "soort": "routeboek",
  "lengte_km": 6.46,
  "duur": "±1,5 uur",
  "beheerder": "Stichting Wandelen in Westerwolde",
  "gpx_url": "https://odp.visitgroningen.nl/route/download/13836/gpx",
  "bron_url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 6.5,
+  "klim_m": 21,
+  "verharding": "onverhard",
+  "verhard_deel": 0.6,
+  "bankjes": 12,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "6.5 km is lang voor wie kort loopt",
+   "overwegend onverhard pad"
+  ]
+ },
  "lijnen": [
   [
    [

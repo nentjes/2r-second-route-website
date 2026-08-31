@@ -2,11 +2,25 @@
  "slug": "berkheide",
  "naam": "Boswachterspad Berkheide (Hollands Duin)",
  "provincie": "Zuid-Holland",
+ "soort": "routeboek",
  "lengte_km": 5.93,
  "duur": "±1,5 uur",
  "beheerder": "Staatsbosbeheer",
  "gpx_url": "https://www.staatsbosbeheer.nl/-/media/hollands-duin/boswachterspad-berkheide-gpx.gpx",
  "bron_url": "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 5.9,
+  "klim_m": 56,
+  "verharding": "half verhard",
+  "verhard_deel": 0.67,
+  "bankjes": 3,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "5,9 km is lang voor wie kort loopt",
+   "56 m klimmen"
+  ]
+ },
  "lijnen": [
   [
    [

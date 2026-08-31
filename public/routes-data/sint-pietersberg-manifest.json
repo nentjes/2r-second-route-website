@@ -2,11 +2,25 @@
  "slug": "sint-pietersberg",
  "naam": "Wandelroute Sint-Pietersberg bij Maastricht (groene route)",
  "provincie": "Limburg",
+ "soort": "routeboek",
  "lengte_km": 4.78,
  "duur": "±1,5 uur",
  "beheerder": "Natuurmonumenten",
  "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341763",
  "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 4.8,
+  "klim_m": 168,
+  "verharding": null,
+  "verhard_deel": null,
+  "bankjes": null,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "4,8 km is lang voor wie kort loopt",
+   "168 m klimmen"
+  ]
+ },
  "lijnen": [
   [
    [

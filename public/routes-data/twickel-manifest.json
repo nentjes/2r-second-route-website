@@ -2,11 +2,24 @@
  "slug": "twickel",
  "naam": "Twickel Kasteelwandeling",
  "provincie": "Overijssel",
+ "soort": "routeboek",
  "lengte_km": 4.49,
  "duur": "±1,5 uur",
  "beheerder": "Landschap Overijssel (routeplatform); route gemaakt door Stichting Twickel, de landgoedbeheerder",
  "gpx_url": "https://landschapoverijssel.routemaker.nl/content/gpx/landschapoverijssel/337.gpx",
  "bron_url": "https://landschapoverijssel.nl/routes/twickel-kasteelwandeling",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 4.5,
+  "klim_m": 26,
+  "verharding": null,
+  "verhard_deel": null,
+  "bankjes": 6,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "4.5 km is lang voor wie kort loopt"
+  ]
+ },
  "lijnen": [
   [
    [

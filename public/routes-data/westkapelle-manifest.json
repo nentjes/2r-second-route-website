@@ -2,11 +2,25 @@
  "slug": "westkapelle",
  "naam": "Parelroute 'Verdediging' — Westkapelle",
  "provincie": "Zeeland",
+ "soort": "routeboek",
  "lengte_km": 5.36,
  "duur": "±1,5 uur",
  "beheerder": "VVV Zeeland / Zeeland.com (provinciale destinatie-organisatie), i.s.m. Polderhuis Westkapelle (Dijk- en Oorlogsmuseum)",
  "gpx_url": "https://odp.zeeland.com/route/download/2549/gpx",
  "bron_url": "https://www.zeeland.com/nl-nl/visit/2549_nl/parelroute-27verdediging-27-westkapelle",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 5.4,
+  "klim_m": 17,
+  "verharding": "verhard",
+  "verhard_deel": 0.89,
+  "bankjes": null,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "5,4 km is lang voor wie kort loopt"
+  ],
+  "deels_van": "2026-08-31"
+ },
  "lijnen": [
   [
    [

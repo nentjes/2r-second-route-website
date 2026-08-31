@@ -6,6 +6,19 @@
    "provincie": "Zuid-Holland",
    "lengte_km": 5.93,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 5.9,
+    "klim_m": 56,
+    "verharding": "half verhard",
+    "verhard_deel": 0.67,
+    "bankjes": 3,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "5,9 km is lang voor wie kort loopt",
+     "56 m klimmen"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/berkheide-manifest.json"
@@ -16,6 +29,19 @@
    "provincie": "Groningen",
    "lengte_km": 6.46,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 6.5,
+    "klim_m": 21,
+    "verharding": "onverhard",
+    "verhard_deel": 0.6,
+    "bankjes": 12,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "6.5 km is lang voor wie kort loopt",
+     "overwegend onverhard pad"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/bourtange-manifest.json"
@@ -26,6 +52,18 @@
    "provincie": "Friesland",
    "lengte_km": 4.24,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 4.2,
+    "klim_m": 13,
+    "verharding": null,
+    "verhard_deel": null,
+    "bankjes": 27,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "4.2 km is lang voor wie kort loopt"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/dokkum-manifest.json"
@@ -36,6 +74,20 @@
    "provincie": "Utrecht",
    "lengte_km": 5.7,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 6.3,
+    "klim_m": 49,
+    "verharding": "onverhard",
+    "verhard_deel": 0.05,
+    "bankjes": 4,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "6.3 km is lang voor wie kort loopt",
+     "49 m klimmen",
+     "overwegend onverhard pad"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/drakensteyn-manifest.json"
@@ -46,6 +98,18 @@
    "provincie": "Gelderland",
    "lengte_km": 4.29,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 4.3,
+    "klim_m": 37,
+    "verharding": null,
+    "verhard_deel": null,
+    "bankjes": 10,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "4.3 km is lang voor wie kort loopt"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/hackfort-manifest.json"
@@ -56,6 +120,16 @@
    "provincie": "Utrecht",
    "lengte_km": 2.99,
    "duur": "±1 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 3.0,
+    "klim_m": 15,
+    "verharding": "verhard",
+    "verhard_deel": 0.81,
+    "bankjes": 1,
+    "met_stok_haalbaar": true,
+    "kanttekeningen": []
+   },
    "soort": "buurtroute",
    "hoofdstukken": 5,
    "manifest": "https://2route.nl/routes-data/julianalaan-manifest.json"
@@ -66,6 +140,18 @@
    "provincie": "Flevoland",
    "lengte_km": 5.53,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 5.5,
+    "klim_m": 30,
+    "verharding": "half verhard",
+    "verhard_deel": 0.56,
+    "bankjes": 3,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "5.5 km is lang voor wie kort loopt"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/schokland-manifest.json"
@@ -76,6 +162,19 @@
    "provincie": "Limburg",
    "lengte_km": 4.78,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 4.8,
+    "klim_m": 168,
+    "verharding": null,
+    "verhard_deel": null,
+    "bankjes": null,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "4,8 km is lang voor wie kort loopt",
+     "168 m klimmen"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 10,
    "manifest": "https://2route.nl/routes-data/sint-pietersberg-manifest.json"
@@ -86,6 +185,19 @@
    "provincie": "Noord-Holland",
    "lengte_km": 5.99,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 6.0,
+    "klim_m": 13,
+    "verharding": "verhard",
+    "verhard_deel": 0.9,
+    "bankjes": 2,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "6,0 km is lang voor wie kort loopt"
+    ],
+    "deels_van": "2026-08-31"
+   },
    "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/spaarndam-manifest.json"
@@ -96,6 +208,18 @@
    "provincie": "Overijssel",
    "lengte_km": 4.49,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 4.5,
+    "klim_m": 26,
+    "verharding": null,
+    "verhard_deel": null,
+    "bankjes": 6,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "4.5 km is lang voor wie kort loopt"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/twickel-manifest.json"
@@ -106,6 +230,18 @@
    "provincie": "Drenthe",
    "lengte_km": 5.49,
    "duur": "±2 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 5.5,
+    "klim_m": 39,
+    "verharding": null,
+    "verhard_deel": null,
+    "bankjes": 15,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "5.5 km is lang voor wie kort loopt"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/veenhuizen-manifest.json"
@@ -116,6 +252,19 @@
    "provincie": "Zeeland",
    "lengte_km": 5.36,
    "duur": "±1,5 uur",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 5.4,
+    "klim_m": 17,
+    "verharding": "verhard",
+    "verhard_deel": 0.89,
+    "bankjes": null,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "5,4 km is lang voor wie kort loopt"
+    ],
+    "deels_van": "2026-08-31"
+   },
    "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/westkapelle-manifest.json"
@@ -126,6 +275,20 @@
    "provincie": "Noord-Brabant",
    "lengte_km": 4.28,
    "duur": "±1,5 uur (officieel 1 uur 26 minuten; langzamer door mul zand)",
+   "begaanbaarheid": {
+    "gemeten_op": "2026-08-31",
+    "lengte_km": 4.3,
+    "klim_m": 22,
+    "verharding": "onverhard",
+    "verhard_deel": 0.19,
+    "bankjes": null,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "4,3 km is lang voor wie kort loopt",
+     "overwegend onverhard pad"
+    ],
+    "deels_van": "2026-08-31"
+   },
    "soort": "routeboek",
    "hoofdstukken": 10,
    "manifest": "https://2route.nl/routes-data/zwarte-berg-manifest.json"

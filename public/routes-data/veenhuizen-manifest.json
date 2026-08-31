@@ -2,11 +2,24 @@
  "slug": "veenhuizen",
  "naam": "Fochteloërveenroute: wandeling met cultuurhistorie en natuur",
  "provincie": "Drenthe",
+ "soort": "routeboek",
  "lengte_km": 5.49,
  "duur": "±2 uur",
  "beheerder": "Natuurmonumenten",
  "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341913",
  "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/fochteloerveen/route/fochteloerveenroute-wandeling-met-cultuurhistorie-en-natuur",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 5.5,
+  "klim_m": 39,
+  "verharding": null,
+  "verhard_deel": null,
+  "bankjes": 15,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "5.5 km is lang voor wie kort loopt"
+  ]
+ },
  "lijnen": [
   [
    [

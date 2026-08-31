@@ -8,6 +8,16 @@
  "beheerder": "Utrechts Landschap (Biltse Duinen en Okkersbos)",
  "gpx_url": "",
  "bron_url": "https://www.utrechtslandschap.nl/gebied/natuur/biltse-duinen-en-okkersbos",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 3.0,
+  "klim_m": 15,
+  "verharding": "verhard",
+  "verhard_deel": 0.81,
+  "bankjes": 1,
+  "met_stok_haalbaar": true,
+  "kanttekeningen": []
+ },
  "lijnen": [
   [
    [

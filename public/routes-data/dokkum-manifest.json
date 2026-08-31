@@ -2,11 +2,24 @@
  "slug": "dokkum",
  "naam": "Stadswandeling Dokkum (Vestingstad Dokkum)",
  "provincie": "Friesland",
+ "soort": "routeboek",
  "lengte_km": 4.24,
  "duur": "±1,5 uur",
  "beheerder": "ANWB (routepublicatie); vestingwerken in beheer van gemeente Noardeast-Fryslân",
  "gpx_url": "https://merk.anwb.nl/m/40614bfd3b96c283/original/Vestingstad-Dokkum-GPX.gpx",
  "bron_url": "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+ "begaanbaarheid": {
+  "gemeten_op": "2026-08-31",
+  "lengte_km": 4.2,
+  "klim_m": 13,
+  "verharding": null,
+  "verhard_deel": null,
+  "bankjes": 27,
+  "met_stok_haalbaar": false,
+  "kanttekeningen": [
+   "4.2 km is lang voor wie kort loopt"
+  ]
+ },
  "lijnen": [
   [
    [
