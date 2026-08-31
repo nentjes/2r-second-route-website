@@ -1,0 +1,608 @@
+{
+ "slug": "schokland",
+ "provincie": "Flevoland",
+ "naam": "Vluchthavenroute Schokland",
+ "lengte_km": 5.53,
+ "duur": "±1,5 uur",
+ "hoofdstukken_n": 12,
+ "beheerder": "Het Flevo-landschap (routebeschrijving); GPX via Wandelnet / Roots-Natuurommetje van dezelfde route",
+ "gpx_url": "https://wandelnet.api.routemaker.nl/content/gpx/wandelnet/1693.gpx",
+ "bron_url": "https://www.flevo-landschap.nl/routes/wandelroute/vluchthavenroute-schokland",
+ "startpunt": "Parkeerplaats bezoekerscentrum De Gesteentetuin / Lichtwachterswoning, Oud Emmeloorderweg 15, 8319 AB Schokland (vanaf A6 afslag Nagele, N716); gratis parkeren",
+ "kaart_js": "/routes-data/schokland-kaart.js",
+ "lijnen": [
+  [
+   [
+    52.647991,
+    5.76865
+   ],
+   [
+    52.648083,
+    5.768903
+   ],
+   [
+    52.648197,
+    5.768956
+   ],
+   [
+    52.648118,
+    5.76789
+   ],
+   [
+    52.648225,
+    5.766631
+   ],
+   [
+    52.647808,
+    5.766631
+   ],
+   [
+    52.647735,
+    5.766425
+   ],
+   [
+    52.647498,
+    5.76628
+   ],
+   [
+    52.647537,
+    5.766004
+   ],
+   [
+    52.647602,
+    5.765891
+   ],
+   [
+    52.647956,
+    5.76594
+   ],
+   [
+    52.648259,
+    5.765501
+   ],
+   [
+    52.648594,
+    5.76547
+   ],
+   [
+    52.648795,
+    5.765647
+   ],
+   [
+    52.648839,
+    5.765911
+   ],
+   [
+    52.649087,
+    5.765878
+   ],
+   [
+    52.649195,
+    5.766478
+   ],
+   [
+    52.649189,
+    5.770698
+   ],
+   [
+    52.6491,
+    5.770867
+   ],
+   [
+    52.648895,
+    5.770861
+   ],
+   [
+    52.648919,
+    5.772503
+   ],
+   [
+    52.649631,
+    5.772566
+   ],
+   [
+    52.649791,
+    5.771986
+   ],
+   [
+    52.651281,
+    5.77195
+   ],
+   [
+    52.651359,
+    5.772106
+   ],
+   [
+    52.651293,
+    5.774554
+   ],
+   [
+    52.651379,
+    5.774693
+   ],
+   [
+    52.652127,
+    5.774882
+   ],
+   [
+    52.652119,
+    5.775119
+   ],
+   [
+    52.657667,
+    5.774814
+   ],
+   [
+    52.657976,
+    5.775316
+   ],
+   [
+    52.658089,
+    5.775339
+   ],
+   [
+    52.658285,
+    5.776813
+   ],
+   [
+    52.658185,
+    5.777851
+   ],
+   [
+    52.65772,
+    5.779154
+   ],
+   [
+    52.657085,
+    5.779548
+   ],
+   [
+    52.655935,
+    5.779654
+   ],
+   [
+    52.65493,
+    5.780138
+   ],
+   [
+    52.654627,
+    5.779853
+   ],
+   [
+    52.654405,
+    5.779126
+   ],
+   [
+    52.653835,
+    5.778433
+   ],
+   [
+    52.650446,
+    5.778053
+   ],
+   [
+    52.650053,
+    5.777636
+   ],
+   [
+    52.647592,
+    5.777954
+   ],
+   [
+    52.645202,
+    5.778408
+   ],
+   [
+    52.645273,
+    5.77544
+   ],
+   [
+    52.647329,
+    5.775378
+   ],
+   [
+    52.647306,
+    5.774644
+   ],
+   [
+    52.647105,
+    5.773758
+   ],
+   [
+    52.647109,
+    5.772845
+   ],
+   [
+    52.646539,
+    5.77269
+   ],
+   [
+    52.646143,
+    5.77269
+   ],
+   [
+    52.645271,
+    5.772992
+   ],
+   [
+    52.644745,
+    5.77281
+   ],
+   [
+    52.6449,
+    5.772055
+   ],
+   [
+    52.645187,
+    5.771685
+   ],
+   [
+    52.645227,
+    5.768713
+   ],
+   [
+    52.645715,
+    5.768717
+   ],
+   [
+    52.646524,
+    5.768482
+   ],
+   [
+    52.647007,
+    5.768013
+   ],
+   [
+    52.647118,
+    5.767747
+   ],
+   [
+    52.647502,
+    5.768102
+   ],
+   [
+    52.647667,
+    5.768497
+   ],
+   [
+    52.647943,
+    5.768487
+   ],
+   [
+    52.647987,
+    5.768641
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "Welkom op Schokland — het eiland op het droge",
+   "focus": "geschiedenis",
+   "km": 0.0,
+   "lat": 52.647991,
+   "lng": 5.76865,
+   "paras": [
+    "Welkom hier op Schokland, in de Noordoostpolder. We staan aan het begin van een heel bijzonder verhaal: dit is de plek die eeuwenlang vocht tegen de woeste Zuiderzee, die strijd in achttienhonderdnegenenvijftig uiteindelijk verloor, en in negentienhonderdtweeënveertig plotseling strandde op het droge. Land waar eerst water was.",
+    "We beginnen vandaag vanaf de parkeerplaats bij bezoekerscentrum De Gesteentetuin aan de Oud Emmeloorderweg. Vanaf hier maken we met de Vluchthavenroute een gesloten lus van vijf en een halve kilometer over het noorden van dit voormalige eiland.",
+    "Als je om je heen kijkt, voel je de geschiedenis bijna in de grond zitten. Op en rond het eiland zijn sporen gevonden van maar liefst tienduizend jaar bewoning. Tot ongeveer veertienhonderdvijftig zat Schokland nog vast aan het vasteland, maar daarna sloot de oprukkende zee het meedogenloos in. Het werd een eiland dat oorspronkelijk zo'n drie tot vier meter boven de omgeving uitstak. En moet je nagaan... die oude omtrek zie je nu nog altijd terug in het landschap, gemarkeerd door een rondgaande bomenrij en een zone van natte graslanden midden in de vlakke polder.",
+    "Het is niet voor niets dat Schokland in negentienhonderdvijfennegentig als allereerste Nederlandse monument op de Werelderfgoedlijst van UNESCO werd geplaatst, precies omdat het symbool staat voor die eeuwenlange Nederlandse strijd tegen het water.",
+    "Stap maar rustig voorwaarts, en onderweg zal ik je laten zien hoe dit eiland op het droge zijn geheimen prijsgeeft."
+   ],
+   "audio": "/audio/routes/schokland/01.mp3",
+   "bronnen": [
+    [
+     "https://www.flevo-landschap.nl/routes/wandelroute/vluchthavenroute-schokland",
+     "Het Flevo-landschap — Vluchthavenroute Schokland"
+    ],
+    [
+     "https://schokland.nl/geschiedenis/",
+     "Schokland.nl — Geschiedenis"
+    ],
+    [
+     "https://discovernl.nl/schokland/",
+     "DiscoverNL — Schokland, eiland op het droge"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Stenen op reis — De Gesteentetuin",
+   "focus": "natuur",
+   "km": 0.13,
+   "lat": 52.648141,
+   "lng": 5.767661,
+   "paras": [
+    "We hadden het daarnet al over die tienduizend jaar aan menselijke bewoning op Schokland, maar om de échte oergeschiedenis van deze plek te begrijpen, moeten we nog veel verder terug in de tijd. Vlak naast de route, op nog geen veertig meter afstand, ligt bezoekerscentrum De Gesteentetuin aan de Keileemweg één. We bevinden ons hier in het Schokkerbos, aan de westkant van het voormalige eiland.",
+    "Kijk zometeen maar eens goed om je heen. De tuin ligt vol met indrukwekkende zwerfkeien. Die stenen kwamen pas tevoorschijn tijdens de drooglegging van de Noordoostpolder, toen de bodem werd omgewoeld. Maar hun reis begon ver hiervandaan. In een ijstijd zijn ze door reusachtige, schuivende gletsjers vanuit het noorden helemaal hierheen geduwd.",
+    "En dat brengt ons bij het diepste fundament van het eiland. Want Schokland rust op een bult van keileem uit de voorlaatste ijstijd, het Saalien. We hebben het dan over zo'n honderdvijftigduizend jaar geleden. Dit is werkelijk de alleroudste laag onder je voeten van onze hele wandeling. Ouder dan het eiland zelf, ouder dan de haven, en ver voor de mensen die verderop in dit verhaal nog langskomen.",
+    "Er loopt een wandelpad door de tuin, langs al die versteende reizigers, en er is een expositie over het ontstaan van de stenen, over de wording van Schokland en over de natuur hier in het Schokkerbos. Het is alsof de prehistorie hier gewoon aan de oppervlakte ligt te wachten. Wandel rustig verder, dan duiken we zo meteen een nieuw tijdperk in."
+   ],
+   "audio": "/audio/routes/schokland/02.mp3",
+   "bronnen": [
+    [
+     "https://www.dagjeweg.nl/tip/6550/Bezoekerscentrum-De-Gesteentetuin",
+     "DagjeWeg.NL — Bezoekerscentrum De Gesteentetuin"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Schokland",
+     "Wikipedia — Schokland"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Het Schokkerbos",
+   "focus": "natuur",
+   "km": 0.8,
+   "lat": 52.649189,
+   "lng": 5.770051,
+   "paras": [
+    "Om je heen sluit het Schokkerbos zich nu om het pad. Weet je nog dat we het net hadden over die oeroude keileembult onder onze voeten? Wel, precies die bodem bepaalde het lot van deze plek na de inpoldering.",
+    "Toen de Noordoostpolder in negentienhonderdtweeënveertig droogviel, wilde men het nieuwe land natuurlijk meteen ontginnen voor de landbouw. Maar op dit stuk grond, ongeveer vijfentachtig hectare groot, bleek dat een heel ander verhaal. De bodem bevatte namelijk simpelweg te veel keileem en veen. Voor akkerbouw was het volkomen ongeschikt. En dus koos men voor een andere bestemming: er werd een bos aangeplant.",
+    "In het begin ging het om houtproductie. Er werden vooral naaldbomen neergezet. Maar de geschiedenis stond niet stil. Later kwam er meer loofbos bij, met eik en es. En moet je zien wat er in die decennia is gebeurd.",
+    "Het Schokkerbos groeide uit tot een schatkamer. Vandaag de dag zijn er meer dan driehonderdvijftig soorten paddenstoelen geteld, en wel vijfenzeventig soorten mos, waarvan er veel ontzettend zeldzaam zijn. Als je omhoogkijkt tussen de takken, jagen er roofvogels zoals de havik, de buizerd, de sperwer en de ransuil. Tussen de stammen verschuilen zich reeën en behendige boommarters. Zo werd die oude ijstijdbodem, die de boeren ooit in de weg zat, uiteindelijk de wieg van een compleet nieuw bos.",
+    "Loop maar verder. Want hoe rustig het hier ook is, het eiland onder dit bos heeft eeuwenlang gevochten. En dat gevecht is waar we het zo meteen over gaan hebben."
+   ],
+   "audio": "/audio/routes/schokland/03.mp3",
+   "bronnen": [
+    [
+     "https://www.flevo-landschap.nl/gebied/unesco-werelderfgoed-schokland",
+     "Het Flevo-landschap — UNESCO Werelderfgoed Schokland (natuurgebied)"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "De strijd tegen de Zuiderzee",
+   "focus": "geschiedenis",
+   "km": 1.33,
+   "lat": 52.65133,
+   "lng": 5.772502,
+   "paras": [
+    "Nu je hier zo loopt, omringd door al dat groen, is het bijna niet voor te stellen hoe meedogenloos het water hier ooit huishield. Waar je net hoorde hoe de natuur bezit nam van de oude bodem, was dit eeuwenlang juist het decor van een bittere overlevingsstrijd tegen de Zuiderzee.",
+    "Stormvloed na stormvloed knabbelde onophoudelijk stukken van Schokland af. Het eiland werd letterlijk steeds kleiner. De bewoners probeerden zichzelf in veiligheid te brengen door hun huizen op terpen en achter kleine dijkjes te bouwen. In de achttiende eeuw ging men nog een stap verder: Schokland werd toen grotendeels omringd door een enorm houten paalscherm dat de beukende golven moest breken.",
+    "Maar de zee gaf niet op. Moet je nagaan wat een klap de zware storm van achttienhonderdvijfentwintig moet zijn geweest.",
+    "Die storm richtte grote schade aan aan dat houten paalwerk. Er moest iets stevigers komen. In de negentiende eeuw werd daarom aan de westkant, pal achter het paalwerk, een stenen dijk aangelegd om dat kwetsbare westelijke deel van het eiland te beschermen.",
+    "En weet je wat het bijzondere is? Schokland lag daar niet alleen voor zichzelf. Het diende al die tijd als een grote golfbreker voor de dijken op het vasteland daarachter. Juist daarom bleef die zeewering van belang, zelfs nadat het eiland in achttienhonderdnegenenvijftig werd ontruimd en de bewoners waren vertrokken.",
+    "Volg het pad nog even verder naar het noorden. Daar, op de punt, woonden de mensen die dit allemaal van heel dichtbij meemaakten."
+   ],
+   "audio": "/audio/routes/schokland/04.mp3",
+   "bronnen": [
+    [
+     "https://discovernl.nl/schokland/",
+     "DiscoverNL — Schokland, eiland op het droge"
+    ],
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/schokland-3/stenen-zeewering.html",
+     "Flevolands Erfgoed — Stenen zeewering Schokland"
+    ],
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/schokland-3/schokland-werelderfgoed.html",
+     "Flevolands Erfgoed — Schokland Werelderfgoed"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Schokland",
+     "Wikipedia — Schokland"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Emmeloord — het verdwenen dorp op de Noordpunt",
+   "focus": "mensen",
+   "km": 1.9,
+   "lat": 52.654979,
+   "lng": 5.774962,
+   "paras": [
+    "Een paar honderd meter voor je uit, op de noordpunt van het voormalige eiland, lag ooit het buurtschap Emmeloord. Samen met Middelbuurt en de Zuidert bij Ens was dit een van de drie plekken op Schokland waar eeuwenlang mensen woonden.",
+    "Die naam alleen al draagt een enorme geschiedenis met zich mee. Moet je horen hoe ver dat teruggaat: in de twaalfde eeuw sprak men al over Emelwerth, wat in veertienhonderdachtenzeventig veranderde in Emeloirt, tot het uiteindelijk de naam werd die we nu kennen.",
+    "Maar weet je nog dat ik vertelde over die ontruiming in achttienhonderdnegenenvijftig? Toen viel definitief het doek voor dit buurtschap. Het dorp verdween. Wat er vandaag de dag op die noordpunt rest, zijn de haven, de lichtwachterswoning en het karakteristieke misthoornhuisje. Stille getuigen van een verdwenen eilandgemeenschap.",
+    "Toch verdween de naam niet uit het geheugen van dit landschap. Toen de Zuiderzee week en de Noordoostpolder ontstond, werd de nieuwe hoofdplaats vernoemd naar precies dit oude buurtschap op de punt. Al is dat moderne Emmeloord natuurlijk van een heel andere tijd. Waar de wortels hier in de middeleeuwen liggen, werd het allereerste huis van wat toen nog 'Dorp A' heette pas bewoond op vijftien december negentienhonderddrieënveertig.",
+    "Zo gaf dit verlaten stukje Schokland zijn eeuwenoude naam door aan het kloppende hart van de polder. Loop nu maar door naar die punt. Want van dat hele dorp is één ding blijven liggen, en daar is deze hele wandeling naar vernoemd."
+   ],
+   "audio": "/audio/routes/schokland/05.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Schokland",
+     "Wikipedia — Schokland"
+    ],
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/schokland-3/oud-emmeloord.html",
+     "Flevolands Erfgoed — Oud Emmeloord (haven)"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Emmeloord",
+     "Wikipedia — Emmeloord"
+    ]
+   ],
+   "afstand_onderwerp_m": 300
+  },
+  {
+   "nr": 6,
+   "titel": "De vluchthaven van Oud-Emmeloord",
+   "focus": "geschiedenis",
+   "km": 2.4,
+   "lat": 52.65826,
+   "lng": 5.777322,
+   "paras": [
+    "Je staat nu bij de haven van Oud-Emmeloord, op de noordpunt van het voormalige eiland. Dit is hem: de vluchthaven waar deze wandeling naar heet. Terwijl de eilanders in achttienhonderdnegenenvijftig moesten vertrekken, bleef dit haventje wonder boven wonder behouden. Moet je je die Zuiderzee eens voorstellen tijdens een woeste noordwesterstorm.",
+    "De oostzijde van Schokland was dan een cruciale schuilplaats voor schippers in nood. Tussen achttienhonderdzevenendertig en achttienhonderdnegenendertig was het oude haventje flink vergroot, zodat er zo'n driehonderd schepen een ligplaats konden vinden. Ze ankerden hier in de haven van Emmeloord, of even verderop op de rede bij Ens. Na de ontruiming leek ook de haven ten dode opgeschreven, maar Willem Jan Schuttevaer vocht ervoor. En met succes: op eenendertig augustus achttienhonderdtweeënzestig bepaalde minister Thorbecke dat de haven als vluchthaven mocht blijven bestaan.",
+    "Wat je hier vandaag ziet, brengt die geschiedenis weer tot leven. In tweeduizendvier is de haven in oorspronkelijke staat teruggebracht. Kijk maar eens naar de gereconstrueerde steigers, de afmeerpalen, de havenlichten, de ijsbrekers en de waterpoel. En in tweeduizendzeven verrees er zelfs een replica van de vuurtoren die hier van negentienhonderdveertien tot negentienhonderdtweeënveertig heeft gestaan. Een haven zonder zee, met een vuurtoren die niemand meer hoeft te waarschuwen. Loop maar door langs het water. Want vlak hierna staat het huis van de man wiens werk het was om dat licht brandend te houden."
+   ],
+   "audio": "/audio/routes/schokland/06.mp3",
+   "bronnen": [
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/schokland-3/oud-emmeloord.html",
+     "Flevolands Erfgoed — Oud Emmeloord (haven)"
+    ],
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/scheepswrakken/concentratie-scheepswrakken-schokland.html",
+     "Flevolands Erfgoed — Concentratie scheepswrakken Schokland"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "De lichtwachterswoning en het misthoornhuisje",
+   "focus": "architectuur",
+   "km": 2.74,
+   "lat": 52.655935,
+   "lng": 5.779654,
+   "paras": [
+    "Vlak langs het pad, op amper vijftien meter afstand, staat de voormalige lichtwachterswoning. Het huis van precies die man.",
+    "Het besluit om het te bouwen viel op negentien september negentienhonderd, onder minister Cornelis Lely. De Rijkswaterstaat-ingenieur Welcker tekende het ontwerp, en in de jaren negentienhonderd en negentienhonderdeen werd het opgetrokken als dienstwoning voor de havenmeester annex lichtwachter. Moet je nagaan: havenmeester Lammert Smit trok hier als eerste in, samen met zijn vrouw en vijf kinderen. Midden op deze winderige punt, aan alle kanten omringd door water. Pas in april negentienhonderdeenenveertig vertrok de allerlaatste havenmeester-lichtwachter, Jan Spit, definitief van Schokland.",
+    "Iets noordelijker staat nog zo'n bijzonder overblijfsel: het misthoornhuisje uit negentienhonderdeenentwintig. Stel je voor hoe dat vroeger klonk bij dichte mist. Binnen stond een Bronsmotor die de koperen misthoorn aandreef, gericht naar het zuidwesten. Zodra het zicht over de Zuiderzee wegviel, liet die hoorn zijn zware, luide stoten over de golven galmen, zodat schippers wisten waar het eiland lag.",
+    "Allebei de gebouwen staan tegenwoordig op de rijksmonumentenlijst. Ze herinneren aan een tijd waarin Schokland een baken van licht en geluid was in een open, soms woeste zee.",
+    "Maar besef wel: toen dat huis er kwam, was de eilandgemeenschap zelf al veertig jaar weg. De havenmeester woonde hier alleen. Loop met me mee, dan vertel ik je hoe dat gegaan is."
+   ],
+   "audio": "/audio/routes/schokland/07.mp3",
+   "bronnen": [
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/schokland-3/lchtwachterswoning.html",
+     "Flevolands Erfgoed — Lichtwachterswoning Schokland"
+    ],
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/schokland-3/misthoornhuisje.html",
+     "Flevolands Erfgoed — Misthoornhuisje Schokland"
+    ]
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "De ontruiming van 1859",
+   "focus": "mensen",
+   "km": 3.1,
+   "lat": 52.653189,
+   "lng": 5.778321,
+   "paras": [
+    "Terwijl je hier zo rustig loopt over die oude eilandgrond, is het bijna niet voor te stellen hoe zwaar en uitzichtloos het leven hier kon zijn. We hadden het net over de havenmeesters en het trotseren van de elementen, maar voor de gewone bevolking werd de situatie halverwege de negentiende eeuw ronduit onhoudbaar.",
+    "Schokland was straatarm. De visvangst, toch het voornaamste bestaan van de mensen hier, leverde nauwelijks nog iets op. De armoede was zo schrijnend dat de regering ingreep. Bij wet, in achttienhonderdachtenvijftig ondertekend door koning Willem de Derde, werd besloten dat het eiland ontruimd moest worden. Op één maart achttienhonderdnegenenvijftig kregen de bewoners het bericht: ze hadden vier maanden de tijd om voorgoed te vertrekken.",
+    "Op tien juli van datzelfde jaar werd de gemeente Schokland opgeheven en bij Kampen gevoegd. Ongeveer zeshonderdvijftig tot zevenhonderd Schokkers verlieten huis en haard. De meesten trokken naar Kampen, anderen zochten hun toevlucht in Vollenhove, in Volendam of op Urk.",
+    "En moet je horen hoe dat ging in Kampen. In de wijk Brunnepe verrees een heuse Schokkerbuurt. Meester Legebeke verdeelde daar zijn grond in eenentwintig kavels. En met het meegenomen sloophout van hun eigen, afgebroken eilandhuizen bouwden de Schokkers daar nieuwe woningen op. Hun huizen gingen mee; hun eiland bleef achter.",
+    "En dat eiland lag daarna nog meer dan tachtig jaar leeg in het water. Tot de zee zelf verdween. Loop maar door, dan vertel ik je hoe dat kon."
+   ],
+   "audio": "/audio/routes/schokland/08.mp3",
+   "bronnen": [
+    [
+     "https://www.canonvannederland.nl/nl/overijssel/salland/kampen/schokkerbuurt",
+     "Canon van Nederland — De Schokkerbuurt (Kampen)"
+    ]
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "Land waar eerst zee was — de inpoldering van 1942",
+   "focus": "geschiedenis",
+   "km": 3.41,
+   "lat": 52.650446,
+   "lng": 5.778053,
+   "paras": [
+    "Na die gedwongen ontruiming bleef Schokland nog tientallen jaren eenzaam in de golven liggen. Maar in negentienhonderdtweeënveertig gebeurde er iets wat het landschap voorgoed veranderde: de Noordoostpolder viel droog. Vanaf dat moment was Schokland geen eiland meer, maar onderdeel van het vasteland.",
+    "En toen die voormalige zeebodem eenmaal droog lag... gaf het water zijn geheimen prijs.",
+    "Toen boeren en arbeiders in de jaren veertig tot zestig het nieuwe land begonnen te ontginnen en te ploegen, stuitten de ploegijzers op iets bijzonders: scheepswrakken. Houten resten van schepen die hier eeuwenlang op de bodem van de Zuiderzee hadden gerust, uit de periode twaalfhonderd tot achttienhonderd. Rond Schokland alleen al, in een gebied van zo'n achttien vierkante kilometer, zijn tweeëntwintig van die wrakken gevonden. De meeste lagen ten noorden en ten zuidwesten van het voormalige eiland. Dus niet onder dit pad, maar wel overal om je heen in die vlakte.",
+    "Het is wrang en logisch tegelijk. Precies de redenen waarom de schepen hierheen kwamen, beschutting zoeken bij de vluchthaven of juist vastlopen op de ondiepten rond het eiland, zorgden ervoor dat ze hier ten onder gingen.",
+    "Flevoland geldt daarom als het grootste scheepskerkhof ter wereld.",
+    "Het water is weg, de schepen bleven. En op de plek waar de zee verdween, gebeurt nu iets wat je niet zou verwachten: hier laten ze het water juist weer terugkomen."
+   ],
+   "audio": "/audio/routes/schokland/09.mp3",
+   "bronnen": [
+    [
+     "https://schokland.nl/geschiedenis/",
+     "Schokland.nl — Geschiedenis"
+    ],
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/scheepswrakken/concentratie-scheepswrakken-schokland.html",
+     "Flevolands Erfgoed — Concentratie scheepswrakken Schokland"
+    ],
+    [
+     "https://scheepspost.info/hij-geeft-wrakken-hun-naam-terug-flevoland-is-het-grootste-scheepskerkhof-ter-wereld/",
+     "Scheepspost — Flevoland, grootste scheepskerkhof ter wereld"
+    ]
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "Natte natuur — waarom het water nu blijft",
+   "focus": "natuur",
+   "km": 4.0,
+   "lat": 52.645202,
+   "lng": 5.778408,
+   "paras": [
+    "Het water komt in dit verhaal steeds terug als vijand. Hier verandert het van rol. Want de grond onder je voeten bewaart een schat, en die schat heeft juist water nodig.",
+    "Sinds de inpoldering van negentienhonderdtweeënveertig is het maaiveld van Schokland namelijk flink gezakt. Zo'n anderhalve meter, doordat de veenbodem begon in te klinken toen het water eenmaal was weggepompt. En als dat veen inklinkt, verdwijnen niet alleen die meters hoogte, maar vergaat ook het bodemarchief: de sporen van tienduizend jaar bewoning die hier nog altijd onder het oppervlak liggen.",
+    "Daarom is er iets bijzonders besloten. Om verdere veenafbraak en inklinking tegen te gaan, wordt de bodem hier tegenwoordig juist natter gehouden. Het water waar eeuwenlang tegen gevochten is, is nu de bewaarder van het verleden geworden.",
+    "En dat levert een prachtig landschap op. Deze natte natuur biedt ruimte aan libellen, aan amfibieën zoals de rugstreeppad, en aan heel veel vogels. In het voorjaar zie je hier weidevogels als de kievit en de grutto. In het najaar strijken er wintergasten neer... en heel soms wordt er zelfs een zeearend gezien.",
+    "Zo waakt de natuur nu over wat er van het eiland bewaard is gebleven. Al is dat wel alleen dit stukje eiland, het noorden. Want Schokland was groter dan de lus die je vandaag loopt, en daar wil ik het onderweg nog even met je over hebben."
+   ],
+   "audio": "/audio/routes/schokland/10.mp3",
+   "bronnen": [
+    [
+     "https://www.flevo-landschap.nl/gebied/unesco-werelderfgoed-schokland",
+     "Het Flevo-landschap — UNESCO Werelderfgoed Schokland (natuurgebied)"
+    ]
+   ]
+  },
+  {
+   "nr": 11,
+   "titel": "De rest van het eiland — Middelbuurt en Ens in het zuiden",
+   "focus": "geschiedenis",
+   "km": 4.88,
+   "lat": 52.644745,
+   "lng": 5.77281,
+   "paras": [
+    "Deze lus loopt alleen over het noorden van Schokland. En dat is een eerlijk ding om te zeggen: het hart van het eiland ligt een eind verderop naar het zuiden, en de route komt er niet langs. Maar het verhaal hoort er wel bij.",
+    "Vroeger kende Schokland drie bewoonde plekken, alle drie opgeworpen tegen het water. Hier in het noorden had je Emmeloord, waar we net langs de haven liepen. Maar zuidelijker lagen nog twee terpen: Middelbuurt in het midden, en de Zuidert bij Ens op de zuidpunt.",
+    "Ongeveer een kilometer hiervandaan, op die middelste terp Middelbuurt, staat de oude kerk. Sinds negentienhonderdzevenenveertig is die geopend voor publiek, als Museum Schokland. Je komt er vandaag niet langs, maar daar klopte het hart van de gemeenschap waar we het net over hadden.",
+    "En helemaal aan de zuidpunt, bij Ens, staat iets dat nog veel ouder is: de middeleeuwse kerkruïne van de Oude Kerk van Ens. Dat is het oudste zichtbare bewijs van bewoning op heel Schokland. Ook daar komt deze wandeling niet, maar wie na afloop nog tijd heeft, kan er zo naartoe.",
+    "Voor vandaag blijven we bij het noorden en bij de vluchthaven. En dat noorden brengt je nu vanzelf weer terug naar waar je vanochtend begon: naar de stenen aan de rand van het bos."
+   ],
+   "audio": "/audio/routes/schokland/11.mp3",
+   "bronnen": [
+    [
+     "https://www.flevo-landschap.nl/routes/wandelroute/vluchthavenroute-schokland",
+     "Het Flevo-landschap — Vluchthavenroute Schokland"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Schokland",
+     "Wikipedia — Schokland"
+    ],
+    [
+     "https://www.flevolanderfgoed.nl/home/erfgoed/noordoostpolder-2/schokland-3/kerkruine.html",
+     "Flevolands Erfgoed — Kerkruine Oude Kerk van Ens (Schokland)"
+    ]
+   ],
+   "afstand_onderwerp_m": 1180
+  },
+  {
+   "nr": 12,
+   "titel": "De cirkel rond — terug bij de Gesteentetuin",
+   "focus": "mensen",
+   "km": 5.53,
+   "lat": 52.647987,
+   "lng": 5.768641,
+   "paras": [
+    "En zo zijn we weer terug waar we begonnen, hier bij De Gesteentetuin aan de rand van het Schokkerbos. De cirkel is rond.",
+    "Als je nu om je heen kijkt, zie je vooral een rustige, groene rand in het polderlandschap. Maar onder je voeten ligt een ongelooflijke geschiedenis verborgen: tienduizend jaar bewoning, bewaard gebleven doordat Het Flevo-landschap de bodem hier bewust nat houdt.",
+    "We hebben het allemaal voorbij zien komen op deze wandeling. De eeuwenlange strijd tegen de Zuiderzee, de terpen die bescherming moesten bieden, het paalscherm, de stenen dijk en die veilige vluchthaven. Een strijd die uiteindelijk niet te winnen viel, toen in achttienhonderdnegenenvijftig de laatste Schokkers hun thuis moesten verlaten. En dan blijft het een bizar idee dat dit eiland in negentienhonderdtweeënveertig ineens op het droge strandde, midden in de polder. Een eiland zonder water.",
+    "Niet voor niets werd juist dit verhaal, mens tegen water, in negentienhonderdvijfennegentig als allereerste Nederlandse monument bekroond met een plek op de Werelderfgoedlijst van UNESCO.",
+    "De zee is verdwenen, maar de haven, de zwerfstenen en de oude omtrek van het eiland zijn gebleven. En jij hebt er zojuist zelf omheen gelopen. Dank je wel dat je met me meeliep over deze bijzondere bodem. Kijk nog één keer goed rond, en neem Schokland dan met je mee: een eiland dat nooit is vergaan, maar dat voor altijd ligt aangemeerd in het land."
+   ],
+   "audio": "/audio/routes/schokland/12.mp3",
+   "bronnen": [
+    [
+     "https://www.flevo-landschap.nl/routes/wandelroute/vluchthavenroute-schokland",
+     "Het Flevo-landschap — Vluchthavenroute Schokland"
+    ],
+    [
+     "https://schokland.nl/geschiedenis/",
+     "Schokland.nl — Geschiedenis"
+    ],
+    [
+     "https://www.flevo-landschap.nl/gebied/unesco-werelderfgoed-schokland",
+     "Het Flevo-landschap — UNESCO Werelderfgoed Schokland (natuurgebied)"
+    ]
+   ]
+  }
+ ]
+}

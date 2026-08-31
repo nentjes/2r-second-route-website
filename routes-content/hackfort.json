@@ -1,0 +1,547 @@
+{
+ "slug": "hackfort",
+ "provincie": "Gelderland",
+ "naam": "Eeuwenoud landgoed met kasteel Hackfort",
+ "lengte_km": 4.29,
+ "duur": "±1,5 uur",
+ "hoofdstukken_n": 11,
+ "beheerder": "Natuurmonumenten",
+ "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341736",
+ "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+ "startpunt": "Parkeerplaats Landgoed Hackfort, Baakseweg, 7251 RH Vorden",
+ "kaart_js": "/routes-data/hackfort-kaart.js",
+ "lijnen": [
+  [
+   [
+    52.10156,
+    6.27899
+   ],
+   [
+    52.10156,
+    6.27892
+   ],
+   [
+    52.1014,
+    6.27893
+   ],
+   [
+    52.10139,
+    6.27878
+   ],
+   [
+    52.10118,
+    6.27874
+   ],
+   [
+    52.10136,
+    6.27773
+   ],
+   [
+    52.10236,
+    6.27823
+   ],
+   [
+    52.10199,
+    6.28063
+   ],
+   [
+    52.10301,
+    6.28154
+   ],
+   [
+    52.10298,
+    6.28212
+   ],
+   [
+    52.10394,
+    6.28286
+   ],
+   [
+    52.10399,
+    6.28271
+   ],
+   [
+    52.10759,
+    6.28553
+   ],
+   [
+    52.10788,
+    6.28424
+   ],
+   [
+    52.10785,
+    6.28339
+   ],
+   [
+    52.10832,
+    6.28215
+   ],
+   [
+    52.10873,
+    6.28029
+   ],
+   [
+    52.10965,
+    6.27973
+   ],
+   [
+    52.11063,
+    6.27836
+   ],
+   [
+    52.11092,
+    6.27824
+   ],
+   [
+    52.11113,
+    6.27828
+   ],
+   [
+    52.11132,
+    6.2769
+   ],
+   [
+    52.11034,
+    6.27458
+   ],
+   [
+    52.10984,
+    6.27408
+   ],
+   [
+    52.10758,
+    6.27294
+   ],
+   [
+    52.10717,
+    6.27254
+   ],
+   [
+    52.1066,
+    6.27255
+   ],
+   [
+    52.10622,
+    6.27216
+   ],
+   [
+    52.1054,
+    6.27199
+   ],
+   [
+    52.10487,
+    6.27144
+   ],
+   [
+    52.10386,
+    6.27153
+   ],
+   [
+    52.10318,
+    6.27194
+   ],
+   [
+    52.10301,
+    6.27408
+   ],
+   [
+    52.10236,
+    6.27412
+   ],
+   [
+    52.10214,
+    6.27403
+   ],
+   [
+    52.10187,
+    6.27386
+   ],
+   [
+    52.10151,
+    6.27338
+   ],
+   [
+    52.1011,
+    6.27303
+   ],
+   [
+    52.1008,
+    6.27395
+   ],
+   [
+    52.10012,
+    6.27426
+   ],
+   [
+    52.09981,
+    6.27478
+   ],
+   [
+    52.09953,
+    6.27563
+   ],
+   [
+    52.09969,
+    6.27594
+   ],
+   [
+    52.09962,
+    6.2768
+   ],
+   [
+    52.09937,
+    6.27689
+   ],
+   [
+    52.09915,
+    6.27673
+   ],
+   [
+    52.09899,
+    6.27766
+   ],
+   [
+    52.09884,
+    6.27795
+   ],
+   [
+    52.09883,
+    6.27839
+   ],
+   [
+    52.09894,
+    6.27873
+   ],
+   [
+    52.09961,
+    6.27865
+   ],
+   [
+    52.09997,
+    6.2784
+   ],
+   [
+    52.10015,
+    6.27846
+   ],
+   [
+    52.10046,
+    6.27895
+   ],
+   [
+    52.10088,
+    6.27895
+   ],
+   [
+    52.10118,
+    6.27874
+   ],
+   [
+    52.10139,
+    6.27878
+   ],
+   [
+    52.1014,
+    6.27893
+   ],
+   [
+    52.10156,
+    6.27892
+   ],
+   [
+    52.10151,
+    6.27922
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "Welkom op Landgoed Hackfort",
+   "focus": "geschiedenis",
+   "km": 0.0,
+   "lat": 52.10156,
+   "lng": 6.27899,
+   "paras": [
+    "Welkom op Landgoed Hackfort. Je staat op de parkeerplaats aan de Baakseweg, even buiten Vorden, en voor je ligt een rondwandeling van ruim vier kilometer. Reken op ruim een uur lopen; neem je de tijd, dan wordt het anderhalf. En die tijd is hier goed besteed.",
+    "Vorden staat bekend als het kastelendorp. Acht kastelen telt dit ene dorp, waarmee het tot de kastelenrijkste plaatsen van Nederland hoort, en de bekende Achtkastelenroute rijgt ze in drieëndertig kilometer aan elkaar. Wij doen er vandaag maar een, maar dan wel helemaal.",
+    "Want Hackfort is geen kasteel dat op zichzelf staat. Het is een eeuwenoud landgoed rondom een kasteel, en dat is precies het verhaal dat ik je onderweg ga vertellen. Toen de laatste barones overleed, bepaalden zij en haar familie dat het landgoed met al zijn landerijen en boerderijen als een geheel bewaard moest blijven. Niet opgeknipt, niet in stukken verkocht. Sinds negentienhonderdeenentachtig beheert Natuurmonumenten het zo.",
+    "En dat geheel is groot. Tientallen authentieke boerderijen, een kasteel met parkbos, een koetshuis, een watermolen, akkers, bloemrijke weiden, en koeien in de kasteelweide. Vlak bij dit startpunt staat dat koetshuis, op een meter of honderdtwintig; daar zit nu brasserie de Keuken van Hackfort. En even verderop loop je zo langs de moestuin, de Hof van Hackfort. Aan het eind van de lus kom je er opnieuw langs. Loop maar rustig weg van de auto's. Het eerste stuk hoort al bij het verhaal."
+   ],
+   "audio": "/audio/routes/hackfort/01.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort",
+     "Natuurmonumenten Landgoed Hackfort"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Vorden",
+     "Wikipedia Vorden"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Het boerenland van de kasteelheer",
+   "focus": "mensen",
+   "km": 0.34,
+   "lat": 52.10215,
+   "lng": 6.27954,
+   "paras": [
+    "Naast je staat een dichte meidoornhaag, en die is minder onschuldig dan hij lijkt. Met al die dorens was zo'n haag in feite de voorloper van prikkeldraad: een levende afrastering, lang voordat iemand hier draad spande. En juist daarom vinden nog altijd veel kleine vogels er een veilige nestplek. Wie grijpt er nou tussen die stekels?",
+    "Kijk nu eens over de haag heen, naar de akkers en de weiden. Dit is het boerenland van de kasteelheer. Al deze gronden waren van hem; het waren pachtboeren die ze bewerkten. En die pacht betaalden ze niet altijd in geld. Soms voldeden ze hem in natura, in wat het land zelf opbracht. Je begrijpt meteen wat dat betekende in een jaar dat de oogst tegenviel.",
+    "Natuurmonumenten verpacht een groot deel van diezelfde akkers en weiden nog steeds, maar nu aan boeren die biologisch werken. Het land blijft dus land, en het blijft in gebruik.",
+    "Even verderop kom je langs de moestuin, de Hof van Hackfort, en vlak daarna langs de boomgaard en de wijngaard die ook bij het landgoed horen, daar voor het huis. Haag, akker, moestuin, boomgaard, wijngaard: het hangt hier allemaal aan elkaar, en het hing allemaal aan datzelfde kasteel. Loop maar door langs het groen. Het landschap waar je in staat heeft ook een naam, en die krijg je zo."
+   ],
+   "audio": "/audio/routes/hackfort/02.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Het coulisselandschap van de Achterhoek",
+   "focus": "geschiedenis",
+   "km": 0.79,
+   "lat": 52.10456,
+   "lng": 6.28314,
+   "paras": [
+    "Het landschap dat je nu doorloopt heeft een eigen naam: coulisselandschap. En dat woord is goed gekozen. Zoals in een theater de coulissen achter elkaar staan en het toneel steeds een nieuwe diepte geven, zo schuiven hier bos, akkers, hagen en houtwallen achter elkaar langs. Je ziet nooit alles tegelijk. Er is altijd nog iets achter.",
+    "Dit is de Achterhoek op zijn kleinschaligst, en Hackfort ligt er middenin. Kenmerkend zijn de eeuwenoude akkers, omzoomd door houtwallen. De hakhoutbosjes. De poelen. En de historische boerderijen die overal op het landgoed opduiken; tientallen zijn het er.",
+    "En hier komt die haag van zojuist terug, want dit landschap is niet vanzelf ontstaan. Elke houtwal, elke hoek van elk perceel is ooit door iemand neergezet, met een reden. Wat wij nu mooi vinden, was voor de mensen die het maakten vooral praktisch.",
+    "Het bijzondere aan Hackfort is dat al die boerderijen, akkers en weiden nog altijd als een landgoed beheerd worden. En doordat veel van die gronden verpacht zijn aan biologisch werkende boeren, blijft het oude gebruikslandschap ook echt in gebruik. Je loopt hier dus niet door een museum. Je loopt door iets dat nog draait. Kijk zo meteen eens goed naar het bosje aan je rechterhand. Dat is geen gewoon bos."
+   ],
+   "audio": "/audio/routes/hackfort/03.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort",
+     "Natuurmonumenten Landgoed Hackfort"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "Het hakhoutbosje",
+   "focus": "natuur",
+   "km": 1.21,
+   "lat": 52.10775,
+   "lng": 6.28484,
+   "paras": [
+    "Aan je rechterhand, een paar passen van het pad, ligt dat bosje: vooral eiken en beuken. Een hakhoutbosje heet dat. Geen wildernis die haar eigen gang is gegaan, maar een bos dat eeuwenlang als gereedschap is gebruikt.",
+    "Want denk je even in wat een landgoed als dit dagelijks nodig had. Vuur. Vuur om op te koken, vuur om huizen mee te verwarmen, elke dag opnieuw. Dat hout kwam hiervandaan. Deze bosjes leverden eeuwenlang het broodnodige stookhout voor de bewoners van het landgoed.",
+    "De truc zat hem in het afzetten. De bomen werden telkens weer teruggezet, waarna de stronk opnieuw uitliep. Zo groeiden ze nooit uit tot hoge, rechte reuzen, maar bleven ze klein en wijdvertakt. Een bos dat je oogst en dat toch blijft staan.",
+    "En kijk nu eens wat dat oplevert. Juist doordat die bomen laag en wijdvertakt blijven, zitten ze vol met plekken om te nestelen en te schuilen, voor vogels en voor zoogdieren. Een eeuwenoude vorm van zuinigheid die per ongeluk uitstekende natuur bleek te maken.",
+    "Natuurmonumenten onderhoudt een aantal van deze bosjes daarom nog altijd als echt hakhout. Niet alleen om die ecologische waarde, maar net zo goed om het cultuurhistorische belang: dit is hoe men hier leefde. Verderop wordt de grond natter. Let dan eens op hoe de bomen daar staan, want dat is geen toeval."
+   ],
+   "audio": "/audio/routes/hackfort/04.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "De rabatten in het natte bos",
+   "focus": "natuur",
+   "km": 1.49,
+   "lat": 52.10857,
+   "lng": 6.28103,
+   "paras": [
+    "Links van het pad ligt een poel, en daarachter weer zo'n bosje. Maar kijk nu naar de bodem onder die bomen. Zie je dat ze niet zomaar op vlakke grond staan, maar op langgerekte richels, met laagtes ertussen?",
+    "Die richels heten rabatten, en ze verraden iets over deze plek: het was hier vroeger vaak kletsnat. En dat was een probleem, want op een landgoed moest elk stuk grond iets opbrengen. Dat stookhout van zojuist moest tenslotte ergens vandaan komen.",
+    "Dus ging men graven. Er werden goten door het natte land getrokken, en het zand dat daarbij werd uitgegraven, werd er direct naast neergelegd. Zo ontstonden er dijkjes: de rabatten. De goten voerden het overtollige water af, de dijkjes bleven droog genoeg, en op die dijkjes konden wel bomen groeien.",
+    "Het is een oplossing van niets, bedacht met niet veel meer dan een schop en geduld. En ze werkt nog steeds. Wat je hier ziet is dus geen natuurlijk bos op een natuurlijke bodem. Het is een stuk waterbouwkunde waar sindsdien een bos overheen is gegroeid.",
+    "Zo bekeken is bijna alles op Hackfort ooit door iemand bedacht. Zelfs de kleur die je hierna te zien krijgt. Loop maar door, het open veld tegemoet."
+   ],
+   "audio": "/audio/routes/hackfort/05.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "De paarse hooilanden",
+   "focus": "natuur",
+   "km": 2.05,
+   "lat": 52.11083,
+   "lng": 6.27575,
+   "paras": [
+    "Waar de route van de klinkerweg afbuigt, ligt rechts een vochtig weiland. Nu ziet het er misschien gewoon groen uit, maar in het voorjaar gebeurt hier iets: dan kleuren deze hooilanden paars van de pinksterbloemen.",
+    "En die kleur is meer dan mooi. De pinksterbloem is de waardplant van het oranjetipje, een schaars geworden vlinder die hier op Hackfort nog in redelijke aantallen voorkomt. Geen pinksterbloem, geen oranjetipje. Zo direct is dat verband. Het natte land dat men bij die rabatten nog met man en macht probeerde te temmen, blijkt hier precies het land te zijn dat je moet laten bestaan.",
+    "De route gaat dwars door dit kruidenrijke weiland. Kijk rechts eens naar dat groepje van vier eiken, met jong struweel eromheen. Dat lijkt een detail, maar voor een dier dat deze open wei moet oversteken is het een stapsteen: een plek om even weg te duiken, halverwege.",
+    "En voorbij het hek ligt rechts een vlierbosje. Dat was ooit gewoon een maisakker. Sinds negentienhonderdvijfennegentig mag zich daar een natuurlijk bos ontwikkelen, en dat doet het.",
+    "Zo werkt dit landgoed dus. Hier hakhout dat de mens blijft onderhouden, daar een akker die de mens teruggeeft. Allebei een keuze. Verderop wordt de grond juist weer hoger. En ook dat is geen toeval."
+   ],
+   "audio": "/audio/routes/hackfort/06.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "De bolle akkers",
+   "focus": "geschiedenis",
+   "km": 2.71,
+   "lat": 52.1056,
+   "lng": 6.27208,
+   "paras": [
+    "Merk je dat de akkers hier hoger liggen dan het pad waarop je loopt? Links, en straks ook rechts, welven ze op boven hun omgeving. Bolle akkers heten ze, of essen. Die hoogte is niet natuurlijk, maar hij is ook niet met opzet gemaakt.",
+    "Het ging namelijk zo. Eeuwenlang brachten boeren hier een mengsel van schapenmest en heideplaggen naar het land. Jaar in jaar uit, generatie op generatie. En al dat materiaal bleef liggen. De akker groeide, letterlijk, met de eeuwen mee, tot er uiteindelijk een dikke, opgehoogde bult lag. Niemand heeft ooit besloten deze akker op te hogen. Hij hoogde zichzelf op, een kruiwagen tegelijk.",
+    "Kijk ook eens naar de randen. Die lopen soms grillig, omdat deze akkers vooral werden aangelegd op plekken die van nature al wat hoger lagen. Mens en zandrug, samen aan het werk.",
+    "Langs het pad groeien varens. Dat is een typische plant van oude bosgrond, en ze geven beschutting aan ree en haas.",
+    "En let op als je zo meteen de weg oversteekt. Tussen de weg en het pad staat een dubbele rij eiken. Twee rijen bomen betekenen bijna altijd hetzelfde: hier liep vroeger een belangrijke verbindingsweg. Volg die oude weg nog even. Hij brengt je naar de sierlijkste kant van het landgoed."
+   ],
+   "audio": "/audio/routes/hackfort/07.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "Het parkbos en de stinzenplanten",
+   "focus": "natuur",
+   "km": 3.15,
+   "lat": 52.10301,
+   "lng": 6.27408,
+   "paras": [
+    "Over het bruggetje stap je het parkbos van het kasteel binnen, en je merkt het meteen: hier verandert de toon. Geen boerenland meer, geen bolle akkers, maar aanleg. Sier.",
+    "Natuurmonumenten heeft dit parkbos de laatste decennia weer in oude glorie hersteld, en is daarbij uitgegaan van de oorspronkelijke aanleg van rond achttienhonderdtwintig. Maar herstellen bleek hier vooral planten te betekenen. Boswachters en vrijwilligers hebben in dit bos meer dan een half miljoen bolletjes, knolletjes en wortelstokken van voorjaarsbloeiers de grond in gebracht. Meer dan een half miljoen. Rekenen we het kasteel erbij, dan gaat het in totaal om honderdduizenden bollen.",
+    "Stinzenplanten worden die voorjaarsbloeiers genoemd. En loop je hier in het voorjaar, dan snap je waarom iemand zich al die moeite getroost. Dan bloeien hier de kievitsbloem, de Spaanse hyacint, de vingerhelmbloem en dubbele sneeuwklokjes. Het is een wonderlijk idee: een half miljoen keer bukken, voor een paar weken kleur per jaar.",
+    "En toch is dat precies wat een landgoed is. Iemand plant iets waar een ander later het meeste plezier van heeft. Zoals die dubbele rij eiken langs de oude weg. Zoals dit bos. Loop nu maar zachtjes verder. Aan de overkant van het water staat het huis waar dit allemaal om begonnen is."
+   ],
+   "audio": "/audio/routes/hackfort/08.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort",
+     "Natuurmonumenten Landgoed Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "Kasteel Hackfort",
+   "focus": "geschiedenis",
+   "km": 3.72,
+   "lat": 52.09962,
+   "lng": 6.27647,
+   "paras": [
+    "Daar, aan de overkant van de gracht, ligt het: kasteel Hackfort. Even eerlijk zijn: de route komt er niet langs. Het huis is privébezit, er wordt gewoond en er zijn vakantiesuites, dus je kijkt ernaar vanaf een meter of zeventig, over het water. Maar dat is genoeg. Alles wat je vandaag hebt gezien, de haag, de akkers, het hakhout, het parkbos, hing aan dat ene huis daar.",
+    "Het begint in dertienhonderdvierentwintig. Dan koopt Jacob van der Welle het goet to Hackforte van de heren van Bronckhorst, en zijn familie gaat zich naar deze plek noemen: Van Hackfort. Er stond toen al iets, vermoedelijk een versterkte woontoren, een donjon, die in de loop van de tijd uitgroeide tot een kasteel met voorburcht en slotgracht.",
+    "En toen kwam de oorlog. In vijftienhonderdzesentachtig werd Hackfort grotendeels verwoest door Spaanse troepen. Twaalf jaar later, in vijftienhonderdachtennegentig, herbouwde Borchard van Westerholt het. Uit die herbouw stammen de twee ronde hoektorens die je nu ziet, op de noordoosthoek en de zuidwesthoek. Van de veertiende-eeuwse burcht die eraan voorafging, resteren vooral nog de keldergewelven onder het huis.",
+    "De familie Van Westerholt hield Hackfort daarna vast, van omstreeks zestienhonderd tot negentienhonderdeenentachtig. Bijna vier eeuwen. Toen het verdedigen niet meer nodig was, werd de gracht deels gedempt, de ophaalbrug weggehaald en het huis verfraaid, met dat parkbos en het voorplein eromheen. Sinds twaalf september tweeduizendvijf is het rijksmonument. Neem er even de tijd voor. Daarna wacht de beek."
+   ],
+   "audio": "/audio/routes/hackfort/09.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ],
+    [
+     "https://mijngelderland.nl/inhoud/verhalen/kasteel-hackfort-bij-vorden",
+     "Mijn Gelderland - Kasteel Hackfort"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Kasteel_Hackfort",
+     "Wikipedia Kasteel Hackfort"
+    ],
+    [
+     "https://rijksmonumenten.nl/monument/527365/hackfort-kasteel/vorden/",
+     "Rijksmonumenten.nl - Kasteel Hackfort"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort",
+     "Natuurmonumenten Landgoed Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "De watermolen op de Baakse Beek",
+   "focus": "architectuur",
+   "km": 4.06,
+   "lat": 52.0999,
+   "lng": 6.27841,
+   "paras": [
+    "Vlak voor je, op de Baakse Beek, staat de watermolen van Hackfort. Maar net hiervoor ben je op de voormalige parkeerplaats langs iets kleins gelopen dat makkelijk te missen is: een smal dorsmolenhuisje. Boeren bouwden zo'n schuurtje samen, om er een dorsmolen in onder te brengen. Ze staan nog maar op een handjevol plekken in de Achterhoek.",
+    "De molen zelf is een onderslagmolen, ingericht als korenmolen: het beekwater duwt tegen de onderkant van het rad. Het gebouw dat je ziet dateert uit zeventienhonderd. Maar er stond hier al veel eerder een molen. De oudste vermelding van een watermolen op deze plek, aan de zuidzijde van het poortgebouw, stamt uit veertienhonderdvierentwintig. Dat is een molen die er dus al stond toen de familie Van Hackfort nog maar een eeuw op dit goed zat.",
+    "En toen hield het op. In negentienhonderdtweeënvijftig ging de molen stil. Het rad was slecht, het gebouw was slecht, en er stond te weinig water in de beek. Na negentienhonderdeenentachtig, onder Natuurmonumenten, is hij hersteld, en in negentienhonderdachtennegentig kreeg hij een nieuw waterrad van vijf meter twintig. Ook deze molen is rijksmonument.",
+    "In principe is hij elke zaterdag open. Staat er genoeg water in de beek, dan laat de vrijwillige molenaar hem draaien: om graan tot veevoer te malen, of om een bescheiden hoeveelheid stroom op te wekken. Nog even, dan is de lus rond."
+   ],
+   "audio": "/audio/routes/hackfort/10.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Watermolen_van_Hackfort",
+     "Wikipedia Watermolen van Hackfort"
+    ],
+    [
+     "https://rijksmonumenten.nl/monument/527368/hackfort-molen/vorden/",
+     "Rijksmonumenten.nl - Hackfort molen"
+    ],
+    [
+     "https://mijngelderland.nl/inhoud/verhalen/watermolen-hackfort",
+     "Mijn Gelderland - Watermolen Hackfort"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ]
+   ]
+  },
+  {
+   "nr": 11,
+   "titel": "Terug bij het koetshuis",
+   "focus": "mensen",
+   "km": 4.29,
+   "lat": 52.10151,
+   "lng": 6.27922,
+   "paras": [
+    "De lus is bijna rond. Het koetshuis heb je net gehad, zo'n honderdvijftig meter terug, daar waar nu brasserie de Keuken van Hackfort zit. En hier sta je weer bij het beginpunt aan de Baakseweg, waar je vertrok.",
+    "En let eens op hoe mooi dat sluit. In die keuken wordt gekookt met producten uit de eigen moestuin: de Hof van Hackfort, waar je aan het begin van deze wandeling langsliep. Van tuin naar keuken, en jij bent er in ruim vier kilometer omheen gelopen.",
+    "Dat is eigenlijk het hele verhaal. Het kasteel, de watermolen, de akkers, de hakhoutbosjes, de rabatten, de hooilanden, het parkbos en tientallen boerderijen: allemaal onderdelen van hetzelfde landgoed. Toen de laatste barones overleed, had dit uit elkaar kunnen vallen. In kavels, in stukken, in losse huizen met een eigen hek. Dat is niet gebeurd. Dankzij een testament is Hackfort sinds negentienhonderdeenentachtig als een geheel bewaard gebleven, onder Natuurmonumenten.",
+    "En dat is zeldzaam. Een kasteel bewaren, dat lukt vaker. Een heel landschap eromheen bewaren, met de boerderijen en de akkers en de molen erbij, dat is wat je hier vandaag onder je voeten hebt gehad. En mocht je nog niet genoeg hebben: Hackfort is er een van de acht kastelen van Vorden. Samen vormen ze de Achtkastelenroute, drieëndertig kilometer lang. Die staat er morgen ook nog. Dank je wel voor het meelopen. Kijk nog even om je heen voor je instapt."
+   ],
+   "audio": "/audio/routes/hackfort/11.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
+     "Natuurmonumenten routebeschrijving Hackfort"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort",
+     "Natuurmonumenten Landgoed Hackfort"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Vorden",
+     "Wikipedia Vorden"
+    ]
+   ],
+   "afstand_onderwerp_m": 150
+  }
+ ]
+}

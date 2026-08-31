@@ -1,0 +1,613 @@
+{
+ "slug": "westkapelle",
+ "provincie": "Zeeland",
+ "naam": "Parelroute 'Verdediging' — Westkapelle",
+ "lengte_km": 5.36,
+ "duur": "±1,5 uur",
+ "hoofdstukken_n": 11,
+ "beheerder": "VVV Zeeland / Zeeland.com (provinciale destinatie-organisatie), i.s.m. Polderhuis Westkapelle (Dijk- en Oorlogsmuseum)",
+ "gpx_url": "https://odp.zeeland.com/route/download/2549/gpx",
+ "bron_url": "https://www.zeeland.com/nl-nl/visit/2549_nl/parelroute-27verdediging-27-westkapelle",
+ "startpunt": "Polderhuis (Dijk- en Oorlogsmuseum), Zuidstraat 156 / Abraham Calandplein, 4361 AK Westkapelle",
+ "kaart_js": "/routes-data/westkapelle-kaart.js",
+ "lijnen": [
+  [
+   [
+    51.52714,
+    3.43588
+   ],
+   [
+    51.5266,
+    3.43572
+   ],
+   [
+    51.52625,
+    3.43931
+   ],
+   [
+    51.52597,
+    3.44024
+   ],
+   [
+    51.5255,
+    3.44087
+   ],
+   [
+    51.52411,
+    3.4418
+   ],
+   [
+    51.52318,
+    3.4419
+   ],
+   [
+    51.52296,
+    3.44182
+   ],
+   [
+    51.52236,
+    3.44131
+   ],
+   [
+    51.52238,
+    3.43969
+   ],
+   [
+    51.52256,
+    3.43966
+   ],
+   [
+    51.52277,
+    3.44004
+   ],
+   [
+    51.52263,
+    3.44049
+   ],
+   [
+    51.52279,
+    3.44164
+   ],
+   [
+    51.52262,
+    3.44148
+   ],
+   [
+    51.52225,
+    3.44281
+   ],
+   [
+    51.52185,
+    3.44374
+   ],
+   [
+    51.52011,
+    3.44668
+   ],
+   [
+    51.51947,
+    3.44749
+   ],
+   [
+    51.51918,
+    3.44749
+   ],
+   [
+    51.51888,
+    3.4477
+   ],
+   [
+    51.51879,
+    3.44789
+   ],
+   [
+    51.51866,
+    3.44885
+   ],
+   [
+    51.51846,
+    3.44902
+   ],
+   [
+    51.51922,
+    3.44843
+   ],
+   [
+    51.51968,
+    3.44906
+   ],
+   [
+    51.52033,
+    3.44898
+   ],
+   [
+    51.52035,
+    3.44891
+   ],
+   [
+    51.51987,
+    3.45005
+   ],
+   [
+    51.52022,
+    3.45151
+   ],
+   [
+    51.52005,
+    3.45209
+   ],
+   [
+    51.51982,
+    3.45368
+   ],
+   [
+    51.51973,
+    3.45504
+   ],
+   [
+    51.51956,
+    3.45533
+   ],
+   [
+    51.51971,
+    3.4558
+   ],
+   [
+    51.52095,
+    3.45397
+   ],
+   [
+    51.52088,
+    3.45314
+   ],
+   [
+    51.52112,
+    3.4524
+   ],
+   [
+    51.52389,
+    3.44854
+   ],
+   [
+    51.52428,
+    3.44777
+   ],
+   [
+    51.52437,
+    3.4477
+   ],
+   [
+    51.5254,
+    3.44779
+   ],
+   [
+    51.52653,
+    3.44673
+   ],
+   [
+    51.52672,
+    3.44754
+   ],
+   [
+    51.52724,
+    3.44699
+   ],
+   [
+    51.52738,
+    3.44721
+   ],
+   [
+    51.52744,
+    3.44785
+   ],
+   [
+    51.52862,
+    3.44708
+   ],
+   [
+    51.52864,
+    3.44727
+   ],
+   [
+    51.52912,
+    3.44681
+   ],
+   [
+    51.52827,
+    3.44388
+   ],
+   [
+    51.5289,
+    3.44351
+   ],
+   [
+    51.52998,
+    3.4433
+   ],
+   [
+    51.52995,
+    3.44209
+   ],
+   [
+    51.52957,
+    3.44206
+   ],
+   [
+    51.52938,
+    3.44131
+   ],
+   [
+    51.52903,
+    3.44147
+   ],
+   [
+    51.52889,
+    3.44088
+   ],
+   [
+    51.52771,
+    3.44151
+   ],
+   [
+    51.52702,
+    3.43814
+   ],
+   [
+    51.52714,
+    3.43589
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "De Zeedijk & het Polderhuis",
+   "focus": "geschiedenis",
+   "km": 0.0,
+   "lat": 51.52714,
+   "lng": 3.43588,
+   "paras": [
+    "Welkom in Westkapelle, op de westpunt van Walcheren. Je staat aan het Abraham Calandplein, aan de voet van de Westkapelse Zeedijk, voor het Polderhuis: het Dijk- en Oorlogsmuseum. Hier begint de Parelroute 'Verdediging', een lus van ruim vijf kilometer, ongeveer anderhalf uur lopen, die je aan het eind weer precies op deze plek afzet.",
+    "Verdediging. Dat ene woord draagt deze hele wandeling. Eerst eeuwenlang tegen de zee, later tegen de oorlog. En het bijzondere aan deze plek is dat je die twee lagen bijna over elkaar heen ziet liggen.",
+    "Westkapelle is een eeuwenoud dorp dat oorspronkelijk veilig lag achter een duinenrij met een smal strand ervoor. Vanaf het eind van de veertiende eeuw begon de zee die duinen weg te schuren. In veertienhonderdtweeëndertig was de nood zo hoog dat de abt en het stadsbestuur van Middelburg poolshoogte kwamen nemen; de Westkappelaars luidden de noodklok en vroegen om een 'cleen dijckslijn', een beetje extra bescherming. Een beetje. Vanaf de vijftiende eeuw veranderde die duinenrij geleidelijk in een dijk, de Westkapelse Zeedijk waar je nu tegenaan kijkt.",
+    "En boven op die dijk, enkele tientallen meters hiervandaan, staat sinds een november negentienhonderdeenenzestig een originele Sherman-tank van het type Crab, een mijnenveger. Hij werd gebruikt bij de geallieerde landing van een november negentienhonderdvierenveertig. In de tuin van het museum ligt een landingsvaartuig; tank en museum zijn sinds tweeduizendtien verbonden door de Liberty Bridge.",
+    "Twee soorten verdediging, een paar tientallen meters van elkaar. Onderweg gaan we ze allebei van dichtbij bekijken. Loop maar mee, het dorp in: een paar honderd meter verderop staat een zuil die dit hele verhaal in één beeld probeert te vangen."
+   ],
+   "audio": "/audio/routes/westkapelle/01.mp3",
+   "bronnen": [
+    [
+     "https://polderhuiswestkapelle.nl/en/museums-exhibitions/sherman-tank-westkapelle",
+     "Polderhuis Westkapelle — Sherman tank / museum (co-beheerder)"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Westkappelse_Zeedijk",
+     "Wikipedia — Westkappelse Zeedijk"
+    ],
+    [
+     "https://www.westkapellecultuurbehoud.nl/zeedijk-westkapelle/geschiedenis-zeedijk",
+     "Stichting Cultuurbehoud Westkapelle — Geschiedenis Zeedijk"
+    ],
+    [
+     "https://www.westkapellecultuurbehoud.nl/zeedijk-westkapelle/dijkwerk-en-dijkwerkers",
+     "Stichting Cultuurbehoud Westkapelle — Dijkwerk en dijkwerkers (duinen werden vanaf de 15e eeuw een dijk)"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Landingsmonument_(Westkapelle)",
+     "Wikipedia — Landingsmonument (Westkapelle)"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Monument De Schoppesteele",
+   "focus": "mensen",
+   "km": 0.57,
+   "lat": 51.52456,
+   "lng": 3.44154,
+   "paras": [
+    "Daar is hij al, vlak langs het pad: een slanke zuil van zo'n zeven meter hoog, bekroond met een platte schijf. Officieel heet dit het Inundatiemonument. In de volksmond heet het De Schoppesteele.",
+    "Kijk even naar die schijf bovenop. Je kunt er een bom in zien. Je kunt er net zo goed het blad van een spade in zien. Allebei die lezingen kloppen, en dat is precies wat dit monument bij elkaar houdt: wat er uit de lucht kwam, en waarmee het daarna is hersteld. Want een schoppesteele is de steel van een schop. Het beeld stelt die steel voor, en het roept op hoe de door bommen doorboorde dijk met spaden werd dichtgemaakt.",
+    "Het monument herdenkt het bombardement op de zeedijk van drie oktober negentienhonderdvierenveertig en de inundatie van Walcheren die daarop volgde. Kunstenaar Rudi van de Wint, die leefde van negentienhonderdtweeënveertig tot tweeduizendzes, maakte het; in oktober negentienhonderdnegentig werd het onthuld. In de zomer van negentienhonderdachtennegentig is het twee keer aangestoken, en in tweeduizendtien is het vervangen door een metalen uitvoering. Ook een monument moet hier soms opnieuw worden opgebouwd.",
+    "Dat er juist een spade staat, is in dit dorp geen willekeurige keuze. Vanaf de vijftiende eeuw, toen de duinenrij vóór Westkapelle in een dijk veranderde, specialiseerden de dorpelingen zich als dijkwerker. Generaties lang bepaalde dat ambacht wie hier woonde en wat hij kon.",
+    "Wij lopen verder naar het zuiden. Daar, aan de Zuiderhoofdweg, staan twee stenen die vertellen wat er krap vier weken na dat bombardement gebeurde."
+   ],
+   "audio": "/audio/routes/westkapelle/02.mp3",
+   "bronnen": [
+    [
+     "https://www.zeeuwseankers.nl/verhaal/de-schoppestele",
+     "Zeeuwse Ankers — De Schoppestele"
+    ],
+    [
+     "https://4en5mei.nl/oorlogsmonumenten/monumenten_zoeken/oorlogsmonument/2185/westkapelle,-inundatiemonument",
+     "Nationaal Comité 4 en 5 mei — Inundatiemonument Westkapelle (officiële naam)"
+    ],
+    [
+     "https://www.polderhuiswestkapelle.nl/nl/museum/monumenten-in-westkapelle/monument-de-schoppesteele",
+     "Polderhuis Westkapelle — Monument De Schoppesteele (co-beheerder)"
+    ],
+    [
+     "https://www.westkapellecultuurbehoud.nl/zeedijk-westkapelle/dijkwerk-en-dijkwerkers",
+     "Stichting Cultuurbehoud Westkapelle — Dijkwerk en dijkwerkers"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Zuiderhoofdweg — de landing van 1 november 1944",
+   "focus": "geschiedenis",
+   "km": 0.99,
+   "lat": 51.52272,
+   "lng": 3.4399,
+   "paras": [
+    "Nog geen halve kilometer verder, aan de Zuiderhoofdweg, staan twee gedenkstenen vlak langs de weg. De straatnaam is zelf al een aanwijzing: het Zuiderhoofd is het zuidelijke uiteinde van de zeedijk.",
+    "De rechtersteen is de oudste van de twee. Die is vermoedelijk al in negentienhonderdzesenveertig geplaatst, door Britse veteranen, en vermeldt dat de vierde Commandobrigade hier op een november negentienhonderdvierenveertig landde om het eiland te bevrijden. De linkersteen kwam er veel later bij, onthuld in negentienhonderdzevenennegentig door de burgemeester van Veere. Die steen herdenkt de honderdtweeënzeventig opvarenden van de Britse landingsvaartuigen, mannen van de Royal Navy en de Royal Marines, van het Support Squadron Eastern Flank, die op die eerste november voor deze kust omkwamen. Honderdtweeënzeventig. Voor de kust van een dorp dat zelf net was getroffen.",
+    "De landing hoorde bij Operatie Infatuate, de slag om Walcheren. Op acht november negentienhonderdvierenveertig was het hele eiland bevrijd.",
+    "Waar het precies gebeurde, zie je vanaf deze stenen niet. De vaartuigen kwamen het eiland binnen door het gat dat de bommen in de dijk hadden geslagen, enkele honderden meters naar het noordwesten van hier. Deze twee stenen staan dus niet op de landingsplek zelf; ze staan waar het dorp ze kon zetten, langs een weg waar iedereen langskomt.",
+    "Vanaf hier draait de route van de kust weg, het lage land in. En dat lage land is geen decor. Het is de reden dat die dijk zo zwaar telde."
+   ],
+   "audio": "/audio/routes/westkapelle/03.mp3",
+   "bronnen": [
+    [
+     "https://oorlogsgravenstichting.nl/monumenten/westkapelle-landingsmonument",
+     "Oorlogsgravenstichting — Landingsmonument Westkapelle"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Landingsmonument_(Westkapelle)",
+     "Wikipedia — Landingsmonument (Westkapelle)"
+    ],
+    [
+     "https://www.zeeuwsarchief.nl/zeeuwse-verhalen/walcheren-onder-water-1944-1946/water-over-westkapelle/",
+     "Zeeuws Archief — Water over Westkapelle"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "Het lage land ten zuidoosten van het dorp",
+   "focus": "natuur",
+   "km": 1.66,
+   "lat": 51.51969,
+   "lng": 3.44725,
+   "paras": [
+    "Achter je verdwijnen de laatste huizen en het land wordt vlak en wijd. Je loopt nu door het lage polderland ten zuidoosten van de dorpskern, en dat woord laag mag je hier heel letterlijk nemen. De grond onder je voeten ligt rond zeeniveau, plaatselijk eronder. Aan de andere kant van de dijk staat de Noordzee bij vloed hoger dan het maaiveld waar jij nu loopt.",
+    "Walcheren is van oudsher een kreekruglandschap. De dorpen liggen op de hogere kreekruggen; het lagere land daartussen blijft alleen droog dankzij dijk en duin. Vóór er een zeedijk lag, was de duinenrij aan de kust de enige bescherming, en de zee brak er telkens weer doorheen. Pas in de vijftiende eeuw begon men hier te bedijken.",
+    "Aan de horizon in het zuidwesten liggen de duinen richting Zoutelande. Ik zeg er eerlijk bij: daar komen we niet. Het strand en de zeereep liggen een paar honderd meter verderop, buiten deze route. Wij blijven in de polder, en voor dit verhaal is dat ook de juiste plek.",
+    "Want juist dit lage land maakte Westkapelle kwetsbaar. Zolang de dijk hield, was er niets aan de hand. Eén gat erin, en het water had vrij spel over de hele streek. Niet als een golf die komt en weer gaat, maar als een zee die blijft. Loop nog even door. Een paar honderd meter verderop sta je midden op het land waar dat gebeurd is."
+   ],
+   "audio": "/audio/routes/westkapelle/04.mp3",
+   "bronnen": [
+    [
+     "https://www.zeeuwseankers.nl/verhaal/de-inundatie-van-walcheren",
+     "Zeeuwse Ankers — De inundatie van Walcheren"
+    ],
+    [
+     "https://kennis.cultureelerfgoed.nl/index.php/Panorama_Landschap_-_Walcheren",
+     "Rijksdienst voor het Cultureel Erfgoed — Panorama Landschap Walcheren"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Westkappelse_Zeedijk",
+     "Wikipedia — Westkappelse Zeedijk"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Het verdronken land — de inundatie van Walcheren",
+   "focus": "geschiedenis",
+   "km": 2.32,
+   "lat": 51.52022,
+   "lng": 3.45151,
+   "paras": [
+    "Het is hier stil, en dat maakt het bijna onwerkelijk. Op precies dit land, waar je nu je voeten neerzet, stond in het najaar van negentienhonderdvierenveertig water.",
+    "Drie oktober negentienhonderdvierenveertig. De Britse luchtmacht kwam in golven van dertig Lancaster-bommenwerpers over de zeedijk. Het doelwit was niet het dorp maar de dijk. En toen de dijk brak, stroomde het zeewater het lage land in en zette bijna heel Walcheren onder.",
+    "Voor het dorp was de prijs deze. Honderdtweeënvijftig inwoners van Westkapelle kwamen die dag om het leven, bijna zeven procent van de dorpsbevolking. In een dorp waar iedereen elkaar kende, is dat geen percentage. Dat is een naam in bijna elke straat.",
+    "Het water dat naar binnen kwam, ging niet meer weg. Door de zee die er twee keer per dag in en uit stroomde, sleet het dijkgat uit tot een bres van ongeveer vijfhonderd meter breed. Ongeveer tachtig procent van Walcheren kwam onder water te staan; alleen de hoger gelegen dorpskernen en de steden bleven droog. Het gat werd pas op twaalf oktober negentienhonderdvijfenveertig gedicht, meer dan een jaar na de aanval.",
+    "Reken dat even door voor de plek waar je staat. Dit land lag maandenlang op de bodem van een binnenzee.",
+    "En pas daarna begon het werk. Loop maar verder; het volgende stuk van deze route gaat over wat mensen doen als het water eindelijk weg is."
+   ],
+   "audio": "/audio/routes/westkapelle/05.mp3",
+   "bronnen": [
+    [
+     "https://www.zeeuwsarchief.nl/zeeuwse-verhalen/walcheren-onder-water-1944-1946/bombardementen-op-de-dijken-van-walcheren/",
+     "Zeeuws Archief — Bombardementen op de dijken van Walcheren"
+    ],
+    [
+     "https://www.zeeuwsarchief.nl/zeeuwse-verhalen/walcheren-onder-water-1944-1946/water-over-westkapelle/",
+     "Zeeuws Archief — Water over Westkapelle"
+    ],
+    [
+     "https://deslagomdeschelde.nl/1944/10/03/03-oktober-1944-2/",
+     "De Slag om de Schelde — 3 oktober 1944"
+    ],
+    [
+     "https://www.zeeuwseankers.nl/verhaal/de-inundatie-van-walcheren",
+     "Zeeuwse Ankers — De inundatie van Walcheren"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "Herrijzenis — de wederopbouw van Walcheren",
+   "focus": "mensen",
+   "km": 3.02,
+   "lat": 51.5216,
+   "lng": 3.45171,
+   "paras": [
+    "Wat doe je met een eiland dat een jaar lang onder zout water heeft gestaan? Die vraag lag er zodra het dijkgat dicht was, en het antwoord bepaalt nog altijd hoe het land om je heen eruitziet.",
+    "Walcheren moest opnieuw worden drooggelegd en opnieuw worden opgebouwd. In negentienhonderdzesenveertig kwam er een reconstructieplan, waarin het overstroomde land helemaal opnieuw zou worden verkaveld. Dat werd wettelijk vastgelegd in de Herverkavelingswet, die op zevenentwintig november negentienhonderdzevenenveertig van kracht werd. Voor de overheid gold Walcheren als proeftuin voor integrale vernieuwing: geen reparatie van wat er was, maar een compleet nieuw ontwerp.",
+    "Waar de boeren vroeger versnipperde, verspreid liggende stukjes grond hadden, kwamen nu grote blokvormige kavels. Het opruimen van die lappendeken had een prijs. De perceelrandbegroeiing op de kreekruggen was door de inundatie verdwenen, en die kwam niet meer terug. Het landschap veranderde totaal van aanzien.",
+    "Pas in negentienhonderdachtenvijftig waren alle werkzaamheden afgerond. Van het eerste plan tot de laatste schep zat er dus meer dan tien jaar. Zo lang duurt het om een eiland terug te leggen.",
+    "Kijk nu nog eens naar de rechte akkers en de kaarsrechte wegen om je heen. Wat je hier ziet is geen oud Zeeuws landschap; dit is wederopbouw, getekend op een tekentafel en uitgevoerd door mensen die hun eigen land opnieuw moesten leren kennen.",
+    "Nog even verderop houdt die rechtheid op. Daar ligt water dat zich nooit iets van een tekentafel heeft aangetrokken."
+   ],
+   "audio": "/audio/routes/westkapelle/06.mp3",
+   "bronnen": [
+    [
+     "https://www.zeeland.nl/ruimte/kavelruilbureauzeeland/wederopbouw",
+     "Provincie Zeeland — Wederopbouw / herverkaveling Walcheren"
+    ],
+    [
+     "https://kennis.cultureelerfgoed.nl/index.php/Panorama_Landschap_-_Walcheren",
+     "Rijksdienst voor het Cultureel Erfgoed — Panorama Landschap Walcheren"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "De Westkappelse Kreek",
+   "focus": "natuur",
+   "km": 3.62,
+   "lat": 51.52594,
+   "lng": 3.44727,
+   "paras": [
+    "En daar houdt de rechtheid inderdaad op. Voor je ligt water met een grillige rand: de Westkappelse Kreek.",
+    "Dit is geen oud Zeeuws vaarwater en geen aangelegde plas. Het is de rechtstreekse afdruk van drie oktober negentienhonderdvierenveertig. Toen de dijk brak, kolkte de zee naar binnen en sleet diepe geulen uit in het land. Wat er overbleef toen het gat eenmaal gedicht was, is deze kreek: ongeveer driehonderdvijftig hectare open water, op het diepste punt zestien meter.",
+    "Zestien meter. In een polder waar het maaiveld rond zeeniveau ligt.",
+    "Vlak na de doorbraak was het water hier net zo zout als de Noordzee. Daarna verzoette het geleidelijk, tot het halverwege de jaren zestig stabiel werd als brakwaterkreek. Zilt genoeg om zoutwatervissen vast te houden: er zwemmen hier bot en paling. En op het water zijn vrijwel altijd aalscholvers, eenden en ganzen te zien. Kijk daar maar even naar. Dit is het rustigste stuk van de route.",
+    "Het is een vreemde gedachte, en toch klopt hij: dit natuurgebied is een oorlogswond. De vogels die je hier ziet drijven, drijven op een gat dat met bommen is geslagen. In de tijd sindsdien heeft het landschap er iets van zichzelf van gemaakt, zonder dat iemand dat zo heeft bedacht.",
+    "Vanaf de kreek buigt de route terug naar het dorp. En daar staat iets wat ouder is dan alles wat we tot nu toe hebben gezien."
+   ],
+   "audio": "/audio/routes/westkapelle/07.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Westkappelse_Kreek",
+     "Wikipedia — Westkappelse Kreek"
+    ],
+    [
+     "https://polderhuiswestkapelle.nl/nl/museum/monumenten-in-westkapelle/de-kreek-in-westkapelle",
+     "Polderhuis Westkapelle — De Kreek (co-beheerder; geulen, aalscholvers/eenden/ganzen)"
+    ],
+    [
+     "https://www.zeeland.com/nl-nl/visit/2549_nl/parelroute-27verdediging-27-westkapelle",
+     "Zeeland.com — Parelroute 'Verdediging' (routepagina/beheerder)"
+    ]
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "Vuurtoren 't Hoge Licht",
+   "focus": "architectuur",
+   "km": 4.11,
+   "lat": 51.52905,
+   "lng": 3.44693,
+   "paras": [
+    "Boven de daken uit steekt een toren die je onderweg vast al in je ooghoek hebt gehad: 't Hoge Licht. Tweeënvijftig meter hoog. En van dichtbij zie je pas goed wat er niet klopt aan het woord vuurtoren.",
+    "Want dat is dit niet. Of beter: dat was dit niet. De toren werd gebouwd tussen veertienhonderdachtenvijftig en veertienhonderdzeventig, als toren van de Sint-Willibrorduskerk. In achttienhonderdeenendertig verwoestte een brand die kerk. De toren bleef staan, midden in het dorp, zonder kerk eromheen.",
+    "En toen kreeg hij een tweede leven. Al sinds achttienhonderdachttien geldt hij als baken voor de scheepvaart langs de Walcherse kust, en in negentienhonderdzeven werd het torenlicht geplaatst. Nog elke avond brandt dat licht. Bij helder weer is het tot zevenendertig kilometer ver te zien: een middeleeuwse kerktoren die schepen naar huis wijst.",
+    "Loop hier even achterom, naar de algemene begraafplaats achter de toren. Daar staat een wit hardstenen kruis met een tekst die je niet meer kwijtraakt: wij zijn verlost, maar heeft uw dood gekost. Erachter liggen, in een halve cirkel, de graven van honderdachtenvijftig oorlogsslachtoffers. Neem daar gerust even de tijd voor.",
+    "Zo staan de twee lagen van dit dorp hier naast elkaar: de toren van een kerk die al bijna twee eeuwen weg is, en het kerkhof met de oorlogsgraven vlak daarachter.",
+    "We lopen verder, naar iets wat het bombardement wél heeft doorstaan."
+   ],
+   "audio": "/audio/routes/westkapelle/08.mp3",
+   "bronnen": [
+    [
+     "https://www.polderhuiswestkapelle.nl/nl/vuurtoren/vuurtoren-t-hoge-licht",
+     "Polderhuis Westkapelle — Vuurtoren 't Hoge Licht (co-beheerder)"
+    ],
+    [
+     "https://www.openmonumentendag.nl/monument/vuurtoren-het-hoge-licht-2/",
+     "Open Monumentendag — Vuurtoren het Hoge Licht (hoogte, bouwjaar)"
+    ],
+    [
+     "https://www.rijkswaterstaat.nl/over-ons/onze-organisatie/onze-historie/onze-monumenten/vuurtoren-hoge-licht",
+     "Rijkswaterstaat — Vuurtoren Hoge Licht"
+    ],
+    [
+     "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/2537/westkapelle-monument-bij-de-vuurtoren",
+     "Nationaal Comité 4 en 5 mei — Monument bij de vuurtoren (158 oorlogsgraven)"
+    ],
+    [
+     "https://www.polderhuiswestkapelle.nl/nl/museum/monumenten-in-westkapelle/monument-voor-de-burgerslachtoffers-oktober-1944",
+     "Polderhuis Westkapelle — Monument burgerslachtoffers oktober 1944 (co-beheerder)"
+    ]
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "Molen De Noorman",
+   "focus": "architectuur",
+   "km": 4.62,
+   "lat": 51.52995,
+   "lng": 3.44209,
+   "paras": [
+    "Een paar straten verder staat molen De Noorman: een ronde stenen stellingmolen uit achttienhonderdtweeënvijftig. Hij is de enige die er nog is, en juist dat woord enige draagt hier een heel verhaal.",
+    "Vóór negentienhonderdvierenveertig telde Westkapelle drie molens. Naast De Noorman waren dat De Roos en de Prins Hendrik, de Dijkmolen uit zeventienhonderddrieënzeventig.",
+    "Op drie oktober negentienhonderdvierenveertig zochten zevenenveertig mensen dekking in de kelder van molen De Roos. Een zware molen, een kelder eronder; je begrijpt waarom je daar zou schuilen. Bij het bombardement werd die molen volledig verwoest. Vierenveertig van die zevenenveertig mensen kwamen om. Drie overleefden het, onder wie een baby van elf maanden oud, Kornelia Janisse, in het dorp Corrie genoemd. De Noorman raakte diezelfde dag beschadigd, maar hij bleef overeind. In de loop van negentienhonderdvijfenveertig maalde hij alweer.",
+    "Dat is, denk ik, waarom deze molen hier zo zwaar staat te zijn. Hij is geen monument dat later is neergezet om iets te herdenken. Hij was er gewoon bij, en hij is er nog. Bijna elk dorp heeft zulke gebouwen: ze dragen de scheidslijn tussen vóór en ná in hun eigen stenen.",
+    "Nog een paar honderd meter en we staan op de Markt, in het hart van het herbouwde dorp. Daar staat wél iets wat bewust is neergezet, en het stelt precies het ambacht voor waar dit dorp om draait."
+   ],
+   "audio": "/audio/routes/westkapelle/09.mp3",
+   "bronnen": [
+    [
+     "https://www.molens.nl/ontdek-molens/alle-molens/de-noorman-te-westkapelle",
+     "De Hollandsche Molen (molens.nl) — De Noorman te Westkapelle"
+    ],
+    [
+     "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/2646/westkapelle-monument-de-roos",
+     "Nationaal Comité 4 en 5 mei — Monument De Roos (Westkapelle)"
+    ]
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "De Markt & het beeld De Dijkwerker",
+   "focus": "mensen",
+   "km": 5.0,
+   "lat": 51.52757,
+   "lng": 3.44089,
+   "paras": [
+    "Zo komen we op de Markt, het hart van het dorp. Aan de overkant van het plein, een paar tientallen meters van de route, staat het beeld dat De Dijkwerker heet.",
+    "Kijk eens hoe hij staat. Hij bukt voorover, met een basaltsteen in zijn handen, om die in een dijkgat te leggen. Geen heldenpose, geen opgeheven hoofd. Gewoon een man die een steen op zijn plek legt, en daarna de volgende.",
+    "Beeldhouwer Ad Braat maakte hem. De gemeente Westkapelle gaf hem de opdracht in negentienhonderdnegenenzeventig, en op elf september van datzelfde jaar werd het beeld onthuld. Na de herinrichting van de Markt in negentienhonderdzevenennegentig verhuisde het enkele meters, tot vóór het verenigingsgebouw. Dat gebouw heet Westkapelle Herrijst. Die naam is hier geen slogan. Het dorp is na de verwoesting van negentienhonderdvierenveertig letterlijk opnieuw opgebouwd.",
+    "Het beeld kreeg in de volksmond zijn eigen naam: Booisje, naar dijkwerker Leunis de Witte, die leefde van achttienhonderdzevenentachtig tot negentienhonderdtweeënzeventig en die zo werd genoemd. Sommigen zagen hem in het beeld terug.",
+    "Dat zo'n bijnaam blijft hangen, past bij dit dorp. Omdat veel Westkappelaars dezelfde familienaam dragen, worden er van oudsher bijnamen gebruikt om iedereen uit elkaar te houden. Er is ook een eigen dialect, een eigen klederdracht en zelfs een eigen volkslied. Een dorp met zijn eigen taal, zijn eigen kleren en zijn eigen lied.",
+    "Nog een paar honderd meter, en dan staan we weer waar we begonnen: op de dijk."
+   ],
+   "audio": "/audio/routes/westkapelle/10.mp3",
+   "bronnen": [
+    [
+     "https://standbeelden.vanderkrogt.net/object.php?record=ZE12aq",
+     "Mens & Dier in Steen & Brons (van der Krogt) — Dijkwerker Westkapelle (beeld, Ad Braat, onthulling 11 sept 1979)"
+    ],
+    [
+     "https://www.westkapellecultuurbehoud.nl/cultuur-westkapelle/kunst-en-wetenschap/kunst-en-wetenschap",
+     "Stichting Cultuurbehoud Westkapelle — Kunst en wetenschap (opdracht 1979 gemeente, verplaatsing 1997 naar 'Westkapelle Herrijst', bijnaam 'Booisje' / Leunis de Witte 1887-1972)"
+    ],
+    [
+     "https://www.zeeland.com/nl-nl/visit/2549_nl/parelroute-27verdediging-27-westkapelle",
+     "Zeeland.com — Parelroute 'Verdediging' (dialect, klederdracht, volkslied, bijnamen)"
+    ]
+   ]
+  },
+  {
+   "nr": 11,
+   "titel": "Terug op de zeedijk",
+   "focus": "geschiedenis",
+   "km": 5.36,
+   "lat": 51.52714,
+   "lng": 3.43589,
+   "paras": [
+    "En daar is de dijk weer. De cirkel is rond: we staan terug bij het Polderhuis, aan de voet van de Westkapelse Zeedijk, waar we ruim vijf kilometer geleden begonnen.",
+    "Loop de dijk nog even op, als je kunt. Aan de ene kant ligt de Noordzee, die bij vloed hoger staat dan het dorp achter je. Aan de andere kant ligt het lage land dat generaties dijkwerkers, mannen zoals Booisje, op die zee hebben veroverd en drooggehouden. Je staat precies op de streep tussen die twee.",
+    "Alles wat we onderweg hebben gezien, ligt op die streep. De noodklok van veertienhonderdtweeëndertig, toen de zee de duinen wegschuurde en het dorp om hulp vroeg. De spade van De Schoppesteele. De twee stenen aan de Zuiderhoofdweg. Het lage land dat maandenlang onder water stond, de kreek die daarvan overbleef, de rechte akkers van de wederopbouw, de molen die het haalde en de molen die het niet haalde.",
+    "Op het monument boven op deze dijk staat: Walcheren kan herrijzen. Dat was geen constatering toen het er kwam te staan, maar een voornemen. Op twaalf oktober negentienhonderdvijfenveertig ging het dijkgat dicht, daarna liep het land leeg, en daarna werd het dorp opnieuw opgebouwd, huis voor huis. Verdediging, van duin naar dijk naar wederopbouw. Steeds diezelfde beweging, en niet toevallig ook de beweging van het Zeeuwse devies: luctor et emergo, ik worstel en kom boven.",
+    "Dank je wel voor het meelopen. Blijf hier gerust nog even staan; boven op de kruin is dit verhaal het beste te zien."
+   ],
+   "audio": "/audio/routes/westkapelle/11.mp3",
+   "bronnen": [
+    [
+     "https://www.westkapellecultuurbehoud.nl/zeedijk-westkapelle/geschiedenis-zeedijk",
+     "Stichting Cultuurbehoud Westkapelle — Geschiedenis Zeedijk"
+    ],
+    [
+     "https://www.westkapellecultuurbehoud.nl/zeedijk-westkapelle/dijkwerk-en-dijkwerkers",
+     "Stichting Cultuurbehoud Westkapelle — Dijkwerk en dijkwerkers"
+    ],
+    [
+     "https://standbeelden.vanderkrogt.net/object.php?record=ZE12ar",
+     "Mens & Dier in Steen & Brons (van der Krogt) — Monument 4e Commandobrigade / Sherman-tank"
+    ]
+   ]
+  }
+ ]
+}

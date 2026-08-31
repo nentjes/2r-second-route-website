@@ -1,0 +1,680 @@
+{
+ "slug": "bourtange",
+ "naam": "Westerwolde Wandelroute 16: Rondom de Vesting Bourtange",
+ "provincie": "Groningen",
+ "lengte_km": 6.46,
+ "duur": "±1,5 uur",
+ "beheerder": "Stichting Wandelen in Westerwolde",
+ "gpx_url": "https://odp.visitgroningen.nl/route/download/13836/gpx",
+ "bron_url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+ "lijnen": [
+  [
+   [
+    53.008668,
+    7.189475
+   ],
+   [
+    53.008663,
+    7.18909
+   ],
+   [
+    53.00856,
+    7.189023
+   ],
+   [
+    53.008472,
+    7.189398
+   ],
+   [
+    53.008233,
+    7.189448
+   ],
+   [
+    53.008216,
+    7.19036
+   ],
+   [
+    53.008283,
+    7.190685
+   ],
+   [
+    53.008639,
+    7.191044
+   ],
+   [
+    53.008378,
+    7.192092
+   ],
+   [
+    53.008796,
+    7.193214
+   ],
+   [
+    53.008018,
+    7.193808
+   ],
+   [
+    53.007804,
+    7.195066
+   ],
+   [
+    53.007609,
+    7.195069
+   ],
+   [
+    53.007334,
+    7.194888
+   ],
+   [
+    53.007055,
+    7.196172
+   ],
+   [
+    53.006956,
+    7.19625
+   ],
+   [
+    53.006715,
+    7.196221
+   ],
+   [
+    53.006346,
+    7.196744
+   ],
+   [
+    53.005979,
+    7.196808
+   ],
+   [
+    53.005494,
+    7.196463
+   ],
+   [
+    53.005269,
+    7.196436
+   ],
+   [
+    53.005241,
+    7.198328
+   ],
+   [
+    53.005133,
+    7.198562
+   ],
+   [
+    53.002016,
+    7.199324
+   ],
+   [
+    53.002109,
+    7.19753
+   ],
+   [
+    53.00108,
+    7.194526
+   ],
+   [
+    53.001066,
+    7.194253
+   ],
+   [
+    53.001665,
+    7.192986
+   ],
+   [
+    53.003054,
+    7.191185
+   ],
+   [
+    53.005261,
+    7.190327
+   ],
+   [
+    53.005686,
+    7.190072
+   ],
+   [
+    53.005781,
+    7.18986
+   ],
+   [
+    53.005309,
+    7.188201
+   ],
+   [
+    53.004242,
+    7.185203
+   ],
+   [
+    53.003377,
+    7.183333
+   ],
+   [
+    53.00351,
+    7.18331
+   ],
+   [
+    53.003776,
+    7.183669
+   ],
+   [
+    53.004307,
+    7.1833
+   ],
+   [
+    53.004791,
+    7.182804
+   ],
+   [
+    53.004962,
+    7.182753
+   ],
+   [
+    53.005708,
+    7.181686
+   ],
+   [
+    53.006018,
+    7.181471
+   ],
+   [
+    53.00699,
+    7.179341
+   ],
+   [
+    53.008157,
+    7.178415
+   ],
+   [
+    53.008468,
+    7.178357
+   ],
+   [
+    53.008735,
+    7.178425
+   ],
+   [
+    53.008811,
+    7.178351
+   ],
+   [
+    53.008966,
+    7.174878
+   ],
+   [
+    53.008869,
+    7.173689
+   ],
+   [
+    53.009005,
+    7.173488
+   ],
+   [
+    53.009287,
+    7.173554
+   ],
+   [
+    53.010016,
+    7.172925
+   ],
+   [
+    53.010362,
+    7.173169
+   ],
+   [
+    53.010749,
+    7.173792
+   ],
+   [
+    53.011413,
+    7.174164
+   ],
+   [
+    53.011847,
+    7.174321
+   ],
+   [
+    53.012073,
+    7.174265
+   ],
+   [
+    53.012895,
+    7.174374
+   ],
+   [
+    53.014431,
+    7.177733
+   ],
+   [
+    53.01484,
+    7.179035
+   ],
+   [
+    53.013497,
+    7.180327
+   ],
+   [
+    53.013625,
+    7.186188
+   ],
+   [
+    53.011487,
+    7.189476
+   ],
+   [
+    53.010745,
+    7.190844
+   ],
+   [
+    53.009811,
+    7.192879
+   ],
+   [
+    53.008917,
+    7.191751
+   ],
+   [
+    53.009151,
+    7.191237
+   ],
+   [
+    53.00914,
+    7.190435
+   ],
+   [
+    53.008853,
+    7.190269
+   ],
+   [
+    53.008674,
+    7.189477
+   ]
+  ]
+ ],
+ "haltes": [
+  {
+   "nr": 1,
+   "titel": "Welkom op de zandrug",
+   "focus": "geschiedenis",
+   "km": 0.0,
+   "lat": 53.008668,
+   "lng": 7.189475,
+   "audio": "https://2route.nl/audio/routes/bourtange/01.mp3",
+   "tekst": "Welkom in Bourtange, hier aan de rand van Westerwolde. Je staat op een parkeerplaats, maar eigenlijk sta je op een zandrug — een tange — die dwars door een ooit onmetelijk moeras liep. Dat is het hele geheim van dit dorp, en het is de draad die we vandaag volgen: vijf eeuwen leven van één ligging. Wat hier begon als schans werd vesting, daarna boerendorp, daarna grensdorp, en ten slotte het gereconstrueerde monument waar je nu naar kijkt. Elk stuk van deze wandeling laat er een andere laag van zien.\n\nDe route heet Rondom de Vesting Bourtange, wandelroute zestien van Wandelen in Westerwolde. Zes en een halve kilometer, ongeveer anderhalf uur, geel-wit gemarkeerd. Honden mogen niet mee. We beginnen en eindigen hier, aan de Willem Lodewijkstraat, naast het Toeristisch Overstappunt en het informatiecentrum van de vesting. Iets verderop langs het pad staat het kunstwerk De Soldaat.\n\nDie straatnaam is trouwens geen toeval. Over deze rug liep eeuwenlang de weg die de stad Groningen met Lingen en Westfalen verbond, door tijdgenoten beschreven als een twee uur gaans lange, slechte pas. Toen Groningen in maart vijftienhonderdtachtig door het verraad van stadhouder Rennenberg in Spaanse handen viel, gaf prins Willem van Oranje datzelfde jaar opdracht om juist hier een schans met vijf bastions aan te leggen, dwars door de Spaanse bevoorrading heen. In vijftienhonderddrieënnegentig bezetten Staatse troepen de doorgang definitief, en werd de vesting voltooid onder stadhouder Willem Lodewijk van Nassau. Zijn naam draagt de straat waar je nu staat.\n\nLoop maar mee, dan zie je zo meteen wat er van die schans geworden is.",
+   "bronnen": [
+    {
+     "url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+     "naam": "Visit Groningen — routepagina WIW 16 (hoofdbron)"
+    },
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "Stichting Pelgrimeren in Groningen — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtange",
+     "naam": "Wikipedia — Bourtange"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — namen en liggingen"
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "De ster in het veen",
+   "focus": "architectuur",
+   "km": 0.504,
+   "lat": 53.007987,
+   "lng": 7.193911,
+   "audio": "https://2route.nl/audio/routes/bourtange/02.mp3",
+   "tekst": "Daar liggen ze dan, die vijf bastions van Willem van Oranje — al zijn het er in de loop van de tijd veel meer geworden. Het pad loopt hier pal buitenlangs de wallen en grachten van de stervesting. Een meter of honderdtien verderop zit de westelijke toegangspoort, de Friesche Poort.\n\nDie ster groeide in lagen. In zestienhonderdnegentien werd de hoofdwal verbreed en verhoogd, want het geschut werd zwaarder. In zestienhonderdvijfenveertig kwamen er aan de oostzijde twee hoornwerken bij. En tussen zeventienhonderdnegenendertig en zeventienhonderdtweeënveertig werd een plan uitgevoerd van ingenieur Pieter de la Rive, naar de vestingbouwkundige inzichten van Menno van Coehoorn: twee ravelijnen erbij, een halve maan, en een glacis rondom. Toen was Bourtange op zijn grootst.\n\nMaar tussendoor kon het verval diep gaan. In zestienhonderdvijfenzestig lagen de palissaden omver, waren de doornheggen op de taluds afgestorven en waren de klap en de hamei voor diezelfde Friesche Poort neergevallen. Het garnizoen telde nog vijftig man. En tóch is deze vesting nooit ingenomen. Niet door de Spanjaarden, niet door de bisschop van Münster, niet door de Fransen.\n\nKijk verderop naar het Molenbastion, want daar draait weer een standerdmolen. De echte werd in achttienhonderdtweeëndertig verkocht en verplaatst naar het gehucht Ter Haar, waar hij nog altijd staat als de enige standerdmolen die Noord-Nederland over heeft. Wat hier maalt, is sinds negentienhonderdtachtig een nauwkeurige kopie van dat vroeg-zeventiende-eeuwse origineel.\n\nZo meteen buigt het pad weg van de wal, een weg op met een naam die alles verklapt.",
+   "bronnen": [
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "SPiG — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtange",
+     "naam": "Wikipedia — Bourtange"
+    },
+    {
+     "url": "https://www.vestingsteden.nl/steden/bourtange/",
+     "naam": "Vestingsteden.nl — Bourtange"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Friesche Poort, Molenbastion"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Bisschopsweg — het beleg van 1672",
+   "focus": "geschiedenis",
+   "km": 0.959,
+   "lat": 53.00526,
+   "lng": 7.196451,
+   "audio": "https://2route.nl/audio/routes/bourtange/03.mp3",
+   "tekst": "Bisschopsweg. Zo heet de weg waar je nu op loopt, en hij volgt nog altijd precies de oude zandrug door het moeras. Je voelt al aankomen welke bisschop bedoeld wordt.\n\nBernhard von Galen, de bisschop van Münster, probeerde het in zestienhonderdvijfenzestig voor het eerst. Hij drong door tot Winschoten, maar kreeg het haastig herstelde Bourtange niet klein. Zeven jaar later stond hij er opnieuw, op zeventien juli zestienhonderdtweeënzeventig, en inmiddels had hij de bijnaam waaronder heel Groningen hem kende: Bommen Berend.\n\nHij begon niet met kanonnen, maar met geld. Aan de waarnemend commandant, Bernard Johan Prott, bood hij tweehonderdduizend gulden om de vesting over te geven. Protts antwoord is hier nooit meer vergeten: tweehonderdduizend kogels kun je krijgen. Na nog enkele beschietingen trokken de bisschop en zijn troepen weg. Later die zomer, op achtentwintig augustus, moest hij ook de stad Groningen loslaten — een aftocht die daar nog elk jaar gevierd wordt als Gronings Ontzet.\n\nVoor Prott zelf kreeg die overwinning een wrang vervolg. Zijn vrouw Albertina kwam om bij het bombardement op diezelfde stad Groningen. Hij overleed in zeventienhonderddrie op de Rikkerdaborg. Binnen de wallen draagt een straat zijn naam: de Kapitein Prottstraat.\n\nHier op de Bisschopsweg ging het nog om roem, losgeld en een groot gebaar. Een paar honderd meter verderop wacht een plek waar recht en dood veel kaler waren.",
+   "bronnen": [
+    {
+     "url": "https://www.rtvnoord.nl/cultuur/1303748/van-twee-ton-aan-guldens-was-kapitein-prott-niet-onder-de-indruk-200000-kogels-kun-je-krijgen",
+     "naam": "RTV Noord — artikel over kapitein Prott en het beleg van 1672"
+    },
+    {
+     "url": "https://www.deverhalenvangroningen.nl/alle-verhalen/een-klein-schansje-als-onneembare-vesting",
+     "naam": "De Verhalen van Groningen — 'Een klein schansje als onneembare vesting'"
+    },
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "SPiG — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://www.vestingsteden.nl/steden/bourtange/",
+     "naam": "Vestingsteden.nl — Bourtange"
+    },
+    {
+     "url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+     "naam": "Visit Groningen — routepagina WIW 16 (hoofdbron)"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Bisschopsweg, Kapitein Prottstraat"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "Het galgenveld aan de Nieuwerksweg",
+   "focus": "geschiedenis",
+   "km": 1.323,
+   "lat": 53.003219,
+   "lng": 7.199058,
+   "audio": "https://2route.nl/audio/routes/bourtange/04.mp3",
+   "tekst": "Aan de Nieuwerksweg staat, zo'n dertig meter van het pad, een galg. Een reconstructie, op de plek van het oude galgenveldje — en na het grote gebaar van kapitein Prott is dit een heel andere kijk op schuld en boete.\n\nDe galg toont waar vroeger misdadigers werden opgehangen. Zulke velden lagen bewust buiten de nederzetting, langs een doorgaande weg, zodat wie de vesting naderde meteen zag hoe het afliep met wie de regels overtrad. Een waarschuwing in hout, voor iedereen die over de zandrug kwam.\n\nMaar deze weg draagt nog een verhaal, en dat ligt veel dichter bij ons. Ruim tweehonderd meter terug, op de hoek van de Bisschopsweg en de Nieuwerksweg, kwam je vlak langs een gedenksteen voor Ella en Mozes Braaf. Daar stond hun huisje. Het joodse echtpaar woonde er vanaf negentienhonderdtweeëndertig, aan de rand van de vesting. In de oorlog doken ze onder. In negentienhonderdvijfenveertig werden ze verraden en naar doorgangskamp Westerbork gedeporteerd — en juist doordat de bevrijding kort daarna kwam, reden er geen treinen meer naar de vernietigingskampen. Ze kwamen terug. Ze woonden in hun eigen huisje tot Mozes in negentienhonderdzevenenzestig overleed; Ella stierf drie jaar later. Op negenentwintig januari tweeduizendnegen werd de steen onthuld.\n\nTwee soorten dood, binnen tweehonderd meter van elkaar. Het joodse verhaal van Bourtange laten we hier nog even liggen, want verderop op de route komen we het weer tegen. Eerst draait het pad naar het zuiden, naar een weg die vertelt hoe deze vesting zich verdedigde zonder één schot te lossen.",
+   "bronnen": [
+    {
+     "url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+     "naam": "Visit Groningen — routepagina WIW 16 (hoofdbron)"
+    },
+    {
+     "url": "https://www.anwb.nl/wandelen/routes/roemruchte-verhalen-uit-het-bourtanger-moeras",
+     "naam": "ANWB — wandelroute 'Roemruchte verhalen uit het Bourtanger Moeras'"
+    },
+    {
+     "url": "https://www.klikprintenwandel.nl/wandelroutes/van-vesting-tot-grenslinie/",
+     "naam": "Klik Print en Wandel — route 'Van Vesting tot Grenslinie'"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Galgenveld_(algemeen)",
+     "naam": "Wikipedia — Galgenveld (algemeen)"
+    },
+    {
+     "url": "https://www.4en5mei.nl/oorlogsmonumenten/zoeken/3405/bourtange-plaquette-voor-ella-en-mozes-braaf",
+     "naam": "Nationaal Comite 4 en 5 mei — plaquette Ella en Mozes Braaf"
+    },
+    {
+     "url": "https://www.tracesofwar.nl/sights/27987/Monument-Ella-en-Mozes-Braaf.htm",
+     "naam": "TracesOfWar — monument Ella en Mozes Braaf"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — galg (historic=gallows), Nieuwerksweg"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Inundatieweg — water als wapen",
+   "focus": "landschap",
+   "km": 1.951,
+   "lat": 53.001725,
+   "lng": 7.192901,
+   "audio": "https://2route.nl/audio/routes/bourtange/05.mp3",
+   "tekst": "Inundatieweg. Ook zo'n naam die zichzelf uitlegt: het gaat hier over onder water zetten. Het land ten zuiden en oosten van de vesting kon met opzet worden geïnundeerd, om vijanden op afstand te houden.\n\nHoe goed dat werkte, ondervond de Spaanse veldheer Verdugo al in vijftienhonderddrieënnegentig. Hij begon een beleg en liet loopgraven graven, maar ontdekte al snel dat die op nauwelijks een halve meter diepte vol water liepen. Er viel hier niets te graven, en dus viel er niets te belegeren.\n\nAnderhalve eeuw later was het probleem precies omgekeerd. Rond zeventienhonderdtweeënveertig verdroogde het omringende moeras langzaam, en daarmee dreigde de vesting bereikbaar te worden. Bij de grote uitbouw van zeventienhonderdnegenendertig tot zeventienhonderdtweeënveertig groef men daarom aan de oostkant een natte horizon af. Stel je dat eens voor: vierentwintig hectare land werd verlaagd tot eenendertig centimeter beneden de zomerwaterspiegel. Geen meer, geen gracht, maar een spiegel van ondiep water, breed genoeg om een leger onmogelijk te maken.\n\nEen kleine tweehonderd meter naar het noordoosten ligt tegenwoordig weer een plas die opnieuw Natte Horizon heet. De route buigt er niet naartoe, maar hij hoort bij dit verhaal: bij de reconstructie is dit deel van de waterverdediging opnieuw uitgegraven, en het zand dat daarbij vrijkwam ging naar het naastgelegen gebied van Het Groninger Landschap.\n\nHet pad draait nu terug naar het noorden, naar de kant van de vesting waar het gevaar altijd vandaan kwam.",
+   "bronnen": [
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "SPiG — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://www.deverhalenvangroningen.nl/alle-verhalen/een-klein-schansje-als-onneembare-vesting",
+     "naam": "De Verhalen van Groningen — 'Een klein schansje als onneembare vesting'"
+    },
+    {
+     "url": "https://www.anwb.nl/wandelen/routes/roemruchte-verhalen-uit-het-bourtanger-moeras",
+     "naam": "ANWB — wandelroute 'Roemruchte verhalen uit het Bourtanger Moeras'"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Inundatieweg, Natte Horizon"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "Munsterse Poort en het kruit",
+   "focus": "architectuur",
+   "km": 2.416,
+   "lat": 53.005473,
+   "lng": 7.190221,
+   "audio": "https://2route.nl/audio/routes/bourtange/06.mp3",
+   "tekst": "Die kant is deze. Op zo'n honderdzestig meter van het pad ligt de Munsterse Poort, genoemd naar de troepen die er in zestienhonderdvijfenzestig en in zestienhonderdtweeënzeventig voor stonden. Ver genoeg om er niet even heen te wandelen, dichtbij genoeg om te snappen waarom die poort zo heet.\n\nDichterbij, op een meter of vijfennegentig, staat het Nieuwe Kruithuis. Dat werd gebouwd toen het Oude Kruithuis aan de andere kant van de vesting te klein was geworden: hier paste vijfenveertigduizend pond kruit in. Tegenwoordig hangt er niets explosievers dan kunst aan de muur, want het gebouw heet nu Kunst in het Kruithuis.\n\nEn dat brengt me bij iets wat je hier moet weten: vrijwel alles wat je ziet, is herbouwd. In negentienhonderdvierenzestig presenteerde burgemeester Loopstra van Vlagtwedde een reconstructieplan. In negentienhonderdzevenenzestig werd Bourtange beschermd dorpsgezicht, en vanaf de vroege jaren zeventig begon het echte werk: grachten opnieuw uitgegraven, wallen opgeworpen, soldatenbarakken herbouwd, grotendeels aan de hand van oude kaarten en tekeningen. In negentienhonderdtweeënnegentig was het klaar. Sindsdien ligt de vesting er vrijwel net zo bij als in het jaar zeventienhonderdtweeënveertig. Al is er ook gewoon gewóónd in die reconstructie. De vroegere opslagplaatsen onder de wallen doen tegenwoordig dienst als garageboxen voor de mensen die in de vesting wonen. Zeventiende-eeuws bouwwerk, eenentwintigste-eeuwse auto.\n\nZo dicht bij de wallen komen we voorlopig niet meer. Het pad draait weg van de vesting, een laan in die er onschuldig uitziet — maar die er niet altijd geweest is.",
+   "bronnen": [
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "SPiG — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtange",
+     "naam": "Wikipedia — Bourtange"
+    },
+    {
+     "url": "https://www.bourtange.nl/geschiedenis-van-bourtange/",
+     "naam": "Bourtange.nl (officiele site) — geschiedenis"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Munsterse Poort, Nieuwe Kruithuis"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "Het Moddermanspad",
+   "focus": "natuur",
+   "km": 2.901,
+   "lat": 53.003802,
+   "lng": 7.18422,
+   "audio": "https://2route.nl/audio/routes/bourtange/07.mp3",
+   "tekst": "Onschuldig, zei ik. Maar dit bomenlaantje is een kanaal. Waar je nu droog loopt, over het Moddermanspad, stroomde vroeger het Moddermansdiep.\n\nOok dat water hoorde bij de vesting. Het diep, ook wel Sellingersloot of Nieuwe Ruiten Aa genoemd, werd in de zeventiende eeuw om strategische redenen gegraven: het hield het waterpeil in het moeras rond Bourtange op peil en voorzag de vestinggrachten van water. Het begon met een besluit van Stad en Lande uit zestienhonderdeenendertig. Een dam van rijshout in de Ruiten Aa moest het water opstuwen en via dit nieuwe kanaal hierheen leiden; de uitgegraven grond werd aan de noordzijde opgeworpen tot leidijk.\n\nDie rijsdam werd waarschijnlijk pas in het rampjaar zestienhonderdtweeënzeventig daadwerkelijk aangelegd, door Carl von Rabenhaupt. De buurtschap Rijsdam heet er nog naar, en de dam zelf werd pas in negentienhonderdacht opgeruimd. En de naam van dit pad? Die eert Jan Remees Modderman. Hij promoveerde in zeventienhonderdnegenennegentig in Groningen, was rond achttienhonderdelf onderprefect van het district Winschoten en zat van achttienhonderdvierentwintig tot achttienhonderdzevenentwintig in de Provinciale Staten. Zijn onderwerp: betere wegen en waterwegen in Oost-Groningen.\n\nIn de eerste helft van de vorige eeuw werd het diep gedempt en werden er bomen geplant. In het voorjaar bloeien hier de krentenboompjes. Zo werd water een laan, en een verdedigingswerk een wandelpad.\n\nVerderop opent het land zich, en daar wacht de tegenstander die de vesting uiteindelijk het meest heeft dwarsgezeten.",
+   "bronnen": [
+    {
+     "url": "https://nl.wikipedia.org/wiki/Moddermansdiep",
+     "naam": "Wikipedia — Moddermansdiep"
+    },
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "SPiG — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+     "naam": "Visit Groningen — routepagina WIW 16 (hoofdbron)"
+    },
+    {
+     "url": "https://www.westerwoldeactueel.nl/2026/05/20/verslag-van-jan-bossen-van-het-ommetje-door-bourtange-7/",
+     "naam": "Westerwolde Actueel — wandelverslag Jan Bossen (Bourtange)"
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "Boerenland tegen de vesting",
+   "focus": "mensen",
+   "km": 3.451,
+   "lat": 53.006601,
+   "lng": 7.180158,
+   "audio": "https://2route.nl/audio/routes/bourtange/08.mp3",
+   "tekst": "Daar zijn ze: de akkers en weiden die hier de dienst uitmaken. En met dat open land komt die stille tegenstander in beeld. Geen leger, maar de boer.\n\nIn zestienhonderdeenentachtig bleek het moeras rond Bourtange geheel droog te liggen. Niet door de zon. De boeren hadden de leidijken doorgestoken en sloten gegraven, en het moeras tot weiden en hoven gemaakt. Alles waar de vestingbouwers eeuwenlang op vertrouwden, dat onbegaanbare water, werd hier weggedraineerd door mensen die simpelweg land wilden.\n\nDe namen in dit landschap dragen die ontginning nog. Dit waren de veenontginningsgebieden Wollingboermarke en Stakenborg, van elkaar gescheiden door een scheidsloot; net kruiste je de Wollingboerweg. En de vesting zelf leefde ondertussen allang niet meer van het krijgsbedrijf alleen: er werd geboerd, gehandeld en gesmokkeld.\n\nIn achttienhonderdeenenvijftig werd de vesting officieel opgeheven, en werd Bourtange wat het landschap hier al was: een agrarisch dorp. Vandaag wonen er zo'n zevenhonderdzeventig mensen. En toch klinken er elke zomer nog gevechtsgeluiden over het vestingterrein, dat hier een meter of achthonderd achter je ligt. Geen bisschop, geen Spanjaarden: nagespeelde veldslagen, met publiek erbij.\n\nZo zijn de soldaat en de boer hier voorgoed met elkaar verweven. Even verderop krijg je gezelschap van water dat er in geen van beide eeuwen lag.",
+   "bronnen": [
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "SPiG — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtangerkanaal",
+     "naam": "Wikipedia — Bourtangerkanaal (veldnamen Stakenborg en Wollingboermarke)"
+    },
+    {
+     "url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+     "naam": "Visit Groningen — routepagina WIW 16 (hoofdbron)"
+    },
+    {
+     "url": "https://www.bourtange.nl/geschiedenis-van-bourtange/",
+     "naam": "Bourtange.nl (officiele site) — geschiedenis"
+    },
+    {
+     "url": "https://www.deverhalenvangroningen.nl/alle-verhalen/een-klein-schansje-als-onneembare-vesting",
+     "naam": "De Verhalen van Groningen — 'Een klein schansje als onneembare vesting'"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtange",
+     "naam": "Wikipedia — Bourtange"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Wollingboerweg, Zwarteweg Zuid"
+    }
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "Langs het Bourtangerkanaal",
+   "focus": "geschiedenis",
+   "km": 4.0,
+   "lat": 53.008958,
+   "lng": 7.17462,
+   "audio": "https://2route.nl/audio/routes/bourtange/09.mp3",
+   "tekst": "Nu heb je gezelschap. Op een meter of twintig loopt het Bourtangerkanaal met je mee: ruim anderhalve kilometer water, van het Ruiten-Aa-kanaal bij de Bourtangersluis tot in de jachthaven van Bourtange.\n\nEn let op wáár het ligt. Weet je nog, die scheidsloot tussen Stakenborg en de Wollingboermarke van zojuist? Precies op dat oude lijntje werd dit kanaal rond negentienhonderdzeventien gegraven, als onderdeel van de kanalisatie van Westerwolde. Een grens tussen twee ontginningen werd zo een vaarweg.\n\nKanaal en veen horen hier sowieso bij elkaar. De grootschalige afgraving van het hoogveen begon in de zestiende eeuw met de zogenoemde Friese methode: eerst kanalen graven, dan pas turf steken, want zonder water kwam die turf nergens. Dit kanaal heeft trouwens een merkwaardige levensloop. In negentienhonderdzeventig, midden in de reconstructie van de vesting, werd het gedempt. Weg kanaal. Vijftien jaar later bedacht men zich, groef het opnieuw uit, en in negentienhonderdzesentachtig voer er weer een boot, nu voor het vaartoerisme in Westerwolde. Gedempt en teruggehaald, net als het Moddermansdiep, alleen kreeg dit water zijn tweede kans wel.\n\nVerderop aan datzelfde water, zo'n vijfhonderdzeventig meter hiervandaan, ligt camping 't Plathuis, de sponsor van deze wandelroute. De route komt er niet langs. Wij houden het kanaal nog even aan onze zijde en draaien dan het open land in, waar helemaal niets meer aan een moeras herinnert.",
+   "bronnen": [
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtangerkanaal",
+     "naam": "Wikipedia — Bourtangerkanaal"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtangermoeras",
+     "naam": "Wikipedia — Bourtangermoeras"
+    },
+    {
+     "url": "https://www.westerwoldeactueel.nl/2026/05/20/verslag-van-jan-bossen-van-het-ommetje-door-bourtange-7/",
+     "naam": "Westerwolde Actueel — wandelverslag Jan Bossen (Bourtange)"
+    },
+    {
+     "url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+     "naam": "Visit Groningen — routepagina WIW 16 (hoofdbron)"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Bourtangerkanaal"
+    }
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "Stakenborgweg — het verdwenen moeras",
+   "focus": "natuur",
+   "km": 4.8,
+   "lat": 53.014184,
+   "lng": 7.177169,
+   "audio": "https://2route.nl/audio/routes/bourtange/10.mp3",
+   "tekst": "Kijk eens om je heen: akkers, een rechte weg, een enkele boerderij. En toch stond hier ooit water tot aan de horizon. Deze weg heet de Stakenborgweg, naar het veenontginningsgebied Stakenborg dat hier lag — en Stakenborg lag in het Bourtangermoeras.\n\nDat moeras was op zijn grootst zo'n drieduizend vierkante kilometer: Oost-Drenthe, Oost-Groningen en het Duitse Emsland, aan elkaar geregen tot één natte wereld. Het hoogveen begon te groeien rond vijfduizend achthonderdvijftig voor Christus, onder invloed van de sterk stijgende zeespiegel. Daarna groeide het door, eeuw na eeuw, tot het vrijwel onbegaanbaar was. En precies dat maakte het kostbaar. Ruwweg van vijftienhonderdtachtig tot achttienhonderdvijftig was dit veen de natuurlijke verdedigingslinie van de oostgrens. Geen muur, geen leger: moeras. Alleen op de schaarse droge doorgangen stonden vestingen. Bourtange hier, Oudeschans en Nieuweschans verderop.\n\nVan dat immense moeras is nu bijna niets meer over. Fragmenten, meer niet. Het veen dat als laatste op Nederlands grondgebied werd afgegraven, maakt tegenwoordig deel uit van natuurgebied het Bargerveen, een eind verderop in Drenthe.\n\nZo loop je hier over de bodem van iets wat verdwenen is: het landschap dat Bourtange onneembaar maakte, is zelf het eerst gesneuveld. Vlak voor je, aan een laantje met een oude naam, wacht een plek waar dat verdwijnen heel persoonlijk wordt.",
+   "bronnen": [
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtangermoeras",
+     "naam": "Wikipedia — Bourtangermoeras"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Bourtangerkanaal",
+     "naam": "Wikipedia — Bourtangerkanaal (veldnaam Stakenborg)"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Stakenborgweg"
+    }
+   ]
+  },
+  {
+   "nr": 11,
+   "titel": "De joodse begraafplaats",
+   "focus": "mensen",
+   "km": 5.355,
+   "lat": 53.013593,
+   "lng": 7.183798,
+   "audio": "https://2route.nl/audio/routes/bourtange/11.mp3",
+   "tekst": "Hier mag je even zachtjes doen. Vlak naast het pad, aan de Oude Jodenkerkhoflaan, ligt de joodse begraafplaats van Bourtange. Beth Chajiem heet zo'n plek: het huis van het leven.\n\nZe bestond al in achttienhonderdzestien. De oudste grafsteen dateert van achttienhonderdtweeënzestig, en er staan er nog negen. Negen. Ook hier speelde het water mee: de grond was zo drassig dat kisten bij een begrafenis onder water moesten worden geduwd tot ze niet meer opdreven. Over de oorspronkelijke graven is vermoedelijk later een nieuwe laag aarde aangebracht, en mede door die nattigheid kocht men in achttienhonderdtweeënnegentig grond voor een nieuwe begraafplaats in Hebrecht, halverwege Vlagtwedde.\n\nDe eerste vestiging van joden in Bourtange wordt vermeld in zeventienhonderdtweeënveertig. In achttienhonderddertien telde het dorp eenentwintig joodse inwoners, in negentienhonderddertig vijfenvijftig. Hun synagoge uit achttienhonderdtweeënveertig staat binnen de vesting, zo'n negenhonderddertig meter hiervandaan; de route komt er niet langs, maar het verhaal hoort hier. Het is de enige goed bewaard gebleven synagoge langs de hele Nederlands-Duitse grens. In negentienhonderdnegenenzestig werd ze aangekocht door de Stichting Vesting Bourtange, in negentienhonderddrieëntachtig gerestaureerd en op drie april negentienhonderdnegenentachtig geopend als synagogaal museum. Sinds tweeduizendvier is er ook weer een mikwe, een ritueel bad.\n\nWat er tussen die jaartallen gebeurde, staat op een gedenkteken: zesenveertig gedeporteerden van de joodse gemeente Bourtange-Vlagtwedde. Vier mensen overleefden als onderduiker. Eén keerde terug uit Auschwitz-Birkenau.\n\nEn Ella en Mozes Braaf, van dat huisje op de hoek bij de galg, hoorden bij dit verhaal. Zij kwamen terug.\n\nEen kleine kilometer nog, en dan sluit de lus zich.",
+   "bronnen": [
+    {
+     "url": "https://nl.wikipedia.org/wiki/Joodse_begraafplaats_(Bourtange)",
+     "naam": "Wikipedia — Joodse begraafplaats (Bourtange)"
+    },
+    {
+     "url": "https://joodsgroningen.nl/bourtange/",
+     "naam": "Joods Groningen — historie der Joden in Bourtange"
+    },
+    {
+     "url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+     "naam": "Visit Groningen — routepagina WIW 16 (hoofdbron)"
+    },
+    {
+     "url": "https://www.synagoge-bourtange.nl/korte-geschiedenis/",
+     "naam": "Vereniging van Vrienden der Synagoge Bourtange — korte geschiedenis"
+    },
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "SPiG — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Oude Jodenkerkhoflaan, begraafplaats"
+    }
+   ]
+  },
+  {
+   "nr": 12,
+   "titel": "Slot — over het Smokkelpad",
+   "focus": "geschiedenis",
+   "km": 6.445,
+   "lat": 53.008748,
+   "lng": 7.189652,
+   "audio": "https://2route.nl/audio/routes/bourtange/12.mp3",
+   "tekst": "Het laatste stuk heet het Smokkelpad, en die naam is niet romantisch bedoeld. Smokkel hoorde bij dit dorp. De vesting bloeide van landbouw, handel en militaire activiteit, maar ook van wat er stilletjes de grens over ging.\n\nOok na de Tweede Wereldoorlog bleef die grens scherp. De overgang bij Bourtange was maar een uur in de ochtend en een uur in de avond open, en in negentienhonderddrieënvijftig vroegen honderdvijfenzeventig middenstanders uit de streek om ruimere openingstijden. Ondertussen ging het gewoon door: in negentienhonderdnegenenveertig vond de recherche ruim tweeduizend kilo koffie, verstopt in een aardappelschip dat bij Ter Apel de grens over voer. Tweeduizend kilo koffie. Iemand had dorst.\n\nEn daarmee is de cirkel rond. We begonnen op een zandrug, de enige droge doorgang door een onmetelijk moeras, en in zes en een halve kilometer hebben we alle lagen gehad die er op die rug gestapeld zijn. De schans van Willem van Oranje. De ster die in lagen doorgroeide. De galg langs de weg. De boeren die het moeras leegtrokken. Een gedempt diep en een gedempt kanaal, allebei weer teruggekomen. Negen stenen op een stille begraafplaats. En dan dit pad, waar het grensdorp zijn geld verdiende.\n\nDe vesting die nooit werd ingenomen, ligt er sinds de reconstructie weer bij als in zeventienhonderdtweeënveertig. Terug op de parkeerplaats vind je het Toeristisch Overstappunt en het informatiecentrum, voor wie de vesting nu ook nog van binnen wil zien. Dank je wel dat ik mee mocht lopen. De zandrug onder je voeten blijft liggen waar hij lag, en dat is nog altijd precies de reden dat dit dorp bestaat.",
+   "bronnen": [
+    {
+     "url": "https://www.deverhalenvangroningen.nl/alle-verhalen/van-grenspassen-tot-voetbalyells-het-westerwolds-duitse-grensgebied-in-naoorlogse-jaren",
+     "naam": "De Verhalen van Groningen — het Westerwolds-Duitse grensgebied in naoorlogse jaren"
+    },
+    {
+     "url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
+     "naam": "Visit Groningen — routepagina WIW 16 (hoofdbron)"
+    },
+    {
+     "url": "https://www.vestingsteden.nl/steden/bourtange/",
+     "naam": "Vestingsteden.nl — Bourtange"
+    },
+    {
+     "url": "https://spig.nl/wp-content/uploads/Infobestand-etappe-2-Camino-Westerwolde-Zuid-1.pdf",
+     "naam": "SPiG — infobestand Camino Westerwolde Zuid, etappe 2"
+    },
+    {
+     "url": "https://www.bourtange.nl/geschiedenis-van-bourtange/",
+     "naam": "Bourtange.nl (officiele site) — geschiedenis"
+    },
+    {
+     "url": "https://www.openstreetmap.org/",
+     "naam": "OpenStreetMap — Smokkelpad, TOP Bourtange"
+    }
+   ]
+  }
+ ]
+}

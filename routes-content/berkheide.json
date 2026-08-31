@@ -1,0 +1,680 @@
+{
+ "slug": "berkheide",
+ "provincie": "Zuid-Holland",
+ "naam": "Boswachterspad Berkheide (Hollands Duin)",
+ "lengte_km": 5.93,
+ "duur": "±1,5 uur",
+ "hoofdstukken_n": 11,
+ "beheerder": "Staatsbosbeheer",
+ "gpx_url": "https://www.staatsbosbeheer.nl/-/media/hollands-duin/boswachterspad-berkheide-gpx.gpx",
+ "bron_url": "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
+ "startpunt": "TOP Katwijk, Sportlaan 3, 2225 JM Katwijk aan Zee (informatiepaneel bij de start; oranje paaltjes; schelpenpad met een klein stuk zandpad)",
+ "kaart_js": "/routes-data/berkheide-kaart.js",
+ "lijnen": [
+  [
+   [
+    52.196446,
+    4.386856
+   ],
+   [
+    52.196191,
+    4.38711
+   ],
+   [
+    52.195912,
+    4.387156
+   ],
+   [
+    52.194944,
+    4.386496
+   ],
+   [
+    52.19426,
+    4.386376
+   ],
+   [
+    52.193258,
+    4.384603
+   ],
+   [
+    52.193167,
+    4.384644
+   ],
+   [
+    52.193138,
+    4.384864
+   ],
+   [
+    52.192999,
+    4.384863
+   ],
+   [
+    52.192672,
+    4.383917
+   ],
+   [
+    52.190816,
+    4.380978
+   ],
+   [
+    52.190041,
+    4.380591
+   ],
+   [
+    52.189487,
+    4.380474
+   ],
+   [
+    52.188999,
+    4.379925
+   ],
+   [
+    52.188666,
+    4.379327
+   ],
+   [
+    52.187892,
+    4.378517
+   ],
+   [
+    52.187627,
+    4.379368
+   ],
+   [
+    52.187637,
+    4.380178
+   ],
+   [
+    52.187037,
+    4.382573
+   ],
+   [
+    52.187245,
+    4.383711
+   ],
+   [
+    52.187066,
+    4.384745
+   ],
+   [
+    52.187087,
+    4.385281
+   ],
+   [
+    52.187173,
+    4.385597
+   ],
+   [
+    52.187376,
+    4.385804
+   ],
+   [
+    52.187568,
+    4.386449
+   ],
+   [
+    52.187552,
+    4.387639
+   ],
+   [
+    52.187621,
+    4.387779
+   ],
+   [
+    52.187121,
+    4.387893
+   ],
+   [
+    52.18647,
+    4.388368
+   ],
+   [
+    52.186156,
+    4.388719
+   ],
+   [
+    52.18645,
+    4.389105
+   ],
+   [
+    52.186577,
+    4.389589
+   ],
+   [
+    52.186492,
+    4.391029
+   ],
+   [
+    52.186647,
+    4.391493
+   ],
+   [
+    52.187031,
+    4.392124
+   ],
+   [
+    52.187345,
+    4.393253
+   ],
+   [
+    52.187969,
+    4.39453
+   ],
+   [
+    52.188079,
+    4.39514
+   ],
+   [
+    52.18749,
+    4.399329
+   ],
+   [
+    52.187169,
+    4.400321
+   ],
+   [
+    52.187481,
+    4.400734
+   ],
+   [
+    52.187646,
+    4.401392
+   ],
+   [
+    52.188052,
+    4.401924
+   ],
+   [
+    52.189165,
+    4.402419
+   ],
+   [
+    52.189718,
+    4.402219
+   ],
+   [
+    52.190178,
+    4.402562
+   ],
+   [
+    52.190942,
+    4.403356
+   ],
+   [
+    52.191174,
+    4.404035
+   ],
+   [
+    52.191194,
+    4.404574
+   ],
+   [
+    52.191316,
+    4.404966
+   ],
+   [
+    52.191282,
+    4.405488
+   ],
+   [
+    52.191401,
+    4.405604
+   ],
+   [
+    52.192057,
+    4.403977
+   ],
+   [
+    52.192796,
+    4.401398
+   ],
+   [
+    52.193218,
+    4.400384
+   ],
+   [
+    52.193357,
+    4.399795
+   ],
+   [
+    52.193438,
+    4.398399
+   ],
+   [
+    52.193002,
+    4.396109
+   ],
+   [
+    52.192748,
+    4.395467
+   ],
+   [
+    52.192432,
+    4.394814
+   ],
+   [
+    52.191621,
+    4.394044
+   ],
+   [
+    52.19148,
+    4.3937
+   ],
+   [
+    52.191305,
+    4.392966
+   ],
+   [
+    52.191302,
+    4.391347
+   ],
+   [
+    52.191203,
+    4.3906
+   ],
+   [
+    52.190538,
+    4.389189
+   ],
+   [
+    52.190856,
+    4.389046
+   ],
+   [
+    52.191299,
+    4.389042
+   ],
+   [
+    52.192085,
+    4.389541
+   ],
+   [
+    52.192076,
+    4.389106
+   ],
+   [
+    52.192595,
+    4.387674
+   ],
+   [
+    52.192632,
+    4.386607
+   ],
+   [
+    52.192822,
+    4.385845
+   ],
+   [
+    52.192765,
+    4.385046
+   ],
+   [
+    52.19313,
+    4.384886
+   ],
+   [
+    52.193216,
+    4.384604
+   ],
+   [
+    52.193479,
+    4.384913
+   ],
+   [
+    52.194269,
+    4.386378
+   ],
+   [
+    52.194995,
+    4.386513
+   ],
+   [
+    52.195927,
+    4.387152
+   ],
+   [
+    52.196235,
+    4.387091
+   ],
+   [
+    52.196451,
+    4.386864
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "TOP Katwijk — de start bij het informatiepaneel",
+   "focus": "geschiedenis",
+   "km": 0.0,
+   "lat": 52.196446,
+   "lng": 4.386856,
+   "paras": [
+    "Welkom in Katwijk aan Zee, aan de rand van het Nationaal Park Hollandse Duinen. Je staat bij het informatiepaneel op TOP Katwijk, en dit is het beginpunt van het Boswachterspad Berkheide van Staatsbosbeheer. De lus is bijna zes kilometer lang — nagemeten langs de track zo'n vijf komma negen kilometer — en je vindt de weg door de oranje paaltjes te volgen, over schelpenpad met een klein stuk zandpad.",
+    "Kijk eens om je heen. Het lijkt hier pure vrije natuur: zeewind, zand, helmgras. Maar schijn bedriegt, en dat is meteen de rode draad van deze wandeling. Op nog geen zes kilometer stapelt zich hier eeuwenlange kustgeschiedenis op, en het landschap zelf is grotendeels mensenwerk. Bijna alles wat je straks ziet, is ooit door handen gemaakt.",
+    "Je loopt door het duingebied Berkheide, ook wel de Katwijkse Zuidduinen genoemd. Sinds achttienhonderdachtenzeventig dient dit duin als bron van drinkwater. Maar de geschiedenis reikt veel verder terug: naar de Romeinse tijd, toen de Oude Rijn even verderop bij het dorp uitmondde, en vooruit naar de Atlantikwall van de twintigste eeuw. En tussen die twee uitersten door leefden de mensen van het zeedorp. Ze boetten en droogden hun netten in het duin, lieten er kleinschalig vee grazen en teelden aardappelen op kleine akkertjes. Juist dat eeuwenoude gebruik vormde het bloemrijke zeedorpenlandschap waar we zo meteen doorheen lopen.",
+    "Volg de oranje paaltjes maar. Onderweg laat ik je zien wat er onder elke voetstap verborgen ligt."
+   ],
+   "audio": "/audio/routes/berkheide/01.mp3",
+   "bronnen": [
+    [
+     "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
+     "Staatsbosbeheer — Boswachterspad Berkheide (beheerder/routepagina)"
+    ],
+    [
+     "https://canonvankatwijk.nl/verdiepingsverhaal/waterwinning-in-berkheide/",
+     "Canon van Katwijk — Waterwinning in Berkheide"
+    ],
+    [
+     "https://www.vandergoesengroot.nl/bijzondere-vegetaties-van-het-zeedorpenlandschap-in-hollands-duin/",
+     "Van der Goes en Groot — Zeedorpenlandschap Hollands Duin"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "De aardappelakkertjes en de zandwallen",
+   "focus": "mensen",
+   "km": 0.54,
+   "lat": 52.192672,
+   "lng": 4.383917,
+   "paras": [
+    "Daar zijn ze al, die handen waar ik het over had. Het pad waar je nu op loopt, gaat over de vroegere aardappelakkers, en als je goed kijkt naar de glooiingen vlak naast je, zie je de lage wallen liggen die de akkertjes van elkaar scheiden.",
+    "Op het eerste gezicht lijkt het gewoon duin. Maar deze kleine, van elkaar gescheiden akkertjes zijn mensenwerk. Het zijn voormalige landbouwakkertjes, verspreid door het duin, en ze horen bij een manier van leven die hier lang heeft standgehouden. Kijk maar hoe klein ze zijn.",
+    "Hier werden visnetten geboet en te drogen gelegd. Hier graasde kleinschalig vee tussen het zand. En hier, in dat schrale, mulle duinzand, werden aardappelen geteeld. Geen groot landbouwbedrijf, maar losse lapjes grond van mensen die van de zee en van het duin tegelijk moesten leven.",
+    "En dan het mooiste. Precies dat kleinschalige gebruik heeft de natuur hier gemaakt tot wat ze is. De betreding, de kleinschalige verstoring, de bemesting van weleer — samen houden ze de bijzondere begroeiing van dit duin tot op de dag van vandaag in stand. Het is dus niet zo dat de mens hier de natuur heeft verdrongen. Hij heeft haar juist mede geschapen.",
+    "Loop maar rustig door over de oude akkers. Het landschap draait zo meteen mee, en het duin wordt een flink stuk ruiger."
+   ],
+   "audio": "/audio/routes/berkheide/02.mp3",
+   "bronnen": [
+    [
+     "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
+     "Staatsbosbeheer — Boswachterspad Berkheide (beheerder/routepagina)"
+    ],
+    [
+     "https://www.vandergoesengroot.nl/bijzondere-vegetaties-van-het-zeedorpenlandschap-in-hollands-duin/",
+     "Van der Goes en Groot — Zeedorpenlandschap Hollands Duin"
+    ],
+    [
+     "https://www.natuurgebiedinbeeld.nl/natuurgebied/zuid-holland/hollands-duin/berkheide/",
+     "Natuurgebied in Beeld — Berkheide"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Berkheide, het wilde duin",
+   "focus": "natuur",
+   "km": 1.11,
+   "lat": 52.188666,
+   "lng": 4.379327,
+   "paras": [
+    "Voel je dat het ruiger wordt? De akkertjes liggen achter je, en hier opent Berkheide zich in zijn volle breedte. Dit is een overwegend open duinlandschap, met vooral duingraslanden en hier en daar wat struweel.",
+    "Het reliëf is groter dan in het naburige Meijendel: hogere duinen, en meer duinvalleien. En er zit een patroon in dat je gaandeweg gaat herkennen — evenwijdige duinenrijen, met opeenvolgende hoge paraboolduinen en daartussen vochtige laagten. Als je even stilstaat en over de heuvels heen kijkt, zie je die rijen achter elkaar weglopen. Blijf hier eens heel even staan luisteren.",
+    "Zulk open duin blijft niet vanzelf open. Waar vroeger het kleinschalige vee de begroeiing kort hield, doen nu Schotse Hooglanders het werk: een deel van dit gebied wordt begraasd, precies om dat open, kruidenrijke karakter te bewaren. Zonder die grote grazers zou het struweel het overnemen.",
+    "En het duin is bewoond. Er leven hier veel reeën, en ook de vos wordt regelmatig gesignaleerd. Loop je in de schemeruren — vroeg in de ochtend of tegen zonsondergang — dan is de kans het grootst dat er ineens eentje voor je pad langs stapt. Ze hebben jou trouwens allang gezien.",
+    "Houd je ogen open. En kijk zo meteen eens omlaag, want vlak bij je voeten gebeurt in dit duin iets bijzonders."
+   ],
+   "audio": "/audio/routes/berkheide/03.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurgebiedinbeeld.nl/natuurgebied/zuid-holland/hollands-duin/berkheide/",
+     "Natuurgebied in Beeld — Berkheide"
+    ],
+    [
+     "https://duinbehoud.nl/duinen/zuid-holland/katwijk-wassenaar/",
+     "Stichting Duinbehoud — Katwijk/Wassenaar"
+    ],
+    [
+     "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
+     "Staatsbosbeheer — Boswachterspad Berkheide (beheerder/routepagina)"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "De duinroos en de bloemen van het zeedorpenlandschap",
+   "focus": "natuur",
+   "km": 1.64,
+   "lat": 52.187133,
+   "lng": 4.384447,
+   "paras": [
+    "Daar is het al. Kijk naar de grond, naar wat er tussen de grassen staat. In het voorjaar kleuren deze duinen wit van de bloeiende duinroos, en dat is nog maar het begin.",
+    "Het zeedorpenlandschap dat je nu doorkruist heeft zeer goed ontwikkelde, kruidenrijke vegetaties met een grote soortenrijkdom. Tussen de halmen groeien wondklaver, nachtsilene, kleine steentijm, echt bitterkruid, hondskruid en liggende asperge. En voor wie geduldig zoekt zijn er zeldzaamheden: bitterkruidbremraap, blauwe bremraap, kegelsilene, bleek schildzaad en liggend bergvlas. Ga eens door je knieën. Dan pas zie je het.",
+    "En nu komt het terug, dat idee van daarnet. Die rijkdom is geen toeval en geen ongerepte natuur. Het is precies dezelfde betreding, dezelfde kleinschalige verstoring en dezelfde bemesting van de akkertjes waar je zojuist overheen liep, die deze vegetatie mede in stand houden. De duinen bij Katwijk zijn een grote plek met goed ontwikkeld, kalkrijk duingrasland — en dat is uit dat eeuwenlange gebruik voortgekomen.",
+    "Denk daar even over na terwijl je doorloopt. Als de mensen hier nooit hun aardappels hadden geteeld, nooit hun netten hadden gedroogd en nooit hun vee hadden laten lopen, dan had deze bloemenrijkdom er niet gestaan. Elke bloem aan je voeten is een naklank van dat werk.",
+    "En terwijl je zo laag bij de grond kijkt, loop je over iets wat nog veel dieper zit. Zet nog een paar passen, dan vertel ik je wat er onder dit zand gebeurt."
+   ],
+   "audio": "/audio/routes/berkheide/04.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurgebiedinbeeld.nl/natuurgebied/zuid-holland/hollands-duin/berkheide/",
+     "Natuurgebied in Beeld — Berkheide"
+    ],
+    [
+     "https://www.vandergoesengroot.nl/bijzondere-vegetaties-van-het-zeedorpenlandschap-in-hollands-duin/",
+     "Van der Goes en Groot — Zeedorpenlandschap Hollands Duin"
+    ],
+    [
+     "https://duinbehoud.nl/duinen/zuid-holland/katwijk-wassenaar/",
+     "Stichting Duinbehoud — Katwijk/Wassenaar"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "De onzichtbare kraan van de regio — drinkwater uit het duin",
+   "focus": "geschiedenis",
+   "km": 2.21,
+   "lat": 52.186505,
+   "lng": 4.3904,
+   "paras": [
+    "Onder je voeten ligt de belangrijkste reden dat dit duin er nog is: het drinkwater.",
+    "Berkheide, de Katwijkse Zuidduinen, wordt al sinds achttienhonderdachtenzeventig gebruikt als bron van drinkwater. De Leidse Duinwatermaatschappij tapte hier grondwater af via een reservoir en een kanaal. Dat kanaal groeide snel: bij de start nog geen kilometer lang, en aan het begin van de twintigste eeuw al ruim twee kilometer. En toen liep het mis.",
+    "Er ging meer water uit het duin dan er natuurlijk in kwam. Verdroging dreigde, en daarmee dreigde het hele landschap waar je nu doorheen loopt te veranderen. Vanaf negentienhonderdveertig werd daarom iets nieuws geprobeerd: oppervlaktewater het duin in leiden. Zo ontstonden de eerste infiltratieplassen. Berkheide was het eerste duingebied waar dit werd toegepast.",
+    "Sinds negentienhonderdachtentachtig wordt er geïnfiltreerd met voorgezuiverd Maaswater. Het duin doet dienst als een reusachtig zandfilter, en het werkt: waterbedrijf Dunea levert drinkwater aan ongeveer één komma drie miljoen mensen in het westelijk deel van Zuid-Holland. Naast Berkheide beheert Dunea ook Meijendel en Solleveld, de duingebieden tussen Monster en Katwijk.",
+    "Dus ja, dit duin is natuur. Maar het is tegelijk infrastructuur, en het is bewaard gebleven omdat er water in zit. Dat is misschien wel de nuchterste bladzijde van dit hele verhaal.",
+    "En bij het grote water hier verderop gebeurt in de winter iets moois. Loop maar door, en luister vooral."
+   ],
+   "audio": "/audio/routes/berkheide/05.mp3",
+   "bronnen": [
+    [
+     "https://canonvankatwijk.nl/verdiepingsverhaal/waterwinning-in-berkheide/",
+     "Canon van Katwijk — Waterwinning in Berkheide"
+    ],
+    [
+     "https://www.dunea.nl/duinen/duingebieden",
+     "Dunea — Duingebieden (Solleveld, Meijendel, Berkheide)"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "Vogels en de seizoenen in het duin",
+   "focus": "natuur",
+   "km": 2.73,
+   "lat": 52.187788,
+   "lng": 4.397132,
+   "paras": [
+    "Zie je het water liggen? In de wintermaanden verzamelen zich bij dat grote meer wilde zwanen, brilduikers en allerlei soorten eenden. Het duin verandert per seizoen helemaal van gezicht, en dit is het seizoen waarin het meeste te zien is voor wie stil blijft staan.",
+    "In de trektijd wordt het boven je hoofd nog drukker. Dit is een goede plek om vogeltrek te zien: spreeuwen, kramsvogels en koperwieken komen over, vaak in losse golven achter elkaar. Zet je capuchon eens af, want je hoort ze meestal eerder dan je ze ziet. Hoor je dat?",
+    "Ook wie laag bij de grond blijft kijken, komt aan zijn trekken. Tot de vogels van Berkheide horen de waterral, de blauwborst en de roodborsttapuit. Ze houden zich schuil in het struweel en de begroeiing langs het water.",
+    "En daar hoort één afspraak bij, want dit duin is een kwetsbaar broedgebied. Honden moeten hier tussen vijftien maart en vijftien augustus aangelijnd zijn. Loop je met een hond, dan weet je het nu. En dan nog een tip voor wie geduld heeft. Wie vroeg op de dag loopt, of juist laat, maakt de meeste kans om een ree of een vos tegen te komen. Het duin geeft zijn beste beelden op de randen van de dag.",
+    "Vanaf hier draait de route langzaam terug richting kust. En daar wacht een verhaal dat veel verder teruggaat dan zwanen en waterrallen."
+   ],
+   "audio": "/audio/routes/berkheide/06.mp3",
+   "bronnen": [
+    [
+     "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
+     "Staatsbosbeheer — Boswachterspad Berkheide (beheerder/routepagina)"
+    ],
+    [
+     "https://www.natuurgebiedinbeeld.nl/natuurgebied/zuid-holland/hollands-duin/berkheide/",
+     "Natuurgebied in Beeld — Berkheide"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "Katwijk, de monding van de Oude Rijn",
+   "focus": "geschiedenis",
+   "km": 3.3,
+   "lat": 52.189647,
+   "lng": 4.402212,
+   "paras": [
+    "Nu moet ik eerlijk tegen je zijn, want wat ik je hierna vertel kun je niet zien. Niet vanaf deze plek, en eigenlijk nergens meer.",
+    "Op zo'n twee kilometer hiervandaan, naar het noordwesten, bij Katwijk aan Zee, lag in de Romeinse tijd de monding van de Oude Rijn. Die rivier vormde de noordgrens van het Romeinse Rijk: de limes. En bij die monding stond een Romeins limesfort, de Brittenburg. Een vierkant bouwwerk van ongeveer vijfenzeventig bij vijfenzeventig meter, met ronde torens.",
+    "Hoogstwaarschijnlijk was dit het meest westelijke fort van de Romeinse limes aan de Rijnmonding. Mogelijk was het het castellum dat bekendstond als Lugdunum Batavorum, al is die identificatie onzeker.",
+    "En dan het punt. De zee heeft het opgeslokt. Het fort is in de loop der eeuwen door de zee verzwolgen en ligt nu vóór de kust in het water, ruim buiten deze wandeling. De route komt er niet langs, en je zou er ook niets van zien als je er pal boven stond. Het ligt ergens daar achter de branding, onvindbaar onder zand en water. Maar heel soms gaf de zee het even terug.",
+    "In de vijftiende, zestiende en zeventiende eeuw was de ruïne na zware stormen zichtbaar op het strand tussen Katwijk en Noordwijk. De eigenlijke ontdekking viel in vijftienhonderdtwintig, toen een storm de hele ruïne blootlegde. Daarna nam de zee hem weer mee.",
+    "Loop maar door, het pad gaat nu klimmen. Straks sta je op het hoogste punt van de hele provincie."
+   ],
+   "audio": "/audio/routes/berkheide/07.mp3",
+   "bronnen": [
+    [
+     "https://www.romeinen.nl/weten/nederland-in-de-romeinse-tijd/zuid-holland/katwijk-brittenburg",
+     "Romeinen.nl (Romeinse Limes Nederland) — Katwijk-Brittenburg"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Brittenburg",
+     "Wikipedia — Brittenburg (Romeinse limesvesting, in zee verdwenen; 'ontdekking' 1520)"
+    ]
+   ],
+   "afstand_onderwerp_m": 2200
+  },
+  {
+   "nr": 8,
+   "titel": "Het Vlaggeduin — hoogste punt van Zuid-Holland",
+   "focus": "geschiedenis",
+   "km": 3.85,
+   "lat": 52.192409,
+   "lng": 4.402908,
+   "paras": [
+    "Adem even uit. Je staat op het Vlaggeduin, en met zevenendertig meter boven NAP is dit het hoogste punt van de provincie Zuid-Holland. Het hoogste duin van Zuid-Holland ook, en het geldt als een van de mooiste zeedorpenlandschappen.",
+    "Draai eens rond. Je ziet de oude watertoren en de witte kerk van Katwijk, de soefitempel, de monumentale Duitse bunker, en bij helder weer de zee. Ergens in dat water ligt de Brittenburg waar ik je net over vertelde. Je kijkt er nu overheen zonder er iets van te zien.",
+    "En dan die betonnen koepel op de top. Dat is geen uitkijkpunt voor wandelaars. Het is een waarnemingspost, omstreeks negentienhonderdtweeënveertig gebouwd in opdracht van de Duitse bezetter, als onderdeel van de Stützpunktgruppe Katwijk-Noordwijk van de Atlantikwall. En nu het merkwaardige eraan.",
+    "De post was er niet om de zee in de gaten te houden. Hij diende om een aanval vanaf de landzijde te signaleren. De bezetter keek hier dus met zijn rug naar het strand, het binnenland in. Boven de grond zie je de zeskantige koepel. Daaronder zitten twee ondergrondse vertrekken van elk ongeveer drie bij drie komma acht meter, met muren van vijfenzestig centimeter dik. Sinds negentienhonderdachtennegentig is het een rijksmonument.",
+    "Neem het uitzicht nog even mee. Want deze post stond hier niet alleen, en wat er een kilometer verderop in het dorp gebeurde, is een stuk grimmiger."
+   ],
+   "audio": "/audio/routes/berkheide/08.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Vlaggeduin",
+     "Wikipedia — Vlaggeduin"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Waarnemingspost_(Katwijk)",
+     "Wikipedia — Waarnemingspost (Katwijk) / rijksmonument 509336"
+    ],
+    [
+     "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
+     "Staatsbosbeheer — Boswachterspad Berkheide (beheerder/routepagina)"
+    ],
+    [
+     "https://duinenenmensen.nl/hotspot-vlaggenduin-10-soorten-in-beeld/",
+     "Duinen en mensen — Hotspot Vlaggeduin"
+    ]
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "De Atlantikwall en de oorlog in Katwijk",
+   "focus": "mensen",
+   "km": 4.56,
+   "lat": 52.191621,
+   "lng": 4.394044,
+   "paras": [
+    "Grimmiger, ja. Die waarnemingspost was geen losse post. Katwijk, Noordwijk en Valkenburg vormden samen Stützpunktgruppe Katwijk, en die bestond uit meer dan dertig afzonderlijke Stützpunkte en Widerstandsnesten. Begin negentienhonderdtweeënveertig lagen er in het gebied Noordwijk-Katwijk zo'n zevenhonderd Duitse militairen, bezig met kustbewaking.",
+    "Voor de mensen die hier woonden veranderde alles. In juni negentienhonderdtweeënveertig werden de bewoners uit het Sperrgebied geëvacueerd. Weg uit hun eigen huizen, weg uit hun eigen dorp.",
+    "En dan het dorp aan zee, ongeveer een kilometer hiervandaan naar het noorden. Je ziet het van hier uit niet liggen, maar daar werd in juni negentienhonderddrieënveertig een strook van honderdvijftig meter aan huizen gesloopt, alleen om vrij schootsveld te maken. Over de boulevard van Katwijk en Noordwijk verrees een pantsermuur, bedoeld om aanvallers te vertragen. Zelfs de kerk ontkwam er niet aan.",
+    "De toren van de oude Andreaskerk moest eraan geloven. De kerk werd met sloop bedreigd, maar een slimme aannemer redde het gebouw door alleen de toren tot dakhoogte af te breken. Genoeg om aan het Duitse bevel te voldoen, net niet genoeg om de kerk te verliezen. In negentienhonderdtweeënvijftig werd de toren in ere hersteld.",
+    "Van alle oude gebouwen aan de boulevard bleven er na de oorlog vier over: Savoy, de Oude Kerk, de vuurtoren en gebouw de Waaier. De rest was verdwenen.",
+    "Loop maar verder het duin in. Want een kwart eeuw later werd hier, tussen dezelfde duinen, iets heel anders neergezet."
+   ],
+   "audio": "/audio/routes/berkheide/09.mp3",
+   "bronnen": [
+    [
+     "https://katwijkinoorlog.nl/katwijk-en-de-atlantikwall/",
+     "Katwijk in Oorlog — Katwijk en de Atlantikwall"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Andreaskerk_(Katwijk)",
+     "Wikipedia — Andreaskerk (Katwijk)"
+    ]
+   ],
+   "afstand_onderwerp_m": 1200
+  },
+  {
+   "nr": 10,
+   "titel": "De Soefitempel Universel Murad Hassil",
+   "focus": "architectuur",
+   "km": 5.21,
+   "lat": 52.192449,
+   "lng": 4.388214,
+   "paras": [
+    "Kijk eens naar het westen. Op zo'n honderddertig meter van het pad staat tussen de duinen een vierkant gebouw met een gouden koepel — en het is even wennen. De route loopt er vlak langs, maar niet naartoe: je ziet het dus wel, en je komt er niet.",
+    "Dit is de Soefitempel Universel Murad Hassil, die in negentienhonderdzeventig haar deuren opende voor de soefibeweging. Het adres is Zuidduinseweg vijf. Ontwerp en oplevering vielen in negentienhonderdnegenenzestig en negentienhonderdzeventig, en de architect was Sam Josua van Embden.",
+    "Binnenin ligt een grote zaal van dertien bij dertien meter, bestemd voor zo'n honderdveertig bezoekers, uitgevoerd in betonsteen. En daarboven die goudkleurige kunststof koepel, die je van hier uit ziet oplichten. Zo'n koepel is uniek in Nederland. En dan de naam.",
+    "Murad Hassil betekent 'wens vervuld'. De naam verwijst naar de grondlegger van de beweging, de mysticus en musicus Hazrat Inayat Khan, die hier in deze duinen ooit een bijzondere mystieke ervaring had. Niet in een tempel, niet in een zaal, maar buiten in het zand tussen het helmgras. Hetzelfde zand waar de aardappelakkers lagen, waar de waarnemingspost in staat, waar het drinkwater doorheen zakt.",
+    "Dat is het vreemde en het mooie van dit duin tegelijk. Dezelfde paar vierkante kilometer zijn akker geweest, waterwinning, verdedigingslinie en gebedsplek.",
+    "Nog een paar honderd meter. Dan is de cirkel rond."
+   ],
+   "audio": "/audio/routes/berkheide/10.mp3",
+   "bronnen": [
+    [
+     "https://www.geschiedenisvanzuidholland.nl/verhalen/verhalen/de-universel-murad-hassil-in-katwijk-aan-zee/",
+     "Geschiedenis van Zuid-Holland — De Universel Murad Hassil"
+    ],
+    [
+     "https://www.architectuur.org/bouwwerk/198/Soefi_tempel.html",
+     "Architectuurgids — Soefi-tempel (S.J. van Embden)"
+    ]
+   ],
+   "afstand_onderwerp_m": 131
+  },
+  {
+   "nr": 11,
+   "titel": "Terug bij de start — de cirkel rond",
+   "focus": "geschiedenis",
+   "km": 5.76,
+   "lat": 52.194995,
+   "lng": 4.386513,
+   "paras": [
+    "En daar is het informatiepaneel weer. De lus sluit zich: je bent bijna terug op TOP Katwijk, waar je je eerste stappen op het schelpenpad zette. Kijk nog één keer om je heen.",
+    "In deze kleine zes kilometer heb je een dwarsdoorsnede van tweeduizend jaar kustgeschiedenis gelopen. Ergens daar in zee ligt de Romeinse Brittenburg bij de oude Rijnmonding, onbereikbaar en onzichtbaar. Onder je voeten liggen de aardappelakkertjes en de zandwallen van het zeedorpenlandschap, gevormd door mensen die van de zee en van het duin tegelijk leefden. Dieper nog zit het water, dat dit duin sinds achttienhonderdachtenzeventig tot reservoir maakt en er mede voor zorgde dat het bewaard bleef. En hoog boven alles uit staat de waarnemingspost op het Vlaggeduin uit negentienhonderdtweeënveertig, die zwijgt over wat ze heeft gezien.",
+    "Dat was de rode draad waarmee we begonnen. Hier is bijna niets zuivere natuur, en juist daarom is het zo rijk.",
+    "Vandaag doet ditzelfde duin dienst als natuurherstelgebied binnen Nationaal Park Hollandse Duinen. Schotse Hooglanders houden het open, en in het voorjaar kleurt het wit van de duinroos. Blijf nog heel even staan.",
+    "Want wie in de schemer nog wat blijft dralen, ziet met een beetje geluk een ree tussen de akkertjes waar ooit de aardappels stonden. Dat is misschien wel het mooiste beeld dat dit duin te bieden heeft: een wild dier op een oude akker.",
+    "Bedankt voor het meelopen."
+   ],
+   "audio": "/audio/routes/berkheide/11.mp3",
+   "bronnen": [
+    [
+     "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
+     "Staatsbosbeheer — Boswachterspad Berkheide (beheerder/routepagina)"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Brittenburg",
+     "Wikipedia — Brittenburg"
+    ],
+    [
+     "https://www.vandergoesengroot.nl/bijzondere-vegetaties-van-het-zeedorpenlandschap-in-hollands-duin/",
+     "Van der Goes en Groot — Zeedorpenlandschap Hollands Duin"
+    ],
+    [
+     "https://canonvankatwijk.nl/verdiepingsverhaal/waterwinning-in-berkheide/",
+     "Canon van Katwijk — Waterwinning in Berkheide"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Waarnemingspost_(Katwijk)",
+     "Wikipedia — Waarnemingspost (Katwijk)"
+    ],
+    [
+     "https://www.natuurgebiedinbeeld.nl/natuurgebied/zuid-holland/hollands-duin/berkheide/",
+     "Natuurgebied in Beeld — Berkheide"
+    ]
+   ]
+  }
+ ]
+}

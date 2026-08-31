@@ -1,0 +1,703 @@
+{
+ "slug": "dokkum",
+ "provincie": "Friesland",
+ "naam": "Stadswandeling Dokkum (Vestingstad Dokkum)",
+ "lengte_km": 4.24,
+ "duur": "±1,5 uur",
+ "hoofdstukken_n": 12,
+ "beheerder": "ANWB (routepublicatie); vestingwerken in beheer van gemeente Noardeast-Fryslân",
+ "gpx_url": "https://merk.anwb.nl/m/40614bfd3b96c283/original/Vestingstad-Dokkum-GPX.gpx",
+ "bron_url": "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+ "startpunt": "Parkeerterrein De Harddraver, Harddraversdijk, Dokkum (GPX-start 53.32625, 6.00502)",
+ "kaart_js": "/routes-data/dokkum-kaart.js",
+ "lijnen": [
+  [
+   [
+    53.326245,
+    6.005017
+   ],
+   [
+    53.326245,
+    6.004796
+   ],
+   [
+    53.325948,
+    6.004783
+   ],
+   [
+    53.325928,
+    6.003215
+   ],
+   [
+    53.325794,
+    6.002534
+   ],
+   [
+    53.32541,
+    6.002657
+   ],
+   [
+    53.325426,
+    6.002872
+   ],
+   [
+    53.32511,
+    6.003292
+   ],
+   [
+    53.32501,
+    6.003297
+   ],
+   [
+    53.32487,
+    6.002763
+   ],
+   [
+    53.325041,
+    6.002154
+   ],
+   [
+    53.324681,
+    6.001324
+   ],
+   [
+    53.32367,
+    5.999251
+   ],
+   [
+    53.323501,
+    5.999221
+   ],
+   [
+    53.323242,
+    5.998686
+   ],
+   [
+    53.323148,
+    5.998064
+   ],
+   [
+    53.322807,
+    5.998316
+   ],
+   [
+    53.322732,
+    5.998105
+   ],
+   [
+    53.322864,
+    5.997772
+   ],
+   [
+    53.323155,
+    5.997906
+   ],
+   [
+    53.324633,
+    5.994878
+   ],
+   [
+    53.324416,
+    5.994566
+   ],
+   [
+    53.324552,
+    5.994229
+   ],
+   [
+    53.324782,
+    5.994458
+   ],
+   [
+    53.324764,
+    5.994881
+   ],
+   [
+    53.325297,
+    5.994886
+   ],
+   [
+    53.325255,
+    5.994175
+   ],
+   [
+    53.325299,
+    5.993794
+   ],
+   [
+    53.325381,
+    5.993766
+   ],
+   [
+    53.325491,
+    5.99436
+   ],
+   [
+    53.326458,
+    5.994326
+   ],
+   [
+    53.326649,
+    5.994222
+   ],
+   [
+    53.326821,
+    5.994954
+   ],
+   [
+    53.327116,
+    5.995175
+   ],
+   [
+    53.328253,
+    5.997649
+   ],
+   [
+    53.327618,
+    5.997631
+   ],
+   [
+    53.327401,
+    5.997266
+   ],
+   [
+    53.327033,
+    5.995869
+   ],
+   [
+    53.326844,
+    5.995619
+   ],
+   [
+    53.326841,
+    5.99545
+   ],
+   [
+    53.325295,
+    5.995297
+   ],
+   [
+    53.325231,
+    5.995913
+   ],
+   [
+    53.324715,
+    5.995918
+   ],
+   [
+    53.324927,
+    5.998084
+   ],
+   [
+    53.325919,
+    5.998069
+   ],
+   [
+    53.325963,
+    5.999694
+   ],
+   [
+    53.325533,
+    5.999649
+   ],
+   [
+    53.325553,
+    6.000514
+   ],
+   [
+    53.3253,
+    6.000551
+   ],
+   [
+    53.325483,
+    6.001315
+   ],
+   [
+    53.326156,
+    6.001188
+   ],
+   [
+    53.326199,
+    5.999746
+   ],
+   [
+    53.327227,
+    5.999977
+   ],
+   [
+    53.3271,
+    5.999193
+   ],
+   [
+    53.327164,
+    5.998347
+   ],
+   [
+    53.326967,
+    5.998008
+   ],
+   [
+    53.326993,
+    5.997815
+   ],
+   [
+    53.327677,
+    5.997871
+   ],
+   [
+    53.327726,
+    5.998961
+   ],
+   [
+    53.327896,
+    5.998987
+   ],
+   [
+    53.327896,
+    5.99957
+   ],
+   [
+    53.328067,
+    6.000424
+   ],
+   [
+    53.328254,
+    6.000415
+   ],
+   [
+    53.328192,
+    6.001682
+   ],
+   [
+    53.32685,
+    6.002204
+   ],
+   [
+    53.326428,
+    6.002234
+   ],
+   [
+    53.325793,
+    6.002526
+   ],
+   [
+    53.32593,
+    6.003214
+   ],
+   [
+    53.325948,
+    6.004779
+   ],
+   [
+    53.326243,
+    6.004797
+   ],
+   [
+    53.326244,
+    6.005015
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "Welkom bij De Harddraver",
+   "focus": "mensen",
+   "km": 0.0,
+   "lat": 53.326245,
+   "lng": 6.005017,
+   "paras": [
+    "Welkom in Dokkum, hier in Noardeast-Fryslân. Voor je ligt een wandeling van vier komma twee kilometer, een lus die je over de oude vestingwallen en door het hart van de stad voert. En dat is meteen de rode draad van dit routeboek: die wallen zijn geboren uit angst, ze bleven liggen uit armoede, en vandaag lopen we er overheen alsof het een park is.",
+    "We beginnen hier, op parkeerterrein De Harddraver in het Harddraverspark, op een steenworp van het historische centrum. Sport, horeca, parkeren en toerisme komen hier samen. Maar onder je voeten ligt een verhaal dat teruggaat tot het jaar zevenhonderdvierenvijftig, toen de missionaris Bonifatius bij Dokkum werd vermoord. In twaalfhonderdachtennegentig kreeg de stad stadsrechten, en in de zestiende eeuw kwamen de bolwerken die we straks onder onze schoenen krijgen.",
+    "Kijk voor je vertrekt nog even naar de rand van het park. Daar staat de IJsherberg, een rijksmonument. In de winter was vrijwel elke herberg van Dokkum een ijsherberg: er lag stro uitgespreid, en schaatsers stapten zo van het ijs naar binnen voor iets warms. Ook bij de Aalsumerpoort en de Woudpoort stonden er.",
+    "En dan dit, want het zegt alles over hoe klein deze stad ooit was. Tot negentienhonderdvijfentwintig had Dokkum alleen grondgebied bínnen de bolwerken. Wie de poort uit liep, stond meteen in een andere gemeente. Deze IJsherberg lag in het toenmalige Oostdongeradeel en deed in de Franse tijd zelfs dienst als gemeentehuis van de Mairie Ee.",
+    "Zet je schoenen goed. We lopen zuidwaarts, de wal op."
+   ],
+   "audio": "/audio/routes/dokkum/01.mp3",
+   "bronnen": [
+    [
+     "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+     "ANWB — Stadswandeling Dokkum (hoofdbron route)"
+    ],
+    [
+     "https://www.noardeast-fryslan.nl/ontdek-dokkum",
+     "Gemeente Noardeast-Fryslân — Ontdek Dokkum"
+    ],
+    [
+     "https://www.noardeast-fryslan.nl/harddraverspark-dokkum",
+     "Gemeente Noardeast-Fryslân — Harddraverspark"
+    ],
+    [
+     "https://www.monumenten.nl/monument/13167",
+     "Monumenten.nl — IJsherberg, Harddraversdijk 1"
+    ],
+    [
+     "https://www.in-dokkum.nl/artikelen/nieuws/lezing-geschiedenis-harddraverspark-veel-historische-zaken-zijn-toch-anders-dan-we-dachten/",
+     "In-Dokkum — lezing geschiedenis Harddraverspark (onderzoek De Haan/Banga)"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Zuiderbolwerk — wallen uit angst geboren",
+   "focus": "geschiedenis",
+   "km": 0.47,
+   "lat": 53.324681,
+   "lng": 6.001324,
+   "paras": [
+    "Je staat nu op het Zuiderbolwerk, en onder je schoenen ligt precies datgene waar deze wandeling om draait. Deze Oudnederlandse verdedigingswerken zijn aangelegd tussen vijftienhonderdeenentachtig en vijftienhonderdnegentig. Wie de opdracht gaf, is nooit helemaal uitgemaakt: de Staten van Friesland, of prins Willem van Oranje, op zeven april vijftienhonderdeenentachtig.",
+    "Wat er verrees was hoe dan ook indrukwekkend. Wallen van ruim vijf meter hoog, een gracht van zo'n vierentwintig meter breed, vier toegangspoorten, en kanonnen op zes bastions die ze hier dwingers noemen. En het mooiste komt nog: een aanval op de voltooide vesting is nooit gekomen. Al die aarde, al dat geld, en het bleef stil.",
+    "Dat de wallen er nu nog liggen, danken we aan armoede. Slopen was te duur. In Dokkum vatten ze het samen in één zin: toen onze armoede, nu onze rijkdom.",
+    "Hier aan het Zuiderbolwerk ligt ook de oude begraafplaats, en daar rust iemand met een bizar verhaal. Dirk Rafaelsz Camphuysen, dichter en predikant, geboren in Gorinchem in vijftienhonderdzesentachtig, om zijn remonstrantse ideeën vervolgd en uitgeweken naar Dokkum, waar hij in de vlashandel ging. Hij stierf hier op negen juli zestienhonderdzevenentwintig. En toen begon het pas.",
+    "Een grafdelver groef zijn schedel op en verkocht die. Via een Amsterdamse drukker belandde de schedel bij een predikant in Loosduinen, en pas in achttienhonderddrieëntwintig kwam hij terug bij het stadsbestuur van Dokkum. Op negentien juli achttienhonderdzestig werd hij eindelijk herbegraven bij de rest van zijn gebeente, hier op deze begraafplaats. Op de steen staan de openingswoorden van zijn gedicht: daar moet veel strijd gestreden zijn.",
+    "Loop verder over de wal. Er staat iets groots op je te wachten."
+   ],
+   "audio": "/audio/routes/dokkum/02.mp3",
+   "bronnen": [
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/complexen/470642",
+     "Rijksmonumentenregister — complex Verdedigingswerken Dokkum"
+    ],
+    [
+     "https://dokkum.nl/en/bezienswaardigheid/strongholds-of-the-city/",
+     "Dokkum.nl — de bolwerken van de stad"
+    ],
+    [
+     "https://www.in-dokkum.nl/artikelen/nieuws/langs-de-tijdlijn-van-dokkum-bolwerken-1582/",
+     "In-Dokkum — Langs de tijdlijn: Bolwerken (1582)"
+    ],
+    [
+     "https://www.dodenakkers.nl/letteren/camphuysen.html",
+     "Stichting Dodenakkers — graf Camphuysen"
+    ],
+    [
+     "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+     "ANWB — routebeschrijving (noemt begraafplaats en Camphuysen)"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Korenmolen De Hoop",
+   "focus": "architectuur",
+   "km": 0.82,
+   "lat": 53.322732,
+   "lng": 5.998105,
+   "paras": [
+    "Verderop op diezelfde wal, boven het graf en de gracht uit, doemt korenmolen De Hoop op. Een achtkante bovenkruier met een stelling, hier neergezet in achttienhonderdnegenenveertig, boven op de Zuiderdwinger.",
+    "Dat een molen uitgerekend óp een vestingwal staat, is geen toeval. Dezelfde hoogte die ooit kanonnen droeg, ving later de wind. Hoog boven de daken van Dokkum waait het nu eenmaal het hardst, en zo kreeg de verdediging van de stad er ongemerkt een vreedzaam beroep bij.",
+    "De Hoop is geen stilstaand monument. Hij is maalvaardig en maalt nog graan, tegenwoordig op vrijwillige basis. Er zijn dus mensen die hun vrije zaterdag opgeven om dit houten binnenwerk te laten kraken, de kap op de wind te kruien en het meel warm van de steen te halen. Zonder hen was dit een decorstuk geweest.",
+    "En hij is niet de enige. Op de wallen van Dokkum staan twee korenmolens. Verderop langs deze route, op het Baantjebolwerk, staat zijn jongere broer: Zeldenrust, uit achttienhonderdtweeënzestig. Twee molens op één stadswal, allebei hoog boven de gracht.",
+    "Blijf hier nog even staan en kijk omhoog. Vanaf de grond zie je alleen wieken, maar bedenk wat eronder gebeurt: een as, een groot houten kamwiel, twee zware stenen die langzaam over elkaar draaien. Het is een machine van hout en wind, en hij werkt nog.",
+    "De wal loopt door en buigt naar het westen. Over een kilometer of wat kijk je opnieuw omhoog, want daar wacht de tweede molen al."
+   ],
+   "audio": "/audio/routes/dokkum/03.mp3",
+   "bronnen": [
+    [
+     "https://www.molendatabase.nl/molens/ten-bruggencate-nr-03246",
+     "Nederlandse Molendatabase — De Hoop, Dokkum"
+    ],
+    [
+     "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+     "ANWB — routebeschrijving"
+    ],
+    [
+     "https://dokkum.nl/en/bezienswaardigheid/strongholds-of-the-city/",
+     "Dokkum.nl — de bolwerken van de stad"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "Molen Zeldenrust op het Baantjebolwerk",
+   "focus": "economie",
+   "km": 1.4,
+   "lat": 53.325381,
+   "lng": 5.993766,
+   "paras": [
+    "Daar is hij dan, de jongere broer waar ik het net over had: stellingmolen Zeldenrust, hier op het Baantjebolwerk.",
+    "Hij stamt uit achttienhonderdtweeënzestig, en hij staat er omdat zijn voorganger een jaar eerder tot de grond toe afbrandde. Anders dan De Hoop was Zeldenrust twee dingen tegelijk: koren- én pelmolen. Hij maalde graan tot meel, en hij pelde gerst — de harde vliesjes eraf, gort eruit. Twee ambachten onder één kap, aan de rand van de stad. Toch scheelde het weinig of hij was er niet meer geweest. Molenaar Van Tilburg kocht hem in negentienhonderdtweeënvijftig en verkocht hem veertien jaar later, in slechte staat, aan de VVV van Dokkum. Die zette de schouders eronder. In negentienhonderdnegenenzestig volgde een grote restauratie, en Zeldenrust kon weer malen.",
+    "Daarmee was het niet klaar. In augustus tweeduizendtien werden de roeden gestreken en ging de kap eraf voor grondig herstel. Op twaalf mei tweeduizendelf hing de kap er weer op, en op veertien juli van datzelfde jaar werd de molen officieel opnieuw in bedrijf gesteld. Stel je die dag voor: een stad die naar boven staat te kijken terwijl haar molen weer op gang komt.",
+    "Tegenwoordig is Zeldenrust eigendom van Stichting Monumentenbehoud Noardeast-Fryslân, en net als bij De Hoop zijn het vrijwilligers die de wieken laten draaien. Twee molens, twee keer dezelfde afloop: bijna verloren, en toch gered.",
+    "Vanaf hier buigt de route naar het noorden. We verlaten de wind, en gaan naar het water."
+   ],
+   "audio": "/audio/routes/dokkum/04.mp3",
+   "bronnen": [
+    [
+     "https://legacy.molendatabase.nl/nederland/molen.php?nummer=59",
+     "Nederlandse Molendatabase (legacy) — Zeldenrust, Dokkum"
+    ],
+    [
+     "https://www.molendatabase.nl/molens/ten-bruggencate-nr-03247",
+     "Nederlandse Molendatabase — Zeldenrust, Dokkum"
+    ],
+    [
+     "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+     "ANWB — routebeschrijving (stellingmolen Zeldenrust uit 1862)"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Het Noorderverlaat",
+   "focus": "techniek",
+   "km": 1.87,
+   "lat": 53.328253,
+   "lng": 5.997649,
+   "paras": [
+    "Van wieken naar water. Want wat de molens met de lucht deden, deed dit bouwwerk met het peil. Aan de noordkant van de vesting ligt het Noorderverlaat, een schutsluis uit achttienhonderdzesenzeventig. Hij ligt op zo'n vijfenzeventig meter van het pad, dus je kijkt er naartoe, je loopt er niet overheen.",
+    "De sluis droeg de naam van het waterschap Tusken Waed en Ie, en zijn taak was even simpel als onmisbaar: de waterstand regelen. In negentienhonderdnegenendertig werd hij vernieuwd, zodat hij dat werk kon blijven doen.",
+    "Ernaast staat de sluiswachterswoning, uit hetzelfde jaar als de sluis, en net als de sluis een rijksmonument. Een pand zonder verdieping, met een pannen schilddak, getoogde vensters en een deur in een geprofileerde omlijsting. Eén verdieping, één taak, één huishouden dat 's nachts wist wat het water deed.",
+    "En er hoort nog iets bij deze noordkant, iets wat je nu niet ziet maar wel kunt horen als je je ogen even dichtdoet. Bij de Aalsumerpoort, hier vlakbij, stond vroeger één van de ijsherbergen van Dokkum. Dezelfde soort plek als die IJsherberg waar we onze wandeling begonnen: stro over de drempel, damp op de ruiten, schaatsers die van het ijs naar binnen stampten om bij te komen.",
+    "Water dat je in de zomer moet schutten en dat je in de winter draagt — in deze stad is dat één en hetzelfde water.",
+    "Loop verder langs de wal, naar het westen. Daar wachtte Dokkum ooit op iets veel ergers dan vorst."
+   ],
+   "audio": "/audio/routes/dokkum/05.mp3",
+   "bronnen": [
+    [
+     "https://www.monumenten.nl/monument/13166",
+     "Monumenten.nl — Sluis Noorderverlaat (1876, vernieuwd 1939, Waterschap Tusken Waed en Ie)"
+    ],
+    [
+     "https://www.monumenten.nl/monument/13171",
+     "Monumenten.nl — sluiswachterswoning Noorderverlaat 1876 (rijksmonument)"
+    ],
+    [
+     "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+     "ANWB — routebeschrijving (Noorderverlaat 1876)"
+    ],
+    [
+     "https://www.in-dokkum.nl/artikelen/nieuws/lezing-geschiedenis-harddraverspark-veel-historische-zaken-zijn-toch-anders-dan-we-dachten/",
+     "In-Dokkum — ijsherberg bij de Aalsumerpoort"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "De Hanspoort — het gat in de verdediging",
+   "focus": "geschiedenis",
+   "km": 2.12,
+   "lat": 53.326841,
+   "lng": 5.99545,
+   "paras": [
+    "Aan deze westkant van de stad stond ooit de Hanspoort. Van de stenen poort is niets meer over: de landpoorten van Dokkum werden in het tweede kwart van de negentiende eeuw afgebroken. Maar precies hier ging het in vijftienhonderdtweeënzeventig gruwelijk mis.",
+    "De stad was kort daarvoor ingenomen door geuzen onder hopman Sipke van Scheltema, die Dokkum voor de prins van Oranje wilde houden. Toen kwam het Spaanse ontzet, onder Caspar de Robles: vijfhonderd man voetvolk en zestig ruiters. Van twaalf tot vijftien september braken Waalse troepen in Spaanse dienst, na hevige gevechten, precies hier door bij de poort. Wat daarna gebeurde, heet de Waalse Furie.",
+    "Eenmaal binnen sloegen de Walen iedereen op hun pad dood. De overlevering wil dat de helft van de bevolking omkwam en dat zo'n vierhonderd huizen afbrandden. Er was iemand die het opschreef: ooggetuige Hendrik van Bra, geboren in vijftienhonderdvierenvijftig en gestorven in zestienhonderdtweeëntwintig. Hij noemde het moord en doodslag. Dat een tijdgenoot zoiets vastlegde, is voor die eeuw uitzonderlijk.",
+    "En hier komt de rode draad van deze wandeling terug. De bolwerken waar je vandaag overheen loopt, kwamen er omdat men nooit meer zo'n Waalse Furie wilde meemaken. De angst kwam eerst, de wallen daarna.",
+    "De stad krabbelde snel op. In december van datzelfde jaar vroeg een nieuw stadsbestuur al om vernieuwing van de stadsrechten, die in vijftienhonderdzevenenzeventig werden bevestigd.",
+    "En de poorten leven nog. Elke avond om tien voor tien luiden hier de klokken: nog tien minuten, kom binnen, de stadspoorten gaan dicht. Loop nu de stad in, naar het water waar heel Friesland op wacht."
+   ],
+   "audio": "/audio/routes/dokkum/06.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Waalse_Furie_in_Dokkum",
+     "Wikipedia — Waalse Furie in Dokkum"
+    ],
+    [
+     "https://www.omropfryslan.nl/nl/nieuws/1167865/dokkum-kreeg-bolwerken-na-bloederige-spaanse-inval",
+     "Omrop Fryslân — Dokkum kreeg bolwerken na bloederige Spaanse inval"
+    ],
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/complexen/470642",
+     "Rijksmonumentenregister — afbraak landpoorten"
+    ],
+    [
+     "https://dokkum.nl/en/bezienswaardigheid/strongholds-of-the-city/",
+     "Dokkum.nl — avondklok-traditie 21.50 uur"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "De Zijl — keerpunt van de Elfstedentocht",
+   "focus": "volkscultuur",
+   "km": 2.55,
+   "lat": 53.325098,
+   "lng": 5.998086,
+   "paras": [
+    "Terug in het hart van de stad, en meteen bij het beroemdste water dat Dokkum bezit: De Zijl.",
+    "Deze sluis werd gebouwd in vijftienhonderddrieëntachtig, in dezelfde jaren waarin de bolwerken verrezen waar we net overheen liepen. Eeuwenlang had het getij hier vrij spel. Pas in zeventienhonderdnegenentwintig kwam daar een eind aan, toen ruim tien kilometer naar het oosten het schut- en spuisluizencomplex van de Dokkumer Nieuwe Zijlen werd aangelegd.",
+    "Aan het plein hier stond ooit het Blokhuis, later vervangen door drie zeventiende-eeuwse trapgevels. En om de hoek staat het raadhuis: een stins die in zestienhonderdzes aan het stadsbestuur werd verkocht en vanaf zestienhonderdtien als stadhuis in gebruik was.",
+    "Maar voor heel Friesland betekent dit water iets anders. Hier, in het hart van Dokkum, op het water van De Zijl, ligt het keerpunt van de Elfstedentocht. Tweehonderd kilometer schaatsen, georganiseerd door de Koninklijke Vereniging De Friesche Elf Steden. De Tocht der Tochten.",
+    "Voor het eerst officieel gereden in negentienhonderdnegen, in totaal vijftien keer verreden, en voor het laatst in negentienhonderdzevenennegentig. Denk aan negentienhonderddrieënzestig, toen van de tienduizend deelnemers er negenenzestig de finish haalden. Of aan negentienhonderdzesentachtig, toen de latere koning Willem-Alexander meereed. Hier haalden ze allemaal hun stempel, en hier draaiden ze om, over hetzelfde water terug richting Leeuwarden.",
+    "Kijk nu naar de kade. Daar staan twee bankjes in de vorm van Friese doorlopers, met de punten in de richting die de rijders namen. Ze wijzen nog altijd die kant op.",
+    "Volg ze een stukje, langs het water, naar een huis dat ooit een hele vloot bestuurde."
+   ],
+   "audio": "/audio/routes/dokkum/07.mp3",
+   "bronnen": [
+    [
+     "https://www.friesland.nl/nl/locaties/2570759397/keerpunt-elfstedentocht",
+     "Friesland.nl (Merk Fryslân) — Keerpunt Elfstedentocht"
+    ],
+    [
+     "https://www.friesland.nl/nl/blog/historie/de-geschiedenis-van-de-friese-elf-steden",
+     "Friesland.nl — geschiedenis van de Friese elf steden"
+    ],
+    [
+     "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+     "ANWB — routebeschrijving (De Zijl, raadhuis, Elfstedendetails)"
+    ]
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "Het Admiraliteitshuis",
+   "focus": "geschiedenis",
+   "km": 2.89,
+   "lat": 53.3253,
+   "lng": 6.000551,
+   "paras": [
+    "Datzelfde water dat later schaatsers naar Dokkum bracht, bracht hier eeuwen eerder iets heel anders: een oorlogsvloot. Aan de Diepswal staat het Admiraliteitshuis. Van vijftienhonderdzevenennegentig tot zestienhonderdvijfenveertig was Dokkum de zetel van de Admiraliteit van Friesland, één van de admiraliteitscolleges van de Republiek der Zeven Verenigde Nederlanden. Vanuit deze stad werd geregeld wat een land dat van de zee leefde nodig had: het uitrusten en bemannen van zeeschepen ter verdediging van de Republiek. In zestienhonderdachttien betrok de Admiraliteit een gebouw hier aan de Diepswal, en dat is het pand waar je nu naar kijkt.",
+    "Slechts een klein deel ervan is nog authentiek. Maar het herinnert wel aan de welvarendste periode die deze stad heeft gekend.",
+    "Want daarna liep het anders. De zeeverbinding van Dokkum slibde dicht. En in zestienhonderdvijfenveertig verhuisde de Admiraliteit naar Harlingen. Met dat vertrek begon de tijd die men hier 'arm Dokkum' is gaan noemen. Diezelfde armoede, trouwens, die later de wallen zou redden, want slopen kostte geld dat er niet was. Wat het einde leek van de rijkdom, werd het begin van het behoud.",
+    "Tegenwoordig zitten in dit pand Museum Dokkum en een toeristisch informatiepunt. Wie meer wil weten over de vloot die hier ooit werd uitgerust, kan zo naar binnen stappen.",
+    "Wij lopen door, een paar honderd passen maar, naar een gebouw dat precies laat zien waar Dokkum zijn geld mee verdiende toen de zee was weggevallen."
+   ],
+   "audio": "/audio/routes/dokkum/08.mp3",
+   "bronnen": [
+    [
+     "https://dokkum.nl/en/bezienswaardigheid/admiralty/",
+     "Dokkum.nl — de Admiraliteit"
+    ],
+    [
+     "https://www.vestingsteden.nl/steden/dokkum/",
+     "Vestingsteden.nl — Dokkum"
+    ],
+    [
+     "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+     "ANWB — routebeschrijving (Admiraliteitshuis uit 1618)"
+    ]
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "De Waag — wegen en waken",
+   "focus": "economie",
+   "km": 3.11,
+   "lat": 53.326199,
+   "lng": 5.999746,
+   "paras": [
+    "Een paar passen verder sta je er bijna tegenaan: de Waag.",
+    "Dit gebouw verrees in zeventienhonderdvierenvijftig als boterwaag, op de plek van een voorganger uit vijftienhonderddrieënnegentig. Boter werd hier gewogen en gekeurd voordat ze de stad uit ging — geen zeeschepen meer, maar vaten en gewichten.",
+    "Het aardige aan dit pand is dat het twee dingen tegelijk deed. Aan de noordkant werd gewogen. Aan de zuidkant zat de militaire wacht. Vandaar de spreuk op de gevelsteen: weegt en waakt.",
+    "Die dubbelrol lees je terug in de gevels. Aan de noordkant het wapen van Dokkum, boven de boter. Aan de zuidkant het wapen van Friesland, tussen twee leeuwen, boven de wacht. Handel en verdediging, rug aan rug in één gebouw. Het is bijna een portret van de stad zelf: eerst kijken of het klopt, dan kijken of er iemand aankomt.",
+    "Binnen hangt nog de oude ijzeren waagbalans, met daarop het jaartal vijftienhonderdtweeënzeventig. Datzelfde jaartal dat je aan de westkant van de stad al hoorde, bij de Hanspoort, toen het daar zo verschrikkelijk misging.",
+    "Toen het wegen ophield, bleef het gebouw dienstdoen: stalling voor de brandweerspuiten, politiebureau, oudheidkamer en VVV-kantoor. Nu zit er een grand café in, dus je kunt er zo naar binnen lopen. Sinds elf januari negentienhonderdachtenzestig is het een rijksmonument.",
+    "Nog een klein stukje verder, en de grond onder je voeten begint te stijgen. Daar ligt het oudste verhaal van Dokkum."
+   ],
+   "audio": "/audio/routes/dokkum/09.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Waag_(Dokkum)",
+     "Wikipedia — Waag (Dokkum)"
+    ],
+    [
+     "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
+     "ANWB — routebeschrijving (waagbalans 1572)"
+    ]
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "De Markt — Bonifatius en de terp",
+   "focus": "religie",
+   "km": 3.37,
+   "lat": 53.326967,
+   "lng": 5.998008,
+   "paras": [
+    "Voel je het? De grond loopt hier op. Dat is geen natuurverschijnsel: dit is een terp, en hij ligt hier vanwege een moord. Op vijf juni zevenhonderdvierenvijftig werd bij Dokkum de missionaris Bonifatius vermoord, samen met tweeënvijftig gezellen. Hij was toen een man van in de zeventig.",
+    "Op dat martelveld werd waarschijnlijk direct daarna een hoge terp opgeworpen, voor een gedachteniskerk. Rond elfhonderddrieënzestig werd de heilige plek opgenomen in een premonstratenzer dubbelklooster, dat daarvoor een benedictijner convent was geweest.",
+    "Kijk naar de zuidzijde van de Markt. Daar staat de Grote of Sint-Martinuskerk, op die terp. Vroeger heette ze de cleyne kerk, want op de Markt zelf stond een veel grotere abdijkerk. Toen ze allebei bouwvallig werden, is de abdijkerk gesloopt en zijn haar stenen gebruikt om de kleine kerk te vergroten. In vijftienhonderdeenennegentig was de inmiddels Grote Kerk klaar en werd de hervormde eredienst ingevoerd.",
+    "Wie Bonifatius verder wil volgen, moet ik eerlijk zijn. De Bonifatiuskapel uit negentienhonderdvierendertig, met haar processiepark aan de Bronlaan, ligt ruim zeshonderd meter hiervandaan, ten zuidoosten. Deze wandeling komt er niet langs: het dichtstbijzijnde punt van onze route ligt er nog ruim driehonderd meter vandaan. Maar het verhaal hoort erbij, dus nu weet je waar het staat.",
+    "Midden op dit plein staat iets veel jongers: de IJsfontein van kunstenaar Birthe Leemeijer, onthuld op tweeëntwintig februari tweeduizendnegentien, als elfde en laatste fontein van het project elf fountains. Gestapelde ijsschotsen, die verwijzen naar het smeltende Noordzee-ijs in de strenge winter van negentienhonderddrieënzestig en naar het keerpunt waar je zojuist stond. Loop nu terug naar de wal."
+   ],
+   "audio": "/audio/routes/dokkum/10.mp3",
+   "bronnen": [
+    [
+     "https://bedevaart.meertens.knaw.nl/plaats/171",
+     "Meertens Instituut (KNAW) — Bedevaart Dokkum, H. Bonifatius"
+    ],
+    [
+     "https://www.friesland.nl/nl/locaties/2931079927/grote-kerk-of-st-martinuskerk",
+     "Friesland.nl — Grote of Sint-Martinuskerk"
+    ],
+    [
+     "https://www.monumenten.nl/monument/507094",
+     "Monumenten.nl — Bonifatiuskapel (rijksmonument 507094)"
+    ],
+    [
+     "https://nieuwsuitkollum.nl/ijsfontein-dokkum-in-gebruik-genomen/",
+     "Nieuws uit Kollum — IJsfontein in gebruik genomen (22 februari 2019)"
+    ],
+    [
+     "https://www.erfgoedcms.nl/friesland/bezienswaardigheid/11fountains-dokkum-de-ijsfontein-18513",
+     "ErfgoedCMS Friesland — De IJsfontein (11fountains)"
+    ]
+   ]
+  },
+  {
+   "nr": 11,
+   "titel": "Oosterbolwerk — vesting wordt park",
+   "focus": "natuur",
+   "km": 3.78,
+   "lat": 53.328007,
+   "lng": 6.001753,
+   "paras": [
+    "Vanaf de Markt loop je weer omhoog, de wal op, en sta je op het Oosterbolwerk. Dezelfde aarde als aan het begin van deze wandeling, maar nu weet je waarom ze er ligt.",
+    "De hele ronde over de omwalling is twee komma vier kilometer. Vandaag is dat een groen park, en dat voelt vanzelfsprekend, maar dat is het niet. Vrijwel alle borstweringen zijn in de loop van de eeuwen afgevlakt, en de landpoorten verdwenen in het tweede kwart van de negentiende eeuw. De vesting werd langzaam ontmanteld door de tijd zelf.",
+    "Langs de wallen staan nog negentiende-eeuwse kanonnen opgesteld. Stille getuigen van een strijdbaar verleden, langs een gracht waarover nooit een aanval is gekomen. Ze hebben letterlijk niets meegemaakt, en misschien staan ze er juist daarom nog.",
+    "In de jaren zeventig van de twintigste eeuw werd de omwalling gedeeltelijk weer onder profiel gebracht en in bepaalde opzichten geplantsoeneerd. Dat is een ambtelijke manier om iets moois te zeggen: iemand heeft besloten dat deze wallen een wandelpark moesten worden, en heeft dat toen ook echt gedaan.",
+    "Die keuze stond niet op zichzelf. In negentienhonderdvierenzeventig werd de binnenstad van Dokkum als één van de eerste plaatsen in heel Nederland uitgeroepen tot beschermd stadsgezicht. En de verdedigingswerken zelf vormen samen één rijksmonumentaal complex van twaalf onderdelen. Angst bouwde deze wallen, armoede spaarde ze, en een besluit maakte er een park van. Loop de laatste bocht om, terug richting De Harddraver."
+   ],
+   "audio": "/audio/routes/dokkum/11.mp3",
+   "bronnen": [
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/complexen/470642",
+     "Rijksmonumentenregister — complex Verdedigingswerken Dokkum"
+    ],
+    [
+     "https://www.friesland.nl/nl/blog/historie/de-geschiedenis-van-de-friese-elf-steden",
+     "Friesland.nl — beschermd stadsgezicht 1974"
+    ],
+    [
+     "https://dokkum.nl/en/bezienswaardigheid/strongholds-of-the-city/",
+     "Dokkum.nl — de bolwerken van de stad"
+    ]
+   ]
+  },
+  {
+   "nr": 12,
+   "titel": "Terug bij De Harddraver — de cirkel rond",
+   "focus": "geschiedenis",
+   "km": 4.24,
+   "lat": 53.326244,
+   "lng": 6.005015,
+   "paras": [
+    "En zo staan we weer bij De Harddraver. De cirkel is rond.",
+    "Je hebt vier komma twee kilometer over en langs wallen gelopen die er alleen nog liggen omdat slopen te duur was. Toen onze armoede, nu onze rijkdom — die zin klinkt nu anders dan aan het begin van de wandeling.",
+    "Kijk nog één keer terug op wat eronder zit. In twaalfhonderdachtennegentig kreeg Dokkum stadsrechten, na Stavoren, Harlingen en IJlst, als vierde stad van Friesland. Het is de meest noordelijke Friese stad van Nederland, en ze ligt tussen drie grote natuurgebieden: het UNESCO-werelderfgoed de Waddenzee, Nationaal Park Lauwersmeer en de Noardlike Fryske Wâlden. Een stad die klein bleef, en juist daardoor bewaard is gebleven. Het verleden is hier nooit helemaal weggegaan. Wie op een winteravond in Dokkum staat, hoort om tien voor tien de klokken luiden, net zoals toen de poorten dichtgingen. En bij de Zijl staan de twee doorloper-bankjes met hun punten in de rijrichting, geduldig, tot de Elfstedentocht ooit weer langskomt.",
+    "Dat is misschien wel het mooiste aan deze stad. Ze wacht ergens op. Op vorst, op ijs, op een winter die streng genoeg is.",
+    "Dank dat je met me meeliep. Neem de wallen, de molens en de klokken mee naar huis. En kom in de winter nog eens terug. Goede reis."
+   ],
+   "audio": "/audio/routes/dokkum/12.mp3",
+   "bronnen": [
+    [
+     "https://www.friesland.nl/nl/blog/historie/de-geschiedenis-van-de-friese-elf-steden",
+     "Friesland.nl — stadsrechten 1298, vierde stad"
+    ],
+    [
+     "https://www.noardeast-fryslan.nl/ontdek-dokkum",
+     "Gemeente Noardeast-Fryslân — Ontdek Dokkum"
+    ],
+    [
+     "https://www.in-dokkum.nl/artikelen/nieuws/langs-de-tijdlijn-van-dokkum-bolwerken-1582/",
+     "In-Dokkum — Langs de tijdlijn: Bolwerken (1582)"
+    ],
+    [
+     "https://dokkum.nl/en/bezienswaardigheid/strongholds-of-the-city/",
+     "Dokkum.nl — avondklok-traditie"
+    ]
+   ]
+  }
+ ]
+}

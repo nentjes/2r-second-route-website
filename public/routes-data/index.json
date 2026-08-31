@@ -1,6 +1,33 @@
 {
  "routeboeken": [
   {
+   "slug": "berkheide",
+   "naam": "Boswachterspad Berkheide (Hollands Duin)",
+   "provincie": "Zuid-Holland",
+   "lengte_km": 5.93,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 11,
+   "manifest": "https://2route.nl/routes-data/berkheide-manifest.json"
+  },
+  {
+   "slug": "bourtange",
+   "naam": "Westerwolde Wandelroute 16: Rondom de Vesting Bourtange",
+   "provincie": "Groningen",
+   "lengte_km": 6.46,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 12,
+   "manifest": "https://2route.nl/routes-data/bourtange-manifest.json"
+  },
+  {
+   "slug": "dokkum",
+   "naam": "Stadswandeling Dokkum (Vestingstad Dokkum)",
+   "provincie": "Friesland",
+   "lengte_km": 4.24,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 12,
+   "manifest": "https://2route.nl/routes-data/dokkum-manifest.json"
+  },
+  {
    "slug": "drakensteyn",
    "naam": "Boswachterspad Stulp en Kasteeltuin",
    "provincie": "Utrecht",
@@ -8,6 +35,78 @@
    "duur": "±1,5 uur",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/drakensteyn-manifest.json"
+  },
+  {
+   "slug": "hackfort",
+   "naam": "Eeuwenoud landgoed met kasteel Hackfort",
+   "provincie": "Gelderland",
+   "lengte_km": 4.29,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 11,
+   "manifest": "https://2route.nl/routes-data/hackfort-manifest.json"
+  },
+  {
+   "slug": "schokland",
+   "naam": "Vluchthavenroute Schokland",
+   "provincie": "Flevoland",
+   "lengte_km": 5.53,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 12,
+   "manifest": "https://2route.nl/routes-data/schokland-manifest.json"
+  },
+  {
+   "slug": "sint-pietersberg",
+   "naam": "Wandelroute Sint-Pietersberg bij Maastricht (groene route)",
+   "provincie": "Limburg",
+   "lengte_km": 4.78,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 10,
+   "manifest": "https://2route.nl/routes-data/sint-pietersberg-manifest.json"
+  },
+  {
+   "slug": "spaarndam",
+   "naam": "Fortenroute (Spaarndam – Velserbroek)",
+   "provincie": "Noord-Holland",
+   "lengte_km": 5.99,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 11,
+   "manifest": "https://2route.nl/routes-data/spaarndam-manifest.json"
+  },
+  {
+   "slug": "twickel",
+   "naam": "Twickel Kasteelwandeling",
+   "provincie": "Overijssel",
+   "lengte_km": 4.49,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 11,
+   "manifest": "https://2route.nl/routes-data/twickel-manifest.json"
+  },
+  {
+   "slug": "veenhuizen",
+   "naam": "Fochteloërveenroute: wandeling met cultuurhistorie en natuur",
+   "provincie": "Drenthe",
+   "lengte_km": 5.49,
+   "duur": "±2 uur",
+   "hoofdstukken": 12,
+   "manifest": "https://2route.nl/routes-data/veenhuizen-manifest.json"
+  },
+  {
+   "slug": "westkapelle",
+   "naam": "Parelroute 'Verdediging' — Westkapelle",
+   "provincie": "Zeeland",
+   "lengte_km": 5.36,
+   "duur": "±1,5 uur",
+   "hoofdstukken": 11,
+   "manifest": "https://2route.nl/routes-data/westkapelle-manifest.json"
+  },
+  {
+   "slug": "zwarte-berg",
+   "naam": "Wandelroute Zwarte Berg (Loonse en Drunense Duinen)",
+   "provincie": "Noord-Brabant",
+   "lengte_km": 4.28,
+   "duur": "±1,5 uur (officieel 1 uur 26 minuten; langzamer door mul zand)",
+   "hoofdstukken": 10,
+   "manifest": "https://2route.nl/routes-data/zwarte-berg-manifest.json"
   }
  ]
 }

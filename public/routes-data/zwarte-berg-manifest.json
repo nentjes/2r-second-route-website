@@ -1,0 +1,520 @@
+{
+ "slug": "zwarte-berg",
+ "naam": "Wandelroute Zwarte Berg (Loonse en Drunense Duinen)",
+ "provincie": "Noord-Brabant",
+ "lengte_km": 4.28,
+ "duur": "±1,5 uur (officieel 1 uur 26 minuten; langzamer door mul zand)",
+ "beheerder": "Natuurmonumenten",
+ "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341485",
+ "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+ "lijnen": [
+  [
+   [
+    51.65645,
+    5.151532
+   ],
+   [
+    51.65631,
+    5.15117
+   ],
+   [
+    51.656017,
+    5.151136
+   ],
+   [
+    51.65574,
+    5.15124
+   ],
+   [
+    51.65508,
+    5.15125
+   ],
+   [
+    51.654447,
+    5.151652
+   ],
+   [
+    51.654227,
+    5.153708
+   ],
+   [
+    51.65426,
+    5.15404
+   ],
+   [
+    51.65451,
+    5.154439
+   ],
+   [
+    51.65478,
+    5.15454
+   ],
+   [
+    51.65474,
+    5.15486
+   ],
+   [
+    51.65429,
+    5.15575
+   ],
+   [
+    51.654007,
+    5.156652
+   ],
+   [
+    51.65364,
+    5.15848
+   ],
+   [
+    51.653593,
+    5.159187
+   ],
+   [
+    51.65332,
+    5.1603
+   ],
+   [
+    51.65298,
+    5.16084
+   ],
+   [
+    51.65288,
+    5.16147
+   ],
+   [
+    51.652667,
+    5.161737
+   ],
+   [
+    51.65256,
+    5.16207
+   ],
+   [
+    51.65269,
+    5.16229
+   ],
+   [
+    51.65227,
+    5.16297
+   ],
+   [
+    51.651167,
+    5.162947
+   ],
+   [
+    51.65103,
+    5.16281
+   ],
+   [
+    51.650797,
+    5.162304
+   ],
+   [
+    51.6507,
+    5.161798
+   ],
+   [
+    51.65079,
+    5.16072
+   ],
+   [
+    51.64996,
+    5.15938
+   ],
+   [
+    51.64977,
+    5.15926
+   ],
+   [
+    51.64948,
+    5.15935
+   ],
+   [
+    51.6492,
+    5.15912
+   ],
+   [
+    51.64891,
+    5.15917
+   ],
+   [
+    51.64864,
+    5.15907
+   ],
+   [
+    51.64813,
+    5.1595
+   ],
+   [
+    51.64775,
+    5.15963
+   ],
+   [
+    51.64669,
+    5.16067
+   ],
+   [
+    51.64631,
+    5.16076
+   ],
+   [
+    51.64618,
+    5.15981
+   ],
+   [
+    51.64622,
+    5.15936
+   ],
+   [
+    51.64606,
+    5.15898
+   ],
+   [
+    51.64603,
+    5.15811
+   ],
+   [
+    51.64624,
+    5.15741
+   ],
+   [
+    51.64645,
+    5.1571
+   ],
+   [
+    51.64662,
+    5.15636
+   ],
+   [
+    51.646863,
+    5.156251
+   ],
+   [
+    51.64688,
+    5.15496
+   ],
+   [
+    51.646523,
+    5.152533
+   ],
+   [
+    51.64666,
+    5.15164
+   ],
+   [
+    51.64695,
+    5.15102
+   ],
+   [
+    51.64714,
+    5.14995
+   ],
+   [
+    51.6475,
+    5.14973
+   ],
+   [
+    51.64826,
+    5.15003
+   ],
+   [
+    51.64879,
+    5.149928
+   ],
+   [
+    51.64948,
+    5.14932
+   ],
+   [
+    51.64997,
+    5.14916
+   ],
+   [
+    51.65017,
+    5.14919
+   ],
+   [
+    51.650687,
+    5.150555
+   ],
+   [
+    51.65063,
+    5.15199
+   ],
+   [
+    51.65041,
+    5.1525
+   ],
+   [
+    51.65012,
+    5.15377
+   ],
+   [
+    51.65015,
+    5.154255
+   ],
+   [
+    51.65051,
+    5.15452
+   ],
+   [
+    51.651677,
+    5.153142
+   ],
+   [
+    51.65258,
+    5.15247
+   ],
+   [
+    51.654457,
+    5.151474
+   ],
+   [
+    51.65543,
+    5.15122
+   ],
+   [
+    51.65552,
+    5.1513
+   ],
+   [
+    51.65579,
+    5.15114
+   ]
+  ]
+ ],
+ "haltes": [
+  {
+   "nr": 1,
+   "titel": "Herberg De Drie Linden",
+   "focus": "mensen",
+   "km": 0.0,
+   "lat": 51.65645,
+   "lng": 5.151532,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/01.mp3",
+   "tekst": "Welkom in Giersbergen, een gehucht aan de rand van de Loonse en Drunense Duinen, hier in Noord-Brabant. In de volksmond heet dit gebied de Brabantse Sahara, en zodra je straks het eerste zand onder je schoenen voelt wegzakken, begrijp je waarom. Sinds oktober tweeduizend vierentwintig hoort het bij Van Gogh Nationaal Park.\n\nWe lopen samen de Zwarte Berg: vier komma achtentwintig kilometer, officieel een uur en zesentwintig minuten, al doe je er door het mulle zand gerust wat langer over. De route is genoemd naar het zwarte zand dat op sommige plekken aan de oppervlakte ligt.\n\nHet startpunt is deze herberg, De Drie Linden, aan Giersbergen nummer acht. Die is jonger dan haar naam doet vermoeden: de familie Van der Meijden begon hier in negentien eenentwintig doodgewoon een café in de voorkamer van hun boerderij.\n\nDe grond onder je voeten is veel ouder. Giersbergen ontstond in het midden van de dertiende eeuw. In een oorkonde met het jaartal twaalfhonderd vierenveertig, waarvan een afschrift in de Koninklijke Bibliotheek in Brussel bewaard wordt, gaf hertog Hendrik de Tweede van Brabant opdracht om honderdvijftig bunder grond bij Drunen te schenken aan de cisterciënzerinnenabdij Ter Kameren in Brussel. De zusters vestigden hier een uithof: een zelfstandig landbouwbedrijf dat de abdij inkomsten gaf uit akkerbouw, schapenteelt en houtkap.\n\nOnthoud die drie woorden, want ze zijn de sleutel tot alles wat we vandaag gaan zien. Dit zandlandschap is grotendeels door mensenhanden ontstaan, en daarna door mensenhanden gered. Kom, we gaan.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina Wandelroute Zwarte Berg (hoofdbron)"
+    },
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen",
+     "naam": "Natuurmonumenten — gebiedspagina Loonse en Drunense Duinen"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Giersbergen_(gehucht)",
+     "naam": "Wikipedia — Giersbergen (gehucht)"
+    },
+    {
+     "url": "https://erfgoedbrabantverhalen.nl/verhalen/artikel/de-uithof-giersbergen/",
+     "naam": "Erfgoed Brabant — De uithof Giersbergen"
+    },
+    {
+     "url": "https://herbergdedrielinden.nl/over-ons/",
+     "naam": "Herberg De Drie Linden — Over ons"
+    }
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "De noordelijke randwal",
+   "focus": "geschiedenis",
+   "km": 0.39,
+   "lat": 51.654227,
+   "lng": 5.153708,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/02.mp3",
+   "tekst": "Zie je die langgerekte rug die hier door het bos loopt, een golf in de bodem die maar niet ophoudt? Dat is de meest noordelijke randwal van dit natuurgebied, en hij is het rechtstreekse gevolg van die drie woorden van zonet.\n\nTot in de veertiende eeuw werden hier de bomen gekapt. Tel daar de intensieve begrazing bij op en het plaggen van de bodem, en de grond raakte volkomen uitgeput. De beschermende plantenlaag verdween en de wind kreeg vrij spel op het losse zand. Het stuifzand rukte op, recht op de akkers en de weilanden af van de mensen die hier woonden.\n\nDie moesten wel iets doen. Omstreeks de veertiende eeuw wierpen de omwonenden deze wal op, een aarden linie tegen het zand. Wat je nu ziet is nog maar een schaduw van wat het was: de wal was vroeger veel hoger en is door weer, wind en erosie in de loop der tijd een flink stuk lager geworden.\n\nZe plantten er ook bomen bij, zomereiken en grove dennen, met geen ander doel dan het zand tegenhouden. En die bomen deden meer dan dat. Ze zaaiden zich uit, generatie na generatie, en zo vormde zich het bos waar je nu onderdoor loopt.\n\nDat is het wonderlijke aan deze plek. Het bos om je heen is geen oerbos, maar een werktuig dat is blijven doorgroeien. Loop maar verder, want over een paar honderd meter laat datzelfde bos van zich horen.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina / GPX-waypoint 'Randwal' (hoofdbron)"
+    },
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen",
+     "naam": "Natuurmonumenten — gebiedspagina (ontstaan stuifzand)"
+    },
+    {
+     "url": "https://erfgoedbrabantverhalen.nl/verhalen/artikel/de-uithof-giersbergen/",
+     "naam": "Erfgoed Brabant — De uithof Giersbergen (schapenteelt/houtkap)"
+    }
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Het bos en de spechten",
+   "focus": "natuur",
+   "km": 0.83,
+   "lat": 51.653593,
+   "lng": 5.159187,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/03.mp3",
+   "tekst": "Precies dat werktuig van middeleeuwse boeren is inmiddels een wereld op zichzelf geworden. Houd hier je pas eens even in en luister. In het voorjaar hoor je hier het geroffel op dode takken. Dat is de zwarte specht, of de grote bonte specht, die het hout bewerkt zoals een timmerman dat doet. En klinkt er ineens gelach tussen de stammen door, dan is dat vrijwel zeker de groene specht. Het is een van de vrolijkste geluiden die een Nederlands bos te bieden heeft.\n\nTussen de takken scharrelen de mezen rond: de kuifmees, de pimpelmees, de staartmees. En als je heel goed kijkt, zie je misschien de zeldzamere goudhaan. Dat vogeltje is met negen centimeter de kleinste van heel Europa. Zijn enige concurrent is het winterkoninkje, dat met negen en een halve centimeter net iets groter is en meteen te herkennen valt aan dat parmantige, rechtopstaande staartje.\n\nGroter volk woont hier ook. Diep tussen het groen leven de das en de vos, struint de ree behoedzaam rond, en in de vochtige hoeken zit de boomkikker.\n\nSta daar eens bij stil. De eiken en dennen om je heen zijn hier neergezet als verdediging, als noodgreep tegen een oprukkende zandzee. En kijk wat het geworden is: een bos vol leven dat niemand hier heeft besteld.\n\nHet pad buigt straks weg van de bomen. Dan gaat de bodem zelf iets laten zien.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina / GPX-waypoints 'Spechten' en 'Veel vogels' (hoofdbron)"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Nationaal_Park_De_Loonse_en_Drunense_Duinen",
+     "naam": "Wikipedia — Nationaal Park De Loonse en Drunense Duinen (fauna)"
+    }
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "De zandheuveltjes — van de route af",
+   "focus": "geschiedenis",
+   "km": 1.22,
+   "lat": 51.651737,
+   "lng": 5.162989,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/04.mp3",
+   "tekst": "Om je heen golft de grond nu alle kanten op. Tientallen heuveltjes, kriskras, zonder duidelijk patroon. Hier heeft het stuifzand zich in duizenden jaren opgehoopt, korrel voor korrel, en het is nog altijd niet klaar.\n\nStap gerust even van de route af en beklim er een. Vanaf zo'n top verandert het uitzicht steeds: soms strekt het bos zich verder uit dan je dacht, en dan ligt er ineens een open plek met stuifzand verstopt achter een stuifzandkop.\n\nWat je daar ziet heet levend stuifzand: zand dat nog echt beweegt. Dat komt in Nederland niet veel meer voor en is binnen Europa schaars geworden. Hoeveel er hier precies ligt, hangt ervan af hoe je telt. Van zo'n tweehonderdzeventig hectare werkelijk open stuifzand tot ongeveer vierhonderd vijfenzestig hectare in de ruimere meting, binnen een gebied van meer dan drieduizendvijfhonderd hectare. Maar hoe je het ook meet, de uitkomst is dezelfde. Dit is een van de grootste stuifzandgebieden van West-Europa, en een van de laatste grote stuifzandgebieden die het continent nog heeft.\n\nDenk daar even aan terwijl je hier boven staat. Wat middeleeuwse boeren met hun bijlen en hun schapen per ongeluk hebben aangericht, is uitgegroeid tot iets wat in heel Europa nauwelijks meer bestaat.\n\nKlim maar weer naar beneden en zoek het pad op. Daar wacht iets veel zachters.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina / GPX-waypoint 'Van de route af' (hoofdbron)"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Nationaal_Park_De_Loonse_en_Drunense_Duinen",
+     "naam": "Wikipedia — Nationaal Park (oppervlakte / stuifzand / zeldzaamheid)"
+    },
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen",
+     "naam": "Natuurmonumenten — gebiedspagina (270 ha stuifzand / West-Europa)"
+    },
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/nationaal-park-loonse-en-drunense-duinen/nieuws/loonse-en-drunense-duinen-meer-dan",
+     "naam": "Natuurmonumenten — nieuwsbericht '100 jaar beschermd'"
+    }
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Zacht tapijt van mos",
+   "focus": "natuur",
+   "km": 1.71,
+   "lat": 51.64891,
+   "lng": 5.15917,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/05.mp3",
+   "tekst": "Iets veel zachters, zei ik, en daar loop je nu overheen. Laat je blik eens zakken, helemaal naar de bosbodem.\n\nOveral groeit mos, op de grond en tegen de stammen, in allerlei soorten. Het houdt water vast als geen ander en voelt onder je hand aan als een tapijt. In een landschap dat verder uit los, droog zand bestaat is dat geen kleinigheid: zo'n sponzige laag houdt het vocht bij de grond en geeft nieuw leven de kans om te wortelen. En kijk nu eens omhoog.\n\nJe ziet hier een prachtige mengeling. Ruwe berken, fraai gevormde zomereiken, en daartussen de naaldbomen: grove den, fijnspar, lariks. Wil je weten welke naaldboom je voor je hebt, dan is er een ezelsbruggetje dat je nooit meer vergeet. Solo, duo, legio. Het gaat om de naalden. Solo, een enkele naald, dat is de spar. Duo, twee naalden bij elkaar, dat is de den. En legio, een heel bosje naalden tegelijk, dat is de lariks. Probeer het maar even op de eerstvolgende tak die je kunt bereiken.\n\nZo bezien is elk plukje mos en elke naald een klein bewijsstukje dat dit bos zijn plek op het zand heeft veroverd.\n\nLoop rustig door, want het pad gaat zo omhoog. En bovenaan verdwijnt dit bos in een klap uit beeld.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina / GPX-waypoints 'Zacht tapijt' en 'Solo, duo, legio' (hoofdbron)"
+    }
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "Het boomkroonpad en het ondergestoven bos",
+   "focus": "natuur",
+   "km": 2.38,
+   "lat": 51.6468,
+   "lng": 5.15624,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/06.mp3",
+   "tekst": "Daar is de klim. Je gaat een hoge zandwal op, en bovenaan valt het bos van je af: voor je ligt het stuifzandgebied, wijd open.\n\nKijk eens naar de overkant van de zandvlakte. Zie je die rij boomtoppen, precies boven het zand uit? Dat is geen rijtje lage struiken. Dat zijn de kruinen van volgroeide bomen. De rest staat er nog gewoon onder, ondergestoven, meter na meter begraven door zand dat kwam aanwaaien en niet meer wegging.\n\nEr zijn hier twee manieren om verder te gaan. Linksom loopt het hoge boomkroonpad, pal langs die mysterieuze toppen, alsof je door een bos wandelt op de hoogte van de kraaien. Of je daalt af en struint onderlangs door het mulle zand. Wat je ook kiest, zoek onderweg die ene grote grove den met een groot ovaal gat in de stam. Dat gat is het werk van de zwarte specht, want die hakt ovaal. Zie je een keurig rond gat, dan was de grote bonte specht je voor. Dezelfde vogels die je een halve kilometer geleden hoorde roffelen, zetten hier hun handtekening.\n\nNeem de tijd voor dit uitzicht. Hierna daalt de route weer, en dan komen we op een pad waar eeuwenlang mensen liepen die dit landschap liever zo snel mogelijk achter zich lieten.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina / GPX-waypoint 'Zand en boomtoppen' (hoofdbron; het boomkroonpad staat in deze officiele punttekst)"
+    }
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "De oude weg en de herbergen",
+   "focus": "mensen",
+   "km": 2.72,
+   "lat": 51.64666,
+   "lng": 5.15164,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/07.mp3",
+   "tekst": "Dat pad ligt hier. Maar kijk eerst even om je heen, want er is flink gekapt. Die grootschalige uitdunning is met opzet gedaan, om de heide een kans te geven terug te komen, en dan vooral de gewone struikhei.\n\nEn dan, zo meteen, steek je een weg over die ouder is dan bijna alles wat je vandaag hebt gezien. Dit is de oude weg naar herberg De Rustende Jager, en hij werd al in de middeleeuwen gebruikt om in noord-zuidrichting door dit gebied te trekken. Probeer je dat eens voor te stellen. Geen bordjes, geen fietsers. Een zandvlakte waar de wind alles verplaatst, ook je oriëntatiepunten. Wie hier bij daglicht niet doorheen kwam, bleef slapen. Daar waren de herbergen voor. De Rustende Jager en De Drie Linden waren plekken waar reizigers de nacht doorbrachten, juist om te vermijden dat ze in het donker door dit gebied moesten.\n\nEn dan even eerlijk zijn over waar je staat. De Rustende Jager zelf ligt ruim achthonderd meter hiervandaan, een stuk zuidelijker, en onze route komt er niet langs. Je ziet die herberg vandaag dus niet. Waar je wel op staat, is hun weg.\n\nJe bent nu ongeveer twee komma zeven kilometer onderweg. Volg je dit fietspad naar het noorden, dan kom je zo weer bij De Drie Linden uit en kort je de route in. Maar het mooiste komt nog. Steek over.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina / GPX-waypoint 'Gekapt' (hoofdbron)"
+    }
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "De open zandvlakte — ravotten in het zand",
+   "focus": "natuur",
+   "km": 3.27,
+   "lat": 51.65046,
+   "lng": 5.14999,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/08.mp3",
+   "tekst": "Moet je kijken hoe de bomen ineens wijken. Voor je voeten opent het landschap zich tot een zandzee, en nu snap je in een klap waarom die middeleeuwse reizigers hier liever niet in het donker doorheen gingen. Dit is een van de grootste stuifzandgebieden van West-Europa, en het heeft ook het klimaat dat daarbij hoort. Op kaal zand kan het verschil in temperatuur tussen dag en nacht oplopen tot wel vijftig graden Celsius. IJzige nachten, zinderende middagen, en daartussen bijna geen schaduw.\n\nEn toch is het hier niet leeg. Er leven juist dieren die van zand houden en er niet zonder kunnen. De levendbarende hagedis, die zich opwarmt op de kale korrels. Zandloopkevers, die er razendsnel overheen schieten. En zandbijen, die hun gangen recht de bodem in graven.\n\nLangs je pad rijzen hoge stuifduinkoppen op, met begroeide toppen. Vroeger was zo'n kop de voorhoede van een verstuiving die hele akkers kon opslokken. Nu is het vooral het leukste dat een kind hier kan tegenkomen: erop klimmen, en er weer af glijden.\n\nJe mag hier trouwens gerust struinen. Er lopen meerdere wandelroutes door het gebied en er is een knooppuntennetwerk, dus je kunt er uren zoekraken zonder verdwaald te zijn.\n\nVoor nu: hou het pad aan. Er komt nog een laatste blik op het zand, en dat is de mooiste.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina / GPX-waypoint 'Ravotten in het zand' (hoofdbron)"
+    },
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen",
+     "naam": "Natuurmonumenten — gebiedspagina (West-Europa / 50 graden / fauna)"
+    },
+    {
+     "url": "https://outdoorsjim.nl/wandelroute-zwarte-berg-drunense-duinen/",
+     "naam": "OutdoorSjim — wandelverslag Zwarte Berg (stuifduinkoppen)"
+    }
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "Een laatste blik — zand, zand, zand",
+   "focus": "geschiedenis",
+   "km": 3.59,
+   "lat": 51.65015,
+   "lng": 5.154255,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/09.mp3",
+   "tekst": "Nog een keer dan. Steek hier de weg over en neem een kijkje achter de wal, want daar ligt nog zo'n grote stuifzandvlakte, wijd en stil.\n\nOnze route gaat die vlakte zelf niet in. Je kijkt er vanaf de wal overheen, en daarna volgen we het fietspad terug naar De Drie Linden. Neem dus even de tijd, want dit is het laatste wat je er vandaag van ziet. En weet dan wat je ziet. Deze leegte is geen natuurramp en geen toeval. Tot in de veertiende eeuw werden de bomen hier gekapt. De bevolkingsdruk nam toe, de heide werd te vaak geplagd en te zwaar begraasd, en zo raakte de kringloop van de bodem fataal verstoord. Toen was het aan de wind, die het losgeslagen zand eeuw na eeuw verder het land in droeg, tot er lag wat je hier voor je ziet.\n\nPrecies dat gebruik, schapenteelt en houtkap, dreef de abdij Ter Kameren eeuwenlang vanuit haar uithof in Giersbergen. Datzelfde gehucht waar deze wandeling begon, en waar we zo weer aankomen. Zo dicht liggen die dingen bij elkaar. De bedrijvigheid die dit zand liet stuiven en het startpunt van je tocht zijn een en dezelfde plek.\n\nKijk nog even goed. Dan draaien we ons om en lopen we het laatste stuk, terug naar de drie linden waar dit begon.",
+   "bronnen": [
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
+     "naam": "Natuurmonumenten — routepagina / GPX-waypoint 'Zand, zand, zand' (hoofdbron)"
+    },
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen",
+     "naam": "Natuurmonumenten — gebiedspagina (ontstaan stuifzand)"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Nationaal_Park_De_Loonse_en_Drunense_Duinen",
+     "naam": "Wikipedia — Nationaal Park (middeleeuwse verstoring)"
+    },
+    {
+     "url": "https://erfgoedbrabantverhalen.nl/verhalen/artikel/de-uithof-giersbergen/",
+     "naam": "Erfgoed Brabant — De uithof Giersbergen (schapenteelt/houtkap)"
+    }
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "Terug bij De Drie Linden — gemaakt en gered",
+   "focus": "mensen",
+   "km": 4.28,
+   "lat": 51.65579,
+   "lng": 5.15114,
+   "audio": "https://2route.nl/audio/routes/zwarte-berg/10.mp3",
+   "tekst": "En zo staan we weer waar we vertrokken: bij De Drie Linden, in een gehucht dat vandaag nog zo'n achtentwintig inwoners telt.\n\nKijk nog even naar de drie lindebomen op het terras. Ze staan er niet ongeschonden bij. In negentien vierendertig werd Giersbergen getroffen door een grote brand. De boerderij van de familie Van der Meijden, waar dertien jaar eerder dat café in de voorkamer was begonnen, brandde helemaal af. Vee, pluimvee en huisdieren kwamen om, en ongeveer vijfentwintig hectare, veelal dennen- en eikenbos, ging in vlammen op. Die drie linden scheurden open door de hitte. Ze hielden stand. Na de herbouw zette Antje Smits de naam De Drie Linden op de gevel, en zo heet het hier sindsdien. En dan het jaartal dat aan beide kanten van dit verhaal staat: negentien eenentwintig. Het jaar van dat eerste café, en het jaar waarin Natuurmonumenten op tweeëntwintig december haar eerste stuk grond hier kocht. Op tweeëntwintig december tweeduizend eenentwintig was dat precies honderd jaar. Uit die ene aankoop groeide een bezit van tweeduizendachthonderd hectare, binnen een gebied van meer dan drieduizendvijfhonderd hectare. Van tweeduizendtwee tot tweeduizend vierentwintig was dit een zelfstandig nationaal park, en sinds oktober tweeduizend vierentwintig hoort het bij Van Gogh Nationaal Park.\n\nDaarmee is de cirkel rond. De uithof met zijn schapen en zijn houtkap liet het zand los. Bijna achthonderd jaar later houden mensen datzelfde zand met opzet in stand, juist omdat het zo zeldzaam is geworden.\n\nGemaakt door mensenhanden, gered door mensenhanden. Bedankt voor het meelopen.",
+   "bronnen": [
+    {
+     "url": "https://herbergdedrielinden.nl/over-ons/",
+     "naam": "Herberg De Drie Linden — Over ons (1921 café / brand 1934: boerderij afgebrand, vee omgekomen, ~25 ha bos / lindebomen / naamgeving door Antje Smits)"
+    },
+    {
+     "url": "https://www.natuurmonumenten.nl/natuurgebieden/nationaal-park-loonse-en-drunense-duinen/nieuws/loonse-en-drunense-duinen-meer-dan",
+     "naam": "Natuurmonumenten — nieuwsbericht '100 jaar beschermd' (eerste aankoop 22 dec 1921 / 2800 ha)"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Nationaal_Park_De_Loonse_en_Drunense_Duinen",
+     "naam": "Wikipedia — Nationaal Park (2002–2024 / Van Gogh / >3500 ha totaal)"
+    },
+    {
+     "url": "https://nl.wikipedia.org/wiki/Giersbergen_(gehucht)",
+     "naam": "Wikipedia — Giersbergen (gehucht) (28 inwoners)"
+    }
+   ]
+  }
+ ]
+}

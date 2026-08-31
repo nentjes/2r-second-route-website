@@ -1,0 +1,654 @@
+{
+ "slug": "sint-pietersberg",
+ "provincie": "Limburg",
+ "naam": "Wandelroute Sint-Pietersberg bij Maastricht (groene route)",
+ "lengte_km": 4.78,
+ "duur": "±1,5 uur",
+ "hoofdstukken_n": 10,
+ "beheerder": "Natuurmonumenten",
+ "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341763",
+ "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+ "startpunt": "Parkeerplaats Oog van Sint Pieter, Luikerweg 80, 6212 NH Maastricht (ook met Arriva-bus 12 vanaf Maastricht Centraal, halte Oog van Sint-Pieter, ca. 14 min)",
+ "kaart_js": "/routes-data/sint-pietersberg-kaart.js",
+ "lijnen": [
+  [
+   [
+    50.836664,
+    5.685462
+   ],
+   [
+    50.836751,
+    5.685329
+   ],
+   [
+    50.836533,
+    5.684672
+   ],
+   [
+    50.83628,
+    5.684377
+   ],
+   [
+    50.836387,
+    5.683956
+   ],
+   [
+    50.836233,
+    5.683574
+   ],
+   [
+    50.836379,
+    5.68341
+   ],
+   [
+    50.836162,
+    5.683247
+   ],
+   [
+    50.835401,
+    5.683496
+   ],
+   [
+    50.835295,
+    5.68345
+   ],
+   [
+    50.833098,
+    5.681834
+   ],
+   [
+    50.832846,
+    5.681817
+   ],
+   [
+    50.832726,
+    5.682405
+   ],
+   [
+    50.832327,
+    5.682696
+   ],
+   [
+    50.831634,
+    5.682259
+   ],
+   [
+    50.831122,
+    5.68211
+   ],
+   [
+    50.830899,
+    5.682061
+   ],
+   [
+    50.830492,
+    5.68221
+   ],
+   [
+    50.830698,
+    5.682635
+   ],
+   [
+    50.830795,
+    5.683415
+   ],
+   [
+    50.830817,
+    5.685145
+   ],
+   [
+    50.829233,
+    5.685579
+   ],
+   [
+    50.829085,
+    5.685774
+   ],
+   [
+    50.827202,
+    5.686653
+   ],
+   [
+    50.826967,
+    5.68651
+   ],
+   [
+    50.826331,
+    5.68648
+   ],
+   [
+    50.826622,
+    5.686516
+   ],
+   [
+    50.826074,
+    5.688371
+   ],
+   [
+    50.826035,
+    5.688943
+   ],
+   [
+    50.826494,
+    5.690848
+   ],
+   [
+    50.826168,
+    5.692108
+   ],
+   [
+    50.825723,
+    5.692889
+   ],
+   [
+    50.825453,
+    5.693194
+   ],
+   [
+    50.824754,
+    5.693573
+   ],
+   [
+    50.8235,
+    5.693617
+   ],
+   [
+    50.822967,
+    5.693291
+   ],
+   [
+    50.822749,
+    5.693326
+   ],
+   [
+    50.822484,
+    5.69402
+   ],
+   [
+    50.822727,
+    5.693347
+   ],
+   [
+    50.82294,
+    5.693328
+   ],
+   [
+    50.823411,
+    5.69363
+   ],
+   [
+    50.824169,
+    5.693598
+   ],
+   [
+    50.824566,
+    5.694058
+   ],
+   [
+    50.825022,
+    5.694272
+   ],
+   [
+    50.825365,
+    5.694709
+   ],
+   [
+    50.825585,
+    5.694818
+   ],
+   [
+    50.825604,
+    5.695225
+   ],
+   [
+    50.825812,
+    5.695425
+   ],
+   [
+    50.826045,
+    5.695378
+   ],
+   [
+    50.826436,
+    5.695058
+   ],
+   [
+    50.827073,
+    5.694291
+   ],
+   [
+    50.827518,
+    5.694039
+   ],
+   [
+    50.82824,
+    5.694261
+   ],
+   [
+    50.82754,
+    5.69237
+   ],
+   [
+    50.828006,
+    5.692163
+   ],
+   [
+    50.828546,
+    5.691671
+   ],
+   [
+    50.829769,
+    5.691233
+   ],
+   [
+    50.829988,
+    5.69125
+   ],
+   [
+    50.830625,
+    5.690977
+   ],
+   [
+    50.830847,
+    5.690766
+   ],
+   [
+    50.831284,
+    5.690638
+   ],
+   [
+    50.83123,
+    5.690435
+   ],
+   [
+    50.831494,
+    5.690146
+   ],
+   [
+    50.831572,
+    5.689917
+   ],
+   [
+    50.831646,
+    5.688835
+   ],
+   [
+    50.832225,
+    5.688666
+   ],
+   [
+    50.833002,
+    5.688752
+   ],
+   [
+    50.833406,
+    5.688507
+   ],
+   [
+    50.833749,
+    5.688141
+   ],
+   [
+    50.834533,
+    5.687714
+   ],
+   [
+    50.834672,
+    5.687355
+   ],
+   [
+    50.834968,
+    5.687164
+   ],
+   [
+    50.835009,
+    5.686976
+   ],
+   [
+    50.835542,
+    5.686759
+   ],
+   [
+    50.835674,
+    5.686368
+   ],
+   [
+    50.835501,
+    5.685952
+   ],
+   [
+    50.835638,
+    5.685378
+   ],
+   [
+    50.835808,
+    5.685246
+   ],
+   [
+    50.836456,
+    5.68555
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "Fort Sint Pieter",
+   "focus": "geschiedenis",
+   "km": 0.09,
+   "lat": 50.836377,
+   "lng": 5.684413,
+   "paras": [
+    "Welkom op de Sint-Pietersberg, aan de zuidrand van Maastricht, daar waar het Limburgse Heuvelland en het Maasdal elkaar raken. We gaan samen een rondje lopen van bijna vijf kilometer, ongeveer anderhalf uur, en ik loop met je mee.",
+    "Eén ding wil ik meteen verklappen: deze berg is helemaal geen berg. Het is een plateau. De Maas en de Jeker sleten er dalen van zo'n zestig meter diep in, dwars door kalksteen uit het Maastrichtien, de laatste fase van het Krijt, ruwweg zesenzestig miljoen jaar oud. Limburgse mergel noemen ze dat hier. Versteende zeebodem. Onthoud dat woord, want alles wat we vandaag tegenkomen komt eruit voort.",
+    "Recht voor je ligt Fort Sint Pieter: vijfhoekig, van steen, met twaalf geschutsopstellingen. Gebouwd in zeventienhonderdeen en zeventienhonderdtwee, in opdracht van Daniël Wolff baron van Dopff, de militaire commandant van Maastricht. Die verdediging was bitter hard nodig gebleken. In zestienhonderddrieënzeventig namen de Fransen deze heuvelrug in en beschoten ze vanaf de flanken de zuidelijke stadsmuren. Precies daarom kwam het fort hier, in een vijfhoek: om de berg te bewaken die de stad had verraden.",
+    "Tijdens datzelfde beleg sneuvelde de beroemde musketier d'Artagnan, Charles de Batz de Castelmore. Niet hier, moet ik er eerlijk bij zeggen. Dat gebeurde op vijfentwintig juni, bij de vestingwerken aan de Tongersepoort, aan de noordwestkant van de stad. Daar komt deze wandeling niet langs. Een musketkogel in de hals, en de dapperste musketier van Frankrijk was er niet meer.",
+    "Toen de vesting Maastricht in achttienhonderdzevenenzestig werd opgeheven, verloor het fort zijn militaire rol; de restauratie was in tweeduizend veertien klaar. In een van de caponnières begint tegenwoordig de tocht naar de gangenstelsels diep in de berg. Wij blijven bovengronds. Loop mee naar de rand, dan kijken we eerst het dal in."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/01.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Fort_Sint_Pieter",
+     "Wikipedia — Fort Sint Pieter"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Sint-Pietersberg",
+     "Wikipedia — Sint-Pietersberg"
+    ],
+    [
+     "https://www.visitmaastricht.com/nl/blog/ontdek-de-geschiedenis-van-dartagnan-in-maastricht",
+     "VisitMaastricht — d'Artagnan in Maastricht"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/duizend-jaar-militair-erfgoed-op-de-sint-pietersberg",
+     "Natuurmonumenten — Duizend jaar militair erfgoed op de Sint-Pietersberg"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Het Jekerdal en de wijnberg",
+   "focus": "natuur",
+   "km": 0.56,
+   "lat": 50.833321,
+   "lng": 5.681975,
+   "paras": [
+    "Ga even zitten op dat bankje en kijk de diepte in. Dit is het Jekerdal, precies het dal dat ik je zojuist beloofde: samen met het Maasdal heeft het de Sint-Pietersberg tot een plateau uitgesneden. Je kijkt dus naar het gereedschap dat de berg gemaakt heeft.",
+    "Beneden kronkelt de Jeker door het groen. Die rivier ontspringt in de buurt van Lens-Saint-Servais in de provincie Luik en mondt na ongeveer vijfenvijftig kilometer in Maastricht uit in de Maas. In oude documenten heet ze ook wel Worm, of Jaar. Helder water, zou die naam betekenen, van Keltische oorsprong. En van hierboven gezien slingert de beek inderdaad als een worm door het dal.",
+    "Kijk nu eens schuin naar de overkant, naar de zuidoosthelling van de Louwberg. Daar liggen de wijnvelden van de Apostelhoeve. Hemelsbreed ruwweg zevenhonderd meter hiervandaan, dus dit is uitzicht en geen bestemming; we lopen er vandaag niet heen. In negentienhonderdzeventig plantte fruitteler Hugo Hulst daar zijn eerste wijnstokken, en de allereerste oogst leverde veertienhonderd flessen op. Inmiddels is de wijngaard uitgegroeid tot ongeveer twintig hectare, met uitsluitend witte wijn, onder meer Riesling en Auxerrois.",
+    "En het geheim van die helling zit in de grond: kiezel en mergel, met daaroverheen een laag löss. Daar heb je de mergel weer. Aan de overkant van het dal maakt hij wijn. Aan onze kant heeft diezelfde steen iets heel anders aangericht, en dat zie je een paar honderd meter verderop. Loop maar mee."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/02.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Jeker",
+     "Wikipedia — Jeker"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Apostelhoeve",
+     "Wikipedia — Apostelhoeve"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "De Oehoevallei en het kalkgrasland",
+   "focus": "natuur",
+   "km": 1.07,
+   "lat": 50.830845,
+   "lng": 5.684177,
+   "paras": [
+    "Bij vogelkijkpunt De Kiekoet moet je even stil zijn. Ik zei net dat de mergel aan onze kant iets heel anders heeft aangericht; hier begint dat verhaal. Je tuurt de Oehoevallei in, een afgelegen stuk van de voormalige groeve van de ENCI, voor publiek meestal afgesloten en sinds tweeduizend tien in beheer bij Natuurmonumenten. Een gat dat de mens uit de berg haalde, en dat de natuur is komen invullen. En hoe.",
+    "Sinds negentienhonderdachtennegentig broedt hier de oehoe, de grootste uilensoort van Europa. Zestig tot vijfenzeventig centimeter groot, met een spanwijdte tot bijna twee meter. Zijn naam dankt hij aan zijn roep, en je hoort hem meestal eerder dan je hem ziet. Wie geduld heeft, ziet in de vallei soms ook een vos wegschieten, of een ree.",
+    "Draai je nu om, naar het plateau waar je overheen loopt. Hier ligt zeldzaam heischraal grasland en kalkgrasland, met planten die klinken als een oud kruidenboek: grote en kleine tijm, kleine pimpernel, kandelaartje. Zoveel bloemenrijkdom houdt zichzelf niet in stand. Natuurmonumenten laat er Mergellandschapen grazen en maait en hooit de hellingen, zodat het gras de bloemen niet verstikt. In lente en zomer fladderen er tientallen vlinders rond, waaronder het icarusblauwtje.",
+    "Schapen op een afgegraven berg, een uil in een verlaten groeve. Het is een merkwaardig soort vrede, hier boven. Nog een paar minuten lopen, en dan zie je met eigen ogen waar dat gat vandaan komt."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/03.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Oehoevallei",
+     "Wikipedia — Oehoevallei"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Oehoe",
+     "Wikipedia — Oehoe (soort: afmetingen en spanwijdte)"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/tips/spot-de-oehoe-bij-vogelkijkpunt-de-kiekoet",
+     "Natuurmonumenten — Spot de oehoe bij De Kiekoet"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "De groeve van de ENCI en de mosasaurus",
+   "focus": "geschiedenis",
+   "km": 1.66,
+   "lat": 50.826331,
+   "lng": 5.68648,
+   "paras": [
+    "Daar is het gat. Loop nog een paar passen naar de rand, voorzichtig, en de berg valt weg onder je. Aan de ene kant het weidse Maasdal, aan de andere kant een leegte waar je even stil van wordt. Dit is de mergelgroeve van de voormalige Eerste Nederlandse Cement Industrie, kortweg de ENCI.",
+    "Het bedrijf werd opgericht in negentienhonderdvierentwintig en groef hier vanaf negentienhonderdzesentwintig mergel af als grondstof voor cement. De dagbouw hapte een groeve van ongeveer honderdvijftig hectare uit de berg. Op de eerste juli tweeduizend achttien stopte de mergelwinning, en de cementmolen draaide nog door tot eenendertig augustus tweeduizend twintig. Sinds dat jaar maakt Natuurmonumenten van deze krater nieuw natuurgebied.",
+    "Kijk nu naar de wand zelf, naar al die lichte lagen. Dat is versteende zeebodem: kalksteen, opgebouwd uit schelpgruis en de kalkskeletjes van beestjes die hier rondzwommen toen dit warm en ondiep water was, zo'n achtenzestig miljoen jaar geleden. Tijdens het werk van de ENCI kwamen er dan ook grote aantallen fossielen tevoorschijn, waaronder verschillende mosasaurussen, zeereptielen uit het Krijt. En dan de allerberoemdste vondst.",
+    "Die kwam niet uit deze open kuil, maar uit het ondergrondse Noordelijk Gangenstelsel: het Grand Animal de Maëstricht, in oktober zeventienhonderdachtenzeventig, een stel onderkaken met een vrij complete schedel. Op negen december zeventienhonderdvierennegentig ging het dier mee naar Parijs, en sinds zeventienhonderdvijfennegentig is het daar te zien in het Muséum national d'histoire naturelle. Het beroemdste fossiel van Maastricht woont dus in Frankrijk.",
+    "Draai je van de rand af en loop verder. Het water dat deze steen ooit maakte, is er namelijk nog altijd niet klaar mee."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/04.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/ENCI",
+     "Wikipedia — ENCI"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Mosasaurus",
+     "Wikipedia — Mosasaurus (Grand Animal de Maëstricht)"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/monumenten/mergelgroeven-en-kluis",
+     "Natuurmonumenten — Mergelgroeven en kluis"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Dolines en orgelpijpen",
+   "focus": "natuur",
+   "km": 2.14,
+   "lat": 50.826033,
+   "lng": 5.692372,
+   "paras": [
+    "Dat water bedoelde ik. Kijk eens naar de grond langs deze weg richting Hoeve Lichtenberg: hier en daar zakt de bodem weg in trechtervormige kuilen. Dat zijn dolines.",
+    "Ze ontstaan doordat insijpelend water de kalk oplost. Beetje bij beetje, eeuw na eeuw. Ondergronds ontstaan holten, die holten storten in, en aan de oppervlakte wordt het gat steeds groter. Tientallen meters diep kunnen ze worden. Dolines heten ze, of, veel mooier nog, orgelpijpen. Orgelpijpen. In een berg die al vol gangen zit.",
+    "Want dat is het aardige aan deze plek: waar de mens onder de berg gangen heeft uitgehakt, heeft het water precies hetzelfde gedaan, alleen zonder plan en zonder haast. Dit is een karstlandschap, de bovengrondse tegenhanger van alles wat er onder je voeten is uitgehold. De mens deed het met een zaag en later met machines; het water doet het met geduld, en het laat een veel zachter litteken achter.",
+    "En dat litteken groeit dicht. In de lente en de zomer bloeien hier volop planten in en om die kuilen, zoals de aronskelk en de gele dovenetel. Een gat in de grond wordt vanzelf een tuin, als je het maar met rust laat. Dat is eigenlijk de hele Sint-Pietersberg in één beeld: iets wordt weggehaald, en het groen komt terug.",
+    "Blijf deze weg volgen. Wat je zo dadelijk ziet, is de eerste keer vandaag dat de mergel niet ín de berg zit, maar erbovenop, netjes gestapeld door mensenhanden."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/05.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "Kasteelruïne en Hoeve Lichtenberg",
+   "focus": "architectuur",
+   "km": 2.56,
+   "lat": 50.82261,
+   "lng": 5.693639,
+   "paras": [
+    "Daar staat de mergel, boven de grond. Een fraaie toegangspoort leidt naar het binnenplein van Hoeve Lichtenberg, een gesloten carréboerderij die in de zeventiende eeuw werd heropgebouwd op veel oudere fundamenten. In het oorspronkelijke woonhuis zit tegenwoordig een vakantiewoning. Maar het gaat mij om de toren ernaast.",
+    "De naam Lichtenberg is een verbastering van Lochtenborg, oftewel hooggelegen kasteel. De bouw van dat eerste kasteel begon vermoedelijk in twaalfhonderdtwaalf, in opdracht van prins-bisschop Hugo de tweede van Pierrepont. En hij bouwde niet op maagdelijke grond: onder hem lagen de fundamenten van een donjon uit de tiende eeuw. Onder de hoeve zelf liggen nog altijd fundamenten uit de twaalfde eeuw. En toen begon het misgaan.",
+    "Twee oorlogen en een brand hebben dit kasteel meermalen volledig verwoest. Iedere keer opnieuw. Maar één ding bleef telkens overeind: die vierkante torenruïne die je daar ziet staan. Ongeveer twaalf meter hoog, met muren van zo'n anderhalve meter dik, opgetrokken uit kolenzandsteen en mergel, te dateren tussen de twaalfde en de vijftiende eeuw. Het is een van de oudst nog zichtbare kasteelrestanten van Nederland.",
+    "Leg er gerust je hand tegenaan als je erlangs loopt. Die mergel kwam uit de gangen onder je voeten; blokbrekers hebben hem daar in het donker uitgezaagd en naar boven gesleept. De berg heeft zichzelf hier tot toren gestapeld, en die toren weigert al ruim achthonderd jaar om te vallen.",
+    "Nog een paar honderd meter, en dan komen we bij mensen die op deze berg iets heel anders zochten dan verdediging."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/06.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Kasteelru%C3%AFne_Lichtenberg",
+     "Wikipedia — Kasteelruïne Lichtenberg"
+    ],
+    [
+     "https://rijksmonumenten.nl/monument/27976/kasteelruine-lichtenberg/maastricht/",
+     "Rijksmonumenten.nl — Kasteelruïne Lichtenberg (monument 27976)"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "Slavante: klooster, kluis en de Nachtwacht",
+   "focus": "mensen",
+   "km": 3.01,
+   "lat": 50.825636,
+   "lng": 5.69496,
+   "paras": [
+    "Die mensen zochten stilte. Waar nu Buitengoed Slavante staat, met dat weidse uitzicht over de Maas en het Maasdal, hoorde je eeuwenlang geen terrasgasten maar gebeden.",
+    "In veertienhonderdnegenentachtig gaf de bisschop van Luik toestemming aan de observanten, een hervormingsbeweging binnen de franciscaner orde, om hier hun klooster te stichten. De naam Slavante is niets anders dan een verbastering van dat woord: observanten. In vijftienhonderdachtenzeventig werd het klooster verwoest en daarna herbouwd; op acht december zestienhonderdveertig klonk in de nieuwe kerk de eerste mis. In zeventienhonderdzesennegentig, tijdens de Franse tijd, werd het definitief opgeheven.",
+    "Wie het nóg stiller wilde, ging de wand in. Vlakbij, verscholen in de mergelwand onder het bos, ligt de Kluis van Slavante, een voormalige kluizenaarswoning. Natuurmonumenten houdt die wand bewust open, zodat zonneroosje, tijm en tengere veldmuur genoeg licht krijgen. En dan is er nog een kluis. Maar die ligt niet hier.",
+    "Ruim anderhalve kilometer noordelijker, in het Noordelijk Gangenstelsel bij de Van Schaïktunnel, een heel eind terug richting ons startpunt en niet langs deze route, werd tussen vijftien december negentienhonderdeenenveertig en de eerste maart negentienhonderdtweeënveertig Rijksbewaarplaats nummer negen uitgehakt. Vijfendertig meter diep, met drieëndertig meter mergel erboven. Dáár lag de Nachtwacht van Rembrandt, opgerold, in een ruimte die speciaal voor schilderijen was ingericht; zelfs de temperatuur werd er geregeld. Er lagen zevenhonderdvijftig tot achthonderd andere meesterwerken bij, waaronder Het straatje van Vermeer. Vanaf vijfentwintig juni negentienhonderdvijfenveertig kwamen ze allemaal ongeschonden weer boven.",
+    "Dus nee: onder dit pad lag de Nachtwacht niet. Onder dit pad zat een kluizenaar. Kom, we lopen weer omhoog."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/07.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Slavante",
+     "Wikipedia — Slavante"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Kunstbunker_Sint-Pietersberg",
+     "Wikipedia — Kunstbunker Sint-Pietersberg"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/monumenten/mergelgroeven-en-kluis",
+     "Natuurmonumenten — Mergelgroeven en kluis"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "Hoeve Zonneberg en het uitzicht over de Maas",
+   "focus": "mensen",
+   "km": 3.59,
+   "lat": 50.828225,
+   "lng": 5.691961,
+   "paras": [
+    "Omhoog, en het landschap klapt weer open over de Maas. Aan je linkerhand staat Hoeve Zonneberg, een rijksmonument: een statige herenhoeve met vier gebouwdelen rond een gesloten binnenplaats.",
+    "Zie je die lichte, warme steen? Die hoeve is geheel opgetrokken uit mergelblokken uit de Sint-Pietersberg zelf. Net als Lichtenberg. Twee hoeves, één berg, letterlijk uit dezelfde steen gezaagd. En toch zijn ze uit ruzie geboren.",
+    "Pachter Emanuel Duchateau kreeg het aan de stok met de eigenaar van Lichtenberg. En dus bouwde hij hier zijn eigen hoeve, en noemde die naar analogie van Lichtenberg: Zonneberg. De brede voorgevel die je voor je ziet stamt uit achttienhonderddrieënzeventig, en hoog in het middenfronton prijkt nog altijd het wapen van de familie Duchateau. Een burenruzie, uitgevoerd in mergel, en na anderhalve eeuw nog steeds niet bijgelegd.",
+    "Het pand is privébezit, al staat het op grond van Natuurmonumenten. Om je heen grazen schapen die voorkomen dat het gras de bijzondere bloemen overwoekert, en in de meidoornhagen ritselt het van de vogels: geelgors, tjiftjaf, fitis.",
+    "Kijk dan nog één keer over het Maasdal uit. In de verte rijzen de torens van de stad op: de kerk van Oud Sint Pieter, de Sint-Janskerk en de Sint-Servaasbasiliek. Vanaf deze ene plek zie je in één blik waar de berg allemaal voor gediend heeft: een hoeve vlak naast je, een hele stad in de verte.",
+    "Nog een klein stukje, dan duiken we een bosje in. Daar groeit iets heel kleins waar alchemisten hun hoofd over gebroken hebben."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/08.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Hoeve_Zonneberg",
+     "Wikipedia — Hoeve Zonneberg"
+    ],
+    [
+     "https://rijksmonumenten.nl/monument/27973/huisje-van-mergel/maastricht/",
+     "Rijksmonumenten.nl — 'Huisje van mergel' (1766), Maastricht; context mergelbouwtraditie, niet Zonneberg zelf"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "Het bosje en de stinkende gouwe",
+   "focus": "natuur",
+   "km": 4.11,
+   "lat": 50.831773,
+   "lng": 5.688794,
+   "paras": [
+    "Achter dat rode bankje ligt het. Een klein, bescheiden bosje waar je zo langs zou lopen. Toch groeien er bijzondere planten: bosanemoon, robertskruid, en, de reden dat ik je hier laat stoppen, de stinkende gouwe.",
+    "Zoveel verschillende planten trekken dieren aan. Zelfs de das voelt zich hier thuis, al is de kans dat je hem overdag ziet ongeveer nul.",
+    "Maar terug naar die stinkende gouwe. Breek een steeltje en er komt fel geel sap uit. Vroeger was dat sap een beproefd huismiddel tegen wratten; het werd er zonder pardon op gesmeerd. En dan wordt het vreemd.",
+    "Volgens de overlevering was datzelfde goudkleurige sap namelijk ook een van de ingrediënten voor de steen der wijzen, het middel waarmee alchemisten lood in goud dachten te veranderen. Eeuwenlang hebben mensen dus gedacht dat de sleutel tot onmetelijke rijkdom in zo'n onooglijk geel bloempje verstopt zat.",
+    "En weet je, op déze berg is dat nog niet eens zo'n vreemde gedachte. Want hier heeft de grond wel degelijk goud opgeleverd, alleen niet het soort dat je kunt smelten: mergel om mee te bouwen, fossielen die de wetenschap op haar kop zetten, en cement.",
+    "Zo zie je maar dat de geschiedenis van deze plek niet alleen in torens en forten zit, maar evengoed in het sap van een plantje langs het pad.",
+    "Nog een paar honderd meter, en dan is de cirkel rond. Loop mee terug naar waar we begonnen, dan tel ik het voor je op."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/09.mp3",
+   "bronnen": [
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron)"
+    ]
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "Terug bij het Oog van Sint Pieter",
+   "focus": "geschiedenis",
+   "km": 4.78,
+   "lat": 50.836456,
+   "lng": 5.68555,
+   "paras": [
+    "Daar is de parkeerplaats weer: het Oog van Sint Pieter aan de Luikerweg, pal aan de voet van Fort Sint Pieter, waar we begonnen zijn. Straks strijk je misschien nog even neer bij Brasserie Monte Nova, of neem je Arriva-buslijn twaalf terug naar het station. Maar gun me nog één minuut, want ik had beloofd het voor je op te tellen.",
+    "Alles wat je vandaag zag, kwam voort uit één steen. Versteende zeebodem uit het Krijt. Mergel.",
+    "Die steen bracht het zeereptiel voort dat nu in Parijs ligt. Die steen werd eeuwenlang ondergronds tot bouwblokken gezaagd, van de middeleeuwen tot rond negentienhonderd, door blokbrekers die in het donker stonden te werken; Hoeve Lichtenberg en Hoeve Zonneberg zijn er letterlijk van gebouwd. En die blokbrekers lieten iets achter waar je even stil van wordt: een labyrint van ruim twintigduizend gangen, bij elkaar meer dan tweehonderd kilometer lang. Meer dan tweehonderd kilometer. Onder je voeten.",
+    "Diep genoeg om er in de oorlog de Nachtwacht in weg te leggen. En kwetsbaar genoeg om te verdwijnen: naar schatting ongeveer tachtig procent van dat oude gangenstelsel is in de twintigste eeuw door de dagbouw van de ENCI weggegraven.",
+    "Maar het verhaal eindigt niet bij verlies. Sinds tweeduizend achttien is de mergelwinning gestopt en verandert de groeve in nieuw natuurgebied, waar de oehoe alweer broedt. Precies de vallei waar we vanmorgen samen in stonden te turen.",
+    "Gemaakt door de zee. Uitgehold door de mens. Teruggegeven aan de natuur. En dat allemaal op een berg die eigenlijk geen berg is, maar je toch anderhalf uur bezighoudt.",
+    "Dank je wel voor het gezelschap. Goede terugreis."
+   ],
+   "audio": "/audio/routes/sint-pietersberg/10.mp3",
+   "bronnen": [
+    [
+     "https://allewandelroutes.nl/startpunt/parkeerplaats-oog-van-sint-pieter/",
+     "AlleWandelRoutes.nl — Parkeerplaats Oog van Sint Pieter (adres)"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/nieuws/fort-sint-pieter-vanaf-2025-bereikbaar-met-ov",
+     "Natuurmonumenten — Fort Sint Pieter vanaf 2025 bereikbaar met OV (Arriva-buslijn 12)"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
+     "Natuurmonumenten — routebeschrijving (hoofdbron; Brasserie Monte Nova)"
+    ],
+    [
+     "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/monumenten/mergelgroeven-en-kluis",
+     "Natuurmonumenten — Mergelgroeven en kluis"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Sint-Pietersberg",
+     "Wikipedia — Sint-Pietersberg"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/ENCI",
+     "Wikipedia — ENCI"
+    ]
+   ]
+  }
+ ]
+}
