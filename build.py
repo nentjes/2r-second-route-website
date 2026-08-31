@@ -1856,7 +1856,7 @@ def build_home(lang):
       audio.addEventListener('ended', function() {{ knop.textContent = '▶'; }});
     }})();
     </script>
-    <p class="listen-more"><a class="text-link" href="/{lang}/routes/drakensteyn/">{ROUTES_TXT[lang]['home_link']}</a></p>
+    <p class="listen-more"><a class="text-link" href="/{lang}/routes/">{ROUTES_TXT[lang]['home_link']}</a></p>
   </section>
 
   <section class="listening-ways" id="manieren">
@@ -2602,7 +2602,7 @@ ROUTES_TXT = {
     detail_eyebrow='Luisterwandeling · Utrecht', taalnoot='', hoofdstuk='Hoofdstuk', bron_lbl='Bronnen',
     gpx='Download de originele GPX', bronpagina='Routepagina van de beheerder', kaart_h='De route op de kaart',
     kaart_p='Een eigen 2R-kaart, getekend uit OpenStreetMap-geodata — zoom in tot op het wandelpad. Tik op een halte om naar het hoofdstuk te springen.',
-    home_link='Beluister de hele wandeling →', terug='← Alle luisterroutes'),
+    home_link='Bekijk alle luisterroutes →', terug='← Alle luisterroutes'),
 'en': dict(nav='Listening routes', eyebrow='The living route book', h1='The first walk<br>has found its voice.', hero_alt='Two walkers follow a woodland path beside heath and an old castle garden in soft morning light.',
     lede='Here you will find every published listening route, built directly from the current route library.',
     live='Listen to this route', hoofdstukken='chapters', km='km',
@@ -2611,7 +2611,7 @@ ROUTES_TXT = {
     detail_eyebrow='Listening walk · Utrecht', taalnoot='The chapters below are narrated in Dutch — the language the landscape speaks. Multilingual route books are on the roadmap.',
     hoofdstuk='Chapter', bron_lbl='Sources', gpx='Download the original GPX', bronpagina="The steward's route page",
     kaart_h='The route on the map', kaart_p='Our own 2R map, drawn from OpenStreetMap geodata — zoom in to the footpath itself. Tap a stop to jump to its chapter.',
-    home_link='Listen to the full walk →', terug='← All listening routes'),
+    home_link='View all listening routes →', terug='← All listening routes'),
 'de': dict(nav='Hörrouten', eyebrow='Das lebendige Routenbuch', h1='Die erste Wanderung<br>hat eine Stimme.', hero_alt='Zwei Wanderer folgen im sanften Morgenlicht einem Waldweg an Heide und altem Schlossgarten entlang.',
     lede='Hier findest du alle veröffentlichten Hörrouten, direkt aus der aktuellen Routenbibliothek.',
     live='Route anhören', hoofdstukken='Kapitel', km='km',
@@ -2620,7 +2620,7 @@ ROUTES_TXT = {
     detail_eyebrow='Hörwanderung · Utrecht', taalnoot='Die Kapitel unten werden auf Niederländisch erzählt — mehrsprachige Routenbücher stehen auf der Roadmap.',
     hoofdstuk='Kapitel', bron_lbl='Quellen', gpx='Original-GPX herunterladen', bronpagina='Routenseite des Verwalters',
     kaart_h='Die Route auf der Karte', kaart_p='Eine eigene 2R-Karte aus OpenStreetMap-Geodaten — zoome bis auf den Wanderweg. Tippe auf einen Halt, um zum Kapitel zu springen.',
-    home_link='Die ganze Wanderung anhören →', terug='← Alle Hörrouten'),
+    home_link='Alle Hörrouten ansehen →', terug='← Alle Hörrouten'),
 'fr': dict(nav='Routes audio', eyebrow='Le carnet de route vivant', h1='La première promenade<br>a trouvé sa voix.', hero_alt="Deux marcheurs suivent un sentier forestier entre lande et ancien jardin de château dans la douce lumière du matin.",
     lede="Vous trouverez ici tous les parcours audio publiés, issus directement de la bibliothèque actuelle.",
     live='Écouter cette route', hoofdstukken='chapitres', km='km',
@@ -2629,7 +2629,7 @@ ROUTES_TXT = {
     detail_eyebrow='Promenade sonore · Utrecht', taalnoot='Les chapitres ci-dessous sont racontés en néerlandais — les carnets multilingues sont sur la feuille de route.',
     hoofdstuk='Chapitre', bron_lbl='Sources', gpx='Télécharger le GPX original', bronpagina='Page officielle de la route',
     kaart_h='La route sur la carte', kaart_p="Une carte 2R maison, dessinée à partir des géodonnées OpenStreetMap — zoomez jusqu'au sentier. Touchez une halte pour rejoindre son chapitre.",
-    home_link='Écouter toute la promenade →', terug='← Toutes les routes audio'),
+    home_link='Voir toutes les routes audio →', terug='← Toutes les routes audio'),
 'es': dict(nav='Rutas de audio', eyebrow='El libro de ruta vivo', h1='El primer paseo<br>ya tiene voz.', hero_alt='Dos caminantes siguen un sendero del bosque junto al brezal y un antiguo jardín de castillo bajo la suave luz de la mañana.',
     lede='Aquí encontrarás todas las rutas sonoras publicadas, generadas directamente desde la biblioteca actual.',
     live='Escuchar esta ruta', hoofdstukken='capítulos', km='km',
@@ -2638,7 +2638,7 @@ ROUTES_TXT = {
     detail_eyebrow='Paseo sonoro · Utrecht', taalnoot='Los capítulos siguientes se narran en neerlandés — los libros multilingües están en la hoja de ruta.',
     hoofdstuk='Capítulo', bron_lbl='Fuentes', gpx='Descargar el GPX original', bronpagina='Página oficial de la ruta',
     kaart_h='La ruta en el mapa', kaart_p='Un mapa 2R propio, dibujado con geodatos de OpenStreetMap — acércate hasta el propio sendero. Toca una parada para ir a su capítulo.',
-    home_link='Escucha el paseo completo →', terug='← Todas las rutas de audio'),
+    home_link='Ver todas las rutas de audio →', terug='← Todas las rutas de audio'),
 'pt': dict(nav='Rotas de áudio', eyebrow='O livro de rota vivo', h1='O primeiro passeio<br>já tem voz.', hero_alt='Dois caminhantes seguem um trilho florestal junto à charneca e a um antigo jardim de castelo na suave luz da manhã.',
     lede='Aqui encontra todas as rotas sonoras publicadas, diretamente a partir da biblioteca atual.',
     live='Ouvir esta rota', hoofdstukken='capítulos', km='km',
@@ -2647,7 +2647,7 @@ ROUTES_TXT = {
     detail_eyebrow='Passeio sonoro · Utrecht', taalnoot='Os capítulos abaixo são narrados em neerlandês — livros multilíngues estão no roteiro.',
     hoofdstuk='Capítulo', bron_lbl='Fontes', gpx='Baixar o GPX original', bronpagina='Página oficial da rota',
     kaart_h='A rota no mapa', kaart_p='Um mapa 2R próprio, desenhado com geodados do OpenStreetMap — aproxime até a própria trilha. Toque numa parada para ir ao capítulo.',
-    home_link='Ouça o passeio completo →', terug='← Todas as rotas de áudio'),
+    home_link='Ver todas as rotas de áudio →', terug='← Todas as rotas de áudio'),
 }
 
 PARTNER_TXT = {
