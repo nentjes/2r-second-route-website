@@ -1,0 +1,311 @@
+{
+ "slug": "julianalaan",
+ "provincie": "Utrecht",
+ "naam": "De Julianalaan — bosrand van Bilthoven",
+ "soort": "buurtroute",
+ "lengte_km": 2.99,
+ "duur": "±1 uur",
+ "hoofdstukken_n": 5,
+ "beheerder": "Utrechts Landschap (Biltse Duinen en Okkersbos)",
+ "gpx_url": "",
+ "bron_url": "https://www.utrechtslandschap.nl/gebied/natuur/biltse-duinen-en-okkersbos",
+ "startpunt": "Hoek Julianalaan/Taveernelaan bij de bosrand, Bilthoven",
+ "kaart_js": "/routes-data/julianalaan-kaart.js",
+ "lijnen": [
+  [
+   [
+    52.132401,
+    5.229107
+   ],
+   [
+    52.132543,
+    5.227658
+   ],
+   [
+    52.132457,
+    5.228055
+   ],
+   [
+    52.132314,
+    5.227975
+   ],
+   [
+    52.132137,
+    5.22754
+   ],
+   [
+    52.131433,
+    5.228861
+   ],
+   [
+    52.131252,
+    5.22894
+   ],
+   [
+    52.131206,
+    5.228559
+   ],
+   [
+    52.13072,
+    5.22878
+   ],
+   [
+    52.13066,
+    5.22872
+   ],
+   [
+    52.13011,
+    5.22735
+   ],
+   [
+    52.12992,
+    5.22618
+   ],
+   [
+    52.13026,
+    5.22589
+   ],
+   [
+    52.13009,
+    5.22517
+   ],
+   [
+    52.130111,
+    5.224531
+   ],
+   [
+    52.13079,
+    5.22337
+   ],
+   [
+    52.130624,
+    5.222793
+   ],
+   [
+    52.131086,
+    5.222434
+   ],
+   [
+    52.130926,
+    5.221779
+   ],
+   [
+    52.131414,
+    5.221586
+   ],
+   [
+    52.133103,
+    5.222019
+   ],
+   [
+    52.133311,
+    5.220656
+   ],
+   [
+    52.133221,
+    5.219343
+   ],
+   [
+    52.133351,
+    5.219798
+   ],
+   [
+    52.133596,
+    5.220105
+   ],
+   [
+    52.134401,
+    5.222476
+   ],
+   [
+    52.134033,
+    5.22281
+   ],
+   [
+    52.133971,
+    5.223074
+   ],
+   [
+    52.134473,
+    5.229597
+   ],
+   [
+    52.134098,
+    5.230827
+   ],
+   [
+    52.133854,
+    5.230667
+   ],
+   [
+    52.133641,
+    5.231054
+   ],
+   [
+    52.133828,
+    5.231864
+   ],
+   [
+    52.13381,
+    5.232139
+   ],
+   [
+    52.133685,
+    5.232238
+   ],
+   [
+    52.133153,
+    5.232051
+   ],
+   [
+    52.133093,
+    5.232611
+   ],
+   [
+    52.132691,
+    5.232681
+   ],
+   [
+    52.132585,
+    5.233054
+   ],
+   [
+    52.131958,
+    5.23292
+   ],
+   [
+    52.132401,
+    5.229107
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "De laan en de rand van het dorp",
+   "focus": "geschiedenis",
+   "km": 0.0,
+   "lat": 52.132401,
+   "lng": 5.229107,
+   "paras": [
+    "Welkom op de Julianalaan, aan de bosrand van Bilthoven. We lopen hier ongeveer drie kilometer, dat kost je ongeveer een uur, langs het Okkersbos en weer terug naar dit punt. Je staat precies waar de Julianalaan overgaat in de Taveernelaan en de Biltseweg, en het bos begint op tweeënzestig meter van je vandaan.",
+    "Voor we vertrekken geef ik je een gedachte mee om de hele wandeling bij je te houden. Alles wat je hier ziet is door mensen gemaakt of gekozen. De naam van de laan, het bos, zelfs het zand.",
+    "Neem die naam maar. Zo'n straatnaambordje hangt er alsof het er altijd hing, maar er is over vergaderd. De Julianalaan kreeg haar naam bij raadsbesluit van veertien december negentienhonderdnegen. En daarna bleef het rommelen. Een deel van deze weg heette in negentienhonderddrie nog Vinkenlaan. In negentienhonderdachttien kwam er een verbindingsstuk bij dat Lijsterlaan ging heten. Pas bij raadsbesluit van veertien april negentienhonderdvierentwintig werden die stukken samen de Julianalaan, terwijl een ander deel juist Nassaulaan werd.",
+    "En een keer is de naam met geweld weggehaald. Op tien april negentienhonderdtweeënveertig werd deze laan de Frederik Hendriklaan. De bezetter wilde het regerende koningshuis van de bordjes af, en zo heette de weg tot het eind van de oorlog.",
+    "Een laan waar mensen dagelijks overheen fietsen, met een besluit eronder, en een litteken. Loop maar mee het bos in, dan wordt die gedachte alleen maar hardnekkiger."
+   ],
+   "audio": "/audio/routes/julianalaan/01.mp3",
+   "bronnen": [
+    [
+     "https://historischekringdebilt.nl/julianalaan/",
+     "Historische Kring De Bilt — Julianalaan"
+    ],
+    [
+     "https://historischekringdebilt.nl/wp-content/uploads/Vereniging_Bibliotheek_Wegen_Nu.pdf",
+     "Historische Kring De Bilt — namen van wegen en straten"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Het stuifzand",
+   "focus": "natuur",
+   "km": 0.6,
+   "lat": 52.12992,
+   "lng": 5.22637,
+   "paras": [
+    "Kijk eens naar de plek waar de bomen uit elkaar wijken. Op achtenzeventig meter van het pad ligt een open vlakte van kaal, los zand. Dat is meteen het tweede ding op mijn lijstje dat door mensen is gemaakt, al ziet het eruit alsof de natuur het helemaal alleen heeft gedaan.",
+    "Er liggen hier namelijk twee verhalen over elkaar heen. Het eerste is oud. In de voorlaatste ijstijd, het Saalien, ongeveer honderdvijftigduizend jaar geleden, duwde landijs uit Scandinavië oude rivierafzettingen omhoog. Dat is de Utrechtse Heuvelrug: een stuwwal, opzij geschoven grond. Daar sta je op, en daar kunnen wij niets aan doen.",
+    "Het tweede verhaal is veel jonger, en dat is wel van ons. Mensen kapten hier op grote schaal het bos. Ze lieten er vee grazen tot de bodem kaal was, en ze staken de plaggen uit de grond. De beschermende laag verdween, de wind kreeg vrij spel, en het zand begon opnieuw te stuiven. Dit stuifzand is dus geen oerlandschap. Het is een rekening.",
+    "Wat je nu om je heen hebt is dennenbos met vlekken heide ertussen, afgewisseld met die open stuifzandvlaktes. Het oogt stil en oud, en het is allebei niet helemaal waar.",
+    "Loop rustig verder over het pad. De volgende vraag ligt voor de hand als je hier eenmaal staat: waarom zijn mensen hier eigenlijk gaan wonen?"
+   ],
+   "audio": "/audio/routes/julianalaan/02.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/gebied/natuur/biltse-duinen-en-okkersbos",
+     "Utrechts Landschap — Biltse Duinen en Okkersbos"
+    ],
+    [
+     "https://www.np-utrechtseheuvelrug.nl/bericht/stuwwal-in-het-laagland-ontdek-de-utrechtse-heuvelrug/",
+     "Nationaal Park Utrechtse Heuvelrug — stuwwal in het laagland"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Waarom hier gebouwd werd",
+   "focus": "mensen",
+   "km": 1.18,
+   "lat": 52.13237,
+   "lng": 5.221827,
+   "paras": [
+    "Waarom zou iemand hier gaan wonen? Op arme zandgrond, tussen heide en dennen, een eind van alles vandaan. Je loopt nu langs de rand van Camping Bos Park Bilthoven, met de Julianalaan op drieëntachtig meter, en tot het begin van de vorige eeuw was dit niets dan heide en bos, in het oude gerecht van Oostbroek en De Bilt.",
+    "Bilthoven bestond niet eens als naam. Die kwam er pas in negentienhonderdzeventien. Wat er daarvoor kwam waren de villaparken, aangelegd vanaf negentienhonderdelf. En het antwoord op mijn vraag is nuchterder dan je bij zulke huizen zou verwachten. Voor veel mensen die zich hier vestigden was de goede treinverbinding belangrijk, en bovendien was de grond goedkoop. Een lage prijs en een spoorlijn, daar is dit dorp uit voortgekomen.",
+    "Met de bewoners kwamen de winkels. In de jaren twintig openden de eerste, aan het Emmaplein en aan de Julianalaan. Zoek ze hier niet. Dat winkelhart en het station liggen ruim anderhalve kilometer verderop naar het westen, en deze wandeling komt er niet langs. Je ziet er vanaf dit punt niets van.",
+    "Wat je hier wel hebt is de andere kant van datzelfde besluit: de rand waar het dorp ophoudt en het bos begint. Iemand heeft die grens getrokken, en jij loopt er nu overheen.",
+    "Even verderop kruist de route een weg die iets bewaart wat helemaal verdwenen is."
+   ],
+   "audio": "/audio/routes/julianalaan/03.mp3",
+   "bronnen": [
+    [
+     "https://www.canonvannederland.nl/nl/utrecht/regio-zuidoost/de-bilt/villaparken-in-bilthoven",
+     "Canon van Nederland — Villaparken in Bilthoven"
+    ],
+    [
+     "https://historischekringdebilt.nl/julianalaan/",
+     "Historische Kring De Bilt — Julianalaan"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "De Paltzerweg en het verdwenen kerkhof",
+   "focus": "geschiedenis",
+   "km": 1.77,
+   "lat": 52.133971,
+   "lng": 5.223074,
+   "paras": [
+    "De weg die hier op drieënzestig meter langs de route loopt heet de Paltzerweg, en iets verder, op honderdelf meter, ligt de Oranje Nassaulaan. Ook die laatste is een besluit: hij kreeg zijn naam op zestien december negentienhonderdzesendertig, en nog eens bij een besluit van zesentwintig oktober negentienhonderdzevenenzestig, waarbij ook de Dillenburglaan ontstond.",
+    "Maar de Paltzerweg draagt iets anders mee. In het allereerste officiële straatnamenbesluit van De Bilt, van vierentwintig juli negentienhonderddrie, staat over deze weg letterlijk: zijweg van de Soestdijkscheweg langs het Jodenkerkhof.",
+    "Dat kerkhof lag niet hier. Het lag ruim anderhalve kilometer naar het westen, op de plaats waar nu winkelcentrum De Kwinkelier staat. Deze route komt er niet langs en je ziet er hier niets van. De weg draagt dit verhaal, de plek niet.",
+    "In zeventienhonderdzevenennegentig legde de joodse gemeenschap van Utrecht daar een begraafplaats aan, op de heide in het gerecht van Oostbroek en De Bilt, ongeveer honderd bij honderd meter groot. De laatste begrafenis die we kennen is die van Betsij Levi, in achttienhonderdzes. Zij was het dochtertje van Levi Marcus uit Utrecht. Ze is anderhalf jaar geworden.",
+    "De gemeenschap vond de plek te afgelegen en maakte zich zorgen over de veiligheid. In achttienhonderdzeven kwam er een tweede joodse begraafplaats bij de Rode Brug in Utrecht, en die is er nog steeds. In negentienhonderdtwintig werd het oude terrein op de heide verkocht aan de gemeente De Bilt.",
+    "Loop maar door. Het laatste stuk gaat over iets dat wel bewaard is gebleven."
+   ],
+   "audio": "/audio/routes/julianalaan/04.mp3",
+   "bronnen": [
+    [
+     "https://historischekringdebilt.nl/wp-content/uploads/Vereniging_Bibliotheek_Wegen_Nu.pdf",
+     "Historische Kring De Bilt — namen van wegen en straten"
+    ],
+    [
+     "https://www.onlinemuseumdebilt.nl/het-jodenkerkhof/",
+     "Online Museum De Bilt — Het Jodenkerkhof"
+    ]
+   ],
+   "afstand_onderwerp_m": 1600
+  },
+  {
+   "nr": 5,
+   "titel": "Het bos dat gered werd",
+   "focus": "natuur",
+   "km": 2.39,
+   "lat": 52.133646,
+   "lng": 5.231138,
+   "paras": [
+    "Nog een klein stuk, dan sta je weer op de hoek waar we begonnen. Op eenenzestig meter van het pad ligt het Okkersbos, en dat het er nog is, is geen vanzelfsprekendheid.",
+    "Al sinds negentienhonderdzevenentachtig lagen er plannen om de naastgelegen golfbaan uit te breiden. In tweeduizendacht en tweeduizendnegen kocht Utrechts Landschap een groot deel van de Biltse Duinen, en in tweeduizendelf kwam het aangrenzende Okkersbos erbij. Daarmee ging de uitbreiding van tafel. Het gebied is nu de schakel tussen de natuurgebieden bij Bosch en Duin en het Panbos, en het hoort bij de ecologische hoofdstructuur. Door de duinen loopt een gemarkeerde wandelroute van anderhalve kilometer, met ingangen aan de Bosuillaan hier in Bilthoven en aan de Biltseweg in Bosch en Duin. Die kun je een andere keer lopen. En daarmee is de cirkel rond. We begonnen bij een laan die haar naam kreeg in een raadsvergadering, en die een bezetter er weer af haalde. We liepen langs zand dat is gaan stuiven omdat mensen het bos weghaalden en het vee lieten grazen. We kwamen langs een weg die de herinnering aan een verdwenen begraafplaats vasthoudt, ergens anders, ver van hier. En we eindigen bij een bos dat er alleen nog staat omdat iemand het heeft gekocht.",
+    "Alles hier is gemaakt of gekozen. Dat is geen klacht. Het is eerder geruststellend, want het betekent dat het ook anders had gekund, en dat er telkens iemand was die iets besloot.",
+    "Dank je wel voor het meelopen. Je bent bijna thuis."
+   ],
+   "audio": "/audio/routes/julianalaan/05.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/gebied/natuur/biltse-duinen-en-okkersbos",
+     "Utrechts Landschap — Biltse Duinen en Okkersbos"
+    ]
+   ]
+  }
+ ]
+}

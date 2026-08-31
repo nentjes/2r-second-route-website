@@ -6,6 +6,7 @@
    "provincie": "Zuid-Holland",
    "lengte_km": 5.93,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/berkheide-manifest.json"
   },
@@ -15,6 +16,7 @@
    "provincie": "Groningen",
    "lengte_km": 6.46,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/bourtange-manifest.json"
   },
@@ -24,6 +26,7 @@
    "provincie": "Friesland",
    "lengte_km": 4.24,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/dokkum-manifest.json"
   },
@@ -33,6 +36,7 @@
    "provincie": "Utrecht",
    "lengte_km": 5.7,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/drakensteyn-manifest.json"
   },
@@ -42,8 +46,19 @@
    "provincie": "Gelderland",
    "lengte_km": 4.29,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/hackfort-manifest.json"
+  },
+  {
+   "slug": "julianalaan",
+   "naam": "De Julianalaan — bosrand van Bilthoven",
+   "provincie": "Utrecht",
+   "lengte_km": 2.99,
+   "duur": "±1 uur",
+   "soort": "buurtroute",
+   "hoofdstukken": 5,
+   "manifest": "https://2route.nl/routes-data/julianalaan-manifest.json"
   },
   {
    "slug": "schokland",
@@ -51,6 +66,7 @@
    "provincie": "Flevoland",
    "lengte_km": 5.53,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/schokland-manifest.json"
   },
@@ -60,6 +76,7 @@
    "provincie": "Limburg",
    "lengte_km": 4.78,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 10,
    "manifest": "https://2route.nl/routes-data/sint-pietersberg-manifest.json"
   },
@@ -69,6 +86,7 @@
    "provincie": "Noord-Holland",
    "lengte_km": 5.99,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/spaarndam-manifest.json"
   },
@@ -78,6 +96,7 @@
    "provincie": "Overijssel",
    "lengte_km": 4.49,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/twickel-manifest.json"
   },
@@ -87,6 +106,7 @@
    "provincie": "Drenthe",
    "lengte_km": 5.49,
    "duur": "±2 uur",
+   "soort": "routeboek",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/veenhuizen-manifest.json"
   },
@@ -96,6 +116,7 @@
    "provincie": "Zeeland",
    "lengte_km": 5.36,
    "duur": "±1,5 uur",
+   "soort": "routeboek",
    "hoofdstukken": 11,
    "manifest": "https://2route.nl/routes-data/westkapelle-manifest.json"
   },
@@ -105,6 +126,7 @@
    "provincie": "Noord-Brabant",
    "lengte_km": 4.28,
    "duur": "±1,5 uur (officieel 1 uur 26 minuten; langzamer door mul zand)",
+   "soort": "routeboek",
    "hoofdstukken": 10,
    "manifest": "https://2route.nl/routes-data/zwarte-berg-manifest.json"
   }
