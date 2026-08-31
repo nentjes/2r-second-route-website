@@ -21,12 +21,12 @@
 <link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/stad/parijs.html">
 <meta property="og:url" content="https://2route.nl/nl/stad/parijs.html">
 </head>
-<body>
+<body class="nav-immersive">
 <header class="site">
   <div class="site-nav">
     <a class="brand" href="/nl/">
       <img class="brand-mark" src="/icon-2r.png" alt="2R">
-      <span>Second Route</span>
+      <span class="brand-lockup"><strong>2R</strong><small>Second Route</small></span>
     </a>
     <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -59,17 +59,25 @@
 (function(){
   var btn = document.getElementById('menu-toggle');
   var panel = document.getElementById('mobile-panel');
+  var header = document.querySelector('header.site');
   if (!btn || !panel) return;
+  function syncHeader(){
+    if (header) header.classList.toggle('is-scrolled', window.scrollY > 24);
+  }
+  window.addEventListener('scroll', syncHeader, { passive: true });
+  syncHeader();
   btn.addEventListener('click', function(){
     var open = !panel.classList.contains('open');
     panel.classList.toggle('open', open);
     btn.classList.toggle('open', open);
+    if (header) header.classList.toggle('menu-open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   });
   panel.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click', function(){
       panel.classList.remove('open');
       btn.classList.remove('open');
+      if (header) header.classList.remove('menu-open');
       btn.setAttribute('aria-expanded', 'false');
     });
   });
@@ -246,10 +254,15 @@
       oud.innerHTML = nieuw.innerHTML;
       document.title = doc.title;
       var lg = doc.documentElement.getAttribute('lang'); if (lg) document.documentElement.setAttribute('lang', lg);
+      document.body.className = doc.body.className;
       var act = doc.querySelector('.nav-links a.active');
       updateNav(act ? act.getAttribute('href') : null);
       var panel = document.querySelector('.mobile-panel.open, .mobile-panel[aria-hidden="false"]');
       if (panel) { panel.classList.remove('open'); }
+      var toggle = document.getElementById('menu-toggle');
+      if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+      var header = document.querySelector('header.site');
+      if (header) header.classList.remove('menu-open');
       if (push) history.pushState({ r: 1 }, '', url);
       syncStyles(doc).then(function () { return runScripts(oud); }).then(function () {
         window.scrollTo(0, 0);

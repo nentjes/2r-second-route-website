@@ -1346,7 +1346,7 @@ def build_howto(lang):
     </div>
   </div></section>
 '''
-    return page_shell(lang, h['title'] + ' — 2R (Second Route)', h['lede'][:150], 'howto', body, path='zo-werkt-het.html')
+    return page_shell(lang, h['title'] + ' — 2R (Second Route)', h['lede'][:150], 'howto', body, path='zo-werkt-het.html', immersive=True)
 
 def nav(lang, active):
     s = SITE[lang]
@@ -1362,7 +1362,7 @@ def nav(lang, active):
   <div class="site-nav">
     <a class="brand" href="/{lang}/">
       <img class="brand-mark" src="/icon-2r.png" alt="2R">
-      <span>Second Route</span>
+      <span class="brand-lockup"><strong>2R</strong><small>Second Route</small></span>
     </a>
     <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -1395,17 +1395,25 @@ def nav(lang, active):
 (function(){{
   var btn = document.getElementById('menu-toggle');
   var panel = document.getElementById('mobile-panel');
+  var header = document.querySelector('header.site');
   if (!btn || !panel) return;
+  function syncHeader(){{
+    if (header) header.classList.toggle('is-scrolled', window.scrollY > 24);
+  }}
+  window.addEventListener('scroll', syncHeader, {{ passive: true }});
+  syncHeader();
   btn.addEventListener('click', function(){{
     var open = !panel.classList.contains('open');
     panel.classList.toggle('open', open);
     btn.classList.toggle('open', open);
+    if (header) header.classList.toggle('menu-open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   }});
   panel.querySelectorAll('a').forEach(function(a){{
     a.addEventListener('click', function(){{
       panel.classList.remove('open');
       btn.classList.remove('open');
+      if (header) header.classList.remove('menu-open');
       btn.setAttribute('aria-expanded', 'false');
     }});
   }});
@@ -1577,10 +1585,15 @@ SITE_SHELL_NL = '''
       oud.innerHTML = nieuw.innerHTML;
       document.title = doc.title;
       var lg = doc.documentElement.getAttribute('lang'); if (lg) document.documentElement.setAttribute('lang', lg);
+      document.body.className = doc.body.className;
       var act = doc.querySelector('.nav-links a.active');
       updateNav(act ? act.getAttribute('href') : null);
       var panel = document.querySelector('.mobile-panel.open, .mobile-panel[aria-hidden="false"]');
       if (panel) { panel.classList.remove('open'); }
+      var toggle = document.getElementById('menu-toggle');
+      if (toggle) { toggle.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
+      var header = document.querySelector('header.site');
+      if (header) header.classList.remove('menu-open');
       if (push) history.pushState({ r: 1 }, '', url);
       syncStyles(doc).then(function () { return runScripts(oud); }).then(function () {
         window.scrollTo(0, 0);
@@ -1600,7 +1613,7 @@ def _seo_pad(path):
     # index.html toont de site als mapadres
     return path[:-len('index.html')] if path.endswith('index.html') else path
 
-def page_shell(lang, title, description, active, body, extra_head='', path=None):
+def page_shell(lang, title, description, active, body, extra_head='', path=None, immersive=False):
     seo = ''
     if path is not None:
         p = _seo_pad(path)
@@ -1624,7 +1637,7 @@ def page_shell(lang, title, description, active, body, extra_head='', path=None)
 <meta property="og:description" content="{html.escape(description)}">
 <meta property="og:image" content="/og.jpg">
 {seo}</head>
-<body>
+<body class="{'nav-immersive' if immersive else 'nav-paper'}">
 {nav(lang, active)}
 <main>
 {body}
@@ -1682,7 +1695,7 @@ def build_city_story(lang, index):
     <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span>&#8599;</span></a></p>
   </div></section>
 '''
-    return page_shell(lang, f"{html.escape(title)} — 2R (Second Route)", teaser, 'product', body, path=f'stad/{CITY_SLUGS[index]}.html')
+    return page_shell(lang, f"{html.escape(title)} — 2R (Second Route)", teaser, 'product', body, path=f'stad/{CITY_SLUGS[index]}.html', immersive=True)
 
 
 def city_story_card(lang, index):
@@ -2015,7 +2028,7 @@ def build_home(lang):
     # Live tellers (testers/verhalen vandaag) zijn van de publieke pagina
     # gehaald: dat was interne telemetrie en liet ongewild de prille schaal
     # zien. De strip toont nu stabiele productfeiten (stat3/stat4 in SITE).
-    return page_shell(lang, title, h['hero_lede'], 'product', body, path='index.html')
+    return page_shell(lang, title, h['hero_lede'], 'product', body, path='index.html', immersive=True)
 
 def build_roadmap(lang):
     s = SITE[lang]
@@ -2067,7 +2080,7 @@ def build_roadmap(lang):
     </div>
   </section>
 '''
-    return page_shell(lang, f"Roadmap — 2R (Second Route)", s['rm_lede'], 'roadmap', body, path='roadmap.html')
+    return page_shell(lang, f"Roadmap — 2R (Second Route)", s['rm_lede'], 'roadmap', body, path='roadmap.html', immersive=True)
 
 # Nieuwe redactionele omlijsting voor de privacypagina (herbouw 29 aug). De
 # juridische kernteksten blijven in PRIVACY[lang]; hieronder alleen de rustige
@@ -2299,7 +2312,7 @@ def build_privacy(lang):
     <a class="btn-primary" href="mailto:nimco@nentjes.nl">{pe['close_btn']}</a>
   </div></section>
 '''
-    return page_shell(lang, p['title'], pe['lede'][:150], 'privacy', body, path='privacy.html')
+    return page_shell(lang, p['title'], pe['lede'][:150], 'privacy', body, path='privacy.html', immersive=True)
 
 # --- Live verhalen uit de app (goedgekeurd op de besloten leespagina) ------
 # Zoekbaar en met kaart, zodat het archief bruikbaar blijft als het groeit.
@@ -2546,7 +2559,7 @@ def build_stories_index(lang):
   </div></section>
 {live_stories_section(lang)}
 '''
-    return page_shell(lang, f"{s['nav_stories']} — 2R (Second Route)", se['hero_lede'][:150], 'stories', body, path='stories/index.html')
+    return page_shell(lang, f"{s['nav_stories']} — 2R (Second Route)", se['hero_lede'][:150], 'stories', body, path='stories/index.html', immersive=True)
 
 def build_story_detail(lang, st):
     s = SITE[lang]
@@ -2991,7 +3004,7 @@ def build_routes_index(lang):
     titel = {'nl': 'Luisterroutes — 2R (Second Route)', 'en': 'Listening routes — 2R (Second Route)',
              'de': 'Hörrouten — 2R (Second Route)', 'fr': 'Routes audio — 2R (Second Route)',
              'es': 'Rutas de audio — 2R (Second Route)', 'pt': 'Rotas de áudio — 2R (Second Route)'}[lang]
-    return page_shell(lang, titel, lede[:150], 'routes', body, path='routes/index.html')
+    return page_shell(lang, titel, lede[:150], 'routes', body, path='routes/index.html', immersive=True)
 
 
 def build_route_page(lang, r):
@@ -3117,7 +3130,7 @@ def build_route_page(lang, r):
     titel = f"{r['naam']} — 2R"
     extra = '<link rel="stylesheet" href="/leaflet.css">'
     return page_shell(lang, titel, lead[:150], 'routes', body,
-                      extra_head=extra, path=f"routes/{r['slug']}/index.html")
+                      extra_head=extra, path=f"routes/{r['slug']}/index.html", immersive=True)
 
 
 
@@ -3177,7 +3190,7 @@ def build_quality(lang):
     </div>
   </div></section>
 '''
-    return page_shell(lang, q['title'], q['description'], 'quality', body, path='kwaliteit/index.html')
+    return page_shell(lang, q['title'], q['description'], 'quality', body, path='kwaliteit/index.html', immersive=True)
 
 
 def build_partners(lang):
@@ -3247,7 +3260,7 @@ def build_partners(lang):
     <a class="btn-primary" href="{mail}">{t['final_cta']} <span>↗</span></a>
   </div></section>
 '''
-    return page_shell(lang, t['title'], t['description'], 'partners', body, path='partners/index.html')
+    return page_shell(lang, t['title'], t['description'], 'partners', body, path='partners/index.html', immersive=True)
 
 
 # ---------------------------------------------------------------------------
