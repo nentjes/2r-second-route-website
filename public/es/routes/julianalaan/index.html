@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De Julianalaan — bosrand van Bilthoven — 2R</title>
+<meta name="description" content="5 capítulos a lo largo de 3,0 kilómetros en Utrecht, narrados en el lugar adecuado y con fuentes para cada historia.">
+<link rel="icon" href="/icon-2r.png">
+<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="De Julianalaan — bosrand van Bilthoven — 2R">
+<meta property="og:description" content="5 capítulos a lo largo de 3,0 kilómetros en Utrecht, narrados en el lugar adecuado y con fuentes para cada historia.">
+<meta property="og:image" content="/og.jpg">
+<link rel="canonical" href="https://2route.nl/es/routes/julianalaan/">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/routes/julianalaan/">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/routes/julianalaan/">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/routes/julianalaan/">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/routes/julianalaan/">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/routes/julianalaan/">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/routes/julianalaan/">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/routes/julianalaan/">
+<meta property="og:url" content="https://2route.nl/es/routes/julianalaan/">
+</head>
+<body>
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/es/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/es/">Descubre 2R</a>
+        <a href="/es/routes/" class="active">Rutas de audio</a>
+        <a href="/es/stories/">Historias</a>
+        <a href="/es/partners/">Para editores de rutas</a>
+        <a href="/es/zo-werkt-het.html">Cómo funciona</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/" class="active">ES</a><a href="/pt/">PT</a></div>
+      <a class="nav-cta" href="https://apps.apple.com/app/id6802613397">Lleva 2R contigo →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/es/">Descubre 2R</a>
+      <a href="/es/routes/" class="active">Rutas de audio</a>
+      <a href="/es/stories/">Historias</a>
+      <a href="/es/partners/">Para editores de rutas</a>
+      <a href="/es/zo-werkt-het.html">Cómo funciona</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/" class="active">ES</a><a href="/pt/">PT</a></div>
+    <a class="nav-cta" href="https://apps.apple.com/app/id6802613397">Lleva 2R contigo →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  if (!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="routes-hero">
+    <div class="wrap">
+      <p class="eyebrow on-dark">Ruta de barrio · Utrecht</p>
+      <h1>De Julianalaan — bosrand van Bilthoven</h1>
+      <p class="routes-lede">5 capítulos a lo largo de 3,0 kilómetros en Utrecht, narrados en el lugar adecuado y con fuentes para cada historia.</p>
+      <div class="rt-feiten">
+        <div class="hfeit"><b>3,0 km</b></div>
+        <div class="hfeit"><b>±1 uur</b></div>
+        <div class="hfeit"><b>5 capítulos</b></div>
+        <div class="hfeit"><b>Utrechts Landschap (Biltse Duinen en Okkersbos)</b></div>
+      </div>
+      <div class="rt-accessibility">
+        <span class="rt-access-label">Accesibilidad de la ruta</span>
+        <div><span>15 m desnivel</span><span>pavimentado</span><span>1 bancos</span><strong class="prov-feasible haalbaar">Apta con bastón</strong></div>
+      </div>
+    </div>
+  </section>
+  <section class="block"><div class="wrap">
+    <h2>La ruta en el mapa</h2>
+    <p class="rt-kaart-p">Un mapa 2R propio, dibujado con geodatos de OpenStreetMap — acércate hasta el propio sendero. Toca una parada para ir a su capítulo.</p>
+    <div id="kaart"></div>
+    <p class="rt-knoppen">
+      <span class="rt-no-gpx">No hay descarga GPX separada para esta ruta de barrio</span>
+      <a class="text-link" href="https://www.utrechtslandschap.nl/gebied/natuur/biltse-duinen-en-okkersbos" target="_blank" rel="noopener">Página oficial de la ruta →</a>
+    </p>
+  </div></section>
+  <section class="block"><div class="wrap rt-stops">
+<p class="rt-taalnoot">Los capítulos siguientes se narran en neerlandés — los libros multilingües están en la hoja de ruta.</p>
+    <article class="rt-stop" id="stop-1">
+      <div class="rt-as"><span class="rt-nr">01</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Historia · 0,0 km</div>
+        <h3>De laan en de rand van het dorp</h3>
+        <p>Welkom op de Julianalaan, aan de bosrand van Bilthoven. We lopen hier ongeveer drie kilometer, dat kost je ongeveer een uur, langs het Okkersbos en weer terug naar dit punt. Je staat precies waar de Julianalaan overgaat in de Taveernelaan en de Biltseweg, en het bos begint op tweeënzestig meter van je vandaan.</p><p>Voor we vertrekken geef ik je een gedachte mee om de hele wandeling bij je te houden. Alles wat je hier ziet is door mensen gemaakt of gekozen. De naam van de laan, het bos, zelfs het zand.</p><p>Neem die naam maar. Zo&#x27;n straatnaambordje hangt er alsof het er altijd hing, maar er is over vergaderd. De Julianalaan kreeg haar naam bij raadsbesluit van veertien december negentienhonderdnegen. En daarna bleef het rommelen. Een deel van deze weg heette in negentienhonderddrie nog Vinkenlaan. In negentienhonderdachttien kwam er een verbindingsstuk bij dat Lijsterlaan ging heten. Pas bij raadsbesluit van veertien april negentienhonderdvierentwintig werden die stukken samen de Julianalaan, terwijl een ander deel juist Nassaulaan werd.</p><p>En een keer is de naam met geweld weggehaald. Op tien april negentienhonderdtweeënveertig werd deze laan de Frederik Hendriklaan. De bezetter wilde het regerende koningshuis van de bordjes af, en zo heette de weg tot het eind van de oorlog.</p><p>Een laan waar mensen dagelijks overheen fietsen, met een besluit eronder, en een litteken. Loop maar mee het bos in, dan wordt die gedachte alleen maar hardnekkiger.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 01</span>
+        <audio controls preload="none" src="/audio/routes/julianalaan/01.mp3"></audio></div>
+        <div class="rt-bron">Fuentes: <a href="https://historischekringdebilt.nl/julianalaan/" target="_blank" rel="noopener">Historische Kring De Bilt — Julianalaan</a> · <a href="https://historischekringdebilt.nl/wp-content/uploads/Vereniging_Bibliotheek_Wegen_Nu.pdf" target="_blank" rel="noopener">Historische Kring De Bilt — namen van wegen en straten</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-2">
+      <div class="rt-as"><span class="rt-nr">02</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Naturaleza · 0,6 km</div>
+        <h3>Het stuifzand</h3>
+        <p>Kijk eens naar de plek waar de bomen uit elkaar wijken. Op achtenzeventig meter van het pad ligt een open vlakte van kaal, los zand. Dat is meteen het tweede ding op mijn lijstje dat door mensen is gemaakt, al ziet het eruit alsof de natuur het helemaal alleen heeft gedaan.</p><p>Er liggen hier namelijk twee verhalen over elkaar heen. Het eerste is oud. In de voorlaatste ijstijd, het Saalien, ongeveer honderdvijftigduizend jaar geleden, duwde landijs uit Scandinavië oude rivierafzettingen omhoog. Dat is de Utrechtse Heuvelrug: een stuwwal, opzij geschoven grond. Daar sta je op, en daar kunnen wij niets aan doen.</p><p>Het tweede verhaal is veel jonger, en dat is wel van ons. Mensen kapten hier op grote schaal het bos. Ze lieten er vee grazen tot de bodem kaal was, en ze staken de plaggen uit de grond. De beschermende laag verdween, de wind kreeg vrij spel, en het zand begon opnieuw te stuiven. Dit stuifzand is dus geen oerlandschap. Het is een rekening.</p><p>Wat je nu om je heen hebt is dennenbos met vlekken heide ertussen, afgewisseld met die open stuifzandvlaktes. Het oogt stil en oud, en het is allebei niet helemaal waar.</p><p>Loop rustig verder over het pad. De volgende vraag ligt voor de hand als je hier eenmaal staat: waarom zijn mensen hier eigenlijk gaan wonen?</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 02</span>
+        <audio controls preload="none" src="/audio/routes/julianalaan/02.mp3"></audio></div>
+        <div class="rt-bron">Fuentes: <a href="https://www.utrechtslandschap.nl/gebied/natuur/biltse-duinen-en-okkersbos" target="_blank" rel="noopener">Utrechts Landschap — Biltse Duinen en Okkersbos</a> · <a href="https://www.np-utrechtseheuvelrug.nl/bericht/stuwwal-in-het-laagland-ontdek-de-utrechtse-heuvelrug/" target="_blank" rel="noopener">Nationaal Park Utrechtse Heuvelrug — stuwwal in het laagland</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-3">
+      <div class="rt-as"><span class="rt-nr">03</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Gente · 1,2 km</div>
+        <h3>Waarom hier gebouwd werd</h3>
+        <p>Waarom zou iemand hier gaan wonen? Op arme zandgrond, tussen heide en dennen, een eind van alles vandaan. Je loopt nu langs de rand van Camping Bos Park Bilthoven, met de Julianalaan op drieëntachtig meter, en tot het begin van de vorige eeuw was dit niets dan heide en bos, in het oude gerecht van Oostbroek en De Bilt.</p><p>Bilthoven bestond niet eens als naam. Die kwam er pas in negentienhonderdzeventien. Wat er daarvoor kwam waren de villaparken, aangelegd vanaf negentienhonderdelf. En het antwoord op mijn vraag is nuchterder dan je bij zulke huizen zou verwachten. Voor veel mensen die zich hier vestigden was de goede treinverbinding belangrijk, en bovendien was de grond goedkoop. Een lage prijs en een spoorlijn, daar is dit dorp uit voortgekomen.</p><p>Met de bewoners kwamen de winkels. In de jaren twintig openden de eerste, aan het Emmaplein en aan de Julianalaan. Zoek ze hier niet. Dat winkelhart en het station liggen ruim anderhalve kilometer verderop naar het westen, en deze wandeling komt er niet langs. Je ziet er vanaf dit punt niets van.</p><p>Wat je hier wel hebt is de andere kant van datzelfde besluit: de rand waar het dorp ophoudt en het bos begint. Iemand heeft die grens getrokken, en jij loopt er nu overheen.</p><p>Even verderop kruist de route een weg die iets bewaart wat helemaal verdwenen is.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 03</span>
+        <audio controls preload="none" src="/audio/routes/julianalaan/03.mp3"></audio></div>
+        <div class="rt-bron">Fuentes: <a href="https://www.canonvannederland.nl/nl/utrecht/regio-zuidoost/de-bilt/villaparken-in-bilthoven" target="_blank" rel="noopener">Canon van Nederland — Villaparken in Bilthoven</a> · <a href="https://historischekringdebilt.nl/julianalaan/" target="_blank" rel="noopener">Historische Kring De Bilt — Julianalaan</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-4">
+      <div class="rt-as"><span class="rt-nr">04</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Historia · 1,8 km</div>
+        <h3>De Paltzerweg en het verdwenen kerkhof</h3>
+        <p>De weg die hier op drieënzestig meter langs de route loopt heet de Paltzerweg, en iets verder, op honderdelf meter, ligt de Oranje Nassaulaan. Ook die laatste is een besluit: hij kreeg zijn naam op zestien december negentienhonderdzesendertig, en nog eens bij een besluit van zesentwintig oktober negentienhonderdzevenenzestig, waarbij ook de Dillenburglaan ontstond.</p><p>Maar de Paltzerweg draagt iets anders mee. In het allereerste officiële straatnamenbesluit van De Bilt, van vierentwintig juli negentienhonderddrie, staat over deze weg letterlijk: zijweg van de Soestdijkscheweg langs het Jodenkerkhof.</p><p>Dat kerkhof lag niet hier. Het lag ruim anderhalve kilometer naar het westen, op de plaats waar nu winkelcentrum De Kwinkelier staat. Deze route komt er niet langs en je ziet er hier niets van. De weg draagt dit verhaal, de plek niet.</p><p>In zeventienhonderdzevenennegentig legde de joodse gemeenschap van Utrecht daar een begraafplaats aan, op de heide in het gerecht van Oostbroek en De Bilt, ongeveer honderd bij honderd meter groot. De laatste begrafenis die we kennen is die van Betsij Levi, in achttienhonderdzes. Zij was het dochtertje van Levi Marcus uit Utrecht. Ze is anderhalf jaar geworden.</p><p>De gemeenschap vond de plek te afgelegen en maakte zich zorgen over de veiligheid. In achttienhonderdzeven kwam er een tweede joodse begraafplaats bij de Rode Brug in Utrecht, en die is er nog steeds. In negentienhonderdtwintig werd het oude terrein op de heide verkocht aan de gemeente De Bilt.</p><p>Loop maar door. Het laatste stuk gaat over iets dat wel bewaard is gebleven.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 04</span>
+        <audio controls preload="none" src="/audio/routes/julianalaan/04.mp3"></audio></div>
+        <div class="rt-bron">Fuentes: <a href="https://historischekringdebilt.nl/wp-content/uploads/Vereniging_Bibliotheek_Wegen_Nu.pdf" target="_blank" rel="noopener">Historische Kring De Bilt — namen van wegen en straten</a> · <a href="https://www.onlinemuseumdebilt.nl/het-jodenkerkhof/" target="_blank" rel="noopener">Online Museum De Bilt — Het Jodenkerkhof</a></div>
+      </div>
+    </article>
+    <article class="rt-stop" id="stop-5">
+      <div class="rt-as"><span class="rt-nr">05</span><span class="rt-lijn"></span></div>
+      <div class="rt-body">
+        <div class="rt-meta">Naturaleza · 2,4 km</div>
+        <h3>Het bos dat gered werd</h3>
+        <p>Nog een klein stuk, dan sta je weer op de hoek waar we begonnen. Op eenenzestig meter van het pad ligt het Okkersbos, en dat het er nog is, is geen vanzelfsprekendheid.</p><p>Al sinds negentienhonderdzevenentachtig lagen er plannen om de naastgelegen golfbaan uit te breiden. In tweeduizendacht en tweeduizendnegen kocht Utrechts Landschap een groot deel van de Biltse Duinen, en in tweeduizendelf kwam het aangrenzende Okkersbos erbij. Daarmee ging de uitbreiding van tafel. Het gebied is nu de schakel tussen de natuurgebieden bij Bosch en Duin en het Panbos, en het hoort bij de ecologische hoofdstructuur. Door de duinen loopt een gemarkeerde wandelroute van anderhalve kilometer, met ingangen aan de Bosuillaan hier in Bilthoven en aan de Biltseweg in Bosch en Duin. Die kun je een andere keer lopen. En daarmee is de cirkel rond. We begonnen bij een laan die haar naam kreeg in een raadsvergadering, en die een bezetter er weer af haalde. We liepen langs zand dat is gaan stuiven omdat mensen het bos weghaalden en het vee lieten grazen. We kwamen langs een weg die de herinnering aan een verdwenen begraafplaats vasthoudt, ergens anders, ver van hier. En we eindigen bij een bos dat er alleen nog staat omdat iemand het heeft gekocht.</p><p>Alles hier is gemaakt of gekozen. Dat is geen klacht. Het is eerder geruststellend, want het betekent dat het ook anders had gekund, en dat er telkens iemand was die iets besloot.</p><p>Dank je wel voor het meelopen. Je bent bijna thuis.</p>
+        <div class="rt-speler"><span class="rt-speler-kop">Capítulo 05</span>
+        <audio controls preload="none" src="/audio/routes/julianalaan/05.mp3"></audio></div>
+        <div class="rt-bron">Fuentes: <a href="https://www.utrechtslandschap.nl/gebied/natuur/biltse-duinen-en-okkersbos" target="_blank" rel="noopener">Utrechts Landschap — Biltse Duinen en Okkersbos</a></div>
+      </div>
+    </article>
+    <p><a class="text-link" href="/es/routes/">← Todas las rutas de audio</a></p>
+  </div></section>
+  <script src="/leaflet.js"></script>
+  
+  <script>
+  (function() {
+    var kaart = null, wachttimer = null, gestopt = false, pogingen = 0;
+    function initKaart() {
+      if (gestopt) return;
+      var L = window.L;
+      var kaartEl = document.getElementById('kaart');
+      if (!kaartEl) return;
+      if (!L || kaartEl.clientWidth === 0) {
+        if (pogingen++ < 60) wachttimer = setTimeout(initKaart, 100);
+        return;
+      }
+      if (kaartEl.dataset.kaartKlaar === '1') return;
+      kaartEl.dataset.kaartKlaar = '1';
+      kaart = L.map(kaartEl, {scrollWheelZoom: false});
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap-bijdragers'
+      }).addTo(kaart);
+      var haltes = [{"nr": 1, "naam": "De laan en de rand van het dorp", "lat": 52.132401, "lng": 5.229107}, {"nr": 2, "naam": "Het stuifzand", "lat": 52.12992, "lng": 5.22637}, {"nr": 3, "naam": "Waarom hier gebouwd werd", "lat": 52.13237, "lng": 5.221827}, {"nr": 4, "naam": "De Paltzerweg en het verdwenen kerkhof", "lat": 52.133971, "lng": 5.223074}, {"nr": 5, "naam": "Het bos dat gered werd", "lat": 52.133646, "lng": 5.231138}];
+      haltes.forEach(function(p) {
+        var icoon = L.divIcon({ className: '',
+          html: '<div style="background:#173B3A;color:#D8A85F;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Newsreader,serif;font-weight:500;font-size:13px;border:2px solid #FAF6ED;box-shadow:0 2px 6px rgba(0,0,0,.3)">' + p.nr + '</div>',
+          iconSize: [26, 26], iconAnchor: [13, 13] });
+        L.marker([p.lat, p.lng], { icon: icoon }).addTo(kaart)
+          .bindPopup('<b>' + p.naam + '</b>')
+          .on('click', function() {
+            var el = document.getElementById('stop-' + p.nr);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+      });
+      var lijnen = [[[52.132401, 5.229107], [52.132543, 5.227658], [52.132457, 5.228055], [52.132314, 5.227975], [52.132137, 5.22754], [52.131433, 5.228861], [52.131252, 5.22894], [52.131206, 5.228559], [52.13072, 5.22878], [52.13066, 5.22872], [52.13011, 5.22735], [52.12992, 5.22618], [52.13026, 5.22589], [52.13009, 5.22517], [52.130111, 5.224531], [52.13079, 5.22337], [52.130624, 5.222793], [52.131086, 5.222434], [52.130926, 5.221779], [52.131414, 5.221586], [52.133103, 5.222019], [52.133311, 5.220656], [52.133221, 5.219343], [52.133351, 5.219798], [52.133596, 5.220105], [52.134401, 5.222476], [52.134033, 5.22281], [52.133971, 5.223074], [52.134473, 5.229597], [52.134098, 5.230827], [52.133854, 5.230667], [52.133641, 5.231054], [52.133828, 5.231864], [52.13381, 5.232139], [52.133685, 5.232238], [52.133153, 5.232051], [52.133093, 5.232611], [52.132691, 5.232681], [52.132585, 5.233054], [52.131958, 5.23292], [52.132401, 5.229107]]];
+      lijnen.forEach(function(l) { L.polyline(l, { color: '#FAF6ED', weight: 7, opacity: 0.75 }).addTo(kaart); });
+      lijnen.forEach(function(l) { L.polyline(l, { color: '#D96552', weight: 4, opacity: 0.95 }).addTo(kaart); });
+      var allePunten = [];
+      lijnen.forEach(function(l) { l.forEach(function(p) { allePunten.push(p); }); });
+      if (allePunten.length) kaart.fitBounds(allePunten, { padding: [24, 24] });
+      setTimeout(function() { if (kaart && !gestopt) kaart.invalidateSize(); }, 300);
+    }
+    window.__2rCleanup = function() {
+      gestopt = true;
+      if (wachttimer) clearTimeout(wachttimer);
+      if (kaart) { kaart.remove(); kaart = null; }
+    };
+    initKaart();
+  })();
+  </script>
+
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/es/">
+      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/es/routes/">Rutas de audio</a>
+      <a href="/es/partners/">Para editores de rutas</a>
+      <a href="/es/roadmap.html">Roadmap</a>
+      <a href="/es/stories/">Historias</a>
+      <a href="/es/kwaliteit/">Calidad y honestidad</a>
+      <a href="/es/privacy.html">Privacidad</a>
+      <a href="mailto:nimco@nentjes.nl">Contacto</a>
+    </div>
+  </div>
+  <p class="footer-family">No el destino — el viaje es lo que nos hace sabios.</p>
+  <p class="footer-credit">Creado por Roel Nentjes, junto con Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+<link rel="stylesheet" href="/leaflet.css">
+
+</body>
+</html>

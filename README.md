@@ -25,9 +25,10 @@ Belangrijke pagina's:
 - `/{taal}/routes/` — luisterroutes en routeboeken
 - `/{taal}/stories/` — het levende verhalenarchief
 - `/{taal}/partners/` — propositie voor routebeheerders en uitgevers
+- `/{taal}/kwaliteit/` — controleerbare werkwijze voor bronnen, redactie en correcties
 - `/{taal}/roadmap.html` en `/{taal}/privacy.html`
 
-De visuele bron is `docs/2R-stijlgids-v1.0.md` in het bovenliggende 2Route-
+Routeaantallen, provincies, afstanden, hoofdstukken en begaanbaarheid worden bij elke build uit `public/routes-data/index.json` en `routes-content/` gelezen. De visuele bron is `docs/2R-stijlgids-v1.0.md` in het bovenliggende 2Route-
 project. Route-inhoud en audio worden samen met de app beheerd en vallen buiten
 de redactionele websitegenerator.
 

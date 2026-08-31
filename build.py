@@ -15,7 +15,7 @@ LANG_LABEL = {'nl': 'NL', 'en': 'EN', 'de': 'DE', 'fr': 'FR', 'es': 'ES', 'pt': 
 HTML_LANG = {'nl': 'nl', 'en': 'en', 'de': 'de', 'fr': 'fr', 'es': 'es', 'pt': 'pt'}
 
 # ---------------------------------------------------------------------------
-# Categorie-labels (dezelfde 9 rubrieken als in de app, vertaald)
+# Categorie-labels (dezelfde rubrieken als in de app, vertaald)
 # ---------------------------------------------------------------------------
 CATEGORIES = {
     'geschiedenis':    {'nl': 'Geschiedenis',        'en': 'History',            'de': 'Geschichte',            'fr': 'Histoire',              'es': 'Historia',               'pt': 'História'},
@@ -27,6 +27,7 @@ CATEGORIES = {
     'sport':           {'nl': 'Sport',               'en': 'Sport',              'de': 'Sport',                 'fr': 'Sport',                 'es': 'Deporte',                'pt': 'Desporto'},
     'techniek':        {'nl': 'Techniek & Industrie','en': 'Tech & Industry',    'de': 'Technik & Industrie',   'fr': 'Technique & Industrie', 'es': 'Técnica e Industria',    'pt': 'Técnica e Indústria'},
     'fotografie':      {'nl': 'Uitzicht & Fotografie','en': 'Views & Photography','de': 'Aussicht & Fotografie', 'fr': 'Panoramas & Photo',     'es': 'Miradores y Fotografía', 'pt': 'Miradouros e Fotografia'},
+    'lokaal nieuws':   {'nl': 'Lokaal nieuws',       'en': 'Local news',          'de': 'Lokale Nachrichten',     'fr': 'Actualité locale',       'es': 'Noticias locales',        'pt': 'Notícias locais'},
 }
 
 # ---------------------------------------------------------------------------
@@ -48,8 +49,8 @@ SITE = {
     invite_p='Neem een warme stem, een levend reisboek en een beetje verwondering met je mee.', invite_btn='Neem Route mee',
     footer_tagline='Niet de bestemming, maar de reis maakt ons wijs.',
     footer_credit='Gebouwd door Roel Nentjes, samen met Claude (Anthropic).',
-    stat1_num='9', stat1_lbl='interesse-rubrieken — elk apart getest',
-    stat2_num='6', stat2_lbl='talen op deze site — de app vertelt eerst in het Nederlands',
+    stat1_num=str(len(CATEGORIES)), stat1_lbl='interesse-rubrieken — elk apart getest',
+    stat2_num=str(len(LANGS)), stat2_lbl='talen op deze site — de app vertelt eerst in het Nederlands',
     stat3_num='4', stat3_lbl='reismodi — te voet, fiets, trein, auto', stat4_num='∞', stat4_lbl='plekken — overal, live gegenereerd',
     steps_eyebrow='Hoe het werkt', steps_h2='Van onderweg zijn naar luisteren in drie stappen',
     step1_h='Zet Route aan', step1_p='Eén knop. Kies je interesses — geschiedenis, natuur, kunst, eten & drinken — of typ er zelf een in.',
@@ -59,9 +60,9 @@ SITE = {
     why_p="Bestaande reisverteller-apps werken met vooraf ingesproken scripts — beperkt tot populaire routes, hetzelfde verhaal voor iedereen. 2R genereert live, overal, en past zich aan jouw interesses aan.",
     f1_h='Lokale bronnen eerst', f1_p="Gemeentesites, VVV's en erfgoedorganisaties — niet alleen Wikipedia. In het buitenland wordt de lokale taal gebruikt en in jouw taal naverteld.",
     f2_h='Gidsmodus', f2_p='Eén doorlopend verhaal met het gebied als rode draad — land, provincie, streek, plaats — in plaats van losse weetjes.',
-    f3_h='Eerlijk, altijd', f3_p='Route doet nooit alsof hij weet wat je ziet. Dichtbij: "kijk eens". Verder weg: "een omweg waard" — nooit andersom.',
-    f4_h='Privacy-eerst', f4_p='Geen locatie-opslag, geen account nodig. Elk verzoek staat op zichzelf.',
-    f5_h='Individueel of familie', f5_p='Eigen interesses, of samen luisteren — met spelletjes en quizjes onderweg in de maak.',
+    f3_h='Eerlijk, altijd', f3_p='Route doet nooit alsof hij weet wat je ziet. Onder ieder verhaal staat of het ter plekke is geschreven of redactioneel is nagekeken, met een knop om een fout te melden.',
+    f4_h='Privacy voorop', f4_p='Geen account of wachtwoord. Je locatie wordt standaard niet bewaard — alleen als je dat zelf aanzet. Je kunt altijd inzien, meenemen of wissen wat 2R heeft bewaard.',
+    f5_h='Individueel of familie', f5_p='Eigen interesses, samen luisteren en onderweg een reisquiz spelen. Jij kiest hoeveel ruimte de verteller krijgt.',
     f6_h='Werkt overal', f6_p='Getest in Nederland én tijdens een rit door Lombardije — dezelfde kwaliteit, in jouw taal verteld.',
     stories_eyebrow='03 · De steden spreken', stories_h2='Vijf steden.<br>Vijf verschillende stemmen.',
     stories_p='Van Amsterdam naar Parijs, Wenen, Rome en Lissabon: iedere stad heeft haar eigen ritme, maar onderweg worden de verhalen van Europa één levend reisboek.',
@@ -93,8 +94,8 @@ SITE = {
     invite_p='Bring a warm voice, a living travel journal, and a little wonder.', invite_btn='Take Route with you',
     footer_tagline='Not the destination — the journey makes us wise.',
     footer_credit='Built by Roel Nentjes, together with Claude (Anthropic).',
-    stat1_num='9', stat1_lbl='interest categories — each individually tested',
-    stat2_num='6', stat2_lbl='languages on this site — the app narrates in Dutch first',
+    stat1_num=str(len(CATEGORIES)), stat1_lbl='interest categories — each individually tested',
+    stat2_num=str(len(LANGS)), stat2_lbl='languages on this site — the app narrates in Dutch first',
     stat3_num='4', stat3_lbl='travel modes — walk, bike, train, car', stat4_num='∞', stat4_lbl='places — anywhere, generated live',
     steps_eyebrow='How it works', steps_h2='From setting out to listening, in three steps',
     step1_h='Turn Route on', step1_p='One switch. Pick your interests — history, nature, art, food & drink — or type in your own.',
@@ -104,9 +105,9 @@ SITE = {
     why_p='Existing travel-narrator apps rely on pre-recorded scripts — limited to popular routes, the same story for everyone. 2R generates live, everywhere, and adapts to your interests.',
     f1_h='Local sources first', f1_p='Municipal sites, tourism boards and heritage organisations — not just Wikipedia. Abroad, local-language sources are used and retold in your own language.',
     f2_h='Guide mode', f2_p='One continuous story with the region as its through-line — country, province, area, town — instead of disconnected facts.',
-    f3_h='Always honest', f3_p='Route never pretends to know what you can see. Close by: "look now." Further away: "worth a detour" — never the other way around.',
-    f4_h='Privacy-first', f4_p='No location storage, no account required. Every request stands on its own.',
-    f5_h='Solo or family', f5_p='Your own interests, or listening together — with games and quizzes for the road in the works.',
+    f3_h='Always honest', f3_p='Route never pretends to know what you can see. Every story says whether it was written on the spot or reviewed by an editor, with a button to report an error.',
+    f4_h='Privacy first', f4_p='No account or password. Your location is not stored by default — only if you enable it. You can always view, export or erase what 2R has kept.',
+    f5_h='Solo or family', f5_p='Choose your interests, listen together and play a travel quiz along the way. You decide how much space the narrator gets.',
     f6_h='Works anywhere', f6_p='Tested in the Netherlands and on a drive through Lombardy, Italy — same quality, narrated in your own language.',
     stories_eyebrow='03 · The cities speak', stories_h2='Five cities.<br>Five different voices.',
     stories_p='From Amsterdam to Paris, Vienna, Rome and Lisbon: every city has its own rhythm, but on the road the stories of Europe become one living travel journal.',
@@ -138,8 +139,8 @@ SITE = {
     invite_p='Nimm eine warme Stimme, ein lebendiges Reisetagebuch und ein bisschen Staunen mit.', invite_btn='Nimm Route mit',
     footer_tagline='Nicht das Ziel — die Reise macht uns weise.',
     footer_credit='Gebaut von Roel Nentjes, gemeinsam mit Claude (Anthropic).',
-    stat1_num='9', stat1_lbl='Interessen-Rubriken — jede einzeln getestet',
-    stat2_num='6', stat2_lbl='Sprachen auf dieser Website — die App erzählt zunächst auf Niederländisch',
+    stat1_num=str(len(CATEGORIES)), stat1_lbl='Interessen-Rubriken — jede einzeln getestet',
+    stat2_num=str(len(LANGS)), stat2_lbl='Sprachen auf dieser Website — die App erzählt zunächst auf Niederländisch',
     stat3_num='4', stat3_lbl='Reisemodi — zu Fuß, Rad, Bahn, Auto', stat4_num='∞', stat4_lbl='Orte — überall, live generiert',
     steps_eyebrow='So funktioniert es', steps_h2='In drei Schritten vom Unterwegssein zum Zuhören',
     step1_h='Route einschalten', step1_p='Ein Schalter. Wähle deine Interessen — Geschichte, Natur, Kunst, Essen & Trinken — oder gib eigene ein.',
@@ -149,9 +150,9 @@ SITE = {
     why_p='Bestehende Reiseerzähler-Apps arbeiten mit vorab aufgenommenen Skripten — begrenzt auf beliebte Routen, dieselbe Geschichte für alle. 2R generiert live, überall, und passt sich deinen Interessen an.',
     f1_h='Lokale Quellen zuerst', f1_p='Gemeindeseiten, Tourismusverbände und Denkmalorganisationen — nicht nur Wikipedia. Im Ausland werden lokalsprachige Quellen genutzt und in deiner Sprache nacherzählt.',
     f2_h='Guide-Modus', f2_p='Eine durchgehende Geschichte mit der Region als rotem Faden — Land, Provinz, Gegend, Ort — statt einzelner Fakten.',
-    f3_h='Immer ehrlich', f3_p='Route tut nie so, als wüsste sie, was du siehst. Ganz nah: "schau mal". Weiter weg: "einen Umweg wert" — nie andersherum.',
-    f4_h='Datenschutz zuerst', f4_p='Keine Standortspeicherung, kein Konto nötig. Jede Anfrage steht für sich.',
-    f5_h='Einzeln oder Familie', f5_p='Eigene Interessen, oder gemeinsam zuhören — mit Spielen und Quiz für unterwegs in Arbeit.',
+    f3_h='Immer ehrlich', f3_p='Route behauptet nie, genau zu wissen, was du siehst. Unter jeder Geschichte steht, ob sie vor Ort geschrieben oder redaktionell geprüft wurde, samt Fehlermeldung.',
+    f4_h='Datenschutz zuerst', f4_p='Kein Konto und kein Passwort. Dein Standort wird standardmäßig nicht gespeichert — nur wenn du es selbst aktivierst. Du kannst gespeicherte Daten einsehen, mitnehmen oder löschen.',
+    f5_h='Einzeln oder als Familie', f5_p='Wähle deine Interessen, hört gemeinsam zu und spielt unterwegs ein Reisequiz. Du bestimmst, wie viel Raum die Stimme bekommt.',
     f6_h='Funktioniert überall', f6_p='Getestet in den Niederlanden und auf einer Fahrt durch die Lombardei — gleiche Qualität, in deiner Sprache erzählt.',
     stories_eyebrow='03 · Die Städte sprechen', stories_h2='Fünf Städte.<br>Fünf verschiedene Stimmen.',
     stories_p='Von Amsterdam über Paris, Wien, Rom bis Lissabon: Jede Stadt hat ihren eigenen Rhythmus, doch unterwegs werden die Geschichten Europas zu einem einzigen lebendigen Reisetagebuch.',
@@ -183,8 +184,8 @@ SITE = {
     invite_p="Emportez une voix chaleureuse, un carnet de voyage vivant et un peu d'émerveillement.", invite_btn='Emportez Route avec vous',
     footer_tagline="Pas la destination — c'est le voyage qui nous rend sages.",
     footer_credit='Conçu par Roel Nentjes, avec Claude (Anthropic).',
-    stat1_num='9', stat1_lbl="catégories d'intérêt — chacune testée individuellement",
-    stat2_num='6', stat2_lbl="langues sur ce site — l'app raconte d'abord en néerlandais",
+    stat1_num=str(len(CATEGORIES)), stat1_lbl="catégories d'intérêt — chacune testée individuellement",
+    stat2_num=str(len(LANGS)), stat2_lbl="langues sur ce site — l'app raconte d'abord en néerlandais",
     stat3_num='4', stat3_lbl='modes — à pied, vélo, train, voiture', stat4_num='∞', stat4_lbl='lieux — partout, générés en direct',
     steps_eyebrow='Comment ça marche', steps_h2="Du départ à l'écoute, en trois étapes",
     step1_h='Activez Route', step1_p="Un interrupteur. Choisissez vos centres d'intérêt — histoire, nature, art, gastronomie — ou saisissez les vôtres.",
@@ -194,9 +195,9 @@ SITE = {
     why_p="Les applications de guide de voyage existantes reposent sur des scripts préenregistrés — limitées aux itinéraires populaires, la même histoire pour tout le monde. 2R génère en direct, partout, et s'adapte à vos centres d'intérêt.",
     f1_h="Les sources locales d'abord", f1_p="Sites municipaux, offices de tourisme et organisations patrimoniales — pas seulement Wikipédia. À l'étranger, les sources en langue locale sont utilisées puis racontées dans votre propre langue.",
     f2_h='Mode guide', f2_p='Un récit continu avec la région comme fil conducteur — pays, province, terroir, ville — plutôt que des faits isolés.',
-    f3_h='Toujours honnête', f3_p='Route ne prétend jamais savoir ce que vous voyez. Tout près : "regardez". Plus loin : "vaut le détour" — jamais l\'inverse.',
-    f4_h="La confidentialité d'abord", f4_p="Aucune conservation de localisation, aucun compte requis. Chaque requête est indépendante.",
-    f5_h='Solo ou en famille', f5_p="Vos propres centres d'intérêt, ou une écoute partagée — avec des jeux et des quiz pour la route en préparation.",
+    f3_h='Toujours honnête', f3_p="Route ne prétend jamais savoir exactement ce que vous voyez. Chaque récit indique s'il a été écrit sur place ou relu par la rédaction, avec un bouton pour signaler une erreur.",
+    f4_h="La confidentialité d'abord", f4_p="Aucun compte ni mot de passe. Votre position n'est pas conservée par défaut — seulement si vous l'activez. Vous pouvez consulter, emporter ou effacer les données gardées par 2R.",
+    f5_h='Solo ou en famille', f5_p="Choisissez vos centres d'intérêt, écoutez ensemble et jouez à un quiz en chemin. Vous décidez de la place laissée à la voix.",
     f6_h='Fonctionne partout', f6_p='Testé aux Pays-Bas et lors d\'un trajet en Lombardie, en Italie — même qualité, racontée dans votre propre langue.',
     stories_eyebrow='03 · Les villes prennent la parole', stories_h2='Cinq villes.<br>Cinq voix différentes.',
     stories_p="D'Amsterdam à Paris, Vienne, Rome et Lisbonne : chaque ville a son propre rythme, mais en chemin, les histoires de l'Europe deviennent un seul carnet de voyage vivant.",
@@ -228,8 +229,8 @@ SITE = {
     invite_p='Llévate una voz cálida, un diario de viaje vivo y un poco de asombro.', invite_btn='Llévate a Route',
     footer_tagline='No el destino — el viaje es lo que nos hace sabios.',
     footer_credit='Creado por Roel Nentjes, junto con Claude (Anthropic).',
-    stat1_num='9', stat1_lbl='categorías de interés — cada una probada individualmente',
-    stat2_num='6', stat2_lbl='idiomas en este sitio — la app narra primero en neerlandés',
+    stat1_num=str(len(CATEGORIES)), stat1_lbl='categorías de interés — cada una probada individualmente',
+    stat2_num=str(len(LANGS)), stat2_lbl='idiomas en este sitio — la app narra primero en neerlandés',
     stat3_num='4', stat3_lbl='modos — a pie, bici, tren, coche', stat4_num='∞', stat4_lbl='lugares — en cualquier sitio, en vivo',
     steps_eyebrow='Cómo funciona', steps_h2='De salir de camino a escuchar, en tres pasos',
     step1_h='Activa Route', step1_p='Un interruptor. Elige tus intereses —historia, naturaleza, arte, gastronomía— o escribe los tuyos.',
@@ -239,9 +240,9 @@ SITE = {
     why_p='Las apps de narración de viajes existentes usan guiones pregrabados —limitadas a rutas populares, la misma historia para todos. 2R genera en vivo, en cualquier lugar, y se adapta a tus intereses.',
     f1_h='Fuentes locales primero', f1_p='Webs municipales, oficinas de turismo y organizaciones patrimoniales —no solo Wikipedia. En el extranjero se usan fuentes en el idioma local y se cuentan en tu propio idioma.',
     f2_h='Modo guía', f2_p='Una historia continua con la región como hilo conductor —país, provincia, comarca, localidad— en lugar de datos aislados.',
-    f3_h='Siempre honesto', f3_p='Route nunca finge saber lo que puedes ver. Cerca: "mira ahora". Más lejos: "vale la pena el desvío" —nunca al revés.',
-    f4_h='La privacidad primero', f4_p='Sin almacenamiento de ubicación, sin necesidad de cuenta. Cada solicitud es independiente.',
-    f5_h='Individual o en familia', f5_p='Tus propios intereses, o escuchar juntos —con juegos y quizzes para el camino en desarrollo.',
+    f3_h='Siempre honesto', f3_p='Route nunca finge saber exactamente qué ves. Cada historia indica si se escribió en el momento o fue revisada por la redacción, con un botón para informar de errores.',
+    f4_h='La privacidad primero', f4_p='Sin cuenta ni contraseña. Tu ubicación no se guarda por defecto, solo si lo activas. Siempre puedes consultar, llevarte o borrar lo que 2R haya guardado.',
+    f5_h='Individual o en familia', f5_p='Elige tus intereses, escuchad juntos y jugad a un quiz de viaje. Tú decides cuánto espacio ocupa la voz.',
     f6_h='Funciona en cualquier lugar', f6_p='Probado en los Países Bajos y en un viaje por Lombardía, Italia —misma calidad, narrada en tu propio idioma.',
     stories_eyebrow='03 · Las ciudades hablan', stories_h2='Cinco ciudades.<br>Cinco voces distintas.',
     stories_p='De Ámsterdam a París, Viena, Roma y Lisboa: cada ciudad tiene su propio ritmo, pero en el camino las historias de Europa se convierten en un único diario de viaje vivo.',
@@ -273,8 +274,8 @@ SITE = {
     invite_p='Leve uma voz calorosa, um diário de viagem vivo e um pouco de encantamento.', invite_btn='Leve a Route com você',
     footer_tagline='Não o destino — a viagem é o que nos torna sábios.',
     footer_credit='Criado por Roel Nentjes, com a Claude (Anthropic).',
-    stat1_num='9', stat1_lbl='categorias de interesse — cada uma testada individualmente',
-    stat2_num='6', stat2_lbl='idiomas neste site — o app narra primeiro em neerlandês',
+    stat1_num=str(len(CATEGORIES)), stat1_lbl='categorias de interesse — cada uma testada individualmente',
+    stat2_num=str(len(LANGS)), stat2_lbl='idiomas neste site — o app narra primeiro em neerlandês',
     stat3_num='4', stat3_lbl='modos — a pé, bici, comboio, carro', stat4_num='∞', stat4_lbl='lugares — em qualquer lugar, ao vivo',
     steps_eyebrow='Como funciona', steps_h2='Do caminho ao ouvir, em três passos',
     step1_h='Ative a Route', step1_p='Um interruptor. Escolha seus interesses — história, natureza, arte, gastronomia — ou digite os seus.',
@@ -284,9 +285,9 @@ SITE = {
     why_p='Os apps de narração de viagem existentes usam roteiros pré-gravados — limitados a rotas populares, a mesma história para todos. O 2R gera ao vivo, em qualquer lugar, e se adapta aos seus interesses.',
     f1_h='Fontes locais primeiro', f1_p='Sites municipais, órgãos de turismo e organizações de patrimônio — não só a Wikipédia. No exterior, fontes no idioma local são usadas e recontadas no seu próprio idioma.',
     f2_h='Modo guia', f2_p='Uma história contínua com a região como fio condutor — país, província, região, cidade — em vez de fatos isolados.',
-    f3_h='Sempre honesto', f3_p='A Route nunca finge saber o que você pode ver. Perto: "olhe agora". Mais longe: "vale o desvio" — nunca o contrário.',
-    f4_h='Privacidade em primeiro lugar', f4_p='Sem armazenamento de localização, sem conta necessária. Cada solicitação é independente.',
-    f5_h='Individual ou em família', f5_p='Seus próprios interesses, ou ouvir juntos — com jogos e quizzes para a estrada a caminho.',
+    f3_h='Sempre honesto', f3_p='A Route nunca finge saber exatamente o que você vê. Cada história informa se foi escrita na hora ou revista pela redação, com um botão para comunicar um erro.',
+    f4_h='Privacidade em primeiro lugar', f4_p='Sem conta nem senha. A sua localização não é guardada por padrão, apenas se você ativar. Pode consultar, levar ou apagar o que o 2R guardou.',
+    f5_h='Individual ou em família', f5_p='Escolha os seus interesses, ouçam juntos e joguem um quiz de viagem. Você decide quanto espaço a voz ocupa.',
     f6_h='Funciona em qualquer lugar', f6_p='Testado nos Países Baixos e em uma viagem pela Lombardia, Itália — mesma qualidade, narrada no seu próprio idioma.',
     stories_eyebrow='03 · As cidades falam', stories_h2='Cinco cidades.<br>Cinco vozes diferentes.',
     stories_p='De Amsterdã a Paris, Viena, Roma e Lisboa: cada cidade tem seu próprio ritmo, mas pelo caminho as histórias da Europa se tornam um único diário de viagem vivo.',
@@ -679,6 +680,81 @@ PRIVACY = {
 ),
 }
 
+# Actuele privacywaarheid uit docs/2R-DPIA-v1.md (Claude, 31 augustus 2026).
+# Eén vertaalde bron voor locatiegedrag, bewaartermijnen en gebruikersrechten.
+PRIVACY_DPIA = {
+'nl': dict(
+    updated='Laatst bijgewerkt: 31 augustus 2026',
+    location_standard='<strong>Standaard wordt je locatie niet opgeslagen.</strong> De app gebruikt je actuele positie om de juiste plek te kiezen. Technische gebeurtenissen worden wel per sessie gelogd, maar standaard zonder GPS-positie.',
+    location_optin='<strong>Coördinaten worden alleen bewaard als je uitgebreide logboeken zelf aanzet.</strong> Dan kunnen positie, koers en snelheid voor diagnose worden meegestuurd. Je kunt dit altijd weer uitzetten; locatiegegevens worden na 30 dagen verwijderd.',
+    data_items=[
+        '<strong>Technische gebeurtenissen.</strong> Welk verhaal is verteld, welke knop is gebruikt en welke fout optrad, met een willekeurig sessienummer per app-start. Deze gegevens worden 90 dagen bewaard; standaard zonder GPS-positie.',
+        '<strong>Gegenereerde verhalen.</strong> Verhaaltekst en de plek waarover het verhaal gaat worden 90 dagen bewaard. De positie van de reiziger wordt daar niet aan gekoppeld.',
+        '<strong>Meldingen over onjuiste verhalen.</strong> Een melding wordt 365 dagen bewaard, zodat we haar kunnen onderzoeken en terugkoppelen.',
+        '<strong>Aankopen.</strong> Product, transactienummer en een anoniem apparaatnummer worden wegens de fiscale bewaarplicht 7 jaar bewaard. Betaalgegevens blijven bij Apple.',
+        '<strong>Jouw rechten.</strong> In de app kun je zien wat 2R bewaart, je gegevens meenemen, wissen en het bijhouden uitzetten. Minder gegevens heeft voorrang: er is geen centrale persoonssleutel waarmee wij je buiten je toestel kunnen opzoeken.',
+    ]),
+'en': dict(
+    updated='Last updated: 31 August 2026',
+    location_standard='<strong>Your location is not stored by default.</strong> The app uses your current position to choose the right place. Technical events are logged per session, but without a GPS position by default.',
+    location_optin='<strong>Coordinates are stored only when you enable extended logging yourself.</strong> Position, heading and speed may then be sent for diagnostics. You can switch this off at any time; location data is removed after 30 days.',
+    data_items=[
+        '<strong>Technical events.</strong> Which story was told, which button was used and which error occurred, with a random session number for each app start. Kept for 90 days and without GPS by default.',
+        '<strong>Generated stories.</strong> Story text and the place it describes are kept for 90 days. The traveller’s position is not linked to it.',
+        '<strong>Reports of incorrect stories.</strong> A report is kept for 365 days so we can investigate and respond.',
+        '<strong>Purchases.</strong> Product, transaction number and an anonymous device number are kept for 7 years to meet fiscal obligations. Payment details remain with Apple.',
+        '<strong>Your rights.</strong> In the app you can see what 2R keeps, export it, erase it and stop tracking. Fewer data comes first: there is no central person key with which we can find you outside your device.',
+    ]),
+'de': dict(
+    updated='Zuletzt aktualisiert: 31. August 2026',
+    location_standard='<strong>Dein Standort wird standardmäßig nicht gespeichert.</strong> Die App nutzt deine aktuelle Position, um den passenden Ort zu wählen. Technische Ereignisse werden pro Sitzung protokolliert, standardmäßig jedoch ohne GPS-Position.',
+    location_optin='<strong>Koordinaten werden nur gespeichert, wenn du die erweiterten Protokolle selbst aktivierst.</strong> Dann können Position, Richtung und Geschwindigkeit zur Diagnose gesendet werden. Du kannst dies jederzeit ausschalten; Standortdaten werden nach 30 Tagen gelöscht.',
+    data_items=[
+        '<strong>Technische Ereignisse.</strong> Welche Geschichte erzählt, welche Taste benutzt und welcher Fehler auftrat, mit einer zufälligen Sitzungsnummer pro App-Start. Aufbewahrung 90 Tage, standardmäßig ohne GPS.',
+        '<strong>Generierte Geschichten.</strong> Text und beschriebener Ort werden 90 Tage aufbewahrt. Die Position des Reisenden wird nicht damit verknüpft.',
+        '<strong>Meldungen zu fehlerhaften Geschichten.</strong> Eine Meldung wird 365 Tage gespeichert, damit wir sie untersuchen und beantworten können.',
+        '<strong>Käufe.</strong> Produkt, Transaktionsnummer und anonyme Gerätenummer werden wegen der steuerlichen Pflicht 7 Jahre aufbewahrt. Zahlungsdaten bleiben bei Apple.',
+        '<strong>Deine Rechte.</strong> In der App kannst du gespeicherte Daten einsehen, exportieren, löschen und das Protokollieren ausschalten. Weniger Daten haben Vorrang: Es gibt keinen zentralen Personenschlüssel.',
+    ]),
+'fr': dict(
+    updated='Dernière mise à jour : 31 août 2026',
+    location_standard="<strong>Votre position n’est pas conservée par défaut.</strong> L’app utilise votre position actuelle pour choisir le bon lieu. Les événements techniques sont journalisés par session, mais sans position GPS par défaut.",
+    location_optin="<strong>Les coordonnées ne sont conservées que si vous activez vous-même les journaux détaillés.</strong> Position, direction et vitesse peuvent alors être envoyées pour le diagnostic. Vous pouvez arrêter à tout moment ; les données de localisation sont supprimées après 30 jours.",
+    data_items=[
+        '<strong>Événements techniques.</strong> Récit lu, bouton utilisé et erreur rencontrée, avec un numéro de session aléatoire à chaque démarrage. Conservation 90 jours, sans GPS par défaut.',
+        '<strong>Récits générés.</strong> Le texte et le lieu raconté sont conservés 90 jours. La position du voyageur n’y est pas associée.',
+        '<strong>Signalements de récits inexacts.</strong> Un signalement est conservé 365 jours afin de pouvoir l’étudier et y répondre.',
+        '<strong>Achats.</strong> Produit, numéro de transaction et identifiant anonyme de l’appareil sont conservés 7 ans pour l’obligation fiscale. Les données de paiement restent chez Apple.',
+        '<strong>Vos droits.</strong> Dans l’app, vous pouvez voir, exporter et effacer les données conservées, et arrêter le suivi. La minimisation prime : aucune clé centrale ne permet de vous retrouver hors de votre appareil.',
+    ]),
+'es': dict(
+    updated='Última actualización: 31 de agosto de 2026',
+    location_standard='<strong>Tu ubicación no se guarda por defecto.</strong> La app usa tu posición actual para elegir el lugar correcto. Los eventos técnicos se registran por sesión, pero sin posición GPS por defecto.',
+    location_optin='<strong>Las coordenadas solo se guardan si activas tú mismo los registros ampliados.</strong> Entonces pueden enviarse posición, rumbo y velocidad para diagnóstico. Puedes desactivarlo cuando quieras; los datos de ubicación se borran a los 30 días.',
+    data_items=[
+        '<strong>Eventos técnicos.</strong> Qué historia se contó, qué botón se usó y qué error ocurrió, con un número de sesión aleatorio en cada inicio. Se guardan 90 días y sin GPS por defecto.',
+        '<strong>Historias generadas.</strong> El texto y el lugar narrado se guardan 90 días. La posición del viajero no se vincula a ellos.',
+        '<strong>Avisos sobre historias incorrectas.</strong> Un aviso se guarda 365 días para poder investigarlo y responder.',
+        '<strong>Compras.</strong> Producto, número de transacción y número anónimo del dispositivo se guardan 7 años por obligación fiscal. Los datos de pago siguen en Apple.',
+        '<strong>Tus derechos.</strong> En la app puedes ver, exportar y borrar lo que 2R guarda y detener el registro. Menos datos es la prioridad: no existe una clave central para localizarte fuera del dispositivo.',
+    ]),
+'pt': dict(
+    updated='Última atualização: 31 de agosto de 2026',
+    location_standard='<strong>A sua localização não é guardada por padrão.</strong> O app usa a posição atual para escolher o lugar certo. Eventos técnicos são registados por sessão, mas sem posição GPS por padrão.',
+    location_optin='<strong>As coordenadas só são guardadas se você ativar os registos detalhados.</strong> Posição, direção e velocidade podem então ser enviadas para diagnóstico. Pode desligar a qualquer momento; os dados de localização são apagados após 30 dias.',
+    data_items=[
+        '<strong>Eventos técnicos.</strong> Qual história foi contada, qual botão foi usado e qual erro ocorreu, com um número de sessão aleatório a cada início. Guardados por 90 dias, sem GPS por padrão.',
+        '<strong>Histórias geradas.</strong> O texto e o lugar narrado são guardados por 90 dias. A posição do viajante não é ligada à história.',
+        '<strong>Comunicações de histórias incorretas.</strong> Uma comunicação é guardada por 365 dias para investigação e resposta.',
+        '<strong>Compras.</strong> Produto, número de transação e número anónimo do aparelho são guardados por 7 anos por obrigação fiscal. Os dados de pagamento ficam com a Apple.',
+        '<strong>Os seus direitos.</strong> No app pode ver, exportar e apagar o que o 2R guarda e interromper o registo. Menos dados tem prioridade: não existe uma chave central para o localizar fora do aparelho.',
+    ]),
+}
+for _lang, _dpia in PRIVACY_DPIA.items():
+    PRIVACY[_lang]['updated'] = _dpia['updated']
+    PRIVACY[_lang]['location_items'][1:] = [_dpia['location_standard'], _dpia['location_optin']]
+    PRIVACY[_lang]['data_items'] = _dpia['data_items']
+
 # ---------------------------------------------------------------------------
 # De "rijd een stukje mee"-sectie op de homepage: vier windstreken van
 # Europa, elk met een eigen scène-foto die meebeweegt met de tekst terwijl
@@ -785,12 +861,12 @@ CITY_STORIES = {
 # ---------------------------------------------------------------------------
 ROADMAP_ITEMS = [
     ('live', dict(nl='Het eerste levende routeboek', en='The first living route book', de='Das erste lebendige Routenbuch', fr='Le premier carnet de route vivant', es='El primer libro de ruta vivo', pt='O primeiro livro de rota vivo'),
-     dict(nl='Boswachterspad Stulp en Kasteeltuin is online met officiële GPX, eigen kaart, twaalf verbonden hoofdstukken, audio en zeventig geverifieerde feiten.',
-          en='The Stulp and Castle Garden forester trail is online with its official GPX, our own map, twelve connected chapters, audio and seventy verified facts.',
-          de='Der Boswachterspad Stulp en Kasteeltuin ist online: offizieller GPX-Track, eigene Karte, zwölf verbundene Kapitel, Audio und siebzig geprüfte Fakten.',
-          fr='Le sentier forestier Stulp et Jardin du Château est en ligne avec GPX officiel, carte maison, douze chapitres reliés, audio et soixante-dix faits vérifiés.',
-          es='El sendero forestal Stulp y Jardín del Castillo está en línea con GPX oficial, mapa propio, doce capítulos conectados, audio y setenta datos verificados.',
-          pt='O trilho florestal Stulp e Jardim do Castelo está online com GPX oficial, mapa próprio, doze capítulos conectados, áudio e setenta fatos verificados.')),
+     dict(nl='De eerste routes staan online met een controleerbare bronketen, menselijke eindredactie, kaart, hoofdstukken en audio.',
+          en='The first routes are online with a traceable source chain, human final editing, maps, chapters and audio.',
+          de='Die ersten Routen sind online: mit nachvollziehbarer Quellenkette, menschlicher Schlussredaktion, Karten, Kapiteln und Audio.',
+          fr='Les premiers itinéraires sont en ligne, avec une chaîne de sources traçable, une relecture humaine, des cartes, des chapitres et de l’audio.',
+          es='Las primeras rutas están en línea, con fuentes trazables, revisión humana final, mapas, capítulos y audio.',
+          pt='As primeiras rotas estão online, com fontes rastreáveis, revisão humana final, mapas, capítulos e áudio.')),
     ('live', dict(nl='AI-verhalen uit lokale bronnen', en='AI stories from local sources', de='KI-Geschichten aus lokalen Quellen', fr='Histoires IA à partir de sources locales', es='Historias de IA a partir de fuentes locales', pt='Histórias de IA a partir de fontes locais'),
      dict(nl="Live gegenereerd per locatie, met voorrang voor gemeentesites, VVV's en erfgoedorganisaties — niet alleen Wikipedia.",
           en='Generated live per location, prioritising municipal sites, tourism boards and heritage organisations — not just Wikipedia.',
@@ -819,7 +895,7 @@ ROADMAP_ITEMS = [
           fr='À l\'étranger, la Wikipédia locale est utilisée (italien, français, allemand…) et racontée dans votre propre langue.',
           es='En el extranjero se usa la Wikipedia local (italiano, francés, alemán…) y se cuenta en tu propio idioma.',
           pt='No exterior, a Wikipédia local é usada (italiano, francês, alemão…) e recontada no seu próprio idioma.')),
-    ('live', dict(nl='Negen interesses, en je eigen', en='Nine interests, and your own', de='Neun Interessen, und deine eigenen', fr='Neuf centres d\'intérêt, et les vôtres', es='Nueve intereses, y los tuyos', pt='Nove interesses, e os seus'),
+    ('live', dict(nl=f'{len(CATEGORIES)} interesses, en je eigen', en=f'{len(CATEGORIES)} interests, and your own', de=f'{len(CATEGORIES)} Interessen und deine eigenen', fr=f"{len(CATEGORIES)} centres d'intérêt, et les vôtres", es=f'{len(CATEGORIES)} intereses, y los tuyos', pt=f'{len(CATEGORIES)} interesses, e os seus'),
      dict(nl='Geschiedenis, natuur, kunst, sport, eten & drinken en meer — plus een vrij invoerveld voor elke andere interesse.',
           en='History, nature, art, sport, food & drink and more — plus a free-text field for any other interest.',
           de='Geschichte, Natur, Kunst, Sport, Essen & Trinken und mehr — plus ein Freitextfeld für jedes andere Interesse.',
@@ -1130,6 +1206,40 @@ HOWTO = {
 ),
 }
 
+# Bedieningsmogelijkheden sinds app-build 50; één bron voor alle talen.
+HOWTO_BUILD50 = {
+'nl': [
+    dict(h='Spreektempo en “Straks”', p='Pas het spreektempo aan je wandeling of rit aan. Komt een verhaal ongelegen, tik dan op <b>Straks</b>: 2R bewaart het voor een rustiger moment.'),
+    dict(h='Bediening die met je meegroeit', p='2R begint bewust eenvoudig. In <b>Normaal</b> verschijnen extra keuzes en privacy-inzage; <b>Expert</b> voegt test- en diagnosefuncties toe. Tijdens het reizen blijft één hoofdhandeling vooropstaan.'),
+    dict(h='Herkomst en fouten melden', p='Onder ieder verhaal staat of het ter plekke door AI is geschreven of door de redactie is nagekeken. Zie je een fout, dan kun je die direct melden.'),
+],
+'en': [
+    dict(h='Speaking pace and “Later”', p='Adjust the speaking pace to your walk or journey. If a story comes at the wrong moment, tap <b>Later</b> and 2R will keep it for a quieter moment.'),
+    dict(h='Controls that grow with you', p='2R deliberately starts simple. <b>Normal</b> reveals more choices and privacy access; <b>Expert</b> adds testing and diagnostics. One primary action remains central while travelling.'),
+    dict(h='Origin and error reports', p='Every story says whether it was written on the spot by AI or reviewed by an editor. If you notice an error, you can report it directly.'),
+],
+'de': [
+    dict(h='Sprechtempo und „Später“', p='Passe das Sprechtempo an deinen Weg an. Kommt eine Geschichte ungelegen, tippe auf <b>Später</b>; 2R bewahrt sie für einen ruhigeren Moment auf.'),
+    dict(h='Bedienung, die mitwächst', p='2R beginnt bewusst einfach. <b>Normal</b> zeigt zusätzliche Optionen und Datenschutz-Einsicht; <b>Expert</b> ergänzt Test und Diagnose. Unterwegs bleibt eine Hauptaktion im Mittelpunkt.'),
+    dict(h='Herkunft und Fehler melden', p='Unter jeder Geschichte steht, ob sie vor Ort von KI geschrieben oder redaktionell geprüft wurde. Einen Fehler kannst du direkt melden.'),
+],
+'fr': [
+    dict(h='Débit de parole et « Plus tard »', p='Adaptez le débit à votre marche ou à votre trajet. Si un récit arrive mal, touchez <b>Plus tard</b> : 2R le garde pour un moment plus calme.'),
+    dict(h='Des commandes qui évoluent avec vous', p='2R commence volontairement simplement. <b>Normal</b> affiche plus de choix et l’accès aux données ; <b>Expert</b> ajoute test et diagnostic. En route, une action principale reste prioritaire.'),
+    dict(h='Origine et signalement', p='Chaque récit indique s’il a été écrit sur place par l’IA ou relu par la rédaction. Vous pouvez signaler directement une erreur.'),
+],
+'es': [
+    dict(h='Velocidad de voz y «Más tarde»', p='Ajusta la velocidad a tu paseo o trayecto. Si una historia llega en mal momento, pulsa <b>Más tarde</b>: 2R la guarda para un momento más tranquilo.'),
+    dict(h='Controles que crecen contigo', p='2R empieza deliberadamente sencillo. <b>Normal</b> muestra más opciones y acceso a privacidad; <b>Experto</b> añade pruebas y diagnóstico. Durante el viaje manda una sola acción principal.'),
+    dict(h='Origen e informe de errores', p='Cada historia indica si fue escrita en el momento por IA o revisada por la redacción. Puedes informar de un error directamente.'),
+],
+'pt': [
+    dict(h='Velocidade da voz e “Mais tarde”', p='Ajuste a velocidade à caminhada ou viagem. Se a história vier numa hora ruim, toque em <b>Mais tarde</b>: o 2R guarda-a para um momento mais calmo.'),
+    dict(h='Controlos que crescem consigo', p='O 2R começa deliberadamente simples. <b>Normal</b> mostra mais opções e acesso à privacidade; <b>Especialista</b> acrescenta teste e diagnóstico. Durante a viagem, uma ação principal continua em destaque.'),
+    dict(h='Origem e comunicação de erros', p='Cada história informa se foi escrita na hora por IA ou revista pela redação. Pode comunicar um erro diretamente.'),
+],
+}
+
 # "Zo werkt het" als vijf filmische scènes (beelden van Codex, 29 aug).
 # Volgorde/beeld gedeeld over alle talen. Het brede reisbeeld opent; de auto is
 # daarna nog maar één van de mogelijke reisruimtes.
@@ -1224,7 +1334,7 @@ def build_howto(lang):
         <summary>{_strip_lead_glyph(sec['h'])}</summary>
         <p>{sec['p']}</p>
       </details>
-''' for sec in h['sections'])
+''' for sec in (h['sections'] + HOWTO_BUILD50[lang]))
     body = f'''{scenes}  <section class="block"><div class="wrap" style="max-width:720px;">
     <div class="section-label">{FAQ_LABEL.get(lang, FAQ_LABEL['en'])}</div>
     <div class="howto-faq-list">
@@ -1316,6 +1426,7 @@ def footer(lang):
       <a href="/{lang}/partners/">{h['nav_partners']}</a>
       <a href="/{lang}/roadmap.html">{s['nav_roadmap']}</a>
       <a href="/{lang}/stories/">{s['nav_stories']}</a>
+      <a href="/{lang}/kwaliteit/">{QUALITY_TXT[lang]['nav']}</a>
       <a href="/{lang}/privacy.html">{s['nav_privacy']}</a>
       <a href="mailto:nimco@nentjes.nl">{s['footer_contact']}</a>
     </div>
@@ -1646,10 +1757,22 @@ SITE_AUDIO_NL = '''
 </script>
 '''
 
+
+QUALITY_TXT = {
+'nl': dict(nav='Kwaliteit & eerlijkheid', home_label='Kwaliteit vóór volume', home_h='Een mooi verhaal is pas waardevol als het klopt.', home_p='Voor de provincieroutes zijn 763 feiten nagelopen en 40 verwijderd vóór publicatie. Niet om foutloosheid te claimen, maar om te laten zien dat kwaliteit bij 2R een zichtbaar proces is.', principles=[('Bron vóór bravoure', 'Een verhaal moet herleidbaar zijn tot betrouwbare, liefst lokale bronnen.'), ('Menselijke eindredactie', 'Redactionele routeboeken worden gelezen, aangescherpt en gecontroleerd voordat ze een stem krijgen.'), ('Zichtbaar eerlijk', 'We laten zien wat live is gemaakt, wat is nagekeken en hoe je een fout meldt.')], home_cta='Bekijk hoe 2R kwaliteit bewaakt', title='Kwaliteit en eerlijkheid — 2R (Second Route)', description='Zo controleert 2R bronnen, feiten, redactie, privacy en verbeteringen voor live verhalen en redactionele luisterroutes.', eyebrow='Ons kwaliteitskompas', h1='Kwaliteit is geen belofte.<br>Het is een zichtbaar proces.', lede='2R wil verwonderen zonder meer zekerheid te suggereren dan de bronnen toelaten. Daarom maken we herkomst, redactie en correcties zichtbaar — ook wanneer iets nog in ontwikkeling is.', alt='Een open reisjournaal met kaart, notities en bronmateriaal in warm avondlicht.', process_label='Van bron naar stem', process_h='Vijf momenten waarop een verhaal beter moet worden.', process=[('Vinden', 'We zoeken bij voorkeur lokale, publieke en gezaghebbende bronnen.'), ('Vergelijken', 'Feiten worden naast elkaar gelegd; twijfel wordt niet weggepoetst.'), ('Schrappen', 'Wat niet voldoende te onderbouwen is, komt niet in het verhaal.'), ('Redigeren', 'Routeboeken krijgen een menselijke eindredactie op inhoud, ritme en toon.'), ('Verbeteren', 'Bronnen blijven zichtbaar en gebruikers kunnen een fout melden.')], evidence_label='Wat al is gecontroleerd', evidence_h='Bewijs uit het eerste landelijke routeprogramma.', evidence_p='Voor de twaalf provincieroutes zijn feiten één voor één beoordeeld voordat de routeboeken werden gepubliceerd.', reviewed='feiten nagekeken', removed='feiten verwijderd', honesty_label='Twee soorten verhalen', honesty_h='Dezelfde eerlijkheid, een ander maakproces.', live_h='Live onderweg', live_p='De app zoekt rond je actuele locatie en maakt ter plekke een verhaal. Dat is persoonlijk en actueel; daarom tonen we de bron en maken we melden eenvoudig.', book_h='Redactioneel routeboek', book_p='Een vaste route krijgt vooraf een brononderzoek, samenhangende hoofdstukken en menselijke eindredactie. Dat label staat bij de route.', correct_label='Nooit “af”', correct_h='Een fout melden hoort bij kwaliteit.', correct_p='Geen enkele bronketen is onfeilbaar. 2R belooft daarom geen perfecte waarheid, maar een controleerbare werkwijze: bron tonen, melding ontvangen, corrigeren en waar nodig uitleggen wat veranderde.', routes_cta='Bekijk de gecontroleerde luisterroutes', privacy_cta='Lees hoe we met gegevens omgaan'),
+'en': dict(nav='Quality & honesty', home_label='Quality before volume', home_h='A beautiful story matters only when it is sound.', home_p='For the provincial routes, 763 facts were reviewed and 40 removed before publication. Not to claim perfection, but to show that quality at 2R is a visible process.', principles=[('Sources before swagger', 'Every story should trace back to reliable, preferably local sources.'), ('Human final edit', 'Editorial route books are read, refined and checked before they receive a voice.'), ('Visible honesty', 'We show what was made live, what was reviewed and how to report an error.')], home_cta='See how 2R safeguards quality', title='Quality and honesty — 2R (Second Route)', description='How 2R checks sources, facts, editing, privacy and corrections for live stories and editorial listening routes.', eyebrow='Our quality compass', h1='Quality is not a promise.<br>It is a visible process.', lede='2R wants to inspire wonder without suggesting more certainty than the sources allow. That is why origin, editing and corrections remain visible — including while the product is still developing.', alt='An open travel journal with a map, notes and source material in warm evening light.', process_label='From source to voice', process_h='Five moments when a story has to improve.', process=[('Find', 'We prefer local, public and authoritative sources.'), ('Compare', 'Facts are checked against each other; doubt is not polished away.'), ('Remove', 'Anything that cannot be supported well enough does not enter the story.'), ('Edit', 'Route books receive human final editing for content, rhythm and tone.'), ('Improve', 'Sources stay visible and users can report an error.')], evidence_label='What has already been checked', evidence_h='Evidence from the first nationwide route programme.', evidence_p='Facts for the twelve provincial routes were reviewed one by one before the route books were published.', reviewed='facts reviewed', removed='facts removed', honesty_label='Two kinds of story', honesty_h='The same honesty, a different making process.', live_h='Live on the road', live_p='The app searches around your current location and creates a story on the spot. It is personal and current; sources and error reporting therefore remain visible.', book_h='Editorial route book', book_p='A fixed route receives advance source research, connected chapters and human final editing. That label appears with the route.', correct_label='Never “finished”', correct_h='Reporting an error is part of quality.', correct_p='No chain of sources is infallible. 2R therefore promises no perfect truth, but a verifiable method: show the source, receive a report, correct it and explain material changes where needed.', routes_cta='View the reviewed listening routes', privacy_cta='Read how we handle data'),
+'de': dict(nav='Qualität & Ehrlichkeit', home_label='Qualität vor Menge', home_h='Eine schöne Geschichte ist nur wertvoll, wenn sie stimmt.', home_p='Für die Provinzrouten wurden 763 Fakten geprüft und 40 vor der Veröffentlichung entfernt. Nicht als Anspruch auf Fehlerlosigkeit, sondern als sichtbarer Qualitätsprozess.', principles=[('Quelle vor Wirkung', 'Jede Geschichte soll auf verlässliche, möglichst lokale Quellen zurückführbar sein.'), ('Menschliche Schlussredaktion', 'Redaktionelle Routenbücher werden gelesen, geschärft und geprüft, bevor sie eine Stimme erhalten.'), ('Sichtbare Ehrlichkeit', 'Wir zeigen, was live entstand, was geprüft wurde und wie Fehler gemeldet werden können.')], home_cta='So sichert 2R die Qualität', title='Qualität und Ehrlichkeit — 2R (Second Route)', description='So prüft 2R Quellen, Fakten, Redaktion, Datenschutz und Korrekturen bei Live-Geschichten und redaktionellen Hörrouten.', eyebrow='Unser Qualitätskompass', h1='Qualität ist kein Versprechen.<br>Sie ist ein sichtbarer Prozess.', lede='2R möchte Staunen wecken, ohne mehr Gewissheit vorzutäuschen, als die Quellen zulassen. Deshalb bleiben Herkunft, Redaktion und Korrekturen sichtbar — auch während der Entwicklung.', alt='Ein offenes Reisetagebuch mit Karte, Notizen und Quellenmaterial im warmen Abendlicht.', process_label='Von der Quelle zur Stimme', process_h='Fünf Momente, in denen eine Geschichte besser werden muss.', process=[('Finden', 'Wir bevorzugen lokale, öffentliche und maßgebliche Quellen.'), ('Vergleichen', 'Fakten werden abgeglichen; Zweifel werden nicht wegpoliert.'), ('Streichen', 'Was nicht ausreichend belegbar ist, kommt nicht in die Geschichte.'), ('Redigieren', 'Routenbücher erhalten eine menschliche Schlussredaktion für Inhalt, Rhythmus und Ton.'), ('Verbessern', 'Quellen bleiben sichtbar und Fehler können gemeldet werden.')], evidence_label='Was bereits geprüft wurde', evidence_h='Nachweis aus dem ersten landesweiten Routenprogramm.', evidence_p='Die Fakten der zwölf Provinzrouten wurden vor der Veröffentlichung einzeln geprüft.', reviewed='Fakten geprüft', removed='Fakten entfernt', honesty_label='Zwei Arten von Geschichten', honesty_h='Dieselbe Ehrlichkeit, ein anderer Entstehungsprozess.', live_h='Live unterwegs', live_p='Die App sucht rund um den aktuellen Standort und erstellt vor Ort eine Geschichte. Deshalb bleiben Quelle und Fehlermeldung sichtbar.', book_h='Redaktionelles Routenbuch', book_p='Eine feste Route erhält Quellenrecherche, zusammenhängende Kapitel und menschliche Schlussredaktion. Dieses Label steht bei der Route.', correct_label='Nie „fertig“', correct_h='Fehler melden gehört zur Qualität.', correct_p='Keine Quellenkette ist unfehlbar. 2R verspricht daher keine perfekte Wahrheit, sondern eine überprüfbare Methode: Quelle zeigen, Meldung empfangen, korrigieren und wichtige Änderungen erklären.', routes_cta='Geprüfte Hörrouten ansehen', privacy_cta='Unser Umgang mit Daten'),
+'fr': dict(nav='Qualité & honnêteté', home_label='La qualité avant le volume', home_h="Une belle histoire n'a de valeur que si elle est solide.", home_p='Pour les itinéraires provinciaux, 763 faits ont été vérifiés et 40 retirés avant publication. Non pour prétendre à la perfection, mais pour rendre la qualité visible.', principles=[('La source avant l’effet', 'Chaque récit doit remonter à des sources fiables, de préférence locales.'), ('Relecture humaine finale', 'Les carnets éditoriaux sont lus, affinés et contrôlés avant de recevoir une voix.'), ('Honnêteté visible', 'Nous indiquons ce qui est créé en direct, ce qui est relu et comment signaler une erreur.')], home_cta='Voir comment 2R protège la qualité', title='Qualité et honnêteté — 2R (Second Route)', description='Comment 2R vérifie sources, faits, rédaction, confidentialité et corrections pour les récits en direct et les parcours éditoriaux.', eyebrow='Notre boussole qualité', h1="La qualité n'est pas une promesse.<br>C'est un processus visible.", lede="2R veut susciter l’émerveillement sans suggérer plus de certitude que les sources ne le permettent. Origine, relecture et corrections restent donc visibles.", alt='Un carnet de voyage ouvert avec carte, notes et sources dans une chaude lumière du soir.', process_label='De la source à la voix', process_h="Cinq moments où l’histoire doit s’améliorer.", process=[('Trouver', 'Nous privilégions les sources locales, publiques et reconnues.'), ('Comparer', 'Les faits sont confrontés ; le doute n’est pas effacé.'), ('Retirer', 'Ce qui n’est pas assez étayé ne rejoint pas le récit.'), ('Relire', 'Les carnets reçoivent une relecture humaine sur le fond, le rythme et le ton.'), ('Améliorer', 'Les sources restent visibles et chacun peut signaler une erreur.')], evidence_label='Ce qui a déjà été vérifié', evidence_h='La preuve issue du premier programme national.', evidence_p='Les faits des douze itinéraires provinciaux ont été examinés un à un avant publication.', reviewed='faits vérifiés', removed='faits retirés', honesty_label='Deux types de récits', honesty_h='La même honnêteté, un processus différent.', live_h='En direct en chemin', live_p='L’app cherche autour de votre position actuelle et compose un récit sur place. La source et le signalement restent donc visibles.', book_h='Carnet éditorial', book_p='Une route fixe reçoit une recherche documentaire, des chapitres liés et une relecture humaine finale. Ce label accompagne la route.', correct_label='Jamais « terminé »', correct_h='Signaler une erreur fait partie de la qualité.', correct_p='Aucune chaîne de sources n’est infaillible. 2R promet donc une méthode vérifiable : montrer la source, recevoir le signalement, corriger et expliquer les changements importants.', routes_cta='Voir les parcours vérifiés', privacy_cta='Lire notre politique de données'),
+'es': dict(nav='Calidad y honestidad', home_label='Calidad antes que volumen', home_h='Una historia bonita solo vale si está bien sustentada.', home_p='En las rutas provinciales se revisaron 763 datos y se retiraron 40 antes de publicar. No para afirmar perfección, sino para mostrar un proceso de calidad visible.', principles=[('Fuentes antes que efecto', 'Cada historia debe remitir a fuentes fiables, preferentemente locales.'), ('Edición humana final', 'Los libros de ruta se leen, afinan y comprueban antes de recibir una voz.'), ('Honestidad visible', 'Mostramos qué se crea en vivo, qué se revisa y cómo informar de un error.')], home_cta='Ver cómo 2R protege la calidad', title='Calidad y honestidad — 2R (Second Route)', description='Cómo revisa 2R fuentes, datos, edición, privacidad y correcciones en historias en vivo y rutas editoriales.', eyebrow='Nuestra brújula de calidad', h1='La calidad no es una promesa.<br>Es un proceso visible.', lede='2R quiere despertar asombro sin aparentar más certeza de la que permiten las fuentes. Por eso origen, edición y correcciones son visibles.', alt='Un diario de viaje abierto con mapa, notas y fuentes bajo una cálida luz de tarde.', process_label='De la fuente a la voz', process_h='Cinco momentos en los que una historia debe mejorar.', process=[('Encontrar', 'Preferimos fuentes locales, públicas y autorizadas.'), ('Comparar', 'Los datos se contrastan; la duda no se disimula.'), ('Retirar', 'Lo que no puede sostenerse bien no entra en la historia.'), ('Editar', 'Los libros de ruta reciben edición humana final de contenido, ritmo y tono.'), ('Mejorar', 'Las fuentes siguen visibles y se puede comunicar un error.')], evidence_label='Lo que ya se ha comprobado', evidence_h='La prueba del primer programa nacional de rutas.', evidence_p='Los datos de las doce rutas provinciales se evaluaron uno por uno antes de publicarse.', reviewed='datos revisados', removed='datos retirados', honesty_label='Dos tipos de historias', honesty_h='La misma honestidad, un proceso distinto.', live_h='En vivo durante el viaje', live_p='La app busca alrededor de la ubicación actual y crea una historia al momento. Por eso mantenemos visibles fuente y aviso de error.', book_h='Libro de ruta editorial', book_p='Una ruta fija recibe investigación de fuentes, capítulos conectados y edición humana final. La ruta muestra esa etiqueta.', correct_label='Nunca “terminado”', correct_h='Comunicar un error forma parte de la calidad.', correct_p='Ninguna cadena de fuentes es infalible. 2R promete un método verificable: mostrar la fuente, recibir el aviso, corregir y explicar los cambios importantes.', routes_cta='Ver las rutas revisadas', privacy_cta='Leer cómo tratamos los datos'),
+'pt': dict(nav='Qualidade e honestidade', home_label='Qualidade antes do volume', home_h='Uma história bonita só tem valor quando é sólida.', home_p='Nas rotas provinciais, 763 factos foram revistos e 40 retirados antes da publicação. Não para alegar perfeição, mas para tornar a qualidade visível.', principles=[('Fontes antes do efeito', 'Cada história deve ser rastreável a fontes fiáveis, de preferência locais.'), ('Revisão humana final', 'Os livros de rota são lidos, afinados e verificados antes de receberem uma voz.'), ('Honestidade visível', 'Mostramos o que foi criado ao vivo, o que foi revisto e como comunicar um erro.')], home_cta='Veja como o 2R protege a qualidade', title='Qualidade e honestidade — 2R (Second Route)', description='Como o 2R verifica fontes, factos, edição, privacidade e correções em histórias ao vivo e rotas editoriais.', eyebrow='A nossa bússola de qualidade', h1='Qualidade não é uma promessa.<br>É um processo visível.', lede='O 2R quer despertar admiração sem sugerir mais certeza do que as fontes permitem. Por isso, origem, revisão e correções permanecem visíveis.', alt='Um diário de viagem aberto com mapa, notas e fontes sob uma luz quente de fim de tarde.', process_label='Da fonte à voz', process_h='Cinco momentos em que uma história tem de melhorar.', process=[('Encontrar', 'Damos preferência a fontes locais, públicas e reconhecidas.'), ('Comparar', 'Os factos são confrontados; a dúvida não é escondida.'), ('Retirar', 'O que não pode ser sustentado não entra na história.'), ('Editar', 'Os livros de rota recebem revisão humana final de conteúdo, ritmo e tom.'), ('Melhorar', 'As fontes ficam visíveis e os utilizadores podem comunicar um erro.')], evidence_label='O que já foi verificado', evidence_h='Prova do primeiro programa nacional de rotas.', evidence_p='Os factos das doze rotas provinciais foram avaliados um por um antes da publicação.', reviewed='factos revistos', removed='factos retirados', honesty_label='Dois tipos de histórias', honesty_h='A mesma honestidade, um processo diferente.', live_h='Ao vivo no caminho', live_p='A app pesquisa em torno da localização atual e cria uma história no momento. Por isso, fonte e comunicação de erro permanecem visíveis.', book_h='Livro de rota editorial', book_p='Uma rota fixa recebe pesquisa de fontes, capítulos ligados e revisão humana final. Esse rótulo aparece na rota.', correct_label='Nunca “terminado”', correct_h='Comunicar um erro faz parte da qualidade.', correct_p='Nenhuma cadeia de fontes é infalível. O 2R promete um método verificável: mostrar a fonte, receber o aviso, corrigir e explicar mudanças importantes.', routes_cta='Ver as rotas verificadas', privacy_cta='Leia como tratamos os dados'),
+}
+
 def build_home(lang):
     s = SITE[lang]
     h = HOME_20[lang]
+    q = QUALITY_TXT[lang]
     stops = EUROPE_STOPS[lang]
+    quality_cards = ''.join(f'''<article><span>{i:02d}</span><h3>{title}</h3><p>{copy}</p></article>''' for i, (title, copy) in enumerate(q['principles'], 1))
     steps = f'''<div class="steps">
         <div class="step"><span class="num-badge">I</span><h3>{s['step1_h']}</h3><p>{s['step1_p']}</p></div>
         <div class="step"><span class="num-badge">II</span><h3>{s['step2_h']}</h3><p>{s['step2_p']}</p></div>
@@ -1756,10 +1879,26 @@ def build_home(lang):
           <span class="way-label">{h['book_label']}</span>
           <h3>{h['book_h']}</h3>
           <p>{h['book_p']}</p>
-          <div class="way-proof"><b>{PARTNER_TXT[lang]['facts'][0][0]}</b><b>12 {ROUTES_TXT[lang]['hoofdstukken']}</b><b>{PARTNER_TXT[lang]['facts'][2][0]} {PARTNER_TXT[lang]['facts'][2][1]}</b></div>
+          <div class="way-proof"><b>{format_km(ROUTES[HOME_ROUTE_SLUG]['_index']['lengte_km'], lang)} km</b><b>{ROUTES[HOME_ROUTE_SLUG]['_index']['hoofdstukken']} {ROUTES_TXT[lang]['hoofdstukken']}</b><b>{PARTNER_TXT[lang]['facts'][2][0]} {PARTNER_TXT[lang]['facts'][2][1]}</b></div>
           <a class="btn-primary" href="/{lang}/routes/">{h['book_cta']} <span>→</span></a>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section class="quality-home">
+    <div class="wrap quality-home-grid">
+      <div class="quality-home-copy">
+        <p class="section-label">{q['home_label']}</p>
+        <h2>{q['home_h']}</h2>
+        <p>{q['home_p']}</p>
+        <div class="quality-proof-line">
+          <span><strong>{EDITORIAL_FACTS_CHECKED}</strong> {q['reviewed']}</span>
+          <span><strong>{EDITORIAL_FACTS_REMOVED}</strong> {q['removed']}</span>
+        </div>
+        <a class="text-link on-paper" href="/{lang}/kwaliteit/">{q['home_cta']} →</a>
+      </div>
+      <div class="quality-home-principles">{quality_cards}</div>
     </div>
   </section>
 
@@ -2031,6 +2170,53 @@ PRIV_EXTRA = {
     close_h='Ainda tem uma pergunta?', close_p='A privacidade deve ser compreensível. Se algo não estiver claro, queremos saber.', close_btn='Escreva-nos',
 ),
 }
+
+PRIVACY_SUMMARY_DPIA = {
+'nl': dict(
+    lede='2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account of wachtwoord. Je locatie wordt standaard niet bewaard; technische gebeurtenissen worden per sessie gelogd. Hier lees je precies wat er gebeurt.',
+    promises=[('01', 'Geen account nodig', 'Je hoeft niet in te loggen. Alleen testers vullen vrijwillig een naam in.'),
+              ('02', 'Locatie standaard niet bewaard', 'Coördinaten worden alleen opgeslagen als je uitgebreide logboeken zelf aanzet.'),
+              ('03', 'Zelf inzien en wissen', 'In de app kun je je gegevens bekijken, meenemen, wissen en het bijhouden uitzetten.')],
+    note1='Je actuele locatie is nodig om het juiste verhaal te kiezen, maar wordt standaard niet opgeslagen.',
+    note2='Uitgebreide logboeken zijn opt-in. Coördinaten daaruit worden na 30 dagen verwijderd.'),
+'en': dict(
+    lede='2R uses only what it needs to tell the right story along the way. No account or password. Your location is not stored by default; technical events are logged per session. Here is exactly what happens.',
+    promises=[('01', 'No account needed', 'No login is required. Only testers may voluntarily enter a name.'),
+              ('02', 'Location not stored by default', 'Coordinates are stored only when you enable extended logging yourself.'),
+              ('03', 'View and erase it yourself', 'In the app you can view, export and erase your data, and stop tracking.')],
+    note1='Your current location is needed to choose the right story, but it is not stored by default.',
+    note2='Extended logging is opt-in. Any coordinates in it are deleted after 30 days.'),
+'de': dict(
+    lede='2R nutzt nur, was unterwegs für die passende Geschichte nötig ist. Kein Konto, kein Passwort. Dein Standort wird standardmäßig nicht gespeichert; technische Ereignisse werden pro Sitzung protokolliert. Hier steht genau, was geschieht.',
+    promises=[('01', 'Kein Konto nötig', 'Keine Anmeldung erforderlich. Nur Tester können freiwillig einen Namen angeben.'),
+              ('02', 'Standort standardmäßig nicht gespeichert', 'Koordinaten werden nur gespeichert, wenn du erweiterte Protokolle selbst aktivierst.'),
+              ('03', 'Selbst einsehen und löschen', 'In der App kannst du deine Daten einsehen, exportieren, löschen und das Protokollieren stoppen.')],
+    note1='Dein aktueller Standort wird für die passende Geschichte gebraucht, aber standardmäßig nicht gespeichert.',
+    note2='Erweiterte Protokolle sind Opt-in. Darin enthaltene Koordinaten werden nach 30 Tagen gelöscht.'),
+'fr': dict(
+    lede="2R n’utilise que ce qui est nécessaire pour raconter le bon récit. Aucun compte ni mot de passe. Votre position n’est pas conservée par défaut ; les événements techniques sont journalisés par session. Voici exactement ce qui se passe.",
+    promises=[('01', 'Aucun compte nécessaire', 'Aucune connexion requise. Seuls les testeurs peuvent saisir volontairement un nom.'),
+              ('02', 'Position non conservée par défaut', 'Les coordonnées ne sont stockées que si vous activez les journaux détaillés.'),
+              ('03', 'Consulter et effacer vous-même', 'Dans l’app, vous pouvez consulter, exporter et effacer vos données, et arrêter le suivi.')],
+    note1='Votre position actuelle est nécessaire pour choisir le bon récit, mais elle n’est pas conservée par défaut.',
+    note2='Les journaux détaillés sont optionnels. Leurs coordonnées sont supprimées après 30 jours.'),
+'es': dict(
+    lede='2R usa solo lo necesario para contar la historia adecuada. Sin cuenta ni contraseña. Tu ubicación no se guarda por defecto; los eventos técnicos se registran por sesión. Aquí explicamos exactamente qué ocurre.',
+    promises=[('01', 'Sin cuenta', 'No hace falta iniciar sesión. Solo los testers pueden introducir un nombre voluntariamente.'),
+              ('02', 'Ubicación no guardada por defecto', 'Las coordenadas solo se almacenan si activas los registros ampliados.'),
+              ('03', 'Consultar y borrar tú mismo', 'En la app puedes ver, exportar y borrar tus datos y detener el registro.')],
+    note1='Tu ubicación actual es necesaria para elegir la historia correcta, pero no se guarda por defecto.',
+    note2='Los registros ampliados son opcionales. Sus coordenadas se borran a los 30 días.'),
+'pt': dict(
+    lede='O 2R usa apenas o necessário para contar a história certa. Sem conta nem senha. A localização não é guardada por padrão; eventos técnicos são registados por sessão. Aqui explicamos exatamente o que acontece.',
+    promises=[('01', 'Sem conta necessária', 'Não é preciso iniciar sessão. Só os testadores podem informar um nome voluntariamente.'),
+              ('02', 'Localização não guardada por padrão', 'As coordenadas só são armazenadas se você ativar os registos detalhados.'),
+              ('03', 'Consultar e apagar você mesmo', 'No app pode ver, exportar e apagar os seus dados e interromper o registo.')],
+    note1='A localização atual é necessária para escolher a história certa, mas não é guardada por padrão.',
+    note2='Os registos detalhados são opcionais. As coordenadas são apagadas após 30 dias.'),
+}
+for _lang, _summary in PRIVACY_SUMMARY_DPIA.items():
+    PRIV_EXTRA[_lang].update(_summary)
 
 def build_privacy(lang):
     p = PRIVACY[lang]
@@ -2409,8 +2595,8 @@ def build_story_detail(lang, st):
 # ---------------------------------------------------------------------------
 ROUTES_TXT = {
 'nl': dict(nav='Luisterroutes', eyebrow='Het levende routeboek', h1='De eerste wandeling<br>heeft een stem.', hero_alt='Twee wandelaars volgen samen een bospad langs heide en een oude kasteeltuin in het zachte ochtendlicht.',
-    lede='Boswachterspad Stulp en Kasteeltuin is onze eerste complete luisterroute: officiële GPX, eigen kaart en twaalf hoofdstukken op precies de goede plek. Van hieruit groeit een bibliotheek door heel Nederland.',
-    live='Beluister de route', productie='In productie', hoofdstukken='hoofdstukken', km='km',
+    lede='Hier vind je alle gepubliceerde luisterroutes, rechtstreeks opgebouwd uit de actuele routebibliotheek.',
+    live='Beluister de route', hoofdstukken='hoofdstukken', km='km',
     kwaliteit_h='Zo ontstaat kwaliteit', kwaliteit_p='Elk routeboek doorloopt dezelfde vijf stappen vóór het online komt:',
     kwaliteit=['Betrouwbare lokale bronnen — elk feit met bron-URL, dubbel gecontroleerd', 'Eén dragende verhaallijn van begin tot slot', 'Hoofdstukken op wandeltempo: elke vierhonderd tot zevenhonderd meter', 'Menselijke eindredactie, elke ingreep gelogd', 'Een warme vertelstem'],
     detail_eyebrow='Luisterwandeling · Utrecht', taalnoot='', hoofdstuk='Hoofdstuk', bron_lbl='Bronnen',
@@ -2418,8 +2604,8 @@ ROUTES_TXT = {
     kaart_p='Een eigen 2R-kaart, getekend uit OpenStreetMap-geodata — zoom in tot op het wandelpad. Tik op een halte om naar het hoofdstuk te springen.',
     home_link='Beluister de hele wandeling →', terug='← Alle luisterroutes'),
 'en': dict(nav='Listening routes', eyebrow='The living route book', h1='The first walk<br>has found its voice.', hero_alt='Two walkers follow a woodland path beside heath and an old castle garden in soft morning light.',
-    lede='The Stulp and Castle Garden forester trail is our first complete listening route: official GPX, our own map and twelve chapters in exactly the right places. From here, a library across the Netherlands begins to grow.',
-    live='Listen to this route', productie='In production', hoofdstukken='chapters', km='km',
+    lede='Here you will find every published listening route, built directly from the current route library.',
+    live='Listen to this route', hoofdstukken='chapters', km='km',
     kwaliteit_h='How quality is made', kwaliteit_p='Every route book passes the same five steps before going live:',
     kwaliteit=['Reliable local sources — every fact with its URL, double-checked', 'One carrying storyline from start to finish', 'Chapters at walking pace: every four to seven hundred metres', 'Human editing, every change logged', 'A warm narrating voice'],
     detail_eyebrow='Listening walk · Utrecht', taalnoot='The chapters below are narrated in Dutch — the language the landscape speaks. Multilingual route books are on the roadmap.',
@@ -2427,8 +2613,8 @@ ROUTES_TXT = {
     kaart_h='The route on the map', kaart_p='Our own 2R map, drawn from OpenStreetMap geodata — zoom in to the footpath itself. Tap a stop to jump to its chapter.',
     home_link='Listen to the full walk →', terug='← All listening routes'),
 'de': dict(nav='Hörrouten', eyebrow='Das lebendige Routenbuch', h1='Die erste Wanderung<br>hat eine Stimme.', hero_alt='Zwei Wanderer folgen im sanften Morgenlicht einem Waldweg an Heide und altem Schlossgarten entlang.',
-    lede='Der Boswachterspad Stulp en Kasteeltuin ist unsere erste vollständige Hörroute: offizieller GPX-Track, eigene Karte und zwölf Kapitel an genau den richtigen Orten. Von hier aus wächst eine Bibliothek in den ganzen Niederlanden.',
-    live='Route anhören', productie='In Produktion', hoofdstukken='Kapitel', km='km',
+    lede='Hier findest du alle veröffentlichten Hörrouten, direkt aus der aktuellen Routenbibliothek.',
+    live='Route anhören', hoofdstukken='Kapitel', km='km',
     kwaliteit_h='So entsteht Qualität', kwaliteit_p='Jedes Routenbuch durchläuft vor der Veröffentlichung dieselben fünf Schritte:',
     kwaliteit=['Verlässliche lokale Quellen — jeder Fakt mit URL, doppelt geprüft', 'Eine tragende Erzähllinie von Anfang bis Ende', 'Kapitel im Wandertempo: alle vier- bis siebenhundert Meter', 'Menschliche Redaktion, jeder Eingriff protokolliert', 'Eine warme Erzählstimme'],
     detail_eyebrow='Hörwanderung · Utrecht', taalnoot='Die Kapitel unten werden auf Niederländisch erzählt — mehrsprachige Routenbücher stehen auf der Roadmap.',
@@ -2436,8 +2622,8 @@ ROUTES_TXT = {
     kaart_h='Die Route auf der Karte', kaart_p='Eine eigene 2R-Karte aus OpenStreetMap-Geodaten — zoome bis auf den Wanderweg. Tippe auf einen Halt, um zum Kapitel zu springen.',
     home_link='Die ganze Wanderung anhören →', terug='← Alle Hörrouten'),
 'fr': dict(nav='Routes audio', eyebrow='Le carnet de route vivant', h1='La première promenade<br>a trouvé sa voix.', hero_alt="Deux marcheurs suivent un sentier forestier entre lande et ancien jardin de château dans la douce lumière du matin.",
-    lede="Le sentier forestier Stulp et Jardin du Château est notre première route audio complète : GPX officiel, carte maison et douze chapitres aux endroits justes. À partir d'ici se construit une bibliothèque dans tous les Pays-Bas.",
-    live='Écouter cette route', productie='En production', hoofdstukken='chapitres', km='km',
+    lede="Vous trouverez ici tous les parcours audio publiés, issus directement de la bibliothèque actuelle.",
+    live='Écouter cette route', hoofdstukken='chapitres', km='km',
     kwaliteit_h='Comment naît la qualité', kwaliteit_p='Chaque carnet de route passe par les cinq mêmes étapes avant sa mise en ligne :',
     kwaliteit=['Des sources locales fiables — chaque fait avec son URL, vérifié deux fois', 'Une seule ligne narrative du début à la fin', 'Des chapitres au rythme de la marche : tous les quatre à sept cents mètres', 'Une relecture humaine, chaque intervention consignée', 'Une voix chaleureuse'],
     detail_eyebrow='Promenade sonore · Utrecht', taalnoot='Les chapitres ci-dessous sont racontés en néerlandais — les carnets multilingues sont sur la feuille de route.',
@@ -2445,8 +2631,8 @@ ROUTES_TXT = {
     kaart_h='La route sur la carte', kaart_p="Une carte 2R maison, dessinée à partir des géodonnées OpenStreetMap — zoomez jusqu'au sentier. Touchez une halte pour rejoindre son chapitre.",
     home_link='Écouter toute la promenade →', terug='← Toutes les routes audio'),
 'es': dict(nav='Rutas de audio', eyebrow='El libro de ruta vivo', h1='El primer paseo<br>ya tiene voz.', hero_alt='Dos caminantes siguen un sendero del bosque junto al brezal y un antiguo jardín de castillo bajo la suave luz de la mañana.',
-    lede='El sendero forestal Stulp y Jardín del Castillo es nuestra primera ruta sonora completa: GPX oficial, mapa propio y doce capítulos en los lugares precisos. Desde aquí crecerá una biblioteca por todos los Países Bajos.',
-    live='Escuchar esta ruta', productie='En producción', hoofdstukken='capítulos', km='km',
+    lede='Aquí encontrarás todas las rutas sonoras publicadas, generadas directamente desde la biblioteca actual.',
+    live='Escuchar esta ruta', hoofdstukken='capítulos', km='km',
     kwaliteit_h='Así nace la calidad', kwaliteit_p='Cada libro de ruta pasa por los mismos cinco pasos antes de publicarse:',
     kwaliteit=['Fuentes locales fiables — cada dato con su URL, verificado dos veces', 'Una sola línea narrativa de principio a fin', 'Capítulos a ritmo de paseo: cada cuatrocientos a setecientos metros', 'Edición humana, cada cambio registrado', 'Una voz cálida'],
     detail_eyebrow='Paseo sonoro · Utrecht', taalnoot='Los capítulos siguientes se narran en neerlandés — los libros multilingües están en la hoja de ruta.',
@@ -2454,8 +2640,8 @@ ROUTES_TXT = {
     kaart_h='La ruta en el mapa', kaart_p='Un mapa 2R propio, dibujado con geodatos de OpenStreetMap — acércate hasta el propio sendero. Toca una parada para ir a su capítulo.',
     home_link='Escucha el paseo completo →', terug='← Todas las rutas de audio'),
 'pt': dict(nav='Rotas de áudio', eyebrow='O livro de rota vivo', h1='O primeiro passeio<br>já tem voz.', hero_alt='Dois caminhantes seguem um trilho florestal junto à charneca e a um antigo jardim de castelo na suave luz da manhã.',
-    lede='O trilho florestal Stulp e Jardim do Castelo é a nossa primeira rota sonora completa: GPX oficial, mapa próprio e doze capítulos nos lugares certos. A partir daqui cresce uma biblioteca por todos os Países Baixos.',
-    live='Ouvir esta rota', productie='Em produção', hoofdstukken='capítulos', km='km',
+    lede='Aqui encontra todas as rotas sonoras publicadas, diretamente a partir da biblioteca atual.',
+    live='Ouvir esta rota', hoofdstukken='capítulos', km='km',
     kwaliteit_h='Assim nasce a qualidade', kwaliteit_p='Cada livro de rota passa pelos mesmos cinco passos antes de ir ao ar:',
     kwaliteit=['Fontes locais confiáveis — cada fato com sua URL, verificado duas vezes', 'Uma única linha narrativa do início ao fim', 'Capítulos no ritmo da caminhada: a cada quatrocentos a setecentos metros', 'Edição humana, cada mudança registrada', 'Uma voz calorosa'],
     detail_eyebrow='Passeio sonoro · Utrecht', taalnoot='Os capítulos abaixo são narrados em neerlandês — livros multilíngues estão no roteiro.',
@@ -2474,7 +2660,7 @@ PARTNER_TXT = {
     primary='Bespreek een pilotroute', secondary='Beluister onze eerste route',
     proof_label='Van pad naar verhaal', proof_h='Eén wandeling bewijst de hele keten.',
     proof_p='Voor Boswachterspad Stulp en Kasteeltuin brachten we de officiële route, lokale bronnen en OpenStreetMap-geodata samen in een routeboek dat op wandeltempo vertelt.',
-    facts=[('5,7 km', 'officiële wandelroute'), ('12', 'verbonden hoofdstukken'), ('70', 'geverifieerde feiten'), ('1', 'dragende verhaallijn')],
+    facts=[],
     process_label='De werkwijze', process_h='Van bronmateriaal naar een levende route.',
     process=[
         ('De route', 'U levert een GPX-bestand, routebeschrijving of bestaande gids. Wij leggen het echte spoor en de relevante omgeving vast.'),
@@ -2505,7 +2691,7 @@ PARTNER_TXT = {
     primary='Discuss a pilot route', secondary='Listen to our first route',
     proof_label='From path to story', proof_h='One walk proves the entire chain.',
     proof_p='For the Stulp and Castle Garden forester trail, we brought together the official route, local sources and OpenStreetMap geodata in a route book paced for walking.',
-    facts=[('5.7 km', 'official walking route'), ('12', 'connected chapters'), ('70', 'verified facts'), ('1', 'carrying storyline')],
+    facts=[],
     process_label='The method', process_h='From source material to a living route.',
     process=[
         ('The route', 'You supply a GPX file, route description or existing guide. We map the actual trail and its meaningful surroundings.'),
@@ -2536,7 +2722,7 @@ PARTNER_TXT = {
     primary='Pilotroute besprechen', secondary='Unsere erste Route anhören',
     proof_label='Vom Weg zur Geschichte', proof_h='Eine Wanderung beweist die ganze Kette.',
     proof_p='Für den Boswachterspad Stulp en Kasteeltuin verbanden wir die offizielle Route, lokale Quellen und OpenStreetMap-Geodaten zu einem Routenbuch im Wandertempo.',
-    facts=[('5,7 km', 'offizielle Wanderroute'), ('12', 'verbundene Kapitel'), ('70', 'geprüfte Fakten'), ('1', 'tragende Erzähllinie')],
+    facts=[],
     process_label='Die Arbeitsweise', process_h='Vom Quellenmaterial zur lebendigen Route.',
     process=[
         ('Die Route', 'Sie liefern GPX-Datei, Routenbeschreibung oder Reiseführer. Wir erfassen den echten Weg und sein relevantes Umfeld.'),
@@ -2567,7 +2753,7 @@ PARTNER_TXT = {
     primary='Parler d’une route pilote', secondary='Écouter notre première route',
     proof_label='Du sentier au récit', proof_h='Une randonnée démontre toute la chaîne.',
     proof_p="Pour le sentier forestier Stulp et Jardin du Château, nous avons réuni la route officielle, les sources locales et les géodonnées OpenStreetMap dans un carnet rythmé pour la marche.",
-    facts=[('5,7 km', 'randonnée officielle'), ('12', 'chapitres reliés'), ('70', 'faits vérifiés'), ('1', 'fil narratif')],
+    facts=[],
     process_label='La méthode', process_h="Des sources à l'itinéraire vivant.",
     process=[
         ("L'itinéraire", 'Vous fournissez un fichier GPX, une description ou un guide. Nous cartographions le tracé réel et son environnement pertinent.'),
@@ -2598,7 +2784,7 @@ PARTNER_TXT = {
     primary='Hablar de una ruta piloto', secondary='Escuchar nuestra primera ruta',
     proof_label='Del camino a la historia', proof_h='Una caminata demuestra toda la cadena.',
     proof_p='Para el Boswachterspad Stulp en Kasteeltuin reunimos la ruta oficial, fuentes locales y geodatos de OpenStreetMap en un libro de ruta al ritmo del caminante.',
-    facts=[('5,7 km', 'ruta oficial a pie'), ('12', 'capítulos conectados'), ('70', 'datos verificados'), ('1', 'hilo narrativo')],
+    facts=[],
     process_label='El método', process_h='Del material de origen a una ruta viva.',
     process=[
         ('La ruta', 'Aportas un archivo GPX, una descripción o una guía. Trazamos el recorrido real y su entorno relevante.'),
@@ -2629,7 +2815,7 @@ PARTNER_TXT = {
     primary='Conversar sobre uma rota-piloto', secondary='Ouvir a nossa primeira rota',
     proof_label='Do caminho à história', proof_h='Uma caminhada demonstra toda a cadeia.',
     proof_p='Para o Boswachterspad Stulp en Kasteeltuin reunimos a rota oficial, fontes locais e geodados OpenStreetMap num livro de rota ao ritmo da caminhada.',
-    facts=[('5,7 km', 'percurso oficial'), ('12', 'capítulos ligados'), ('70', 'factos verificados'), ('1', 'fio narrativo')],
+    facts=[],
     process_label='O método', process_h='Das fontes a uma rota viva.',
     process=[
         ('A rota', 'Fornece um ficheiro GPX, descrição ou guia. Mapeamos o percurso real e o contexto relevante.'),
@@ -2653,26 +2839,28 @@ PARTNER_TXT = {
 ),
 }
 
-PROVINCIES = [
-    ('Groningen', None), ('Friesland', None), ('Drenthe', None), ('Overijssel', None),
-    ('Flevoland', None), ('Gelderland', None), ('Utrecht', 'drakensteyn'),
-    ('Noord-Holland', None), ('Zuid-Holland', None), ('Zeeland', None),
-    ('Noord-Brabant', None), ('Limburg', None),
-]
+# Route- en begaanbaarheidsdata worden uitsluitend uit Claude's datalaag gelezen.
+# Deze generator schrijft routes-content/ en public/routes-data/ nooit terug.
+with open(os.path.join(OUT, 'routes-data', 'index.json'), encoding='utf-8') as _f:
+    ROUTE_INDEX = json.load(_f)
+ROUTE_ITEMS = ROUTE_INDEX['routeboeken']
+ROUTES = {}
+for _meta in ROUTE_ITEMS:
+    _slug = _meta['slug']
+    with open(os.path.join(ROOT, 'routes-content', f'{_slug}.json'), encoding='utf-8') as _f:
+        _route = json.load(_f)
+    assert _route['slug'] == _slug
+    assert _route['hoofdstukken_n'] == len(_route['hoofdstukken']) == _meta['hoofdstukken']
+    assert abs(float(_route['lengte_km']) - float(_meta['lengte_km'])) < 0.11
+    assert _meta.get('begaanbaarheid'), f'Begaanbaarheid ontbreekt voor {_slug}'
+    _route['_index'] = _meta
+    ROUTES[_slug] = _route
 
-with open(os.path.join(ROOT, 'routes-content', 'drakensteyn.json'), encoding='utf-8') as _f:
-    ROUTE_DRAKENSTEYN = json.load(_f)
-ROUTES = {'drakensteyn': ROUTE_DRAKENSTEYN}
-
-# Korte routelede per taal (de hoofdstukken zelf blijven Nederlands)
-ROUTE_LEDE = {
- 'nl': 'Twaalf hoofdstukken over nonnen, boeren, een freule, boswachters en een koningin — duizend jaar landschap, verteld op precies de goede plek. Zeventig geverifieerde feiten, elk met bron.',
- 'en': 'Twelve chapters about nuns, farmers, a baroness, foresters and a queen — a thousand years of landscape, told in exactly the right place. Seventy verified facts, each with its source.',
- 'de': 'Zwölf Kapitel über Nonnen, Bauern, eine Freifrau, Förster und eine Königin — tausend Jahre Landschaft, erzählt am genau richtigen Ort. Siebzig verifizierte Fakten, jeder mit Quelle.',
- 'fr': "Douze chapitres sur des religieuses, des paysans, une baronne, des forestiers et une reine — mille ans de paysage, racontés exactement au bon endroit. Soixante-dix faits vérifiés, chacun avec sa source.",
- 'es': 'Doce capítulos sobre monjas, campesinos, una baronesa, guardabosques y una reina — mil años de paisaje, contados justo en el lugar correcto. Setenta datos verificados, cada uno con su fuente.',
- 'pt': 'Doze capítulos sobre freiras, camponeses, uma baronesa, guardas florestais e uma rainha — mil anos de paisagem, contados no lugar certo. Setenta fatos verificados, cada um com sua fonte.',
-}
+ROUTE_COUNT = len(ROUTE_ITEMS)
+PROVINCE_COUNT = len({_r['provincie'] for _r in ROUTE_ITEMS})
+EDITORIAL_FACTS_CHECKED = 763  # Door Claude aangeleverd, 31 augustus 2026.
+EDITORIAL_FACTS_REMOVED = 40   # Door Claude aangeleverd, 31 augustus 2026.
+HOME_ROUTE_SLUG = 'drakensteyn'
 
 FOCUS_LBL = {
  'nl': {'geschiedenis': 'Geschiedenis', 'natuur': 'Natuur', 'mensen': 'Mensen'},
@@ -2683,34 +2871,107 @@ FOCUS_LBL = {
  'pt': {'geschiedenis': 'História', 'natuur': 'Natureza', 'mensen': 'Pessoas'},
 }
 
+ROUTE_UI = {
+'nl': dict(routebook='Routeboek', neighbourhood='Buurtroute', climb='klimmen', benches='bankjes', benches_unknown='bankjes niet opgegeven', surface_unknown='verharding niet opgegeven', stick_yes='Met een stok te doen', stick_no='Te zwaar voor wie kort loopt', accessibility='Begaanbaarheid', open='Open de route', no_gpx='Geen losse GPX-download voor deze buurtroute',
+    library_h='{routes} routes. {provinces} provincies. Eén levend reisboek.', library_p='Elke provincie heeft nu een complete luisterroute; daarnaast is er een buurtroute. Bekijk vóór vertrek eerlijk de lengte, klim, verharding en rustpunten.',
+    quality_metric='{checked} feiten nagelopen; {removed} verwijderd vóór het inspreken.', quality_note='Bij ieder verhaal staat of het ter plekke door AI is geschreven of redactioneel is nagekeken. Een fout melden kan direct.'),
+'en': dict(routebook='Route book', neighbourhood='Neighbourhood route', climb='ascent', benches='benches', benches_unknown='benches not specified', surface_unknown='surface not specified', stick_yes='Manageable with a walking stick', stick_no='Too demanding for short-distance walkers', accessibility='Accessibility', open='Open the route', no_gpx='No separate GPX download for this neighbourhood route',
+    library_h='{routes} routes. {provinces} provinces. One living route book.', library_p='Every province now has a complete listening route, plus one neighbourhood route. Before setting out, check the honest distance, ascent, surface and resting points.',
+    quality_metric='{checked} facts reviewed; {removed} removed before narration.', quality_note='Every story says whether it was written on the spot by AI or reviewed by an editor. Errors can be reported directly.'),
+'de': dict(routebook='Routenbuch', neighbourhood='Nachbarschaftsroute', climb='Anstieg', benches='Bänke', benches_unknown='Bänke nicht angegeben', surface_unknown='Belag nicht angegeben', stick_yes='Mit Gehstock machbar', stick_no='Zu anstrengend für kurze Gehstrecken', accessibility='Begehbarkeit', open='Route öffnen', no_gpx='Kein separater GPX-Download für diese Nachbarschaftsroute',
+    library_h='{routes} Routen. {provinces} Provinzen. Ein lebendiges Routenbuch.', library_p='Jede Provinz hat nun eine vollständige Hörroute; hinzu kommt eine Nachbarschaftsroute. Prüfe vorab ehrlich Länge, Anstieg, Belag und Rastmöglichkeiten.',
+    quality_metric='{checked} Fakten geprüft; {removed} vor dem Einsprechen entfernt.', quality_note='Unter jeder Geschichte steht, ob sie vor Ort von KI geschrieben oder redaktionell geprüft wurde. Fehler lassen sich direkt melden.'),
+'fr': dict(routebook='Carnet de route', neighbourhood='Route de quartier', climb='dénivelé', benches='bancs', benches_unknown='bancs non indiqués', surface_unknown='revêtement non indiqué', stick_yes='Faisable avec une canne', stick_no='Trop exigeant pour une courte marche', accessibility='Accessibilité du parcours', open='Ouvrir la route', no_gpx='Pas de téléchargement GPX séparé pour cette route de quartier',
+    library_h='{routes} routes. {provinces} provinces. Un carnet vivant.', library_p='Chaque province dispose désormais d’une route audio complète, plus une route de quartier. Vérifiez avant le départ la distance, le dénivelé, le revêtement et les points de repos.',
+    quality_metric='{checked} faits vérifiés ; {removed} retirés avant narration.', quality_note='Chaque récit indique s’il a été écrit sur place par l’IA ou relu par la rédaction. Une erreur peut être signalée directement.'),
+'es': dict(routebook='Libro de ruta', neighbourhood='Ruta de barrio', climb='desnivel', benches='bancos', benches_unknown='bancos no indicados', surface_unknown='pavimento no indicado', stick_yes='Apta con bastón', stick_no='Demasiado exigente para quien camina poco', accessibility='Accesibilidad de la ruta', open='Abrir la ruta', no_gpx='No hay descarga GPX separada para esta ruta de barrio',
+    library_h='{routes} rutas. {provinces} provincias. Un libro de ruta vivo.', library_p='Cada provincia ya tiene una ruta sonora completa, más una ruta de barrio. Antes de salir, consulta con honestidad la distancia, el desnivel, el firme y los puntos de descanso.',
+    quality_metric='{checked} datos revisados; {removed} retirados antes de narrar.', quality_note='Cada historia indica si fue escrita en el momento por IA o revisada por la redacción. Los errores pueden comunicarse directamente.'),
+'pt': dict(routebook='Livro de rota', neighbourhood='Rota de bairro', climb='subida', benches='bancos', benches_unknown='bancos não indicados', surface_unknown='pavimento não indicado', stick_yes='Fazível com bengala', stick_no='Exigente demais para quem caminha pouco', accessibility='Acessibilidade da rota', open='Abrir a rota', no_gpx='Sem download GPX separado para esta rota de bairro',
+    library_h='{routes} rotas. {provinces} províncias. Um livro de rota vivo.', library_p='Cada província já tem uma rota sonora completa, além de uma rota de bairro. Antes de partir, veja com honestidade distância, subida, piso e pontos de descanso.',
+    quality_metric='{checked} factos revistos; {removed} removidos antes da narração.', quality_note='Cada história informa se foi escrita na hora por IA ou revista pela redação. Pode comunicar um erro diretamente.'),
+}
+
+SURFACE_LBL = {
+    'nl': {'verhard': 'verhard', 'half verhard': 'half verhard', 'onverhard': 'onverhard'},
+    'en': {'verhard': 'paved', 'half verhard': 'partly paved', 'onverhard': 'unpaved'},
+    'de': {'verhard': 'befestigt', 'half verhard': 'teilbefestigt', 'onverhard': 'unbefestigt'},
+    'fr': {'verhard': 'revêtu', 'half verhard': 'semi-revêtu', 'onverhard': 'non revêtu'},
+    'es': {'verhard': 'pavimentado', 'half verhard': 'parcialmente pavimentado', 'onverhard': 'sin pavimentar'},
+    'pt': {'verhard': 'pavimentado', 'half verhard': 'parcialmente pavimentado', 'onverhard': 'não pavimentado'},
+}
+
+def format_km(value, lang):
+    text = f'{float(value):.1f}'
+    return text if lang == 'en' else text.replace('.', ',')
+
+def route_kind(meta, lang):
+    return ROUTE_UI[lang]['neighbourhood'] if meta.get('soort') == 'buurtroute' else ROUTE_UI[lang]['routebook']
+
+def route_lede(lang, r):
+    ui = ROUTE_UI[lang]
+    n = r['hoofdstukken_n']
+    km = format_km(r['_index']['lengte_km'], lang)
+    templates = {
+        'nl': '{n} hoofdstukken langs {km} kilometer in {province}, verteld op precies de goede plek en met bronnen bij ieder verhaal.',
+        'en': '{n} chapters along {km} kilometres in {province}, told in the right place with sources for every story.',
+        'de': '{n} Kapitel auf {km} Kilometern in {province}, am passenden Ort erzählt und mit Quellen zu jeder Geschichte.',
+        'fr': '{n} chapitres sur {km} kilomètres dans la province de {province}, racontés au bon endroit avec les sources de chaque récit.',
+        'es': '{n} capítulos a lo largo de {km} kilómetros en {province}, narrados en el lugar adecuado y con fuentes para cada historia.',
+        'pt': '{n} capítulos ao longo de {km} quilómetros em {province}, narrados no lugar certo e com fontes para cada história.',
+    }
+    return templates[lang].format(n=n, km=km, province=r['provincie'])
+
+def accessibility_values(meta, lang):
+    ui = ROUTE_UI[lang]
+    a = meta['begaanbaarheid']
+    surface = SURFACE_LBL[lang].get(a.get('verharding'), ui['surface_unknown'])
+    benches = f"{a['bankjes']} {ui['benches']}" if a.get('bankjes') is not None else ui['benches_unknown']
+    return [f"{a['klim_m']} m {ui['climb']}", surface, benches]
+
+def partner_facts(lang):
+    r = ROUTES[HOME_ROUTE_SLUG]
+    meta = r['_index']
+    checked = {'nl': 'redactioneel nagekeken', 'en': 'editorially reviewed', 'de': 'redaktionell geprüft', 'fr': 'relu par la rédaction', 'es': 'revisado por la redacción', 'pt': 'revisto pela redação'}[lang]
+    thread = {'nl': 'dragende verhaallijn', 'en': 'carrying storyline', 'de': 'tragende Erzähllinie', 'fr': 'fil narratif', 'es': 'hilo narrativo', 'pt': 'fio narrativo'}[lang]
+    return [(f"{format_km(meta['lengte_km'], lang)} km", route_kind(meta, lang)),
+            (str(meta['hoofdstukken']), ROUTES_TXT[lang]['hoofdstukken']),
+            ('100%', checked), ('1', thread)]
+
+for _lang in LANGS:
+    PARTNER_TXT[_lang]['facts'] = partner_facts(_lang)
+
 
 def build_routes_index(lang):
     t = ROUTES_TXT[lang]
+    ui = ROUTE_UI[lang]
     kaarten = ''
-    # De route die echt beluisterbaar is staat altijd vooraan. Toekomstige
-    # provincies tonen daarna de horizon, niet een blokkade vóór het product.
-    for prov, slug in sorted(PROVINCIES, key=lambda item: 0 if item[1] else 1):
-        if slug:
-            r = ROUTES[slug]
-            kaarten += f"""      <a class="prov-kaart live" href="/{lang}/routes/{slug}/">
-        <span class="prov-naam">{prov}</span>
+    for meta in ROUTE_ITEMS:
+        r = ROUTES[meta['slug']]
+        access = accessibility_values(meta, lang)
+        access_html = ''.join(f'<span>{html.escape(value)}</span>' for value in access)
+        feasible = bool(meta['begaanbaarheid']['met_stok_haalbaar'])
+        feasible_text = ui['stick_yes'] if feasible else ui['stick_no']
+        feasible_class = 'haalbaar' if feasible else 'zwaar'
+        kaarten += f'''      <a class="prov-kaart live" href="/{lang}/routes/{r['slug']}/">
+        <span class="prov-topline"><span class="prov-naam">{html.escape(r['provincie'])}</span><span class="prov-kind">{html.escape(route_kind(meta, lang))}</span></span>
         <span class="prov-route">{html.escape(r['naam'])}</span>
-        <span class="prov-meta">{str(r['lengte_km']).replace('.', ',')} {t['km']} · {r['hoofdstukken_n']} {t['hoofdstukken']}</span>
-        <span class="prov-cta">{t['live']} →</span>
-      </a>\n"""
-        else:
-            kaarten += f"""      <div class="prov-kaart stil">
-        <span class="prov-naam">{prov}</span>
-        <span class="prov-status">{t['productie']}</span>
-      </div>\n"""
-    stappen = ''.join(f'<li>{s}</li>' for s in t['kwaliteit'])
-    body = f"""  <section class="routes-hero routes-library-hero">
+        <span class="prov-meta">{format_km(meta['lengte_km'], lang)} {t['km']} · {meta['hoofdstukken']} {t['hoofdstukken']}</span>
+        <span class="prov-access" aria-label="{html.escape(ui['accessibility'])}">{access_html}</span>
+        <span class="prov-feasible {feasible_class}">{html.escape(feasible_text)}</span>
+        <span class="prov-cta">{html.escape(ui['open'])} →</span>
+      </a>\n'''
+    stappen = ''.join(f'<li>{step}</li>' for step in t['kwaliteit'])
+    title = ui['library_h'].format(routes=ROUTE_COUNT, provinces=PROVINCE_COUNT)
+    lede = ui['library_p'].format(routes=ROUTE_COUNT, provinces=PROVINCE_COUNT)
+    quality_metric = ui['quality_metric'].format(checked=EDITORIAL_FACTS_CHECKED, removed=EDITORIAL_FACTS_REMOVED)
+    body = f'''  <section class="routes-hero routes-library-hero">
     <img class="routes-hero-photo" src="/images/routes-hero-listening.jpg" alt="{html.escape(t['hero_alt'])}" width="1672" height="941" fetchpriority="high" decoding="async">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="wrap routes-hero-copy">
       <p class="eyebrow on-dark">{t['eyebrow']}</p>
-      <h1>{t['h1']}</h1>
-      <p class="routes-lede">{t['lede']}</p>
+      <h1>{html.escape(title)}</h1>
+      <p class="routes-lede">{html.escape(lede)}</p>
     </div>
   </section>
   <section class="block"><div class="wrap">
@@ -2721,23 +2982,29 @@ def build_routes_index(lang):
     <h2>{t['kwaliteit_h']}</h2>
     <p>{t['kwaliteit_p']}</p>
     <ol class="kwaliteit-lijst">{stappen}</ol>
+    <div class="route-quality-proof">
+      <strong>{html.escape(quality_metric)}</strong>
+      <p>{html.escape(ui['quality_note'])}</p>
+    </div>
   </div></section>
-"""
+'''
     titel = {'nl': 'Luisterroutes — 2R (Second Route)', 'en': 'Listening routes — 2R (Second Route)',
              'de': 'Hörrouten — 2R (Second Route)', 'fr': 'Routes audio — 2R (Second Route)',
              'es': 'Rutas de audio — 2R (Second Route)', 'pt': 'Rotas de áudio — 2R (Second Route)'}[lang]
-    return page_shell(lang, titel, t['lede'][:150], 'routes', body, path='routes/index.html')
+    return page_shell(lang, titel, lede[:150], 'routes', body, path='routes/index.html')
 
 
 def build_route_page(lang, r):
     t = ROUTES_TXT[lang]
+    ui = ROUTE_UI[lang]
     fl = FOCUS_LBL[lang]
+    meta = r['_index']
     stops_html = ''
     for c in r['hoofdstukken']:
         paras = ''.join(f'<p>{html.escape(p)}</p>' for p in c['paras'])
         bronnen = ' · '.join(f'<a href="{u}" target="_blank" rel="noopener">{html.escape(n)}</a>' for u, n in c['bronnen'])
-        km = str(c['km']).replace('.', ',')
-        stops_html += f"""    <article class="rt-stop" id="stop-{c['nr']}">
+        km = format_km(c['km'], lang)
+        stops_html += f'''    <article class="rt-stop" id="stop-{c['nr']}">
       <div class="rt-as"><span class="rt-nr">{c['nr']:02d}</span><span class="rt-lijn"></span></div>
       <div class="rt-body">
         <div class="rt-meta">{fl.get(c['focus'], c['focus'])} · {km} {t['km']}</div>
@@ -2747,22 +3014,47 @@ def build_route_page(lang, r):
         <audio controls preload="none" src="{c['audio']}"></audio></div>
         <div class="rt-bron">{t['bron_lbl']}: {bronnen}</div>
       </div>
-    </article>\n"""
+    </article>\n'''
     haltes_js = json.dumps([{'nr': c['nr'], 'naam': c['titel'], 'lat': c['lat'], 'lng': c['lng']}
                             for c in r['hoofdstukken']], ensure_ascii=False)
     lijnen_js = json.dumps(r['lijnen'])
     taalnoot = f'<p class="rt-taalnoot">{t["taalnoot"]}</p>' if t['taalnoot'] else ''
-    lengte = str(r['lengte_km']).replace('.', ',')
-    body = f"""  <section class="routes-hero">
+    length = format_km(meta['lengte_km'], lang)
+    access_html = ''.join(f'<span>{html.escape(value)}</span>' for value in accessibility_values(meta, lang))
+    feasible = bool(meta['begaanbaarheid']['met_stok_haalbaar'])
+    feasible_text = ui['stick_yes'] if feasible else ui['stick_no']
+    feasible_class = 'haalbaar' if feasible else 'zwaar'
+    gpx_control = (f'<a class="btn-primary" href="{r["gpx_url"]}" target="_blank" rel="noopener">{t["gpx"]} <span>↓</span></a>'
+                   if r.get('gpx_url') else f'<span class="rt-no-gpx">{html.escape(ui["no_gpx"])}</span>')
+    map_asset = os.path.join(OUT, r['kaart_js'].lstrip('/'))
+    has_vector_map = os.path.exists(map_asset)
+    map_script = f'<script src="{r["kaart_js"]}"></script>\n  <script src="/vectorkaart.js"></script>' if has_vector_map else ''
+    map_init = ('kaart = window.bouwVectorKaart(L, kaartEl);' if has_vector_map else '''kaart = L.map(kaartEl, {scrollWheelZoom: false});
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap-bijdragers'
+      }).addTo(kaart);''')
+    map_ready = ('!window.bouwVectorKaart || ' if has_vector_map else '')
+    fit_fallback = '' if has_vector_map else '''
+      var allePunten = [];
+      lijnen.forEach(function(l) { l.forEach(function(p) { allePunten.push(p); }); });
+      if (allePunten.length) kaart.fitBounds(allePunten, { padding: [24, 24] });'''
+    detail_eyebrow = f"{route_kind(meta, lang)} · {r['provincie']}"
+    lead = route_lede(lang, r)
+    body = f'''  <section class="routes-hero">
     <div class="wrap">
-      <p class="eyebrow on-dark">{t['detail_eyebrow']}</p>
+      <p class="eyebrow on-dark">{html.escape(detail_eyebrow)}</p>
       <h1>{html.escape(r['naam'])}</h1>
-      <p class="routes-lede">{ROUTE_LEDE[lang]}</p>
+      <p class="routes-lede">{html.escape(lead)}</p>
       <div class="rt-feiten">
-        <div class="hfeit"><b>{lengte} {t['km']}</b></div>
+        <div class="hfeit"><b>{length} {t['km']}</b></div>
         <div class="hfeit"><b>{r['duur']}</b></div>
-        <div class="hfeit"><b>{r['hoofdstukken_n']} {t['hoofdstukken']}</b></div>
-        <div class="hfeit"><b>{r['beheerder']}</b></div>
+        <div class="hfeit"><b>{meta['hoofdstukken']} {t['hoofdstukken']}</b></div>
+        <div class="hfeit"><b>{html.escape(r['beheerder'])}</b></div>
+      </div>
+      <div class="rt-accessibility">
+        <span class="rt-access-label">{html.escape(ui['accessibility'])}</span>
+        <div>{access_html}<strong class="prov-feasible {feasible_class}">{html.escape(feasible_text)}</strong></div>
       </div>
     </div>
   </section>
@@ -2771,7 +3063,7 @@ def build_route_page(lang, r):
     <p class="rt-kaart-p">{t['kaart_p']}</p>
     <div id="kaart"></div>
     <p class="rt-knoppen">
-      <a class="btn-primary" href="{r['gpx_url']}" target="_blank" rel="noopener">{t['gpx']} <span>↓</span></a>
+      {gpx_control}
       <a class="text-link" href="{r['bron_url']}" target="_blank" rel="noopener">{t['bronpagina']} →</a>
     </p>
   </div></section>
@@ -2780,8 +3072,7 @@ def build_route_page(lang, r):
 {stops_html}    <p><a class="text-link" href="/{lang}/routes/">{t['terug']}</a></p>
   </div></section>
   <script src="/leaflet.js"></script>
-  <script src="{r['kaart_js']}"></script>
-  <script src="/vectorkaart.js"></script>
+  {map_script}
   <script>
   (function() {{
     var kaart = null, wachttimer = null, gestopt = false, pogingen = 0;
@@ -2790,13 +3081,13 @@ def build_route_page(lang, r):
       var L = window.L;
       var kaartEl = document.getElementById('kaart');
       if (!kaartEl) return;
-      if (!L || !window.KAARTDATA || !window.bouwVectorKaart || kaartEl.clientWidth === 0) {{
+      if (!L || {map_ready}kaartEl.clientWidth === 0) {{
         if (pogingen++ < 60) wachttimer = setTimeout(initKaart, 100);
         return;
       }}
       if (kaartEl.dataset.kaartKlaar === '1') return;
       kaartEl.dataset.kaartKlaar = '1';
-      kaart = window.bouwVectorKaart(L, kaartEl);
+      {map_init}
       var haltes = {haltes_js};
       haltes.forEach(function(p) {{
         var icoon = L.divIcon({{ className: '',
@@ -2811,7 +3102,7 @@ def build_route_page(lang, r):
       }});
       var lijnen = {lijnen_js};
       lijnen.forEach(function(l) {{ L.polyline(l, {{ color: '#FAF6ED', weight: 7, opacity: 0.75 }}).addTo(kaart); }});
-      lijnen.forEach(function(l) {{ L.polyline(l, {{ color: '#D96552', weight: 4, opacity: 0.95 }}).addTo(kaart); }});
+      lijnen.forEach(function(l) {{ L.polyline(l, {{ color: '#D96552', weight: 4, opacity: 0.95 }}).addTo(kaart); }});{fit_fallback}
       setTimeout(function() {{ if (kaart && !gestopt) kaart.invalidateSize(); }}, 300);
     }}
     window.__2rCleanup = function() {{
@@ -2822,11 +3113,71 @@ def build_route_page(lang, r):
     initKaart();
   }})();
   </script>
-"""
+'''
     titel = f"{r['naam']} — 2R"
     extra = '<link rel="stylesheet" href="/leaflet.css">'
-    return page_shell(lang, titel, ROUTE_LEDE[lang][:150], 'routes', body,
+    return page_shell(lang, titel, lead[:150], 'routes', body,
                       extra_head=extra, path=f"routes/{r['slug']}/index.html")
+
+
+
+def build_quality(lang):
+    q = QUALITY_TXT[lang]
+    steps = ''.join(f'''<article class="quality-step">
+      <span>{i:02d}</span><div><h3>{title}</h3><p>{copy}</p></div>
+    </article>''' for i, (title, copy) in enumerate(q['process'], 1))
+    body = f'''  <section class="quality-hero">
+    <img src="/images/reisjournaal.jpg" alt="{html.escape(q['alt'])}" width="1536" height="1024" fetchpriority="high" decoding="async">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="quality-hero-copy">
+      <p class="eyebrow on-photo">{q['eyebrow']}</p>
+      <h1>{q['h1']}</h1>
+      <p>{q['lede']}</p>
+    </div>
+  </section>
+
+  <section class="quality-process"><div class="wrap">
+    <div class="quality-heading">
+      <p class="section-label">{q['process_label']}</p>
+      <h2>{q['process_h']}</h2>
+    </div>
+    <div class="quality-steps">{steps}</div>
+  </div></section>
+
+  <section class="quality-evidence"><div class="wrap quality-evidence-grid">
+    <div>
+      <p class="section-label">{q['evidence_label']}</p>
+      <h2>{q['evidence_h']}</h2>
+      <p>{q['evidence_p']}</p>
+    </div>
+    <div class="quality-numbers" aria-label="{q['evidence_label']}">
+      <div><strong>{EDITORIAL_FACTS_CHECKED}</strong><span>{q['reviewed']}</span></div>
+      <div><strong>{EDITORIAL_FACTS_REMOVED}</strong><span>{q['removed']}</span></div>
+    </div>
+  </div></section>
+
+  <section class="quality-honesty"><div class="wrap">
+    <div class="quality-heading">
+      <p class="section-label">{q['honesty_label']}</p>
+      <h2>{q['honesty_h']}</h2>
+    </div>
+    <div class="quality-types">
+      <article><span>01</span><h3>{q['live_h']}</h3><p>{q['live_p']}</p></article>
+      <article><span>02</span><h3>{q['book_h']}</h3><p>{q['book_p']}</p></article>
+    </div>
+  </div></section>
+
+  <section class="quality-correction"><div class="wrap">
+    <p class="eyebrow on-dark">{q['correct_label']}</p>
+    <h2>{q['correct_h']}</h2>
+    <p>{q['correct_p']}</p>
+    <div class="quality-actions">
+      <a class="btn-primary" href="/{lang}/routes/">{q['routes_cta']} <span>→</span></a>
+      <a class="text-link" href="/{lang}/privacy.html">{q['privacy_cta']} →</a>
+    </div>
+  </div></section>
+'''
+    return page_shell(lang, q['title'], q['description'], 'quality', body, path='kwaliteit/index.html')
 
 
 def build_partners(lang):
@@ -2916,6 +3267,7 @@ for lang in LANGS:
     write(f'{lang}/stories/index.html', build_stories_index(lang))
     write(f'{lang}/routes/index.html', build_routes_index(lang))
     write(f'{lang}/partners/index.html', build_partners(lang))
+    write(f'{lang}/kwaliteit/index.html', build_quality(lang))
     for _r in ROUTES.values():
         write(f'{lang}/routes/{_r["slug"]}/index.html', build_route_page(lang, _r))
     for st in STORIES:
@@ -2924,7 +3276,7 @@ for lang in LANGS:
         write(f'{lang}/stad/{CITY_SLUGS[i]}.html', build_city_story(lang, i))
 
 # Sitemap + robots: alle publieke pagina's in zes talen
-_paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/', 'partners/']
+_paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/', 'partners/', 'kwaliteit/']
 _paden += [f'routes/{sl}/' for sl in ROUTES]
 _paden += [f'stories/{st["slug"]}.html' for st in STORIES]
 _paden += [f'stad/{sl}.html' for sl in CITY_SLUGS]
@@ -2935,4 +3287,5 @@ write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n'
       + '</urlset>\n')
 write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n')
 
-print(f"Klaar: {len(LANGS)} talen x ({5 + len(STORIES) + len(CITY_SLUGS)} pagina's) = {len(LANGS) * (5 + len(STORIES) + len(CITY_SLUGS))} bestanden")
+PAGES_PER_LANG = 8 + len(ROUTES) + len(STORIES) + len(CITY_SLUGS)
+print(f"Klaar: {len(LANGS)} talen x {PAGES_PER_LANG} pagina\x27s = {len(LANGS) * PAGES_PER_LANG} bestanden")

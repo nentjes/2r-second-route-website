@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Política de privacidad — 2R</title>
-<meta name="description" content="2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada.">
+<meta name="description" content="2R usa solo lo necesario para contar la historia adecuada. Sin cuenta ni contraseña. Tu ubicación no se guarda por defecto; los eventos técnicos se re">
 <link rel="icon" href="/icon-2r.png">
 <link rel="apple-touch-icon" href="/icon-2r.png">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="Política de privacidad — 2R">
-<meta property="og:description" content="2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada.">
+<meta property="og:description" content="2R usa solo lo necesario para contar la historia adecuada. Sin cuenta ni contraseña. Tu ubicación no se guarda por defecto; los eventos técnicos se re">
 <meta property="og:image" content="/og.jpg">
 <link rel="canonical" href="https://2route.nl/es/privacy.html">
 <link rel="alternate" hreflang="nl" href="https://2route.nl/nl/privacy.html">
@@ -82,12 +82,12 @@
     <div class="priv-hero-content">
       <p class="eyebrow on-photo">Privacidad</p>
       <h1>Tu viaje sigue siendo tuyo.</h1>
-      <p class="priv-hero-lede">2R usa solo lo necesario para contar la historia adecuada por el camino. Sin cuenta, sin registro de trayectos y, por defecto, sin ubicación guardada. Aquí explicamos exactamente qué sí ocurre.</p>
-      <p class="priv-updated">Última actualización: agosto de 2026</p>
+      <p class="priv-hero-lede">2R usa solo lo necesario para contar la historia adecuada. Sin cuenta ni contraseña. Tu ubicación no se guarda por defecto; los eventos técnicos se registran por sesión. Aquí explicamos exactamente qué ocurre.</p>
+      <p class="priv-updated">Última actualización: 31 de agosto de 2026</p>
     </div>
   </section>
 
-  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Sin cuenta</h3><p>No hace falta iniciar sesión. Solo los testers introducen un nombre, de forma voluntaria.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Sin registro de trayectos</h3><p>Por defecto no creamos un historial de dónde has estado.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Registros de prueba solo con permiso</h3><p>Los diagnósticos más detallados están desactivados por defecto y son solo opt-in.</p></div></div></div></section>
+  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Sin cuenta</h3><p>No hace falta iniciar sesión. Solo los testers pueden introducir un nombre voluntariamente.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Ubicación no guardada por defecto</h3><p>Las coordenadas solo se almacenan si activas los registros ampliados.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Consultar y borrar tú mismo</h3><p>En la app puedes ver, exportar y borrar tus datos y detener el registro.</p></div></div></div></section>
 
   <section class="priv-body"><div class="wrap priv-grid">
     <nav class="priv-toc" aria-label="En esta página">
@@ -99,11 +99,11 @@
 
       <section id="loc" class="priv-sec">
         <h2>Ubicación</h2>
-        <p class="priv-fieldnote">Por defecto tu ubicación no se guarda ni se registra.</p>
-        <p class="priv-fieldnote">Los registros ampliados solo están disponibles como opt-in para el equipo de pruebas.</p>
+        <p class="priv-fieldnote">Tu ubicación actual es necesaria para elegir la historia correcta, pero no se guarda por defecto.</p>
+        <p class="priv-fieldnote">Los registros ampliados son opcionales. Sus coordenadas se borran a los 30 días.</p>
         <ul><li>Tu ubicación GPS se usa para determinar qué historias son relevantes.</li>
-<li><strong>Por defecto, tu ubicación nunca se almacena ni se registra.</strong> Para saber qué estás pasando, la app envía tu posición actual junto con la solicitud de una historia; el servidor la usa para elegir el lugar correcto y no la conserva. No se construye ningún historial de ubicación ni registro de trayectos.</li>
-<li><strong>El registro ampliado es opcional (opt-in) para nuestro equipo de pruebas.</strong> Solo si lo activas tú mismo (desbloqueado con un código de diagnóstico que compartimos con nuestros testers habituales) registramos más información — incluida tu posición GPS, dirección y velocidad en el momento de generar una historia — para detectar errores y mejorar la app. Está desactivado por defecto, solo se aplica mientras lo tengas activado, nunca se comparte con terceros y puedes desactivarlo en cualquier momento.</li></ul>
+<li><strong>Tu ubicación no se guarda por defecto.</strong> La app usa tu posición actual para elegir el lugar correcto. Los eventos técnicos se registran por sesión, pero sin posición GPS por defecto.</li>
+<li><strong>Las coordenadas solo se guardan si activas tú mismo los registros ampliados.</strong> Entonces pueden enviarse posición, rumbo y velocidad para diagnóstico. Puedes desactivarlo cuando quieras; los datos de ubicación se borran a los 30 días.</li></ul>
       </section>
 
       <section id="verhalen" class="priv-sec">
@@ -122,10 +122,11 @@
 
       <section id="bewaard" class="priv-sec">
         <h2>Lo que sí guardamos</h2>
-        <ul><li><strong>Eventos técnicos.</strong> La app comunica a nuestro servidor qué historia se contó, sobre qué lugar, cuánto tardó en generarse y si algo falló — con un número de sesión aleatorio por cada inicio. Así vemos si 2R funciona bien. Por defecto, estos registros no contienen ninguna posición GPS.</li>
-<li><strong>El archivo de historias.</strong> Cada historia contada se guarda íntegra: el texto, el lugar del que trata y, en el caso de los testers, el nombre introducido. Nos permite releer lo contado y seleccionar las mejores historias para este sitio. La posición del viajero no se guarda con ello.</li>
-<li><strong>Compras.</strong> Si compras una suscripción o un crédito, registramos la transacción que Apple nos comunica, junto con un número de dispositivo anónimo. Ese número no está vinculado a tu nombre y sirve para reconocer tu compra — también tras una reinstalación. Nunca vemos datos de pago; esos se quedan en Apple.</li>
-<li><strong>Conservación y borrado.</strong> Guardamos estos datos mientras 2R esté en desarrollo. ¿Quieres que borremos algo tuyo — tu nombre de tester, tus historias? Escríbenos y lo eliminamos.</li></ul>
+        <ul><li><strong>Eventos técnicos.</strong> Qué historia se contó, qué botón se usó y qué error ocurrió, con un número de sesión aleatorio en cada inicio. Se guardan 90 días y sin GPS por defecto.</li>
+<li><strong>Historias generadas.</strong> El texto y el lugar narrado se guardan 90 días. La posición del viajero no se vincula a ellos.</li>
+<li><strong>Avisos sobre historias incorrectas.</strong> Un aviso se guarda 365 días para poder investigarlo y responder.</li>
+<li><strong>Compras.</strong> Producto, número de transacción y número anónimo del dispositivo se guardan 7 años por obligación fiscal. Los datos de pago siguen en Apple.</li>
+<li><strong>Tus derechos.</strong> En la app puedes ver, exportar y borrar lo que 2R guarda y detener el registro. Menos datos es la prioridad: no existe una clave central para localizarte fuera del dispositivo.</li></ul>
       </section>
 
       <section id="accounts" class="priv-sec">
@@ -158,6 +159,7 @@
       <a href="/es/partners/">Para editores de rutas</a>
       <a href="/es/roadmap.html">Roadmap</a>
       <a href="/es/stories/">Historias</a>
+      <a href="/es/kwaliteit/">Calidad y honestidad</a>
       <a href="/es/privacy.html">Privacidad</a>
       <a href="mailto:nimco@nentjes.nl">Contacto</a>
     </div>

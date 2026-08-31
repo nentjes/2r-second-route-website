@@ -42,12 +42,90 @@
   <url><loc>https://2route.nl/fr/partners/</loc></url>
   <url><loc>https://2route.nl/es/partners/</loc></url>
   <url><loc>https://2route.nl/pt/partners/</loc></url>
+  <url><loc>https://2route.nl/nl/kwaliteit/</loc></url>
+  <url><loc>https://2route.nl/en/kwaliteit/</loc></url>
+  <url><loc>https://2route.nl/de/kwaliteit/</loc></url>
+  <url><loc>https://2route.nl/fr/kwaliteit/</loc></url>
+  <url><loc>https://2route.nl/es/kwaliteit/</loc></url>
+  <url><loc>https://2route.nl/pt/kwaliteit/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/berkheide/</loc></url>
+  <url><loc>https://2route.nl/en/routes/berkheide/</loc></url>
+  <url><loc>https://2route.nl/de/routes/berkheide/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/berkheide/</loc></url>
+  <url><loc>https://2route.nl/es/routes/berkheide/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/berkheide/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/bourtange/</loc></url>
+  <url><loc>https://2route.nl/en/routes/bourtange/</loc></url>
+  <url><loc>https://2route.nl/de/routes/bourtange/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/bourtange/</loc></url>
+  <url><loc>https://2route.nl/es/routes/bourtange/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/bourtange/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/dokkum/</loc></url>
+  <url><loc>https://2route.nl/en/routes/dokkum/</loc></url>
+  <url><loc>https://2route.nl/de/routes/dokkum/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/dokkum/</loc></url>
+  <url><loc>https://2route.nl/es/routes/dokkum/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/dokkum/</loc></url>
   <url><loc>https://2route.nl/nl/routes/drakensteyn/</loc></url>
   <url><loc>https://2route.nl/en/routes/drakensteyn/</loc></url>
   <url><loc>https://2route.nl/de/routes/drakensteyn/</loc></url>
   <url><loc>https://2route.nl/fr/routes/drakensteyn/</loc></url>
   <url><loc>https://2route.nl/es/routes/drakensteyn/</loc></url>
   <url><loc>https://2route.nl/pt/routes/drakensteyn/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/hackfort/</loc></url>
+  <url><loc>https://2route.nl/en/routes/hackfort/</loc></url>
+  <url><loc>https://2route.nl/de/routes/hackfort/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/hackfort/</loc></url>
+  <url><loc>https://2route.nl/es/routes/hackfort/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/hackfort/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/julianalaan/</loc></url>
+  <url><loc>https://2route.nl/en/routes/julianalaan/</loc></url>
+  <url><loc>https://2route.nl/de/routes/julianalaan/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/julianalaan/</loc></url>
+  <url><loc>https://2route.nl/es/routes/julianalaan/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/julianalaan/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/schokland/</loc></url>
+  <url><loc>https://2route.nl/en/routes/schokland/</loc></url>
+  <url><loc>https://2route.nl/de/routes/schokland/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/schokland/</loc></url>
+  <url><loc>https://2route.nl/es/routes/schokland/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/schokland/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/sint-pietersberg/</loc></url>
+  <url><loc>https://2route.nl/en/routes/sint-pietersberg/</loc></url>
+  <url><loc>https://2route.nl/de/routes/sint-pietersberg/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/sint-pietersberg/</loc></url>
+  <url><loc>https://2route.nl/es/routes/sint-pietersberg/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/sint-pietersberg/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/spaarndam/</loc></url>
+  <url><loc>https://2route.nl/en/routes/spaarndam/</loc></url>
+  <url><loc>https://2route.nl/de/routes/spaarndam/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/spaarndam/</loc></url>
+  <url><loc>https://2route.nl/es/routes/spaarndam/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/spaarndam/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/twickel/</loc></url>
+  <url><loc>https://2route.nl/en/routes/twickel/</loc></url>
+  <url><loc>https://2route.nl/de/routes/twickel/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/twickel/</loc></url>
+  <url><loc>https://2route.nl/es/routes/twickel/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/twickel/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/veenhuizen/</loc></url>
+  <url><loc>https://2route.nl/en/routes/veenhuizen/</loc></url>
+  <url><loc>https://2route.nl/de/routes/veenhuizen/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/veenhuizen/</loc></url>
+  <url><loc>https://2route.nl/es/routes/veenhuizen/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/veenhuizen/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/westkapelle/</loc></url>
+  <url><loc>https://2route.nl/en/routes/westkapelle/</loc></url>
+  <url><loc>https://2route.nl/de/routes/westkapelle/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/westkapelle/</loc></url>
+  <url><loc>https://2route.nl/es/routes/westkapelle/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/westkapelle/</loc></url>
+  <url><loc>https://2route.nl/nl/routes/zwarte-berg/</loc></url>
+  <url><loc>https://2route.nl/en/routes/zwarte-berg/</loc></url>
+  <url><loc>https://2route.nl/de/routes/zwarte-berg/</loc></url>
+  <url><loc>https://2route.nl/fr/routes/zwarte-berg/</loc></url>
+  <url><loc>https://2route.nl/es/routes/zwarte-berg/</loc></url>
+  <url><loc>https://2route.nl/pt/routes/zwarte-berg/</loc></url>
   <url><loc>https://2route.nl/nl/stories/villa-horev-bilthoven.html</loc></url>
   <url><loc>https://2route.nl/en/stories/villa-horev-bilthoven.html</loc></url>
   <url><loc>https://2route.nl/de/stories/villa-horev-bilthoven.html</loc></url>

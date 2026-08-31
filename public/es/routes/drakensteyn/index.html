@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Boswachterspad Stulp en Kasteeltuin — 2R</title>
-<meta name="description" content="Doce capítulos sobre monjas, campesinos, una baronesa, guardabosques y una reina — mil años de paisaje, contados justo en el lugar correcto. Setenta d">
+<meta name="description" content="12 capítulos a lo largo de 6,3 kilómetros en Utrecht, narrados en el lugar adecuado y con fuentes para cada historia.">
 <link rel="icon" href="/icon-2r.png">
 <link rel="apple-touch-icon" href="/icon-2r.png">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="Boswachterspad Stulp en Kasteeltuin — 2R">
-<meta property="og:description" content="Doce capítulos sobre monjas, campesinos, una baronesa, guardabosques y una reina — mil años de paisaje, contados justo en el lugar correcto. Setenta d">
+<meta property="og:description" content="12 capítulos a lo largo de 6,3 kilómetros en Utrecht, narrados en el lugar adecuado y con fuentes para cada historia.">
 <meta property="og:image" content="/og.jpg">
 <link rel="canonical" href="https://2route.nl/es/routes/drakensteyn/">
 <link rel="alternate" hreflang="nl" href="https://2route.nl/nl/routes/drakensteyn/">
@@ -78,14 +78,18 @@
 <main>
   <section class="routes-hero">
     <div class="wrap">
-      <p class="eyebrow on-dark">Paseo sonoro · Utrecht</p>
+      <p class="eyebrow on-dark">Libro de ruta · Utrecht</p>
       <h1>Boswachterspad Stulp en Kasteeltuin</h1>
-      <p class="routes-lede">Doce capítulos sobre monjas, campesinos, una baronesa, guardabosques y una reina — mil años de paisaje, contados justo en el lugar correcto. Setenta datos verificados, cada uno con su fuente.</p>
+      <p class="routes-lede">12 capítulos a lo largo de 6,3 kilómetros en Utrecht, narrados en el lugar adecuado y con fuentes para cada historia.</p>
       <div class="rt-feiten">
-        <div class="hfeit"><b>5,7 km</b></div>
+        <div class="hfeit"><b>6,3 km</b></div>
         <div class="hfeit"><b>±1,5 uur</b></div>
         <div class="hfeit"><b>12 capítulos</b></div>
         <div class="hfeit"><b>Staatsbosbeheer</b></div>
+      </div>
+      <div class="rt-accessibility">
+        <span class="rt-access-label">Accesibilidad de la ruta</span>
+        <div><span>49 m desnivel</span><span>sin pavimentar</span><span>4 bancos</span><strong class="prov-feasible zwaar">Demasiado exigente para quien camina poco</strong></div>
       </div>
     </div>
   </section>
@@ -245,7 +249,7 @@
       var L = window.L;
       var kaartEl = document.getElementById('kaart');
       if (!kaartEl) return;
-      if (!L || !window.KAARTDATA || !window.bouwVectorKaart || kaartEl.clientWidth === 0) {
+      if (!L || !window.bouwVectorKaart || kaartEl.clientWidth === 0) {
         if (pogingen++ < 60) wachttimer = setTimeout(initKaart, 100);
         return;
       }
@@ -290,6 +294,7 @@
       <a href="/es/partners/">Para editores de rutas</a>
       <a href="/es/roadmap.html">Roadmap</a>
       <a href="/es/stories/">Historias</a>
+      <a href="/es/kwaliteit/">Calidad y honestidad</a>
       <a href="/es/privacy.html">Privacidad</a>
       <a href="mailto:nimco@nentjes.nl">Contacto</a>
     </div>

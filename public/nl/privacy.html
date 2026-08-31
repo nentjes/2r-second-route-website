@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacybeleid — 2R</title>
-<meta name="description" content="2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie">
+<meta name="description" content="2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account of wachtwoord. Je locatie wordt standaard niet bewaard; tech">
 <link rel="icon" href="/icon-2r.png">
 <link rel="apple-touch-icon" href="/icon-2r.png">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="Privacybeleid — 2R">
-<meta property="og:description" content="2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie">
+<meta property="og:description" content="2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account of wachtwoord. Je locatie wordt standaard niet bewaard; tech">
 <meta property="og:image" content="/og.jpg">
 <link rel="canonical" href="https://2route.nl/nl/privacy.html">
 <link rel="alternate" hreflang="nl" href="https://2route.nl/nl/privacy.html">
@@ -82,12 +82,12 @@
     <div class="priv-hero-content">
       <p class="eyebrow on-photo">Privacy</p>
       <h1>Jouw reis blijft van jou.</h1>
-      <p class="priv-hero-lede">2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account, geen rittenregistratie en standaard geen opgeslagen locatie. Hier leggen we precies uit wat er wél gebeurt.</p>
-      <p class="priv-updated">Laatst bijgewerkt: augustus 2026</p>
+      <p class="priv-hero-lede">2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account of wachtwoord. Je locatie wordt standaard niet bewaard; technische gebeurtenissen worden per sessie gelogd. Hier lees je precies wat er gebeurt.</p>
+      <p class="priv-updated">Laatst bijgewerkt: 31 augustus 2026</p>
     </div>
   </section>
 
-  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Geen account nodig</h3><p>Je hoeft niet in te loggen. Alleen testers vullen vrijwillig een naam in.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Geen rittenregistratie</h3><p>Standaard bouwen we geen geschiedenis op van waar je bent geweest.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Testlogs alleen met toestemming</h3><p>Uitgebreidere diagnosegegevens staan standaard uit en zijn alleen opt-in.</p></div></div></div></section>
+  <section class="priv-promises"><div class="wrap"><div class="priv-promise"><span class="priv-pnum">01</span><div class="priv-pbody"><h3>Geen account nodig</h3><p>Je hoeft niet in te loggen. Alleen testers vullen vrijwillig een naam in.</p></div></div><div class="priv-promise"><span class="priv-pnum">02</span><div class="priv-pbody"><h3>Locatie standaard niet bewaard</h3><p>Coördinaten worden alleen opgeslagen als je uitgebreide logboeken zelf aanzet.</p></div></div><div class="priv-promise"><span class="priv-pnum">03</span><div class="priv-pbody"><h3>Zelf inzien en wissen</h3><p>In de app kun je je gegevens bekijken, meenemen, wissen en het bijhouden uitzetten.</p></div></div></div></section>
 
   <section class="priv-body"><div class="wrap priv-grid">
     <nav class="priv-toc" aria-label="Op deze pagina">
@@ -99,11 +99,11 @@
 
       <section id="loc" class="priv-sec">
         <h2>Locatie</h2>
-        <p class="priv-fieldnote">Standaard wordt je locatie niet opgeslagen en niet gelogd.</p>
-        <p class="priv-fieldnote">Uitgebreide logboeken zijn alleen beschikbaar als opt-in voor het testteam.</p>
+        <p class="priv-fieldnote">Je actuele locatie is nodig om het juiste verhaal te kiezen, maar wordt standaard niet opgeslagen.</p>
+        <p class="priv-fieldnote">Uitgebreide logboeken zijn opt-in. Coördinaten daaruit worden na 30 dagen verwijderd.</p>
         <ul><li>Je GPS-locatie wordt gebruikt om te bepalen welke verhalen relevant zijn.</li>
-<li><strong>Standaard wordt je locatie niet opgeslagen en niet gelogd.</strong> Om te bepalen wat je passeert stuurt de app je actuele positie mee met een verhaal-verzoek; de server gebruikt die om de juiste plek te kiezen en bewaart hem niet. Er wordt geen locatiegeschiedenis of rittenregistratie opgebouwd.</li>
-<li><strong>Uitgebreide logboeken zijn een opt-in voor het testteam.</strong> Alleen als je het zélf aanzet (ontgrendeld met een diagnose-code die we met onze vaste testers delen) leggen we meer vast — waaronder je GPS-positie, rijrichting en snelheid op het moment dat een verhaal wordt gemaakt — om fouten in de verhalen op te sporen en de app te verbeteren. Dit staat standaard uit, geldt alleen zolang jij het zelf aan hebt staan, wordt nooit met derden gedeeld, en kun je op elk moment weer uitzetten.</li></ul>
+<li><strong>Standaard wordt je locatie niet opgeslagen.</strong> De app gebruikt je actuele positie om de juiste plek te kiezen. Technische gebeurtenissen worden wel per sessie gelogd, maar standaard zonder GPS-positie.</li>
+<li><strong>Coördinaten worden alleen bewaard als je uitgebreide logboeken zelf aanzet.</strong> Dan kunnen positie, koers en snelheid voor diagnose worden meegestuurd. Je kunt dit altijd weer uitzetten; locatiegegevens worden na 30 dagen verwijderd.</li></ul>
       </section>
 
       <section id="verhalen" class="priv-sec">
@@ -122,10 +122,11 @@
 
       <section id="bewaard" class="priv-sec">
         <h2>Wat we wél bewaren</h2>
-        <ul><li><strong>Technische gebeurtenissen.</strong> De app meldt aan onze server welk verhaal is verteld, over welke plek, hoelang het maken duurde en of er iets misging — met een willekeurig sessienummer per app-start. Zo zien we of 2R goed werkt. Deze logboeken bevatten standaard geen GPS-positie.</li>
-<li><strong>Het verhalenarchief.</strong> Elk verteld verhaal bewaren we integraal: de tekst, de plek waar het verhaal over gaat en, bij testers, de opgegeven naam. Zo kunnen we teruglezen wat er verteld is en de mooiste verhalen cureren voor deze site. De positie van de reiziger bewaren we daarbij niet.</li>
-<li><strong>Aankopen.</strong> Koop je een abonnement of tegoed, dan registreren we de transactie die Apple ons doorgeeft, samen met een anoniem apparaatnummer. Dat nummer staat los van je naam en is nodig om je aankoop te herkennen — ook na een herinstallatie. Betaalgegevens zien wij nooit; die blijven bij Apple.</li>
-<li><strong>Bewaartermijn &amp; wissen.</strong> Deze gegevens bewaren we zolang 2R in ontwikkeling is. Wil je dat we iets van jou wissen — bijvoorbeeld je testernaam of je verhalen — mail ons, dan verwijderen we het.</li></ul>
+        <ul><li><strong>Technische gebeurtenissen.</strong> Welk verhaal is verteld, welke knop is gebruikt en welke fout optrad, met een willekeurig sessienummer per app-start. Deze gegevens worden 90 dagen bewaard; standaard zonder GPS-positie.</li>
+<li><strong>Gegenereerde verhalen.</strong> Verhaaltekst en de plek waarover het verhaal gaat worden 90 dagen bewaard. De positie van de reiziger wordt daar niet aan gekoppeld.</li>
+<li><strong>Meldingen over onjuiste verhalen.</strong> Een melding wordt 365 dagen bewaard, zodat we haar kunnen onderzoeken en terugkoppelen.</li>
+<li><strong>Aankopen.</strong> Product, transactienummer en een anoniem apparaatnummer worden wegens de fiscale bewaarplicht 7 jaar bewaard. Betaalgegevens blijven bij Apple.</li>
+<li><strong>Jouw rechten.</strong> In de app kun je zien wat 2R bewaart, je gegevens meenemen, wissen en het bijhouden uitzetten. Minder gegevens heeft voorrang: er is geen centrale persoonssleutel waarmee wij je buiten je toestel kunnen opzoeken.</li></ul>
       </section>
 
       <section id="accounts" class="priv-sec">
@@ -158,6 +159,7 @@
       <a href="/nl/partners/">Voor routebeheerders</a>
       <a href="/nl/roadmap.html">Roadmap</a>
       <a href="/nl/stories/">Verhalen</a>
+      <a href="/nl/kwaliteit/">Kwaliteit & eerlijkheid</a>
       <a href="/nl/privacy.html">Privacy</a>
       <a href="mailto:nimco@nentjes.nl">Contact</a>
     </div>
