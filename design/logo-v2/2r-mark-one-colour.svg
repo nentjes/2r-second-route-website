@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">2R beeldmerk in één kleur</title>
+  <desc id="desc">Het vereenvoudigde 2R-beeldmerk in één petrolkleur voor drukwerk en kleine toepassingen.</desc>
+  <rect width="512" height="512" rx="112" fill="#FAF6ED"/>
+  <path d="M104 166 C126 110 180 88 230 106 C276 122 292 164 271 201 C251 236 203 252 168 274 C127 300 106 338 106 393 H242"
+        fill="none" stroke="#173B3A" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M270 394 V116 H340 C386 116 408 141 408 180 C408 220 381 243 338 243 H270 M334 243 L412 394"
+        fill="none" stroke="#173B3A" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="104" cy="166" r="13" fill="#173B3A"/>
+</svg>

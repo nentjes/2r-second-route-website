@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 260" role="img" aria-labelledby="title desc">
+  <title id="title">2R Second Route woordmerk op donkere achtergrond</title>
+  <desc id="desc">Het 2R beeldmerk met de naam 2R en de ondertitel Second Route.</desc>
+  <rect width="980" height="260" rx="30" fill="#0B2525"/>
+  <g transform="translate(38 38) scale(.36)">
+    <rect width="512" height="512" rx="112" fill="#173B3A"/>
+    <path d="M104 166 C126 110 180 88 230 106 C276 122 292 164 271 201 C251 236 203 252 168 274 C127 300 106 338 106 393 H242" fill="none" stroke="#FAF6ED" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M270 394 V116 H340 C386 116 408 141 408 180 C408 220 381 243 338 243 H270 M334 243 L412 394" fill="none" stroke="#D96552" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="104" cy="166" r="13" fill="#D8A85F"/>
+  </g>
+  <text x="258" y="126" fill="#FAF6ED" font-family="Newsreader, Georgia, serif" font-size="88" font-weight="500" letter-spacing="-2">2R</text>
+  <text x="263" y="170" fill="#D8A85F" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="22" font-weight="650" letter-spacing="5">SECOND ROUTE</text>
+  <path d="M263 194 H850" stroke="#FAF6ED" stroke-opacity=".18"/>
+  <text x="263" y="226" fill="#FAF6ED" fill-opacity=".64" font-family="Newsreader, Georgia, serif" font-size="23" font-style="italic">De tweede route laat je begrijpen waar je bent.</text>
+</svg>
