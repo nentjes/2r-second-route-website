@@ -4,7 +4,7 @@
    "slug": "berkheide",
    "naam": "Boswachterspad Berkheide (Hollands Duin)",
    "provincie": "Zuid-Holland",
-   "lengte_km": 5.93,
+   "lengte_km": 5.9,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -27,7 +27,7 @@
    "slug": "bourtange",
    "naam": "Westerwolde Wandelroute 16: Rondom de Vesting Bourtange",
    "provincie": "Groningen",
-   "lengte_km": 6.46,
+   "lengte_km": 6.5,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -50,7 +50,7 @@
    "slug": "dokkum",
    "naam": "Stadswandeling Dokkum (Vestingstad Dokkum)",
    "provincie": "Friesland",
-   "lengte_km": 4.24,
+   "lengte_km": 4.2,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -72,7 +72,7 @@
    "slug": "drakensteyn",
    "naam": "Boswachterspad Stulp en Kasteeltuin",
    "provincie": "Utrecht",
-   "lengte_km": 5.7,
+   "lengte_km": 6.3,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -96,7 +96,7 @@
    "slug": "hackfort",
    "naam": "Eeuwenoud landgoed met kasteel Hackfort",
    "provincie": "Gelderland",
-   "lengte_km": 4.29,
+   "lengte_km": 4.3,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -118,7 +118,7 @@
    "slug": "julianalaan",
    "naam": "De Julianalaan — bosrand van Bilthoven",
    "provincie": "Utrecht",
-   "lengte_km": 2.99,
+   "lengte_km": 3.0,
    "duur": "±1 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -138,7 +138,7 @@
    "slug": "schokland",
    "naam": "Vluchthavenroute Schokland",
    "provincie": "Flevoland",
-   "lengte_km": 5.53,
+   "lengte_km": 5.5,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -160,7 +160,7 @@
    "slug": "sint-pietersberg",
    "naam": "Wandelroute Sint-Pietersberg bij Maastricht (groene route)",
    "provincie": "Limburg",
-   "lengte_km": 4.78,
+   "lengte_km": 4.8,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -183,7 +183,7 @@
    "slug": "spaarndam",
    "naam": "Fortenroute (Spaarndam – Velserbroek)",
    "provincie": "Noord-Holland",
-   "lengte_km": 5.99,
+   "lengte_km": 6.0,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -206,7 +206,7 @@
    "slug": "twickel",
    "naam": "Twickel Kasteelwandeling",
    "provincie": "Overijssel",
-   "lengte_km": 4.49,
+   "lengte_km": 4.5,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -228,7 +228,7 @@
    "slug": "veenhuizen",
    "naam": "Fochteloërveenroute: wandeling met cultuurhistorie en natuur",
    "provincie": "Drenthe",
-   "lengte_km": 5.49,
+   "lengte_km": 5.5,
    "duur": "±2 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -250,7 +250,7 @@
    "slug": "westkapelle",
    "naam": "Parelroute 'Verdediging' — Westkapelle",
    "provincie": "Zeeland",
-   "lengte_km": 5.36,
+   "lengte_km": 5.4,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
@@ -273,7 +273,7 @@
    "slug": "zwarte-berg",
    "naam": "Wandelroute Zwarte Berg (Loonse en Drunense Duinen)",
    "provincie": "Noord-Brabant",
-   "lengte_km": 4.28,
+   "lengte_km": 4.3,
    "duur": "±1,5 uur (officieel 1 uur 26 minuten; langzamer door mul zand)",
    "begaanbaarheid": {
     "gemeten_op": "2026-08-31",
