@@ -1,6 +1,8 @@
 # 2R logo v2 — De Tweede Lijn
 
-Conceptuele, vectorgebaseerde professionalisering van het bestaande 2R-logo.
+Definitieve, vectorgebaseerde professionalisering van het oorspronkelijke
+2R-logo. Op 2 september 2026 koos Roel na vergelijking met vier alternatieve
+richtingen en drie boekhybriden definitief voor deze richting.
 
 ## Bewust behouden
 
@@ -19,8 +21,26 @@ Conceptuele, vectorgebaseerde professionalisering van het bestaande 2R-logo.
 
 ## Status
 
-Ontwerpconcept. Niet voor productie of vervanging van het actuele App Store-icoon zonder expliciete goedkeuring en optische eindcorrectie.
+**Gekozen en actief voor de website.** De richting heet **De Tweede Lijn**.
+De website gebruikt vanaf 2 september 2026:
 
-## Voor definitieve productie
+- public/brand/2r-mark-primary.svg vanaf 24 px;
+- public/brand/2r-mark-micro.svg voor favicon en microformaten;
+- public/icon-2r.png als compatibele 1024-px rasterexport;
+- public/apple-touch-icon.png en public/favicon-32.png als systeemexports.
 
-De lettervormen worden na goedkeuring optisch gecorrigeerd. De tekst in de lock-ups moet daarna naar vectorcontouren worden omgezet, zodat het woordmerk niet van lokaal geïnstalleerde lettertypen afhankelijk is.
+Het nieuwe App Store-icoon wordt vanuit dezelfde masterrichting opgebouwd en
+door Claude in de eerstvolgende iOS-build opgenomen.
+
+## Responsief beeldmerk
+
+- **24 px en groter:** het volledige teken met papierlichte 2, koraalkleurige R,
+  goud beginpunt en de subtiele binnenlijn.
+- **16–23 px:** de vereenvoudigde microvariant met dikkere lijnen, zonder
+  binnenlijn en goudpunt.
+- Het beeldmerk staat nooit met slagschaduw, glans, metaal of 3D-effecten.
+- De afgeronde systeemhoeken van het iOS-icoon worden niet in de Apple-master
+  ingebakken.
+
+De experimentele richtingen in design/logo-v3-exploration/ blijven uitsluitend
+ontwerphistorie en zijn geen productiebron.

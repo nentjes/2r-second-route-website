@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">2R — De Tweede Lijn</title>
+  <desc id="desc">Een papierkleurige 2 en een koraalkleurige R kruisen elkaar als twee routes op diep petrol.</desc>
+  <rect width="512" height="512" rx="112" fill="#0B2525"/>
+  <rect x="17" y="17" width="478" height="478" rx="96" fill="none" stroke="#FAF6ED" stroke-opacity=".10" stroke-width="2"/>
+  <path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 393H242"
+        fill="none" stroke="#FAF6ED" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M270 394V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 394"
+        fill="none" stroke="#D96552" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="104" cy="166" r="13" fill="#D8A85F"/>
+</svg>

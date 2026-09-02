@@ -1395,7 +1395,7 @@ def nav(lang, active):
     return f'''<header class="site">
   <div class="site-nav">
     <a class="brand" href="/{lang}/">
-      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <img class="brand-mark" src="/brand/2r-mark-primary.svg" width="38" height="38" alt="" aria-hidden="true">
       <span class="brand-lockup"><strong>2R</strong><small>Second Route</small></span>
     </a>
     <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
@@ -1460,7 +1460,7 @@ def footer(lang):
     return f'''<footer class="site">
   <div class="footer-grid">
     <a class="footer-brand" href="/{lang}/">
-      <img class="brand-mark" src="/icon-2r.png" alt="2R">
+      <img class="brand-mark" src="/brand/2r-mark-primary.svg" width="28" height="28" alt="" aria-hidden="true">
       <span>Second Route</span>
     </a>
     <div class="footer-links">
@@ -1664,12 +1664,17 @@ def page_shell(lang, title, description, active, body, extra_head='', path=None,
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(description)}">
-<link rel="icon" href="/icon-2r.png">
-<link rel="apple-touch-icon" href="/icon-2r.png">
+<link rel="icon" type="image/svg+xml" href="/brand/2r-mark-micro.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0B2525">
 <link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(description)}">
-<meta property="og:image" content="/og.jpg">
+<meta property="og:image" content="{BASE_URL}/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 {seo}</head>
 <body class="{'nav-immersive' if immersive else 'nav-paper'}">
 {nav(lang, active)}

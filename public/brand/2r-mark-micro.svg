@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">2R</title>
+  <desc id="desc">De vereenvoudigde 2R-markering voor kleine digitale formaten.</desc>
+  <rect width="512" height="512" rx="112" fill="#0B2525"/>
+  <path d="M108 166C135 105 226 96 257 145C300 213 190 249 145 298C117 328 111 354 111 392H242"
+        fill="none" stroke="#FAF6ED" stroke-width="82" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M282 397V114H344C390 114 414 141 414 180C414 222 384 246 340 246H282M340 246L408 397"
+        fill="none" stroke="#D96552" stroke-width="82" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
