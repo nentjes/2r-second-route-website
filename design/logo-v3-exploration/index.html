@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2R — vijf logorichtingen voor Traveller &amp; Studio</title>
+  <style>
+    :root {
+      --ink: #17242b;
+      --deep: #0b2525;
+      --petrol: #173b3a;
+      --paper: #f2ebdd;
+      --paper-light: #faf6ed;
+      --cognac: #a96642;
+      --ember: #d96552;
+      --moss: #66715c;
+      --gold: #d8a85f;
+      --line: rgba(23,36,43,.16);
+      --shadow: 0 24px 80px rgba(11,37,37,.13);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 5%, rgba(216,168,95,.16), transparent 30rem),
+        linear-gradient(180deg, #f8f3e9 0%, var(--paper) 100%);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.58;
+    }
+
+    .serif { font-family: Newsreader, Georgia, "Times New Roman", serif; }
+
+    header {
+      position: relative;
+      min-height: 88vh;
+      padding: 42px clamp(24px, 6vw, 96px) 72px;
+      color: var(--paper-light);
+      background:
+        linear-gradient(110deg, rgba(11,37,37,.98) 0%, rgba(11,37,37,.92) 54%, rgba(23,59,58,.74) 100%),
+        radial-gradient(circle at 80% 22%, rgba(217,101,82,.45), transparent 25rem);
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      width: 62vw;
+      height: 62vw;
+      right: -22vw;
+      bottom: -39vw;
+      border: 1px solid rgba(250,246,237,.17);
+      border-radius: 50%;
+      box-shadow: 0 0 0 7vw rgba(250,246,237,.025), 0 0 0 16vw rgba(250,246,237,.018);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 13vh;
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before { content: ""; width: 38px; height: 1px; background: currentColor; }
+
+    h1 {
+      max-width: 960px;
+      margin: 0;
+      font-family: Newsreader, Georgia, serif;
+      font-size: clamp(52px, 8.2vw, 118px);
+      font-weight: 500;
+      letter-spacing: -.055em;
+      line-height: .92;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr);
+      gap: clamp(32px, 9vw, 140px);
+      align-items: end;
+      max-width: 1260px;
+      margin-top: 54px;
+    }
+
+    .intro > p {
+      max-width: 760px;
+      margin: 0;
+      color: rgba(250,246,237,.78);
+      font-size: clamp(18px, 2vw, 25px);
+    }
+
+    .premise {
+      padding-left: 24px;
+      border-left: 1px solid rgba(250,246,237,.22);
+      font-size: 14px;
+      color: rgba(250,246,237,.64);
+    }
+
+    .premise strong { display: block; margin-bottom: 7px; color: var(--paper-light); font-size: 15px; }
+
+    .ecosystem {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      max-width: 1260px;
+      margin: 64px auto 0;
+      background: rgba(250,246,237,.15);
+      border: 1px solid rgba(250,246,237,.15);
+    }
+
+    .ecosystem div { padding: 24px; background: rgba(11,37,37,.55); }
+    .ecosystem span { display: block; color: var(--gold); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; }
+    .ecosystem strong { display: block; margin-top: 5px; font-family: Newsreader, Georgia, serif; font-size: 25px; font-weight: 500; }
+    .ecosystem p { margin: 6px 0 0; color: rgba(250,246,237,.6); font-size: 13px; }
+
+    main { padding: 110px clamp(18px, 4vw, 70px) 140px; }
+
+    .section-lead {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      max-width: 1180px;
+      margin: 0 auto 70px;
+    }
+
+    .section-lead h2 {
+      margin: 0;
+      font-family: Newsreader, Georgia, serif;
+      font-size: clamp(40px, 5vw, 70px);
+      font-weight: 500;
+      letter-spacing: -.035em;
+      line-height: 1;
+    }
+
+    .section-lead p { margin: 4px 0 0; color: rgba(23,36,43,.68); font-size: 18px; }
+
+    .variants { max-width: 1380px; margin: auto; display: grid; gap: 42px; }
+
+    article {
+      display: grid;
+      grid-template-columns: minmax(390px, .88fr) minmax(420px, 1.12fr);
+      min-height: 700px;
+      border: 1px solid var(--line);
+      background: rgba(250,246,237,.7);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .visual {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 40px;
+      padding: clamp(28px, 5vw, 68px);
+      color: var(--paper-light);
+      background: var(--deep);
+    }
+
+    article:nth-child(even) .visual { background: var(--petrol); }
+
+    .variant-no {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgba(250,246,237,.5);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .badge {
+      padding: 6px 10px;
+      border: 1px solid rgba(216,168,95,.45);
+      border-radius: 100px;
+      color: var(--gold);
+      letter-spacing: .08em;
+    }
+
+    .hero-mark {
+      width: min(100%, 390px);
+      height: auto;
+      align-self: center;
+      filter: drop-shadow(0 18px 38px rgba(0,0,0,.18));
+    }
+
+    .lockups { display: grid; gap: 12px; }
+    .lockup {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 64px;
+      padding: 10px 15px 10px 10px;
+      border: 1px solid rgba(250,246,237,.14);
+      background: rgba(250,246,237,.045);
+    }
+    .lockup svg { width: 44px; height: 44px; flex: 0 0 auto; }
+    .brand-2r { font-family: Newsreader, Georgia, serif; font-size: 24px; letter-spacing: -.02em; }
+    .product { margin-left: 6px; color: rgba(250,246,237,.68); font-size: 14px; font-weight: 650; letter-spacing: .035em; }
+    .content { padding: clamp(34px, 6vw, 78px); }
+    .kicker { margin: 0 0 20px; color: var(--cognac); font-size: 12px; font-weight: 750; letter-spacing: .17em; text-transform: uppercase; }
+    article h3 { margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(42px, 5vw, 68px); font-weight: 500; letter-spacing: -.04em; line-height: .95; }
+    .thesis { max-width: 650px; margin: 26px 0 34px; font-family: Newsreader, Georgia, serif; font-size: clamp(22px, 2.2vw, 30px); line-height: 1.3; color: var(--petrol); }
+    .story { max-width: 680px; color: rgba(23,36,43,.76); font-size: 17px; }
+    .story p { margin: 0 0 18px; }
+    .fit {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 34px;
+    }
+    .fit div { padding: 18px 0; border-top: 1px solid var(--line); }
+    .fit span { display: block; margin-bottom: 7px; color: var(--cognac); font-size: 11px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
+    .fit p { margin: 0; color: rgba(23,36,43,.72); font-size: 14px; }
+
+    .size-test {
+      display: flex;
+      align-items: end;
+      gap: 18px;
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+    .size-test > span { margin-right: auto; color: rgba(23,36,43,.48); font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+    .sample { text-align: center; color: rgba(23,36,43,.43); font-size: 10px; }
+    .sample svg { display: block; margin: 0 auto 5px; }
+
+    .verdict {
+      max-width: 1180px;
+      margin: 90px auto 0;
+      padding: clamp(36px, 6vw, 78px);
+      color: var(--paper-light);
+      background: var(--deep);
+      box-shadow: var(--shadow);
+    }
+    .verdict .kicker { color: var(--gold); }
+    .verdict h2 { max-width: 850px; margin: 0; font-family: Newsreader, Georgia, serif; font-size: clamp(40px, 5vw, 66px); font-weight: 500; letter-spacing: -.035em; line-height: 1; }
+    .ranking { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 42px; background: rgba(250,246,237,.15); }
+    .ranking div { padding: 25px; background: rgba(250,246,237,.04); }
+    .ranking span { color: var(--gold); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .ranking strong { display: block; margin-top: 7px; font-family: Newsreader, Georgia, serif; font-size: 24px; font-weight: 500; }
+    .ranking p { margin: 8px 0 0; color: rgba(250,246,237,.64); font-size: 14px; }
+    footer { padding: 0 24px 70px; text-align: center; color: rgba(23,36,43,.48); font-size: 12px; letter-spacing: .05em; }
+
+    @media (max-width: 900px) {
+      header { min-height: auto; }
+      .intro, .section-lead, article { grid-template-columns: 1fr; }
+      .ecosystem { grid-template-columns: 1fr; }
+      article { min-height: 0; }
+      .visual { min-height: 650px; }
+      .ranking { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      header { padding: 28px 20px 48px; }
+      .eyebrow { margin-bottom: 12vh; }
+      main { padding: 70px 12px 90px; }
+      article { border-radius: 0; }
+      .visual, .content { padding: 28px 22px; }
+      .visual { min-height: 570px; }
+      .fit { grid-template-columns: 1fr; }
+      .lockup { gap: 9px; }
+      .brand-2r { font-size: 20px; }
+      .product { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">2R merkverkenning · 2 september 2026</div>
+    <h1>Vijf tekens voor één levend routesysteem.</h1>
+    <div class="intro">
+      <p>Het merk moet niet alleen een reiziger meenemen. Het moet ook laten voelen dat achter ieder verhaal een maker, een bron en een zorgvuldig opgebouwde route staat.</p>
+      <div class="premise"><strong>De nieuwe werkelijkheid</strong>2R Traveller beleeft. 2R Studio maakt. Het hoofdmerk verbindt beide zonder een technisch softwarelogo te worden.</div>
+    </div>
+    <div class="ecosystem">
+      <div><span>01 · Buiten</span><strong>2R Traveller</strong><p>De persoonlijke reisgenoot die de omgeving hoorbaar maakt.</p></div>
+      <div><span>02 · Achter de schermen</span><strong>2R Studio</strong><p>De professionele werkplaats voor routes, bronnen en publicatie.</p></div>
+      <div><span>03 · De verbinding</span><strong>Het 2R-hoofdmerk</strong><p>Van kennis naar route, van route naar ervaring, van ervaring naar nieuwe aandacht.</p></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-lead">
+      <h2>Niet vijf versieringen. Vijf merkgedachten.</h2>
+      <p>Iedere richting gebruikt hetzelfde filmische palet en wordt hieronder getest als app-icoon, als klein teken en als afzender van Traveller én Studio.</p>
+    </section>
+
+    <section class="variants">
+      <article>
+        <div class="visual">
+          <div class="variant-no"><span>Richting 01</span><span class="badge">Evolutie van v2</span></div>
+          <svg class="hero-mark" viewBox="0 0 512 512" role="img" aria-label="De Tweede Lijn">
+            <rect width="512" height="512" rx="112" fill="#0b2525"/>
+            <rect x="17" y="17" width="478" height="478" rx="96" fill="none" stroke="#faf6ed" stroke-opacity=".10" stroke-width="2"/>
+            <path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 393H242" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M270 394V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 394" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="104" cy="166" r="13" fill="#d8a85f"/>
+          </svg>
+          <div class="lockups">
+            <div class="lockup">
+              <svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#173b3a"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 393H242" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round"/><path d="M270 394V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 394" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round"/><circle cx="104" cy="166" r="13" fill="#d8a85f"/></svg>
+              <div><span class="brand-2r">2R</span><span class="product">TRAVELLER</span></div>
+            </div>
+            <div class="lockup">
+              <svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#173b3a"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 393H242" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round"/><path d="M270 394V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 394" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round"/><circle cx="104" cy="166" r="13" fill="#d8a85f"/></svg>
+              <div><span class="brand-2r">2R</span><span class="product">STUDIO</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <p class="kicker">De Tweede Lijn</p>
+          <h3>De route die je volgt. De route die iemand voor je maakte.</h3>
+          <p class="thesis">Twee lettervormen kruisen elkaar zonder hun eigen karakter te verliezen.</p>
+          <div class="story">
+            <p>De papierlichte 2 is de reis zoals de gebruiker die beleeft: open, menselijk en onderweg. De koraalkleurige R is de tweede laag die 2R toevoegt — het verhaal, de redactie en de route die in Studio is opgebouwd.</p>
+            <p>Het gouden beginpunt zegt zachtjes: ieder verhaal begint ergens. Niet met een pin of toeristisch symbool, maar met aandacht.</p>
+          </div>
+          <div class="fit">
+            <div><span>Sterk voor Traveller</span><p>Leesbaar als beweging en reis, warm en onmiddellijk herkenbaar.</p></div>
+            <div><span>Sterk voor Studio</span><p>De rechte R heeft structuur en voelt als de gemaakte, gepubliceerde laag.</p></div>
+            <div><span>Kracht</span><p>Behoudt herkenning van v2 en vraagt de kleinste merkbreuk.</p></div>
+            <div><span>Aandachtspunt</span><p>De twee letters staan nog relatief naast elkaar; het ecosysteemverhaal moet in de toepassing worden verteld.</p></div>
+          </div>
+          <div class="size-test"><span>Klein-formaatproef</span>
+            <div class="sample"><svg width="56" height="56" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 393H242" fill="none" stroke="#faf6ed" stroke-width="58" stroke-linecap="round"/><path d="M270 394V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 394" fill="none" stroke="#d96552" stroke-width="58" stroke-linecap="round"/></svg>56</div>
+            <div class="sample"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 393H242" fill="none" stroke="#faf6ed" stroke-width="68" stroke-linecap="round"/><path d="M270 394V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 394" fill="none" stroke="#d96552" stroke-width="68" stroke-linecap="round"/></svg>32</div>
+            <div class="sample"><svg width="20" height="20" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M108 166C135 105 226 96 257 145C300 213 190 249 145 298C117 328 111 354 111 392H242" fill="none" stroke="#faf6ed" stroke-width="82" stroke-linecap="round"/><path d="M278 397V114H344C390 114 414 141 414 180C414 222 384 246 340 246H278M340 246L408 397" fill="none" stroke="#d96552" stroke-width="82" stroke-linecap="round"/></svg>20</div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="visual">
+          <div class="variant-no"><span>Richting 02</span><span class="badge">Eén ruggengraat</span></div>
+          <svg class="hero-mark" viewBox="0 0 512 512" role="img" aria-label="De Gedeelde Route">
+            <rect width="512" height="512" rx="112" fill="#0b2525"/>
+            <path d="M99 168C121 108 182 87 232 108C274 126 287 165 266 202C245 238 196 256 160 282C128 305 110 340 110 394H258" fill="none" stroke="#faf6ed" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M258 394V117" fill="none" stroke="#d96552" stroke-width="50" stroke-linecap="round"/>
+            <path d="M258 117H340C386 117 411 142 411 181C411 221 382 245 340 245H258M340 245L411 394" fill="none" stroke="#d8a85f" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M258 286V394" stroke="#faf6ed" stroke-width="14" stroke-linecap="round" opacity=".8"/>
+          </svg>
+          <div class="lockups">
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M99 168C121 108 182 87 232 108C274 126 287 165 266 202C245 238 196 256 160 282C128 305 110 340 110 394H258" fill="none" stroke="#faf6ed" stroke-width="50" stroke-linecap="round"/><path d="M258 394V117" stroke="#d96552" stroke-width="50" stroke-linecap="round"/><path d="M258 117H340C386 117 411 142 411 181C411 221 382 245 340 245H258M340 245L411 394" fill="none" stroke="#d8a85f" stroke-width="50" stroke-linecap="round"/></svg><div><span class="brand-2r">2R</span><span class="product">TRAVELLER</span></div></div>
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M99 168C121 108 182 87 232 108C274 126 287 165 266 202C245 238 196 256 160 282C128 305 110 340 110 394H258" fill="none" stroke="#faf6ed" stroke-width="50" stroke-linecap="round"/><path d="M258 394V117" stroke="#d96552" stroke-width="50" stroke-linecap="round"/><path d="M258 117H340C386 117 411 142 411 181C411 221 382 245 340 245H258M340 245L411 394" fill="none" stroke="#d8a85f" stroke-width="50" stroke-linecap="round"/></svg><div><span class="brand-2r">2R</span><span class="product">STUDIO</span></div></div>
+          </div>
+        </div>
+        <div class="content">
+          <p class="kicker">De Gedeelde Route</p>
+          <h3>Traveller en Studio delen dezelfde ruggengraat.</h3>
+          <p class="thesis">De route van de reiziger eindigt niet bij Studio; daar krijgt zij vorm, structuur en continuïteit.</p>
+          <div class="story">
+            <p>De 2 stroomt letterlijk de centrale stam van de R binnen. Die gedeelde stam is het 2R-platform: locaties, bronnen, verhalen, talen en publicaties bestaan niet los van elkaar.</p>
+            <p>Het goud verschuift van een klein beginpunt naar de uitgewerkte boog. Daardoor krijgt vakmanschap meer gewicht: Studio is geen beheerpagina, maar de plek waar een reiservaring zorgvuldig wordt gemaakt.</p>
+          </div>
+          <div class="fit">
+            <div><span>Sterk voor Traveller</span><p>De lichte beweging komt van buiten en vindt vanzelf haar weg.</p></div>
+            <div><span>Sterk voor Studio</span><p>De gedeelde verticale as verbeeldt infrastructuur, betrouwbaarheid en schaal.</p></div>
+            <div><span>Kracht</span><p>Het ecosysteem zit zichtbaar in het teken, zonder extra symbool of uitleglaag.</p></div>
+            <div><span>Aandachtspunt</span><p>Goud krijgt meer nadruk en kan daardoor iets institutioneler en minder intiem voelen.</p></div>
+          </div>
+          <div class="size-test"><span>Klein-formaatproef</span>
+            <div class="sample"><svg width="56" height="56" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M99 168C121 108 182 87 232 108C274 126 287 165 266 202C245 238 196 256 160 282C128 305 110 340 110 394H258" fill="none" stroke="#faf6ed" stroke-width="56" stroke-linecap="round"/><path d="M258 394V117" stroke="#d96552" stroke-width="56" stroke-linecap="round"/><path d="M258 117H340C386 117 411 142 411 181C411 221 382 245 340 245H258M340 245L411 394" fill="none" stroke="#d8a85f" stroke-width="56" stroke-linecap="round"/></svg>56</div>
+            <div class="sample"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M99 168C121 108 182 87 232 108C274 126 287 165 266 202C245 238 196 256 160 282C128 305 110 340 110 394H258" fill="none" stroke="#faf6ed" stroke-width="68" stroke-linecap="round"/><path d="M258 394V117" stroke="#d96552" stroke-width="68" stroke-linecap="round"/><path d="M258 117H340C386 117 411 142 411 181C411 221 382 245 340 245H258M340 245L411 394" fill="none" stroke="#d8a85f" stroke-width="68" stroke-linecap="round"/></svg>32</div>
+            <div class="sample"><svg width="20" height="20" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M105 170C129 112 210 92 251 139C299 195 208 249 159 282C127 305 110 340 110 394H258" fill="none" stroke="#faf6ed" stroke-width="80" stroke-linecap="round"/><path d="M258 394V117" stroke="#d96552" stroke-width="80" stroke-linecap="round"/><path d="M258 117H340C386 117 411 142 411 181C411 221 382 245 340 245H258M340 245L411 394" fill="none" stroke="#d8a85f" stroke-width="80" stroke-linecap="round"/></svg>20</div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="visual">
+          <div class="variant-no"><span>Richting 03</span><span class="badge">Redactioneel</span></div>
+          <svg class="hero-mark" viewBox="0 0 512 512" role="img" aria-label="Het Levende Reisboek">
+            <rect width="512" height="512" rx="112" fill="#0b2525"/>
+            <path d="M84 136C145 101 206 106 256 140V405C205 371 145 367 84 400V136Z" fill="none" stroke="#faf6ed" stroke-width="34" stroke-linejoin="round"/>
+            <path d="M428 136C367 101 306 106 256 140V405C307 371 367 367 428 400V136Z" fill="none" stroke="#d96552" stroke-width="34" stroke-linejoin="round"/>
+            <path d="M130 178C165 154 207 158 230 177C253 196 248 225 222 244L160 289C139 305 128 327 128 356H225" fill="none" stroke="#faf6ed" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M286 356V169H342C375 169 392 188 392 215C392 244 371 260 340 260H286M339 260L393 356" fill="none" stroke="#d8a85f" stroke-width="27" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="lockups">
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M84 136C145 101 206 106 256 140V405C205 371 145 367 84 400V136Z" fill="none" stroke="#faf6ed" stroke-width="34"/><path d="M428 136C367 101 306 106 256 140V405C307 371 367 367 428 400V136Z" fill="none" stroke="#d96552" stroke-width="34"/><path d="M130 178C165 154 207 158 230 177C253 196 248 225 222 244L160 289C139 305 128 327 128 356H225" fill="none" stroke="#faf6ed" stroke-width="27" stroke-linecap="round"/><path d="M286 356V169H342C375 169 392 188 392 215C392 244 371 260 340 260H286M339 260L393 356" fill="none" stroke="#d8a85f" stroke-width="27" stroke-linecap="round"/></svg><div><span class="brand-2r">2R</span><span class="product">TRAVELLER</span></div></div>
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M84 136C145 101 206 106 256 140V405C205 371 145 367 84 400V136Z" fill="none" stroke="#faf6ed" stroke-width="34"/><path d="M428 136C367 101 306 106 256 140V405C307 371 367 367 428 400V136Z" fill="none" stroke="#d96552" stroke-width="34"/><path d="M130 178C165 154 207 158 230 177C253 196 248 225 222 244L160 289C139 305 128 327 128 356H225" fill="none" stroke="#faf6ed" stroke-width="27" stroke-linecap="round"/><path d="M286 356V169H342C375 169 392 188 392 215C392 244 371 260 340 260H286M339 260L393 356" fill="none" stroke="#d8a85f" stroke-width="27" stroke-linecap="round"/></svg><div><span class="brand-2r">2R</span><span class="product">STUDIO</span></div></div>
+          </div>
+        </div>
+        <div class="content">
+          <p class="kicker">Het Levende Reisboek</p>
+          <h3>In Studio wordt een route geschreven. In Traveller slaat zij open.</h3>
+          <p class="thesis">Het boek is geen archief, maar een landschap dat zich pas onderweg laat lezen.</p>
+          <div class="story">
+            <p>De twee open bladzijden zijn tegelijk twee routes. Links bevindt zich de persoonlijke reis; rechts de gepubliceerde, vertelbare laag. De middenvouw verbindt maken en beleven.</p>
+            <p>Deze richting claimt nadrukkelijker het culturele domein. 2R wordt minder een mobiliteitsapp en meer een Europees uitgeefplatform voor plaatsgebonden kennis.</p>
+          </div>
+          <div class="fit">
+            <div><span>Sterk voor Traveller</span><p>Een route voelt als een verhaal dat zich plaats voor plaats opent.</p></div>
+            <div><span>Sterk voor Studio</span><p>Studio wordt geloofwaardig als redactie- en publicatieomgeving.</p></div>
+            <div><span>Kracht</span><p>De meest onderscheidende koppeling tussen reizen, verhalen en zelf routes maken.</p></div>
+            <div><span>Aandachtspunt</span><p>Bevat meer lijnen en vraagt een vereenvoudigde microversie onder circa 28 px.</p></div>
+          </div>
+          <div class="size-test"><span>Klein-formaatproef</span>
+            <div class="sample"><svg width="56" height="56" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M84 136C145 101 206 106 256 140V405C205 371 145 367 84 400V136Z" fill="none" stroke="#faf6ed" stroke-width="38"/><path d="M428 136C367 101 306 106 256 140V405C307 371 367 367 428 400V136Z" fill="none" stroke="#d96552" stroke-width="38"/></svg>56</div>
+            <div class="sample"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M84 136C145 101 206 106 256 140V405C205 371 145 367 84 400V136Z" fill="none" stroke="#faf6ed" stroke-width="48"/><path d="M428 136C367 101 306 106 256 140V405C307 371 367 367 428 400V136Z" fill="none" stroke="#d96552" stroke-width="48"/><path d="M131 202C174 152 239 172 229 219C221 255 155 273 133 327H224" fill="none" stroke="#faf6ed" stroke-width="38" stroke-linecap="round"/><path d="M287 340V179H342C376 179 392 198 392 224C392 251 371 267 340 267H287M340 267L390 340" fill="none" stroke="#d8a85f" stroke-width="38" stroke-linecap="round"/></svg>32</div>
+            <div class="sample"><svg width="20" height="20" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M91 143C152 106 211 112 256 145V399C211 369 152 368 91 397V143Z" fill="none" stroke="#faf6ed" stroke-width="66"/><path d="M421 143C360 106 301 112 256 145V399C301 369 360 368 421 397V143Z" fill="none" stroke="#d96552" stroke-width="66"/></svg>20</div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="visual">
+          <div class="variant-no"><span>Richting 04</span><span class="badge">Wisselwerking</span></div>
+          <svg class="hero-mark" viewBox="0 0 512 512" role="img" aria-label="De Routewissel">
+            <rect width="512" height="512" rx="112" fill="#0b2525"/>
+            <path d="M91 174C112 112 175 86 229 107C279 127 292 171 268 211C242 254 175 264 139 306C118 330 107 357 107 394H247" fill="none" stroke="#faf6ed" stroke-width="48" stroke-linecap="round"/>
+            <path d="M271 394V118H341C387 118 410 143 410 181C410 221 383 244 340 244H271M340 244L413 394" fill="none" stroke="#d96552" stroke-width="48" stroke-linecap="round"/>
+            <path d="M194 270C237 250 282 245 340 244" fill="none" stroke="#d8a85f" stroke-width="18" stroke-linecap="round"/>
+            <path d="M235 208C249 219 261 231 271 245" fill="none" stroke="#faf6ed" stroke-width="18" stroke-linecap="round"/>
+          </svg>
+          <div class="lockups">
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M91 174C112 112 175 86 229 107C279 127 292 171 268 211C242 254 175 264 139 306C118 330 107 357 107 394H247" fill="none" stroke="#faf6ed" stroke-width="48" stroke-linecap="round"/><path d="M271 394V118H341C387 118 410 143 410 181C410 221 383 244 340 244H271M340 244L413 394" fill="none" stroke="#d96552" stroke-width="48" stroke-linecap="round"/><path d="M194 270C237 250 282 245 340 244" stroke="#d8a85f" stroke-width="18" stroke-linecap="round"/></svg><div><span class="brand-2r">2R</span><span class="product">TRAVELLER</span></div></div>
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M91 174C112 112 175 86 229 107C279 127 292 171 268 211C242 254 175 264 139 306C118 330 107 357 107 394H247" fill="none" stroke="#faf6ed" stroke-width="48" stroke-linecap="round"/><path d="M271 394V118H341C387 118 410 143 410 181C410 221 383 244 340 244H271M340 244L413 394" fill="none" stroke="#d96552" stroke-width="48" stroke-linecap="round"/><path d="M194 270C237 250 282 245 340 244" stroke="#d8a85f" stroke-width="18" stroke-linecap="round"/></svg><div><span class="brand-2r">2R</span><span class="product">STUDIO</span></div></div>
+          </div>
+        </div>
+        <div class="content">
+          <p class="kicker">De Routewissel</p>
+          <h3>Maken en beleven zijn geen eenrichtingsverkeer.</h3>
+          <p class="thesis">De twee routes raken elkaar, wisselen kennis uit en gaan verrijkt verder.</p>
+          <div class="story">
+            <p>De kleine gouden wissel is het moment waarop Studio en Traveller elkaar ontmoeten. Een organisatie publiceert een route; de reiziger beleeft, reageert en voegt nieuwe betekenis toe.</p>
+            <p>Hiermee kijkt het logo alvast vooruit naar het 2R Network: geen verzameling losse audiotours, maar een groeiend Europees weefsel van lokale kennis.</p>
+          </div>
+          <div class="fit">
+            <div><span>Sterk voor Traveller</span><p>Het teken blijft beweeglijk en persoonlijk; niets voelt als een administratiesysteem.</p></div>
+            <div><span>Sterk voor Studio</span><p>De wissel verbeeldt publiceren, verbeteren en opnieuw uitgeven.</p></div>
+            <div><span>Kracht</span><p>Vertelt het sterkste toekomstverhaal: maker en gebruiker bouwen samen waarde op.</p></div>
+            <div><span>Aandachtspunt</span><p>De goudkleurige wissel is op zeer klein formaat niet altijd zichtbaar en mag nooit cruciaal zijn voor herkenning.</p></div>
+          </div>
+          <div class="size-test"><span>Klein-formaatproef</span>
+            <div class="sample"><svg width="56" height="56" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M91 174C112 112 175 86 229 107C279 127 292 171 268 211C242 254 175 264 139 306C118 330 107 357 107 394H247" fill="none" stroke="#faf6ed" stroke-width="54" stroke-linecap="round"/><path d="M271 394V118H341C387 118 410 143 410 181C410 221 383 244 340 244H271M340 244L413 394" fill="none" stroke="#d96552" stroke-width="54" stroke-linecap="round"/><path d="M194 270C237 250 282 245 340 244" stroke="#d8a85f" stroke-width="22" stroke-linecap="round"/></svg>56</div>
+            <div class="sample"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M91 174C112 112 175 86 229 107C279 127 292 171 268 211C242 254 175 264 139 306C118 330 107 357 107 394H247" fill="none" stroke="#faf6ed" stroke-width="68" stroke-linecap="round"/><path d="M271 394V118H341C387 118 410 143 410 181C410 221 383 244 340 244H271M340 244L413 394" fill="none" stroke="#d96552" stroke-width="68" stroke-linecap="round"/></svg>32</div>
+            <div class="sample"><svg width="20" height="20" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M100 174C125 105 225 96 259 151C299 217 189 261 143 306C118 330 107 357 107 394H247" fill="none" stroke="#faf6ed" stroke-width="80" stroke-linecap="round"/><path d="M279 394V118H341C387 118 410 143 410 181C410 221 383 244 340 244H279M340 244L407 394" fill="none" stroke="#d96552" stroke-width="80" stroke-linecap="round"/></svg>20</div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="visual">
+          <div class="variant-no"><span>Richting 05</span><span class="badge">Europees signatuur</span></div>
+          <svg class="hero-mark" viewBox="0 0 512 512" role="img" aria-label="De Europese Signatuur">
+            <rect width="512" height="512" rx="112" fill="#0b2525"/>
+            <path d="M89 163C114 101 177 84 229 105C278 125 294 166 269 208C245 248 187 260 150 291C121 316 107 346 107 386H246" fill="none" stroke="#faf6ed" stroke-width="54" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M274 390V115H344C390 115 414 140 414 180C414 219 386 244 343 244H274M342 244L414 390" fill="none" stroke="#faf6ed" stroke-width="54" stroke-linecap="square" stroke-linejoin="round"/>
+            <path d="M88 420H424" stroke="#d96552" stroke-width="22"/>
+            <path d="M214 420H299" stroke="#d8a85f" stroke-width="22"/>
+          </svg>
+          <div class="lockups">
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M89 163C114 101 177 84 229 105C278 125 294 166 269 208C245 248 187 260 150 291C121 316 107 346 107 386H246" fill="none" stroke="#faf6ed" stroke-width="54" stroke-linecap="square"/><path d="M274 390V115H344C390 115 414 140 414 180C414 219 386 244 343 244H274M342 244L414 390" fill="none" stroke="#faf6ed" stroke-width="54" stroke-linecap="square"/><path d="M88 420H424" stroke="#d96552" stroke-width="22"/><path d="M214 420H299" stroke="#d8a85f" stroke-width="22"/></svg><div><span class="brand-2r">2R</span><span class="product">TRAVELLER</span></div></div>
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M89 163C114 101 177 84 229 105C278 125 294 166 269 208C245 248 187 260 150 291C121 316 107 346 107 386H246" fill="none" stroke="#faf6ed" stroke-width="54" stroke-linecap="square"/><path d="M274 390V115H344C390 115 414 140 414 180C414 219 386 244 343 244H274M342 244L414 390" fill="none" stroke="#faf6ed" stroke-width="54" stroke-linecap="square"/><path d="M88 420H424" stroke="#d96552" stroke-width="22"/><path d="M214 420H299" stroke="#d8a85f" stroke-width="22"/></svg><div><span class="brand-2r">2R</span><span class="product">STUDIO</span></div></div>
+          </div>
+        </div>
+        <div class="content">
+          <p class="kicker">De Europese Signatuur</p>
+          <h3>Een cultureel kwaliteitsmerk, geen toeristische appbadge.</h3>
+          <p class="thesis">Rustige lettervormen staan als een uitgeverssignatuur boven één doorgaande lijn.</p>
+          <div class="story">
+            <p>De koraallijn is Europa onderweg: van noord naar zuid, van oost naar west. Het gouden deel markeert niet één bestemming, maar het korte moment waarop een plaats betekenis krijgt.</p>
+            <p>Door kleur uit de letters te halen wordt het teken ingetogener en volwassener. Het kan naast musea, gemeenten, erfgoedinstellingen en Europese partners staan zonder zijn menselijke warmte kwijt te raken.</p>
+          </div>
+          <div class="fit">
+            <div><span>Sterk voor Traveller</span><p>Voelt als een betrouwbaar reislabel dat niet om aandacht schreeuwt.</p></div>
+            <div><span>Sterk voor Studio</span><p>Past uitstekend bij professionele uitgevers, steden en culturele organisaties.</p></div>
+            <div><span>Kracht</span><p>De meest tijdloze en institutioneel geloofwaardige richting.</p></div>
+            <div><span>Aandachtspunt</span><p>Minder eigenzinnig en minder warm; het merkverhaal zit vooral in de signatuurlijn.</p></div>
+          </div>
+          <div class="size-test"><span>Klein-formaatproef</span>
+            <div class="sample"><svg width="56" height="56" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M89 163C114 101 177 84 229 105C278 125 294 166 269 208C245 248 187 260 150 291C121 316 107 346 107 386H246" fill="none" stroke="#faf6ed" stroke-width="60"/><path d="M274 390V115H344C390 115 414 140 414 180C414 219 386 244 343 244H274M342 244L414 390" fill="none" stroke="#faf6ed" stroke-width="60"/><path d="M88 420H424" stroke="#d96552" stroke-width="25"/></svg>56</div>
+            <div class="sample"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M89 163C114 101 177 84 229 105C278 125 294 166 269 208C245 248 187 260 150 291C121 316 107 346 107 386H246" fill="none" stroke="#faf6ed" stroke-width="72"/><path d="M274 390V115H344C390 115 414 140 414 180C414 219 386 244 343 244H274M342 244L414 390" fill="none" stroke="#faf6ed" stroke-width="72"/><path d="M88 420H424" stroke="#d96552" stroke-width="34"/></svg>32</div>
+            <div class="sample"><svg width="20" height="20" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M101 163C131 98 229 99 260 151C300 218 193 258 150 299C121 326 111 350 111 386H246" fill="none" stroke="#faf6ed" stroke-width="84"/><path d="M282 390V115H344C390 115 414 140 414 180C414 219 386 244 343 244H282M342 244L407 390" fill="none" stroke="#faf6ed" stroke-width="84"/><path d="M88 426H424" stroke="#d96552" stroke-width="42"/></svg>20</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="verdict">
+      <p class="kicker">Eerste lezing van Codex</p>
+      <h2>Mijn shortlist is niet hetzelfde als een eindbesluit.</h2>
+      <div class="ranking">
+        <div><span>Beste merksprong</span><strong>03 · Het Levende Reisboek</strong><p>Maakt in één beeld duidelijk dat 2R zowel reiservaring als publicatieplatform is.</p></div>
+        <div><span>Beste veilige keuze</span><strong>01 · De Tweede Lijn</strong><p>Warm, herkenbaar en direct bruikbaar; de logische professionele evolutie van wat er al ligt.</p></div>
+        <div><span>Beste zakelijke groei</span><strong>05 · Europese Signatuur</strong><p>Sterk voor verkoop van Studio aan instellingen, maar vraagt extra warmte in fotografie en taal.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer>Conceptverkenning · nog geen productieassets · eerst kiezen, daarna optisch finaliseren en technisch testen</footer>
+</body>
+</html>
