@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2R — hybride boekproef</title>
+  <style>
+    :root{--ink:#17242b;--deep:#0b2525;--petrol:#173b3a;--paper:#f2ebdd;--light:#faf6ed;--ember:#d96552;--gold:#d8a85f;--cognac:#a96642}
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--ink);background:linear-gradient(180deg,#faf6ed 0%,#f2ebdd 100%);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}
+    header{padding:52px clamp(22px,6vw,92px) 78px;color:var(--light);background:var(--deep)}
+    .back{display:inline-block;margin-bottom:70px;color:var(--gold);font-size:12px;font-weight:700;letter-spacing:.12em;text-decoration:none;text-transform:uppercase}
+    .back:hover{text-decoration:underline}
+    .label{margin:0 0 16px;color:var(--gold);font-size:12px;font-weight:750;letter-spacing:.17em;text-transform:uppercase}
+    h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:500}
+    h1{max-width:980px;margin:0;font-size:clamp(54px,8vw,110px);letter-spacing:-.055em;line-height:.92}
+    header>p{max-width:830px;margin:36px 0 0;color:rgba(250,246,237,.72);font-size:clamp(18px,2vw,24px)}
+    .rule{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;max-width:1200px;margin:52px 0 0;background:rgba(250,246,237,.14)}
+    .rule div{padding:22px;background:rgba(250,246,237,.035)}
+    .rule strong{display:block;margin-bottom:6px;color:var(--light)}
+    .rule span{color:rgba(250,246,237,.56);font-size:13px}
+    main{max-width:1420px;margin:auto;padding:90px clamp(14px,4vw,58px) 130px}
+    .intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1160px;margin:0 auto 58px}
+    .intro h2{margin:0;font-size:clamp(40px,5vw,68px);letter-spacing:-.035em;line-height:1}
+    .intro p{margin:4px 0 0;color:rgba(23,36,43,.68);font-size:18px}
+    .cards{display:grid;gap:38px}
+    article{display:grid;grid-template-columns:minmax(400px,.9fr) minmax(440px,1.1fr);border:1px solid rgba(23,36,43,.15);background:rgba(250,246,237,.82);box-shadow:0 24px 75px rgba(11,37,37,.12);overflow:hidden}
+    .visual{display:flex;flex-direction:column;justify-content:space-between;gap:36px;min-height:720px;padding:48px;color:var(--light);background:var(--deep)}
+    article:nth-child(2) .visual{background:var(--petrol)}
+    .number{display:flex;justify-content:space-between;color:rgba(250,246,237,.5);font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+    .number b{color:var(--gold);font-weight:700}
+    .mark{width:min(100%,390px);align-self:center;filter:drop-shadow(0 20px 40px rgba(0,0,0,.18))}
+    .lockups{display:grid;gap:10px}
+    .lockup{display:flex;align-items:center;gap:13px;padding:9px;border:1px solid rgba(250,246,237,.14);background:rgba(250,246,237,.04)}
+    .lockup svg{width:47px;height:47px}
+    .lockup strong{font-family:Newsreader,Georgia,serif;font-size:23px;font-weight:500}
+    .lockup span{margin-left:6px;color:rgba(250,246,237,.65);font-size:13px;font-weight:700;letter-spacing:.05em}
+    .copy{padding:clamp(35px,6vw,76px)}
+    .copy h2{margin:0;font-size:clamp(42px,5vw,66px);letter-spacing:-.04em;line-height:.96}
+    .lead{margin:25px 0 30px;color:var(--petrol);font-family:Newsreader,Georgia,serif;font-size:26px;line-height:1.28}
+    .copy>p:not(.label):not(.lead){color:rgba(23,36,43,.73);font-size:17px}
+    .pros{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:30px}
+    .pros div{padding-top:17px;border-top:1px solid rgba(23,36,43,.15)}
+    .pros b{display:block;margin-bottom:6px;color:var(--cognac);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+    .pros span{color:rgba(23,36,43,.68);font-size:14px}
+    .sizes{display:flex;align-items:flex-end;gap:18px;margin-top:32px;padding-top:22px;border-top:1px solid rgba(23,36,43,.15)}
+    .sizes>span{margin-right:auto;color:rgba(23,36,43,.45);font-size:10px;font-weight:750;letter-spacing:.1em;text-transform:uppercase}
+    .sample{text-align:center;color:rgba(23,36,43,.4);font-size:9px}
+    .sample svg{display:block;margin:0 auto 4px}
+    .conclusion{margin-top:65px;padding:clamp(38px,6vw,74px);color:var(--light);background:var(--deep)}
+    .conclusion h2{max-width:900px;margin:0;font-size:clamp(42px,5vw,68px);letter-spacing:-.04em;line-height:1}
+    .conclusion>p{max-width:850px;color:rgba(250,246,237,.7);font-size:18px}
+    .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:38px;background:rgba(250,246,237,.14)}
+    .tiers div{padding:24px;background:rgba(250,246,237,.04)}
+    .tiers b{display:block;color:var(--gold);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+    .tiers strong{display:block;margin:7px 0;font-family:Newsreader,Georgia,serif;font-size:23px;font-weight:500}
+    .tiers span{color:rgba(250,246,237,.6);font-size:13px}
+    footer{padding:0 20px 60px;text-align:center;color:rgba(23,36,43,.45);font-size:12px}
+    @media(max-width:900px){.rule,.intro,article,.tiers{grid-template-columns:1fr}.visual{min-height:650px}}
+    @media(max-width:560px){header{padding:30px 20px 52px}.back{margin-bottom:50px}main{padding:60px 10px 90px}.visual,.copy{padding:28px 22px}.visual{min-height:580px}.pros{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="./">← Terug naar de vijf richtingen</a>
+    <p class="label">Verdieping · combinatie van richting 01 en 03</p>
+    <h1>Kan het warme 2R-teken ook een open boek worden?</h1>
+    <p>Ja — zolang het boek niet als extra illustratie wordt toegevoegd, maar uit dezelfde lijnen en tussenruimtes ontstaat. Hieronder drie manieren waarop het verhaal voelbaar blijft zonder het app-icoon dicht te tekenen.</p>
+    <div class="rule">
+      <div><strong>De 2 blijft de reis</strong><span>Menselijk, vloeiend en onderweg.</span></div>
+      <div><strong>De R blijft de tweede laag</strong><span>Redactie, route en publicatie.</span></div>
+      <div><strong>Het boek ontstaat ertussen</strong><span>Geen derde pictogram, maar betekenis in de vorm.</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Drie boekoplossingen, één vertrouwd gezicht.</h2>
+      <p>Alle drie behouden de letterconstructie en warmte van optie 01. Het verschil is waar het boek leeft: als fluisterlijn, als negatieve ruimte of als gedeelde rug.</p>
+    </section>
+
+    <section class="cards">
+      <article>
+        <div class="visual">
+          <div class="number"><span>01A</span><b>De fluisterende pagina</b></div>
+          <svg class="mark" viewBox="0 0 512 512" aria-label="2R met subtiele open boeklijn">
+            <rect width="512" height="512" rx="112" fill="#0b2525"/>
+            <rect x="17" y="17" width="478" height="478" rx="96" fill="none" stroke="#faf6ed" stroke-opacity=".10" stroke-width="2"/>
+            <path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 383H239" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M270 383V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 383" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M105 414C155 388 207 390 256 420C305 390 357 388 407 414" fill="none" stroke="#d8a85f" stroke-width="13" stroke-linecap="round"/>
+            <circle cx="104" cy="166" r="12" fill="#d8a85f"/>
+          </svg>
+          <div class="lockups">
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#173b3a"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 383H239" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round"/><path d="M270 383V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 383" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round"/><path d="M105 414C155 388 207 390 256 420C305 390 357 388 407 414" fill="none" stroke="#d8a85f" stroke-width="13" stroke-linecap="round"/></svg><div><strong>2R</strong><span>TRAVELLER</span></div></div>
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#173b3a"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 383H239" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round"/><path d="M270 383V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 383" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round"/><path d="M105 414C155 388 207 390 256 420C305 390 357 388 407 414" fill="none" stroke="#d8a85f" stroke-width="13" stroke-linecap="round"/></svg><div><strong>2R</strong><span>STUDIO</span></div></div>
+          </div>
+        </div>
+        <div class="copy">
+          <p class="label">Minimale ingreep</p>
+          <h2>Het boek wordt zacht onder de letters geopend.</h2>
+          <p class="lead">Alles wat warm en herkenbaar is aan optie 01 blijft intact.</p>
+          <p>Een enkele gouden lijn vormt twee pagina’s en een middenvouw. Zij ondersteunt het monogram, zoals een boek een verhaal draagt, maar probeert zelf niet het hoofdpersonage te worden.</p>
+          <div class="pros">
+            <div><b>Voordeel</b><span>De veiligste evolutie; op website en groot app-icoon direct begrijpelijk.</span></div>
+            <div><b>Risico</b><span>Op 20–24 px verdwijnt de lijn. Dat is acceptabel als zij daar bewust wordt weggelaten.</span></div>
+          </div>
+          <div class="sizes"><span>Responsieve proef</span>
+            <div class="sample"><svg width="64" height="64" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 383H239" fill="none" stroke="#faf6ed" stroke-width="56" stroke-linecap="round"/><path d="M270 383V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L412 383" fill="none" stroke="#d96552" stroke-width="56" stroke-linecap="round"/><path d="M105 414C155 388 207 390 256 420C305 390 357 388 407 414" fill="none" stroke="#d8a85f" stroke-width="16" stroke-linecap="round"/></svg>64 · boek</div>
+            <div class="sample"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 338 106 393H242" fill="none" stroke="#faf6ed" stroke-width="70" stroke-linecap="round"/><path d="M278 394V116H340C386 116 408 141 408 180C408 220 381 243 338 243H278M338 243L408 394" fill="none" stroke="#d96552" stroke-width="70" stroke-linecap="round"/></svg>32 · kern</div>
+            <div class="sample"><svg width="20" height="20" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M108 166C135 105 226 96 257 145C300 213 190 249 145 298C117 328 111 354 111 392H242" fill="none" stroke="#faf6ed" stroke-width="84" stroke-linecap="round"/><path d="M282 397V114H344C390 114 414 141 414 180C414 222 384 246 340 246H282M340 246L408 397" fill="none" stroke="#d96552" stroke-width="84" stroke-linecap="round"/></svg>20 · micro</div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="visual">
+          <div class="number"><span>01B</span><b>Het boek tussen de regels</b></div>
+          <svg class="mark" viewBox="0 0 512 512" aria-label="2R met boek in de negatieve ruimte">
+            <rect width="512" height="512" rx="112" fill="#0b2525"/>
+            <path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 334 106 372C158 350 207 357 256 393" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M270 393V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L408 371C356 349 307 357 256 393" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M256 346V411" stroke="#d8a85f" stroke-width="12" stroke-linecap="round"/>
+            <circle cx="104" cy="166" r="12" fill="#d8a85f"/>
+          </svg>
+          <div class="lockups">
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#173b3a"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 334 106 372C158 350 207 357 256 393" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round"/><path d="M270 393V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L408 371C356 349 307 357 256 393" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round"/><path d="M256 346V411" stroke="#d8a85f" stroke-width="12" stroke-linecap="round"/></svg><div><strong>2R</strong><span>TRAVELLER</span></div></div>
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#173b3a"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 334 106 372C158 350 207 357 256 393" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round"/><path d="M270 393V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L408 371C356 349 307 357 256 393" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round"/><path d="M256 346V411" stroke="#d8a85f" stroke-width="12" stroke-linecap="round"/></svg><div><strong>2R</strong><span>STUDIO</span></div></div>
+          </div>
+        </div>
+        <div class="copy">
+          <p class="label">Meest geïntegreerd</p>
+          <h2>De letters zélf worden de twee pagina’s.</h2>
+          <p class="lead">Geen boek onder het logo: het boek ontstaat in de witte ruimte tussen 2 en R.</p>
+          <p>De onderste beweging van de 2 wordt de linkerpagina. Het been van de R buigt terug als rechterpagina. De gouden middenvouw maakt het alleen nog net zichtbaar — daarna ontdekt de kijker het zelf.</p>
+          <div class="pros">
+            <div><b>Voordeel</b><span>Het rijkste verhaal zonder een derde pictogram toe te voegen.</span></div>
+            <div><b>Risico</b><span>De R wijkt iets verder af van haar klassieke lettervorm en vraagt optische verfijning.</span></div>
+          </div>
+          <div class="sizes"><span>Responsieve proef</span>
+            <div class="sample"><svg width="64" height="64" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 334 106 372C158 350 207 357 256 393" fill="none" stroke="#faf6ed" stroke-width="56" stroke-linecap="round"/><path d="M270 393V116H340C386 116 408 141 408 180C408 220 381 243 338 243H270M334 243L408 371C356 349 307 357 256 393" fill="none" stroke="#d96552" stroke-width="56" stroke-linecap="round"/><path d="M256 346V411" stroke="#d8a85f" stroke-width="14" stroke-linecap="round"/></svg>64 · boek</div>
+            <div class="sample"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M104 166C126 110 180 88 230 106C276 122 292 164 271 201C251 236 203 252 168 274C127 300 106 334 106 372C158 350 207 357 256 393" fill="none" stroke="#faf6ed" stroke-width="68" stroke-linecap="round"/><path d="M278 393V116H340C386 116 408 141 408 180C408 220 381 243 338 243H278M338 243L408 371C356 349 307 357 256 393" fill="none" stroke="#d96552" stroke-width="68" stroke-linecap="round"/></svg>32 · vorm</div>
+            <div class="sample"><svg width="20" height="20" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M108 166C135 105 226 96 257 145C300 213 190 249 145 298C117 328 111 352 111 375C160 355 209 363 256 395" fill="none" stroke="#faf6ed" stroke-width="82" stroke-linecap="round"/><path d="M285 395V114H344C390 114 414 141 414 180C414 222 384 246 340 246H285M340 246L408 375C358 355 308 363 256 395" fill="none" stroke="#d96552" stroke-width="82" stroke-linecap="round"/></svg>20 · silhouet</div>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="visual">
+          <div class="number"><span>01C</span><b>De gedeelde boekrug</b></div>
+          <svg class="mark" viewBox="0 0 512 512" aria-label="2R met de R-stam als boekrug">
+            <rect width="512" height="512" rx="112" fill="#0b2525"/>
+            <path d="M100 165C124 108 182 90 229 108C273 125 287 165 266 202C245 238 198 254 163 278C128 302 108 334 108 374C157 350 205 359 256 393" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M256 393V117" stroke="#d8a85f" stroke-width="22" stroke-linecap="round"/>
+            <path d="M278 117H342C387 117 410 142 410 181C410 221 383 244 340 244H278M340 244L409 373C356 350 307 359 256 393" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="100" cy="165" r="12" fill="#d8a85f"/>
+          </svg>
+          <div class="lockups">
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#173b3a"/><path d="M100 165C124 108 182 90 229 108C273 125 287 165 266 202C245 238 198 254 163 278C128 302 108 334 108 374C157 350 205 359 256 393" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round"/><path d="M256 393V117" stroke="#d8a85f" stroke-width="22" stroke-linecap="round"/><path d="M278 117H342C387 117 410 142 410 181C410 221 383 244 340 244H278M340 244L409 373C356 350 307 359 256 393" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round"/></svg><div><strong>2R</strong><span>TRAVELLER</span></div></div>
+            <div class="lockup"><svg viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#173b3a"/><path d="M100 165C124 108 182 90 229 108C273 125 287 165 266 202C245 238 198 254 163 278C128 302 108 334 108 374C157 350 205 359 256 393" fill="none" stroke="#faf6ed" stroke-width="52" stroke-linecap="round"/><path d="M256 393V117" stroke="#d8a85f" stroke-width="22" stroke-linecap="round"/><path d="M278 117H342C387 117 410 142 410 181C410 221 383 244 340 244H278M340 244L409 373C356 350 307 359 256 393" fill="none" stroke="#d96552" stroke-width="52" stroke-linecap="round"/></svg><div><strong>2R</strong><span>STUDIO</span></div></div>
+          </div>
+        </div>
+        <div class="copy">
+          <p class="label">Sterkste systeemmetafoor</p>
+          <h2>Studio is de rug. Traveller opent de pagina’s.</h2>
+          <p class="lead">De gouden stam houdt routes, bronnen en verhalen bijeen.</p>
+          <p>De centrale boekrug is tegelijk de technische en redactionele ruggengraat van 2R. Links beweegt de reiziger; rechts wordt de tweede route vormgegeven. Samen openen zij één verhaalwereld.</p>
+          <div class="pros">
+            <div><b>Voordeel</b><span>Traveller en Studio krijgen allebei een duidelijke rol binnen één teken.</span></div>
+            <div><b>Risico</b><span>Drie sterke kleuren ontmoeten elkaar centraal; de microversie moet terug naar twee kleuren.</span></div>
+          </div>
+          <div class="sizes"><span>Responsieve proef</span>
+            <div class="sample"><svg width="64" height="64" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M100 165C124 108 182 90 229 108C273 125 287 165 266 202C245 238 198 254 163 278C128 302 108 334 108 374C157 350 205 359 256 393" fill="none" stroke="#faf6ed" stroke-width="56" stroke-linecap="round"/><path d="M256 393V117" stroke="#d8a85f" stroke-width="24" stroke-linecap="round"/><path d="M278 117H342C387 117 410 142 410 181C410 221 383 244 340 244H278M340 244L409 373C356 350 307 359 256 393" fill="none" stroke="#d96552" stroke-width="56" stroke-linecap="round"/></svg>64 · rug</div>
+            <div class="sample"><svg width="32" height="32" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M100 165C124 108 182 90 229 108C273 125 287 165 266 202C245 238 198 254 163 278C128 302 108 334 108 374C157 350 205 359 256 393" fill="none" stroke="#faf6ed" stroke-width="68" stroke-linecap="round"/><path d="M281 117H342C387 117 410 142 410 181C410 221 383 244 340 244H281M340 244L409 373C356 350 307 359 256 393" fill="none" stroke="#d96552" stroke-width="68" stroke-linecap="round"/></svg>32 · twee lijnen</div>
+            <div class="sample"><svg width="20" height="20" viewBox="0 0 512 512"><rect width="512" height="512" rx="112" fill="#0b2525"/><path d="M108 166C135 105 226 96 257 145C300 213 190 249 145 298C117 328 111 352 111 375C160 355 209 363 256 395" fill="none" stroke="#faf6ed" stroke-width="82" stroke-linecap="round"/><path d="M288 117H344C390 117 414 141 414 180C414 222 384 246 340 246H288M340 246L408 375C358 355 308 363 256 395" fill="none" stroke="#d96552" stroke-width="82" stroke-linecap="round"/></svg>20 · silhouet</div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="conclusion">
+      <p class="label">Mijn voorkeur na deze proef</p>
+      <h2>01B heeft de meeste kans om echt van 2R te worden.</h2>
+      <p>De boekvorm is geen onderschrift en geen decoratie: zij ontstaat uit de twee letters zelf. Daardoor vertelt het beeldmerk zowel het onderweg-zijn als het maken en openen van verhalen. 01A is de veiligste terugval; 01C vertelt Studio het duidelijkst, maar is visueel drukker.</p>
+      <div class="tiers">
+        <div><b>48 px en groter</b><strong>Volledige verhaalvorm</strong><span>2, R, twee pagina’s, middenvouw en beginpunt zijn zichtbaar.</span></div>
+        <div><b>24–47 px</b><strong>Vereenvoudigde kern</strong><span>Geen fijne details; het boek blijft als open silhouet aanwezig.</span></div>
+        <div><b>16–23 px</b><strong>Microteken</strong><span>Alleen de krachtige 2R-silhouet. Het hoeft daar niet alle betekenissen letterlijk te vertellen.</span></div>
+      </div>
+    </section>
+  </main>
+  <footer>Conceptstudie · nog geen productie-logo · na keuze volgt optische correctie, monochroomproef en iOS-maskertest</footer>
+</body>
+</html>
