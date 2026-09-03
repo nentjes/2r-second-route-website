@@ -153,9 +153,24 @@
    "slug": "ridderoordse-bos",
    "naam": "Ridderoordse Bos",
    "provincie": "Utrecht",
-   "lengte_km": 4.56,
+   "lengte_km": 4.7,
    "duur": "±1 uur 15 minuten (padennet-reconstructie, nog niet veldgemeten)",
-   "begaanbaarheid": null,
+   "begaanbaarheid": {
+    "gemeten_op": "2026-09-03",
+    "methode": "2r-begaanbaarheid-v2",
+    "bron_snapshot": "2026-09-02-160734",
+    "lengte_km": 4.7,
+    "klim_m": 11,
+    "verharding": "verhard",
+    "verhard_deel": 0.66,
+    "onbekend_deel": 0.19,
+    "route_dekking": 0.81,
+    "bankjes": 1,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "4,7 km is lang voor wie kort loopt"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 8,
    "manifest": "https://2route.nl/routes-data/ridderoordse-bos-manifest.json",
