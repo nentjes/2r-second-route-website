@@ -7,21 +7,27 @@
    "lengte_km": 5.9,
    "duur": "±1,5 uur",
    "begaanbaarheid": {
-    "gemeten_op": "2026-08-31",
+    "gemeten_op": "2026-09-02",
+    "methode": "2r-begaanbaarheid-v2",
+    "bron_snapshot": "2026-09-02-160734",
     "lengte_km": 5.9,
     "klim_m": 56,
     "verharding": "half verhard",
-    "verhard_deel": 0.67,
+    "verhard_deel": 0.07,
+    "onbekend_deel": 0.75,
+    "route_dekking": 0.25,
     "bankjes": 3,
     "met_stok_haalbaar": false,
     "kanttekeningen": [
      "5,9 km is lang voor wie kort loopt",
      "56 m klimmen"
-    ]
+    ],
+    "deels_van": "2026-09-01"
    },
    "soort": "routeboek",
    "hoofdstukken": 11,
-   "manifest": "https://2route.nl/routes-data/berkheide-manifest.json"
+   "manifest": "https://2route.nl/routes-data/berkheide-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "bourtange",
@@ -44,7 +50,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 12,
-   "manifest": "https://2route.nl/routes-data/bourtange-manifest.json"
+   "manifest": "https://2route.nl/routes-data/bourtange-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "dokkum",
@@ -66,7 +73,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 12,
-   "manifest": "https://2route.nl/routes-data/dokkum-manifest.json"
+   "manifest": "https://2route.nl/routes-data/dokkum-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "drakensteyn",
@@ -90,7 +98,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 12,
-   "manifest": "https://2route.nl/routes-data/drakensteyn-manifest.json"
+   "manifest": "https://2route.nl/routes-data/drakensteyn-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "hackfort",
@@ -112,7 +121,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 11,
-   "manifest": "https://2route.nl/routes-data/hackfort-manifest.json"
+   "manifest": "https://2route.nl/routes-data/hackfort-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "julianalaan",
@@ -121,18 +131,35 @@
    "lengte_km": 3.0,
    "duur": "±1 uur",
    "begaanbaarheid": {
-    "gemeten_op": "2026-08-31",
+    "gemeten_op": "2026-09-03",
+    "methode": "2r-begaanbaarheid-v2",
+    "bron_snapshot": "2026-09-02-160734",
     "lengte_km": 3.0,
     "klim_m": 15,
     "verharding": "verhard",
-    "verhard_deel": 0.81,
+    "verhard_deel": 0.61,
+    "onbekend_deel": 0.25,
+    "route_dekking": 0.75,
     "bankjes": 1,
     "met_stok_haalbaar": true,
     "kanttekeningen": []
    },
    "soort": "buurtroute",
    "hoofdstukken": 5,
-   "manifest": "https://2route.nl/routes-data/julianalaan-manifest.json"
+   "manifest": "https://2route.nl/routes-data/julianalaan-manifest.json",
+   "toegang": "open"
+  },
+  {
+   "slug": "ridderoordse-bos",
+   "naam": "Ridderoordse Bos",
+   "provincie": "Utrecht",
+   "lengte_km": 4.56,
+   "duur": "±1 uur 15 minuten (padennet-reconstructie, nog niet veldgemeten)",
+   "begaanbaarheid": null,
+   "soort": "routeboek",
+   "hoofdstukken": 8,
+   "manifest": "https://2route.nl/routes-data/ridderoordse-bos-manifest.json",
+   "toegang": "code"
   },
   {
    "slug": "schokland",
@@ -154,7 +181,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 12,
-   "manifest": "https://2route.nl/routes-data/schokland-manifest.json"
+   "manifest": "https://2route.nl/routes-data/schokland-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "sint-pietersberg",
@@ -177,7 +205,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 10,
-   "manifest": "https://2route.nl/routes-data/sint-pietersberg-manifest.json"
+   "manifest": "https://2route.nl/routes-data/sint-pietersberg-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "spaarndam",
@@ -200,7 +229,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 11,
-   "manifest": "https://2route.nl/routes-data/spaarndam-manifest.json"
+   "manifest": "https://2route.nl/routes-data/spaarndam-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "twickel",
@@ -222,7 +252,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 11,
-   "manifest": "https://2route.nl/routes-data/twickel-manifest.json"
+   "manifest": "https://2route.nl/routes-data/twickel-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "veenhuizen",
@@ -244,7 +275,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 12,
-   "manifest": "https://2route.nl/routes-data/veenhuizen-manifest.json"
+   "manifest": "https://2route.nl/routes-data/veenhuizen-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "westkapelle",
@@ -267,7 +299,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 11,
-   "manifest": "https://2route.nl/routes-data/westkapelle-manifest.json"
+   "manifest": "https://2route.nl/routes-data/westkapelle-manifest.json",
+   "toegang": "open"
   },
   {
    "slug": "zwarte-berg",
@@ -291,7 +324,8 @@
    },
    "soort": "routeboek",
    "hoofdstukken": 10,
-   "manifest": "https://2route.nl/routes-data/zwarte-berg-manifest.json"
+   "manifest": "https://2route.nl/routes-data/zwarte-berg-manifest.json",
+   "toegang": "open"
   }
  ]
 }

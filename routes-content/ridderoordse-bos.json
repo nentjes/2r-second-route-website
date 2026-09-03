@@ -1,0 +1,355 @@
+{
+ "slug": "ridderoordse-bos",
+ "provincie": "Utrecht",
+ "naam": "Ridderoordse Bos",
+ "soort": "routeboek",
+ "lengte_km": 4.56,
+ "duur": "±1 uur 15 minuten (padennet-reconstructie, nog niet veldgemeten)",
+ "hoofdstukken_n": 8,
+ "toegang": "code",
+ "beheerder": "Stichting Het Utrechts Landschap",
+ "gpx_url": "",
+ "bron_url": "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf",
+ "startpunt": "Parkeerplaats aan de Gezichtslaan, Bilthoven (kruising Gezichtslaan en N234)",
+ "kaart_js": "/routes-data/ridderoordse-bos-kaart.js",
+ "lijnen": [
+  [
+   [
+    52.146895,
+    5.205871
+   ],
+   [
+    52.147008,
+    5.205792
+   ],
+   [
+    52.146751,
+    5.204999
+   ],
+   [
+    52.145848,
+    5.205279
+   ],
+   [
+    52.145378,
+    5.203347
+   ],
+   [
+    52.144279,
+    5.200105
+   ],
+   [
+    52.143329,
+    5.197544
+   ],
+   [
+    52.142939,
+    5.196729
+   ],
+   [
+    52.140739,
+    5.193982
+   ],
+   [
+    52.140068,
+    5.192765
+   ],
+   [
+    52.139472,
+    5.190817
+   ],
+   [
+    52.139239,
+    5.188863
+   ],
+   [
+    52.139093,
+    5.188381
+   ],
+   [
+    52.139121,
+    5.188005
+   ],
+   [
+    52.13278,
+    5.184192
+   ],
+   [
+    52.139121,
+    5.188005
+   ],
+   [
+    52.139093,
+    5.188381
+   ],
+   [
+    52.139239,
+    5.188863
+   ],
+   [
+    52.139472,
+    5.190817
+   ],
+   [
+    52.140068,
+    5.192765
+   ],
+   [
+    52.140739,
+    5.193982
+   ],
+   [
+    52.142939,
+    5.196729
+   ],
+   [
+    52.143329,
+    5.197544
+   ],
+   [
+    52.144279,
+    5.200105
+   ],
+   [
+    52.145378,
+    5.203347
+   ],
+   [
+    52.145848,
+    5.205279
+   ],
+   [
+    52.146751,
+    5.204999
+   ],
+   [
+    52.147008,
+    5.205792
+   ],
+   [
+    52.146895,
+    5.205871
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "Parkeerplaats Gezichtslaan — het bos dat er bijna niet was",
+   "focus": "geschiedenis",
+   "km": 0.0,
+   "lat": 52.1469,
+   "lng": 5.20595,
+   "paras": [
+    "Welkom hier in Bilthoven, aan de flank van de Utrechtse Heuvelrug. Dit hele gebied draagt de sporen van een eeuwenlange strijd tussen menselijke ambities en de natuur. Waar je vandaag statige lanen en dichte bomenrijen ziet, werd het landschap door de eeuwen heen steeds weer opnieuw vormgegeven — eerst door grootgrondbezitters en zandwinning, later door fanatieke natuurbeschermers.",
+    "Kijk, je staat hier nu echt vlakbij de parkeerplaats aan de Gezichtslaan, het startpunt van een wandeling van ruim vier en een halve kilometer door het Ridderoordse Bos. Een gebied van tweehonderddertien hectare. Maar moet je horen: dit bos had er vandaag bijna helemaal niet meer geweest.",
+    "Rond negentienhonderdzesentwintig stonden deze toenmalige Eijckensteinse Bossen op het punt te verdwijnen. Precies langs de Gezichtslaan waren de bouwpercelen voor een villapark al kadastraal vastgelegd. Gelukkig sloegen jonkheer W.H. de Beaufort en het Provinciaal Utrechts Comité voor Natuurbehoud alarm bij de commissaris der koningin. Op achttien november negentienhonderdzesentwintig kwamen ze bijeen op het Provinciehuis. Met succes: op negen maart negentienhonderdzevenentwintig werd Stichting Het Utrechts Landschap opgericht, met steun van de Vereniging tot Behoud van Natuurmonumenten. Sinds negentienhonderddrieëndertig is dit bos van hen.",
+    "Toch ging een deel in negentienhonderdnegenentwintig alsnog naar de katholieke arbeidersbeweging Herwonnen Levenskracht voor het sanatorium Berg en Bosch, dat iets ten noorden van hier nog altijd staat. Zelfs het meertje bij deze parkeerplaats, de Rondwal, is mensenwerk; ontstaan door zandwinning voor de provinciale weg tussen Groenekan en Soestdijk. De organisatie die dit bos beheert, bestaat dus feitelijk dankzij een villapark dat er nooit kwam. En onderweg zal ik je laten zien hoe het verleden hier overal onder de bladeren verborgen ligt."
+   ],
+   "audio": "/audio/routes/ridderoordse-bos/01.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=5",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, tabel 1 (oppervlakte en aankoopjaar)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=15",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.15 (oprichtingsgeschiedenis, sanatorium Berg en Bosch, Polmans meertje)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/routes/wandelroute/ridderoordse-bos-lang",
+     "Utrechts Landschap — routepagina Ridderoordse Bos lang (startpunt, lengte, wit gemarkeerd)"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Het parkbos",
+   "focus": "natuur",
+   "km": 0.67,
+   "lat": 52.14384,
+   "lng": 5.19891,
+   "paras": [
+    "Als je hier om je heen kijkt, sta je op amper twintig meter van een bos dat een heel eigen geschiedenis vertelt. Want wat nu een rustig stuk natuur lijkt, is in feite een levend archief.",
+    "Op de kadastrale kaart van achttienhonderdtweeëndertig stonden delen van dit bos al netjes ingetekend als bosgrond. Dat waren toen al relatief oude bosgroeiplaatsen, met name begroeid met beuk en eik. En als je goed kijkt tussen de stammen door, zie je uit die vroegste generatie vandaag de dag nog altijd monumentale eiken en beuken staan.",
+    "Maar het bos dat je nu binnenstapt, veranderde daarna drastisch. Aan het begin van de twintigste eeuw raakte het Ridderoordse Bos grotendeels bebost: deels door gerichte aanplant, deels doordat de heide niet langer werd gebruikt en vanzelf dichtgroeide met jonge opslag. Na eerdere kaalkap kozen de beheerders niet zomaar voor een paar lokale soorten, maar voor een regelrechte wereldreis.",
+    "Ze plantten grove den, Douglas, fijnspar, Japanse lariks, reuzenzilverspar, Oostenrijkse en Corsicaanse den, sitkaspar, Servische spar, zomereik, beuk en Amerikaanse eik. Los van die oude eiken en beuken uit achttienhonderdtweeëndertig, vind je in dit latere, jongere parkbos nog altijd opvallende exoten die pas vanaf het einde van de negentiende eeuw hun plek kregen. Een dikke sitkaspar, een groep hoge reuzenlevensbomen, tulpenbomen, haagbeuken en kastanjes.",
+    "Zo loop je hier letterlijk door verschillende lagen van de tijd: van het oeroude Hollandse eiken- en beukenbos tot een exotische bomenverzameling die de wereld naar deze Utrechtse zandgronden haalde."
+   ],
+   "audio": "/audio/routes/ridderoordse-bos/02.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=22",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.22 (boomsoorten, parkbos, reuzenlevensbomen)"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Waar het landhuis stond",
+   "focus": "geschiedenis",
+   "km": 1.27,
+   "lat": 52.14007,
+   "lng": 5.19276,
+   "paras": [
+    "Als je hier nu om je heen kijkt, zie je vooral bomen en groen. Toch sta je op slechts vijfentwintig meter van een plek met een rijke geschiedenis, want precies hier bevond zich ooit het trotse landhuis Ridderoord.",
+    "De allereerste vermelding van een huis op deze plek duikt op in zeventienhonderdveertien. Maria Blancheteste verkocht het toen, samen met grond in Ridderdorp, aan ene Willem van Baerle. Zeventig jaar lang bleef het stevig in handen van die familie Van Baerle. Pas in zeventienhonderdvierentachtig kwam er verandering in: via een openbare verkoping werd het doorverkocht, en vanaf dat moment ging het officieel Ridderoord heten.",
+    "Maar de tijd stond niet stil. In achttienhonderdnegentien wisselde het huis opnieuw van eigenaar, en slechts drie jaar later werd het alweer afgebroken. De grond kwam terecht bij Maurits Jacob Eijck van Zuilichem, de eigenaar van het aangrenzende landgoed Eijckenstein. En door die aankoop viel het huidige Ridderoordse Bos voortaan helemaal binnen dat grote landgoed Eijckenstein.",
+    "Het stenen landhuis zelf is dus al twee eeuwen helemaal verdwenen. Maar loop je aan de westzijde van waar het huis ooit stond, dan herken je nog altijd het oude parkbos — een echt lustbosch — compleet met slingerende waterpartijtjes. Alleen hebben de deftige bewoners van weleer plaatsgemaakt voor heel andere edellieden. Bepaalde delen van dit parkbos worden tegenwoordig bewust volkomen met rust gelaten. Er liggen nu namelijk grote dassenburchten verscholen in de luwte. Waar ooit heren en dames over hun landgoed wandelden, hebben de dassen het rijk nu helemaal voor zichzelf."
+   ],
+   "audio": "/audio/routes/ridderoordse-bos/03.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=13",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.13 (geschiedenis huis Ridderoord)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=40",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.40-41 (parkbos, dassenburchten)"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "Eijckensteinse Laan — de golvende bosbodem",
+   "focus": "natuur",
+   "km": 1.97,
+   "lat": 52.13613,
+   "lng": 5.18622,
+   "paras": [
+    "Kijk eens naar de grond waar je nu loopt, hier vlakbij de Eijckensteinse Laan. Op het oude kadastrale minuutplan van achttienhonderdtweeëndertig fungeerde dit zandpad al als de deftige oprijlaan naar het grote landhuis Eijckenstein. Maar als je omlaagkijkt en je voeten het werk laat doen, merk je iets opmerkelijks aan het landschap. De bosbodem is niet vlak, maar golft ritmisch op en neer.",
+    "Dat is geen speling van de natuur, maar pure ontginningsgeschiedenis. Ten oosten van de laan zie je een prachtig galerijbos, dat voor tachtig procent uit beuken bestaat en voor twintig procent uit Amerikaanse eik. En die bomen staan op zogeheten rabatten: lage, kaarsrechte aardwallen met greppels ertussen. Vroeger was het hier namelijk kletsnat. Bosbouwers groeven greppels om het water af te voeren en gooiden de aarde op rillen ertussen. Op die drogere wallen kregen de wortels van de bomen eindelijk lucht en houvast. Die noeste handarbeid van eeuwen geleden voel je vandaag de dag nog steeds bij iedere stap die je zet.",
+    "Inmiddels is die oude houtakker een geliefd toevluchtsoord voor heel andere bewoners. Kijk maar eens omhoog langs de stammen: ze zijn bezaaid met spechtenholen. Een levend historisch bouwwerk, waar de mens ooit het water temde om bomen te laten groeien, en waar de natuur nu dankbaar gebruikmaakt van het resultaat. Terwijl je doorloopt over deze golvende bodem, wandel je letterlijk op de sporen van de vroege negentiende-eeuwse bosbouwers."
+   ],
+   "audio": "/audio/routes/ridderoordse-bos/04.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=24",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.24 (rabattenbos, spechtenholen)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=14",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.14 (Eijckensteinse Laan als oprijlaan)"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Het Jeneverbesveld",
+   "focus": "natuur",
+   "km": 2.28,
+   "lat": 52.13278,
+   "lng": 5.18419,
+   "paras": [
+    "Slechts een meter of twintig verderop opent zich tussen de bomen een bijzonder stukje geschiedenis van het Ridderoordse Bos. Het is het Jeneverbesveld, een klein, van oudsher geïnventariseerd heideterreintje in het zuidwesten van dit bos. Waar de rest van de omgeving in de loop der tijd veranderde, bleef hier een eeuwenoud heidelandschap bewaard.",
+    "In negentienhonderdvijftig was dit veld nog een stuk groter en officieel beschermd. Destijds telde men een achttal jeneverbesstruiken als restant van vroegere tijden. Vandaag de dag staan er nog vier van die volwassen struiken. Maar de geschiedenis staat hier niet stil: er is een jong exemplaar gevonden. Jeneverbesverjonging, wat betekent dat deze oeroude soort zich hier zowaar weer voortplant.",
+    "Dit veld bewaart nog meer historische sporen van de natuur. Op acht mei negentienhonderdnegenenveertig werd hier het rozenkransje gevonden, een ernstig bedreigde plantensoort. En kijk je omhoog of over de lage begroeiing, dan zie je een eeuwenoud jachtgebied. Ooit werden er vijftig paardenbijters tegelijkertijd jagend waargenomen. Ook de vroege glazenmaker jaagt hier volop; de Nederlandse populatie geldt zelfs als de grootste van heel Noordwest-Europa.",
+    "In het zand onder je voeten voltrekt zich een miniatuurdrama dat al generaties lang doorgaat. De heidezandbij, een kwetsbare Rode Lijst-soort, graaft er haar nestjes. Vlak achter haar aan komt haar parasiet, de heidewespbij. Die koekoeksbij legt stiekem een eitje in het nest van de zandbij, waarna de larve het ei of de larve van de zandbij opeet. Een meedogenloos stukje natuurhistorie, pal naast je pad."
+   ],
+   "audio": "/audio/routes/ridderoordse-bos/05.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=20",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.20 (jeneverbesveld, rozenkransje, verjonging)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=33",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.33 (libellen)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=35",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.35 (heidezandbij en heidewespbij)"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "De eikenwallen",
+   "focus": "geschiedenis",
+   "km": 3.01,
+   "lat": 52.13924,
+   "lng": 5.18886,
+   "paras": [
+    "Kijk zometeen eens goed om je heen, want op amper vijftien meter afstand ligt een heel bijzonder stukje geschiedenis verstopt in het landschap. Je loopt er zo bijna tegenaan: een oude eikenwal.",
+    "Zo’n lage aarden wal lijkt op het eerste gezicht misschien gewoon een toevallige glooiing tussen de bomen, maar niets is minder waar. Het zijn door mensenhanden opgeworpen grenzen. Vroeger dienden deze aarden wallen, verspreid door het Ridderoordse Bos en langs de open akkers en weilanden, als duidelijke perceelscheidingen.",
+    "Maar er zat nog een heel praktische, historische kant aan. De eiken die erop groeiden, werden eeuwenlang beheerd als hakhout. Boeren en boswerkers kapten de stammen periodiek tot de grond toe af om het hout te oogsten voor brandstof of gereedschap, waarna de bomen vanzelf weer opnieuw uitliepen. Een eeuwenoude traditie van beheer en noeste arbeid.",
+    "Alleen… die traditie is inmiddels helemaal stilgevallen. De eiken op deze wallen zijn al decennialang niet meer afgezet. Ze zijn doorgegroeid, dikker en zwaarder geworden, waardoor ze nu opnieuw afzetten eigenlijk heel weinig kans van slagen meer heeft.",
+    "Toch heeft de tijd deze aarden wallen niet vergeten; ze hebben gewoon een nieuw doel gekregen. Tussen de grillige stammen en op de aarde groeien nu volop zachte bladmossen en varens. Het zijn prachtige, cultuurhistorische monumentjes geworden. Tastbaar bewijs van het vroegere landleven op de Utrechtse Heuvelrug, rustig rustend in het groen van vandaag."
+   ],
+   "audio": "/audio/routes/ridderoordse-bos/06.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=40",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.40 (cultuurhistorisch waardevolle eikenwallen)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=54",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.54 (verlaten hakhouttraditie)"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "Waar de das weer thuis is",
+   "focus": "natuur",
+   "km": 3.78,
+   "lat": 52.14333,
+   "lng": 5.19754,
+   "paras": [
+    "Dertig jaar geleden leek het doek definitief te vallen voor de das op de Utrechtse Heuvelrug. Er was hier in de streek bijna niets meer over, met nog slechts een enkele burcht bij Hilversum. Het dier was historisch gezien nagenoeg verdwenen uit dit landschap.",
+    "Maar het tij keerde. Dankzij actieve bescherming en het graven van speciale dassentunnels en faunapassages kreeg de natuur een kans om haar geschiedenis te herschrijven. Begin jaren negentig keerden de allereerste dassen terug bij het Ridderoordse Bos, hier vlakbij, op nog geen dertig meter afstand.",
+    "En dat is niet toevallig. De plek ligt precies op een eeuwenoude landschappelijke overgang: tussen de droge, zanderige heuvelrug en de lager gelegen, nattere veenweidegronden. Voor de das is dat een gedroomde combinatie. Op de droge heuvelrug graaft hij veilig zijn burcht, terwijl hij in de open veenweiden zijn voedsel bij elkaar scharrelt.",
+    "Vandaag de dag herbergt het Ridderoordse Bos, samen met het nabijgelegen Maartensdijkse Bos, drie bewoonde burchten en bijburchten. Het gebied is daarmee uitgegroeid tot een van de belangrijkste bolwerken van de soort op de hele Utrechtse Heuvelrug. Beheerders houden delen van het bos bewust heel rustig, zodat de dassen ongestoord kunnen leven.",
+    "En met het ouder en stiller worden van deze bomen heeft zich intussen nog een tweede schuwe bewoner aangediend. Ook de boommarter heeft hier inmiddels zijn herintrede gedaan. Zo krijgt het oude bos stap voor stap zijn oorspronkelijke bewoners weer terug."
+   ],
+   "audio": "/audio/routes/ridderoordse-bos/07.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=28",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.28 (herstel das, boommarter)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=38",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.38 (dassenpopulatie: van uitsterven tot bolwerk)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/routes/wandelroute/ridderoordse-bos-lang",
+     "Utrechts Landschap — routepagina Ridderoordse Bos lang (droog/nat-overgang en das)"
+    ]
+   ]
+  },
+  {
+   "nr": 8,
+   "titel": "Terug bij de Gezichtslaan — gered en hersteld",
+   "focus": "geschiedenis",
+   "km": 4.56,
+   "lat": 52.1469,
+   "lng": 5.20595,
+   "paras": [
+    "Kijk, hier vlakbij zijn we weer terug bij de Gezichtslaan. En daarmee is onze cirkel rond.",
+    "Het is bijna niet voor te stellen als je hier nu zo staat, maar in negentienhonderdzesentwintig had dit woud zomaar van de kaart geveegd kunnen worden. Het scheelde echt een haar, of hier had een compleet villapark gestaan. Wat toen, in negentienhonderdzevenentwintig, begon als een ultieme poging om een bos te redden van de sloopkogel, is in een eeuw tijd uitgegroeid tot het herstel van een heel historisch landschap.",
+    "En dat historische bos leeft en ademt nog volop. Monumentale, oude bomen krijgen hier tegenwoordig bewust alle ruimte om oud te worden. Dood hout mag gewoon blijven liggen — een zegen voor spechten en talloze insecten. En die open heideveldjes waar je misschien langs bent gekomen? Die worden met kleinschalig plaggen en begrazing zorgvuldig in stand gehouden. Honderd jaar later is deze geredde plek nota bene een van de belangrijkste bolwerken voor de das op de hele Utrechtse Heuvelrug geworden.",
+    "Mocht je hier later nog eens terug willen komen: vanaf deze parkeerplaats vertrekken ook twee officiële, wit gemarkeerde wandelroutes van Het Utrechts Landschap. Een kortere van twee kilometer en eentje van drie en een halve kilometer, mocht je het bos nog eens vanuit een ander oogpunt willen verkennen. Maar voor nu zit onze tocht erop. Dank je wel dat je meenam langs de paden van deze bijzondere geschiedenis. Het bos blijft hier rustig doorgroeien, diep geworteld in zijn eigen verleden."
+   ],
+   "audio": "/audio/routes/ridderoordse-bos/08.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=15",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.15 (oprichting)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf#page=38",
+     "Utrechts Landschap — Beheerplan Bossen rondom Bilthoven, p.38 (dassenbolwerk, beheer)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/routes/wandelroute/ridderoordse-bos-kort",
+     "Utrechts Landschap — routepagina Ridderoordse Bos kort"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/routes/wandelroute/ridderoordse-bos-lang",
+     "Utrechts Landschap — routepagina Ridderoordse Bos lang"
+    ]
+   ]
+  }
+ ]
+}
