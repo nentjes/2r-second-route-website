@@ -1926,17 +1926,27 @@ def build_home(lang):
       </div>
       <div class="ways-grid">
         <article class="way way-free">
-          <span class="way-label">{h['free_label']}</span>
-          <h3>{h['free_h']}</h3>
-          <p>{h['free_p']}</p>
-          <a class="text-link on-paper" href="/{lang}/zo-werkt-het.html">{h['free_cta']} →</a>
+          <div class="way-image">
+            <img src="/images/2r-vrij-op-pad-concept-v1.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+          </div>
+          <div class="way-content">
+            <span class="way-label">{h['free_label']}</span>
+            <h3>{h['free_h']}</h3>
+            <p>{h['free_p']}</p>
+            <a class="text-link on-paper" href="/{lang}/zo-werkt-het.html">{h['free_cta']} →</a>
+          </div>
         </article>
         <article class="way way-book">
-          <span class="way-label">{h['book_label']}</span>
-          <h3>{h['book_h']}</h3>
-          <p>{h['book_p']}</p>
-          <div class="way-proof"><b>{format_km(ROUTES[HOME_ROUTE_SLUG]['_index']['lengte_km'], lang)} km</b><b>{ROUTES[HOME_ROUTE_SLUG]['_index']['hoofdstukken']} {ROUTES_TXT[lang]['hoofdstukken']}</b><b>{PARTNER_TXT[lang]['facts'][2][0]} {PARTNER_TXT[lang]['facts'][2][1]}</b></div>
-          <a class="btn-primary" href="/{lang}/routes/">{h['book_cta']} <span>→</span></a>
+          <div class="way-image">
+            <img src="/images/2r-luisterroutes-concept-v1.jpg" alt="" width="1536" height="1024" loading="lazy" decoding="async">
+          </div>
+          <div class="way-content">
+            <span class="way-label">{h['book_label']}</span>
+            <h3>{h['book_h']}</h3>
+            <p>{h['book_p']}</p>
+            <div class="way-proof"><b>{format_km(ROUTES[HOME_ROUTE_SLUG]['_index']['lengte_km'], lang)} km</b><b>{ROUTES[HOME_ROUTE_SLUG]['_index']['hoofdstukken']} {ROUTES_TXT[lang]['hoofdstukken']}</b><b>{PARTNER_TXT[lang]['facts'][2][0]} {PARTNER_TXT[lang]['facts'][2][1]}</b></div>
+            <a class="btn-primary" href="/{lang}/routes/">{h['book_cta']} <span>→</span></a>
+          </div>
         </article>
       </div>
     </div>
@@ -1970,6 +1980,10 @@ def build_home(lang):
       <div class="travel-modes">{modes_html}</div>
     </div>
   </section>
+
+  <figure class="travel-photo-break" aria-hidden="true">
+    <img src="/images/2r-autorit-concept-v1.jpg" alt="" width="1916" height="821" loading="lazy" decoding="async">
+  </figure>
 
   <section class="journey" id="reis">
     <div class="journey-visual" aria-hidden="true">

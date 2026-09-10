@@ -1039,11 +1039,11 @@ section.block + section.block { padding-top: 44px; }
    WEBSITE 2.0 — meerdere reistempo's, twee luistervormen
    ============================================================ */
 .hero-v2 { min-height: min(880px, 88vh); }
-.hero-v2 .hero-photo { object-position: center 46%; filter: saturate(.82) contrast(1.04) brightness(.88); }
+.hero-v2 .hero-photo { object-position: center 46%; filter: saturate(.88) contrast(1.02) brightness(.97); }
 .hero-v2 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(9,22,24,.91) 0%, rgba(9,22,24,.68) 38%, rgba(9,22,24,.16) 72%, rgba(9,22,24,.08) 100%),
-    linear-gradient(0deg, rgba(9,20,20,.72) 0%, transparent 52%);
+    linear-gradient(90deg, rgba(9,22,24,.84) 0%, rgba(9,22,24,.55) 38%, rgba(9,22,24,.12) 72%, rgba(9,22,24,.05) 100%),
+    linear-gradient(0deg, rgba(9,20,20,.62) 0%, transparent 52%);
 }
 .hero-v2 .hero-content { max-width: 980px; }
 
@@ -1055,9 +1055,14 @@ section.block + section.block { padding-top: 44px; }
 .ways-intro h2, .rhythms-head h2 { font-size: clamp(34px, 5vw, 64px); max-width: 13ch; }
 .ways-intro > p, .rhythms-head > p { font-size: 17px; line-height: 1.8; margin: 0; }
 .ways-grid { display: grid; grid-template-columns: .92fr 1.08fr; gap: clamp(18px, 3vw, 36px); align-items: stretch; }
-.way { padding: clamp(30px, 4vw, 52px); min-height: 390px; display: flex; flex-direction: column; align-items: flex-start; }
+.way { padding: 0; min-height: 520px; display: flex; flex-direction: column; align-items: stretch; overflow: hidden; }
+.way-image { aspect-ratio: 3 / 2; overflow: hidden; background: var(--paper-soft); }
+.way-image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.way-free .way-image img { object-position: center 54%; }
+.way-book .way-image img { object-position: center 48%; }
+.way-content { flex: 1; display: flex; flex-direction: column; align-items: flex-start; padding: clamp(28px, 3.4vw, 46px); }
 .way-label { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--cognac); margin-bottom: auto; }
-.way h3 { font-size: clamp(28px, 3.4vw, 46px); max-width: 12ch; margin: 54px 0 18px; }
+.way h3 { font-size: clamp(28px, 3.4vw, 46px); max-width: 12ch; margin: 42px 0 18px; }
 .way p { font-size: 16px; line-height: 1.8; }
 .way .text-link, .way .btn-primary { margin-top: 16px; }
 .way-free { border: 1px solid rgba(169,102,66,.3); background: rgba(250,246,237,.46); }
@@ -1078,6 +1083,9 @@ section.block + section.block { padding-top: 44px; }
 .travel-mode-num { display: block; font-family: var(--serif); font-style: italic; font-size: 21px; color: var(--gold); margin-bottom: 54px; }
 .travel-mode h3 { color: #fff; font-size: clamp(22px, 2.4vw, 30px); }
 .travel-mode p { color: rgba(250,246,237,.67); font-size: 14.5px; line-height: 1.65; }
+
+.travel-photo-break { margin: 0; height: clamp(340px, 50vw, 700px); overflow: hidden; background: var(--petrol-deep); }
+.travel-photo-break img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 
 .partner-invite { display: grid; grid-template-columns: minmax(320px, .9fr) minmax(0, 1.1fr); min-height: 600px; background: var(--petrol); color: var(--paper-light); }
 .partner-invite-image { background: linear-gradient(rgba(11,37,37,.08), rgba(11,37,37,.28)), url('/images/reisjournaal.jpg') center / cover no-repeat; }
@@ -1133,7 +1141,9 @@ section.block + section.block { padding-top: 44px; }
 @media (max-width: 820px) {
   .ways-intro, .rhythms-head, .ways-grid, .partner-proof .wrap { grid-template-columns: 1fr; }
   .ways-intro, .rhythms-head { gap: 20px; }
-  .way { min-height: 340px; }
+  .way { min-height: 0; }
+  .way-image { aspect-ratio: 4 / 3; }
+  .way-content { min-height: 320px; }
   .travel-modes { grid-template-columns: repeat(2, 1fr); }
   .travel-mode:nth-child(2) { border-right: none; }
   .travel-mode:nth-child(-n+2) { border-bottom: 1px solid rgba(216,168,95,.22); }
