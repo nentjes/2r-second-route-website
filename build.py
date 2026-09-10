@@ -1281,7 +1281,7 @@ HOWTO_BUILD50 = {
 # "Zo werkt het" als vijf filmische scènes (beelden van Codex, 29 aug).
 # Volgorde/beeld gedeeld over alle talen. Het brede reisbeeld opent; de auto is
 # daarna nog maar één van de mogelijke reisruimtes.
-HOWTO_IMAGES = ['hero-journey-v2.jpg', 'reisjournaal.jpg', 'howto-03-verhaal.jpg', 'howto-04-muziek.jpg', 'howto-05-ritme.jpg']
+HOWTO_IMAGES = ['2r-zo-werkt-het-hero-v1.jpg', 'reisjournaal.jpg', 'howto-03-verhaal.jpg', 'howto-04-muziek.jpg', 'howto-05-ritme.jpg']
 
 FAQ_LABEL = {'nl': 'Goed om te weten voor vertrek', 'en': 'Good to know before you go',
              'de': 'Gut zu wissen vor der Abfahrt', 'fr': 'Bon à savoir avant de partir',
@@ -2593,6 +2593,15 @@ def magazine_card(lang, st, size='klein'):
     </div>
   </a>'''
 
+STORIES_HERO_ALT = {
+    'nl': 'Een reiziger met een oortje bekijkt historische details aan een zonnige stadsgracht.',
+    'en': 'A traveller wearing an earbud studies historic details beside a sunlit city canal.',
+    'de': 'Ein Reisender mit Ohrhörer betrachtet historische Details an einem sonnigen Stadtkanal.',
+    'fr': 'Un voyageur muni d’une oreillette observe des détails historiques au bord d’un canal ensoleillé.',
+    'es': 'Un viajero con auricular observa detalles históricos junto a un canal urbano iluminado por el sol.',
+    'pt': 'Um viajante com auricular observa pormenores históricos junto a um canal urbano iluminado pelo sol.',
+}
+
 def build_stories_index(lang):
     s = SITE[lang]
     se = STORIES_EXTRA[lang]
@@ -2612,7 +2621,7 @@ def build_stories_index(lang):
     </a>'''
     grid = ''.join(magazine_card(lang, st, 'middel' if i < 2 else 'klein') for i, st in enumerate(rest))
     body = f'''  <section class="stories-hero">
-    <img class="stories-hero-img" src="/images/stories-hero-levend-reisboek.jpg" alt="{se['hero_alt']}" width="1536" height="1024" fetchpriority="high">
+    <img class="stories-hero-img" src="/images/2r-verhalen-hero-v1.jpg" alt="{STORIES_HERO_ALT[lang]}" width="1672" height="941" fetchpriority="high">
     <div class="stories-hero-shade" aria-hidden="true"></div>
     <div class="stories-hero-content">
       <p class="eyebrow on-photo">{se['hero_eyebrow']}</p>
@@ -3030,6 +3039,15 @@ for _lang in LANGS:
     PARTNER_TXT[_lang]['facts'] = partner_facts(_lang)
 
 
+ROUTES_HERO_ALT = {
+    'nl': 'Twee volwassen wandelaars trekken samen door zonnige duinen met de zee in de verte.',
+    'en': 'Two adult walkers travel together through sunlit dunes with the sea in the distance.',
+    'de': 'Zwei erwachsene Wanderer gehen gemeinsam durch sonnige Dünen mit dem Meer in der Ferne.',
+    'fr': 'Deux randonneurs adultes avancent ensemble dans des dunes ensoleillées, avec la mer au loin.',
+    'es': 'Dos senderistas adultos recorren juntos unas dunas soleadas con el mar al fondo.',
+    'pt': 'Dois caminhantes adultos percorrem juntos dunas soalheiras com o mar ao fundo.',
+}
+
 def build_routes_index(lang):
     t = ROUTES_TXT[lang]
     ui = ROUTE_UI[lang]
@@ -3054,7 +3072,7 @@ def build_routes_index(lang):
     lede = ui['library_p'].format(routes=ROUTE_COUNT, provinces=PROVINCE_COUNT)
     quality_metric = ui['quality_metric'].format(checked=EDITORIAL_FACTS_CHECKED, removed=EDITORIAL_FACTS_REMOVED)
     body = f'''  <section class="routes-hero routes-library-hero">
-    <img class="routes-hero-photo" src="/images/routes-hero-listening.jpg" alt="{html.escape(t['hero_alt'])}" width="1672" height="941" fetchpriority="high" decoding="async">
+    <img class="routes-hero-photo" src="/images/2r-luisterroutes-hero-v1.jpg" alt="{html.escape(ROUTES_HERO_ALT[lang])}" width="1672" height="941" fetchpriority="high" decoding="async">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="wrap routes-hero-copy">
       <p class="eyebrow on-dark">{t['eyebrow']}</p>
@@ -3209,13 +3227,22 @@ def build_route_page(lang, r):
 
 
 
+QUALITY_HERO_ALT = {
+    'nl': 'Handen vergelijken een routekaart, historische foto’s en notities bij helder raamlicht.',
+    'en': 'Hands compare a route map, historical photographs and notes in bright window light.',
+    'de': 'Hände vergleichen eine Routenkarte, historische Fotografien und Notizen im hellen Fensterlicht.',
+    'fr': 'Des mains comparent une carte d’itinéraire, des photographies historiques et des notes dans une lumière claire.',
+    'es': 'Unas manos comparan un mapa de ruta, fotografías históricas y notas junto a una ventana luminosa.',
+    'pt': 'Mãos comparam um mapa de rota, fotografias históricas e notas junto a uma janela luminosa.',
+}
+
 def build_quality(lang):
     q = QUALITY_TXT[lang]
     steps = ''.join(f'''<article class="quality-step">
       <span>{i:02d}</span><div><h3>{title}</h3><p>{copy}</p></div>
     </article>''' for i, (title, copy) in enumerate(q['process'], 1))
     body = f'''  <section class="quality-hero">
-    <img src="/images/reisjournaal.jpg" alt="{html.escape(q['alt'])}" width="1536" height="1024" fetchpriority="high" decoding="async">
+    <img src="/images/2r-kwaliteit-hero-v1.jpg" alt="{html.escape(QUALITY_HERO_ALT[lang])}" width="1672" height="941" fetchpriority="high" decoding="async">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="quality-hero-copy">
       <p class="eyebrow on-photo">{q['eyebrow']}</p>
@@ -3268,6 +3295,15 @@ def build_quality(lang):
     return page_shell(lang, q['title'], q['description'], 'quality', body, path='kwaliteit/index.html', immersive=True)
 
 
+PARTNER_HERO_ALT = {
+    'nl': 'Drie mensen ontwikkelen samen een luisterroute met kaart, bronnen en koptelefoon in helder ochtendlicht.',
+    'en': 'Three people develop a listening route together with a map, sources and headphones in bright morning light.',
+    'de': 'Drei Menschen entwickeln gemeinsam eine Hörroute mit Karte, Quellen und Kopfhörern im hellen Morgenlicht.',
+    'fr': 'Trois personnes conçoivent ensemble un parcours audio avec carte, sources et casque dans la lumière du matin.',
+    'es': 'Tres personas crean juntas una ruta sonora con mapa, fuentes y auriculares a la luz de la mañana.',
+    'pt': 'Três pessoas desenvolvem juntas uma rota sonora com mapa, fontes e auscultadores à luz da manhã.',
+}
+
 def build_partners(lang):
     t = PARTNER_TXT[lang]
     facts = ''.join(f'''<div class="partner-fact"><b>{value}</b><span>{label}</span></div>'''
@@ -3280,7 +3316,7 @@ def build_partners(lang):
       </article>''' for i, (title, copy) in enumerate(t['audiences'], 1))
     mail = 'mailto:nimco@nentjes.nl?subject=Pilotroute%20voor%202R'
     body = f'''  <section class="partner-hero">
-    <img src="/images/reisjournaal.jpg" alt="Een open reisjournaal en kaart als begin van een luisterroute." width="1536" height="1024" fetchpriority="high" decoding="async">
+    <img src="/images/2r-partners-hero-v1.jpg" alt="{PARTNER_HERO_ALT[lang]}" width="1672" height="941" fetchpriority="high" decoding="async">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="partner-hero-copy">
       <p class="eyebrow on-photo">{t['eyebrow']}</p>

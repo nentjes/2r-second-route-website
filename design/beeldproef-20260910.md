@@ -29,3 +29,36 @@ Twee generaties beginnen samen aan een luisterwandeling bij een landgoedpad; een
 Het bestaande posterbeeld en de bestaande video blijven de bron. Een proefbewerking met beeldgeneratie veranderde haar gezicht en compositie te veel en is daarom afgewezen en niet in de website opgenomen. In de lokale proef wordt uitsluitend de bestaande CSS-filtering iets lichter gemaakt. De kleine ster in het posterbeeld blijft staan totdat die zonder identiteits- of compositiewijziging kan worden verwijderd; de video moet daarbij visueel blijven aansluiten.
 
 ## Beoordelingspunten vóór publicatie
+
+
+## Uitbreiding over de website — 10 september 2026
+
+De beeldregel voor deze ronde is: **filmisch in compositie, opgewekt in licht en menselijkheid**. Alle beelden hieronder zijn gemaakt met de ingebouwde OpenAI-afbeeldingsgenerator in Codex. Ze zijn sfeerbeelden en geen documentaire weergaven van een specifieke 2R-route.
+
+### `public/images/2r-zo-werkt-het-hero-v1.jpg`
+
+Een reiziger doet bij een open deur een oortje in, met een fiets en een lichte ochtend buiten. Bedoeld voor de eerste stap op ‘Zo werkt het’: meteen begrijpen dat je alleen hoeft te vertrekken en te luisteren. De eerste versie bevatte een klein blauw beeldartefact; dat is met een gerichte bewerking verwijderd zonder de scène verder te veranderen. Breed websitebeeld, 1672 × 941.
+
+### `public/images/2r-luisterroutes-hero-v1.jpg`
+
+Twee volwassen wandelaars van verschillende leeftijden in zonnige kustduinen, met lucht, zee en bewegingsruimte in het beeld. Bedoeld als opgewekte opener van het route-overzicht, zonder een bestaande route of locatie te suggereren. Breed websitebeeld, 1672 × 941.
+
+### `public/images/2r-verhalen-hero-v1.jpg`
+
+Een reiziger met oortje ontdekt historische details langs een lichte Europese stadsgracht. Bedoeld om het verband tussen onderweg zijn, kijken en luisteren in één beeld duidelijk te maken. Geen benoemde stad of monument. Breed websitebeeld, 1672 × 941.
+
+### `public/images/2r-partners-hero-v1.jpg`
+
+Drie mensen van verschillende leeftijden ontwikkelen samen een luisterroute met kaarten, beeldbronnen en een koptelefoon bij een helder raam. Bedoeld voor de partnerpagina en de uitnodiging aan routebeheerders. Kaarten en bronnen zijn generiek en bevatten geen feitelijke 2R-routegegevens. Breed websitebeeld, 1672 × 941.
+
+### `public/images/2r-kwaliteit-hero-v1.jpg`
+
+Handen die een routekaart, historische foto’s en aantekeningen vergelijken in helder daglicht. Bedoeld voor ‘Kwaliteit & eerlijkheid’: zorgvuldig bronnenwerk zichtbaar maken zonder een zwaar controlebeeld. Kaart en historische foto’s zijn generiek gegenereerd en worden niet als bewijs of bron gepresenteerd. Breed websitebeeld, 1672 × 941.
+
+### Promptkaders
+
+- Fotorealistisch en geloofwaardig, als een filmstill of hoogwaardige reisfotografie.
+- Europees en tijdloos, zonder bekende monumenten, merken of leesbare interface-elementen.
+- Natuurlijk ochtend- of namiddaglicht, heldere warme middentonen en subtiele 2R-kleuren.
+- Geen toeristische reclamepose, overdreven glimlach, neon, zware mist of melancholische kleurcorrectie.
+- Rustige beeldruimte voor koppen en knoppen, met mensen uit verschillende volwassen leeftijdsgroepen.
