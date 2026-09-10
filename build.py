@@ -1281,7 +1281,7 @@ HOWTO_BUILD50 = {
 # "Zo werkt het" als vijf filmische scènes (beelden van Codex, 29 aug).
 # Volgorde/beeld gedeeld over alle talen. Het brede reisbeeld opent; de auto is
 # daarna nog maar één van de mogelijke reisruimtes.
-HOWTO_IMAGES = ['2r-zo-werkt-het-hero-v1.jpg', '2r-howto-reiskeuze-v1.webp', '2r-howto-verhaal-v1.webp', '2r-howto-muziek-v1.webp', '2r-howto-ritme-v1.webp']
+HOWTO_IMAGES = ['2r-zo-werkt-het-hero-v1.jpg', '2r-howto-reiskeuze-v1.webp', '2r-howto-verhaal-v1.webp', '2r-howto-muziek-v2.webp', '2r-howto-ritme-v1.webp']
 
 FAQ_LABEL = {'nl': 'Goed om te weten voor vertrek', 'en': 'Good to know before you go',
              'de': 'Gut zu wissen vor der Abfahrt', 'fr': 'Bon à savoir avant de partir',
