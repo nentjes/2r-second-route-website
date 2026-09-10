@@ -61,10 +61,10 @@ Handen die een routekaart, historische foto’s en aantekeningen vergelijken in 
 
 - Europa: `2r-europa-noorwegen-v1.webp`, `2r-europa-bourgogne-v1.webp`, `2r-europa-bohemen-v1.webp` en `2r-europa-puglia-v1.webp`.
 - Steden: `2r-stad-amsterdam-v1.webp`, `2r-stad-parijs-v1.webp`, `2r-stad-wenen-v1.webp`, `2r-stad-rome-v1.webp` en `2r-stad-lissabon-v1.webp`.
-- Zo werkt het: `2r-howto-reiskeuze-v1.webp`, `2r-howto-verhaal-v1.webp`, `2r-howto-muziek-v3.webp` en `2r-howto-ritme-v1.webp`.
+- Zo werkt het: `2r-howto-reiskeuze-v1.webp`, `2r-howto-verhaal-v1.webp`, `2r-roadmap-horizon-v1.webp` en `2r-howto-ritme-v1.webp`.
 - Roadmap en privacy: `2r-roadmap-begin-v1.webp`, `2r-roadmap-horizon-v1.webp` en `2r-privacy-rust-v1.webp`.
 
-Alle zestien aanvullende beelden zijn met dezelfde ingebouwde OpenAI-afbeeldingsgenerator gemaakt, op 1672 × 941 pixels. De scènes tonen echte reismomenten in natuurlijk licht, met open schaduwen, subtiele filmkorrel en rustige ruimte voor webtekst. De Rome-scène is gericht nabewerkt om een zwevende figuur te verwijderen; de overige compositie bleef behouden. De muziekscènes v1 en v2 zijn afgekeurd wegens onjuiste handanatomie. In v3 eindigt haar linkerarm in een anatomisch correcte linkerhand: de duim staat rechts in beeld en de vingers draaien de knop van onderen, zonder letterachtige dashboardartefacten.
+Alle zestien aanvullende beelden zijn met dezelfde ingebouwde OpenAI-afbeeldingsgenerator gemaakt, op 1672 × 941 pixels. De scènes tonen echte reismomenten in natuurlijk licht, met open schaduwen, subtiele filmkorrel en rustige ruimte voor webtekst. De Rome-scène is gericht nabewerkt om een zwevende figuur te verwijderen; de overige compositie bleef behouden. De eerdere muziekscènes met een hand aan de volumeknop zijn afgekeurd wegens onjuiste handanatomie. Voor de definitieve muziekscène wordt bewust het rustige horizonbeeld met twee reizigers en een kaart hergebruikt: samen onderweg blijft centraal, zonder een kunstmatige handeling in beeld.
 
 ### Promptkaders
 
