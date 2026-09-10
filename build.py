@@ -11,6 +11,10 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'public')
 LANGS = ['nl', 'en', 'de', 'fr', 'es', 'pt']
 
+# Enige waarheid voor alle publieke downloadknoppen. De volledige, door Apple
+# gepubliceerde URL voorkomt dat de verkorte landloze link onderweg strandt.
+APP_STORE_URL = 'https://apps.apple.com/nl/app/2r-second-route/id6802613397'
+
 LANG_LABEL = {'nl': 'NL', 'en': 'EN', 'de': 'DE', 'fr': 'FR', 'es': 'ES', 'pt': 'PT'}
 HTML_LANG = {'nl': 'nl', 'en': 'en', 'de': 'de', 'fr': 'fr', 'es': 'es', 'pt': 'pt'}
 
@@ -1376,7 +1380,7 @@ def build_howto(lang):
     <div class="howto-cta">
       <h2>{h['cta_h']}</h2>
       <p>{h['cta_p']}</p>
-      <a class="nav-cta" href="https://mapsinfo.roelnentjes.workers.dev">{h['cta_btn']}</a>
+      <a class="nav-cta" href="{APP_STORE_URL}">{h['cta_btn']}</a>
     </div>
   </div></section>
 '''
@@ -1410,7 +1414,7 @@ def nav(lang, active):
         {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
       </span>
       <div class="lang-switch">{others}</div>
-      <a class="nav-cta" href="https://apps.apple.com/app/id6802613397">{h['nav_cta']}</a>
+      <a class="nav-cta" href="{APP_STORE_URL}">{h['nav_cta']}</a>
     </nav>
   </div>
   <div class="mobile-panel" id="mobile-panel">
@@ -1422,7 +1426,7 @@ def nav(lang, active):
       {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
     </div>
     <div class="lang-switch">{others}</div>
-    <a class="nav-cta" href="https://apps.apple.com/app/id6802613397">{h['nav_cta']}</a>
+    <a class="nav-cta" href="{APP_STORE_URL}">{h['nav_cta']}</a>
   </div>
 </header>
 <script>
@@ -1731,7 +1735,7 @@ def build_city_story(lang, index):
   <section class="block"><div class="wrap" style="max-width:660px;">
     <p><a href="/{lang}/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; {html.escape(s['nav_product'])}</a></p>
     <div class="city-story-body">{alineas}</div>
-    <p style="margin-top:34px;"><a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span>&#8599;</span></a></p>
+    <p style="margin-top:34px;"><a class="btn-primary" href="{APP_STORE_URL}">{s['invite_btn']} <span>&#8599;</span></a></p>
   </div></section>
 '''
     return page_shell(lang, f"{html.escape(title)} — 2R (Second Route)", teaser, 'product', body, path=f'stad/{CITY_SLUGS[index]}.html', immersive=True)
@@ -2054,7 +2058,7 @@ def build_home(lang):
       <p class="eyebrow on-photo">{s['invite_label']}</p>
       <h2>{s['invite_h2']}</h2>
       <p>{s['invite_p']}</p>
-      <a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span>↗</span></a>
+      <a class="btn-primary" href="{APP_STORE_URL}">{s['invite_btn']} <span>↗</span></a>
     </div>
   </section>
 '''
@@ -2646,7 +2650,7 @@ def build_story_detail(lang, st):
   <section class="story-invite"><div class="wrap">
     <h2>{se['invite_h']}</h2>
     <p>{s['invite_p']}</p>
-    <a class="btn-primary" href="https://apps.apple.com/app/id6802613397">{s['invite_btn']} <span aria-hidden="true">&#8599;</span></a>
+    <a class="btn-primary" href="{APP_STORE_URL}">{s['invite_btn']} <span aria-hidden="true">&#8599;</span></a>
   </div></section>
 '''
     return page_shell(lang, f"{st['title'][lang]} — 2R", st['text'][lang][:150], 'stories', body, path=f'stories/{st["slug"]}.html')
