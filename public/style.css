@@ -300,7 +300,7 @@ section.block { padding: 62px 0; }
 .journey-scene {
   position: absolute; inset: 0;
   background-position: center; background-size: cover; background-repeat: no-repeat;
-  filter: saturate(0.74) contrast(1.08);
+  filter: saturate(0.94) contrast(1.02) brightness(1.04);
   opacity: 0; transform: scale(1.045);
   transition: opacity 0.8s ease, transform 1.8s ease;
 }
@@ -351,7 +351,7 @@ section.block { padding: 62px 0; }
 .story.story-5 { grid-column: span 4; }
 .story-photo {
   min-height: 310px; background-repeat: no-repeat; background-position: center; background-size: cover;
-  filter: saturate(0.76) contrast(1.05);
+  filter: saturate(0.94) contrast(1.02) brightness(1.03);
 }
 .story.story-1 .story-photo { min-height: 460px; }
 .story.story-2 .story-photo { min-height: 390px; }
@@ -405,8 +405,8 @@ section.block { padding: 62px 0; }
 
 /* ---------- Invitation / CTA (full photo) ---------- */
 .invitation { position: relative; min-height: 76vh; display: grid; place-items: center; text-align: center; color: var(--paper-light); overflow: hidden; }
-.invitation-image { position: absolute; inset: 0; background: url('/images/europe-north-norway.jpg') center / cover no-repeat; filter: brightness(0.74) saturate(0.82); }
-.invitation::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(9,37,37,0.2), rgba(7,24,25,0.85)); }
+.invitation-image { position: absolute; inset: 0; background: url('/images/2r-europa-noorwegen-v1.webp') center / cover no-repeat; filter: brightness(0.96) saturate(0.92); }
+.invitation::after { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(9,37,37,0.1), rgba(7,24,25,0.65)); }
 .invitation-content { position: relative; z-index: 2; width: min(820px, 88vw); }
 .invitation-content h2 { font-size: clamp(30px, 4.6vw, 56px); }
 .invitation-content > p:not(.eyebrow) { width: min(580px, 100%); margin: 26px auto 30px; font-size: 17px; line-height: 1.75; color: rgba(250,246,237,0.78); }
@@ -576,6 +576,7 @@ section.block + section.block { padding-top: 44px; }
 }
 .howto-photo, .howto-scene .hero-shade { position: absolute; inset: 0; }
 .howto-photo { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(0.96) contrast(1.02) brightness(1.02); }
+.howto-scene-3 .howto-photo { transform: scaleX(-1); }
 .howto-scene .hero-shade {
   background:
     linear-gradient(90deg, rgba(9,22,24,.78) 0%, rgba(9,22,24,.48) 42%, rgba(9,22,24,.08) 78%, transparent 100%),
@@ -643,13 +644,13 @@ section.block + section.block { padding-top: 44px; }
 .rm-hero-shade, .rm-close-shade { position: absolute; inset: 0; z-index: 1; }
 .rm-hero-shade {
   background:
-    linear-gradient(100deg, rgba(11,37,37,0.88) 0%, rgba(11,37,37,0.52) 38%, rgba(11,37,37,0.08) 62%, rgba(11,37,37,0) 82%),
-    linear-gradient(0deg, rgba(11,37,37,0.6) 0%, rgba(11,37,37,0) 42%);
+    linear-gradient(100deg, rgba(11,37,37,0.78) 0%, rgba(11,37,37,0.46) 38%, rgba(11,37,37,0.06) 62%, rgba(11,37,37,0) 82%),
+    linear-gradient(0deg, rgba(11,37,37,0.48) 0%, rgba(11,37,37,0) 42%);
 }
 .rm-close-shade {
   background:
-    linear-gradient(100deg, rgba(11,37,37,0.84) 0%, rgba(11,37,37,0.5) 42%, rgba(11,37,37,0.12) 72%, rgba(11,37,37,0.04) 100%),
-    linear-gradient(0deg, rgba(11,37,37,0.55) 0%, rgba(11,37,37,0) 46%);
+    linear-gradient(100deg, rgba(11,37,37,0.76) 0%, rgba(11,37,37,0.44) 42%, rgba(11,37,37,0.09) 72%, rgba(11,37,37,0.02) 100%),
+    linear-gradient(0deg, rgba(11,37,37,0.46) 0%, rgba(11,37,37,0) 46%);
 }
 .rm-hero-content, .rm-close-content {
   position: relative; z-index: 2;
@@ -746,8 +747,8 @@ section.block + section.block { padding-top: 44px; }
 .priv-hero-shade {
   position: absolute; inset: 0; z-index: 1;
   background:
-    linear-gradient(100deg, rgba(11,37,37,0.9) 0%, rgba(11,37,37,0.55) 38%, rgba(11,37,37,0.1) 64%, rgba(11,37,37,0) 84%),
-    linear-gradient(0deg, rgba(11,37,37,0.55) 0%, rgba(11,37,37,0) 45%);
+    linear-gradient(100deg, rgba(11,37,37,0.78) 0%, rgba(11,37,37,0.46) 38%, rgba(11,37,37,0.08) 64%, rgba(11,37,37,0) 84%),
+    linear-gradient(0deg, rgba(11,37,37,0.46) 0%, rgba(11,37,37,0) 45%);
 }
 .priv-hero-content { position: relative; z-index: 2; width: min(920px, 94vw); padding: 120px 24px 6vh; }
 @media (min-width: 700px) { .priv-hero-content { padding-left: clamp(24px, 7vw, 96px); } }

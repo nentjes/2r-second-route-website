@@ -800,7 +800,7 @@ PRIVACY = {'nl': {'eyebrow': 'Privacy',
 # (regio, tijd, kop, tekst); de afbeelding is per windstreek hetzelfde
 # volgnummer in alle talen (zie EUROPE_IMAGES).
 # ---------------------------------------------------------------------------
-EUROPE_IMAGES = ['europe-north-norway.jpg', 'europe-west-france.jpg', 'europe-east-czechia.jpg', 'europe-south-italy.jpg']
+EUROPE_IMAGES = ['2r-europa-noorwegen-v1.webp', '2r-europa-bourgogne-v1.webp', '2r-europa-bohemen-v1.webp', '2r-europa-puglia-v1.webp']
 
 EUROPE_STOPS = {
 'nl': [
@@ -847,7 +847,7 @@ EUROPE_STOPS = {
 # feitelijk gecontroleerde verhalen-archief (STORIES/dat leeft onder /stories/).
 # Per taal: lijst van (categorie, plaats, titel, tekst); image via CITY_IMAGES.
 # ---------------------------------------------------------------------------
-CITY_IMAGES = ['city-amsterdam.jpg', 'city-paris.jpg', 'city-vienna.jpg', 'city-rome.jpg', 'city-lisbon.jpg']
+CITY_IMAGES = ['2r-stad-amsterdam-v1.webp', '2r-stad-parijs-v1.webp', '2r-stad-wenen-v1.webp', '2r-stad-rome-v1.webp', '2r-stad-lissabon-v1.webp']
 
 CITY_STORIES = {
 'nl': [
@@ -1281,7 +1281,7 @@ HOWTO_BUILD50 = {
 # "Zo werkt het" als vijf filmische scènes (beelden van Codex, 29 aug).
 # Volgorde/beeld gedeeld over alle talen. Het brede reisbeeld opent; de auto is
 # daarna nog maar één van de mogelijke reisruimtes.
-HOWTO_IMAGES = ['2r-zo-werkt-het-hero-v1.jpg', 'reisjournaal.jpg', 'howto-03-verhaal.jpg', 'howto-04-muziek.jpg', 'howto-05-ritme.jpg']
+HOWTO_IMAGES = ['2r-zo-werkt-het-hero-v1.jpg', '2r-howto-reiskeuze-v1.webp', '2r-howto-verhaal-v1.webp', '2r-howto-muziek-v1.webp', '2r-howto-ritme-v1.webp']
 
 FAQ_LABEL = {'nl': 'Goed om te weten voor vertrek', 'en': 'Good to know before you go',
              'de': 'Gut zu wissen vor der Abfahrt', 'fr': 'Bon à savoir avant de partir',
@@ -1358,7 +1358,7 @@ def build_howto(lang):
     for i, (eyebrow, kop, tekst) in enumerate(scenes_data):
         laad = 'fetchpriority="high"' if i == 0 else 'loading="lazy"'
         kt = 'h1' if i == 0 else 'h2'   # de eerste scène draagt de H1 van de pagina
-        scenes += f'''  <section class="howto-scene">
+        scenes += f'''  <section class="howto-scene howto-scene-{i + 1}">
     <img class="howto-photo" src="/images/{HOWTO_IMAGES[i]}" alt="{html.escape(kop)}" {laad} decoding="async">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="hero-content">
@@ -2113,7 +2113,7 @@ def build_roadmap(lang):
         </div>
       </article>\n'''
     body = f'''  <section class="rm-hero">
-    <img class="rm-hero-img" src="/images/roadmap-01-waar-de-weg-begon.jpg" alt="{RM_ALT['open'][lang]}" width="1536" height="1024" fetchpriority="high">
+    <img class="rm-hero-img" src="/images/2r-roadmap-begin-v1.webp" alt="{RM_ALT['open'][lang]}" width="1672" height="941" fetchpriority="high">
     <div class="rm-hero-shade" aria-hidden="true"></div>
     <div class="rm-hero-content">
       <p class="eyebrow on-photo">{RM_HERO['eyebrow'][lang]}</p>
@@ -2127,7 +2127,7 @@ def build_roadmap(lang):
   </div></section>
 
   <section class="rm-close">
-    <img class="rm-close-img" src="/images/roadmap-02-aan-de-horizon.jpg" alt="{RM_ALT['close'][lang]}" width="1536" height="1024" loading="lazy">
+    <img class="rm-close-img" src="/images/2r-roadmap-horizon-v1.webp" alt="{RM_ALT['close'][lang]}" width="1672" height="941" loading="lazy">
     <div class="rm-close-shade" aria-hidden="true"></div>
     <div class="rm-close-content rm-reveal">
       <p class="eyebrow on-photo">{RM_CLOSE['eyebrow'][lang]}</p>
@@ -2317,7 +2317,7 @@ def build_privacy(lang):
         for s, w, i in pe['table_rows'])
     caching = p['stories_items'][3] if len(p['stories_items']) > 3 else ''
     body = f'''  <section class="priv-hero">
-    <img class="priv-hero-img" src="/images/privacy-header-stille-telefoon.jpg" alt="{pe['alt']}" width="1536" height="1024" fetchpriority="high">
+    <img class="priv-hero-img" src="/images/2r-privacy-rust-v1.webp" alt="{pe['alt']}" width="1672" height="941" fetchpriority="high">
     <div class="priv-hero-shade" aria-hidden="true"></div>
     <div class="priv-hero-content">
       <p class="eyebrow on-photo">{p['eyebrow']}</p>

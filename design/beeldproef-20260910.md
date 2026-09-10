@@ -1,6 +1,5 @@
 # Beeldproef homepage — 10 september 2026
-
-Status: lokale proef op branch `codex/beeldproef-homepage`; niet gepubliceerd.
+Status: goedgekeurd voor publicatie door Roel; verwerkt in de 2R-website.
 
 ## Herkomst en gebruik
 
@@ -30,6 +29,9 @@ Het bestaande posterbeeld en de bestaande video blijven de bron. Een proefbewerk
 
 ## Beoordelingspunten vóór publicatie
 
+- De omkijkende vrouw en de video op de homepage blijven ongewijzigd.
+- Bestaande documentaire routebeelden blijven gekoppeld aan hun echte route.
+- De nieuwe beelden worden in alle zes talen met dezelfde compositie gebruikt.
 
 ## Uitbreiding over de website — 10 september 2026
 
@@ -54,6 +56,15 @@ Drie mensen van verschillende leeftijden ontwikkelen samen een luisterroute met 
 ### `public/images/2r-kwaliteit-hero-v1.jpg`
 
 Handen die een routekaart, historische foto’s en aantekeningen vergelijken in helder daglicht. Bedoeld voor ‘Kwaliteit & eerlijkheid’: zorgvuldig bronnenwerk zichtbaar maken zonder een zwaar controlebeeld. Kaart en historische foto’s zijn generiek gegenereerd en worden niet als bewijs of bron gepresenteerd. Breed websitebeeld, 1672 × 941.
+
+### Aanvullende beelden voor de volledige site
+
+- Europa: `2r-europa-noorwegen-v1.webp`, `2r-europa-bourgogne-v1.webp`, `2r-europa-bohemen-v1.webp` en `2r-europa-puglia-v1.webp`.
+- Steden: `2r-stad-amsterdam-v1.webp`, `2r-stad-parijs-v1.webp`, `2r-stad-wenen-v1.webp`, `2r-stad-rome-v1.webp` en `2r-stad-lissabon-v1.webp`.
+- Zo werkt het: `2r-howto-reiskeuze-v1.webp`, `2r-howto-verhaal-v1.webp`, `2r-howto-muziek-v1.webp` en `2r-howto-ritme-v1.webp`.
+- Roadmap en privacy: `2r-roadmap-begin-v1.webp`, `2r-roadmap-horizon-v1.webp` en `2r-privacy-rust-v1.webp`.
+
+Alle zestien aanvullende beelden zijn met dezelfde ingebouwde OpenAI-afbeeldingsgenerator gemaakt, op 1672 × 941 pixels. De scènes tonen echte reismomenten in natuurlijk licht, met open schaduwen, subtiele filmkorrel en rustige ruimte voor webtekst. De Rome-scène is gericht nabewerkt om een zwevende figuur te verwijderen; de overige compositie bleef behouden.
 
 ### Promptkaders
 
