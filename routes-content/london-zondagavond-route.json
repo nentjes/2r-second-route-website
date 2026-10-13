@@ -1,0 +1,510 @@
+{
+ "slug": "london-zondagavond-route",
+ "land": "Verenigd Koninkrijk",
+ "provincie": "",
+ "naam": "London zondagavond route",
+ "soort": "buurtroute",
+ "lengte_km": 1.8,
+ "duur": "",
+ "hoofdstukken_n": 12,
+ "toegang": "open",
+ "beheerder": "NIMCO",
+ "gpx_url": "",
+ "bron_url": "",
+ "startpunt": "Ons Hotel",
+ "kaart_js": "/routes-data/london-zondagavond-route-kaart.js",
+ "lijnen": [
+  [
+   [
+    51.505187,
+    -0.104652
+   ],
+   [
+    51.503643,
+    -0.104773
+   ],
+   [
+    51.503336,
+    -0.106336
+   ],
+   [
+    51.502803,
+    -0.108105
+   ],
+   [
+    51.502857,
+    -0.108156
+   ],
+   [
+    51.502317,
+    -0.109777
+   ],
+   [
+    51.502377,
+    -0.109954
+   ],
+   [
+    51.501911,
+    -0.110628
+   ],
+   [
+    51.501778,
+    -0.110664
+   ],
+   [
+    51.500542,
+    -0.113472
+   ],
+   [
+    51.502327,
+    -0.116329
+   ],
+   [
+    51.502449,
+    -0.116234
+   ],
+   [
+    51.502528,
+    -0.116472
+   ],
+   [
+    51.502758,
+    -0.116271
+   ],
+   [
+    51.503069,
+    -0.117406
+   ],
+   [
+    51.503104,
+    -0.117659
+   ],
+   [
+    51.503029,
+    -0.117692
+   ],
+   [
+    51.503322,
+    -0.119368
+   ],
+   [
+    51.501116,
+    -0.119833
+   ],
+   [
+    51.500889,
+    -0.119932
+   ],
+   [
+    51.500899,
+    -0.120313
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "01 Start - Novotel London Blackfriars",
+   "focus": "geschiedenis",
+   "km": 0,
+   "lat": 51.505187,
+   "lng": -0.104652,
+   "paras": [
+    "Londen is een plek die zich laag voor laag laat ontdekken, waar het verleden niet stilstaat maar steeds opnieuw wordt overschreven door eigentijdse ambities. Terwijl we hier op pad gaan, lopen we door een decor waarin elke straathoek de sporen draagt van voortdurende vernieuwing en transformatie. Kijk maar eens direct om je heen, want we staan hier letterlijk voor het Novotel London Blackfriars.",
+    "De moderne geschiedenis van dit specifieke perceel aan Blackfriars Road begon eigenlijk pas echt in tweeduizendacht. Projectontwikkelaar MRP kocht toen een vervallen kantoorgebouw van vijf verdiepingen op deze plek, om het vervolgens met de grond gelijk te maken. In november tweeduizendtien startte de nieuwbouw van een veertien verdiepingen tellend hotel, dat in oktober tweeduizendtwaalf werd voltooid. De architectenbureaus Consarc en HKR Architects ontwierpen het als een gecombineerd tweelinghotelcomplex voor hotelgroep Accor, zij aan zij met het aangrenzende Ibis-hotel.",
+    "Het pand verrees bovendien binnen het duurzaamheidsprogramma Planet eenentwintig en sleepte een BREEAM-score van 'excellent' binnen. Daarmee behoorde het zomaar tot de top tien procent van meest duurzame commerciële nieuwbouw in het Verenigd Koninkrijk. Maar achter die strakke gevel schuilen ook opvallende snufjes. Wat dacht je bijvoorbeeld van het souterrain? Daar vind je een binnenzwembad dat is uitgerust met onderwaterluidsprekers. En op de hotelkamers kregen de gasten een elektronische glazen badkamerwand, die met een simpele druk op de knop verandert van ondoorzichtig naar transparant.",
+    "Een modern beginpunt van onze tocht, maar er liggen tijdens deze wandeling nog veel meer fascinerende verhalen op ons te wachten."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/01.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE65dUeIgR-_2QGDyikKK0Aqe5oRFL9ACUSGalM04yR-f9Lsqc4rVd9YzujpuyXvcaT9Y-9k6w6c3orUbzTXmBvCZFVR5kV2J_7URyqCpAySHRLgckKoPg98snCpYq0TTbOsc1FXDYrrVgu5h4sytTLe63Q2HBvr3A=",
+     "mcaleer-rushe.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2LFY_wBjgvM2vmvxYE3zpave7JrUZLhpWWqXh9JjdG4Zh9wtnAF6DxjaX62Odgc5eoTKG8AidbPnk3bIuQVMx4sEX7X736u_L0B9ZphYzEnbZBJHX2B42ebaIm2ziNwuC7Kd0z_tnaDtEnHK36MySnUvJ6GNGohti",
+     "mcaleer-rushe.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEykkIA0JxEo-0lqKZJaNKucDrryJZt9LWY-7i8WO4UIMej4VR5j2gJrfseRb6H5jkK4Q56CzNQGC1FAb15kXU_ULOuulaL7oEjI_o5KvRA1oReLZaWl039cbkWuGhNKkdycHEpAPQ9TbqACXs3QVrrQHMKWun3THNqa6smAG6vB7-P3hApVqs1SJ2aGHZAOCZ6C2XJsRsPCDYdyzDPK38=",
+     "theguardian.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGl5Wtwx1P9jQQzCxGI5qgxiKHkPtmabnP51PXkL-2hJGVbghV9yhFIDucJQDlb0eqJeivbA4bXFJwIAIimbCXx7A-Mrkx2UUdK5T0Cwd59DG1GHwqsrIcOE308pgYr3UeJ9bB12ph4xlZt83YElew4qU6BT5vSyiUInWDW",
+     "thetravelmagazine.net"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "02 Young Vic - theater aan The Cut",
+   "focus": "geschiedenis",
+   "km": 0.4,
+   "lat": 51.503283,
+   "lng": -0.10732,
+   "paras": [
+    "Frank Dunlop had een heel uitgesproken droom toen hij in negentien zeventig aan de wieg stond van de Young Vic: een rebels, experimenteel podium creëren dat puur gericht was op de jeugd. Je staat hier nu letterlijk voor de deur, aan The Cut, op nul meter afstand.",
+    "Het begon allemaal onder de hoede van acteur Laurence Olivier en het nabijgelegen National Theatre. Maar het decor waarin Dunlop begon, droeg diepe sporen van het verleden. Dit is echt gebeurd: het theater werd opgetrokken op een kaal bomkraterterrein uit de Tweede Wereldoorlog. Een voormalige slagerswinkel van David Greig had het oorlogsgeweld overleefd en architect Bill Howell besloot die winkel handig om te toveren tot de theaterfoyer. Voor slechts zestigduizend pond zette hij een sober bouwwerk neer, dat eigenlijk maar vijf jaar had moeten blijven staan. Maar tijdelijke dingen hebben in de geschiedenis soms de langste adem. Op twaalf augustus negentien zeventig kwam actrice Sybil Thorndike aangereden in een zwarte Rolls-Royce om het gebouw officieel te openen. Een maand later, in september, speelde de allereerste voorstelling: The Cheats of Scapino, een Molière-bewerking geregisseerd door Dunlop zelf, met acteur Jim Dale in de hoofdrol.",
+    "In negentien vierenzeventig werd de Young Vic een volledig onafhankelijke organisatie, los van het National Theatre. En dat tijdelijke noodgebouw? Dat bleef gewoon. Pas in tweeduizendzes volgde de grote heropening na een ingrijpende verbouwing door architectenbureau Haworth Tompkins. Twee gloednieuwe studiozalen werden toegevoegd: The Maria en The Clare. Zo veranderde een verwoest stukje stadsgrond uiteindelijk in een blijvend baken voor de kunsten."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/02.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxQEXtMpY1cNIlK3ZW-L8p4rEmvTJZWMWLClBnSvQn_fR2jHH0ldbILXXUh5xkeZDfrGKkAEZIWVP1pTMx5qqPBpbbU5QdHaA5SJf6CJtrtVz0yuE5NLI4btej9nnfe6s4htL5edt7v6hFXY3jHc5iDjVhSBgF9cOrC-UOp0ny-y_C-gKvHkeMLuRUpnyCfHV4CzW8nKUjSu-quAIFgSlNv_65LlN8d96_KMBeardpFEkbNIsIBx3QL_WYBAAbiJzK",
+     "facebook.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUqnvDzEmTxHaIkzXDE1nFZjbxdalPNP5IgCCmCgnZstG_-2LofASOHAD9nBNnFmiRw5GjczUKw1Y8Qvk0QNUk69Jm3eZB5W8DaMpWOkz-n1TjWO5t-tACSFaZWB-Z8hWdTx2JQBR-Ak9GbdTE30ePaF0=",
+     "britishtheatre.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHd4TdvQDD75IRY5x7DJsgff-a0BhIYGSXl-I5c5zr5YTV7vKwGVMbqh0G8Lm1RjFnh_2i5H9HJpgSZJSwPMtaL8_MkfyPgb_FkIQBwFzpVRwIalFjMDw10xRjUmYY=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFaGqiuKPS4tH2CayHFAPjcs-4S03PAZUCPEv2BklMS1GzqlSHD0I4e0cL2EPyFagX_me7n-GPiWeOATY_gBUobjEvvKXX_FYk67-LfE29eZW05j7AbLH-hYPqyCjtwCQ=",
+     "vauxhallhistory.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG7iCQ2NQBGNTWgo9a_jScMkTm1Yc6gCePcjtydHkinjApAaNZxgiRv-0bwsNrV7fxChXDXegL6uTYh6hlIPLIFJEL62zW1Y2exupU7_fZ1hlaamUHLIyL1iii-0djPFIiJhz1XWhl-X7XZvtoG9EAREhvrNOUJOkjKPnVE82QFozf64jCY51quGjlQsso0Eo-aWMG1phpHqACP",
+     "theguardian.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsM-xVSPYsZE9uRqw7hnyG55uXm5bzegD4maiVi8-K0UjV7tFbCXxjQGIN23T9KhnD9gtye301mGYyflis8LbNCFLR0aUsIXDFBaAEswydtPrqAhQwyLXadnRhYm9aXq1v6fKm-fVrD3ziIRMGP8wh0hfe6kr1kNvI6QWWK8Fu3_2hMqG4Q9h8gVqGCaYFWXw015va8iZOyhH0n5EYjQYgaek=",
+     "thestage.co.uk"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "03 Old Vic - theatergevel",
+   "focus": "geschiedenis",
+   "km": 0.6,
+   "lat": 51.502125,
+   "lng": -0.10947,
+   "paras": [
+    "Rudolph Cabanel had in het begin van de negentiende eeuw een flinke uitdaging: de grond hier in Lambeth was kletsnat en moerassig. Om het gebouw toch stevig op zijn plek te houden, werd voor de fundering steen hergebruikt van het gesloopte Savoy Palace.",
+    "Je staat er nu werkelijk pal voor. In mei achttienachttien opende het pand de deuren als het Royal Coburg Theatre. Kijk je naar de gevel aan Waterloo Road, dan zie je nog grotendeels dat oorspronkelijke metselwerk uit achttienachttien, herkenbaar aan de bakstenen pilasters en de klassieke rondbogen. De gepleisterde voorgevel aan The Cut vertelt weer een ander verhaal: die werd in negentien drieëntachtig verbouwd met een open fronton, zorgvuldig nagemaakt op basis van een oude prent uit circa achttienachttien.",
+    "Het gebouw veranderde door de jaren heen niet alleen van uiterlijk, maar ook van naam. In achttien drieëndertig kwam de toen veertienjarige prinses Victoria op bezoek. Ze schreef naderhand in haar dagboek dat ze het een 'zeer schoon en mooi theatertje' vond. Prompt werd het omgedoopt tot het Royal Victoria Theatre. Rond Kerstmis achttien eenenzeventig dook in de krant The Daily News na een grote verbouwing voor het eerst de naam 'The Old Vic' op.",
+    "Het theater kreeg daarna een heel eigen sociale lading. Hervormer Emma Cons nam het gebouw in achttienachttig over. Zij toverde het om tot een nuchter, alcoholvrij volkstheater en koffiehuis, waar iedereen uit de buurt welkom was. Een plek die letterlijk vanuit oude brokstukken uitgroeide tot een baken voor de hele wijk."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/03.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBRU3A9_OW1IlnN983YvaooCmFBVQsUJVg-KBGTxoqMtncMa-Mk2ykGguaTId0n3cCpFPEnxM-EXwaDRK1jeFj5ZI1xAHfA9QBONb1TykskEXV2IPvxQeBLu78TxOzzsW9qMgexicvi6xjEsGGwgi0BhCP",
+     "british-history.ac.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyZh4fA3eA-J2ZziU30jjw9SDgMkrN9HLYqkehr7he-AIfqSb6PnlV_ckc61W0wzlYHiAzieL5yQizA4wFwCS8F1UafFKzERH1x42OSnqLQn_t_7YZ4drQ7ugUoU_q039IB7inNcCYq5BQaMHqfKWKpJ4lynOiRks=",
+     "historicengland.org.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJU8Aojv9NoUQyytfA1JDiELP_0YYHaYN0WQjRBuEVHfpqA4qCFOIHTdV-FT-uki3Sn8eo6JDX0oF0--fkVCfVQKXod0HYAy-W3d9BxMnspJaT5Rp0RCDC5xs8_A_aSyoafkylNHXNX_Zi7-3vS-ZBdacn2AEQbGvM6hSvPRRbKA7RPqeT4jl7rkQ-pGI7PAE=",
+     "oldvictheatre.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeOVlrbxlie-IKc34_xBuZEerED8yxfiVetwHN1tLF4ykVbRz14Glwg5fTDvxDH2NbfhLhJJ1a7leF7fDNVEXxr-dS-0V6BAIcWBKCWon1z9e5bTfNo84sC24Bzkts3FS-C1WtuakIn-G7aCr8751RBvBHF-DAoxU=",
+     "britannica.com"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "04 Lower Marsh - straat met karakter",
+   "focus": "geschiedenis",
+   "km": 0.8,
+   "lat": 51.501189,
+   "lng": -0.111848,
+   "paras": [
+    "Water en drassig land bepaalden hier eeuwenlang het ritme. Lower Marsh, waar je nu praktisch middenin staat, dankt zijn naam aan het historische moerasgebied Lambeth Marshe. Rond zestienhonderdnegentig tekende cartograaf James de la Feuille de plek al op een kaart: toen nog een eenvoudige landweg met cottages, dwars door het zompige rietland. Pas in de achttiende eeuw werd het gebied definitief drooggelegd.",
+    "Toen in achttienzeventien Waterloo Bridge opende, ging het opeens hard. Binnen de kortste keren werd de voormalige moerasgrond volgebouwd met rijen huizen, werven en bedrijvige werkplaatsen. Vroeg in die negentiende eeuw ontstond hier ook de straatmarkt. Op haar absolute hoogtepunt claimde die zelfs de langste straatmarkt van het hele Verenigd Koninkrijk te zijn. Kooplui, buurtbewoners, het rumoer van kramen — de straat bruiste van het leven.",
+    "Maar het stadslandschap veranderde opnieuw ingrijpend. In achttienachtenveertig werd het spoorwegstation Waterloo aangelegd. Die enorme spoorlijn sneed de straat fysiek helemaal af van de oevers van de Theems. Sterker nog: na de opening van dat station ging de hele buurt rondom Lower Marsh voortaan simpelweg 'Waterloo' heten.",
+    "Tegenwoordig voel je die rauwe, gelaagde stadsgeschiedenis nog aan alle kanten. Vanaf Lower Marsh loop je bijvoorbeeld zo de Leake Street-tunnel in. Die gewelven staan tegenwoordig bekend als de Banksy Tunnel, een plek vol met steeds veranderende straatkunst. Zo blijft een oud moeraspad zich telkens opnieuw uitvinden."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/04.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIMXfjMflk2q9M9tKx-g0tge4rLThRtuzKa3E7bBqKC7QqSjJbKSuQeq7Ux_FGPyYnR7WAWbz4PvEAcE3Dm8oBI9QncB-vIdZH9goje8cLsJRfAJCtYrxXoB99Vq3Vuw==",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdu8JaGzuEO2Q0GOF3dQ3oOfo_WogfDLPKwRfY8r-iBi1WTXBlTSMm0pkcTJRE1sKydyjrqFP_n_D_eu3iBqnoqlddYP_2kfNLkme3mBsjnix9u0lnqqllpaF4DSFt",
+     "vauxhallhistory.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEq4aZJXTh-07KxmRCun9jBCaw65yt7TSx0BK8qhLGuHDXlTxxmcVqyUhkteQahqFF_4zjiafCzgoJdxMJ1YG9tGQOjikYT3eJhCiCbrFREX8EiDxWeEGPB71GMOTwU",
+     "instagram.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP9zaceocmOYbgtAZ1vjYJQyRN4vtxN_agFGhYOtn4flLW64lzTxNgAwxio5bZxN2lNEi6HWgsCorPNixl24gYvFZqCZHXQstr28IogG1BzFiSgtHz-TD45YB9mmAWK8bCptG_NyDKb2j5iERAPIihaXEP3nqrqKxT76olin2Lk5tJ_Fzvzmkt5YyG8lApukuonA==",
+     "fattiretours.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVFSJHXySGPQsYH_udvRh1axRhCpkwlie2lP1ZbHiR1k018qZPN-4poL3Gtf9oRpqgeoGhQ6TWkVHni4SDy-Og5CW5AJEsS7gYnvEf5i1omp4NLkJjRo9dvKrdAQ==",
+     "lowermarshmarket.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFyrd8HYz_rL3R2s31A4CqaEwWRRKxOz5JdQ6KfDVi_DWBeHuy-8Fh00mstQlYY7r7l6zGAnwnS1BVNsZck0nFixesN5oWj7VoAHjMih9dql3_f8L6l7ZIPUSIAAnAW89j5Ub--nZm3TMY6auJETf4=",
+     "londonaire.co.uk"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "05 Leake Street - ingang Lower Marsh",
+   "focus": "geschiedenis",
+   "km": 1,
+   "lat": 51.500831,
+   "lng": -0.113922,
+   "paras": [
+    "Vóór de jaren twintig van de vorige eeuw kende men deze plek simpelweg als York Street. Pas later kreeg de straat de naam van dokter John Leake, de oprichter van het nabijgelegen General Lying-In Hospital. Maar de donkere gewelven onder station Waterloo hadden door de decennia heen steeds weer een heel andere bestemming.",
+    "In de jaren zestig was het hier een levendig knooppunt voor wijnhandelaren, die de koele ruimtes gebruikten om hun handelswaar op te slaan en te verkopen. Jaren later zag het er weer compleet anders uit: de circa driehonderd meter lange onderdoorgang fungeerde als toegangsweg en taxistandplaats voor reizigers van de voormalige Eurostar-terminal. Auto's reden af en aan onder het spoor.",
+    "Tot mei tweeduizendacht. Kunstenaar Banksy besloot de donkere tunnel op te eisen en organiseerde er het internationale streetart-evenement The Cans Festival. Dat veranderde alles. Op veertien november van datzelfde jaar ging het eigendom van de tunnel over van Eurostar naar Network Rail. Gemotoriseerd verkeer werd definitief verbannen, waardoor de doorgang voortaan uitsluitend voor voetgangers bestemd was.",
+    "Je staat er nu letterlijk voor: de tunnel verbindt Lower Marsh met York Road. Vandaag de dag staat deze onderdoorgang bekend als de langste legale graffitilocatie van heel Londen. Het is een plek die geen seconde stilstaat; kunstwerken worden er werkelijk dagelijks door nieuwe lagen verf overschilderd. Zo bouwt elke generatie, spuitbus voor spuitbus, verder aan de geschiedenis van deze stenen gewelven."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/05.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSwdkpAZNMjx5K2BilDNWIy_WQksrkbsEyHMLo7bxxYiwS39KaFaBC6tupfhrQw6IMw4Ag9pZrZT6wPHoGgztFm29dMzysnxdrHv3PtIO7qnnq0bWrLEh3qSBbMws1F4PUIb9CNyHXhct89A8=",
+     "layersoflondon.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE308GcTGlgUjD_ICDvpaXAtHSkQ2b4sQG8oIptPnKv35kTxCn6zKOB0-XzS5zudkismJDFZIpGOTkMuD6xj0tn3o8ywVjjLCPA5b_kEebXi38_DVwd_Zn81jhDv0CpQg==",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFScYoQjYfln_QAAggLKTs6W72q0CzLKZGsIhvUiBQ19d_TA-Og3vg5p7EuzAJonmcoiZcKWZJHIGbXWtamD8TY4SnFM9J1w89glI3BZvX6Fz0klq2b69EXau8uF2g92TligxQnbsZAxjvi0oXEOg-cEf6iHioz-0HYMy8prAUUoA==",
+     "waterloofestival.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdhqhD0TpDV3Nm6pxtBgWkOSFxkcHKCbTOMmenkdnZ64tsbwTxUQpF3xrdXTSWtMWnevuu-FxaSslmxxpDj6HEbSqtL1LnlnRYZH-JS6k8J56VPnS0svP3H5uQJmkCRl2VRQBhdA6EIbgHy_VlOYnJpAbOS_iSIg==",
+     "blocal-travel.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnqYBojGDpNXjLvKGWnUKXVAgir0YOVbIREt0mJQb_6s3jv_aNx2hg1_mwnBu85tDtLSqnJFdSydB-hM6numwL55eC8wVa-w4E135RU0UGoU4ACKwMLFI4o6nLK4EhvbNoygyHVECSNCgcoTmUzl-f",
+     "maynard-design.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkH4FQx5JYaI8LFzkkPfz_jdN51F6dHdKDgsML3OjpJvpCzVlQlFiDIHbDHefBTm-1cjlqm-3ozxvd5PQS9EQpKaCO170PRv43pxjGmHHxUeR_AfSGBlk6p4CkxKfVQ5RAbVdkh6uAsGHde1TeGpxIhH4PC5fRCmlDa51D8fDMQzdrsFqUk-kiPA==",
+     "vakantio.de"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "06 Leake Street - street art",
+   "focus": "geschiedenis",
+   "km": 1,
+   "lat": 51.501147,
+   "lng": -0.114416,
+   "paras": [
+    "York Street, zo heette deze verborgen doorgang onder de sporen van station Waterloo vóór de jaren negentienhonderdtwintig. Als je hier nu loopt, letterlijk op nul meter van waar je bent, ruik je misschien nog altijd een zweem van verse verf, maar vroeger hing hier een heel andere geur. In de jaren negentien zestig deed de gewelfde tunnel namelijk dienst als opslag- en verkooplocatie voor wijnhandelaren. Donker, koel en volgestapeld met vaten en flessen.",
+    "Later veranderde het karakter van deze circa driehonderd meter lange tunnel opnieuw. Het werd een drukke doorgangsweg voor taxi's en autoverkeer, allemaal op weg naar de voormalige Eurostar-terminal van Waterloo Station. Koplampen, ronkende motoren en uitlaatgassen vulden de stenen bogen.",
+    "Tot mei tweeduizendacht. Kunstenaar Banksy besloot de plek radicaal op te eisen voor kunst en organiseerde er het Cans Festival. Hij nodigde negenentwintig internationale artiesten uit, onder wie stencilpionier Blek le Rat. Zij zetten de muren van onder tot boven in de verf. De omslag was definitief. Op veertien november tweeduizendacht ging het eigendom van de tunnel over van Eurostar naar Network Rail. Het gemotoriseerde verkeer werd direct verboden en de tunnel werd uitsluitend toegankelijk voor voetgangers.",
+    "Vandaag staat deze doorgang bekend als de Banksy Tunnel, de langste legale graffitilocatie van heel Londen. Kunstenaars mogen hier zonder vergunning en zonder enige vrees voor arrestatie op de muren schilderen. Een plek die voortdurend van gedaante wisselt, maar waarvan de eeuwenoude spoorbogen nog altijd hetzelfde fundament vormen."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/06.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzczCRFfyLmI34bBha_II4rD4FjQbwHuZNi-JBRyF7a36qq6jioTf3SD4RFJ52y5ojm7GkAYhTatVvyeYJCJFD-8pJWsW8ow2RRiW3sOEPd7wNfb3BDMYwuCf_41KT4ps=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFSmJci_YtxrNz1go3U07O4vCcjPGNh4UDZIBYVeSwJiJ65hCXfQnjRB3I_rwdoYAXz7XKQ-y3rZuyjSsP2v8vplbJl-d9cTE54ENx193MxG-idzG7_jZa-dgMAOa0FFe4c-gVCjCeZQFua-M1S7nMqJx85pyYbUBP9tO2yKcIA_KI=",
+     "waterloofestival.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEf8-dEj6wJZu83Ptqse4Tsk-K64ahXa6X4-aduYKujM2kuyGkNRnNnxAeSJoEUa0HItdjyYVznJ7lpS-2F1IrQnJbqiWHzpAeTy0F87Rz56jL7g8k8ojXb42bFGJGAVPBc8DPuqDiJ_982si2B00ZHB2eXpCm6",
+     "atlasobscura.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1Gz8McQZj2AF76Egqb8HVW0wlRc6BgW5NgJiBcZ1H-OrXkDVmmMzY3kLXiJHzMwnuYaUQm1rVYPwyPZnsrcgy0Cb_I3GulPjUnblDFpTs-E_ZJdgmXR-4_DI=",
+     "upmag.com"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "07 Jubilee Gardens - zuidelijke toegang",
+   "focus": "geschiedenis",
+   "km": 1.4,
+   "lat": 51.50304,
+   "lng": -0.117772,
+   "paras": [
+    "Wie over deze oeverstrook wandelt, stapt letterlijk over lagen recente stadsgeschiedenis heen. Vóór de Tweede Wereldoorlog stonden hier vooral grauwe industriële pakhuizen en houten aanlegsteigers. Dat veranderde radicaal toen zware oorlogsbombardementen de hele strook in puin legden. Dit is echt gebeurd: de verwoesting maakte de weg vrij voor een complete herinrichting.",
+    "In negentieneenenvijftig verrees hier het centrale decor van het Festival of Britain. Bezoekers keken hun ogen uit bij het reusachtige paviljoen Dome of Discovery en de futuristische landmark Skylon, die als een reusachtige naald boven de oever zweefde. Maar na de afbraak van die expositiepaviljoens verviel de grandeur snel. Het terrein veranderde jarenlang in een gewone parkeerplaats voor het aangrenzende County Hall, en deed tussendoor dienst als vliegveldterminal en helihaven.",
+    "Pas op negen juni negentienzevenenzeventig opende koningin Elizabeth de Tweede hier officieel een openbaar park ter ere van haar zilveren regeringsjubileum. Je staat er nu praktisch bovenop, bij de zuidelijke toegang van deze Jubilee Gardens. Toch bleef het terrein niet met rust. In de jaren negentig werd het park grotendeels ontmanteld voor een diepe werkschacht bij de verlenging van de Jubilee Line van de metro.",
+    "Het Nederlandse landschapsarchitectenbureau West acht gaf het park uiteindelijk zijn huidige gedaante, met glooiende grasheuvels en granieten randen, op tijd voor het diamanten regeringsjubileum en de Olympische Spelen van tweeduizendtwaalf. Tussen al dat moderne groen staat trouwens nog een ingetogen monument. Het herdenkt de dappere leden van de Internationale Brigades, die tussen negentienzesendertig en negentiennegenendertig vochten in de Spaanse Burgeroorlog. Een stille herinnering aan de vele levens die deze grond hebben gevormd."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/07.mp3",
+   "bronnen": []
+  },
+  {
+   "nr": 8,
+   "titel": "08 London Eye - kijken vanaf de kade",
+   "focus": "geschiedenis",
+   "km": 1.5,
+   "lat": 51.503322,
+   "lng": -0.119368,
+   "paras": [
+    "Een reusachtig stalen silhouet beheerst hier aan de kade de hele horizon: de London Eye. Je staat er nu letterlijk recht voor, op nul meter afstand, waar de staalkabels zich hoog boven je uitstrekken.",
+    "Het begon allemaal in negentienrieënnegentig met een simpele prijsvraag voor een millenniummonument. Architectenechtpaar David Marks en Julia Barfield kwam met een gewaagd idee: het Millennium Wheel. Het honderdvijfendertig meter hoge rad was oorspronkelijk bedacht als een tijdelijke constructie. Het idee was dat het na vijf jaar gewoon weer afgebroken zou worden. Maar de publieke belangstelling was zo overweldigend dat het nooit meer is weggehaald.",
+    "Achter die kolos schuilt een fascinerend stukje techniek. In negentienachtennegentig begon de bouw, en de complete wielconstructie werd plat, horizontaal op pontons op de Theems in elkaar gezet. Pas daarna werd het geheel centimeter voor centimeter rechtop getakeld. En er zit een bijzonder Hollands tintje aan: het Nederlandse staalbouwbedrijf Hollandia construeerde de enorme stalen poten en de hele velgconstructie.",
+    "Op oudejaarsavond van het jaar negentiennegenennegentig knipte premier Tony Blair het ceremoniële lint door, al moesten gewone bezoekers nog even wachten. Pas op negen maart tweeduizend stapten de eerste mensen echt aan boord. Aan de buitenkant draaien tweeëndertig glazen observatiecapsules mee met het rad, en dat aantal is geen toeval: precies één capsule voor elk van de tweeëndertig officiële stadsdelen van Londen. Een tijdelijk feestnummer dat uitgroeide tot een blijvend icoon van de stad."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/08.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEl93q3Vw7f0VL1iCqjQqU9ofeyrMJfbA01OEP5iYeIIRuXYk_h3X0UA1ITA-T_s0M8jdMBU_JCCyAdciPWeJF4JWWxKTt_wzcReY1YD4HLuiS6T4PGZeFiIs1NzqoEft0=",
+     "londoneye.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuyY0eleUS4aMRLSykxtYlQEPT2h82FA1yKpE6K2a7Q9D3XzJcK8fqM5DX4jjOvXeqRyIiwi8UO1NU6_CDl9qEY4BESB-N4u8alg9wnv_u4RYk0fL7lB1Jn4SJJqFwGeA=",
+     "youtube.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHObJwLv6AuBU7UflT8_xJXNGNWJZb_ViH4w8lK8BqXk73B0dPt8wmXrSLiPT6tMuY-DrdSg7Wk3eZ-Ri05ruyNMp7jgqA-4JkJSnLIOv9LbpuzswOzg3iPoBXmfVI=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG113v92f2Z10T-6WfKobuPPfbpDQGTTg1k1kdc_ZlRxkA23crkzQenX_napBO66jN6wp_5WSSTEQllozmq6HJhawkHYGGTp7zN9n8fxAMjzzUK_G62_8f8ne5PirDirrEMdayw04IUdUxezOLU20AOTA==",
+     "weebly.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFD-2QyQTmyr1LhYIb0yi6py41l-XcswK2wAJIHZhKtYyrcBj4Ym_m3j1fzmOI0F3ozl2hDLP6wLwfAfz6A2BVCdPJHkZytV0Fx67BqlfZMqUeL3DZG3Mm4qLhNlw3IKWfwHJmprgo9BJv-dpInwLiT",
+     "londonbuildexpo.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTFhFf0cJGxJ-jMPMpRSSurFZHP1W7omOGvMTRaWRRSXx-N_2KKQgUDEzQcGL2NvH-0pRmW45KnUBvnUyJNedzeYHSww3icZUu3DNVtOM7uo2oHhTR8eElbJDHP3y9M39VYt32zpMicou9rrQ0Q3YRMLo=",
+     "buildingcentre.co.uk"
+    ]
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "09 County Hall - aan de Thames",
+   "focus": "geschiedenis",
+   "km": 1.7,
+   "lat": 51.501709,
+   "lng": -0.118859,
+   "paras": [
+    "Koning George de Vijfde wandelde hier in negentien tweeëntwintig plechtig naar binnen om het centrale deel officieel te openen. Je staat er nu praktisch met je neus bovenop: County Hall, een reusachtig bouwwerk in edwardiaanse barokstijl.",
+    "Het ontwerp kwam van de architect Ralph Knott, die er in negentienhonderdacht een ontwerpwedstrijd mee won. Drie jaar later, in negentien elf, ging de eerste spade de grond in. En vierenzestig jaar lang klopte hier het politieke hart van de stad. Eerst zetelde de London County Council er, en later de Greater London Council.",
+    "Hier werd de macht over de metropool uitgeoefend, pal aan het water. En dat leidde soms tot ongekende confrontaties. In de jaren tachtig liet stadsbestuurder Ken Livingstone gigantische spandoeken aan deze monumentale gevel timmeren. Daarop stonden de Britse werkloosheidscijfers te lezen , pontificaal gericht op de conservatieve regering aan de overkant van de Theems, die vanuit het parlement recht op die pijnlijke getallen keek.",
+    "De politieke strijd liep zo hoog op dat premier Margaret Thatcher er in negentienzesentachtig rigoureus een punt achter zette: ze schafte de hele Greater London Council simpelweg af.",
+    "Het trotse bestuurskantoor kwam jarenlang leeg te staan. Totdat een Japans bedrijf het hoofdgebouw in negentiennegentigrie kocht om er een vrijetijds- en entertainmentcomplex van te maken. Waar vroeger felle debatten over de stad woedden, vind je sinds negentienzevenennegentig onder andere het London Aquarium. Zo maakte de harde politiek van Londen uiteindelijk plaats voor het publiek."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/09.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFN69APGV7ybJG9tPaLGWtC9BhiSLYwNdm-Ldtgd42jp3bh5BfGLfo0g1BWT_94z_rknVNMr9yk1KBbunu7cLCLuc4wdfpzlHBSY6X_4KFO1l0P2Wn5SdEZUALyWKPnx3BI",
+     "britannica.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzPLDTm9B48Mmk8iVoS1MdsCOiTPwS6cyXGjqt8pGlzrw73vZ9rBoOUg4UyjVyPTKcccy0-vFvcySsAlvdwfoNaOTiS7lIT54PDsGd5P0p4RtpHVlxGNX7jsiW",
+     "countyhallarts.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGc9VguNBuHnF4H0Qxr7RkNgW8CM612ULwS0FRctVVQ0fSbKkuc3kRhzuhz0PJ6Bn6ZSAdzeGO9EvMqXO_xbMLqtM9gTg9MIzMadhnJQLoDUww00nb_lDRClgfbHx4zE1Nqmjza-2rJaPDQxy-oYJs=",
+     "easymalc.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFlFvxURmua7CnW4nFT7QKe9bTLKWB8dCOYEFAQAZmnU4Du0ixFCB2rGALZKACyE1Pm5JhO1Jay16PHusC_bD1GIhkvYM4Tqj-o4ZVPFzJGPMGB2qToRKXfY-D1rtkU5qSjl2f6",
+     "alondoninheritance.com"
+    ]
+   ]
+  },
+  {
+   "nr": 10,
+   "titel": "10 Eindpunt - uitzicht op Big Ben",
+   "focus": "geschiedenis",
+   "km": 1.8,
+   "lat": 51.500899,
+   "lng": -0.120313,
+   "paras": [
+    "Kijk je ogen uit over het water, want hier sta je oog in oog met een van de beroemdste beelden ter wereld. Aan de overkant verheft zich de Elizabeth Tower, die in achttiennegenenvijftig werd voltooid naar een neogotisch ontwerp van Augustus Pugin. Het is de toren waarin de legendarische klok Big Ben hangt. Op eenendertig mei van datzelfde jaar, achttiennegenenvijftig, luidde die machtige klok voor het allereerste moment over de daken van de stad.",
+    "Je staat hier nu vlakbij, op nul meter van het eindpunt, pal bij de Westminster Bridge. Dit is de oudste nog bestaande wegverbinding over de Theems in het centrum van Londen. Ingenieur Thomas Page ontwierp de brug, ter vervanging van een eerdere stenen oversteek uit zeventienvijftig. De officiële opening volgde op vierentwintig mei achttienzestientwee, precies op de verjaardag van koningin Victoria. En let eens op de opvallende verf: de brug is groen geschilderd. Dat is een directe knipoog naar de kleur van de leren banken in het Britse Lagerhuis, aan de overzijde.",
+    "Aan de voet van deze oversteek waakt trouwens nog een bijzondere getuige van de stadsgeschiedenis: de South Bank Lion. Dit beeld stamt uit achttienzevenendertig en is gemaakt van oersterk, weerbestendig Coade-steen. Oorspronkelijk stond de leeuw trots op het dak van de Red Lion Brewery. Toen die brouwerij tegen de vlakte ging, werd het beeld in negentiennegenenveertig gered van de sloop — op uitdrukkelijk verzoek van koning George de Zesde. Zo vallen alle stukjes historie hier, aan de waterkant, prachtig samen."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/10.mp3",
+   "bronnen": []
+  },
+  {
+   "nr": 11,
+   "titel": "11 Extra - South Bank Lion",
+   "focus": "geschiedenis",
+   "km": 1.8,
+   "lat": 51.500936,
+   "lng": -0.119804,
+   "paras": [
+    "Een trotse, massieve leeuw die opvallend rustig over het voorbijrazende verkeer uitkijkt. Je staat er nu praktisch met je neus bovenop, hier aan het voeteneind van Westminster Bridge, vlak naast County Hall. Met zijn pakweg dertien ton is deze kolos een fascinerend stukje bewaard gebleven stadsgeschiedenis.",
+    "Het beeld werd gemaakt door beeldhouwer William Frederick Woodington. Vanaf achttienzevenendertig stond het hoog op de borstwering van de Lion Brewery, eigendom van James Goding, pal aan de Theems. Als je heel dichtbij onder een van zijn voorpoten zou kunnen kijken, vind je daar de initialen van Woodington en een datum ingebeiteld: vierentwintig mei achttienzevenendertig. Precies de achttiende verjaardag van koningin Victoria.",
+    "Dat hij er na al die tijd nog zo gaaf bij staat, dankt hij aan Coade stone. Dat is een uitzonderlijk weerbestendige keramische kunststeen, geperfectioneerd door de vooruitstrevende zakenvrouw Eleanor Coade. Toen de brouwerij in negentiennegenenveertig tegen de vlakte ging om plaats te maken voor het Festival of Britain, leek het lot van het dier bezegeld. Maar op persoonlijk verzoek van koning George de Zesde werd hij gered.",
+    "Daarna begon een opmerkelijke zwerftocht. Tussen negentienéénenvijftig en negentienzessenzestig stond hij bij Waterloo Station, felrood geschilderd, als de Red Lion. Pas in negentienzessenzestig verhuisde hij, ontdaan van die rode verf, hierheen. Er bestond overigens nóg een leeuw bij de brouwerij: een kleiner zusterexemplaar. Die werd later verguld en staat sinds negentientweeënzeventig bij het rugbystadion van Twickenham. Maar deze waker van steen hoort inmiddels gewoon bij de rivier."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/11.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHAdc7S3iIOuhOpiJvqzTrtEkJdCCeY7rp5JCTQmZ3aEZLq75q4X3npVomgy8We8oyPvK6wN-zQ64i3SaqIfekFZf3zlCnrG6NaEcCvz7Tfmlmzf7LJA2zO6XcbD9RWkVxplGw=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEztT9MhiiBFsF8kFmupSsic7eQYX-VYvvJyvUcYAflOzZx347BxZxCH34yYGoaLhRIYmHGClmyUSkGjBPHFMblh3zGzpvbDNd0hkaGVuKFxbO4V4ajQjtIQiBi4CGFyoL-ys-gywpozudmoV-do0j0-Z3pSYZohUlrapiTOTbM",
+     "salvoweb.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHte8cwAiMQwX0TkbXh1qdYR_UlDGP3U_LPJMH11-ETLtc0kqEodryin6n_zYiXb_QSpq6jE3kyOb6DwhSX-X5hCjcm1z7LrLph1mo_rSYtw3sEE4IQA-j_YPK6R6K-sifpiEgXwy1SEDkoPzR77KoE-apqcQ==",
+     "layersoflondon.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVGKy1tZm8nTaJizAd7IVCIJAVrFMG50ZtROLh400UgR4_pNlBjkmyRsGahMm2M47XnUyuOJjMUmAeU-Z2V-7LsHw8g7nYragYmE0t798rC_6yL4Bb2gJhr1MYOarv3upKQvAK7JBlK-iGg8aQyiyF_d2QsaJ6necw9b7ILdvGdds=",
+     "stuffaboutlondon.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxdzU1bM35_dcLHZNf3JUVr9PciNc9ob2U96ps6E0gn96fiokPv56_3-Cdz2vVRkhVPamfEuqC3OFqIVVwYsR32mUHJxj9nNxVCeluF1E9h1FW3BkSDwNiJjc9HLD9V5uY0ODMydl4FMvQQuMi6FIk_QsomlFXkRe18it-eeH9oEHaw6XZ1_b2Ei2lkTXSFA__m3cLUiEVM9OT74ecLlH1Q40PMmZ4e_5pB9z-4KUeFUEpXd7IIErF0h-rMoGXGyNw2qpCz7w_aEo=",
+     "facebook.com"
+    ]
+   ]
+  },
+  {
+   "nr": 12,
+   "titel": "Westminster Bridge",
+   "focus": "geschiedenis",
+   "km": 1.8,
+   "lat": 51.500833,
+   "lng": -0.121667,
+   "paras": [
+    "Het water van de Theems stroomt hier traag onder de bogen door, precies op de grens tussen de wijken Westminster en Lambeth. Je bent er werkelijk vlakbij, nog geen honderd meter lopen: Westminster Bridge.",
+    "Die oversteek heeft een bewogen geschiedenis. De allereerste stenen brug hier werd ontworpen door de Zwitserse ingenieur Charles Labelye en opende in zeventienvijftig — in vijfhonderd jaar tijd de eerste nieuwe stenen verbinding over de rivier. Alleen, de financiering via een staatsloterij liep compleet in de soep. Schrijver Henry Fielding noemde het gevaarte daarom schamper de Bridge of Fools. Toch bracht die oude oversteek pure schoonheid voort: dichter William Wordsworth schreef er in achttienhonderdtwee zijn beroemde sonnet Composed upon Westminster Bridge.",
+    "Wat je nu ziet oversteken, is de gietijzeren opvolger. Ontworpen door Thomas Page en feestelijk geopend op vierentwintig mei achttienzestigtwee, op de drieënveertigste verjaardag van koningin Victoria. Architect Sir Charles Barry, de man achter het herbouwde Palace of Westminster, zorgde ervoor dat de neogotische details naadloos aansloten op het parlement. En let eens op de kleur: dat specifieke groen verwijst rechtstreeks naar de leren zittingen in het Britse Lagerhuis. En daarmee zijn we aan het einde van onze wandeling gekomen. Van de trotse stenen leeuw van Coade stone aan de oever tot deze historische oversteek over het water: we hebben de eeuwen zien samenkomen langs de rivier. Dank je wel dat ik met je mee mocht lopen door deze rijke geschiedenis. Geniet van je uitzicht, en onthoud: elke steen hier heeft een stem, als je maar goed luistert."
+   ],
+   "audio": "/audio/routes/london-zondagavond-route/12.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Westminster_Bridge",
+     "Wikipedia"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEvyUwIooVfTwhFqnVB30FChX040UI0mpDm5kRgGe0ZXXqTb2k6vlml_XcBqsa6r_Z_OO7ifFSg4JbBxGr58GuomIdG1dyPivFr3OMGBcy5Lftb1LeJ6yXom08VqQcpt4W37RAYrtlPMr6V9I1jj4NJpn_ljJAI9cZy_WwgQjPoNHpQ1D6RbVwInyANsqnfuY5cs23emKQyNQRIdsi5eo=",
+     "google.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGzuofmdPzZY_7oS2X-WRljW2FxeGcqXgqNHvnyX2zrCOaJyRGL4QqNRvnmV93Y2oIIEqYdDNnjdUZknFiULCDGo5dikMt9jPRiBG8YbWHQPZ2Jz4j9ElR4usFu4DjLFa3aghEO9Nl35wSxcNT6x3pvCTnI5g==",
+     "illuminatedriver.london"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGFch9SnweO83G-2BIUglPuk6hvxsj5qiZCDHBu-tDUfsKB7YgkHQWU9pERrGT3v45Pn6az5Qp-FtBN-JXeNsL0TAmybZjp_7cIkSWFNiJ2dhlQneQWIAnf-j3m0BAr_ruc7UsDQk2BnzcwyQK7Lc26DLYJnQxBCascke57qAKwJrnyunHyz-1Q",
+     "leightontravels.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFMSqxCbNIezOuO2036KV6tCKPSuzaodNDDs16f3Ozty0Xezh46RENT9eBxUkY6hkWLxtSo6UlQU4nET3df3pnLfuU4TpHG8Ivlkh1ARI2a3kM-rGZpqQFq6LrJW31pujDhu4FTan0=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzjFbIlHluELkd1-yI4eZQ3kueWc81PcWjJhBLtsX2M1GT8AuH_eeb_1zui9uw4eZa5KpA3eZFflAJMLvc5vJOZ_hcDLLJJRQJMBjVvfQxtoDBbxlwZHR7iM22RbHuFYsiHoOYZC6Cvy9aDTptzDqxPMNbAQ==",
+     "alamy.com"
+    ]
+   ]
+  }
+ ]
+}

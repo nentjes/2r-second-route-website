@@ -150,6 +150,18 @@
    "toegang": "open"
   },
   {
+   "slug": "london-zondagavond-route",
+   "naam": "London zondagavond route",
+   "provincie": "",
+   "lengte_km": 1.8,
+   "duur": "",
+   "begaanbaarheid": null,
+   "soort": "buurtroute",
+   "hoofdstukken": 12,
+   "manifest": "https://2route.nl/routes-data/london-zondagavond-route-manifest.json",
+   "toegang": "open"
+  },
+  {
    "slug": "ridderoordse-bos",
    "naam": "Ridderoordse Bos",
    "provincie": "Utrecht",
