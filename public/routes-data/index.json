@@ -125,6 +125,18 @@
    "toegang": "open"
   },
   {
+   "slug": "jubilee-walk-central-london-circular-walk",
+   "naam": "Jubilee Walk : Central London Circular Walk",
+   "provincie": "Engeland",
+   "lengte_km": 17.7,
+   "duur": "",
+   "begaanbaarheid": null,
+   "soort": "routeboek",
+   "hoofdstukken": 21,
+   "manifest": "https://2route.nl/routes-data/jubilee-walk-central-london-circular-walk-manifest.json",
+   "toegang": "open"
+  },
+  {
    "slug": "julianalaan",
    "naam": "De Julianalaan — bosrand van Bilthoven",
    "provincie": "Utrecht",

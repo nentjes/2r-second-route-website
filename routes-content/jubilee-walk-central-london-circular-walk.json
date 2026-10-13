@@ -1,0 +1,1278 @@
+{
+ "slug": "jubilee-walk-central-london-circular-walk",
+ "land": "Verenigd Koninkrijk",
+ "provincie": "Engeland",
+ "naam": "Jubilee Walk : Central London Circular Walk",
+ "soort": "routeboek",
+ "lengte_km": 17.7,
+ "duur": "",
+ "hoofdstukken_n": 21,
+ "toegang": "open",
+ "beheerder": "NIMCO",
+ "gpx_url": "",
+ "bron_url": "",
+ "startpunt": "the comedy store",
+ "kaart_js": "/routes-data/jubilee-walk-central-london-circular-walk-kaart.js",
+ "lijnen": [
+  [
+   [
+    51.510076,
+    -0.130247
+   ],
+   [
+    51.510047,
+    -0.130009
+   ],
+   [
+    51.509048,
+    -0.12973
+   ],
+   [
+    51.508908,
+    -0.130039
+   ],
+   [
+    51.508258,
+    -0.129702
+   ],
+   [
+    51.508437,
+    -0.128983
+   ],
+   [
+    51.507597,
+    -0.128631
+   ],
+   [
+    51.507287,
+    -0.127882
+   ],
+   [
+    51.505968,
+    -0.130694
+   ],
+   [
+    51.505063,
+    -0.131102
+   ],
+   [
+    51.502665,
+    -0.13522
+   ],
+   [
+    51.501804,
+    -0.138728
+   ],
+   [
+    51.501345,
+    -0.13936
+   ],
+   [
+    51.500685,
+    -0.138614
+   ],
+   [
+    51.501398,
+    -0.137563
+   ],
+   [
+    51.501906,
+    -0.136045
+   ],
+   [
+    51.502208,
+    -0.134394
+   ],
+   [
+    51.502438,
+    -0.131065
+   ],
+   [
+    51.502168,
+    -0.130742
+   ],
+   [
+    51.501446,
+    -0.130678
+   ],
+   [
+    51.501246,
+    -0.127675
+   ],
+   [
+    51.500918,
+    -0.127509
+   ],
+   [
+    51.500443,
+    -0.127562
+   ],
+   [
+    51.500218,
+    -0.127117
+   ],
+   [
+    51.500196,
+    -0.126285
+   ],
+   [
+    51.499187,
+    -0.125856
+   ],
+   [
+    51.498167,
+    -0.125615
+   ],
+   [
+    51.498006,
+    -0.125299
+   ],
+   [
+    51.497738,
+    -0.125102
+   ],
+   [
+    51.497388,
+    -0.124463
+   ],
+   [
+    51.495193,
+    -0.124732
+   ],
+   [
+    51.494796,
+    -0.124547
+   ],
+   [
+    51.494527,
+    -0.121116
+   ],
+   [
+    51.497558,
+    -0.120555
+   ],
+   [
+    51.500036,
+    -0.119896
+   ],
+   [
+    51.502383,
+    -0.119592
+   ],
+   [
+    51.503586,
+    -0.119165
+   ],
+   [
+    51.504497,
+    -0.119038
+   ],
+   [
+    51.505416,
+    -0.118438
+   ],
+   [
+    51.506888,
+    -0.116742
+   ],
+   [
+    51.507366,
+    -0.115689
+   ],
+   [
+    51.508258,
+    -0.112507
+   ],
+   [
+    51.508153,
+    -0.112162
+   ],
+   [
+    51.508407,
+    -0.110987
+   ],
+   [
+    51.508298,
+    -0.110575
+   ],
+   [
+    51.508798,
+    -0.107522
+   ],
+   [
+    51.508888,
+    -0.10634
+   ],
+   [
+    51.508557,
+    -0.103942
+   ],
+   [
+    51.508658,
+    -0.102659
+   ],
+   [
+    51.508803,
+    -0.102182
+   ],
+   [
+    51.508526,
+    -0.096605
+   ],
+   [
+    51.507997,
+    -0.094326
+   ],
+   [
+    51.507997,
+    -0.093916
+   ],
+   [
+    51.507453,
+    -0.092742
+   ],
+   [
+    51.507198,
+    -0.092592
+   ],
+   [
+    51.507197,
+    -0.091603
+   ],
+   [
+    51.506937,
+    -0.090341
+   ],
+   [
+    51.506597,
+    -0.090002
+   ],
+   [
+    51.506698,
+    -0.089574
+   ],
+   [
+    51.506558,
+    -0.088353
+   ],
+   [
+    51.506913,
+    -0.088072
+   ],
+   [
+    51.506658,
+    -0.086462
+   ],
+   [
+    51.506406,
+    -0.083829
+   ],
+   [
+    51.506508,
+    -0.083393
+   ],
+   [
+    51.506416,
+    -0.082709
+   ],
+   [
+    51.505428,
+    -0.079082
+   ],
+   [
+    51.504298,
+    -0.075936
+   ],
+   [
+    51.505406,
+    -0.075369
+   ],
+   [
+    51.506976,
+    -0.074228
+   ],
+   [
+    51.506953,
+    -0.073402
+   ],
+   [
+    51.506608,
+    -0.074117
+   ],
+   [
+    51.506248,
+    -0.072427
+   ],
+   [
+    51.506418,
+    -0.071457
+   ],
+   [
+    51.506644,
+    -0.071926
+   ],
+   [
+    51.506738,
+    -0.070537
+   ],
+   [
+    51.506996,
+    -0.070515
+   ],
+   [
+    51.507017,
+    -0.070086
+   ],
+   [
+    51.506607,
+    -0.069565
+   ],
+   [
+    51.506867,
+    -0.068283
+   ],
+   [
+    51.508117,
+    -0.069378
+   ],
+   [
+    51.507887,
+    -0.071241
+   ],
+   [
+    51.508546,
+    -0.073627
+   ],
+   [
+    51.508547,
+    -0.074016
+   ],
+   [
+    51.509388,
+    -0.073925
+   ],
+   [
+    51.509846,
+    -0.074826
+   ],
+   [
+    51.509524,
+    -0.076606
+   ],
+   [
+    51.509457,
+    -0.077879
+   ],
+   [
+    51.509588,
+    -0.079302
+   ],
+   [
+    51.509547,
+    -0.080141
+   ],
+   [
+    51.510574,
+    -0.082766
+   ],
+   [
+    51.510938,
+    -0.086435
+   ],
+   [
+    51.511377,
+    -0.087035
+   ],
+   [
+    51.513033,
+    -0.088362
+   ],
+   [
+    51.513436,
+    -0.089007
+   ],
+   [
+    51.513437,
+    -0.089829
+   ],
+   [
+    51.512458,
+    -0.0937
+   ],
+   [
+    51.512058,
+    -0.096609
+   ],
+   [
+    51.512008,
+    -0.097902
+   ],
+   [
+    51.512047,
+    -0.098293
+   ],
+   [
+    51.513017,
+    -0.098191
+   ],
+   [
+    51.513387,
+    -0.098902
+   ],
+   [
+    51.513878,
+    -0.100534
+   ],
+   [
+    51.514143,
+    -0.102372
+   ],
+   [
+    51.514335,
+    -0.10746
+   ],
+   [
+    51.514254,
+    -0.109268
+   ],
+   [
+    51.514035,
+    -0.11085
+   ],
+   [
+    51.516445,
+    -0.112054
+   ],
+   [
+    51.515233,
+    -0.112162
+   ],
+   [
+    51.514978,
+    -0.113703
+   ],
+   [
+    51.516016,
+    -0.114565
+   ],
+   [
+    51.516058,
+    -0.114824
+   ],
+   [
+    51.516558,
+    -0.115125
+   ],
+   [
+    51.516418,
+    -0.115952
+   ],
+   [
+    51.516416,
+    -0.117038
+   ],
+   [
+    51.516706,
+    -0.118185
+   ],
+   [
+    51.516428,
+    -0.119539
+   ],
+   [
+    51.515263,
+    -0.121492
+   ],
+   [
+    51.514668,
+    -0.121897
+   ],
+   [
+    51.514236,
+    -0.121145
+   ],
+   [
+    51.513747,
+    -0.119926
+   ],
+   [
+    51.513197,
+    -0.120565
+   ],
+   [
+    51.512476,
+    -0.121819
+   ],
+   [
+    51.512598,
+    -0.122392
+   ],
+   [
+    51.512128,
+    -0.123593
+   ],
+   [
+    51.511423,
+    -0.123032
+   ],
+   [
+    51.510856,
+    -0.124477
+   ],
+   [
+    51.511437,
+    -0.125006
+   ],
+   [
+    51.511238,
+    -0.125805
+   ],
+   [
+    51.511116,
+    -0.129456
+   ],
+   [
+    51.511053,
+    -0.129702
+   ],
+   [
+    51.510806,
+    -0.129605
+   ],
+   [
+    51.510397,
+    -0.129988
+   ]
+  ],
+  [
+   [
+    51.508356,
+    -0.098488
+   ],
+   [
+    51.509236,
+    -0.098399
+   ],
+   [
+    51.510633,
+    -0.098422
+   ],
+   [
+    51.511508,
+    -0.098245
+   ],
+   [
+    51.511998,
+    -0.098242
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "The Comedy Store",
+   "focus": "geschiedenis",
+   "km": 0,
+   "lat": 51.51,
+   "lng": -0.132222,
+   "paras": [
+    "Londen is een stad die laag over laag is opgebouwd; elke straatsteen, steeg en kelder draagt de sporen van eeuwenoude politiek, theater en culturele omwentelingen. Terwijl je hier door de straten wandelt, loop je eigenlijk door een levend geschiedenisboek waarin elke buurt zijn eigen stempel heeft gedrukt op het Britse leven.",
+    "En de plek waar die geschiedenis plotseling een heel scherpe, rebelse wending nam, ligt hier vlakbij, op krap honderdveertig meter afstand: The Comedy Store.",
+    "Het begon allemaal toen Peter Rosengard in negentienhonderdachtenzeventig tijdens een vakantie in Los Angeles de Amerikaanse Comedy Store bezocht. Het idee liet hem niet los. Samen met Don Ward richtte hij in mei negentienhonderdnegenenzeventig de Londense vestiging op, hoog boven een stripclub in de Gargoyle Club aan Dean Street in Soho. Bij de allereerste audities stond comedian Alexei Sayle vooraan in de rij; hij zou de eerste drie jaar als vaste presentator het publiek opzwepen. Het was het ruige startsein voor de Britse *alternative comedy* van de jaren tachtig. Namen als Rik Mayall, Adrian Edmondson, Ben Elton en French and Saunders lanceerden er hun carrières.",
+    "Om al die aanstormende talenten te reguleren, bedacht Don Ward een keihard ritueel: de gong. Je kreeg maximaal vijf minuten, en als de zaal je grappen niet pikte, werd je letterlijk van het toneel af gegongd. Op zevenentwintig oktober negentienhonderdvijfentachtig ontstond er bovendien het improvisatiegezelschap The Comedy Store Players, met vroege leden als Paul Merton, Neil Mullarkey en Hollywoodacteur Mike Myers.",
+    "Begin negentienhonderddrieënnegentig, na een tussenstop bij Leicester Square, streek de club definitief neer in de huidige kelder aan Oxendon Street, met plek voor zo'n vierhonderd toeschouwers. We lopen rustig verder, want er wachten je onderweg nog veel meer plekken waar de geschiedenis van deze stad zich op onverwachte manieren heeft afgespeeld."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/01.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEOVsUkl0yKj5_jpZMhB9P6PeI4MV4YHXRloNbJM3nSvpzCzTbqEyike-JYdELUghBYIuHRDT0M9iwAqxa5m9GeuLHuViZ2S4LAL9Y6uA9XHBB5QQKq7ka-Hd7taRRwVAP",
+     "thecomedystore.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF2L2fZBwamRzaTufdH9WUY_K_SQ5BGEnr3j4IUGmss02gHpXa5S4slUpH9wpVwPk71LGPiafoD6jKjG6CIzUQZ_GMizZmCY-YhvVqIv75E8uHtZJZVLyS21zqhy9xMnjSfO7AAvO9TWvdro7ns",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGwYIr92Ecsz9r6HrEgXG4qwZYG-6KY3sjIFOxfZdm7_GrKR8XDdgtr9U2kuVoVkPloW_1kj-7W5RgiOx-uhc55qV4A4Gnh0uWSTOR42AqOI6lAWqtWhNW0ahJ-5BG_Y_TPJADDr-WyThpaI1WwVAVeTogTm3faqDf-2Jw-ETwnCGcxNfawjfKGSO0hjomX4y64PVvU1adQSFMy",
+     "chortle.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlu1ycnbXK7PW891RtQdR5IpbVlCX6yBq0z-o8imrgqpRZqTTKIe6vpKSjVQW_OF3cGpfy1QN1n8sIxkZkEJpZp4gstCUbc7Zi9t4HHtHL8PRulLyCOZvT4bYWwS94GGGcleMa0lXKdFyPsfSrGPPqj8botW4wT9tp3SqE_3vZYtsrL_x6eeNfZnMPuBsUV2nV9SeaweRv6X3Mirg_jVWBL9bS0FKbVEe9eNwRdRHYWosGd3T06ucMmQ==",
+     "independent.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGh9HXDaCiibvVwNpeoSKo1qlykwdqxUQ1Qq_E6PgQ9XeEKbU8yd3J8RYYXRF618r2jCilNuCN03AKwO3rFufdHmJQzrv53rxmdDrV7E21EjwIsYVtEzm21NLtrbfCflKhJOzR0bjKPYP0eREHa9hPtQaTGIOU=",
+     "timeout.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH2fe230Mm9vxkcBzgIWVD_gMnmE56tUYdyFaj7Pws9cwrA4N-68vxjo05MhPycW4aGJAybDdwnGOD-cxS695eIKc8P1_eI_1NV7ypNTl7r4e7V8QQ86Lwwm6Fszw==",
+     "comedystoreplayers.com"
+    ]
+   ],
+   "afstand_onderwerp_m": 137
+  },
+  {
+   "nr": 2,
+   "titel": "National Portrait Gallery",
+   "focus": "geschiedenis",
+   "km": 0.23,
+   "lat": 51.508333,
+   "lng": -0.129444,
+   "paras": [
+    "Een man met een gouden oorbel, donkere krullen en een blik die je recht aankijkt. Dat was het allereerste schilderij dat hier in achttienzesenvijftig binnenkwam: het beroemde Chandos-portret van William Shakespeare, toegeschreven aan John Taylor en geregistreerd onder catalogusnummer NPG één.",
+    "Je staat er nu echt vlakbij, op nog geen twintig meter afstand: de National Portrait Gallery. Het was destijds de allereerste nationale openbare galerij ter wereld die specifiek werd gewijd aan portretten. Drie heren namen het initiatief: Philip Henry Stanhope, Thomas Babington Macaulay en Thomas Carlyle. Als je omhoogkijkt bij de hoofdingang, zie je hun borstbeelden daar trouwens nog altijd staan.",
+    "Wat deze plek voor een geschiedenisliefhebber zo fascinerend maakt, is hun uitgangspunt. Van oudsher ging het de oprichters namelijk niet primair om het artistieke talent of de faam van de schilder. Nee, het draaide om de historische betekenis van de geportretteerde persoon. Wie had Engeland gevormd? Wie deed ertoe?",
+    "Het museum opende op vijftien januari achttiennegenenvijftig eerst aan Great George Street, maar verhuisde in achttienzesennegentig naar dit huidige gebouw aan St Martin's Place. En de collectie blijft groeien. Nog in tweeduizenddrieëntwintig kocht de galerie, samen met het Getty Museum, voor maar liefst vijftig miljoen pond het indrukwekkende schilderij Portrait of Mai, geschilderd in zeventienzesenzeventig door Sir Joshua Reynolds.",
+    "Zo vormen al die doeken samen een gigantisch familiealbum van de Britse geschiedenis, van Shakespeare tot Mai, gezicht na gezicht."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/02.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHswlz9nKD_92F5dmugAYA1AuCqWm5vmyVp_0Y-nY32wdEfA5Wt0TwfnfzLLuuGxSp7w7PB7Y7yR2rBJFsdicA_3LEpADeNMVjf-8FbQ1uPNsqWAfOjC5_E0m2DRbheVzicgf2ngC_E_8DhHxlKhDmlq1L506w=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPPBRbD_krvgBO3tbJ5KIGovjasJzJswpm8boL0Oz328juVWmI8V8X80i8FrIhU8P0yXCGjKkv7zZyP9dIgjhGeAinFzHLCwj2U1uODPp-tZ6WUlE8CShjwkwwrrhu8NiZH97U0DFH6iVOM_GyFEW-m8Ze5gvi4Q==",
+     "scalarchives.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXr-E0GSoQa0tkQSC_YFSl--N3BlNIGfNw-4aQYmK0Nh6-SkFBAFx3Q_zu79IuLuT8EqmPlXzk1b4TakxENsg8O62srlzIwA8bGn6F-LmF21yA9w8dWV84fovuj7jhAYLCgL1lKmdFIIBu97YId8Vjdv_3XEFH1NWUbH4=",
+     "frintonframes.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGtPvsytf9WDgXalSXBJNImqbxTjowNw4I54asbeTPD2v7pmibnJ0leOCW9rH8ItuGY5NUdCgzsw0fB2nHqIIQqwDz0Vt8eiAtbrtF_fCk8uHAPMjAFDBv71tn9kwIgnRzkCVEb",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPcttNi8T8AtnNIY8a1s_sSnXDmXuIX2Y0atnMdG34qJ1jQ6D-Xp3yT7wxFpYqkHnzx8V_4Evnb-gGar_nhyR7Ypz_VQHuuiY1QQTs5m3s3EX8M7JKPeb4UgZ5WTNDX0hVUhfTsAn-SG2DX0spwakYeYL_EEmwZo3fdw4TYNlrOe9fCOVrnLTRa9-1MvbaSNs9jgg0O2DFDTsxxN0W",
+     "theroyaltourblog.com"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "Queen Victoria Memorial",
+   "focus": "geschiedenis",
+   "km": 1.51,
+   "lat": 51.501833,
+   "lng": -0.140639,
+   "paras": [
+    "Koningin Victoria regeerde meer dan zestig jaar over een wereldrijk, en toen ze in negentienhonderdéén overleed, vond haar zoon koning Edward de Zevende dat er een gedenkteken moest komen dat haar tijdperk voor altijd zou vangen. Beeldhouwer Sir Thomas Brock en architect Sir Aston Webb kregen de enorme opdracht om dat vorm te geven.",
+    "Je staat er hier vlakbij, op nog geen honderd meter afstand, voor de poorten van Buckingham Palace. Het Queen Victoria Memorial is werkelijk kolossaal: het hele gevaarte van marmer en verguld brons weegt zo'n drieduizend driehonderd ton en heeft een doorsnee van tweeëndertig meter.",
+    "Het centrale marmeren beeld van Victoria zelf kijkt statig uit over The Mall. Om haar heen zie je allegorische figuren die haar deugden moesten vangen: Waarheid en Gerechtigheid flankeren haar, terwijl aan de achterzijde, gericht naar het paleis, het Moederschap is verbeeld. En helemaal bovenop, op de centrale pyloon, schittert een verguld bronzen figuur van de Gevleugelde Overwinning op een wereldbol, vergezeld door beelden van Standvastigheid en Moed.",
+    "Op zestien mei negentienhonderdelf werd het monument officieel onthuld door koning George de Vijfde. Saillant detail uit de geschiedenis: zijn neef, de Duitse keizer Wilhelm de Tweede, stond naast hem. Beiden waren kleinzonen van Victoria, verenigd bij het beeld van hun grootmoeder, slechts enkele jaren voor hun landen tegenover elkaar zouden staan in de Eerste Wereldoorlog. Het monument zelf was toen overigens nog niet eens helemaal af. Pas in negentienvierentwintig werd het laatste deel definitief voltooid."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/03.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfvksMk9o2-ASQytad1bePgHxNgPkH9zJ4Z0mbyPVeWlquNHLym9uOr7AFLUILf1TTCueYV2wtMexguumXnsOxo4QwzgM0hglNYkx71bJ7i-GaZ5DUMAOrUHganBXxaXDprfBoZ-GdLlaWtgEedAieMWCL8SDI_kt6a-GYKIUdF9Wwr3Ru5Gsp4NDWLlb9pMgH-5k=",
+     "rct.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG4MW6Zb2nLfqP-Kg6W7b3PITZrrctHJWmgdWyHz23Fgxki7o84u4pgSc919gnrKIpPgWhFN3Qe89NYOSKzw7g_zSb4PW988_GWN0rPwhSphQgVI1OfMYhFC_wm2bAMYT4zx1Od2lgBibjzJzi_VtcQK8E2rvPaMQjRfhs59zBZEOv_Ex--rbZteWWg480Gfuh3cdjDR94l",
+     "youngqueenvictoria.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEVzXkdVTY4-0nSZVHyKyBKCbg6YHndyc8RsVp3x-43yDhHtvfYJTaKTEpSG6U-506oW_Wm7nbgVSblD1k6mXDoxQ2MJaGpqyUD6SE2ImX66fYA1bm5n3jY5XeEBuqUuVHnbRgNYZry2t0MRu68hdTv9Vrr-Yc=",
+     "stonewest.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHuE5d0ffyNiVi0oX3Bzc_l-eY757I7oWVPzF9k6tAB8qvK3v0-DlYNCN7M7FbZoz5Rbtv5_Awpz_MlUSq8gAx15VBwIlyhUixU8GFWmyeYVTsCbZX4MbttnQ-k0a8w4SURNdx1Z5QH3Y4JY-Kk",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLFX7qk2ZQCFljThLAxYxvwN98YxgENQXnad6wTOk6sza4LC8YB_MNEE5tLU1Z5Y8lo-r_o7lUdrKT7NzM1l-CO_gTVID3MU_XgigYwJaALYgDwlTBBUDEz8fpSK57_qn_TpmyUCcIRzJebNamgtp4mnE=",
+     "layersoflondon.org"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "Westminster Abbey",
+   "focus": "geschiedenis",
+   "km": 2.64,
+   "lat": 51.499475,
+   "lng": -0.127408,
+   "paras": [
+    "Koning Edgar en Sint-Dunstan stichtten rond negenhonderdzestig een benedictijner klooster op een plek die toen nog Thorney Island heette. Vandaag de dag is dat eiland allang verdwenen in de stad, maar de kerk die eruit voortkwam, staat hier nog altijd: Westminster Abbey. Je bent er nu praktisch naast, op zo'n vijfentachtig meter afstand.",
+    "Het huidige, imposante gotische bouwwerk stamt grotendeels uit de dertiende eeuw. Koning Hendrik de Derde liet namelijk in twaalfhonderdvijfenveertig de eerdere romaanse kerk afbreken om plaats te maken voor deze herbouw. En wat een geschiedenis heeft zich hier sindsdien voltrokken. Op eerste kerstdag in het jaar duizendzesenzestig werd Willem de Veroveraar hier gekroond. Sindsdien vonden nagenoeg alle Engelse en Britse koninklijke kroningen binnen deze muren plaats. In vijftienhonderdzestig heroprichtte koningin Elizabeth de Eerste de abdij als een zogeheten Royal Peculiar, de Collegiale Kerk van Sint-Petrus in Westminster. Dat betekent dat de abdij rechtstreeks onder de Britse vorst valt, en niet onder een bisschop.",
+    "Maar het is niet alleen het domein van koningen. In veertienhonderd werd schrijver Geoffrey Chaucer in het zuidelijke transept begraven, wat het begin markeerde van de beroemde Poets' Corner. En in negentwintig kreeg de Onbekende Soldaat, The Unknown Warrior, een rustplaats in het schip van de kerk — een echt gebeurde herdenking aan de talloze gesneuvelden uit die bittere Eerste Wereldoorlog. Sinds negentienzevenentachtig vormt de abdij, samen met het Palace of Westminster en St Margaret's Church, officieel een UNESCO-Werelderfgoed. Eeuwen aan Engelse geschiedenis, samengebald onder één machtig stenen dak."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/04.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF59ezVM-7aS2Qz2ylo9xswYVjlf7UtokEL1hvfUh8metLmLDHfcwbHGqHLeNlMljJLhusjJBZEwjjQ8bDac_8GkzFjIWrSZVcENzkCoFTQqmJ4aut8UharJZhcaBt-iGrFIuM0DywGbWp1rb_tm8-mfZyN3Zt-0-KGlO7LUviz0Uw=",
+     "hattonsoflondon.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGvhPjBtF8N3SM7CIyjfCY97OFug2UoUU8NYiegkxAL_RBE_9RW0_5x1Dk3b4yjhpASKRos8TV5IeFUVXK2dgeNYfDuW60FQU9yrRvr2q3j8naKlkuEiUrLmKVbNyLNyOe_FYd-Nv-5Aftv9aH79FBP0MkRkCex",
+     "britblog.nl"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvrfX_bc8IcHhjtl0_eDlnKDsY7Z-JP2cBvW4pU6bB1zA_6uZc7JIPGMRs7FkCbvQSqIjMNa89jxMkFrfll5KiMKg-5HAEgXK3IYJVdZcJosw9VOE2YorZJLOJm83gzoH7VmBMg2w-MpE76I2SHANAJ6zJ2m1arSTf4fcl",
+     "westminster-abbey.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFjNqFL1SN2d19wf4p-9U62-YiKcrsTMEyMujFxM1HMvxYOmRWSBMMozFt3B4cq15u8lYkZC92xLxLgZmPdAwfjktts47guSnJmq5HQOdz8LbokBzg3OUdDxGYoF-y_C0bcjpYRIM7JEOE06eqxA8rLhQc=",
+     "londontourismtickets.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9OkFJkhZGFVTk8VrgWILcjB8Y1lF4ePE8V4VATFOulABlmP0aEfBH_ytUgCNT5C1P2v0ct-eguttTlIB0kNVevkiHT-IHg4_rnmTpBl2I87WsCVUN8rvQ4WIVAArH8ovZ5Petag==",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE_nyKY11eG5zgfhha_P1IWcr2Bi8rE7rhsWtCSy2uhE9nzKWb26JHLkxfran8KNNzSqGia6LewdOQmdPADciYGNBdzUxSm4K8Pvcl39xEnUmP-Y8QcuKbQ_oFpgaRvxblVEaqOuzzNj3pFySdTUX4eoQaGUQMuHyumcBtVgXYBE3Nl-MZUUza3",
+     "westminster-abbey.org"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Palace of Westminster",
+   "focus": "geschiedenis",
+   "km": 2.81,
+   "lat": 51.499444,
+   "lng": -0.124167,
+   "paras": [
+    "Rond het jaar duizendvijftig liet koning Eduard de Belijder hier een paleis bouwen. Eeuwenlang, tot aan een verwoestende brand in vijftienhonderdtwaalf, was dit de vaste residentie van de Engelse vorsten. Je loopt er nu praktisch tegenaan; op zo’n honderdtwintig meter afstand doemt het Palace of Westminster al op.",
+    "Het alleroudste stuk dat de tand des tijds heeft doorstaan, is Westminster Hall. Dat werd voltooid in het jaar duizendnegenennegentig, onder koning Willem de Tweede. Een onvoorstelbaar oud overblijfsel, zeker als je bedenkt wat er later gebeurde. Want op zestien oktober achttienhonderdvierendertig ging het gruwelijk mis. Dit is echt gebeurd: in de ovens onder het Hogerhuis werden oude, middeleeuwse houten kerfstokken opgestookt — de zogeheten *tally sticks*, gebruikt voor de belastingadministratie. De ovens raakten oververhit en er brak een uitslaande brand uit die vrijwel het hele complex in de as legde. Maar uit die as herrees het silhouet dat we vandaag kennen. Er werd een ontwerpwedstrijd uitgeschreven, en uit maar liefst zevenennegentig inzendingen won architect Charles Barry, die nauw samenwerkte met de jonge Augustus Welby Pugin. Zij kozen voor de neogotische stijl. In achttienhonderdveertig legde de echtgenote van Barry de eerste officiële steen voor de herbouw.",
+    "Samen met Westminster Abbey en Saint Margaret’s Church staat het paleis sinds negentienzevenentachtig op de Werelderfgoedlijst van UNESCO. Als je er zo meteen langs wandelt, zie je dus geen oeroud middeleeuws kasteel, maar een negentiende-eeuws meesterwerk, geworteld in een bijna duizend jaar oude geschiedenis."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/05.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE-K5IryQOf184yFbNaVl4chOrTscGp_v4YPmW4Kwk7GhOtw0J62NU16bv3vldx3Ek2wwrWn6zd9hzbvMb9WM-PKNrZ1kaMCAvN9CD_ov8ZdZJd5k1oxwnF67R4WZNZEPPnWqPc1Rj6U7lPk7gu0KlMQZIUUKpHLdjmtFL25UEg0XCqKHqgL_acfTl-E9K1s4xR6bPezPU3E36_8Lolz1Pr5n_2wLbxchMMswy0WgswAlrKJrfh__GC",
+     "archdaily.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFxGixPgr803HpreNGi-ujGn5_59m-yODlxaor1q-UCuCueMad4hGY8CU6dp4wmuPS1cAXrFrLXVXRuzZOTLNtYUdV60nQdAmhcwwLDJy6kwHTk5tUyrHb3rPVBvsH4rm8ZRf4skUMdc0g91mV9L2Wpps7t_HmUrZg=",
+     "geschiedenisextra.nl"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHR26XJFN1NIarbKyzt3GtcGQ0vCQgA3RVQMsSh8vKvzggOxicBnRFayrP-PeO2V7f4ySDJ1OvzNB9b-x9do87NaH5v7btE6SWyQYHqmN_oQtVYueilqYYSDIuP-Q1Pa9zSSQ57cAwE-AFLkhBoDiqFPulVp_VBnj8AfOoulA==",
+     "historyofparliament.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEEi3YgWVn6uyB1bKLYIFu2CjsgDlRdfPlmVoVNfKD49V-m8K4a1kHYIMrRsThqhgcOsQJkWHeoksdCntW5_7PbM-W-8Flnru7LivDnsGQ_2pYj0aS0cq-4Up37gQ20V_0LWYTu4jbQpYaYqMWJlF6RmehK4Cy9QASwHMo8Qsy5h45O5zD3fA==",
+     "restorationandrenewal.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFzUHDuqn-6ZgIjAUiGMnRzidjJHbuMjFYf9bFrotNk5VEQxhbe9MO6Wh6HwveC38Ayer78gplsS2glIMBoHZfGL9no7_revyB4LG5YOUqNYUj332RoPD-nFvLgXfMnvXBRNH5r-O2Eu14zygzufmn6A5HxIU-rMsBy4nTpUU6-RCN0x8VQZ4M1UphKekQgSKjrLCoBFA==",
+     "unesco.nl"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "Thames Embankment",
+   "focus": "geschiedenis",
+   "km": 3.05,
+   "lat": 51.4965,
+   "lng": -0.1245,
+   "paras": [
+    "De Theems die je hier ziet stromen, zag er halverwege de negentiende eeuw heel anders uit. In de verzengende zomer van achttienhonderdachtenvijftig stonk de rivier zo ondraaglijk dat het parlement zijn ramen moest sluiten; het werd bekend als de Grote Stank. Dit is echt gebeurd. De stad zat vol cholera en vuilnis, en de oplossing vroeg om een ongekende ingreep.",
+    "Ingenieur Sir Joseph Bazalgette ontwierp in de jaren zestig van die eeuw de Thames Embankment. Het was een kolossaal werk van civiele techniek. Er werd zo'n zevenendertig hectare land gewonnen op het water. En nu, op minder dan honderd meter van waar je loopt, sta je praktisch bovenop zijn erfenis. Want onder de kade liet Bazalgette niet alleen een modern rioolstelsel aanleggen, maar later kwamen daar ook de sporen van de District en Circle lijnen van de metro te liggen.",
+    "Op dertien juli achttienhonderdzeventig opende de Prins van Wales, de latere koning Edward de Zevende, de Victoria Embankment feestelijk. Het werd al snel een toonbeeld van vernieuwing. In achttienhonderdachtenzeventig kreeg de kade als allereerste straat in heel Londen permanente elektrische straatverlichting. In datzelfde jaar verrees er aan het water zelfs een eeuwenoude Egyptische obelisk, Cleopatra's Needle, na een lange zeereis vanuit Alexandrië.",
+    "Hier in de Victoria Tower Gardens vind je bovendien indrukwekkende monumenten die de geschiedenis tastbaar maken: de Buxton Memorial Fountain, die de afschaffing van de slavernij in het Britse Rijk in achttienhonderdvierendertig herdenkt, en de aangrijpende beeldengroep De Burgers van Calais van Auguste Rodin, die hier in negentienvijftien een vaste plek kreeg."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/06.mp3",
+   "bronnen": []
+  },
+  {
+   "nr": 7,
+   "titel": "Westminster Bridge",
+   "focus": "geschiedenis",
+   "km": 4.19,
+   "lat": 51.500833,
+   "lng": -0.121667,
+   "paras": [
+    "De Theems oversteken was eeuwenlang een kwestie van boten, of een hele omweg maken. Tot november zeventienhonderdvijftig. Toen opende hier de allereerste stenen brug over de rivier in maar liefst vijfhonderd jaar tijd, ontworpen door de Zwitserse ingenieur Charles Labelye. De bouw ervan verliep alleen niet zonder slag of stoot. De financiering moest komen uit een openbare loterij, maar die bracht veel minder op dan gehoopt. Romanschrijver Henry Fielding noemde het bouwwerk daarom spottend de *Bridge of Fools*.",
+    "Toch werd die eerste oversteek legendarisch. Dichter William Wordsworth stond er in achttienhonderdtwee, keek over het water en schreef er zijn beroemde sonnet *Composed upon Westminster Bridge*.",
+    "Je loopt er nu echt vlakbij, op zo'n honderdvijftig meter afstand: Westminster Bridge. De constructie die er vandaag ligt, is overigens niet meer die van Labelye. Ingenieur Thomas Page ontwierp de huidige brug, waarbij architect Sir Charles Barry neogotische details toevoegde om hem perfect te laten aansluiten bij het Palace of Westminster.",
+    "Op vierentwintig mei achttienhonderdtweeënzestig werd deze nieuwe brug officieel geopend. Het was precies de drieënveertigste verjaardag van koningin Victoria, en er klonk een saluut van vijfentwintig kanonschoten ter ere van haar vijfentwintigjarig regeringsjubileum!",
+    "Kijk dadelijk eens goed naar het schilderwerk als je de oversteek maakt. De brug is namelijk hoofdzakelijk groen geschilderd. Dat is geen toeval, maar een directe verwijzing naar de kleur van de leren zittingen in het Britse Lagerhuis. Zo wandel je straks letterlijk in de kleuren van het parlement naar de overkant."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/07.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFZyKYKACsakC2rAxXB2Ra82AgqAk_I0imIWlRjSL0oSrR5GLh-_wmAodMTijSbKNne-lpNqyvBWq-x7QAxQs-2fylFSODE9bQyY8nRo30jqOYWR90HUR2AgJxc37xoB91ao1HP0TI-sNO1aZeUT6SSjKbwg==",
+     "illuminatedriver.london"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF9OAH7iWXC1Uai0SvagocJTdXoeIHQTgnXaFHJMc5n9y9EMtUtk9eVk_895gu2vrye8jf2yS36CrKvgH9U0urrwIDX3inPbF4VKEJssITgZFVz5X8JOJ3b-mA-UXrJybD6o6ROgWms2-4spuAKqZw=",
+     "thetidalthames.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFIcFBq7qSl3QA4WUY8veZRWUj5hL_7nTpJLCN3J63HcumZQNxXB0eotSVCxJL0rcUoA-j22ofDJgn9_017ckxp8K4DmWmch_5ic93exK1uZ5B744FE38n1Zfl7wk2EHityS0fzj_1jtNA0ot7XnJicGKHf3qDDp_msFLU63tM9hUmH5qi1okChGSf6DIP4opvz4QuTbsDnBI9YRplziE=",
+     "google.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEj3C9ku8wkqo_7jN7yNkCiaXZcXnX16HTdKp9Ifjh5-AqU6KLXxiA801Y2Kr_2tFG37ijPdXlNbgp6RIWu1TuVLWW80i6Zsc6z8ToTEq92zW7rEG6SICx55ccnc9OBJnGSy9uhyU0=",
+     "wikipedia.org"
+    ]
+   ],
+   "afstand_onderwerp_m": 151
+  },
+  {
+   "nr": 8,
+   "titel": "London Eye",
+   "focus": "geschiedenis",
+   "km": 4.59,
+   "lat": 51.503261,
+   "lng": -0.119853,
+   "paras": [
+    "Het begon allemaal in negentienrieënnegentig met een simpele ontwerpwedstrijd ter ere van het nieuwe millennium. Twee architecten, David Marks en Julia Barfield, kwamen met een gedurfd plan op de proppen: een kolossaal reuzenrad aan de oever van de Theems.",
+    "In negentienachtennegentig begon de bouw, en dat was een historisch huzarenstukje op zich. Het gigantische rad werd namelijk eerst helemaal plat, horizontaal op drijvende platforms boven het water van de rivier in elkaar gezet. Pas daarna werd het geheel langzaam overeind gehesen. Onderdelen kwamen werkelijk overal vandaan: de cabines werden vervaardigd in Frankrijk, de enorme middenas kwam uit Tsjechië, en de stalen boog en poten werden gemaakt in Nederland. Een echt internationaal staaltje vakwerk dus!",
+    "Op eenenzestig december negentiennegenennegentig verrichtte premier Tony Blair de ceremoniële opening, precies op de drempel van de nieuwe eeuw. Voor het publiek gingen de deuren uiteindelijk open in maart van het jaar tweeduizend. En nu sta je er, na amper zestig meter lopen, oog in oog mee: het London Eye torent honderdvijfendertig meter boven je uit.",
+    "Kijk eens naar die tweeëndertig glazen capsules die langzaam ronddraaien. Iedere capsule staat symbool voor een van de stadsdelen van Londen. Het wonderlijke is dat het rad hier nu eigenlijk helemaal niet meer had mogen staan. Het plan was immers om het bouwwerk na vijf jaar alweer volledig af te breken. Maar ja, de Britten en de miljoenen bezoekers sloten het rad zó massaal in hun hart, dat de geschiedenis een andere wending nam. Het mocht voorgoed blijven staan."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/08.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOpXZV3iTUEC-ozVoZQc2B53BQfI3aWTtEFadnLwuFu4m1WfMmW1QcNrhQD2rv4ShobG2l6XER69QhEfQsAyBF4O1E8DLiJVeyl-86Jmvz2zIOioo8EDloxV9G3QejIA5W",
+     "londoneye.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGBUasd0dp3yVGsj8CD7XCWyyYvU7sfskRvpBJR7KkI47pmvfXvKwS8BgGn5qRxG34h9AfqXrVrtPO-CHl402O5n9KtNfH8IZFIvX-52Y6u5RtyXGSJ8RQAfKl9Jn6D-iNCYRfpil7QHVlzenTGUv2M5_v3X-U2iTc=",
+     "thingstodoinlondon.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG8hggFw58XohPjcztkwuLGaDg7MDjpVonGIMu3BurtUD3LCcZwkkgj5_5ArVJfSzZUcCFOD1zhjYyVOKgggqxPLJMijxlY_-uTwSe_m66A-XJzeWcmiAL3ovlk7B2P",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpKWrIp3338u-5ogMyfd0WbzA9NuTr5xMLLHAgX4wkUmXoMq8EGaL6f1VQgCV8sTPr2uU7rfcl0eIaYJAR9-LxedGbR1XgLaKa7qcqAIuR6MhRaGPf2kVSGLz1bqPb07pRsG5_0J7qJN5XXb0XEN_JkA==",
+     "londonbuildexpo.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeDuXAJh9hVeqEtmB1h5BYrZryEsWJXp2i2zKCYpZ6-61LhbYPHY6W9NYj-f7H5Q88uozpdv6wwJuLWLFyEYFdg-P_MlYgyE8g9KSNiavbFtU7821prdTZBqKfw3F1m2h1N2VVX_6Y0Vvi5JwHtUpr",
+     "londen-citytrip.nl"
+    ]
+   ]
+  },
+  {
+   "nr": 9,
+   "titel": "Blackfriars Bridge",
+   "focus": "geschiedenis",
+   "km": 5.95,
+   "lat": 51.509722,
+   "lng": -0.104444,
+   "paras": [
+    "De Theems stroomt hier traag onder de bogen door, dragend aan eeuwen vol Londense geschiedenis. Op zo’n honderddrieënveertig meter lopen sta je zo direct bij Blackfriars Bridge.",
+    "De allereerste vaste oeververbinding op deze plek werd ontworpen door de Schotse architect Robert Mylne en opende in zeventienhonderdnegenenzestig. Officieel doopte men haar de William Pitt Bridge, vernoemd naar de toenmalige premier William Pitt the Elder. Maar ja, de Londenaren trokken zich daar weinig van aan; zij bleven stug spreken van Blackfriars Bridge, naar het middeleeuwse dominicanenklooster dat hier ooit vlakbij stond.",
+    "De brug die je nu nadert, is een latere versie. Ingenieur Joseph Cubitt ontwierp haar, waarna koningin Victoria op zes november achttienhonderdnegenenzestig de officiële opening verrichtte. Let straks, wandelend langs het water, eens op de pijlers. Beeldhouwer J.B. Philip hakte daar prachtige vogels in uit. Aan de westkant zie je zoetwatervogels, terwijl aan de oostzijde juist zeevogels zijn afgebeeld. Vlak ernaast steken rode stenen pilaren boven het water uit — de overblijfselen van een oude spoorbrug, die in negentienvijfentachtig werd gesloopt omdat hij simpelweg te zwak was geworden voor moderne treinen.",
+    "Er kleeft ook een duistere gebeurtenis aan deze plek, en dit is echt gebeurd. Op achttien juni negentienhonderdtweeëntachtig werd de Italiaanse bankier Roberto Calvi, bijgenaamd Gods Banker, dood aangetroffen. Hij hing onder steigers van de brug, met bakstenen en een grote hoeveelheid contant geld in zijn zakken.",
+    "Vandaag de dag rusten de bogen vredig op hun fundamenten, terwijl voetgangers en verkeer onafgebroken over de Theems trekken."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/09.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHop3LclPQrTqr4fMPnMQUW3I3kVJkAomJyzTxzR1h6jgTXYrJVcOebNW9a4MqAyvuqorAsTv4bUD8Tzy6zibNKkDCoh4LMQ59__k9kj2yE1Jy948ZFTYG1jx5D-QFFaiK_TirrMpg=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOLnH1kNvZmFVcgyGxqbHLwedT2u_5Fyq56dwxkrTBC7Wml9P0M58BCYM0__iLfLBOjGXbzMQqM8QhGM_F9tKr1UNfngeHcY9HxUholPpJ5kVfR389g0dJ98_xjBlyjS8bjvZDulXHHKyche7vcPzz3bqe8j2oBgerGlG9CBEBZqGvwvxuzh6WMZ6VR1vd4vepamx2wBw8r4yTHPEVKg2v1PQfF0XCPZ8gNmg-kfgAKo1NcekCZiRkJWfkJoXtlVJPnUKTR14Cnvs=",
+     "facebook.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEUXWlss3DYk4nP4HV-vhRgniAUMIA13X3ZK8BumndDnijYSvjdkoR70nmtDkEmYWlkeRWSZ3ycUZAGUEGNdM8S3oyTbhl-Hhl09QlzR32RGoRYsikW2lt77TdDCcawp0oKRbmHkw==",
+     "wikishire.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHHOCFOe1NSUYsrGc5k_07Fk86vzkWPipkQ3IJ9_gt_CPHPj5wmt-hzBZlUtsRe2U5T_t1nmon5ploAYcjnWF2FtMNzhjeHANEY852qf7_E5gDN2qe_ter8LD6Vd-xfc0assMXE6N8GYiGksG6S_9_KGZiyImWrkF_kYwNK9RE3s2Ar",
+     "symbolsandsecrets.london"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHzhDnWx--oLzW86LY0e8D2b5uXGGYDcmSMKLJpHpv0G1Eat4LVMqGlfU8hQKUWKPCuLiqX5P_9Ck7C_slCuk_nQjCjCU4w0libBzr6ZpIvGUgT08hpLjzlWZTYWogWIdcRKTs0BHAlrT6sgvwgYTouOiVQ4K756fCLFtzGTAuJ923korOq1i0=",
+     "theguardian.com"
+    ]
+   ],
+   "afstand_onderwerp_m": 134
+  },
+  {
+   "nr": 10,
+   "titel": "Station London Bridge",
+   "focus": "geschiedenis",
+   "km": 7.28,
+   "lat": 51.505,
+   "lng": -0.086111,
+   "paras": [
+    "Op veertien december achttienhonderdzesendertig vertrok hier de allereerste trein. Daarmee is station London Bridge het alleroudste spoorwegstation van het hele centrum van Londen. Je loopt er nu praktisch tegenaan; het ligt op nog geen honderdnegentig meter hier vandaan.",
+    "In die allereerste dagen stelde het eigenlijk bitter weinig voor. Het diende simpelweg als eindpunt voor de London and Greenwich Railway, en bestond destijds uit niets meer dan het kille einde van een stenen viaduct, zonder ook maar één enkel stationsgebouw. Reizigers stonden gewoon in weer en wind. Maar de spoorwegen groeiden razendsnel, en daarmee ook de rivaliteit. In de vroege jaren fungeerde London Bridge in de praktijk zelfs als twee afzonderlijke stations pal naast elkaar, gebouwd voor concurrerende maatschappijen: de South Eastern Railway en de London, Brighton and South Coast Railway.",
+    "Pas later in de negentiende eeuw kwam er orde in de chaos door een ingrijpende verbouwing. Drie architecten sloegen daarvoor de handen ineen: Lewis Cubitt, John Rastrick en Henry Roberts. Zij gaven de plek een volwaardig gezicht.",
+    "De geschiedenis bleef zich laag over laag opstapelen. In negentienhonderd opende het ondergrondse metrostation, wat tegenwoordig de Northern Line is, en in oktober negentienhonderdnegenennegentig kwamen daar de perrons voor de Jubilee Line bij. Wie er nu naar binnen wandelt, ziet overigens een hypermodern knooppunt. Tussen tweeduizenddertien en tweeduizendachttien ging alles op de schop. De nieuwe centrale hal die toen verrees, is qua oppervlakte groter dan het complete voetbalveld van Wembley Stadium. Een gigantische sprong in de tijd, die ooit begon op een kaal stuk viaduct."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/10.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnSYIogPWkAzsPonK6kz24V0iyNRTSIpumIbZNKmxPaKkc0e5OGOegzWkIOrtWXF-nbm_1Il9YB-JaA9eM_Cud0bGCB7dZ2X6dakArXxRjBOga_7bH3HAgVBbxNZssR0lp4TdxxzH3GA==",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvgvnAv5z-Yp_hu5JkXV_d8pjWY_l5lzf7m8Aadlx33n8TuhFDdvAI6eUwh-dOW1q8VrqyvvjmIgMNvFqXqXqPmWxTptsEYeJDwLtCcVMXxMX6dhdWDtxoPsQeN7lwqfkouN-gRt2vB8lbX3UHtLhDUo2-SNaCPkSutg__q4HZYSFez7IqIwa3qxVITQ==",
+     "busandtrainuser.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHybtCXliIL54C6zh_sXftBgsH93CT8eicKB6TGlqC3gucLvwm-hOILHKdhdDhS69CAeQOK_WbI5_qnxefgMzn6MeRR2kMZeA04gB1G5lHLaqPFerb5HRgVyEQx46izAoatfdORhnKN-bLw9tLPPW6vw8Jk1Ew=",
+     "layersoflondon.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGVxJzsfGuOMceBexIz_wemcfUkoQH-jFkHKW4OHkSMT9XbDfG0RjymaMwIhT0LxEicbMMMX5b2IbyHhdGFsxj4Xb12X4hg_ZETFDwnDu3lxhGzn8nUPS10UTWYrmeywEdjouUazSw4Cw==",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGrxlUROnSoYrw_gT7Lh7VZVPCvPVrOIPRjVDQJAL-ALiC4T7Kx9nZgZebXwA00DkQ1bHP_caPhV3pYfn2axKdyaGh6gElf_B_iB6PqMOjyjqfuIN2nOHbDKYOimfdi7tQmeeofR5NBLWepbXeZd0nQ4vHhrnMbyQ_4cYgI3VlXjutKUfgf_l8raw==",
+     "kenwoodcommunications.co.uk"
+    ]
+   ],
+   "afstand_onderwerp_m": 186
+  },
+  {
+   "nr": 11,
+   "titel": "Tower Bridge",
+   "focus": "architectuur",
+   "km": 8.2,
+   "lat": 51.5055,
+   "lng": -0.0754,
+   "paras": [
+    "Onder de zolen van je schoenen ligt niet zomaar aarde of asfalt; er liggen eeuwen opgestapeld. Want wie door Londen loopt, stapt letterlijk door de tijd. Die spoorlijnen en moderne stations waar we het net over hadden, zijn eigenlijk pas het allerlaatste hoofdstuk van een enorm dik boek.",
+    "Het begon allemaal millennia geleden met een brede, getijdengevoelige rivier: de Theems. De Romeinen staken hem over en stichtten hier een nederzetting, Londinium, op een plek waar het water net smal genoeg was voor een brug en diep genoeg voor zeeschepen. Vanaf dat moment is de stad eigenlijk nooit meer opgehouden met groeien.",
+    "Het fascinerende aan deze grond is dat rampen de stad niet kapotmaakten, maar juist vormgaven. Denk aan de pestuitbraken, of de verwoestende Grote Brand in het midden van de zeventiende eeuw. Dit is echt gebeurd: een groot deel van de houten, middeleeuwse stad veranderde in een paar dagen tijd in as. Maar in plaats van op te geven, bouwden de Londenaren alles weer op — ditmaal in steen, met brede straten en majestueuze kerken. Londen werd het kloppende hart van een wereldrijk, en later een toevluchtsoord voor mensen uit alle hoeken van de aarde. Elke golf van bewoners liet een eigen stempel achter: van middeleeuwse straatnamen tot statige victoriaanse herenhuizen en hypermoderne torens. Terwijl je nu door de straten loopt, wandel je over de fundamenten van dat onmetelijke verleden. Een stad die zichzelf keer op keer opnieuw heeft uitgevonden, maar haar wortels nooit helemaal heeft losgelaten."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/11.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Tower_Bridge",
+     "wikipedia.org"
+    ]
+   ]
+  },
+  {
+   "nr": 12,
+   "titel": "St Katharine Docks",
+   "focus": "geschiedenis",
+   "km": 8.87,
+   "lat": 51.507,
+   "lng": -0.0713,
+   "paras": [
+    "Water en scheepvaart vormden eeuwenlang de levensader van het groeiende wereldrijk van Engeland. Maar de aanleg van nieuwe havens vroeg soms een enorme prijs van de stad. Vlak voor je, op slechts een meter of vijftig afstand, liggen de St Katharine Docks.",
+    "Dit is echt gebeurd: om deze dokken te kunnen bouwen, werd een complete middeleeuwse wijk met de grond gelijkgemaakt. Het middeleeuwse hospitaal St Katharine’s by the Tower, dat al in de twaalfde eeuw was gesticht door koningin Mathilde, werd in achttienhonderdzevenentwintig gesloopt. Maar dat niet alleen. Zo’n twaalfhonderdvijftig woningen gingen tegen de vlakte, waardoor ongeveer elfduizend driehonderd armere bewoners en havenarbeiders van de ene op de andere dag hun thuis verloren. De beroemde civiel ingenieur Thomas Telford ontwierp het complex — het was zijn enige grote project in Londen. Architect Philip Hardwick tekende de pakhuizen die pal aan de kade stonden, zodat schepen hun lading direct binnen konden lossen. Om het waterpeil zo’n één komma twee meter boven het getij van de Theems te houden, stonden er stoommachines van James Watt en Matthew Boulton te stampen.",
+    "Bij de feestelijke opening op vijfentwintig oktober achttienhonderdachtentwintig meerde het schip de Mary aan, met aan boord veertig veteranen die nog onder admiraal Nelson hadden gevochten tijdens de Slag bij Trafalgar. Uiteindelijk brachten zware Duitse bombardementen in de Tweede Wereldoorlog grote verwoestingen teweeg. Vrachtschepen werden te groot, en in negentienhonderdachtenzestig sloten de dokken definitief voor de commerciële vaart. Wat rest, is een verstilde haven vol geschiedenis, midden in de wereldstad."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/12.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHjmszQI4NXs4sID99NUzyqZLxrrK9lzQ9k2C6uccRCv0bSwU3bTyS63ZtTdbHpbtSQLDJzRD1elOJo_5yDEnNEnXpC5PzesGCenkSpt1scZQ1duyc=",
+     "rfsk.org.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGlmmhj-THXOvJx2-D5w2LwiIGmF_YQBn_1u4pNImrdOxpPTODfjZY9XQl3RUHvrz54C2UfOqWXPMEdXs5O1Sj2UA9u3fFfoe6TT4AfRw4FBa3P6O18jWinZQOzzaZ24g==",
+     "londonsdocks.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWHrkoYkImv_CCXW4eJsmVo0FXlSCXatoAiqgc_ly2wM2LQvsxljzZcggYM3V_uhjDl0pVXETaLfeh9CD9mOfzOIfApVyXPmYWIOfLmUEASNN0wRPU79J3y95_SA2SH5kcCm0ZOvEtz_UMyfYQz0jVdc9qBg==",
+     "british-history.ac.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEsZjToP8P4fCViKDpUyOpRUBEp00Sg8NaSbTJU86uJ1Va0eJf992euonx53z5f3t2XfOWDnGRpDh0mIoJkQM3y2KTrVeKZHEAMbi8MycNZ3joLR99pD6-fQvf73OhMgyCB_4z6gMZNf-e4Xph66w==",
+     "thehistoryoflondon.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8ye0ZnqRj0DkRWhnX-MNOZX0ZPyfRVZx-iL3bJ73hmtt-G_0sYGESycR5J0LfoDeVIdOxWKkUuk6-I8PmJvH0niz_z-t7RvDp60PA2OiftPhyEl7Wn5qK5d7KfxDUUCwXgd2SGAqrYH5vnCg2kV7eRqs=",
+     "alondoninheritance.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmTq8Yb_M2aoKi4qFIvfjThLlRjKYDhaTzs7_cxdrCRX5JHtHJqCoOMtOCGTh0hdmV2REjf4YxJwTw3QSQCAeGWmlRK_QBjteZO0cmFELxmpIUqZVUgKjBPFRu_VpmHyTyISgzniY4UeEAns9ygfwR1AV-_-zd0dGiJrbG8bXz6y3TIAI=",
+     "londonmuseum.org.uk"
+    ]
+   ]
+  },
+  {
+   "nr": 13,
+   "titel": "Tower of London",
+   "focus": "geschiedenis",
+   "km": 9.55,
+   "lat": 51.5081,
+   "lng": -0.0759,
+   "paras": [
+    "Stenen die eeuwen aan Engelse macht en angst in zich dragen, hier vlak aan hetzelfde water van de Theems. Je loopt er nu praktisch tegenaan; op zo’n negentig meter afstand verheft zich de Tower of London.",
+    "Als je hier voorbij wandelt, kijk je niet zomaar naar een oud kasteel, maar naar een heel gebouwencomplex dat met iedere bocht in de geschiedenis van gedaante veranderde. Ooit begon het als een onneembaar fort, bedoeld om de stad in bedwang te houden. Maar de vorsten zagen er al snel meer in: het werd een koninklijk paleis waar vorsten zetelden, en tegelijkertijd een zwaarbewaakt arsenaal vol wapentuig en een garnizoen voor de troepen. Zelfs het geld van het koninkrijk werd hier een tijdlang geslagen, toen het dienstdeed als de officiële munt.",
+    "Toch droomt iedereen bij deze naam natuurlijk van de donkere zijde van de geschiedenis. Want het complex werd berucht als staatsgevangenis. Wie hier werd opgesloten, verdween achter muren die dik genoeg waren om elk protest van de buitenwereld te smoren. Dit is echt gebeurd; talloze staatsgevaarlijke gevangenen brachten hier hun dagen in volslagen onzekerheid door.",
+    "Vandaag de dag is de dreiging geweken. Sinds negentienhonderdachtentachtig staat de Tower op de Werelderfgoedlijst van UNESCO. Het is nu een museum geworden, waar de deuren openstaan en de verhalen van koningen, wachters en gevangenen rustig worden doorgegeven aan iedereen die er langsloopt."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/13.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Tower_of_London_(gebouw)",
+     "wikipedia.org"
+    ]
+   ],
+   "afstand_onderwerp_m": 140
+  },
+  {
+   "nr": 14,
+   "titel": "Monument (Londen)",
+   "focus": "geschiedenis",
+   "km": 10.57,
+   "lat": 51.5101,
+   "lng": -0.085967,
+   "paras": [
+    "In de vroege ochtend van twee september zestienzesenzestig sloegen de vlammen plotseling uit de bakkerij van Thomas Farriner in Pudding Lane. Dit is echt gebeurd: de Grote Brand van Londen legde vervolgens een gigantisch deel van de stad in de as.",
+    "Hier vlakbij, op nog geen honderd meter afstand van waar je nu loopt, staat het bouwwerk dat deze ramp herdenkt: The Monument. Tussen zestieneenenzeventig en zestienzesseventig verrees deze massieve zuil, precies op de plek waar ooit de kerk van St Margaret, New Fish Street stond. Dat was de allereerste kerk die destijds door het vuur werd verwoest.",
+    "Het ontwerp kwam uit de handen van de beroemde architect Sir Christopher Wren en wetenschapper dokter Robert Hooke. En ze bedachten iets bijzonders met de afmetingen. De zuil is eenenzestig komma zes meter hoog, oftewel tweehonderdentwee voet. Dat is geen toeval; het is exact de afstand van deze plek naar de bakkerij van Thomas Farriner waar het allemaal begon.",
+    "Binnenin vind je een stenen wenteltrap van driehonderdelf treden. Die leidt naar een uitkijkplatform, bekroond met een urn vol koperen vlammen. Maar Hooke en Wren hadden nog een stiekem plan: ze ontwierpen de zuil oorspronkelijk ook als een reusachtige zenittelescoop, compleet met een ondergronds laboratorium. Alleen, nou ja... de wetenschappelijke proeven mislukten jammerlijk door de constante trillingen van het passerende straatverkeer.",
+    "Zo bleef het vooral een indrukwekkend herdenkingsteken. Een baken in steen, dat de herinnering aan die verwoestende vuurzee al eeuwenlang levend houdt in het hart van de stad."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/14.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGRKti8pFzQJqVAx2jYTcZ51xvjeBME0OMMioFLKyL19xFjmBwsPN58huOjMj_h7WMbqluHZCOH-OEGqi9aRqEWBzc1Kr0-LdYlSCxLU_z4qAwef-KcrqXih3ToF-NvYCwxu4AoPZGcXsPCkzAQPJ1yK-tK3r7f1DE=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGxOBpI1bMtuTFIIWg0cFKOCKdnP9pFzd7hgMumrktMehruLr6zQvPnKurtjplhleVxyiTECAxhK9hlP2YH5wb1-QOGwbIIcWwuvdaWCYnQ0V_IsjnI2L-G2A9mXc0sN8xb8EKWS40vTQNR3exCI00ur2BUm09ZxokiYR8Yvw==",
+     "historyhit.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF4vrCE_uuhm7vwmn7CJMjOXx9zUoP1jgAtrKzl5ZzaiU5LQv3pwGBQk9-Wp9p2lMhqN7eVPgnNZv4l9nkQ1h_YTXOOohjh2NmVd_qwS0ARRbmuE8g05Qo2YH23t1Cp77himkdi",
+     "lookup.london"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH4EnP7NdBY3CYMtPaSa5iWoQFbdrsGzba4t4xEy47DbLyfaFr4WVosvOhn0nS7Zz4JfTIKQ-J-Dd9YsqHGW2tJxdDCO6Kd8XUp9ZCjEQJ8vHIDJd3TcfD3TIY_dw==",
+     "themonument.org.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRDWxl273uo2HfahP84xI7peYmueA4fjgGpwcwL-HPmst5CgWksftx8WHTbbPTQ9STPaUaFU9xxLYvCEUJWUx_JHu1lXCIKDvcX6trQmrC6xLx_8CxBMAZUI1fUUIKI8EP1tEJeGfExbDkT_Cd-XeqIxE40ooy9vgzZXhuiUbzl6DGerVHyIpuk2vKkQ==",
+     "londonmuseum.org.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdclEOanI5XDkWSqP2WDat8t3rsDYiuZIZlQQSatwvdrGNT_XFSEWXKeE3bh6yVXftORcFqHcM9o6_miBiD83ERVBvmHDLb0ml-bj9MFTLcHqwHvtwtxKdQPGCPFjMCfHCoFKmpQrqMXVdwBEiA3RkhANU-7qNP2pC59aA-osrL8J1rsaL6xdo",
+     "london-now.co.uk"
+    ]
+   ]
+  },
+  {
+   "nr": 15,
+   "titel": "St Paul's Cathedral (Londen)",
+   "focus": "geschiedenis",
+   "km": 11.74,
+   "lat": 51.513611,
+   "lng": -0.098333,
+   "paras": [
+    "De naam Christopher Wren viel zojuist al, maar hier heeft hij zijn allergrootste meesterwerk nagelaten. We lopen er nu echt vlakbij, op nog geen vijftig meter afstand: St Paul's Cathedral, hoog op Ludgate Hill.",
+    "Al in het jaar zeshonderdvier werd op deze heuvel een eerste kerk gewijd aan de apostel Paulus. De geschiedenis die hier ligt opgestapeld is haast duizelingwekkend. In vijftienhonderdéén trouwde de Spaanse prinses Catharina van Aragon in de middeleeuwse kathedraal met de Engelse kroonprins Arthur. Maar dat oude, gotische bouwwerk ging in september zestienzesenzestig definitief in vlammen op tijdens de Grote Brand van Londen. Dat is echt gebeurd; het vuur liet van de oude kerk vrijwel niets heel.",
+    "Wren kreeg de monumentale opdracht om Londen een nieuw hart te geven. Tussen zestienvijfenzeventig en zeventientien verrees deze barokke kathedraal uit de as. Het werd een triomf van wederopbouw: vanaf de voltooiing bleef St Paul's tot negentientweeënzestig het allerhoogste gebouw van de stad.",
+    "Toen Christopher Wren in zeventiendrieëntwintig overleed, werd hij als eerste bijgezet in de crypte van zijn eigen creatie. Zijn grafschrift vat het treffend samen: wie zijn monument zoekt, moet simpelweg om zich heen kijken. En de geschiedenis bleef hier doordenderen. In negentienéénentachtig keken miljoenen mensen toe toen prins Charles en Diana Spencer hier door het schip liepen voor hun koninklijke huwelijk. Eeuwen van vorstelijke levens en wederopstanding, samengebracht onder één reusachtige koepel."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/15.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGDx_FdJilol3xAkFBr16o0uJQ5zI0CCiYDfnY4KnJabxCfM4tDzKbEQXGlCyFB3CoFfoSw71yn0b4OuoS6YPFpFDWmQKPZ_zU40XvTAOW0Zi5-P3WwW2GEs4D-Fg==",
+     "stpauls.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFYZ6e_G19YS-00xS7QzCMR4pXRW3FbJ6Os0kjA-kwL1Zo74JYf2sYeHEKzjF3JQayGs9OJyjwfVy7oV3xy2wG-1hYXFt25EOQuZrzILztLXJM6dvEWbOaezGXSMGqzdteUIFZKFWHM1IWcU3U5MLTc7aOHWyY=",
+     "london-tickets.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHqOlZBDydCLDo1VBeA9pTEP5BhBTLPeyNdY_bt6RYFAiXrnZZWetgsna4PEsDxHtY2FrvyPrutgCb3K8G4uEVEBYQCVqa9-r5GA8JdUyHgT6pUMWy6EiXS6CXvAiuoof44xnHQZCfid3ojvUsRQYuQ_Y8S",
+     "london-tickets.co.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXyN7FrlsJbIDJEu03sj--OU237XEjTq_aOyT68b8XwMOfOp1rPduScLArxnBXSyJdPdQxcZ0vdZ-YgjrO5394Xf-sQL7yig9FYeYgv9bZXarVxCpuZkouJGxEdxRUzdwguCbXEcGj6nt9KNOBDQ==",
+     "londonwithalocal.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHPp3mFoWNgILaAnZ5MLIyjjPFPqt9HdEjtezsHzIN35VX4ARUhJMzYOPXQ-QyRzq01GkPxWM-ZT7efu0dJanVPHTDA-XGe-StqMFAg8JilkQW-CixSwUc-TJuotu7gwM6OpovH4h36RJ90qitAru0Ajt6iuMHf-MSD80_ZrtaFiDiyNeYAtnt1CyohDrbBfSON",
+     "londonmuseum.org.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3L_C_wedd5X1c-Wsh8PHBiThLVFoQR3B3fCmOGVRn0l5opexWh8xNVEPPx-PWC5BJJghX_P8LeH8EkHHNeZ7HP5HW3QnqFXQyYxU4R6W9zjMf_IQqu6_MoYadAJ5pB0_Q8aGbg68I7w==",
+     "wmf.org"
+    ]
+   ]
+  },
+  {
+   "nr": 16,
+   "titel": "London Stock Exchange Group",
+   "focus": "geschiedenis",
+   "km": 11.87,
+   "lat": 51.515,
+   "lng": -0.099,
+   "paras": [
+    "Lawaai, geschreeuw en ongemanierd gedrag. In de zeventiende eeuw waren de aandelenhandelaren zó luidruchtig dat ze botweg werden weggestuurd uit het deftige koninklijke handelsgebouw, The Royal Exchange. Noodgedwongen weken ze uit naar de rokerige koffiehuizen van de City. En daar, tussen dampende koppen koffie in Jonathan’s Coffee House, begon de makelaar John Castaing in zestienachtennegentig met iets revolutionairs: hij publiceerde voor het eerst vaste prijzen voor aandelen en grondstoffen.",
+    "De handel professionaliseerde snel. Op drie maart achttienhonderdéén werd de beurs formeel opgericht met een betaald lidmaatschap en vaste regels om oplichters buiten de deur te houden — de allereerste gereguleerde aandelenbeurs ter wereld. Al ging het er blijkbaar nog steeds levendig aan toe; in het eerste officiële reglementenboek uit achttienhonderdtwaalf werd uitdrukkelijk verboden om op de handelsvloer vuurwerk af te steken of te voetballen. In negentientwintigkreeg het instituut een eigen wapenschild met het trotse Latijnse devies Dictum Meum Pactum: mijn woord is mijn erewoord. En die handelsgeest week voor bijna niets. Dit is echt gebeurd: tijdens de Tweede Wereldoorlog bleef de beurs ondanks de bombardementen vrijwel onafgebroken open. Pas na een directe inslag van een Duitse V-twee-raket in negentienvijfenveertig bleven de deuren gesloten, maar ook dat duurde slechts één enkele dag.",
+    "Je loopt er nu echt vlakbij, op zo’n honderddrieënzestig meter afstand. Sinds tweeduizendvier huist de London Stock Exchange Group hier aan Paternoster Square nummer tien, pal naast de kathedraal — een hypermodern financieel hart, ontstaan uit een stel weggestuurde handelaren in een koffiehuis."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/16.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE02Cu9Is2xJBSqHYOO5bLRyubu7XQ_D5Juq7GO8pceqG90CT2Fvm776AOnFhGkogy22mEo95WRpP6A047y6vMRDhWuwiJK5CIPe2xGoIpqAjvy09PuNDFHfAWDl5-khvs4j1bwTPTEIBqjsdewizeOo-c=",
+     "londonstockexchange.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHh72j4WVmxBlHBaUEBmqQX9DygExfM9mTzG3e0xPHBkIBcjna0_YBB0qKLsFdZl4DdsRz7nCylKa03GzPD8SM2kJrup5l_0nZD_ql0kjxPH1_Zr6UJYa-snGvxcaZC27IPF3K3o6taBuwBtaWS82tehNf3Mrli",
+     "insiderlondon.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrEQPkBrm_qLkLzzSLeZiybr7SL6rRARwQCbSDAoCQSLQjRpOH2FHFN2Gfhpd8xWPvxzszS0Id6qh-yz8ImkM7H4BqTnZTO3ge9M5NaChQ4vOjV1c_8QRsD_VxXsojLbuChQ5CfLdaedVvaXfpG76mKMuChVPZcWX2HtdAmcricPuR8JP25OWr3aJ_T82iLa4=",
+     "thefinanser.com"
+    ]
+   ],
+   "afstand_onderwerp_m": 163
+  },
+  {
+   "nr": 17,
+   "titel": "Blackfriars Theatre",
+   "focus": "geschiedenis",
+   "km": 12,
+   "lat": 51.512778,
+   "lng": -0.1025,
+   "paras": [
+    "Stel je een zaal voor waar de geur van kaarsvet en brandend kaarslicht in de lucht hangt, terwijl buiten de winterkou over de Theems trekt. Dit is de plek van het Blackfriars Theatre, vernoemd naar de zwarte pijen van de dominicanen die hier ooit hun klooster hadden.",
+    "En wat een geschiedenis heeft deze grond gezien. Dit is echt gebeurd: in dezelfde kloosterzaal vond ooit het officiële nietigverklaringstribunaal plaats rond het huwelijk van koning Hendrik de Achtste en Catharina van Aragon. Zo'n tachtig jaar later speelde het toneelgezelschap van William Shakespeare exact die dramatische koninklijke scheiding na, op precies dezelfde vierkante meters.",
+    "Al in vijftienzesenzeventig werd hier een eerste theater ingericht voor kinderacteurs, de Children of the Chapel Royal, dat tot vijftientenzesentachtig openbleef. Maar in vijftienzessennegentig kocht theaterondernemer James Burbage een deel van het oude kloostercomplex om er een ruime, overdekte schouwburg van te maken. Vanaf zestienhonderdacht werd het de vaste winterlocatie voor The King's Men, het illustere gezelschap waarin onder anderen Richard Burbage en Shakespeare zelf aandeelhouder waren. Heel anders dan de winderige openluchttheaters: hier zat het publiek binnen, met kunstmatige verlichting en sfeervolle live muziek tussen de bedrijven door.",
+    "Je loopt er nu echt vlakbij, op amper honderdtweeënvijftig meter van waar dit allemaal stond. Bij het uitbreken van de Engelse Burgeroorlog in zestientweeënveertig moesten de deuren noodgedwongen sluiten, en in zestienvijfenvijftig werd het gebouw definitief gesloopt. Wie er vandaag langsloopt, ziet het verleden nog altijd subtiel herdacht in het straatbeeld, in de veelzeggende naam Playhouse Yard."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/17.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFUp_jWHeHMw8T-cgqjUaKeiWB3GQy2Snbi6NWZK3qMOn4beTXk4THVcH73zzmYkCa7aNeTxCjmqJD2OZYIQpxeDUCLoailJm7XheZC60y308VqcWY1Mq5MatowRTyLCzGHI1Wpke0=",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCHCVfKDK99_6dn7ZrKmTUySZ4E2G4fba29X3yR8ISmL0tenQgjPGRBXGVjtYKG4It2TkwS1Qbl4wetM56deELxsAmDTjtSUHesR2Dr0H1JVTVgPjGqf4u458l1JAJ4K6PIAgzEowqiw6Oi9Z4_xWoSw01rUDcswetsFmopJqz-IWCgi_cav7tbxgWPg==",
+     "playshakespeare.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFurEXSlOUN3I5Saw8tRr0tJKT4ISNGljXeowi1ZnMyLVNM78CK5NPwhV-fvWIo3cPewIzudyuvqvIvuB-auZAfBIOW-N_UQ-zCINBBmZ6VsZjCurVi4zq_ZGweV3sOmSginUTb2th65_HLNeuRpSyi8XjugxAZi4o=",
+     "dmu.ac.uk"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHFXs6YSotSAqGDqiRdVNKL98nDDvUx_-3-8-kzZOnOySe0_c00axWsPqEtayLxHfNoOAgZCkqocomuyQCPsPMQVY3tYd7gmVBXF7w_roh1wrqRodzAuNt6ZdlgqMEfOqn95J4_CPxBdAuMOhMll_wr",
+     "britannica.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZBelghlc0Ls6vdBysSuvAtLRfFOw74bqj_QEmqj7fd1k0YW8eScrrV4xarqgfNcqsRjZGqCmNm15xbmI_bmIvPnG1eeNWoS3DTYuaaAc9-uVITNc0rqBDNDaMo5DvBTJ5Wicm_LxeZ0_7wv1WFPpsHLn_ZM3eJLPzNG7HStnKnjRkGQ==",
+     "exploring-london.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEplHm_JmlQceXZLPYyCRP8apZA0l9tMa6sGt5YAV-vdRbf0-3Uw9pHhFk8W3cdR5xt33wUZBvDDUbFEjWCu54iShumYaQCOdiERW97s_h0uXXb9lxJ6oPFdLHS7vau7tyhcnNlt9F4yzMjFkwwz1VIcQlbvFCOU4mYz2g=",
+     "nosweatshakespeare.com"
+    ]
+   ],
+   "afstand_onderwerp_m": 152
+  },
+  {
+   "nr": 18,
+   "titel": "Chancery Lane",
+   "focus": "geschiedenis",
+   "km": 12.87,
+   "lat": 51.516111,
+   "lng": -0.112222,
+   "paras": [
+    "Vóór elfhonderdeenenzestig hakten de ridders van de Tempeliersorde hier al een pad door het landschap. Zij hadden een verbinding nodig tussen hun oude tempel bij Holborn en hun nieuwe bezittingen zuidelijker, bij Fleet Street. Het werd simpelweg New Street genoemd, maar de geschiedenis gaf deze doorgang door de eeuwen heen heel andere gezichten.",
+    "Je loopt er nu echt vlakbij, op nog geen veertig meter afstand: Chancery Lane.",
+    "Rond twaalfhonderdachtenzeventig stond de straat bekend als Converslane. Die naam verwees naar het Domus Conversorum, een opvanghuis dat koning Hendrik de Derde had gesticht voor tot het christendom bekeerde Joden. Twee eeuwen later, in dertienhonderdzevenenzeventig, gaf koning Eduard de Derde dat hele complex een nieuwe bestemming. Hij wees het toe aan de bewaarder van de archieven van het Court of Chancery. En dát bracht uiteindelijk de naam die de straat nu nog draagt.",
+    "Sindsdien ademt deze plek het Engelse recht. Aan de westkant vind je Lincoln’s Inn, een van de vier historische Inns of Court waar generaties juristen zijn opgeleid en kantoor hielden. Even verderop staat het voormalige Public Record Office, waar eeuwenlang de belangrijkste staatsdocumenten lagen opgeslagen — tegenwoordig is dat The Maughan Library van King's College London.",
+    "En de traditie reikt verder dan perkament en wetboeken. Sinds zestienhonderdnegenentachtig zit hier Ede & Ravenscroft, de oudste kleermakerszaak van Londen, die nog altijd de ceremoniële mantels maakt. Duik je onder Chancery House, dan kom je zelfs in een heel andere wereld terecht : in de London Silver Vaults, een ondergronds doolhof vol gespecialiseerde zilverhandelaren. Eeuwen aan ambacht en macht, samengebald in één enkele straat."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/18.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE5qDCjOxltl6jXl6nyPxYuKwXxuOso2XDxGtJWkemHL9EXWll07YGLJJZVR02qdygAEaePBJF4-saWoGPzpSNQ_OpOjMq8DFnnjdb3P3OCbZvQ-QJ6fO-zPj-bhhdAhSGZ",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFH_XdpM01xRX3TjDPXBAG3_ZY8yMZapY0fJWxdXqh5hLWt5O7Xww-bnfKuoqXfqAbJaL75F05Ww6vIfytnKGO36z2RZUHlRsdmOsBtzg8owgv1cOmw4SaDF5Cz157uwdr32Bvqemk7QHqgj9tqqqZ7mGQfJ-Hig6rBHAM=",
+     "exploring-london.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEn5AiPXVEJzIZYTulPLK5GxTCBOriEyWjerAI3zSnEHgOLTNjkt_xiyvKjkLVjneGmALEo36BSNfs70cH9YAAL8KZju1C3_Xc7yxj6EPPgcZrP9o11GFfj",
+     "claxity.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE8gcWs35EWIlyXtlGEqCTeckARogYPfOkN0Po-oBoGfO-uw6kiwcGBOZpyZlpWizhEWWgjkAUbaHBgrmj-QpdM6ryRUCmm3nJpY42qx4MFZJZd2b8ZLXf4ra_o84GiV-NwvsLbRAI3n7po4qu65_XsNqPER00RSFYE2Jb_Znv5hwpNeSudToABwVUndWzpC3t3",
+     "newpaltz.edu"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEZyYcdshMeHp8vNSjz_q-0vebUnN0Gbs79loZUQX8MnwOfsiPpX7hFZrXVhLBRvWlvbBkbiCeqvhz-OI2HbwQ0m2qOTFAu_NaYVD6s4rlKy4J_c_eJNBJdI32i8_I0C5lk",
+     "wikipedia.org"
+    ]
+   ]
+  },
+  {
+   "nr": 19,
+   "titel": "Lincoln's Inn Fields",
+   "focus": "geschiedenis",
+   "km": 13.45,
+   "lat": 51.516667,
+   "lng": -0.116667,
+   "paras": [
+    "Lincoln’s Inn Fields is het grootste openbare plein van de stad, en het ontstond al in de jaren dertig van de zeventiende eeuw. Terwijl je hier loopt, sta je er nu werkelijk pal naast, op nog geen veertig meter afstand. Een groene oase, zou je denken, maar de geschiedenis die aan deze grasvelden kleeft, kent ook gitzwarte bladzijden.",
+    "Dit is echt gebeurd: in zestienhonderddrieëntachtig werd hier Lord William Russell publiekelijk geëxecuteerd. Men beschuldigde hem van betrokkenheid bij het Rye House Plot tegen koning Charles de Tweede. Het vonnis werd voltrokken midden op het plein, voor de ogen van de verzamelde menigte. Vandaag de dag herinnert niets meer aan dat geweld, en heerst er juist een serene, bijna tijdloze rust.",
+    "Rondom het plein vind je een buitengewone verzameling van het verleden. Kijk maar naar het Sir John Soane’s Museum. Dat werd in achttienhonderddrieëndertig zelfs bij wet opgericht om de wonderlijke collectie van de architect na zijn overlijden precies zo te bewaren. Even verderop huist de Hunterian Museum-collectie, die in zeventienhonderdnegenennegentig door de Britse staat werd aangekocht van de erfgenamen van de baanbrekende chirurg John Hunter.",
+    "En de eeuwen reiken hier nog veel dieper. Vlak bij het plein staat een scheefgetrokken gebouwtje: The Old Curiosity Shop, uit vijftienhonderdzevenenzestig. Dat wist op wonderbaarlijke wijze de Grote Brand van zestienhonderdzesenzestig te overleven . Iets zuidelijker herrees in zestienhonderdtweeëntachtig de door Christopher Wren herbouwde kerk St Clement Danes — nu het hart van de Royal Air Force — en openden in achttienhonderdtweeëntachtig, na acht jaar bouwen, de imposante Royal Courts of Justice door koningin Victoria. Eeuwen aan steen, recht en overleven, gewoon op ooghoogte om je heen."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/19.mp3",
+   "bronnen": []
+  },
+  {
+   "nr": 20,
+   "titel": "Covent Garden",
+   "focus": "mensen",
+   "km": 14.49,
+   "lat": 51.5118,
+   "lng": -0.1226,
+   "paras": [
+    "Londen is eigenlijk geen stad die ooit volgens een vooropgezet plan is ontworpen; het is een opeenstapeling van tijdlagen. Onder de straatstenen waar je nu over loopt, ligt een geschiedenis die meer dan tweeduizend jaar diep reikt. Het begon allemaal met de Romeinen, die hier aan de oever van de Theems een oversteekplaats vonden en een handelspost stichtten: Londinium.",
+    "Wat zo fascinerend is aan deze Britse hoofdstad, is dat die oude Romeinse omwalling nog altijd het ritme bepaalt. De beroemde City of London, het financiële hart, volgt grotendeels nog dezelfde grenzen als toen. Terwijl de koningen en het parlement eeuwen later hun machtscentrum verderop stichtten, in Westminster, bleef de oude stad het domein van de kooplieden, de gilden en de handel. Twee steden die langzaam naar elkaar toe groeiden en uiteindelijk versmolten tot deze gigantische metropool.",
+    "En door al die eeuwen heen heeft Londen zichzelf telkens opnieuw moeten uitvinden. Het overleefde verwoestende epidemieën, grote stadsbranden en zware bombardementen. Maar in plaats van alles weg te vagen en opnieuw te beginnen op een tekentafel, bouwden de Londenaren telkens voort op het puin en de plattegronden van hun voorgangers. Middeleeuwse steegjes lopen naadloos over in brede Victoriaanse boulevards. Je loopt hier letterlijk bovenop de resten van generaties voorouders.",
+    "Het maakt Groot-Londen tot een levend geschiedenisboek van heel Engeland. Waar je ook je voeten neerzet, onder de moderne stad klopt een oeroud hart dat nooit echt stil is blijven staan."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/20.mp3",
+   "bronnen": [
+    [
+     "https://nl.wikipedia.org/wiki/Covent_Garden_(Londen)",
+     "wikipedia.org"
+    ]
+   ]
+  },
+  {
+   "nr": 21,
+   "titel": "Leicester Square (metrostation)",
+   "focus": "geschiedenis",
+   "km": 15,
+   "lat": 51.511389,
+   "lng": -0.128056,
+   "paras": [
+    "Diepe gangen, verborgen onder de levendige straten waar kooplieden en koningen ooit hun sporen achterlieten. Want hier vlakbij, op amper honderd meter van waar je nu loopt, duikt de geschiedenis van Londen letterlijk de aarde in bij het metrostation Leicester Square.",
+    "Op vroege plannen heette deze halte nog Cranbourn Street, maar toen de deuren op vijftien december negentienhonderdzes openden voor de Piccadilly-lijn, droeg het meteen de naam van het beroemde plein erboven. Een half jaar later, op tweeëntwintig juni negentienhonderdzeven, sloot ook de huidige Northern-lijn aan. Architect Leslie Green ontwierp het oorspronkelijke gebouw met zijn kenmerkende, ossenbloedrode geglazuurde tegels. Als je goed kijkt naar de gevel aan Cranbourn Street, ontdek je tussen die stenen twee gekruiste cricketbats. Een subtiel eerbetoon aan John Wisden and Company, de uitgevers van de beroemde cricketalmanak, die daar destijds kantoor hielden.",
+    "In de vroege jaren dertig moderniseerde architect Charles Holden de boel met strakke façades van witte Portland-natuursteen. De roltrappen naar de Piccadilly-lijn waren met hun vierenvijftig meter lange tijd de langste van het hele Londense netwerk, tot station Angel dat record in negentien tweeënnegentig overnam. En die tegelranden op de perrons, in de vorm van filmstroken? Die kwamen er pas in de jaren tachtig, als knipoog naar de bioscopen boven de grond. Zo sluit de cirkel van onze wandeling zich. We zagen hoe middeleeuwse stegen en Victoriaanse boulevards naadloos in elkaar overvloeien, en hier, diep onder het plaveisel, gaat die traditie van telkens opnieuw bouwen gewoon door. Dank je wel voor het meereizen. Laat de hartslag van deze onvermoeibare stad nog maar heel lang met je meelopen."
+   ],
+   "audio": "/audio/routes/jubilee-walk-central-london-circular-walk/21.mp3",
+   "bronnen": [
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGchty61tZlhcwYZ5tRmjF0E27zx1662fR-JHAo9thmOi0ttttkDcQO4jFNU-5Huc9ktNVWCcFW7giE5L_8moStKPY-tf-dlelbNod8KtM-VAu72svhMnc5O0WbfV2iwjeEGhbz8WPSpHkL8gR7qJERVw==",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfgbKqMmuiJtBMH5Ctn6lOEd_pCTahHAPn7UqLd_OfFp3qvQKR6_MwdddijRNLzOHvEt8x8FVnI_emiukdz3wp47GD6Xbs9X_Ng6Z_zg_RJh7AITrcCxv3-bjJIAUBX-D-x29ubZ-8_XjCDJ5FfE6u32-C",
+     "wikipedia.org"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFKQjhI0csZ-kmhqZpRd_4pWz7xnHcLf47dz-WMFtilWWM7CXnsfuDjSnpbnCrNG8_ZJvl8wPpsQMlke5Rk3gdIMHHspdMPWf3UBUYyBs-xtYmAaDXRnHOA0v5ZA7obSBvEOSyT_sqM3qIJe9tq5grE4hGgJv7wyODeB7CU4ynKIct7uA==",
+     "academickids.com"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHWxKpoTFGMogJ0r-gA3PrpXf0vkNfvj07MzOXnaKhIMeCqz1v56qfAVJ8e3JcsobnyNAeJHqSXtgflBW2Xl2jVBEFDd9c9htp_azrACfG1hZcuOKxCQR7zsTxMZ19_OTiafIeYQkrsqa41StD_o9nI",
+     "streetsigns.co.il"
+    ],
+    [
+     "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEK7QU3_TVeOnpOUGrUlCMc-WYHp-rgcsF9GQjXtTrk_cDR3joitnqRx91lqf7J8Snhmm8hIxos5A1969KjVRDidgouYMz2hxH_nKv5Wdsz2WTBDmznl8UJR3dF4QH5YtJUMCTdUJpSfafJ6sBIPFODWr2sO5MEpA==",
+     "fandom.com"
+    ]
+   ]
+  }
+ ]
+}
