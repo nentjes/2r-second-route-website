@@ -498,297 +498,35 @@ HOME_20 = {
 }
 
 # ---------------------------------------------------------------------------
-# Privacybeleid — zelfde juridische tekst als worker/src/index.js PRIVACY_HTML,
-# vertaald. Bij inhoudelijke wijzigingen: hier én daar aanpassen.
+# Privacy-metadata. De inhoud staat uitsluitend in privacy.json (B-122).
 # ---------------------------------------------------------------------------
 PRIVACY = {'nl': {'eyebrow': 'Privacy',
         'title': 'Privacybeleid — 2R',
-        'updated': 'Laatst bijgewerkt: 31 augustus 2026',
-        'intro': '2R (werktitel: MapsInfo) is een reisgids-app die tijdens het rijden, fietsen of wandelen gesproken '
-                 'verhalen vertelt over de omgeving. Dit beleid legt uit welke gegevens de app gebruikt en waarom — '
-                 'haarfijn, zonder kleine lettertjes.',
-        'h_location': 'Locatie',
-        'location_items': ['Je GPS-locatie wordt gebruikt om te bepalen welke verhalen relevant zijn.',
-                           '<strong>Standaard wordt je locatie niet opgeslagen.</strong> De app gebruikt je actuele '
-                           'positie om de juiste plek te kiezen. Technische gebeurtenissen worden wel per sessie '
-                           'gelogd, maar standaard zonder GPS-positie.',
-                           '<strong>Coördinaten worden alleen bewaard als je uitgebreide logboeken zelf '
-                           'aanzet.</strong> Dan kunnen positie, koers en snelheid voor diagnose worden meegestuurd. '
-                           'Je kunt dit altijd weer uitzetten; locatiegegevens worden na 30 dagen verwijderd.'],
-        'h_stories': 'Verhalen &amp; spraak (verwerkers)',
-        'stories_items': ['Om verhalen te genereren sturen we plaatsnamen en korte context naar <strong>Google '
-                          '(Gemini API)</strong>.',
-                          'Om de tekst voor te lezen sturen we die tekst naar <strong>ElevenLabs</strong> voor '
-                          'spraaksynthese.',
-                          'Voor feitelijke informatie wordt rechtstreeks vanaf je toestel <strong>Wikipedia</strong> '
-                          'geraadpleegd, en voor routes <strong>OpenStreetMap / OSRM</strong> — deze verzoeken lopen '
-                          'niet via onze server.',
-                          'Gegenereerde verhalen en spraakfragmenten worden tijdelijk gecachet (hergebruikt voor '
-                          'andere gebruikers op dezelfde plek) om kosten en wachttijd te beperken.'],
-        'h_limits': 'Gebruikslimieten',
-        'limits_text': 'Om misbruik te voorkomen houden we per IP-adres een technische, tijdelijke teller bij '
-                       '(maximaal 48 uur bewaard). Dit is uitsluitend een aantal, nooit gekoppeld aan een profiel, '
-                       'naam of account, en wordt nooit gedeeld met derden.',
-        'h_data': 'Wat we wél bewaren',
-        'data_items': ['<strong>Technische gebeurtenissen.</strong> Welk verhaal is verteld, welke knop is gebruikt '
-                       'en welke fout optrad, met een willekeurig sessienummer per app-start. Deze gegevens worden '
-                       '90 dagen bewaard; standaard zonder GPS-positie.',
-                       '<strong>Gegenereerde verhalen.</strong> Verhaaltekst en de plek waarover het verhaal gaat '
-                       'worden 90 dagen bewaard. De positie van de reiziger wordt daar niet aan gekoppeld.',
-                       '<strong>Meldingen over onjuiste verhalen.</strong> Een melding wordt 365 dagen bewaard, '
-                       'zodat we haar kunnen onderzoeken en terugkoppelen.',
-                       '<strong>Aankopen.</strong> Product, transactienummer en een anoniem apparaatnummer worden '
-                       'wegens de fiscale bewaarplicht 7 jaar bewaard. Betaalgegevens blijven bij Apple.',
-                       '<strong>Jouw rechten.</strong> In de app kun je zien wat 2R bewaart, je gegevens meenemen, '
-                       'wissen en het bijhouden uitzetten. Minder gegevens heeft voorrang: er is geen centrale '
-                       'persoonssleutel waarmee wij je buiten je toestel kunnen opzoeken.'],
-        'h_accounts': 'Accounts',
-        'accounts_text': 'De app vereist geen account, inloggen of registratie. Testers kunnen vrijwillig een naam '
-                         'invullen; die naam reist mee met hun verhalen en aankopen zodat we de testfase kunnen '
-                         'volgen, en wordt op verzoek gewist.',
         'h_contact': 'Contact',
-        'contact_text': 'Vragen over dit beleid? Mail naar <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.'},
+        'contact_text': 'Vragen over dit beleid? Mail naar <a '
+                        'href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.'},
  'en': {'eyebrow': 'Privacy',
         'title': 'Privacy Policy — 2R',
-        'updated': 'Last updated: 31 August 2026',
-        'intro': '2R (working title: MapsInfo) is a travel-guide app that narrates the world around you while you '
-                 'drive, cycle or walk. This policy explains exactly what data the app uses and why — no fine print.',
-        'h_location': 'Location',
-        'location_items': ['Your GPS location is used to determine which stories are relevant.',
-                           '<strong>Your location is not stored by default.</strong> The app uses your current '
-                           'position to choose the right place. Technical events are logged per session, but without '
-                           'a GPS position by default.',
-                           '<strong>Coordinates are stored only when you enable extended logging yourself.</strong> '
-                           'Position, heading and speed may then be sent for diagnostics. You can switch this off at '
-                           'any time; location data is removed after 30 days.'],
-        'h_stories': 'Stories &amp; voice (processors)',
-        'stories_items': ['To generate stories we send place names and brief context to <strong>Google (Gemini '
-                          'API)</strong>.',
-                          'To narrate the text aloud, that text is sent to <strong>ElevenLabs</strong> for voice '
-                          'synthesis.',
-                          'Factual information is fetched directly from your device from <strong>Wikipedia</strong>, '
-                          'and route data from <strong>OpenStreetMap / OSRM</strong> — these requests never pass '
-                          'through our server.',
-                          'Generated stories and audio fragments are cached temporarily (reused for other users at '
-                          'the same location) to reduce cost and wait time.'],
-        'h_limits': 'Usage limits',
-        'limits_text': 'To prevent abuse we keep a technical, temporary counter per IP address (kept for a maximum '
-                       'of 48 hours). This is only a number, never linked to a profile, name or account, and never '
-                       'shared with third parties.',
-        'h_data': 'What we do keep',
-        'data_items': ['<strong>Technical events.</strong> Which story was told, which button was used and which '
-                       'error occurred, with a random session number for each app start. Kept for 90 days and '
-                       'without GPS by default.',
-                       '<strong>Generated stories.</strong> Story text and the place it describes are kept for 90 '
-                       'days. The traveller’s position is not linked to it.',
-                       '<strong>Reports of incorrect stories.</strong> A report is kept for 365 days so we can '
-                       'investigate and respond.',
-                       '<strong>Purchases.</strong> Product, transaction number and an anonymous device number are '
-                       'kept for 7 years to meet fiscal obligations. Payment details remain with Apple.',
-                       '<strong>Your rights.</strong> In the app you can see what 2R keeps, export it, erase it and '
-                       'stop tracking. Fewer data comes first: there is no central person key with which we can find '
-                       'you outside your device.'],
-        'h_accounts': 'Accounts',
-        'accounts_text': 'The app requires no account, login or registration. Testers may voluntarily enter a name; '
-                         'it travels with their stories and purchases so we can follow the test phase, and is '
-                         'deleted on request.',
         'h_contact': 'Contact',
-        'contact_text': 'Questions about this policy? Email <a href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.'},
+        'contact_text': 'Questions about this policy? Email <a '
+                        'href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.'},
  'de': {'eyebrow': 'Datenschutz',
         'title': 'Datenschutzerklärung — 2R',
-        'updated': 'Zuletzt aktualisiert: 31. August 2026',
-        'intro': '2R (Arbeitstitel: MapsInfo) ist eine Reiseführer-App, die während der Fahrt, beim Radfahren oder '
-                 'Wandern gesprochene Geschichten über die Umgebung erzählt. Diese Erklärung beschreibt genau, '
-                 'welche Daten die App verwendet und warum — ohne Kleingedrucktes.',
-        'h_location': 'Standort',
-        'location_items': ['Dein GPS-Standort wird verwendet, um zu bestimmen, welche Geschichten relevant sind.',
-                           '<strong>Dein Standort wird standardmäßig nicht gespeichert.</strong> Die App nutzt deine '
-                           'aktuelle Position, um den passenden Ort zu wählen. Technische Ereignisse werden pro '
-                           'Sitzung protokolliert, standardmäßig jedoch ohne GPS-Position.',
-                           '<strong>Koordinaten werden nur gespeichert, wenn du die erweiterten Protokolle selbst '
-                           'aktivierst.</strong> Dann können Position, Richtung und Geschwindigkeit zur Diagnose '
-                           'gesendet werden. Du kannst dies jederzeit ausschalten; Standortdaten werden nach 30 '
-                           'Tagen gelöscht.'],
-        'h_stories': 'Geschichten &amp; Sprache (Auftragsverarbeiter)',
-        'stories_items': ['Um Geschichten zu generieren, senden wir Ortsnamen und kurzen Kontext an <strong>Google '
-                          '(Gemini API)</strong>.',
-                          'Um den Text vorzulesen, wird dieser Text zur Sprachsynthese an '
-                          '<strong>ElevenLabs</strong> gesendet.',
-                          'Sachinformationen werden direkt von deinem Gerät aus bei <strong>Wikipedia</strong> '
-                          'abgerufen, Routendaten bei <strong>OpenStreetMap / OSRM</strong> — diese Anfragen laufen '
-                          'nicht über unseren Server.',
-                          'Generierte Geschichten und Audiofragmente werden vorübergehend zwischengespeichert '
-                          '(wiederverwendet für andere Nutzer am selben Ort), um Kosten und Wartezeit zu '
-                          'verringern.'],
-        'h_limits': 'Nutzungsgrenzen',
-        'limits_text': 'Um Missbrauch zu verhindern, führen wir pro IP-Adresse einen technischen, temporären Zähler '
-                       '(maximal 48 Stunden gespeichert). Das ist ausschließlich eine Zahl, nie mit einem Profil, '
-                       'Namen oder Konto verknüpft, und wird nie an Dritte weitergegeben.',
-        'h_data': 'Was wir wohl aufbewahren',
-        'data_items': ['<strong>Technische Ereignisse.</strong> Welche Geschichte erzählt, welche Taste benutzt und '
-                       'welcher Fehler auftrat, mit einer zufälligen Sitzungsnummer pro App-Start. Aufbewahrung 90 '
-                       'Tage, standardmäßig ohne GPS.',
-                       '<strong>Generierte Geschichten.</strong> Text und beschriebener Ort werden 90 Tage '
-                       'aufbewahrt. Die Position des Reisenden wird nicht damit verknüpft.',
-                       '<strong>Meldungen zu fehlerhaften Geschichten.</strong> Eine Meldung wird 365 Tage '
-                       'gespeichert, damit wir sie untersuchen und beantworten können.',
-                       '<strong>Käufe.</strong> Produkt, Transaktionsnummer und anonyme Gerätenummer werden wegen '
-                       'der steuerlichen Pflicht 7 Jahre aufbewahrt. Zahlungsdaten bleiben bei Apple.',
-                       '<strong>Deine Rechte.</strong> In der App kannst du gespeicherte Daten einsehen, '
-                       'exportieren, löschen und das Protokollieren ausschalten. Weniger Daten haben Vorrang: Es '
-                       'gibt keinen zentralen Personenschlüssel.'],
-        'h_accounts': 'Konten',
-        'accounts_text': 'Die App erfordert kein Konto, keine Anmeldung und keine Registrierung. Tester können '
-                         'freiwillig einen Namen angeben; er begleitet ihre Geschichten und Käufe, damit wir die '
-                         'Testphase nachvollziehen können, und wird auf Wunsch gelöscht.',
         'h_contact': 'Kontakt',
         'contact_text': 'Fragen zu dieser Erklärung? Schreib an <a '
                         'href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.'},
  'fr': {'eyebrow': 'Confidentialité',
         'title': 'Politique de confidentialité — 2R',
-        'updated': 'Dernière mise à jour : 31 août 2026',
-        'intro': '2R (nom de travail : MapsInfo) est une application de guide de voyage qui raconte à voix haute ce '
-                 'qui vous entoure pendant que vous conduisez, roulez à vélo ou marchez. Cette politique explique '
-                 "précisément quelles données l'application utilise, et pourquoi — sans petits caractères.",
-        'h_location': 'Localisation',
-        'location_items': ['Votre position GPS est utilisée pour déterminer quelles histoires sont pertinentes.',
-                           '<strong>Votre position n’est pas conservée par défaut.</strong> L’app utilise votre '
-                           'position actuelle pour choisir le bon lieu. Les événements techniques sont journalisés '
-                           'par session, mais sans position GPS par défaut.',
-                           '<strong>Les coordonnées ne sont conservées que si vous activez vous-même les journaux '
-                           'détaillés.</strong> Position, direction et vitesse peuvent alors être envoyées pour le '
-                           'diagnostic. Vous pouvez arrêter à tout moment ; les données de localisation sont '
-                           'supprimées après 30 jours.'],
-        'h_stories': 'Histoires et voix (sous-traitants)',
-        'stories_items': ['Pour générer les histoires, nous envoyons les noms de lieux et un court contexte à '
-                          '<strong>Google (API Gemini)</strong>.',
-                          'Pour lire le texte à voix haute, ce texte est envoyé à <strong>ElevenLabs</strong> pour '
-                          'la synthèse vocale.',
-                          'Les informations factuelles sont récupérées directement depuis votre appareil sur '
-                          "<strong>Wikipédia</strong>, et les données d'itinéraire via <strong>OpenStreetMap / "
-                          'OSRM</strong> — ces requêtes ne passent jamais par notre serveur.',
-                          'Les histoires générées et les fragments audio sont mis en cache temporairement '
-                          "(réutilisés pour d'autres utilisateurs au même endroit) afin de réduire les coûts et le "
-                          "temps d'attente."],
-        'h_limits': "Limites d'utilisation",
-        'limits_text': 'Pour prévenir les abus, nous conservons un compteur technique temporaire par adresse IP '
-                       "(conservé 48 heures maximum). Il ne s'agit que d'un nombre, jamais lié à un profil, un nom "
-                       'ou un compte, et jamais partagé avec des tiers.',
-        'h_data': 'Ce que nous conservons',
-        'data_items': ['<strong>Événements techniques.</strong> Récit lu, bouton utilisé et erreur rencontrée, avec '
-                       'un numéro de session aléatoire à chaque démarrage. Conservation 90 jours, sans GPS par '
-                       'défaut.',
-                       '<strong>Récits générés.</strong> Le texte et le lieu raconté sont conservés 90 jours. La '
-                       'position du voyageur n’y est pas associée.',
-                       '<strong>Signalements de récits inexacts.</strong> Un signalement est conservé 365 jours afin '
-                       'de pouvoir l’étudier et y répondre.',
-                       '<strong>Achats.</strong> Produit, numéro de transaction et identifiant anonyme de l’appareil '
-                       'sont conservés 7 ans pour l’obligation fiscale. Les données de paiement restent chez Apple.',
-                       '<strong>Vos droits.</strong> Dans l’app, vous pouvez voir, exporter et effacer les données '
-                       'conservées, et arrêter le suivi. La minimisation prime : aucune clé centrale ne permet de '
-                       'vous retrouver hors de votre appareil.'],
-        'h_accounts': 'Comptes',
-        'accounts_text': "L'application ne nécessite aucun compte, connexion ni inscription. Les testeurs peuvent "
-                         'saisir un nom volontairement ; il accompagne leurs histoires et achats afin de suivre la '
-                         'phase de test, et il est supprimé sur simple demande.',
         'h_contact': 'Contact',
         'contact_text': 'Des questions sur cette politique ? Écrivez à <a '
                         'href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.'},
  'es': {'eyebrow': 'Privacidad',
         'title': 'Política de privacidad — 2R',
-        'updated': 'Última actualización: 31 de agosto de 2026',
-        'intro': '2R (nombre provisional: MapsInfo) es una app de guía de viaje que narra en voz alta lo que te '
-                 'rodea mientras conduces, pedaleas o caminas. Esta política explica con precisión qué datos usa la '
-                 'app y por qué — sin letra pequeña.',
-        'h_location': 'Ubicación',
-        'location_items': ['Tu ubicación GPS se usa para determinar qué historias son relevantes.',
-                           '<strong>Tu ubicación no se guarda por defecto.</strong> La app usa tu posición actual '
-                           'para elegir el lugar correcto. Los eventos técnicos se registran por sesión, pero sin '
-                           'posición GPS por defecto.',
-                           '<strong>Las coordenadas solo se guardan si activas tú mismo los registros '
-                           'ampliados.</strong> Entonces pueden enviarse posición, rumbo y velocidad para '
-                           'diagnóstico. Puedes desactivarlo cuando quieras; los datos de ubicación se borran a los '
-                           '30 días.'],
-        'h_stories': 'Historias y voz (encargados del tratamiento)',
-        'stories_items': ['Para generar historias enviamos nombres de lugares y contexto breve a <strong>Google (API '
-                          'de Gemini)</strong>.',
-                          'Para narrar el texto en voz alta, ese texto se envía a <strong>ElevenLabs</strong> para '
-                          'la síntesis de voz.',
-                          'La información factual se obtiene directamente desde tu dispositivo en '
-                          '<strong>Wikipedia</strong>, y los datos de ruta desde <strong>OpenStreetMap / '
-                          'OSRM</strong> — estas solicitudes nunca pasan por nuestro servidor.',
-                          'Las historias generadas y los fragmentos de audio se almacenan en caché temporalmente '
-                          '(reutilizados para otros usuarios en el mismo lugar) para reducir el coste y el tiempo de '
-                          'espera.'],
-        'h_limits': 'Límites de uso',
-        'limits_text': 'Para prevenir abusos mantenemos un contador técnico y temporal por dirección IP (conservado '
-                       'un máximo de 48 horas). Es solo un número, nunca vinculado a un perfil, nombre o cuenta, y '
-                       'nunca se comparte con terceros.',
-        'h_data': 'Lo que sí guardamos',
-        'data_items': ['<strong>Eventos técnicos.</strong> Qué historia se contó, qué botón se usó y qué error '
-                       'ocurrió, con un número de sesión aleatorio en cada inicio. Se guardan 90 días y sin GPS por '
-                       'defecto.',
-                       '<strong>Historias generadas.</strong> El texto y el lugar narrado se guardan 90 días. La '
-                       'posición del viajero no se vincula a ellos.',
-                       '<strong>Avisos sobre historias incorrectas.</strong> Un aviso se guarda 365 días para poder '
-                       'investigarlo y responder.',
-                       '<strong>Compras.</strong> Producto, número de transacción y número anónimo del dispositivo '
-                       'se guardan 7 años por obligación fiscal. Los datos de pago siguen en Apple.',
-                       '<strong>Tus derechos.</strong> En la app puedes ver, exportar y borrar lo que 2R guarda y '
-                       'detener el registro. Menos datos es la prioridad: no existe una clave central para '
-                       'localizarte fuera del dispositivo.'],
-        'h_accounts': 'Cuentas',
-        'accounts_text': 'La app no requiere ninguna cuenta, inicio de sesión ni registro. Los testers pueden '
-                         'introducir un nombre de forma voluntaria; acompaña sus historias y compras para poder '
-                         'seguir la fase de pruebas, y se elimina si lo piden.',
         'h_contact': 'Contacto',
         'contact_text': '¿Preguntas sobre esta política? Escribe a <a '
                         'href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.'},
  'pt': {'eyebrow': 'Privacidade',
         'title': 'Política de Privacidade — 2R',
-        'updated': 'Última atualização: 31 de agosto de 2026',
-        'intro': 'O 2R (nome provisório: MapsInfo) é um app de guia de viagem que narra em voz alta o que está à sua '
-                 'volta enquanto você dirige, pedala ou caminha. Esta política explica exatamente quais dados o app '
-                 'usa e por quê — sem letras miúdas.',
-        'h_location': 'Localização',
-        'location_items': ['Sua localização GPS é usada para determinar quais histórias são relevantes.',
-                           '<strong>A sua localização não é guardada por padrão.</strong> O app usa a posição atual '
-                           'para escolher o lugar certo. Eventos técnicos são registados por sessão, mas sem posição '
-                           'GPS por padrão.',
-                           '<strong>As coordenadas só são guardadas se você ativar os registos detalhados.</strong> '
-                           'Posição, direção e velocidade podem então ser enviadas para diagnóstico. Pode desligar a '
-                           'qualquer momento; os dados de localização são apagados após 30 dias.'],
-        'h_stories': 'Histórias e voz (operadores)',
-        'stories_items': ['Para gerar histórias, enviamos nomes de locais e um breve contexto para o <strong>Google '
-                          '(API Gemini)</strong>.',
-                          'Para narrar o texto em voz alta, esse texto é enviado à <strong>ElevenLabs</strong> para '
-                          'síntese de voz.',
-                          'Informações factuais são obtidas diretamente do seu dispositivo na '
-                          '<strong>Wikipédia</strong>, e dados de rota via <strong>OpenStreetMap / OSRM</strong> — '
-                          'essas solicitações nunca passam pelo nosso servidor.',
-                          'Histórias geradas e fragmentos de áudio ficam em cache temporariamente (reutilizados para '
-                          'outros usuários no mesmo local) para reduzir custo e tempo de espera.'],
-        'h_limits': 'Limites de uso',
-        'limits_text': 'Para evitar abusos, mantemos um contador técnico e temporário por endereço IP (guardado por '
-                       'no máximo 48 horas). Isso é apenas um número, nunca vinculado a um perfil, nome ou conta, e '
-                       'nunca compartilhado com terceiros.',
-        'h_data': 'O que guardamos',
-        'data_items': ['<strong>Eventos técnicos.</strong> Qual história foi contada, qual botão foi usado e qual '
-                       'erro ocorreu, com um número de sessão aleatório a cada início. Guardados por 90 dias, sem '
-                       'GPS por padrão.',
-                       '<strong>Histórias geradas.</strong> O texto e o lugar narrado são guardados por 90 dias. A '
-                       'posição do viajante não é ligada à história.',
-                       '<strong>Comunicações de histórias incorretas.</strong> Uma comunicação é guardada por 365 '
-                       'dias para investigação e resposta.',
-                       '<strong>Compras.</strong> Produto, número de transação e número anónimo do aparelho são '
-                       'guardados por 7 anos por obrigação fiscal. Os dados de pagamento ficam com a Apple.',
-                       '<strong>Os seus direitos.</strong> No app pode ver, exportar e apagar o que o 2R guarda e '
-                       'interromper o registo. Menos dados tem prioridade: não existe uma chave central para o '
-                       'localizar fora do aparelho.'],
-        'h_accounts': 'Contas',
-        'accounts_text': 'O app não exige conta, login ou registro. Testadores podem informar um nome '
-                         'voluntariamente; ele acompanha suas histórias e compras para acompanharmos a fase de '
-                         'testes, e é apagado mediante pedido.',
         'h_contact': 'Contato',
         'contact_text': 'Dúvidas sobre esta política? Escreva para <a '
                         'href="mailto:nimco@nentjes.nl">nimco@nentjes.nl</a>.'}}
@@ -2143,249 +1881,29 @@ def build_roadmap(lang):
 '''
     return page_shell(lang, f"Roadmap — 2R (Second Route)", s['rm_lede'], 'roadmap', body, path='roadmap.html', immersive=True)
 
-# Nieuwe redactionele omlijsting voor de privacypagina (herbouw 29 aug). De
-# juridische kernteksten blijven in PRIVACY[lang]; hieronder alleen de rustige
-# samenvattingen, tabel en het slot. Faithful vertaald, geen nieuwe claims.
-# Eén actuele bron voor de privacy-uitleg; inhoudelijk afgestemd op docs/2R-DPIA-v1.md.
+# Visuele omlijsting van de privacytekst; geen beleidsclaims.
 PRIV_EXTRA = {'nl': {'h1': 'Jouw reis blijft van jou.',
-        'alt': 'Een telefoon ligt met het scherm naar beneden naast een reisboek en wegenkaart in een geparkeerde '
-               'auto.',
-        'lede': '2R gebruikt alleen wat nodig is om onderweg het juiste verhaal te vertellen. Geen account of '
-                'wachtwoord. Je locatie wordt standaard niet bewaard; technische gebeurtenissen worden per sessie '
-                'gelogd. Hier lees je precies wat er gebeurt.',
-        'promises': [('01',
-                      'Geen account nodig',
-                      'Je hoeft niet in te loggen. Alleen testers vullen vrijwillig een naam in.'),
-                     ('02',
-                      'Locatie standaard niet bewaard',
-                      'Coördinaten worden alleen opgeslagen als je uitgebreide logboeken zelf aanzet.'),
-                     ('03',
-                      'Zelf inzien en wissen',
-                      'In de app kun je je gegevens bekijken, meenemen, wissen en het bijhouden uitzetten.')],
-        'toc_label': 'Op deze pagina',
-        'table_head': ('Dienst', 'Waarvoor', 'Welke informatie'),
-        'table_rows': [('Google / Gemini API', 'verhaal genereren', 'plaatsnaam en korte context'),
-                       ('ElevenLabs', 'spraak maken', 'tekst van het verhaal'),
-                       ('Wikipedia', 'feitelijke informatie', 'rechtstreeks verzoek vanaf toestel'),
-                       ('OpenStreetMap / OSRM', 'kaart en route', 'rechtstreeks verzoek vanaf toestel')],
-        'note1': 'Je actuele locatie is nodig om het juiste verhaal te kiezen, maar wordt standaard niet opgeslagen.',
-        'note2': 'Uitgebreide logboeken zijn opt-in. Coördinaten daaruit worden na 30 dagen verwijderd.',
-        'close_h': 'Nog een vraag?',
-        'close_p': 'Privacy hoort begrijpelijk te zijn. Als iets niet duidelijk is, horen we het graag.',
-        'close_btn': 'Mail ons'},
+        'alt': 'Een telefoon ligt met het scherm naar beneden naast een reisboek en wegenkaart in een '
+               'geparkeerde auto.'},
  'en': {'h1': 'Your journey stays yours.',
-        'alt': 'A phone lies face down next to a travel journal and road map in a parked car.',
-        'lede': '2R uses only what it needs to tell the right story along the way. No account or password. Your '
-                'location is not stored by default; technical events are logged per session. Here is exactly what '
-                'happens.',
-        'promises': [('01', 'No account needed', 'No login is required. Only testers may voluntarily enter a name.'),
-                     ('02',
-                      'Location not stored by default',
-                      'Coordinates are stored only when you enable extended logging yourself.'),
-                     ('03',
-                      'View and erase it yourself',
-                      'In the app you can view, export and erase your data, and stop tracking.')],
-        'toc_label': 'On this page',
-        'table_head': ('Service', 'What for', 'What information'),
-        'table_rows': [('Google / Gemini API', 'generate a story', 'place name and brief context'),
-                       ('ElevenLabs', 'create speech', 'the story text'),
-                       ('Wikipedia', 'factual information', 'direct request from your device'),
-                       ('OpenStreetMap / OSRM', 'map and route', 'direct request from your device')],
-        'note1': 'Your current location is needed to choose the right story, but it is not stored by default.',
-        'note2': 'Extended logging is opt-in. Any coordinates in it are deleted after 30 days.',
-        'close_h': 'Still have a question?',
-        'close_p': "Privacy should be understandable. If anything is unclear, we'd like to hear it.",
-        'close_btn': 'Email us'},
+        'alt': 'A phone lies face down next to a travel journal and road map in a parked car.'},
  'de': {'h1': 'Deine Reise bleibt deine.',
-        'alt': 'Ein Telefon liegt mit dem Bildschirm nach unten neben einem Reisetagebuch und einer Straßenkarte in '
-               'einem geparkten Auto.',
-        'lede': '2R nutzt nur, was unterwegs für die passende Geschichte nötig ist. Kein Konto, kein Passwort. Dein '
-                'Standort wird standardmäßig nicht gespeichert; technische Ereignisse werden pro Sitzung '
-                'protokolliert. Hier steht genau, was geschieht.',
-        'promises': [('01',
-                      'Kein Konto nötig',
-                      'Keine Anmeldung erforderlich. Nur Tester können freiwillig einen Namen angeben.'),
-                     ('02',
-                      'Standort standardmäßig nicht gespeichert',
-                      'Koordinaten werden nur gespeichert, wenn du erweiterte Protokolle selbst aktivierst.'),
-                     ('03',
-                      'Selbst einsehen und löschen',
-                      'In der App kannst du deine Daten einsehen, exportieren, löschen und das Protokollieren '
-                      'stoppen.')],
-        'toc_label': 'Auf dieser Seite',
-        'table_head': ('Dienst', 'Wofür', 'Welche Informationen'),
-        'table_rows': [('Google / Gemini API', 'Geschichte erzeugen', 'Ortsname und kurzer Kontext'),
-                       ('ElevenLabs', 'Sprache erzeugen', 'Text der Geschichte'),
-                       ('Wikipedia', 'Sachinformationen', 'direkte Anfrage vom Gerät'),
-                       ('OpenStreetMap / OSRM', 'Karte und Route', 'direkte Anfrage vom Gerät')],
-        'note1': 'Dein aktueller Standort wird für die passende Geschichte gebraucht, aber standardmäßig nicht '
-                 'gespeichert.',
-        'note2': 'Erweiterte Protokolle sind Opt-in. Darin enthaltene Koordinaten werden nach 30 Tagen gelöscht.',
-        'close_h': 'Noch eine Frage?',
-        'close_p': 'Datenschutz sollte verständlich sein. Wenn etwas unklar ist, hören wir gern davon.',
-        'close_btn': 'Schreib uns'},
+        'alt': 'Ein Telefon liegt mit dem Bildschirm nach unten neben einem Reisetagebuch und einer '
+               'Straßenkarte in einem geparkten Auto.'},
  'fr': {'h1': 'Votre voyage reste le vôtre.',
-        'alt': "Un téléphone posé écran vers le bas à côté d'un carnet de voyage et d'une carte routière dans une "
-               'voiture garée.',
-        'lede': '2R n’utilise que ce qui est nécessaire pour raconter le bon récit. Aucun compte ni mot de passe. '
-                'Votre position n’est pas conservée par défaut ; les événements techniques sont journalisés par '
-                'session. Voici exactement ce qui se passe.',
-        'promises': [('01',
-                      'Aucun compte nécessaire',
-                      'Aucune connexion requise. Seuls les testeurs peuvent saisir volontairement un nom.'),
-                     ('02',
-                      'Position non conservée par défaut',
-                      'Les coordonnées ne sont stockées que si vous activez les journaux détaillés.'),
-                     ('03',
-                      'Consulter et effacer vous-même',
-                      'Dans l’app, vous pouvez consulter, exporter et effacer vos données, et arrêter le suivi.')],
-        'toc_label': 'Sur cette page',
-        'table_head': ('Service', 'Pour quoi', 'Quelles informations'),
-        'table_rows': [('Google / Gemini API', 'générer un récit', 'nom du lieu et bref contexte'),
-                       ('ElevenLabs', 'créer la voix', 'le texte du récit'),
-                       ('Wikipedia', 'informations factuelles', "requête directe depuis l'appareil"),
-                       ('OpenStreetMap / OSRM', 'carte et itinéraire', "requête directe depuis l'appareil")],
-        'note1': 'Votre position actuelle est nécessaire pour choisir le bon récit, mais elle n’est pas conservée '
-                 'par défaut.',
-        'note2': 'Les journaux détaillés sont optionnels. Leurs coordonnées sont supprimées après 30 jours.',
-        'close_h': 'Encore une question ?',
-        'close_p': "La confidentialité doit être compréhensible. Si quelque chose n'est pas clair, dites-le-nous.",
-        'close_btn': 'Écrivez-nous'},
+        'alt': "Un téléphone posé écran vers le bas à côté d'un carnet de voyage et d'une carte routière "
+               'dans une voiture garée.'},
  'es': {'h1': 'Tu viaje sigue siendo tuyo.',
-        'alt': 'Un teléfono boca abajo junto a un diario de viaje y un mapa de carreteras en un coche aparcado.',
-        'lede': '2R usa solo lo necesario para contar la historia adecuada. Sin cuenta ni contraseña. Tu ubicación '
-                'no se guarda por defecto; los eventos técnicos se registran por sesión. Aquí explicamos exactamente '
-                'qué ocurre.',
-        'promises': [('01',
-                      'Sin cuenta',
-                      'No hace falta iniciar sesión. Solo los testers pueden introducir un nombre voluntariamente.'),
-                     ('02',
-                      'Ubicación no guardada por defecto',
-                      'Las coordenadas solo se almacenan si activas los registros ampliados.'),
-                     ('03',
-                      'Consultar y borrar tú mismo',
-                      'En la app puedes ver, exportar y borrar tus datos y detener el registro.')],
-        'toc_label': 'En esta página',
-        'table_head': ('Servicio', 'Para qué', 'Qué información'),
-        'table_rows': [('Google / Gemini API', 'generar la historia', 'nombre del lugar y breve contexto'),
-                       ('ElevenLabs', 'crear la voz', 'el texto de la historia'),
-                       ('Wikipedia', 'información factual', 'solicitud directa desde el dispositivo'),
-                       ('OpenStreetMap / OSRM', 'mapa y ruta', 'solicitud directa desde el dispositivo')],
-        'note1': 'Tu ubicación actual es necesaria para elegir la historia correcta, pero no se guarda por defecto.',
-        'note2': 'Los registros ampliados son opcionales. Sus coordenadas se borran a los 30 días.',
-        'close_h': '¿Alguna otra pregunta?',
-        'close_p': 'La privacidad debe ser comprensible. Si algo no está claro, nos gustaría saberlo.',
-        'close_btn': 'Escríbenos'},
+        'alt': 'Un teléfono boca abajo junto a un diario de viaje y un mapa de carreteras en un coche '
+               'aparcado.'},
  'pt': {'h1': 'A sua viagem continua sua.',
-        'alt': 'Um telefone virado para baixo ao lado de um diário de viagem e de um mapa rodoviário num carro '
-               'estacionado.',
-        'lede': 'O 2R usa apenas o necessário para contar a história certa. Sem conta nem senha. A localização não é '
-                'guardada por padrão; eventos técnicos são registados por sessão. Aqui explicamos exatamente o que '
-                'acontece.',
-        'promises': [('01',
-                      'Sem conta necessária',
-                      'Não é preciso iniciar sessão. Só os testadores podem informar um nome voluntariamente.'),
-                     ('02',
-                      'Localização não guardada por padrão',
-                      'As coordenadas só são armazenadas se você ativar os registos detalhados.'),
-                     ('03',
-                      'Consultar e apagar você mesmo',
-                      'No app pode ver, exportar e apagar os seus dados e interromper o registo.')],
-        'toc_label': 'Nesta página',
-        'table_head': ('Serviço', 'Para quê', 'Que informação'),
-        'table_rows': [('Google / Gemini API', 'gerar a história', 'nome do lugar e breve contexto'),
-                       ('ElevenLabs', 'criar a voz', 'o texto da história'),
-                       ('Wikipedia', 'informação factual', 'pedido direto a partir do aparelho'),
-                       ('OpenStreetMap / OSRM', 'mapa e rota', 'pedido direto a partir do aparelho')],
-        'note1': 'A localização atual é necessária para escolher a história certa, mas não é guardada por padrão.',
-        'note2': 'Os registos detalhados são opcionais. As coordenadas são apagadas após 30 dias.',
-        'close_h': 'Ainda tem uma pergunta?',
-        'close_p': 'A privacidade deve ser compreensível. Se algo não estiver claro, queremos saber.',
-        'close_btn': 'Escreva-nos'}}
+        'alt': 'Um telefone virado para baixo ao lado de um diário de viagem e de um mapa rodoviário num '
+               'carro estacionado.'}}
 
 
 def build_privacy(lang):
-    p = PRIVACY[lang]
-    pe = PRIV_EXTRA[lang]
-    location_lis = '\n'.join(f'<li>{item}</li>' for item in p['location_items'])
-    data_lis = '\n'.join(f'<li>{item}</li>' for item in p['data_items'])
-    promises = ''.join(
-        f'<div class="priv-promise"><span class="priv-pnum">{n}</span><div class="priv-pbody"><h3>{t}</h3><p>{d}</p></div></div>'
-        for n, t, d in pe['promises'])
-    toc_items = [('loc', p['h_location']), ('verhalen', p['h_stories']), ('limieten', p['h_limits']),
-                 ('bewaard', p['h_data']), ('accounts', p['h_accounts']), ('contact', p['h_contact'])]
-    toc = ''.join(f'<li><a href="#{aid}">{lbl}</a></li>' for aid, lbl in toc_items)
-    th = pe['table_head']
-    rows = ''.join(
-        f'<tr><th scope="row">{s}</th><td data-label="{th[1]}">{w}</td><td data-label="{th[2]}">{i}</td></tr>'
-        for s, w, i in pe['table_rows'])
-    caching = p['stories_items'][3] if len(p['stories_items']) > 3 else ''
-    body = f'''  <section class="priv-hero">
-    <img class="priv-hero-img" src="/images/2r-privacy-rust-v1.webp" alt="{pe['alt']}" width="1672" height="941" fetchpriority="high">
-    <div class="priv-hero-shade" aria-hidden="true"></div>
-    <div class="priv-hero-content">
-      <p class="eyebrow on-photo">{p['eyebrow']}</p>
-      <h1>{pe['h1']}</h1>
-      <p class="priv-hero-lede">{pe['lede']}</p>
-      <p class="priv-updated">{p['updated']}</p>
-    </div>
-  </section>
-
-  <section class="priv-promises"><div class="wrap">{promises}</div></section>
-
-  <section class="priv-body"><div class="wrap priv-grid">
-    <nav class="priv-toc" aria-label="{pe['toc_label']}">
-      <p class="priv-toc-label">{pe['toc_label']}</p>
-      <ul>{toc}</ul>
-    </nav>
-    <div class="priv-text">
-      <p class="priv-intro">{p['intro']}</p>
-
-      <section id="loc" class="priv-sec">
-        <h2>{p['h_location']}</h2>
-        <p class="priv-fieldnote">{pe['note1']}</p>
-        <p class="priv-fieldnote">{pe['note2']}</p>
-        <ul>{location_lis}</ul>
-      </section>
-
-      <section id="verhalen" class="priv-sec">
-        <h2>{p['h_stories']}</h2>
-        <table class="priv-table">
-          <thead><tr><th scope="col">{th[0]}</th><th scope="col">{th[1]}</th><th scope="col">{th[2]}</th></tr></thead>
-          <tbody>{rows}</tbody>
-        </table>
-        <p class="priv-cache">{caching}</p>
-      </section>
-
-      <section id="limieten" class="priv-sec">
-        <h2>{p['h_limits']}</h2>
-        <p>{p['limits_text']}</p>
-      </section>
-
-      <section id="bewaard" class="priv-sec">
-        <h2>{p['h_data']}</h2>
-        <ul>{data_lis}</ul>
-      </section>
-
-      <section id="accounts" class="priv-sec">
-        <h2>{p['h_accounts']}</h2>
-        <p>{p['accounts_text']}</p>
-      </section>
-
-      <section id="contact" class="priv-sec">
-        <h2>{p['h_contact']}</h2>
-        <p>{p['contact_text']}</p>
-      </section>
-    </div>
-  </div></section>
-
-  <section class="priv-close"><div class="wrap">
-    <h2>{pe['close_h']}</h2>
-    <p>{pe['close_p']}</p>
-    <a class="btn-primary" href="mailto:nimco@nentjes.nl">{pe['close_btn']}</a>
-  </div></section>
-'''
-    return page_shell(lang, p['title'], pe['lede'][:150], 'privacy', body, path='privacy.html', immersive=True)
+    from privacy_policy import load_policy, render_policy
+    return render_policy(lang, load_policy()[lang], PRIVACY[lang], PRIV_EXTRA[lang], page_shell)
 
 # --- Live verhalen uit de app (goedgekeurd op de besloten leespagina) ------
 # Zoekbaar en met kaart, zodat het archief bruikbaar blijft als het groeit.
@@ -3425,4 +2943,14 @@ def build_site():
 
 
 if __name__ == "__main__":
-    build_site()
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--privacy-only', action='store_true',
+                        help='Bouw alleen de zes privacypagina’s; behoud alle andere publieke bestanden.')
+    args = parser.parse_args()
+    if args.privacy_only:
+        for lang in LANGS:
+            write(f'{lang}/privacy.html', build_privacy(lang))
+        print(f'Privacy bijgewerkt in {len(LANGS)} talen; overige bestanden behouden.')
+    else:
+        build_site()
