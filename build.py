@@ -2936,23 +2936,26 @@ PARTNER_TXT = {
 
 # Route- en begaanbaarheidsdata worden uitsluitend uit Claude's datalaag gelezen.
 # Deze generator schrijft routes-content/ en public/routes-data/ nooit terug.
-with open(os.path.join(OUT, 'routes-data', 'index.json'), encoding='utf-8') as _f:
-    ROUTE_INDEX = json.load(_f)
-ROUTE_ITEMS = ROUTE_INDEX['routeboeken']
-ROUTES = {}
-for _meta in ROUTE_ITEMS:
-    _slug = _meta['slug']
-    with open(os.path.join(ROOT, 'routes-content', f'{_slug}.json'), encoding='utf-8') as _f:
-        _route = json.load(_f)
-    assert _route['slug'] == _slug
-    assert _route['hoofdstukken_n'] == len(_route['hoofdstukken']) == _meta['hoofdstukken']
-    assert abs(float(_route['lengte_km']) - float(_meta['lengte_km'])) < 0.11
-    assert _meta.get('begaanbaarheid'), f'Begaanbaarheid ontbreekt voor {_slug}'
-    _route['_index'] = _meta
-    ROUTES[_slug] = _route
+def load_routes():
+    global ROUTE_INDEX, ROUTE_ITEMS, ROUTES, ROUTE_COUNT, PROVINCE_COUNT
+    with open(os.path.join(OUT, 'routes-data', 'index.json'), encoding='utf-8') as _f:
+        ROUTE_INDEX = json.load(_f)
+    ROUTE_ITEMS = ROUTE_INDEX['routeboeken']
+    ROUTES = {}
+    for _meta in ROUTE_ITEMS:
+        _slug = _meta['slug']
+        with open(os.path.join(ROOT, 'routes-content', f'{_slug}.json'), encoding='utf-8') as _f:
+            _route = json.load(_f)
+        assert _route['slug'] == _slug
+        assert _route['hoofdstukken_n'] == len(_route['hoofdstukken']) == _meta['hoofdstukken']
+        assert abs(float(_route['lengte_km']) - float(_meta['lengte_km'])) < 0.11
+        assert _meta.get('begaanbaarheid'), f'Begaanbaarheid ontbreekt voor {_slug}'
+        _route['_index'] = _meta
+        ROUTES[_slug] = _route
 
-ROUTE_COUNT = len(ROUTE_ITEMS)
-PROVINCE_COUNT = len({_r['provincie'] for _r in ROUTE_ITEMS})
+    ROUTE_COUNT = len(ROUTE_ITEMS)
+    PROVINCE_COUNT = len({_r['provincie'] for _r in ROUTE_ITEMS})
+
 EDITORIAL_FACTS_CHECKED = 763  # Door Claude aangeleverd, 31 augustus 2026.
 EDITORIAL_FACTS_REMOVED = 40   # Door Claude aangeleverd, 31 augustus 2026.
 HOME_ROUTE_SLUG = 'drakensteyn'
@@ -3039,8 +3042,6 @@ def partner_facts(lang):
             (str(meta['hoofdstukken']), ROUTES_TXT[lang]['hoofdstukken']),
             ('100%', checked), ('1', thread)]
 
-for _lang in LANGS:
-    PARTNER_TXT[_lang]['facts'] = partner_facts(_lang)
 
 
 ROUTES_HERO_ALT = {
@@ -3387,33 +3388,41 @@ def write(path, content):
     with open(full, 'w', encoding='utf-8') as f:
         f.write(content)
 
-for lang in LANGS:
-    write(f'{lang}/index.html', build_home(lang))
-    write(f'{lang}/roadmap.html', build_roadmap(lang))
-    write(f'{lang}/zo-werkt-het.html', build_howto(lang))
-    write(f'{lang}/privacy.html', build_privacy(lang))
-    write(f'{lang}/stories/index.html', build_stories_index(lang))
-    write(f'{lang}/routes/index.html', build_routes_index(lang))
-    write(f'{lang}/partners/index.html', build_partners(lang))
-    write(f'{lang}/kwaliteit/index.html', build_quality(lang))
-    for _r in ROUTES.values():
-        write(f'{lang}/routes/{_r["slug"]}/index.html', build_route_page(lang, _r))
-    for st in STORIES:
-        write(f'{lang}/stories/{st["slug"]}.html', build_story_detail(lang, st))
-    for i in range(len(CITY_SLUGS)):
-        write(f'{lang}/stad/{CITY_SLUGS[i]}.html', build_city_story(lang, i))
+def build_site():
+    load_routes()
+    for _lang in LANGS:
+        PARTNER_TXT[_lang]['facts'] = partner_facts(_lang)
+    for lang in LANGS:
+        write(f'{lang}/index.html', build_home(lang))
+        write(f'{lang}/roadmap.html', build_roadmap(lang))
+        write(f'{lang}/zo-werkt-het.html', build_howto(lang))
+        write(f'{lang}/privacy.html', build_privacy(lang))
+        write(f'{lang}/stories/index.html', build_stories_index(lang))
+        write(f'{lang}/routes/index.html', build_routes_index(lang))
+        write(f'{lang}/partners/index.html', build_partners(lang))
+        write(f'{lang}/kwaliteit/index.html', build_quality(lang))
+        for _r in ROUTES.values():
+            write(f'{lang}/routes/{_r["slug"]}/index.html', build_route_page(lang, _r))
+        for st in STORIES:
+            write(f'{lang}/stories/{st["slug"]}.html', build_story_detail(lang, st))
+        for i in range(len(CITY_SLUGS)):
+            write(f'{lang}/stad/{CITY_SLUGS[i]}.html', build_city_story(lang, i))
 
-# Sitemap + robots: alle publieke pagina's in zes talen
-_paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/', 'partners/', 'kwaliteit/']
-_paden += [f'routes/{sl}/' for sl in ROUTES]
-_paden += [f'stories/{st["slug"]}.html' for st in STORIES]
-_paden += [f'stad/{sl}.html' for sl in CITY_SLUGS]
-_urls = [f'{BASE_URL}/{l}/{p}' for p in _paden for l in LANGS]
-write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n'
-      '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-      + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in _urls)
-      + '</urlset>\n')
-write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n')
+    # Sitemap + robots: alle publieke pagina's in zes talen
+    _paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/', 'partners/', 'kwaliteit/']
+    _paden += [f'routes/{sl}/' for sl in ROUTES]
+    _paden += [f'stories/{st["slug"]}.html' for st in STORIES]
+    _paden += [f'stad/{sl}.html' for sl in CITY_SLUGS]
+    _urls = [f'{BASE_URL}/{l}/{p}' for p in _paden for l in LANGS]
+    write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n'
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+          + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in _urls)
+          + '</urlset>\n')
+    write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n')
 
-PAGES_PER_LANG = 8 + len(ROUTES) + len(STORIES) + len(CITY_SLUGS)
-print(f"Klaar: {len(LANGS)} talen x {PAGES_PER_LANG} pagina\x27s = {len(LANGS) * PAGES_PER_LANG} bestanden")
+    PAGES_PER_LANG = 8 + len(ROUTES) + len(STORIES) + len(CITY_SLUGS)
+    print(f"Klaar: {len(LANGS)} talen x {PAGES_PER_LANG} pagina\x27s = {len(LANGS) * PAGES_PER_LANG} bestanden")
+
+
+if __name__ == "__main__":
+    build_site()

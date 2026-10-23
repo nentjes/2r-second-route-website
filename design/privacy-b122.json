@@ -1,0 +1,68 @@
+{
+  "nl": {
+    "heading": "Wat 2R van je gebruikt, en hoe lang.",
+    "draft": "Concept — wacht op vrijgave door Roel",
+    "paragraphs": [
+      "2R gebruikt je locatie om te vertellen over wat je passeert. Je positie gaat daarvoor naar onze server en wordt daar hoogstens {locatie} dagen bewaard, om jouw eigen ervaring te verbeteren en fouten te herstellen. Daarna wordt hij automatisch gewist.",
+      "Stel je 2R een vraag met je stem, dan gaat de opname naar onze server om er tekst van te maken. De opname bewaren we niet; de tekst van je vraag hoogstens {vraag_tekst} dagen.",
+      "We bouwen geen profiel van je op, verkopen niets door en delen je gegevens niet met anderen. De bedrijven die onze verhalen en stemmen maken (Google, OpenAI) en onze server (Cloudflare) werken in onze opdracht.",
+      "Tips van partners onderweg staan uit, tenzij je ze zelf aanzet in de instellingen.",
+      "Er is geen account, geen wachtwoord en geen e-mailadres. Onder het tandwiel, bij \"Wat 2R van jou bewaart\", zie je wat er van jouw toestel bekend is, kun je een uitdraai maken en alles wissen. Wie als tester meedoet, wordt volledig gevolgd; dat staat er dan bij."
+    ]
+  },
+  "en": {
+    "heading": "What 2R uses, and for how long.",
+    "draft": "Draft — awaiting Roel’s approval",
+    "paragraphs": [
+      "2R uses your location to tell you about what you pass. Your position is sent to our server for that purpose and kept there for at most {locatie} days, to improve your own experience and to fix mistakes. After that it is deleted automatically.",
+      "If you ask 2R a question with your voice, the recording is sent to our server to turn it into text. We do not keep the recording; the text of your question is kept for at most {vraag_tekst} days.",
+      "We do not build a profile of you, we do not sell anything on, and we do not share your data with others. The companies that produce our stories and voices (Google, OpenAI) and our server (Cloudflare) work on our behalf.",
+      "Tips from partners along the way are off unless you switch them on in the settings.",
+      "There is no account, no password and no e-mail address. Under the gear icon, at \"What 2R keeps about you\", you can see what is known from your device, export it and delete everything. Testers are fully logged; that is stated when you join."
+    ]
+  },
+  "de": {
+    "heading": "Welche Daten 2R von dir verwendet und wie lange.",
+    "draft": "Entwurf — wartet auf Roels Freigabe",
+    "paragraphs": [
+      "2R nutzt deinen Standort, um dir von den Orten zu erzählen, an denen du vorbeikommst. Deine Position wird dafür an unseren Server gesendet und dort höchstens {locatie} Tage gespeichert, um dein eigenes Erlebnis zu verbessern und Fehler zu beheben. Danach wird sie automatisch gelöscht.",
+      "Wenn du 2R eine Frage per Sprache stellst, wird die Aufnahme an unseren Server gesendet, um sie in Text umzuwandeln. Wir speichern die Aufnahme nicht; der Text deiner Frage wird höchstens {vraag_tekst} Tage aufbewahrt.",
+      "Wir erstellen kein Profil von dir, verkaufen keine Daten weiter und geben deine Daten nicht an andere weiter. Die Unternehmen, die unsere Geschichten und Stimmen erzeugen (Google, OpenAI), und unser Serveranbieter (Cloudflare) arbeiten in unserem Auftrag.",
+      "Tipps von Partnern unterwegs sind ausgeschaltet, es sei denn, du aktivierst sie selbst in den Einstellungen.",
+      "Es gibt kein Konto, kein Passwort und keine E-Mail-Adresse. Unter dem Zahnradsymbol bei „Was 2R über dich speichert“ kannst du sehen, welche Daten von deinem Gerät bekannt sind, sie exportieren und alles löschen. Bei Testern werden alle Aktivitäten protokolliert; darauf wird hingewiesen."
+    ]
+  },
+  "fr": {
+    "heading": "Les données que 2R utilise et leur durée de conservation.",
+    "draft": "Projet — en attente de l’accord de Roel",
+    "paragraphs": [
+      "2R utilise votre position pour vous raconter ce que vous croisez. Votre position est envoyée à notre serveur à cette fin et y est conservée pendant {locatie} jours au maximum, pour améliorer votre propre expérience et corriger les erreurs. Elle est ensuite supprimée automatiquement.",
+      "Si vous posez une question à 2R à voix haute, l’enregistrement est envoyé à notre serveur pour être transcrit en texte. Nous ne conservons pas l’enregistrement ; le texte de votre question est conservé pendant {vraag_tekst} jours au maximum.",
+      "Nous ne créons pas de profil vous concernant, ne revendons aucune donnée et ne partageons pas vos données avec d’autres. Les entreprises qui produisent nos récits et nos voix (Google, OpenAI) et notre hébergeur (Cloudflare) travaillent pour notre compte.",
+      "Les conseils de partenaires en chemin sont désactivés, sauf si vous les activez vous-même dans les paramètres.",
+      "Il n’y a ni compte, ni mot de passe, ni adresse e-mail. Sous l’icône en forme d’engrenage, dans « Ce que 2R conserve à votre sujet », vous pouvez consulter les données connues de votre appareil, les exporter et tout supprimer. Toutes les activités des testeurs sont enregistrées ; cela leur est indiqué."
+    ]
+  },
+  "es": {
+    "heading": "Qué datos utiliza 2R y durante cuánto tiempo.",
+    "draft": "Borrador — pendiente de la aprobación de Roel",
+    "paragraphs": [
+      "2R utiliza tu ubicación para contarte historias sobre los lugares por los que pasas. Tu posición se envía a nuestro servidor con ese fin y se conserva allí durante un máximo de {locatie} días, para mejorar tu propia experiencia y corregir errores. Después se elimina automáticamente.",
+      "Si haces una pregunta a 2R con tu voz, la grabación se envía a nuestro servidor para convertirla en texto. No conservamos la grabación; el texto de tu pregunta se conserva durante un máximo de {vraag_tekst} días.",
+      "No creamos un perfil sobre ti, no vendemos tus datos ni los compartimos con otros. Las empresas que producen nuestras historias y voces (Google, OpenAI) y nuestro proveedor de alojamiento (Cloudflare) trabajan por encargo nuestro.",
+      "Las recomendaciones de socios durante el recorrido están desactivadas, salvo que las actives tú en los ajustes.",
+      "No hay cuenta, contraseña ni dirección de correo electrónico. Bajo el icono del engranaje, en « Qué guarda 2R sobre ti », puedes consultar los datos conocidos de tu dispositivo, exportarlos y borrarlo todo. Se registran todas las actividades de quienes participan como probadores; se les informa de ello."
+    ]
+  },
+  "pt": {
+    "heading": "Que dados o 2R utiliza e durante quanto tempo.",
+    "draft": "Rascunho — aguarda aprovação de Roel",
+    "paragraphs": [
+      "O 2R utiliza a sua localização para contar histórias sobre os lugares por onde passa. A sua posição é enviada para o nosso servidor para esse fim e guardada durante, no máximo, {locatie} dias, para melhorar a sua própria experiência e corrigir erros. Depois é apagada automaticamente.",
+      "Se fizer uma pergunta ao 2R com a sua voz, a gravação é enviada para o nosso servidor para ser convertida em texto. Não guardamos a gravação; o texto da sua pergunta é guardado durante, no máximo, {vraag_tekst} dias.",
+      "Não criamos um perfil sobre si, não vendemos os seus dados nem os partilhamos com outros. As empresas que produzem as nossas histórias e vozes (Google, OpenAI) e o nosso fornecedor de alojamento (Cloudflare) trabalham por nossa conta.",
+      "As sugestões de parceiros durante o percurso estão desativadas, a menos que as ative nas definições.",
+      "Não há conta, palavra-passe nem endereço de e-mail. No ícone da engrenagem, em « O que o 2R guarda sobre si », pode consultar os dados conhecidos do seu dispositivo, exportá-los e apagar tudo. Todas as atividades de quem participa como testador são registadas; isso é indicado aos participantes."
+    ]
+  }
+}
