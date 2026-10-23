@@ -55,3 +55,14 @@ identiek. De laatste Cloudflare-publicatie vóór deze wijziging is
 
 Na publicatie volgen verificatie van alle zes live pagina's en het verplichte
 `worker/controle-na-deploy.sh`. De winkelrelease zelf valt buiten deze opdracht.
+
+## Publicatie bevestigd
+
+- Gepubliceerd op 23 oktober 2026, websitecommit `15650c8`.
+- Cloudflare-versie: `3fbdcfa9-6359-43b4-bf43-9763e288d69b`.
+- Wrangler bevestigt uitsluitend zes gewijzigde assets: de privacypagina's.
+- Alle zes live pagina's opgehaald met redirects en byte voor byte gelijk
+  bevonden aan de lokale publicatiebestanden; geen conceptmelding of noindex.
+- Live Nederlandse pagina visueel gecontroleerd.
+- `worker/controle-na-deploy.sh`: exit 0, alle ingangen gezond, beide API's
+  op b124, route/audio/CORS/redirect gezond, gecachte én verse stem geslaagd.
