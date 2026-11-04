@@ -38,3 +38,21 @@ python3 -c "import build; build.write('nl/zo-werkt-het.html', build.build_howto(
 
 Daarbij blijven routecontroles en routegegevens intact. Publicatie vereist
 een actuele checkout, een commit en het bestaande smoke-ritueel.
+
+## Uitkomst
+
+- 417 eenheidstoetsen en 264 waarhedenspiegels geslaagd. De lokale
+  gelijkloopcontrole meldde alleen de bestaande privacyclaims op andere
+  websiteonderdelen; die vallen buiten deze twee tekstvervangingen.
+- Volledige build stopt nog vóór uitvoer op de ontbrekende begaanbaarheid
+  van de Jubilee-route. De gerichte uitlegbuild is geslaagd.
+- De gegenereerde pagina verschilt exact op de twee aangeleverde zinnen.
+  Een in-memory registerwijziging naar 137 werkte op beide plaatsen;
+  nul, tekst en null werden afgewezen. Het echte register is niet gewijzigd.
+- Nieuwste remote stand opgenomen; live uitgangsversies van uitleg, privacy,
+  Engelse uitleg en route-index vergeleken. Websitecommit: `83eeba3`.
+- Cloudflare publiceerde uitsluitend `/nl/zo-werkt-het.html` als gewijzigde
+  asset. Versie: `c06c7d89-50ec-49bb-bc5e-14f2a47c2b12`.
+- De live Nederlandse pagina is byte voor byte gelijk aan de gecontroleerde
+  uitvoer. `worker/controle-na-deploy.sh`: exit 0, alle ingangen gezond,
+  inclusief verse standaardstem, alle verteltalen en logboekcontrole.
