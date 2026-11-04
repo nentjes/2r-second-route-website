@@ -11,6 +11,14 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'public')
 LANGS = ['nl', 'en', 'de', 'fr', 'es', 'pt']
 
+# B-125: de gratis natuurlijke verhalen komen uit het gedeelde register.
+# 'honderd' is alleen de Nederlandse schrijfwijze, geen aparte productlimiet.
+with open(os.path.join(ROOT, '..', 'gedeeld', 'waarheden.json'), encoding='utf-8') as _f:
+    VLOER_VERHALEN_PER_MAAND = json.load(_f)['stemmen']['vloer_verhalen_per_maand']
+if type(VLOER_VERHALEN_PER_MAAND) is not int or VLOER_VERHALEN_PER_MAAND <= 0:
+    raise ValueError('stemmen.vloer_verhalen_per_maand moet een positief geheel getal zijn')
+VLOER_VERHALEN_NL = {100: 'honderd'}.get(VLOER_VERHALEN_PER_MAAND, str(VLOER_VERHALEN_PER_MAAND))
+
 # Enige waarheid voor alle publieke downloadknoppen. De volledige, door Apple
 # gepubliceerde URL voorkomt dat de verkorte landloze link onderweg strandt.
 APP_STORE_URL = 'https://apps.apple.com/nl/app/2r-second-route/id6802613397'
@@ -902,12 +910,12 @@ HOWTO = {
         dict(h='Vrij luisteren of een luisterroute', p='Ga spontaan op pad voor verhalen die bij je actuele omgeving passen, of kies een zorgvuldig opgebouwd routeboek met vaste hoofdstukken en één rode draad.'),
         dict(h='Samen met je muziek', p='Speel gerust je eigen muziek. Die gaat automatisch <b>zachter</b> zodra een verhaal begint en komt daarna weer terug. 2R streamt zelf geen muziek.'),
         dict(h='Luisteren op de achtergrond', p='Gebruik je ondertussen Kaarten of je muziek-app, dan blijft 2R vertellen. Het blauwe locatiesymbool van iOS laat zien dat de app je positie gebruikt; tik erop om naar 2R terug te keren.'),
-        dict(h='Je stem kiezen', p='Zonder stemtegoed vertelt de gratis systeemstem. Met stemtegoed kies je bij <b>Instellingen → Stem</b> tussen de Standaardstem en de Mooie stem. Je kunt ze allebei beluisteren voordat je kiest.'),
+        dict(h='Je stem kiezen', p=f'Zonder stemtegoed vertelt de natuurlijke stem, tot {VLOER_VERHALEN_NL} verhalen per maand. Met stemtegoed kies je bij <b>Instellingen → Stem</b> tussen de Standaardstem en de Mooie stem. Je kunt ze allebei beluisteren voordat je kiest.'),
         dict(h='Jouw reistempo', p='Wandelen, fietsen, trein en auto vragen elk om een andere blik. 2R past zoekafstand, vertelritme en onderwerpkeuze daarop aan.'),
         dict(h='Rust en samenzijn', p='Pauzeer een verhaal, bewaar het met <b>Straks</b> voor over een paar minuten, stop het of speel samen een reisquiz. Jij bepaalt hoeveel ruimte de verteller krijgt.'),
         dict(h='Alles onder het tandwiel', p='Het tandwiel rechtsboven is de enige ingang naar je keuzes. Daar pas je onder meer je reisvorm, interesses, stem en verhaallengte aan. Testgereedschap blijft verborgen voor gewone gebruikers.'),
     ],
-    cta_h='Klaar om op pad te gaan?', cta_p='2R is gratis te downloaden in de App Store. Je kunt altijd gratis luisteren met de systeemstem; voor natuurlijkere stemmen en sommige luisterroutes betaal je apart.', cta_btn='Download 2R →',
+    cta_h='Klaar om op pad te gaan?', cta_p=f'2R is gratis te downloaden in de App Store. Je luistert gratis met een natuurlijke stem, tot {VLOER_VERHALEN_NL} verhalen per maand; voor de extra expressieve stem en sommige luisterroutes betaal je apart.', cta_btn='Download 2R →',
 ),
 'en': dict(
     eyebrow='How 2R works', title='How 2R works',
