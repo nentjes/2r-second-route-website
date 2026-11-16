@@ -21,12 +21,12 @@ Duits, Frans, Spaans en Portugees.
 Belangrijke pagina's:
 
 - `/{taal}/` — merk- en productverhaal
-- `/{taal}/zo-werkt-het.html` — filmische uitleg
+- `/{taal}/zo-werkt-het` — filmische uitleg
 - `/{taal}/routes/` — luisterroutes en routeboeken
 - `/{taal}/stories/` — het levende verhalenarchief
 - `/{taal}/partners/` — propositie voor routebeheerders en uitgevers
 - `/{taal}/kwaliteit/` — controleerbare werkwijze voor bronnen, redactie en correcties
-- `/{taal}/roadmap.html` en `/{taal}/privacy.html`
+- `/{taal}/roadmap` en `/{taal}/privacy`
 
 Routeaantallen, provincies, afstanden, hoofdstukken en begaanbaarheid worden bij elke build uit `public/routes-data/index.json` en `routes-content/` gelezen. De visuele bron is `docs/2R-stijlgids-v1.0.md` in het bovenliggende 2Route-
 project. Route-inhoud en audio worden samen met de app beheerd en vallen buiten
@@ -40,6 +40,22 @@ python3 -m http.server 8000 --directory public
 ```
 
 Open daarna `http://127.0.0.1:8000/nl/`.
+
+Cloudflare serveert HTML met schone adressen: `index.html` als mapadres en
+andere HTML-bestanden zonder `.html`. `public_url()` in `build.py` bepaalt
+deze adressen voor sitemap, canonical, hreflang en interne links. Een gewone
+Python-bestandsserver past die Cloudflare-routering niet toe; gebruik voor
+URL-controles `npx wrangler dev --local --local-upstream 2route.nl` (anders
+kan Wrangler de www-route als host kiezen) en in een tweede terminal:
+
+```bash
+python3 check_urls.py --origin http://localhost:8787
+```
+
+`python3 check_urls.py` controleert de gegenereerde bestanden zonder netwerk.
+`python3 build.py --urls-only` corrigeert uitsluitend de URL-attributen,
+de Nederlandse navigatieshell en de sitemap van de bestaande publicatie.
+Daarbij worden routegegevens en gepubliceerde teksten niet opnieuw opgebouwd.
 
 ## Publiceren
 

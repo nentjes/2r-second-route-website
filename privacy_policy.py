@@ -27,7 +27,7 @@ def load_policy():
     return copy
 
 
-def render_policy(lang, text, metadata, framing, page_shell, *, preview=False):
+def render_policy(lang, text, metadata, framing, page_shell, public_url, *, preview=False):
     status = text['draft'] if preview else text['updated']
     paragraphs = '\n'.join(f'<p>{html.escape(p)}</p>' for p in text['paragraphs'])
     body = f'''
@@ -64,7 +64,7 @@ def render_policy(lang, text, metadata, framing, page_shell, *, preview=False):
     for target in load_language_labels():
         active = ' class="active"' if target == lang else ''
         page = page.replace(f'<a href="/{target}/"{active}>{target.upper()}</a>',
-                            f'<a href="/{target}/privacy.html"{active}>{target.upper()}</a>')
+                            f'<a href="{public_url(target, "privacy.html")}"{active}>{target.upper()}</a>')
     if preview:
         page = page.replace('<head>', '<head>\n<meta name="robots" content="noindex, nofollow">', 1)
     return page

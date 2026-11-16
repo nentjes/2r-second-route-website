@@ -15,7 +15,7 @@ from privacy_policy import load_policy as load_draft, render_policy
 
 def render_draft(lang, text):
     return render_policy(lang, text, build.PRIVACY[lang], build.PRIV_EXTRA[lang],
-                         build.page_shell, preview=True)
+                         build.page_shell, build.public_url, preview=True)
 
 
 def make_preview():

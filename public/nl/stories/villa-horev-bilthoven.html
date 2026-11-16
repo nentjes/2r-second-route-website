@@ -16,15 +16,15 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://2route.nl/nl/stories/villa-horev-bilthoven.html">
-<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/stories/villa-horev-bilthoven.html">
-<link rel="alternate" hreflang="en" href="https://2route.nl/en/stories/villa-horev-bilthoven.html">
-<link rel="alternate" hreflang="de" href="https://2route.nl/de/stories/villa-horev-bilthoven.html">
-<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/stories/villa-horev-bilthoven.html">
-<link rel="alternate" hreflang="es" href="https://2route.nl/es/stories/villa-horev-bilthoven.html">
-<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/stories/villa-horev-bilthoven.html">
-<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/stories/villa-horev-bilthoven.html">
-<meta property="og:url" content="https://2route.nl/nl/stories/villa-horev-bilthoven.html">
+<link rel="canonical" href="https://2route.nl/nl/stories/villa-horev-bilthoven">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/stories/villa-horev-bilthoven">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/stories/villa-horev-bilthoven">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/stories/villa-horev-bilthoven">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/stories/villa-horev-bilthoven">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/stories/villa-horev-bilthoven">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/stories/villa-horev-bilthoven">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/stories/villa-horev-bilthoven">
+<meta property="og:url" content="https://2route.nl/nl/stories/villa-horev-bilthoven">
 </head>
 <body class="nav-paper">
 <header class="site">
@@ -42,7 +42,7 @@
         <a href="/nl/routes/">Luisterroutes</a>
         <a href="/nl/stories/" class="active">Verhalen</a>
         <a href="/nl/partners/">Voor routebeheerders</a>
-        <a href="/nl/zo-werkt-het.html">Zo werkt het</a>
+        <a href="/nl/zo-werkt-het">Zo werkt het</a>
       </span>
       <div class="lang-switch"><a href="/nl/" class="active">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
       <a class="nav-cta" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Neem 2R mee →</a>
@@ -54,7 +54,7 @@
       <a href="/nl/routes/">Luisterroutes</a>
       <a href="/nl/stories/" class="active">Verhalen</a>
       <a href="/nl/partners/">Voor routebeheerders</a>
-      <a href="/nl/zo-werkt-het.html">Zo werkt het</a>
+      <a href="/nl/zo-werkt-het">Zo werkt het</a>
     </div>
     <div class="lang-switch"><a href="/nl/" class="active">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
     <a class="nav-cta" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Neem 2R mee →</a>
@@ -106,7 +106,7 @@
 
   <section class="story-related"><div class="wrap">
     <p class="story-related-h">Verder lezen</p>
-    <div class="mag-grid"><a class="mag-card mag-klein" href="/nl/stories/kasteel-nijenrode-breukelen.html">
+    <div class="mag-grid"><a class="mag-card mag-klein" href="/nl/stories/kasteel-nijenrode-breukelen">
     <div class="mag-cover" aria-hidden="true"><span class="mag-cat-mark">Geschiedenis</span></div>
     <div class="mag-body">
       <span class="mag-cat">Geschiedenis</span>
@@ -114,7 +114,7 @@
       <p>Een kleine vijfhonderd meter van onze route vandaan, verscholen in de bossen aan het water, ligt het échte icoon van…</p>
       <span class="mag-meta">Breukelen, Nederland &middot; 18 augustus 2026</span>
     </div>
-  </a><a class="mag-card mag-klein" href="/nl/stories/dvsu-timber-broers.html">
+  </a><a class="mag-card mag-klein" href="/nl/stories/dvsu-timber-broers">
     <div class="mag-cover" aria-hidden="true"><span class="mag-cat-mark">Sport</span></div>
     <div class="mag-body">
       <span class="mag-cat">Sport</span>
@@ -141,10 +141,10 @@
     <div class="footer-links">
       <a href="/nl/routes/">Luisterroutes</a>
       <a href="/nl/partners/">Voor routebeheerders</a>
-      <a href="/nl/roadmap.html">Roadmap</a>
+      <a href="/nl/roadmap">Roadmap</a>
       <a href="/nl/stories/">Verhalen</a>
       <a href="/nl/kwaliteit/">Kwaliteit & eerlijkheid</a>
-      <a href="/nl/privacy.html">Privacy</a>
+      <a href="/nl/privacy">Privacy</a>
       <a href="mailto:nimco@nentjes.nl">Contact</a>
     </div>
   </div>
@@ -287,6 +287,12 @@
       try { if (window.__2rCleanup) { window.__2rCleanup(); window.__2rCleanup = null; } } catch (e) {}
       oud.innerHTML = nieuw.innerHTML;
       document.title = doc.title;
+      // Ook zonder volledige herlading hoort de pagina naar zichzelf te wijzen.
+      var seo = 'link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:url"]';
+      document.head.querySelectorAll(seo).forEach(function (node) { node.remove(); });
+      doc.head.querySelectorAll(seo).forEach(function (node) {
+        document.head.appendChild(node.cloneNode(true));
+      });
       var lg = doc.documentElement.getAttribute('lang'); if (lg) document.documentElement.setAttribute('lang', lg);
       document.body.className = doc.body.className;
       var act = doc.querySelector('.nav-links a.active');

@@ -16,15 +16,15 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://2route.nl/nl/privacy.html">
-<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/privacy.html">
-<link rel="alternate" hreflang="en" href="https://2route.nl/en/privacy.html">
-<link rel="alternate" hreflang="de" href="https://2route.nl/de/privacy.html">
-<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/privacy.html">
-<link rel="alternate" hreflang="es" href="https://2route.nl/es/privacy.html">
-<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/privacy.html">
-<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/privacy.html">
-<meta property="og:url" content="https://2route.nl/nl/privacy.html">
+<link rel="canonical" href="https://2route.nl/nl/privacy">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/privacy">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/privacy">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/privacy">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/privacy">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/privacy">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/privacy">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/privacy">
+<meta property="og:url" content="https://2route.nl/nl/privacy">
 </head>
 <body class="nav-immersive">
 <header class="site">
@@ -42,9 +42,9 @@
         <a href="/nl/routes/">Luisterroutes</a>
         <a href="/nl/stories/">Verhalen</a>
         <a href="/nl/partners/">Voor routebeheerders</a>
-        <a href="/nl/zo-werkt-het.html">Zo werkt het</a>
+        <a href="/nl/zo-werkt-het">Zo werkt het</a>
       </span>
-      <div class="lang-switch"><a href="/nl/privacy.html" class="active">NL</a><a href="/en/privacy.html">EN</a><a href="/de/privacy.html">DE</a><a href="/fr/privacy.html">FR</a><a href="/es/privacy.html">ES</a><a href="/pt/privacy.html">PT</a></div>
+      <div class="lang-switch"><a href="/nl/privacy" class="active">NL</a><a href="/en/privacy">EN</a><a href="/de/privacy">DE</a><a href="/fr/privacy">FR</a><a href="/es/privacy">ES</a><a href="/pt/privacy">PT</a></div>
       <a class="nav-cta" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Neem 2R mee →</a>
     </nav>
   </div>
@@ -54,9 +54,9 @@
       <a href="/nl/routes/">Luisterroutes</a>
       <a href="/nl/stories/">Verhalen</a>
       <a href="/nl/partners/">Voor routebeheerders</a>
-      <a href="/nl/zo-werkt-het.html">Zo werkt het</a>
+      <a href="/nl/zo-werkt-het">Zo werkt het</a>
     </div>
-    <div class="lang-switch"><a href="/nl/privacy.html" class="active">NL</a><a href="/en/privacy.html">EN</a><a href="/de/privacy.html">DE</a><a href="/fr/privacy.html">FR</a><a href="/es/privacy.html">ES</a><a href="/pt/privacy.html">PT</a></div>
+    <div class="lang-switch"><a href="/nl/privacy" class="active">NL</a><a href="/en/privacy">EN</a><a href="/de/privacy">DE</a><a href="/fr/privacy">FR</a><a href="/es/privacy">ES</a><a href="/pt/privacy">PT</a></div>
     <a class="nav-cta" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Neem 2R mee →</a>
   </div>
 </header>
@@ -132,10 +132,10 @@
     <div class="footer-links">
       <a href="/nl/routes/">Luisterroutes</a>
       <a href="/nl/partners/">Voor routebeheerders</a>
-      <a href="/nl/roadmap.html">Roadmap</a>
+      <a href="/nl/roadmap">Roadmap</a>
       <a href="/nl/stories/">Verhalen</a>
       <a href="/nl/kwaliteit/">Kwaliteit & eerlijkheid</a>
-      <a href="/nl/privacy.html">Privacy</a>
+      <a href="/nl/privacy">Privacy</a>
       <a href="mailto:nimco@nentjes.nl">Contact</a>
     </div>
   </div>
@@ -278,6 +278,12 @@
       try { if (window.__2rCleanup) { window.__2rCleanup(); window.__2rCleanup = null; } } catch (e) {}
       oud.innerHTML = nieuw.innerHTML;
       document.title = doc.title;
+      // Ook zonder volledige herlading hoort de pagina naar zichzelf te wijzen.
+      var seo = 'link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:url"]';
+      document.head.querySelectorAll(seo).forEach(function (node) { node.remove(); });
+      doc.head.querySelectorAll(seo).forEach(function (node) {
+        document.head.appendChild(node.cloneNode(true));
+      });
       var lg = doc.documentElement.getAttribute('lang'); if (lg) document.documentElement.setAttribute('lang', lg);
       document.body.className = doc.body.className;
       var act = doc.querySelector('.nav-links a.active');

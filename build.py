@@ -6,6 +6,9 @@ in zes talen uit de data hieronder. Nieuw verhaal toevoegen? Voeg een
 item toe aan STORIES en run: python3 build.py
 """
 import os, html, json
+from html.parser import HTMLParser
+import re
+from urllib.parse import urlsplit, urlunsplit
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'public')
@@ -1161,7 +1164,7 @@ def nav(lang, active):
         {link(f'/{lang}/routes/', ROUTES_TXT[lang]['nav'], 'routes')}
         {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
         {link(f'/{lang}/partners/', h['nav_partners'], 'partners')}
-        {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
+        {link(public_url(lang, 'zo-werkt-het.html'), NAV_HOWTO[lang], 'howto')}
       </span>
       <div class="lang-switch">{others}</div>
       <a class="nav-cta" href="{APP_STORE_URL}">{h['nav_cta']}</a>
@@ -1173,7 +1176,7 @@ def nav(lang, active):
       {link(f'/{lang}/routes/', ROUTES_TXT[lang]['nav'], 'routes')}
       {link(f'/{lang}/stories/', s['nav_stories'], 'stories')}
       {link(f'/{lang}/partners/', h['nav_partners'], 'partners')}
-      {link(f'/{lang}/zo-werkt-het.html', NAV_HOWTO[lang], 'howto')}
+      {link(public_url(lang, 'zo-werkt-het.html'), NAV_HOWTO[lang], 'howto')}
     </div>
     <div class="lang-switch">{others}</div>
     <a class="nav-cta" href="{APP_STORE_URL}">{h['nav_cta']}</a>
@@ -1220,10 +1223,10 @@ def footer(lang):
     <div class="footer-links">
       <a href="/{lang}/routes/">{ROUTES_TXT[lang]['nav']}</a>
       <a href="/{lang}/partners/">{h['nav_partners']}</a>
-      <a href="/{lang}/roadmap.html">{s['nav_roadmap']}</a>
+      <a href="{public_url(lang, 'roadmap.html')}">{s['nav_roadmap']}</a>
       <a href="/{lang}/stories/">{s['nav_stories']}</a>
       <a href="/{lang}/kwaliteit/">{QUALITY_TXT[lang]['nav']}</a>
-      <a href="/{lang}/privacy.html">{s['nav_privacy']}</a>
+      <a href="{public_url(lang, 'privacy.html')}">{s['nav_privacy']}</a>
       <a href="mailto:nimco@nentjes.nl">{s['footer_contact']}</a>
     </div>
   </div>
@@ -1372,6 +1375,12 @@ SITE_SHELL_NL = '''
       try { if (window.__2rCleanup) { window.__2rCleanup(); window.__2rCleanup = null; } } catch (e) {}
       oud.innerHTML = nieuw.innerHTML;
       document.title = doc.title;
+      // Ook zonder volledige herlading hoort de pagina naar zichzelf te wijzen.
+      var seo = 'link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:url"]';
+      document.head.querySelectorAll(seo).forEach(function (node) { node.remove(); });
+      doc.head.querySelectorAll(seo).forEach(function (node) {
+        document.head.appendChild(node.cloneNode(true));
+      });
       var lg = doc.documentElement.getAttribute('lang'); if (lg) document.documentElement.setAttribute('lang', lg);
       document.body.className = doc.body.className;
       var act = doc.querySelector('.nav-links a.active');
@@ -1397,19 +1406,70 @@ SITE_SHELL_NL = '''
 
 BASE_URL = 'https://2route.nl'
 
-def _seo_pad(path):
-    # index.html toont de site als mapadres
-    return path[:-len('index.html')] if path.endswith('index.html') else path
+def public_url(lang, path='', *, absolute=False):
+    """Eén adresregel voor Cloudflare Assets: index als map, overige HTML zonder extensie."""
+    parts = urlsplit(path)
+    public_path = parts.path.lstrip('/')
+    if public_path == 'index.html' or public_path.endswith('/index.html'):
+        public_path = public_path[:-len('index.html')]
+    elif public_path.endswith('.html'):
+        public_path = public_path[:-len('.html')]
+    origin = urlsplit(BASE_URL) if absolute else urlsplit('')
+    return urlunsplit((origin.scheme, origin.netloc, f'/{lang}/{public_path}',
+                       parts.query, parts.fragment))
+
+
+def rewrite_public_urls(document):
+    """Werk URL-attributen bij zonder teksten, opmaak, scripts of routegegevens te herbouwen."""
+    class URLAttributes(HTMLParser):
+        def __init__(self):
+            super().__init__(convert_charrefs=False)
+            self.offsets = [0]
+            for line in document.splitlines(keepends=True):
+                self.offsets.append(self.offsets[-1] + len(line))
+            self.edits = []
+
+        def handle_starttag(self, tag, attributes):
+            attrs = dict(attributes)
+            attribute = ('href' if tag in ('a', 'link') else
+                         'content' if tag == 'meta' and attrs.get('property') == 'og:url' else None)
+            if attribute is None:
+                return
+            raw = self.get_starttag_text()
+            pattern = re.compile(r'(?<![\w:-])' + attribute + r'''\s*=\s*(["'])(.*?)\1''', re.I | re.S)
+            for match in pattern.finditer(raw):
+                value = html.unescape(match.group(2))
+                parts = urlsplit(value)
+                if parts.netloc and parts.netloc != urlsplit(BASE_URL).netloc:
+                    continue
+                if parts.scheme and parts.scheme not in ('http', 'https'):
+                    continue
+                if not parts.path.startswith('/'):
+                    continue
+                lang, _, path = parts.path.lstrip('/').partition('/')
+                if lang not in LANGS:
+                    continue
+                clean = public_url(lang, urlunsplit(('', '', path, parts.query, parts.fragment)),
+                                   absolute=bool(parts.netloc))
+                if clean != value:
+                    line, column = self.getpos()
+                    start = self.offsets[line - 1] + column + match.start(2)
+                    self.edits.append((start, start + len(match.group(2)), html.escape(clean, quote=True)))
+
+    parser = URLAttributes()
+    parser.feed(document)
+    for start, end, replacement in reversed(parser.edits):
+        document = document[:start] + replacement + document[end:]
+    return document
 
 def page_shell(lang, title, description, active, body, extra_head='', path=None, immersive=False):
     seo = ''
     if path is not None:
-        p = _seo_pad(path)
-        canon = f'{BASE_URL}/{lang}/{p}'
-        alts = ''.join(f'<link rel="alternate" hreflang="{l}" href="{BASE_URL}/{l}/{p}">\n' for l in LANGS)
+        canon = public_url(lang, path, absolute=True)
+        alts = ''.join(f'<link rel="alternate" hreflang="{l}" href="{public_url(l, path, absolute=True)}">\n' for l in LANGS)
         seo = (f'<link rel="canonical" href="{canon}">\n'
                f'{alts}'
-               f'<link rel="alternate" hreflang="x-default" href="{BASE_URL}/nl/{p}">\n'
+               f'<link rel="alternate" hreflang="x-default" href="{public_url("nl", path, absolute=True)}">\n'
                f'<meta property="og:url" content="{canon}">\n')
     return f'''<!DOCTYPE html>
 <html lang="{HTML_LANG[lang]}">
@@ -1446,7 +1506,7 @@ def story_card(lang, st):
     s = SITE[lang]
     cat = CATEGORIES[st['category']][lang]
     excerpt = st['text'][lang][:150].rsplit(' ', 1)[0] + '…'
-    return f'''<a class="story-card" href="/{lang}/stories/{st['slug']}.html">
+    return f'''<a class="story-card" href="{public_url(lang, f'stories/{st["slug"]}.html')}">
   <span class="story-cat">{cat}</span>
   <h3>{html.escape(st['title'][lang])}</h3>
   <p>{html.escape(excerpt)}</p>
@@ -1494,7 +1554,7 @@ def build_city_story(lang, index):
 def city_story_card(lang, index):
     cat, place, title, copy = CITY_STORIES[lang][index]
     card_cls = f'story story-{index + 1}'
-    return f'''<a class="{card_cls}" href="/{lang}/stad/{CITY_SLUGS[index]}.html">
+    return f'''<a class="{card_cls}" href="{public_url(lang, f'stad/{CITY_SLUGS[index]}.html')}">
   <div class="story-photo" style="background-image:url('/images/{CITY_IMAGES[index]}')"></div>
   <div class="story-body">
     <div class="story-topline"><span>{html.escape(cat)}</span><span>{html.escape(place)}</span></div>
@@ -1683,7 +1743,7 @@ def build_home(lang):
             <span class="way-label">{h['free_label']}</span>
             <h3>{h['free_h']}</h3>
             <p>{h['free_p']}</p>
-            <a class="text-link on-paper" href="/{lang}/zo-werkt-het.html">{h['free_cta']} →</a>
+            <a class="text-link on-paper" href="{public_url(lang, 'zo-werkt-het.html')}">{h['free_cta']} →</a>
           </div>
         </article>
         <article class="way way-book">
@@ -1911,7 +1971,7 @@ PRIV_EXTRA = {'nl': {'h1': 'Jouw reis blijft van jou.',
 
 def build_privacy(lang):
     from privacy_policy import load_policy, render_policy
-    return render_policy(lang, load_policy()[lang], PRIVACY[lang], PRIV_EXTRA[lang], page_shell)
+    return render_policy(lang, load_policy()[lang], PRIVACY[lang], PRIV_EXTRA[lang], page_shell, public_url)
 
 # --- Live verhalen uit de app (goedgekeurd op de besloten leespagina) ------
 # Zoekbaar en met kaart, zodat het archief bruikbaar blijft als het groeit.
@@ -2113,7 +2173,7 @@ def _story_excerpt(st, lang, n=150):
 
 def magazine_card(lang, st, size='klein'):
     cat = CATEGORIES[st['category']][lang]
-    return f'''<a class="mag-card mag-{size}" href="/{lang}/stories/{st['slug']}.html">
+    return f'''<a class="mag-card mag-{size}" href="{public_url(lang, f'stories/{st["slug"]}.html')}">
     <div class="mag-cover" aria-hidden="true"><span class="mag-cat-mark">{html.escape(cat)}</span></div>
     <div class="mag-body">
       <span class="mag-cat">{html.escape(cat)}</span>
@@ -2139,7 +2199,7 @@ def build_stories_index(lang):
     rest = [st for st in STORIES if st is not featured]
     first_slug = STORIES[0]['slug']
     fcat = CATEGORIES[featured['category']][lang]
-    featured_html = f'''<a class="mag-featured" href="/{lang}/stories/{featured['slug']}.html">
+    featured_html = f'''<a class="mag-featured" href="{public_url(lang, f'stories/{featured["slug"]}.html')}">
       <div class="mag-featured-cover" aria-hidden="true"><span class="mag-cat-mark">{html.escape(fcat)}</span></div>
       <div class="mag-featured-body">
         <span class="mag-featured-label">{se['featured_label']}</span>
@@ -2157,7 +2217,7 @@ def build_stories_index(lang):
       <p class="eyebrow on-photo">{se['hero_eyebrow']}</p>
       <h1>{se['hero_h1']}</h1>
       <p class="stories-hero-lede">{se['hero_lede']}</p>
-      <a class="stories-hero-cta" href="/{lang}/stories/{first_slug}.html">{se['hero_cta']} <span aria-hidden="true">&#8594;</span></a>
+      <a class="stories-hero-cta" href="{public_url(lang, f'stories/{first_slug}.html')}">{se['hero_cta']} <span aria-hidden="true">&#8594;</span></a>
     </div>
   </section>
 
@@ -2819,7 +2879,7 @@ def build_quality(lang):
     <p>{q['correct_p']}</p>
     <div class="quality-actions">
       <a class="btn-primary" href="/{lang}/routes/">{q['routes_cta']} <span>→</span></a>
-      <a class="text-link" href="/{lang}/privacy.html">{q['privacy_cta']} →</a>
+      <a class="text-link" href="{public_url(lang, 'privacy.html')}">{q['privacy_cta']} →</a>
     </div>
   </div></section>
 '''
@@ -2939,7 +2999,7 @@ def build_site():
     _paden += [f'routes/{sl}/' for sl in ROUTES]
     _paden += [f'stories/{st["slug"]}.html' for st in STORIES]
     _paden += [f'stad/{sl}.html' for sl in CITY_SLUGS]
-    _urls = [f'{BASE_URL}/{l}/{p}' for p in _paden for l in LANGS]
+    _urls = [public_url(l, p, absolute=True) for p in _paden for l in LANGS]
     write('sitemap.xml', '<?xml version="1.0" encoding="UTF-8"?>\n'
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
           + ''.join(f'  <url><loc>{u}</loc></url>\n' for u in _urls)
@@ -2950,13 +3010,49 @@ def build_site():
     print(f"Klaar: {len(LANGS)} talen x {PAGES_PER_LANG} pagina\x27s = {len(LANGS) * PAGES_PER_LANG} bestanden")
 
 
+def build_urls_only():
+    """Corrigeer de bestaande publicatie zonder een nieuwe route- of tekstpublicatie."""
+    from pathlib import Path
+    total = 0
+    for lang in LANGS:
+        for path in (Path(OUT) / lang).rglob('*.html'):
+            document = path.read_text(encoding='utf-8')
+            updated = rewrite_public_urls(document)
+            if lang == 'nl':
+                # De bestaande spelershell blijft intact; vervang uitsluitend de
+                # router door dezelfde versie die de gewone generator gebruikt.
+                start = updated.find('<div id="site-player"')
+                if start >= 0:
+                    end = updated.find('</script>', start)
+                    if end < 0:
+                        raise ValueError(f'Onvolledige spelershell in {path}')
+                    updated = updated[:start] + SITE_SHELL_NL.strip() + updated[end + len('</script>'):]
+            if updated != document:
+                path.write_text(updated, encoding='utf-8')
+                total += 1
+    sitemap = Path(OUT) / 'sitemap.xml'
+    # De bestaande volgorde en de gepubliceerde routes blijven behouden.
+    def clean_location(match):
+        parts = urlsplit(match.group(1))
+        lang, _, path = parts.path.lstrip('/').partition('/')
+        return '<loc>' + public_url(lang, path, absolute=True) + '</loc>'
+    sitemap.write_text(re.sub(r'<loc>([^<]+)</loc>', clean_location,
+                              sitemap.read_text(encoding='utf-8')), encoding='utf-8')
+    print(f'Publieke URL’s bijgewerkt in {total} pagina’s en sitemap; inhoud en routegegevens behouden.')
+
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--privacy-only', action='store_true',
+    scope = parser.add_mutually_exclusive_group()
+    scope.add_argument('--privacy-only', action='store_true',
                         help='Bouw alleen de zes privacypagina’s; behoud alle andere publieke bestanden.')
+    scope.add_argument('--urls-only', action='store_true',
+                       help='Corrigeer alleen URL’s in bestaande pagina’s en sitemap; behoud teksten en routegegevens.')
     args = parser.parse_args()
-    if args.privacy_only:
+    if args.urls_only:
+        build_urls_only()
+    elif args.privacy_only:
         for lang in LANGS:
             write(f'{lang}/privacy.html', build_privacy(lang))
         print(f'Privacy bijgewerkt in {len(LANGS)} talen; overige bestanden behouden.')

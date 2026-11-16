@@ -42,7 +42,7 @@
         <a href="/nl/routes/" class="active">Luisterroutes</a>
         <a href="/nl/stories/">Verhalen</a>
         <a href="/nl/partners/">Voor routebeheerders</a>
-        <a href="/nl/zo-werkt-het.html">Zo werkt het</a>
+        <a href="/nl/zo-werkt-het">Zo werkt het</a>
       </span>
       <div class="lang-switch"><a href="/nl/" class="active">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
       <a class="nav-cta" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Neem 2R mee →</a>
@@ -54,7 +54,7 @@
       <a href="/nl/routes/" class="active">Luisterroutes</a>
       <a href="/nl/stories/">Verhalen</a>
       <a href="/nl/partners/">Voor routebeheerders</a>
-      <a href="/nl/zo-werkt-het.html">Zo werkt het</a>
+      <a href="/nl/zo-werkt-het">Zo werkt het</a>
     </div>
     <div class="lang-switch"><a href="/nl/" class="active">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
     <a class="nav-cta" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Neem 2R mee →</a>
@@ -300,10 +300,10 @@
     <div class="footer-links">
       <a href="/nl/routes/">Luisterroutes</a>
       <a href="/nl/partners/">Voor routebeheerders</a>
-      <a href="/nl/roadmap.html">Roadmap</a>
+      <a href="/nl/roadmap">Roadmap</a>
       <a href="/nl/stories/">Verhalen</a>
       <a href="/nl/kwaliteit/">Kwaliteit & eerlijkheid</a>
-      <a href="/nl/privacy.html">Privacy</a>
+      <a href="/nl/privacy">Privacy</a>
       <a href="mailto:nimco@nentjes.nl">Contact</a>
     </div>
   </div>
@@ -446,6 +446,12 @@
       try { if (window.__2rCleanup) { window.__2rCleanup(); window.__2rCleanup = null; } } catch (e) {}
       oud.innerHTML = nieuw.innerHTML;
       document.title = doc.title;
+      // Ook zonder volledige herlading hoort de pagina naar zichzelf te wijzen.
+      var seo = 'link[rel="canonical"], link[rel="alternate"][hreflang], meta[property="og:url"]';
+      document.head.querySelectorAll(seo).forEach(function (node) { node.remove(); });
+      doc.head.querySelectorAll(seo).forEach(function (node) {
+        document.head.appendChild(node.cloneNode(true));
+      });
       var lg = doc.documentElement.getAttribute('lang'); if (lg) document.documentElement.setAttribute('lang', lg);
       document.body.className = doc.body.className;
       var act = doc.querySelector('.nav-links a.active');
