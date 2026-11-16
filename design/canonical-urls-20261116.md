@@ -66,4 +66,17 @@ Google behandelt 404 en 410 voor indexering als verdwenen inhoud; een aparte
 
 ## Publicatie
 
-Wordt aangevuld na de live controles.
+Correctie lokaal vastgelegd in commit `4d6149d`, na de geslaagde lokale
+controles naar lokale `main` fast-forward samengevoegd.
+
+De automatische veiligheidscontrole heeft het pushen naar `origin/main`
+en de daaropvolgende live deploy geweigerd: directe toestemming van Roel
+voor deze productiehandelingen ontbrak. Er is niet opnieuw geprobeerd via
+een andere weg. Publicatie en live smoke wachten daarom op die toestemming.
+
+Na akkoord: actuele remote stand opnieuw ophalen en verwerken, pushen,
+deployen, `python3 check_urls.py --origin https://2route.nl`, live sitemap
+vergelijken en `../worker/controle-na-deploy.sh` uitvoeren. De Search Console-
+melding over de bewust verwijderde Daan Boom-pagina hoeft niet groen te worden;
+voor de bestaande pagina's moeten de gecorrigeerde adressen opnieuw worden
+gecrawld voordat Search Console de nieuwe toestand toont.
