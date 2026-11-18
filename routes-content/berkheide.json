@@ -9,6 +9,17 @@
  "gpx_url": "https://www.staatsbosbeheer.nl/-/media/hollands-duin/boswachterspad-berkheide-gpx.gpx",
  "bron_url": "https://www.staatsbosbeheer.nl/routes/hollands-duin/boswachterspad-berkheide",
  "startpunt": "TOP Katwijk, Sportlaan 3, 2225 JM Katwijk aan Zee (informatiepaneel bij de start; oranje paaltjes; schelpenpad met een klein stuk zandpad)",
+ "volgen": {
+  "gemarkeerd": true,
+  "tekst": "Volg de oranje paaltjes",
+  "bron": "Routepagina Staatsbosbeheer, nagekeken 17 nov 2026"
+ },
+ "start": {
+  "lat": 52.196446,
+  "lng": 4.386856,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=52.196446,4.386856",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=52.196446,4.386856"
+ },
  "kaart_js": "/routes-data/berkheide-kaart.js",
  "lijnen": [
   [

@@ -10,6 +10,17 @@
  "gpx_url": "",
  "bron_url": "https://www.utrechtslandschap.nl/gebied/natuur/biltse-duinen-en-okkersbos",
  "startpunt": "Hoek Julianalaan/Taveernelaan bij de bosrand, Bilthoven",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "Eigen buurtroute zonder markering; gelopen door Roel op 17 nov 2026"
+ },
+ "start": {
+  "lat": 52.132401,
+  "lng": 5.229107,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=52.132401,5.229107",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=52.132401,5.229107"
+ },
  "kaart_js": "/routes-data/julianalaan-kaart.js",
  "lijnen": [
   [

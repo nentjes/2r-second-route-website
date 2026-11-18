@@ -9,6 +9,17 @@
  "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341913",
  "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/fochteloerveen/route/fochteloerveenroute-wandeling-met-cultuurhistorie-en-natuur",
  "startpunt": "Parkeerplaats Nationaal Gevangenismuseum, Haulerweg 1, 9341 TJ Veenhuizen",
+ "volgen": {
+  "gemarkeerd": true,
+  "tekst": "Volg de groene paaltjes",
+  "bron": "Routepagina Natuurmonumenten, nagekeken 17 nov 2026"
+ },
+ "start": {
+  "lat": 53.040782,
+  "lng": 6.387636,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=53.040782,6.387636",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=53.040782,6.387636"
+ },
  "kaart_js": "/routes-data/veenhuizen-kaart.js",
  "lijnen": [
   [

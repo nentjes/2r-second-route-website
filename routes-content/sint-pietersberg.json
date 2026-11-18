@@ -9,6 +9,17 @@
  "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341763",
  "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/sint-pietersberg/route/wandelroute-sint-pietersberg-bij-maastricht-54km-groen",
  "startpunt": "Parkeerplaats Oog van Sint Pieter, Luikerweg 80, 6212 NH Maastricht (ook met Arriva-bus 12 vanaf Maastricht Centraal, halte Oog van Sint-Pieter, ca. 14 min)",
+ "volgen": {
+  "gemarkeerd": true,
+  "tekst": "Volg de paaltjes met het groene vierkantje",
+  "bron": "Routepagina Natuurmonumenten, nagekeken 17 nov 2026"
+ },
+ "start": {
+  "lat": 50.836377,
+  "lng": 5.684413,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=50.836377,5.684413",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=50.836377,5.684413"
+ },
  "kaart_js": "/routes-data/sint-pietersberg-kaart.js",
  "lijnen": [
   [

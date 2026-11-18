@@ -9,6 +9,17 @@
  "gpx_url": "https://odp.visitgroningen.nl/route/download/13836/gpx",
  "bron_url": "https://www.visitgroningen.nl/nl/routes/2840884709/westerwolde-wandelroute-16-rondom-de-vesting-bourtange",
  "startpunt": "Parkeerterrein Vesting Bourtange, Willem Lodewijkstraat 33, 9545 PA Bourtange",
+ "volgen": {
+  "gemarkeerd": true,
+  "tekst": "Volg de geel-witte markering (route WIW 16)",
+  "bron": "Routepagina Wandelen in Westerwolde, nagekeken 17 nov 2026"
+ },
+ "start": {
+  "lat": 53.008668,
+  "lng": 7.189475,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=53.008668,7.189475",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=53.008668,7.189475"
+ },
  "kaart_js": "/routes-data/bourtange-kaart.js",
  "lijnen": [
   [

@@ -9,6 +9,17 @@
  "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341736",
  "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/landgoed-hackfort/route/eeuwenoud-landgoed-met-kasteel-hackfort-vlak-bij-vorden",
  "startpunt": "Parkeerplaats Landgoed Hackfort, Baakseweg, 7251 RH Vorden",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "Natuurmonumenten noemt een 'groene route'; markering in het veld nog niet bevestigd (18 nov 2026)"
+ },
+ "start": {
+  "lat": 52.10156,
+  "lng": 6.27899,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=52.10156,6.27899",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=52.10156,6.27899"
+ },
  "kaart_js": "/routes-data/hackfort-kaart.js",
  "lijnen": [
   [

@@ -9,6 +9,17 @@
  "gpx_url": "https://redactie.natuurmonumenten.nl/file-download/download/public/341485",
  "bron_url": "https://www.natuurmonumenten.nl/natuurgebieden/loonse-en-drunense-duinen/route/wandelroute-zwarte-berg-vlak-bij-drunen",
  "startpunt": "Herberg De Drie Linden, Giersbergen 8, 5151 RG Drunen (gehucht Giersbergen, gemeente Heusden)",
+ "volgen": {
+  "gemarkeerd": true,
+  "tekst": "Volg de witte pijlen",
+  "bron": "Routepagina Natuurmonumenten, nagekeken 17 nov 2026"
+ },
+ "start": {
+  "lat": 51.65645,
+  "lng": 5.151532,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=51.65645,5.151532",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.65645,5.151532"
+ },
  "kaart_js": "/routes-data/zwarte-berg-kaart.js",
  "lijnen": [
   [

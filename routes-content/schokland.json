@@ -9,6 +9,17 @@
  "gpx_url": "https://wandelnet.api.routemaker.nl/content/gpx/wandelnet/1693.gpx",
  "bron_url": "https://www.flevo-landschap.nl/routes/wandelroute/vluchthavenroute-schokland",
  "startpunt": "Parkeerplaats bezoekerscentrum De Gesteentetuin / Lichtwachterswoning, Oud Emmeloorderweg 15, 8319 AB Schokland (vanaf A6 afslag Nagele, N716); gratis parkeren",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "Routepagina Het Flevo-landschap noemt geen paaltjes, nagekeken 17 nov 2026"
+ },
+ "start": {
+  "lat": 52.647991,
+  "lng": 5.76865,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=52.647991,5.76865",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=52.647991,5.76865"
+ },
  "kaart_js": "/routes-data/schokland-kaart.js",
  "lijnen": [
   [

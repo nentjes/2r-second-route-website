@@ -12,6 +12,17 @@
  "gpx_url": "",
  "bron_url": "",
  "startpunt": "the comedy store",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "Eigen testroute zonder markering"
+ },
+ "start": {
+  "lat": 51.51,
+  "lng": -0.132222,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=51.51,-0.132222",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.51,-0.132222"
+ },
  "kaart_js": "/routes-data/jubilee-walk-central-london-circular-walk-kaart.js",
  "lijnen": [
   [

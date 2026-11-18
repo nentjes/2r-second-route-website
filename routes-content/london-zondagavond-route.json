@@ -12,6 +12,17 @@
  "gpx_url": "",
  "bron_url": "",
  "startpunt": "Ons Hotel",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "Eigen testroute zonder markering"
+ },
+ "start": {
+  "lat": 51.505187,
+  "lng": -0.104652,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=51.505187,-0.104652",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.505187,-0.104652"
+ },
  "kaart_js": "/routes-data/london-zondagavond-route-kaart.js",
  "lijnen": [
   [

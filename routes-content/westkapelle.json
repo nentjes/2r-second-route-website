@@ -9,6 +9,17 @@
  "gpx_url": "https://odp.zeeland.com/route/download/2549/gpx",
  "bron_url": "https://www.zeeland.com/nl-nl/visit/2549_nl/parelroute-27verdediging-27-westkapelle",
  "startpunt": "Polderhuis (Dijk- en Oorlogsmuseum), Zuidstraat 156 / Abraham Calandplein, 4361 AK Westkapelle",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "Routepagina VVV Zeeland noemt geen paaltjes, nagekeken 17 nov 2026"
+ },
+ "start": {
+  "lat": 51.52714,
+  "lng": 3.43588,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=51.52714,3.43588",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=51.52714,3.43588"
+ },
  "kaart_js": "/routes-data/westkapelle-kaart.js",
  "lijnen": [
   [

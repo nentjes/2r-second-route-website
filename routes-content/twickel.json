@@ -9,6 +9,17 @@
  "gpx_url": "https://landschapoverijssel.routemaker.nl/content/gpx/landschapoverijssel/337.gpx",
  "bron_url": "https://landschapoverijssel.nl/routes/twickel-kasteelwandeling",
  "startpunt": "Parkeerplaats Twickel, Twickelerlaan, Delden (parkeren twee euro, uitrijmunt bij de landgoedwinkel tegenover de parkeerplaats)",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "Routepagina Landschap Overijssel noemt geen paaltjes, nagekeken 17 nov 2026"
+ },
+ "start": {
+  "lat": 52.2695,
+  "lng": 6.71533,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=52.2695,6.71533",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=52.2695,6.71533"
+ },
  "kaart_js": "/routes-data/twickel-kaart.js",
  "lijnen": [
   [

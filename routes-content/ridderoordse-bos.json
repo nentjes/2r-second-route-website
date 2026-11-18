@@ -11,6 +11,17 @@
  "gpx_url": "",
  "bron_url": "https://www.utrechtslandschap.nl/content/uploads/2023/06/beheerplan-Bossen-rondom-Bilthoven.pdf",
  "startpunt": "Parkeerplaats aan de Gezichtslaan, Bilthoven (kruising Gezichtslaan en N234)",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "De witte en rode paaltjes in dit bos horen bij andere routes (B-124)"
+ },
+ "start": {
+  "lat": 52.1469,
+  "lng": 5.20595,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=52.1469,5.20595",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=52.1469,5.20595"
+ },
  "kaart_js": "/routes-data/ridderoordse-bos-kaart.js",
  "lijnen": [
   [

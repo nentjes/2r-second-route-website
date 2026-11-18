@@ -9,6 +9,17 @@
  "gpx_url": "https://merk.anwb.nl/m/40614bfd3b96c283/original/Vestingstad-Dokkum-GPX.gpx",
  "bron_url": "https://www.anwb.nl/wandelen/routes/stadswandeling-dokkum",
  "startpunt": "Parkeerterrein De Harddraver, Harddraversdijk, Dokkum (GPX-start 53.32625, 6.00502)",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "ANWB-routepagina noemt geen vaste markering, nagekeken 18 nov 2026"
+ },
+ "start": {
+  "lat": 53.326245,
+  "lng": 6.005017,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=53.326245,6.005017",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=53.326245,6.005017"
+ },
  "kaart_js": "/routes-data/dokkum-kaart.js",
  "lijnen": [
   [

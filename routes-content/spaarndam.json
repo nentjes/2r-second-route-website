@@ -9,6 +9,17 @@
  "gpx_url": "https://www.wandelnetwerknoordholland.nl/api/export-gpx/30735",
  "bron_url": "https://www.wandelnetwerknoordholland.nl/themaroutes/fortenroute/30735",
  "startpunt": "Westbroekplas, Velserbroek (rondwandeling langs Spaarndam, gemarkeerd met routepijlen van het wandelnetwerk)",
+ "volgen": {
+  "gemarkeerd": false,
+  "tekst": "Volg de kaart in de app",
+  "bron": "Routepagina Wandelnetwerk Noord-Holland noemt geen markering, nagekeken 18 nov 2026"
+ },
+ "start": {
+  "lat": 52.424008,
+  "lng": 4.672435,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=52.424008,4.672435",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=52.424008,4.672435"
+ },
  "kaart_js": "/routes-data/spaarndam-kaart.js",
  "lijnen": [
   [
