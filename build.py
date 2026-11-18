@@ -2585,6 +2585,71 @@ SURFACE_LBL = {
     'pt': {'verhard': 'pavimentado', 'half verhard': 'parcialmente pavimentado', 'onverhard': 'não pavimentado'},
 }
 
+# De Nederlandse volgtekst blijft afkomstig uit Claude's routegegevens.
+# Een onbekende tekst krijgt in andere talen geen Nederlandse terugval.
+ROUTE_FOLLOW_TXT = {
+    'Volg de oranje paaltjes': {
+        'en': 'Follow the orange posts', 'de': 'Folge den orangefarbenen Pfosten',
+        'fr': 'Suivez les poteaux orange', 'es': 'Sigue los postes naranjas',
+        'pt': 'Siga os postes laranja'},
+    'Volg de geel-witte markering (route WIW 16)': {
+        'en': 'Follow the yellow-and-white waymarks (route WIW 16)',
+        'de': 'Folge der gelb-weißen Markierung (Route WIW 16)',
+        'fr': 'Suivez le balisage jaune et blanc (itinéraire WIW 16)',
+        'es': 'Sigue las marcas amarillas y blancas (ruta WIW 16)',
+        'pt': 'Siga as marcas amarelas e brancas (percurso WIW 16)'},
+    'Volg de kaart in de app': {
+        'en': 'Follow the map in the app', 'de': 'Folge der Karte in der App',
+        'fr': 'Suivez la carte dans l’application', 'es': 'Sigue el mapa de la aplicación',
+        'pt': 'Siga o mapa na aplicação'},
+    'Volg de paaltjes met het groene vierkantje': {
+        'en': 'Follow the posts with the green square',
+        'de': 'Folge den Pfosten mit dem grünen Quadrat',
+        'fr': 'Suivez les poteaux marqués d’un carré vert',
+        'es': 'Sigue los postes con el cuadrado verde',
+        'pt': 'Siga os postes com o quadrado verde'},
+    'Volg de groene paaltjes': {
+        'en': 'Follow the green posts', 'de': 'Folge den grünen Pfosten',
+        'fr': 'Suivez les poteaux verts', 'es': 'Sigue los postes verdes',
+        'pt': 'Siga os postes verdes'},
+    'Volg de witte pijlen': {
+        'en': 'Follow the white arrows', 'de': 'Folge den weißen Pfeilen',
+        'fr': 'Suivez les flèches blanches', 'es': 'Sigue las flechas blancas',
+        'pt': 'Siga as setas brancas'},
+}
+
+ROUTE_START_TXT = {
+    'nl': dict(label='Startpunt', map='Start op de kaart', streetview='Start in Street View'),
+    'en': dict(label='Starting point', map='Start on the map', streetview='Start in Street View'),
+    'de': dict(label='Startpunkt', map='Start auf der Karte', streetview='Start in Street View'),
+    'fr': dict(label='Point de départ', map='Départ sur la carte', streetview='Départ dans Street View'),
+    'es': dict(label='Punto de partida', map='Inicio en el mapa', streetview='Inicio en Street View'),
+    'pt': dict(label='Ponto de partida', map='Início no mapa', streetview='Início no Street View'),
+}
+
+
+def route_follow_badge(lang, route):
+    text = (route.get('volgen') or {}).get('tekst', '')
+    if lang != 'nl':
+        text = ROUTE_FOLLOW_TXT.get(text, {}).get(lang, '')
+    return f'<span class="route-follow">{html.escape(text)}</span>' if text else ''
+
+
+def route_start_html(lang, route):
+    start = route.get('start') or {}
+    labels = ROUTE_START_TXT[lang]
+    links = [f'<a href="{html.escape(start[key], quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(labels[label])}</a>'
+             for key, label in [('kaart_url', 'map'), ('streetview_url', 'streetview')]
+             if start.get(key)]
+    if not links:
+        return ''
+    point = html.escape(route.get('startpunt') or '')
+    return (f'<div class="rt-start">\n'
+            f'      <p class="rt-start-point"><strong>{html.escape(labels["label"])}</strong> {point}</p>\n'
+            f'      <p class="rt-start-links">{"".join(links)}</p>\n'
+            f'    </div>\n    ')
+
+
 def format_km(value, lang):
     text = f'{float(value):.1f}'
     return text if lang == 'en' else text.replace('.', ',')
@@ -2647,6 +2712,7 @@ def build_routes_index(lang):
         r = ROUTES[meta['slug']]
         access = accessibility_values(meta, lang)
         access_html = ''.join(f'<span>{html.escape(value)}</span>' for value in access)
+        access_html += route_follow_badge(lang, r)
         feasible = bool(meta['begaanbaarheid']['met_stok_haalbaar'])
         feasible_text = ui['stick_yes'] if feasible else ui['stick_no']
         feasible_class = 'haalbaar' if feasible else 'zwaar'
@@ -2718,6 +2784,7 @@ def build_route_page(lang, r):
     taalnoot = f'<p class="rt-taalnoot">{t["taalnoot"]}</p>' if t['taalnoot'] else ''
     length = format_km(meta['lengte_km'], lang)
     access_html = ''.join(f'<span>{html.escape(value)}</span>' for value in accessibility_values(meta, lang))
+    access_html += route_follow_badge(lang, r)
     feasible = bool(meta['begaanbaarheid']['met_stok_haalbaar'])
     feasible_text = ui['stick_yes'] if feasible else ui['stick_no']
     feasible_class = 'haalbaar' if feasible else 'zwaar'
@@ -2758,7 +2825,7 @@ def build_route_page(lang, r):
   <section class="block"><div class="wrap">
     <h2>{t['kaart_h']}</h2>
     <p class="rt-kaart-p">{t['kaart_p']}</p>
-    <div id="kaart"></div>
+    {route_start_html(lang, r)}<div id="kaart"></div>
     <p class="rt-knoppen">
       {gpx_control}
       <a class="text-link" href="{r['bron_url']}" target="_blank" rel="noopener">{t['bronpagina']} →</a>
@@ -3041,6 +3108,70 @@ def build_urls_only():
     print(f'Publieke URL’s bijgewerkt in {total} pagina’s en sitemap; inhoud en routegegevens behouden.')
 
 
+def build_route_guidance_only():
+    """Werk uitsluitend de volgtekst en startlinks van bestaande routes bij."""
+    from pathlib import Path
+    routes, pending = {}, []
+
+    def source(slug):
+        if slug not in routes:
+            route = json.loads((Path(ROOT) / 'routes-content' / f'{slug}.json').read_text(encoding='utf-8'))
+            if route['slug'] != slug:
+                raise ValueError(f'Afwijkende routeslug in {slug}.json')
+            routes[slug] = route
+        return routes[slug]
+
+    def once(pattern, replace, document, context):
+        updated, count = re.subn(pattern, replace, document, flags=re.S)
+        if count != 1:
+            raise ValueError(f'{context}: verwacht één invoegpunt, gevonden {count}')
+        return updated
+
+    def without_badge(document):
+        return re.sub(r'<span class="route-follow">[^<]*</span>', '', document)
+
+    for lang in LANGS:
+        index = Path(OUT) / lang / 'routes' / 'index.html'
+        document = index.read_text(encoding='utf-8')
+        slugs = []
+
+        def update_card(match):
+            slug = match.group(1)
+            if slug in slugs:
+                raise ValueError(f'Dubbele routetegel: {lang}/{slug}')
+            slugs.append(slug)
+            badge = route_follow_badge(lang, source(slug))
+            return once(r'(<span class="prov-access"[^>]*>)(.*?)(</span>(?=\s*<span class="prov-feasible\b))',
+                        lambda m: m[1] + m[2] + badge + m[3],
+                        without_badge(match.group(0)), f'{lang}/{slug}: tegel')
+
+        updated = re.sub(r'<a class="prov-kaart live" href="/' + re.escape(lang)
+                         + r'/routes/([a-z0-9-]+)/">.*?</a>', update_card, document, flags=re.S)
+        if not slugs:
+            raise ValueError(f'Geen gepubliceerde routetegels gevonden in {index}')
+        pending.append((index, updated))
+        for slug in slugs:
+            path = index.parent / slug / 'index.html'
+            route = source(slug)
+            detail = without_badge(path.read_text(encoding='utf-8'))
+            detail = once(r'(<div class="rt-accessibility">.*?)(<strong class="prov-feasible\b)',
+                          lambda m: m[1] + route_follow_badge(lang, route) + m[2],
+                          detail, f'{lang}/{slug}: volgtekst')
+            detail = re.sub(r'<div class="rt-start">.*?</div>\n    ', '', detail, flags=re.S)
+            detail = once(r'<div id="kaart"></div>',
+                          lambda m: route_start_html(lang, route) + m[0],
+                          detail, f'{lang}/{slug}: startlinks')
+            pending.append((path, detail))
+
+    # Eerst alle talen en invoegpunten valideren; nooit een halve gerichte build.
+    changed = 0
+    for path, updated in pending:
+        if path.read_text(encoding='utf-8') != updated:
+            path.write_text(updated, encoding='utf-8')
+            changed += 1
+    print(f'Volgtekst en startlinks bijgewerkt in {changed} bestaande pagina’s; overige inhoud behouden.')
+
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
@@ -3049,9 +3180,13 @@ if __name__ == "__main__":
                         help='Bouw alleen de zes privacypagina’s; behoud alle andere publieke bestanden.')
     scope.add_argument('--urls-only', action='store_true',
                        help='Corrigeer alleen URL’s in bestaande pagina’s en sitemap; behoud teksten en routegegevens.')
+    scope.add_argument('--route-guidance-only', action='store_true',
+                       help='Werk alleen volgtekst en startlinks bij in bestaande routetegels en routepagina’s.')
     args = parser.parse_args()
     if args.urls_only:
         build_urls_only()
+    elif args.route_guidance_only:
+        build_route_guidance_only()
     elif args.privacy_only:
         for lang in LANGS:
             write(f'{lang}/privacy.html', build_privacy(lang))

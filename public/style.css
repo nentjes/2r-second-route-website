@@ -1017,6 +1017,15 @@ section.block + section.block { padding-top: 44px; }
 .kwaliteit-lijst li { margin-bottom: 8px; }
 #kaart { height: clamp(340px, 55vh, 540px); width: 100%; margin-top: 18px; border-radius: 14px; overflow: hidden; border: 1px solid var(--line-soft); background: #F2EBDD; }
 .rt-kaart-p { max-width: 62ch; color: rgba(23,36,43,.7); }
+.rt-start { margin-top: 24px; max-width: 62ch; }
+.rt-start-point { margin-bottom: 6px; }
+.rt-start-point strong { display: block; color: var(--petrol); }
+.rt-start-links { display: flex; flex-wrap: wrap; column-gap: 24px; margin: 0; }
+.rt-start-links a {
+  display: inline-flex; align-items: center; min-height: 44px; min-width: 44px;
+  color: var(--petrol); font-size: 1rem; font-weight: 600; text-underline-offset: 4px;
+}
+.rt-start-links a:focus-visible { outline: 2px solid var(--petrol); outline-offset: 3px; }
 .rt-knoppen { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; margin-top: 18px; }
 .rt-stops { max-width: 760px; }
 .rt-taalnoot { font-style: italic; color: rgba(23,36,43,.6); border-left: 2px solid var(--gold); padding-left: 12px; max-width: 60ch; }

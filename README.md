@@ -57,6 +57,12 @@ python3 check_urls.py --origin http://localhost:8787
 de Nederlandse navigatieshell en de sitemap van de bestaande publicatie.
 Daarbij worden routegegevens en gepubliceerde teksten niet opnieuw opgebouwd.
 
+`python3 build.py --route-guidance-only` werkt uitsluitend de volgtekst op
+bestaande routetegels en routepagina's en de startlinks bij de routekaart bij.
+Dit voegt geen nieuwe routes toe en behoudt hoofdstukken, audio, kaartdata en
+alle overige pagina-inhoud. Ontbrekende gegevens blijven onzichtbaar; een
+onbekende volgtekst wordt buiten het Nederlands pas na vertaling getoond.
+
 ## Publiceren
 
 De statische bestanden worden als Cloudflare Worker Assets gepubliceerd. Bouw
