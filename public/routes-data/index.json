@@ -5,7 +5,7 @@
    "naam": "Beerschoten, rode route (proef)",
    "provincie": "Utrecht",
    "lengte_km": 4.2,
-   "duur": "±1 uur (nog niet gelopen)",
+   "duur": "±1 uur",
    "begaanbaarheid": {
     "gemeten_op": "2026-11-19",
     "methode": "2r-begaanbaarheid-v2",
@@ -24,7 +24,7 @@
     ]
    },
    "soort": "buurtroute",
-   "hoofdstukken": 7,
+   "hoofdstukken": 8,
    "manifest": "https://2route.nl/routes-data/beerschoten-rood-manifest.json",
    "toegang": "code"
   },
