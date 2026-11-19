@@ -1,0 +1,421 @@
+{
+ "slug": "beerschoten-rood",
+ "land": "Nederland",
+ "provincie": "Utrecht",
+ "naam": "Beerschoten, rode route (proef)",
+ "soort": "buurtroute",
+ "lengte_km": 4.18,
+ "duur": "±1 uur (nog niet gelopen)",
+ "hoofdstukken_n": 7,
+ "toegang": "code",
+ "beheerder": "Stichting Het Utrechts Landschap",
+ "gpx_url": "",
+ "bron_url": "https://www.utrechtslandschap.nl/routes/wandelroute/beerschoten",
+ "startpunt": "Bezoekerscentrum Koetshuis Beerschoten, De Holle Bilt 6, De Bilt",
+ "volgen": {
+  "gemarkeerd": true,
+  "tekst": "Volg de rode paaltjes",
+  "bron": "Routepagina Het Utrechts Landschap noemt de rode route (4 km), nagekeken 18 nov 2026; lijn uit OpenStreetMap-relatie 1484165; nog niet in het veld gelopen"
+ },
+ "start": {
+  "lat": 52.106071,
+  "lng": 5.200024,
+  "kaart_url": "https://www.google.com/maps/search/?api=1&query=52.106071,5.200024",
+  "streetview_url": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=52.106071,5.200024"
+ },
+ "kaart_js": "/routes-data/beerschoten-rood-kaart.js",
+ "lijnen": [
+  [
+   [
+    52.106071,
+    5.200024
+   ],
+   [
+    52.106875,
+    5.20083
+   ],
+   [
+    52.10587,
+    5.203189
+   ],
+   [
+    52.106394,
+    5.205697
+   ],
+   [
+    52.10632,
+    5.205979
+   ],
+   [
+    52.106402,
+    5.206091
+   ],
+   [
+    52.106519,
+    5.206047
+   ],
+   [
+    52.108069,
+    5.208986
+   ],
+   [
+    52.108159,
+    5.209073
+   ],
+   [
+    52.108355,
+    5.208851
+   ],
+   [
+    52.10822,
+    5.210631
+   ],
+   [
+    52.108007,
+    5.210894
+   ],
+   [
+    52.107995,
+    5.211114
+   ],
+   [
+    52.108101,
+    5.211328
+   ],
+   [
+    52.108277,
+    5.211329
+   ],
+   [
+    52.108837,
+    5.212888
+   ],
+   [
+    52.109268,
+    5.213235
+   ],
+   [
+    52.110241,
+    5.213557
+   ],
+   [
+    52.110295,
+    5.214398
+   ],
+   [
+    52.109921,
+    5.216592
+   ],
+   [
+    52.110848,
+    5.217106
+   ],
+   [
+    52.113498,
+    5.21582
+   ],
+   [
+    52.113935,
+    5.217251
+   ],
+   [
+    52.114288,
+    5.217645
+   ],
+   [
+    52.114393,
+    5.215982
+   ],
+   [
+    52.114314,
+    5.214235
+   ],
+   [
+    52.114432,
+    5.213614
+   ],
+   [
+    52.114765,
+    5.212956
+   ],
+   [
+    52.114581,
+    5.212979
+   ],
+   [
+    52.11395,
+    5.212705
+   ],
+   [
+    52.112724,
+    5.212483
+   ],
+   [
+    52.111909,
+    5.212745
+   ],
+   [
+    52.110755,
+    5.213317
+   ],
+   [
+    52.110787,
+    5.212803
+   ],
+   [
+    52.110464,
+    5.210557
+   ],
+   [
+    52.110606,
+    5.209721
+   ],
+   [
+    52.109704,
+    5.208208
+   ],
+   [
+    52.10953,
+    5.20704
+   ],
+   [
+    52.108556,
+    5.206084
+   ],
+   [
+    52.108148,
+    5.206098
+   ],
+   [
+    52.105914,
+    5.203086
+   ],
+   [
+    52.106875,
+    5.20083
+   ],
+   [
+    52.106071,
+    5.200024
+   ]
+  ]
+ ],
+ "hoofdstukken": [
+  {
+   "nr": 1,
+   "titel": "Het Koetshuis van Beerschoten",
+   "focus": "geschiedenis",
+   "km": 0,
+   "lat": 52.106071,
+   "lng": 5.200024,
+   "paras": [
+    "Welkom op landgoed Beerschoten, in De Bilt. Je staat bij het Koetshuis, het bezoekerscentrum van Het Utrechts Landschap. Vanaf hier lopen we hun rode route: vier kilometer, ongeveer een uur, en je komt weer op deze plek uit.",
+    "Je kunt je telefoon nu in je zak doen. De rode paaltjes van Het Utrechts Landschap wijzen de weg. Ik vertel onderweg alleen wat er te zien is, en tussendoor houd ik mijn mond, zodat je het bos kunt horen.",
+    "Eerst de plek waar je staat. Van de twaalfde eeuw tot vijftienhonderdtachtig hoorde Beerschoten bij het vrouwenklooster in De Bilt. Het was een uithof: een boerderij van het klooster. In zestienhonderdtachtig kocht Jacob Martens het goed en bouwde er een huis bij. In achttienhonderdtwintig kwam het in handen van de familie Steengracht van Oostcapelle, die het landgoed uitbreidde. En dit koetshuis heeft ook een heel ander leven gehad. Vanaf negentienhonderdtwintig zat er een metaalwarenfabriek in, tot die in negentienhonderdzesenzeventig naar Hilversum vertrok. Het Utrechts Landschap kocht het gebouw daarna en liet het opknappen.",
+    "En je loopt hier in een bijzonder jaar. Het Utrechts Landschap is opgericht op negen maart negentienhonderdzevenentwintig, om oude landgoedbossen bij Bilthoven te redden van een villawijk. In maart tweeduizendzevenentwintig is dat honderd jaar geleden. Beerschoten hoort er sinds negentienhonderdzesenzestig bij, en Het Utrechts Landschap rekent het tot zijn kroonjuwelen.",
+    "Eén gedachte geef ik je mee voor onderweg. Op Beerschoten liggen twee tuinen over elkaar. Een rechte, uit de achttiende eeuw, met lanen en sterrenbossen. En een slingerende, uit de negentiende eeuw, die eruit moest zien als natuur. Let maar op wanneer het pad recht loopt, en wanneer het gaat buigen. Volg de rode paaltjes, dan meld ik me weer bij het water."
+   ],
+   "audio": "/audio/routes/beerschoten-rood/01.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/routes/wandelroute/beerschoten",
+     "Utrechts Landschap — wandelroute Beerschoten"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Landgoed_Beerschoten",
+     "Wikipedia — Landgoed Beerschoten"
+    ],
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/monumenten/511396",
+     "Rijksmonumentenregister — historische tuin- en parkaanleg Beerschoten (511396)"
+    ],
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/monumenten/511394",
+     "Rijksmonumentenregister — hoofdgebouw Beerschoten (511394)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/2017-Erfgoed-voor-de-eeuwigheid.pdf",
+     "Utrechts Landschap — Erfgoed voor de eeuwigheid (2017)"
+    ],
+    [
+     "https://natuurmonumenten.nl/canon-van-natuurmonumenten",
+     "Natuurmonumenten — Canon, oprichting provinciale landschappen"
+    ]
+   ]
+  },
+  {
+   "nr": 2,
+   "titel": "Het water en de beelden",
+   "focus": "geschiedenis",
+   "km": 0.26,
+   "lat": 52.106077,
+   "lng": 5.202691,
+   "paras": [
+    "Hier is het water, vlak naast het pad. Het ziet eruit alsof het hier altijd heeft gelegen. Maar het is gegraven.",
+    "Dit is de tweede tuin, de slingerende. In de achttiende eeuw hield men van rechte lijnen. In de negentiende eeuw wilde men het omgekeerde: een tuin die eruitzag als een landschap, met bochten in plaats van hoeken. Dus werd hier gegraven. Het rijksmonumentenregister beschrijft op Beerschoten een slingerende, vergraven beek tussen opgeworpen heuvels.",
+    "Die aanleg kwam in twee fasen. De eerste rond achttienhonderdtwintig, toen de familie Steengracht het landgoed kocht. De tweede na achttienhonderdtweeënveertig. Bij die tweede fase was waarschijnlijk de tuinarchitect Zocher junior betrokken. Het register schrijft er nadrukkelijk bij: waarschijnlijk. Zeker weten doen we het niet.",
+    "Kijk eens naar de oever. Geen rechte kant te vinden. Dat is geen toeval, dat is het ontwerp.",
+    "Vlak bij het pad ligt een veel jongere laag: het beeldenpark. Het is in negentienhonderdzevenennegentig ingericht achter het paviljoen, met werk van beeldhouwer Jits Bakker, in brons, marmer en graniet. Sinds dertien maart tweeduizendnegen is het van de provincie Utrecht.",
+    "Een gegraven beek uit de negentiende eeuw, en beelden uit de twintigste. We lopen nu terug in de tijd, naar de rechte tuin. Volg de rode paaltjes."
+   ],
+   "audio": "/audio/routes/beerschoten-rood/02.mp3",
+   "bronnen": [
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/monumenten/511396",
+     "Rijksmonumentenregister — historische tuin- en parkaanleg Beerschoten (511396)"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Beelden_op_Beerschoten",
+     "Wikipedia — Beeldenpark Jits Bakker"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/routes/wandelroute/beerschoten",
+     "Utrechts Landschap — wandelroute Beerschoten"
+    ]
+   ]
+  },
+  {
+   "nr": 3,
+   "titel": "De Konijnenberg",
+   "focus": "geschiedenis",
+   "km": 0.53,
+   "lat": 52.106514,
+   "lng": 5.206052,
+   "paras": [
+    "Je loopt nu vlak langs de Konijnenberg. Het is een klein heuveltje, op een meter of dertien van het pad.",
+    "Het stelt als berg weinig voor. Maar je staat hier in het midden van iets bijzonders: het zuidelijke sterrenbos van Beerschoten. Een sterrenbos is een bos met rechte lanen die als de stralen van een ster op één punt samenkomen. Dat punt is hier. Beerschoten heeft twee van zulke bossen, elk met een rond middelpunt.",
+    "Dit is de oudste tuin, de rechte, uit de achttiende eeuw. Kijk maar eens de lanen in die hier vandaan lopen. Het rijksmonumentenregister noemt dit lanenstelsel zeldzaam.",
+    "Rond achttienhonderdvijfendertig is er op de Konijnenberg een linde geplant. Eromheen staat wat Het Utrechts Landschap een beukengalerijbos noemt: hoge, oude beuken, als de zuilen van een gang. Kijk eens omhoog.",
+    "Als zo'n oude beuk uitvalt, is er ruimte voor jonge bomen die daar vanzelf opkomen.",
+    "En de heuvel zelf gaat veranderen. In het beheerplan van november tweeduizendvijfentwintig staat dat de rododendrons rond de Konijnenberg worden weggehaald, en dat er een ring van beuken of lindes omheen wordt geplant. Of dat al gebeurd is, zie jij nu beter dan ik.",
+    "De rode paaltjes brengen je naar het tweede sterrenbos."
+   ],
+   "audio": "/audio/routes/beerschoten-rood/03.mp3",
+   "bronnen": [
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/monumenten/511396",
+     "Rijksmonumentenregister — historische tuin- en parkaanleg Beerschoten (511396)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2025/12/UL25_beheerplan_houdringe_digitaal.pdf",
+     "Utrechts Landschap — beheerplan Houdringe, Beerschoten, Heyntjeskamp, Panbos (november 2025)"
+    ]
+   ]
+  },
+  {
+   "nr": 4,
+   "titel": "De Goudvissenkom",
+   "focus": "geschiedenis",
+   "km": 0.97,
+   "lat": 52.108109,
+   "lng": 5.210729,
+   "paras": [
+    "Hier ben je in het midden van het tweede sterrenbos. Op ruim twintig meter van het pad ligt de Goudvissenkom.",
+    "De kom is rond zeventienhonderdzevenenzeventig gegraven. Dat is bijna tweehonderdvijftig jaar geleden. En de grond die eruit kwam, is niet weggebracht. Die is een stukje naar het noordoosten opgeworpen tot een heuvel: de Trappenberg. Een kuil en een bult die bij elkaar horen.",
+    "Uit datzelfde jaar is ook het Melkweggetje op dit landgoed, dat voor een deel nog met de oorspronkelijke klinkers is bestraat.",
+    "Vanaf de kom lopen lijnen het bos in. Naar het noordwesten een laan van grove dennen, met twee levensbomen. En naar het westen liep een berceau: een loofgang, een pad met een dak van takken. Hij wordt ook het paraplulaantje genoemd. Die is nu overgroeid.",
+    "Zo gaat dat met een tuin van een kwart millennium oud. Sommige lijnen staan er nog strak bij, andere moet je erbij denken.",
+    "Het Utrechts Landschap noemt ze bij naam in het beheerplan: de Goudvissenkom, de Konijnenberg, het Paraplulaantje en de laan van grove dennen. Dat zijn de onderdelen van de oude aanleg die het wil behouden en versterken.",
+    "Hierna houdt de tuin op. De rode paaltjes nemen je mee het bos in, en ik meld me pas weer als we daar goed en wel zijn."
+   ],
+   "audio": "/audio/routes/beerschoten-rood/04.mp3",
+   "bronnen": [
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/monumenten/511396",
+     "Rijksmonumentenregister — historische tuin- en parkaanleg Beerschoten (511396)"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2025/12/UL25_beheerplan_houdringe_digitaal.pdf",
+     "Utrechts Landschap — beheerplan Houdringe, Beerschoten, Heyntjeskamp, Panbos (november 2025)"
+    ]
+   ]
+  },
+  {
+   "nr": 5,
+   "titel": "Bos op oud stuifzand",
+   "focus": "natuur",
+   "km": 1.75,
+   "lat": 52.111688,
+   "lng": 5.216707,
+   "paras": [
+    "Merk je het verschil? De lanen zijn weg. Je loopt nu in het oostelijke deel van Beerschoten, voorbij de parkaanleg.",
+    "Onder je voeten ligt zand. Dit deel van het gebied is bos op voormalig stuifzand: hier woei het zand ooit vrij rond, voordat er bos op werd geplant. De boom die je het meest ziet is de grove den.",
+    "Bij het Koetshuis was alles verzorgd. Het Utrechts Landschap zegt het in het beheerplan zo: een verzorgde uitstraling bij de landhuizen, en een natuurlijker beeld verder daarvandaan. Dit is verder daarvandaan. Kijk eens of je een dode boom ziet. Staand of liggend. Die is niet vergeten. Het Utrechts Landschap wil hier een oud, gemengd bos met veel dood hout, ook dikke stammen, in alle stadia van vergaan.",
+    "Als er wordt gedund, krijgen inheemse boomsoorten voorrang, zodat het aandeel uitheemse bomen langzaam kleiner wordt. En er wordt daarbij niet met machines door het bos gereden, om de bodem en de wortels te sparen.",
+    "In dit deel van het gebied broeden de wespendief en de raaf, en dassen en boommarters brengen er hun jongen groot. Of je ze ziet is een tweede, maar ze zijn er.",
+    "Ergens van Beerschoten naar het Panbos loopt nog een oude schaapsdrift, met oude eiken, een wal en een greppel erlangs.",
+    "Loop rustig door. Ik ben even stil."
+   ],
+   "audio": "/audio/routes/beerschoten-rood/05.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2025/12/UL25_beheerplan_houdringe_digitaal.pdf",
+     "Utrechts Landschap — beheerplan Houdringe, Beerschoten, Heyntjeskamp, Panbos (november 2025)"
+    ]
+   ]
+  },
+  {
+   "nr": 6,
+   "titel": "Het heideveldje",
+   "focus": "natuur",
+   "km": 2.65,
+   "lat": 52.11304,
+   "lng": 5.212513,
+   "paras": [
+    "Als je nu tussen de bomen door kijkt, ligt er op een meter of tachtig van het pad een open plek. Een klein heideveld, met kaal zand ertussen. Je loopt er niet langs, dus het kan zijn dat je er even naar moet zoeken.",
+    "Dat veldje laat zien hoe het hier was. Het beheerplan van Het Utrechts Landschap zegt het bijna letterlijk: enkele zandverstuivingen en heideveldjes herinneren nog aan de tijd vóór de bebossing. Het bos om je heen is de nieuwkomer. De heide en het zand waren er eerst.",
+    "Zo'n veldje blijft niet vanzelf open. Laat je het met rust, dan groeit het dicht met jonge bomen. Open houden is hier dus werk.",
+    "Het Utrechts Landschap beschrijft in dit gebied een heideveldje met droge struikheide, opener plekken en stukjes open zand. Op een deel van de heide is rust voor broedvogels als de boompieper en de boomleeuwerik. En het plan is om de heide groter te maken, door het bos aan de westkant stevig te dunnen.",
+    "Het is het omgekeerde van wat je bij de Konijnenberg zag. Daar worden bomen geplant om een oude tuin te herstellen. Hier worden bomen weggehaald om een nog ouder landschap terug te krijgen.",
+    "De rode paaltjes buigen nu terug, richting het landgoed."
+   ],
+   "audio": "/audio/routes/beerschoten-rood/06.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2025/12/UL25_beheerplan_houdringe_digitaal.pdf",
+     "Utrechts Landschap — beheerplan Houdringe, Beerschoten, Heyntjeskamp, Panbos (november 2025)"
+    ]
+   ]
+  },
+  {
+   "nr": 7,
+   "titel": "De akker en de weg terug",
+   "focus": "natuur",
+   "km": 3.41,
+   "lat": 52.10941,
+   "lng": 5.206882,
+   "paras": [
+    "Naast je ligt een akker. Je bent bijna terug.",
+    "Dit is geen gewone akker. Het Utrechts Landschap beheert de akkers op Beerschoten als mozaïekakkers: elk jaar verschillende gewassen naast elkaar, en een deel blijft in de winter gewoon staan. Er wordt licht bemest met stalmest, en een deel van het zaad komt van de eigen akkers.",
+    "Het gaat hier niet om de oogst, maar om wat ertussen groeit. In tweeduizendvijftien zijn op de grote akker van Beerschoten zeldzame akkerkruiden opnieuw ingezaaid. En eerlijk is eerlijk: veel van die soorten lijken alweer verdwenen. Het Utrechts Landschap schrijft dat zelf op, en wil ze opnieuw inzaaien. De akkers zijn rijk aan planten en insecten, maar de akkervogels waarop gehoopt werd, zijn er nog niet.",
+    "Dat vind ik het mooie van dit landgoed. Niets is hier af. En dat al bijna honderd jaar. In maart tweeduizendzevenentwintig bestaat Het Utrechts Landschap een eeuw. Het begon met bossen bij Bilthoven die anders een villawijk waren geworden. De lanen, de heide en deze akker zijn er nog omdat mensen er al die tijd voor hebben gezorgd, mede dankzij de Beschermers die dat werk steunen.",
+    "De wandeling begon bij een boerderij van het klooster en eindigt bij een akker. Daartussen zag je een rechte tuin, een slingerende tuin, en een bos op oud stuifzand.",
+    "Eén ding kan ik je niet meer laten zien. Vanaf de weide voor het huis keek je vroeger over een rechte zichtlijn naar de Domtoren van Utrecht. Die lijn is weg, door de hoge gebouwen van De Uithof.",
+    "De rode paaltjes brengen je in ongeveer achthonderd meter terug naar het Koetshuis. Dank je wel dat je meeliep. Dit was 2R, op de rode route van Het Utrechts Landschap."
+   ],
+   "audio": "/audio/routes/beerschoten-rood/07.mp3",
+   "bronnen": [
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2025/12/UL25_beheerplan_houdringe_digitaal.pdf",
+     "Utrechts Landschap — beheerplan Houdringe, Beerschoten, Heyntjeskamp, Panbos (november 2025)"
+    ],
+    [
+     "https://monumentenregister.cultureelerfgoed.nl/monumenten/511396",
+     "Rijksmonumentenregister — historische tuin- en parkaanleg Beerschoten (511396)"
+    ],
+    [
+     "https://nl.wikipedia.org/wiki/Landgoed_Beerschoten",
+     "Wikipedia — Landgoed Beerschoten"
+    ],
+    [
+     "https://www.utrechtslandschap.nl/content/uploads/2023/06/2017-Erfgoed-voor-de-eeuwigheid.pdf",
+     "Utrechts Landschap — Erfgoed voor de eeuwigheid (2017)"
+    ],
+    [
+     "https://natuurmonumenten.nl/canon-van-natuurmonumenten",
+     "Natuurmonumenten — Canon, oprichting provinciale landschappen"
+    ]
+   ]
+  }
+ ]
+}
