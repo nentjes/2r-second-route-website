@@ -3,7 +3,8 @@
  "naam": "Fortenroute (Spaarndam – Velserbroek)",
  "provincie": "Noord-Holland",
  "soort": "routeboek",
- "lengte_km": 5.99,
+ "toegang": "open",
+ "lengte_km": 6.0,
  "duur": "±1,5 uur",
  "beheerder": "Wandelnetwerk Noord-Holland (provinciaal routebureau, uitgevoerd door Recreatie Noord-Holland)",
  "gpx_url": "https://www.wandelnetwerknoordholland.nl/api/export-gpx/30735",
@@ -349,7 +350,7 @@
    "km": 0.0,
    "lat": 52.424008,
    "lng": 4.672435,
-   "audio": "https://2route.nl/audio/routes/spaarndam/01.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/01.mp3?v=8841a0e0572f",
    "tekst": "Welkom bij de Westbroekplas, hier in recreatiegebied Spaarnwoude. Voor je ligt de Fortenroute: een rondwandeling van zes kilometer, deels over onverhard pad, en gerekend op ongeveer anderhalf uur. Kijk eens om je heen. Riet, water, een paar bomen, verder vooral lucht. Het oogt als een landschap waar nooit iets is gebeurd. En juist dat is het bedrog van deze streek.\n\nWant alles wat je vandaag ziet, draait om één ding: water met twee gezichten. Eerst was het de vijand. Rond het jaar twaalfhonderdvijfentachtig liet graaf Floris de Vijfde van Holland een dam in het Spaarne leggen, en uit die waterkering groeide het dorp Spaarndam, waarvan je straks de rand raakt. Eeuwen later werd datzelfde water opeens een wapen. Tussen achttienhonderdtachtig en negentienhonderdtwintig verrees hier de Stelling van Amsterdam: een verdedigingslinie van honderdvijfendertig kilometer, met vijfenveertig forten, op vijftien tot twintig kilometer afstand rond de hoofdstad. Sinds negentienhonderdzesennegentig staat die hele ring op de werelderfgoedlijst van UNESCO.\n\nTwee van die forten kom je vandaag tegen: Fort benoorden en Fort bezuiden Spaarndam. En ergens onderweg vertel ik je over een jongetje met zijn vinger in een dijk. Dat beeld staat net buiten deze route, dus je loopt er niet langs, maar het hoort er wel bij. Zet je eerste stappen maar. Ik loop met je mee, en ik laat je zien hoe men hier van de grootste vijand uiteindelijk de sterkste verdediging maakte.",
    "bronnen": [
     {
@@ -373,7 +374,7 @@
    "km": 0.65,
    "lat": 52.428445,
    "lng": 4.672354,
-   "audio": "https://2route.nl/audio/routes/spaarndam/02.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/02.mp3?v=1b4ab53c7d29",
    "tekst": "Kijk eens goed naar dit groen, want geen struik staat hier per ongeluk. Je loopt door recreatiegebied Spaarnwoude, en dat is van de eerste tot de laatste meter bedacht en aangelegd.\n\nIn de jaren zestig groeide het Amsterdamse westelijke haven- en industriegebied hard, en het dreigde vast te groeien aan de agglomeratie IJmond en Zuid-Kennemerland. Twee stedelijke gebieden die elkaar zouden raken, met niets ertussen. De oplossing was een bufferzone: ongeveer drieduizend hectare groen, met opzet aangelegd om die twee uit elkaar te houden. Een grens van gras en bomen in plaats van beton.\n\nOp acht april negentienhonderdzeventig ging de eerste boom de grond in. Het eerste deel, Houtrak West, was in negentienhonderdvijfenzeventig klaar. Wie hier nu wandelt, wandelt dus door een plan.\n\nAchter dat plan zit een klein netwerk van partijen. Staatsbosbeheer is eigenaar van de grond. Het bestuurlijke beheer ligt bij het Recreatieschap Spaarnwoude. En het dagelijkse, praktische werk doet Recreatie Noord-Holland, dezelfde organisatie die deze wandelroute heeft uitgezet en de routepijlen heeft neergezet die je volgt.\n\nHet deel waar je nu bent, heet Westbroek. Daarin liggen drie plekken die vandaag alle drie langskomen: de Westbroekplas waar je vertrok, het Landje van Gruijters, en Fort benoorden Spaarndam, het eerste fort van die ring waar ik je net over vertelde.\n\nLoop maar rustig door. Voordat we bij dat fort zijn, moeten we eerst veel dieper de tijd in, want de grond onder je voeten heeft een eigen verhaal.",
    "bronnen": [
     {
@@ -389,7 +390,7 @@
    "km": 1.29,
    "lat": 52.428517,
    "lng": 4.677037,
-   "audio": "https://2route.nl/audio/routes/spaarndam/03.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/03.mp3?v=fadc6b574be4",
    "tekst": "Voel eens hoe zacht en laag de grond hier ligt. Dat is precies het verhaal dat ik je beloofde.\n\nDit hele landschap is gemaakt door het Oer-IJ: een getijdengeul en zeearm, de verre voorganger van het IJ bij Amsterdam. Rond vierduizend voor Christus wierp de zee hier met veel geweld strandwallen op, hogere zandruggen in een verder kletsnat gebied. En op zulke ruggen kon je wonen. Daar hield je droge voeten. Moet je nagaan wie hier al liepen. Op zo'n zandrug leefden boeren van de Vlaardingencultuur, ergens tussen vijfduizend driehonderd en tweeduizend voor Christus. Mensen die in de loop van generaties veranderden van jagers en verzamelaars in boeren, en die dat deden op een smalle streep zand tussen het water.\n\nVeel later kwamen de Romeinen. Rond Velsen bleven ze tot ongeveer het jaar vijftig na Christus; daarna trokken ze zich terug op de Oude Rijn. Ook zij waren, net als iedereen hier, afhankelijk van de vraag waar het droog was.\n\nEn hier komt alles samen. Juist omdat dit land van oudsher zo laag en zo waterrijk bleef, kon het eeuwen later met opzet onder water worden gezet. Wat de zee ooit had gemaakt, gebruikten ingenieurs later als verdediging. Zonder deze oude, natte bodem was de fortenring van de Stelling hier nooit mogelijk geweest.\n\nLoop maar door langs het water. Over een paar minuten kom je bij het eerste bewijs daarvan.",
    "bronnen": [
     {
@@ -405,7 +406,7 @@
    "km": 2.09,
    "lat": 52.422545,
    "lng": 4.67944,
-   "audio": "https://2route.nl/audio/routes/spaarndam/04.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/04.mp3?v=7cf07559539b",
    "tekst": "Daar, ongeveer honderd meter naast het pad, ligt het bewijs waar ik het over had: Fort benoorden Spaarndam. De route gaat er niet naartoe; dichterbij komen we vandaag niet.\n\nHet fort werd gebouwd tussen achttienhonderdzevenennegentig en negentienhonderdéén, bovenop aardwerken die er al lagen sinds de jaren tachtig van de negentiende eeuw. Het hoorde bij de Positie bij Spaarndam en had een heel concrete opdracht: de Slaperdijk met de weg en de Westlaan afsluiten en verdedigen. Ze bouwden het van cementbeton, in Nederland toen splinternieuw. Er was plaats voor tweehonderdachtentachtig manschappen. De twee draaibare kanonkoepels zijn in de oorlog door de Duitsers vernield. Maar het mooiste zit binnen, op de muren.\n\nOnder een kalklaag zijn tweehonderdtweeëndertig muurschilderingen teruggevonden, gemaakt door zowel Nederlandse als Duitse soldaten. Er zit zelfs een portret van filmster Marlene Dietrich bij. Stel je die mannen voor: lange diensten in een betonnen fort, en dan met een kwast op de muur het gezicht schilderen van een vrouw uit een film.\n\nNa de oorlog gebruikte de marine het fort van negentienhonderdachtenveertig tot negentienhonderdzeventig als munitieopslag. Daarna stond het decennialang verwaarloosd en afgesloten, tot de provincie vanaf tweeduizend zestien het lekkende dak liet herstellen. Meestal blijven de poorten dicht; alleen tijdens het jaarlijkse Fortenfestival in september gaan ze open.\n\nKijk nog even die kant op, en loop dan verder het open veld op. Want die leegte voor je is net zo goed door het leger gemaakt.",
    "bronnen": [
     {
@@ -429,7 +430,7 @@
    "km": 2.8,
    "lat": 52.416969,
    "lng": 4.676533,
-   "audio": "https://2route.nl/audio/routes/spaarndam/05.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/05.mp3?v=96050dc44b7e",
    "tekst": "Die leegte, hier vlak naast je, heeft een naam: het Landje van Gruijters. Het ligt ten noorden van Spaarndam, tussen de Redoute en het Liniepad, en het is nat, modderig en laag.\n\nDat is precies wat weidevogels willen. Grutto's, kluten en tureluurs zoeken hier in de modder naar voedsel, en 's winters strijken er grote aantallen smienten neer. Het lage waterpeil wordt bewust zo gehouden. De Stichting Landje van Gruijters doet dat, in nauwe samenwerking met een lokale boer.\n\nMaar dat het hier zo leeg en open bleef, is geen natuurbeslissing geweest. Dat is een militaire. In achttienhonderddrieënvijftig kwam de Kringenwet: rondom een fort mocht in verboden kringen tot driehonderd, zeshonderd en duizend meter niet worden gebouwd. Het schootsveld moest vrij blijven. Wie binnen die kringen tóch iets wilde neerzetten, mocht dat alleen doen van brandbare materialen als hout en riet, zodat het bij dreiging snel kon worden afgebroken.\n\nMeer dan een eeuw lag daar dus een streep door wat mensen met dit land mochten. Pas in negentienhonderddrieënzestig werd de wet ingetrokken. En toen Fort benoorden werd aangelegd, sneed de liniewal dit weiland zelfs in tweeën. Zo hebben de vestingbouwers zonder het te willen een vogelgebied nagelaten. Het leger wilde een leeg schootsveld, en de grutto kreeg zijn ruimte.\n\nLoop maar verder naar het zuiden. Daar ligt een dorp, en daar hoort een jongetje bij dat nooit heeft bestaan.",
    "bronnen": [
     {
@@ -453,7 +454,7 @@
    "km": 3.09,
    "lat": 52.415177,
    "lng": 4.676904,
-   "audio": "https://2route.nl/audio/routes/spaarndam/06.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/06.mp3?v=1622fbaa2ef9",
    "tekst": "Hier raakt de route de rand van Spaarndam, en meer dan dat doet ze niet. Het dorp zelf ligt een paar honderd meter naar het oosten, en de wandeling gaat er niet doorheen. Maar het verhaal hoort er wel bij, en het is het beroemdste van deze streek.\n\nDaar, op de IJdijk bij de Woerdersluis, staat het beeld van het jongetje dat zijn vinger in de dijk stak. Beeldhouwer Grada Rueb maakte het; op zeven juni negentienhonderdvijftig onthulde de toen zevenjarige prinses Margriet het.\n\nEn nu het rare. Dat verhaal is helemaal geen Hollandse overlevering. Het komt uit een Amerikaans boek, Hans Brinker, or the Silver Skates, van Mary Mapes Dodge, uit achttienhonderdvijfenzestig, en dat greep zelf terug op een Franse vertelling uit achttienhonderdachtenveertig. Veelzeggend staat de naam Hans Brinker dan ook nergens op de sokkel. Er staat dat het beeld is opgedragen aan de jeugd, aan de knaap die het symbool werd van de eeuwigdurende strijd van Nederland tegen het water.\n\nDe echte waterwerken zijn ouder en veel tastbaarder. Rond twaalfhonderdvijfentachtig legde Floris de Vijfde hier zijn dam in het Spaarne. En de Kolksluis in het dorp, in gebruik sinds de late dertiende eeuw en sinds tweeduizend negen weer bevaarbaar, geldt als de oudste nog werkende sluis van Europa. Spaarndam leefde eeuwenlang van tol en visserij, en was van achttienhonderdtwaalf tot negentienhonderdzevenentwintig een zelfstandige gemeente.\n\nWil je het beeld zien, maak dan een klein ommetje. Volg je de route, dan buigt die naar het zuiden, naar het tweede fort.",
    "bronnen": [
     {
@@ -481,7 +482,7 @@
    "km": 3.55,
    "lat": 52.411799,
    "lng": 4.673237,
-   "audio": "https://2route.nl/audio/routes/spaarndam/07.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/07.mp3?v=79ea738edd64",
    "tekst": "Het tweede fort dus. Vlak naast het pad, op zo'n negentig meter, aan het Noorder Buiten Spaarne, ligt Fort bezuiden Spaarndam.\n\nDe aardwerken werden hier in achttienhonderdvierentachtig aangelegd; het bomvrije hoofdgebouw was in negentienhonderdéén gereed. De taak leek op die van het vorige fort: de Slaperdijk en het Noorder-Spaarne met zijn weg verdedigen. Maar er kwam iets bij, en dat is het echte geheim van deze plek. Dit fort beheerste de sluis waarmee het omliggende land onder water kon worden gezet. Die oude inundatiesluis ligt hier vlakbij. Via inlaatduikers, damsluizen en een spuikanaaltje kon de Hekslootpolder aan weerszijden van de kade onder water worden gezet, met een laag van twintig tot dertig centimeter boven het maaiveld. Aan die historische damsluis is onlangs nog groot onderhoud gepleegd.\n\nEn de soldaten die hier tijdens de Eerste Wereldoorlog gelegerd waren, deden iets onverwachts. Tekenonderwijzer en fortsoldaat Louis Kortenhorst schilderde in de kantine, samen met een collega, zeven kopieën van schilderijen uit het Rijksmuseum, onder meer werk van Jan Steen en Pieter Aertsen. Zeven meesterwerken, nageschilderd in een fort.\n\nIn negentienhonderdnegenennegentig is het fort gerestaureerd. Het recreatieschap Spaarnwoude beheert het nu, en er zit een kunstcafé met terras aan de Mooie Nel, ruimte voor exposities, en een kinderopvang. Als onderdeel van de Stelling van Amsterdam is het provinciaal monument en werelderfgoed.\n\nLoop nu de polder in, weg van het water. Want die sluis was maar de kraan. Wat eruit kwam, dat was het wapen.",
    "bronnen": [
     {
@@ -513,7 +514,7 @@
    "km": 4.32,
    "lat": 52.411086,
    "lng": 4.666524,
-   "audio": "https://2route.nl/audio/routes/spaarndam/08.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/08.mp3?v=7af2235cf300",
    "tekst": "Rondom je ligt nu de open, vlakke polder, en die moest open blijven. Dit was het inundatiegebied van de Stelling van Amsterdam.\n\nHet idee was even simpel als geniaal. Bij oorlog werd dit land onder water gezet, met een laag van meestal zo'n twintig tot dertig centimeter boven het maaiveld. Niet meer dan dat. En juist dat weinige was het punt.\n\nWant zo'n laagje is te ondiep voor een boot: die komt er niet doorheen. En het is te diep om doorheen te waden, of om er met paard, kanon en wagen doorheen te trekken. Precies in dat smalle midden zit de vondst. Een heel landschap veranderde zo in een barrière waar een leger niet doorheen kwam.\n\nOm het water op dat peil te krijgen, was er wel werk nodig. De afwatering op het noord- en zuidfront werd een paar dagen stilgelegd, en elders werd juist water uit de Zuiderzee ingelaten. Dagen schuiven met kleppen en sluizen, om een laagje ter dikte van een hand te maken.\n\nEn dan het mooiste inzicht van deze wandeling. Niet de kanonnen van de forten waren het wapen; het water was het wapen. De forten bewaakten alleen de droge doorgangen die overbleven, de dijken en de wegen: de smalle naden in dat plan. Zonder die overstroming stonden ze er voor spek en bonen.\n\nLoop maar verder. Nog even, en je begrijpt waarom hier honderd jaar lang niemand mocht komen kijken.",
    "bronnen": [
     {
@@ -533,7 +534,7 @@
    "km": 5.05,
    "lat": 52.416809,
    "lng": 4.667299,
-   "audio": "https://2route.nl/audio/routes/spaarndam/09.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/09.mp3?v=ed686c2614ff",
    "tekst": "Een eeuw geleden had je hier niet mogen lopen. Alles wat je vandaag rustig bewandelt, was militair gebied: de forten waren staatsgeheim, en de polder eromheen moest van overheidswege leeg en overzichtelijk blijven. Vrij schootsveld, je hebt het onderweg al gezien.\n\nIn negentienhonderdtien werden de forten, batterijen en liniewallen van de Stelling in de hoogste, eerste klasse van de Kringenwet geplaatst. Dat betekende de strengste bouwbeperkingen die er waren. Een landschap dat op slot ging, en op slot bleef.\n\nPas op achtentwintig november negentienhonderddrieënzestig werd de Kringenwet definitief ingetrokken. Daarna ging het gebied stap voor stap open: eerst voor natuur, toen voor recreatie, uiteindelijk voor de wandelaar die je nu bent.\n\nEn toen werd de omkering compleet. In negentienhonderdzesennegentig kwam de hele Stelling van Amsterdam op de werelderfgoedlijst van UNESCO. Van staatsgeheim tot werelderfgoed, in nog geen honderd jaar. Wat verborgen moest blijven, wordt nu juist getoond.\n\nSindsdien openen de vaak verborgen forten hun poorten. Tijdens het jaarlijkse Fortenfestival, in tweeduizend zesentwintig van vijf tot en met dertien september, rond het Open Monumentenweekend, zijn er rondleidingen, ook bij de forten van Spaarndam die je vandaag van buiten hebt gezien. Dan mag je binnen kijken waar een eeuw geleden niemand mocht komen.\n\nVolg het pad maar terug naar het noorden. Er ligt nog één laag over dit landschap heen, en die is de jongste van allemaal.",
    "bronnen": [
     {
@@ -561,7 +562,7 @@
    "km": 5.56,
    "lat": 52.420405,
    "lng": 4.671631,
-   "audio": "https://2route.nl/audio/routes/spaarndam/10.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/10.mp3?v=55c25984f44f",
    "tekst": "Op de terugweg naar de Westbroekplas loop je door die jongste laag. Kijk naar het groen om je heen: bomen, gras, paden. Het meeste daarvan is er pas sinds negentienhonderdzeventig.\n\nHet werd aangeplant met een doel dat je inmiddels herkent, want ook dit is een landschap met een opdracht. Alleen was die opdracht niet meer militair. Het groen moest een leefbare buffer vormen tussen de haven, de industrie en de steden eromheen. Waar soldaten ooit een vrij schootsveld eisten, wandelt, fietst en vaart nu iedereen. Het beheer ligt bij Recreatie Noord-Holland, dat ook de bewegwijzering van deze route verzorgt: de pijlen die je de hele ochtend hebt gevolgd. En de Westbroekplas waar je begon en zo weer uitkomt? Ook die is aangelegd, als recreatieplas binnen ditzelfde gebied. Zelfs het water waarin je je straks weerspiegeld ziet, is ontworpen.\n\nZo liggen hier drie waterverhalen over elkaar heen. Het middeleeuwse dorp dat het water bedwong met een dam en met sluizen. De fortenring die datzelfde water als wapen inzette. En dit naoorlogse landschap, dat van datzelfde natte, lage land een plek maakte om te ontspannen. Drie manieren om met hetzelfde water om te gaan, alle drie nog zichtbaar, alle drie binnen zes kilometer.\n\nNog een paar honderd meter, en je bent terug bij het begin.",
    "bronnen": [
     {
@@ -577,7 +578,7 @@
    "km": 5.99,
    "lat": 52.424008,
    "lng": 4.672435,
-   "audio": "https://2route.nl/audio/routes/spaarndam/11.mp3",
+   "audio": "https://2route.nl/audio/routes/spaarndam/11.mp3?v=b447179a023b",
    "tekst": "En daar ligt de Westbroekplas weer voor je. De cirkel is rond: bijna zes kilometer, en je staat weer waar je vertrok.\n\nIn die zes kilometer heb je bijna achthonderd jaar waterbeheer gezien. Het begon met de dam die Floris de Vijfde rond twaalfhonderdvijfentachtig in het Spaarne liet leggen, de dam waar een heel dorp uit groeide. Het liep door tot de fortenring die tussen achttienhonderdtachtig en negentienhonderdtwintig werd gebouwd, en tot het groen dat daar in onze eigen tijd overheen kwam.\n\nTwee keer ging het over hetzelfde water. Eerst als vijand, die met dijken en sluizen werd bedwongen. Toen als bondgenoot, die met een handvol centimeters een heel leger kon tegenhouden. Dat is een merkwaardige gedachte om mee naar huis te nemen: dat het gevaarlijkste in dit landschap tegelijk het beste verdedigingswerk was dat men had.\n\nEn dat jongetje op zijn sokkel bij de Woerdersluis, verderop bij het dorp? Zijn vinger heeft nooit in een dijk gezeten; zijn verhaal komt uit een boek van de overkant van de oceaan. Toch is het beeld gebleven, en misschien juist daarom: het vat samen wat je vandaag hebt gelopen. Een laag land, en iemand die oplet.\n\nKijk nog één keer over het water voordat je gaat. Het was me een genoegen om met je mee te lopen langs de forten van Spaarndam. Neem de verhalen mee, en de volgende keer dat je door een polder rijdt, weet je wat eronder ligt.",
    "bronnen": [
     {
