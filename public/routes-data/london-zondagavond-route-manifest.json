@@ -9,7 +9,22 @@
  "beheerder": "NIMCO",
  "gpx_url": "",
  "bron_url": "",
- "begaanbaarheid": null,
+ "begaanbaarheid": {
+  "gemeten_op": "2026-11-19",
+  "methode": "2r-begaanbaarheid-v2",
+  "bron_snapshot": "2026-09-14-113144",
+  "lengte_km": 1.8,
+  "klim_m": 12,
+  "verharding": null,
+  "verhard_deel": null,
+  "onbekend_deel": null,
+  "route_dekking": null,
+  "bankjes": null,
+  "met_stok_haalbaar": null,
+  "kanttekeningen": [
+   "ondergrond niet vastgesteld"
+  ]
+ },
  "lijnen": [
   [
    [

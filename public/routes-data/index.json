@@ -158,7 +158,23 @@
    "provincie": "Engeland",
    "lengte_km": 17.7,
    "duur": "",
-   "begaanbaarheid": null,
+   "begaanbaarheid": {
+    "gemeten_op": "2026-11-19",
+    "methode": "2r-begaanbaarheid-v2",
+    "bron_snapshot": "2026-09-14-113144",
+    "lengte_km": 17.7,
+    "klim_m": 149,
+    "verharding": null,
+    "verhard_deel": null,
+    "onbekend_deel": null,
+    "route_dekking": null,
+    "bankjes": null,
+    "met_stok_haalbaar": false,
+    "kanttekeningen": [
+     "17,7 km is lang voor wie kort loopt",
+     "149 m klimmen"
+    ]
+   },
    "soort": "routeboek",
    "hoofdstukken": 21,
    "manifest": "https://2route.nl/routes-data/jubilee-walk-central-london-circular-walk-manifest.json",
@@ -195,7 +211,22 @@
    "provincie": "",
    "lengte_km": 1.8,
    "duur": "",
-   "begaanbaarheid": null,
+   "begaanbaarheid": {
+    "gemeten_op": "2026-11-19",
+    "methode": "2r-begaanbaarheid-v2",
+    "bron_snapshot": "2026-09-14-113144",
+    "lengte_km": 1.8,
+    "klim_m": 12,
+    "verharding": null,
+    "verhard_deel": null,
+    "onbekend_deel": null,
+    "route_dekking": null,
+    "bankjes": null,
+    "met_stok_haalbaar": null,
+    "kanttekeningen": [
+     "ondergrond niet vastgesteld"
+    ]
+   },
    "soort": "buurtroute",
    "hoofdstukken": 12,
    "manifest": "https://2route.nl/routes-data/london-zondagavond-route-manifest.json",
