@@ -41,6 +41,10 @@ python3 -m http.server 8000 --directory public
 
 Open daarna `http://127.0.0.1:8000/nl/`.
 
+Voor een tekstcorrectie op de partnerpagina gebruikt u `python3 build.py
+--partners-only`. Deze gerichte bouw werkt uitsluitend de zes partnerpagina’s
+bij en behoudt alle andere bestanden, inclusief de bestaande routepublicatie.
+
 Cloudflare serveert HTML met schone adressen: `index.html` als mapadres en
 andere HTML-bestanden zonder `.html`. `public_url()` in `build.py` bepaalt
 deze adressen voor sitemap, canonical, hreflang en interne links. Een gewone

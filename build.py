@@ -25,6 +25,7 @@ VLOER_VERHALEN_NL = {100: 'honderd'}.get(VLOER_VERHALEN_PER_MAAND, str(VLOER_VER
 # Enige waarheid voor alle publieke downloadknoppen. De volledige, door Apple
 # gepubliceerde URL voorkomt dat de verkorte landloze link onderweg strandt.
 APP_STORE_URL = 'https://apps.apple.com/nl/app/2r-second-route/id6802613397'
+CONTACT_EMAIL = 'hulp@2route.nl'
 
 LANG_LABEL = {'nl': 'NL', 'en': 'EN', 'de': 'DE', 'fr': 'FR', 'es': 'ES', 'pt': 'PT'}
 HTML_LANG = {'nl': 'nl', 'en': 'en', 'de': 'de', 'fr': 'fr', 'es': 'es', 'pt': 'pt'}
@@ -1227,7 +1228,7 @@ def footer(lang):
       <a href="/{lang}/stories/">{s['nav_stories']}</a>
       <a href="/{lang}/kwaliteit/">{QUALITY_TXT[lang]['nav']}</a>
       <a href="{public_url(lang, 'privacy.html')}">{s['nav_privacy']}</a>
-      <a href="mailto:nimco@nentjes.nl">{s['footer_contact']}</a>
+      <a href="mailto:{CONTACT_EMAIL}">{s['footer_contact']}</a>
     </div>
   </div>
   <p class="footer-family">{s['footer_tagline']}</p>
@@ -2334,186 +2335,186 @@ ROUTES_TXT = {
 PARTNER_TXT = {
 'nl': dict(
     title='Voor routebeheerders — 2R (Second Route)',
-    description='Maak van een bestaande wandel- of fietsroute een levend, meertalig luisterverhaal met kaart, hoofdstukken, bronnen en een warme vertelstem.',
+    description='Maak van een bestaande wandel- of fietsroute een luisterverhaal met kaart, hoofdstukken, bronnen en een warme vertelstem.',
     eyebrow='Voor routebeheerders, uitgevers en erfgoedmakers',
     h1='Uw route wijst de weg.<br>2R geeft haar een stem.',
     lede='Een GPX-bestand vertelt waar iemand moet lopen of fietsen. 2R voegt toe waarom die weg ertoe doet — als één zorgvuldig opgebouwd luisterverhaal.',
-    primary='Bespreek een pilotroute', secondary='Beluister onze eerste route',
-    proof_label='Van pad naar verhaal', proof_h='Eén wandeling bewijst de hele keten.',
-    proof_p='Voor Boswachterspad Stulp en Kasteeltuin brachten we de officiële route, lokale bronnen en OpenStreetMap-geodata samen in een routeboek dat op wandeltempo vertelt.',
+    primary='Bespreek een pilotroute', secondary='Bekijk de luisterroutes',
+    proof_label='Van pad naar verhaal', proof_h='Zo maken we een route.',
+    proof_p='We beginnen bij uw bestaande route en de markering in het veld. Uit uw folders, beheerplannen en andere bronnen, aangevuld met OpenStreetMap, schrijven we korte vertellingen die op wandeltempo komen. De app start ze vanzelf op de juiste plek; tussendoor is hij stil.',
     facts=[],
     process_label='De werkwijze', process_h='Van bronmateriaal naar een levende route.',
     process=[
         ('De route', 'U levert een GPX-bestand, routebeschrijving of bestaande gids. Wij leggen het echte spoor en de relevante omgeving vast.'),
         ('De kennis', 'Lokale bronnen, erfgoedarchieven en informatie van de beheerder vormen de grondstof. Elk feit blijft herleidbaar.'),
-        ('Het reisboek', 'Hoofdstukken krijgen één rode draad, het juiste ritme voor wandelen of fietsen en een menselijke eindredactie.'),
-        ('De beleving', 'Publicatie kan in 2R, op het web of via een QR-code — met kaart, audio, leestekst en bronvermelding.'),
+        ('Het reisboek', 'Hoofdstukken krijgen één rode draad en het juiste ritme voor wandelen of fietsen. Voordat de route openbaar wordt, leest u alles mee.'),
+        ('De beleving', 'Wandelaars luisteren met de gratis 2R-app op hun telefoon, met kaart, audio, leestekst en bronvermelding. Ze volgen uw bestaande markering; extra bordjes of codes om onderweg te scannen zijn niet nodig.'),
     ],
     audience_label='Voor wie', audience_h='Bestaande routes, een nieuw publiek.',
     audiences=[
         ('Wandel- en fietsorganisaties', 'Maak van GPX, knooppunten en papieren gidsen een ervaring die onderweg vanzelf begint.'),
-        ('Natuur en erfgoed', 'Laat landschap, monumenten en lokale stemmen samen één betrouwbaar verhaal vertellen.'),
-        ('Steden en regio’s', 'Ontvang bezoekers in hun eigen taal, zonder opnieuw een complete app te hoeven bouwen.'),
+        ('Natuur en erfgoed', 'Laat landschap, monumenten en lokale stemmen samen één betrouwbaar verhaal vertellen. Een digitale gids die er altijd is, naast uw excursies en niet in de plaats daarvan.'),
+        ('Steden en regio’s', 'Geef bezoekers verhalen onderweg, zonder een eigen app te hoeven bouwen.'),
         ('Uitgevers', 'Voeg een luistereditie toe aan een bestaande gids of ontwikkel een nieuw digitaal routeboek.'),
     ],
     principle='Een GPX-bestand wijst de weg. 2R vertelt het verhaal van die weg.',
     studio_label='De volgende horizon', studio_h='Van pilot naar 2R Studio.',
-    studio_p='We beginnen bewust met enkele routes die we samen met hun beheerders maken. Uit die praktijk groeit een Studio waarmee organisaties later zelf routes, bronnen en hoofdstukken kunnen beheren — terwijl 2R kwaliteit, stem en distributie bewaakt.',
+    studio_p='We willen bewust klein beginnen, met een paar routes die we samen met de beheerder maken. Uit die praktijk groeit 2R Studio, waarmee organisaties later zelf routes, bronnen en hoofdstukken kunnen beheren. 2R bewaakt de kwaliteit, de stem en de verspreiding.',
     final_h='Welke route verdient als eerste een stem?',
     final_p='Stuur ons een GPX-bestand, gids of routepagina. We kiezen samen één route waarmee we de inhoud, techniek en publieksreactie kunnen bewijzen.',
     final_cta='Laat één route proefvertellen',
 ),
 'en': dict(
     title='For route publishers — 2R (Second Route)',
-    description='Turn an existing walking or cycling route into a living, multilingual audio story with a map, chapters, sources and a warm narrative voice.',
+    description='Turn an existing walking or cycling route into an audio story with a map, chapters, sources and a warm narrative voice.',
     eyebrow='For route stewards, publishers and heritage makers',
     h1='Your route shows the way.<br>2R gives it a voice.',
     lede='A GPX file tells people where to walk or cycle. 2R adds why that road matters — as one carefully composed listening story.',
-    primary='Discuss a pilot route', secondary='Listen to our first route',
-    proof_label='From path to story', proof_h='One walk proves the entire chain.',
-    proof_p='For the Stulp and Castle Garden forester trail, we brought together the official route, local sources and OpenStreetMap geodata in a route book paced for walking.',
+    primary='Discuss a pilot route', secondary='Browse the listening routes',
+    proof_label='From path to story', proof_h='How we create a route.',
+    proof_p='We start with your existing route and the waymarks on the ground. Using your leaflets, management plans and other sources, supplemented by OpenStreetMap, we write short stories paced for walking. The app starts them automatically at the right place and stays quiet in between.',
     facts=[],
     process_label='The method', process_h='From source material to a living route.',
     process=[
         ('The route', 'You supply a GPX file, route description or existing guide. We map the actual trail and its meaningful surroundings.'),
         ('The knowledge', 'Local sources, heritage archives and steward information become the raw material. Every fact remains traceable.'),
-        ('The route book', 'Chapters gain one narrative thread, the right walking or cycling pace and a final human edit.'),
-        ('The experience', 'Publish in 2R, on the web or through a QR code — with map, audio, reading text and source notes.'),
+        ('The route book', 'Chapters share a narrative thread and the right pace for walking or cycling. You review everything before the route is made public.'),
+        ('The experience', 'Walkers listen with the free 2R app on their phone, with a map, audio, reading text and source notes. They follow your existing waymarks; no extra signs or codes to scan along the way are needed.'),
     ],
     audience_label='Who it is for', audience_h='Existing routes, a new audience.',
     audiences=[
         ('Walking and cycling organisations', 'Turn GPX tracks, route networks and printed guides into an experience that starts by itself.'),
-        ('Nature and heritage', 'Let landscape, monuments and local voices form one reliable story.'),
-        ('Cities and regions', 'Welcome visitors in their own language without building an entire app from scratch.'),
+        ('Nature and heritage', 'Let landscape, monuments and local voices form one reliable story. A digital guide that is always available, alongside your guided walks rather than replacing them.'),
+        ('Cities and regions', 'Give visitors stories along the way without having to build your own app.'),
         ('Publishers', 'Add a listening edition to an existing guide or create a new digital route book.'),
     ],
     principle='A GPX file shows the way. 2R tells the story of that way.',
     studio_label='The next horizon', studio_h='From pilot to 2R Studio.',
-    studio_p='We deliberately begin with a few routes made together with their stewards. That practice can grow into a Studio where organisations manage routes, sources and chapters themselves, while 2R safeguards quality, voice and distribution.',
+    studio_p='We want to start small, with a few routes made together with their stewards. That experience will shape 2R Studio, where organisations will later be able to manage routes, sources and chapters themselves. 2R will safeguard quality, voice and distribution.',
     final_h='Which route deserves a voice first?',
     final_p='Send us a GPX file, guide or route page. Together we will choose one route to prove the content, technology and audience response.',
     final_cta='Let us narrate one pilot route',
 ),
 'de': dict(
     title='Für Routenanbieter — 2R (Second Route)',
-    description='Verwandeln Sie eine Wander- oder Radroute in eine lebendige, mehrsprachige Hörgeschichte mit Karte, Kapiteln, Quellen und warmer Erzählstimme.',
+    description='Verwandeln Sie eine Wander- oder Radroute in eine Hörgeschichte mit Karte, Kapiteln, Quellen und warmer Erzählstimme.',
     eyebrow='Für Routenanbieter, Verlage und Kulturerbe-Initiativen',
     h1='Ihre Route zeigt den Weg.<br>2R gibt ihr eine Stimme.',
     lede='Eine GPX-Datei zeigt, wo man wandert oder Rad fährt. 2R ergänzt, warum dieser Weg bedeutsam ist — als sorgfältig komponierte Hörgeschichte.',
-    primary='Pilotroute besprechen', secondary='Unsere erste Route anhören',
-    proof_label='Vom Weg zur Geschichte', proof_h='Eine Wanderung beweist die ganze Kette.',
-    proof_p='Für den Boswachterspad Stulp en Kasteeltuin verbanden wir die offizielle Route, lokale Quellen und OpenStreetMap-Geodaten zu einem Routenbuch im Wandertempo.',
+    primary='Pilotroute besprechen', secondary='Hörrouten ansehen',
+    proof_label='Vom Weg zur Geschichte', proof_h='So entsteht eine Route.',
+    proof_p='Wir beginnen mit Ihrer bestehenden Route und der Beschilderung vor Ort. Aus Ihren Broschüren, Pflegeplänen und anderen Quellen, ergänzt durch OpenStreetMap, schreiben wir kurze Geschichten im Wandertempo. Die App startet sie am passenden Ort automatisch und bleibt dazwischen still.',
     facts=[],
     process_label='Die Arbeitsweise', process_h='Vom Quellenmaterial zur lebendigen Route.',
     process=[
         ('Die Route', 'Sie liefern GPX-Datei, Routenbeschreibung oder Reiseführer. Wir erfassen den echten Weg und sein relevantes Umfeld.'),
         ('Das Wissen', 'Lokale Quellen, Archive und Informationen des Anbieters bilden das Material. Jeder Fakt bleibt nachvollziehbar.'),
-        ('Das Routenbuch', 'Kapitel erhalten einen roten Faden, das passende Wander- oder Radtempo und eine menschliche Schlussredaktion.'),
-        ('Das Erlebnis', 'Veröffentlichung in 2R, im Web oder per QR-Code — mit Karte, Audio, Lesetext und Quellen.'),
+        ('Das Routenbuch', 'Kapitel erhalten einen roten Faden und das passende Tempo zum Wandern oder Radfahren. Bevor die Route veröffentlicht wird, lesen Sie alles gegen.'),
+        ('Das Erlebnis', 'Wandernde hören mit der kostenlosen 2R-App auf ihrem Telefon, mit Karte, Audio, Lesetext und Quellenangaben. Sie folgen Ihrer bestehenden Beschilderung; zusätzliche Schilder oder unterwegs zu scannende Codes sind nicht nötig.'),
     ],
     audience_label='Für wen', audience_h='Bestehende Routen, ein neues Publikum.',
     audiences=[
         ('Wander- und Radorganisationen', 'Machen Sie aus GPX, Routennetzen und gedruckten Führern ein Erlebnis, das unterwegs von selbst beginnt.'),
-        ('Natur und Kulturerbe', 'Lassen Sie Landschaft, Denkmäler und lokale Stimmen eine verlässliche Geschichte erzählen.'),
-        ('Städte und Regionen', 'Begrüßen Sie Gäste in ihrer Sprache, ohne selbst eine vollständige App zu bauen.'),
+        ('Natur und Kulturerbe', 'Lassen Sie Landschaft, Denkmäler und lokale Stimmen eine verlässliche Geschichte erzählen. Ein digitaler Begleiter, der jederzeit verfügbar ist und Ihre Führungen ergänzt, ohne sie zu ersetzen.'),
+        ('Städte und Regionen', 'Bieten Sie Gästen Geschichten unterwegs, ohne eine eigene App entwickeln zu müssen.'),
         ('Verlage', 'Ergänzen Sie einen Führer um eine Hörausgabe oder entwickeln Sie ein digitales Routenbuch.'),
     ],
     principle='Eine GPX-Datei zeigt den Weg. 2R erzählt die Geschichte dieses Weges.',
     studio_label='Der nächste Horizont', studio_h='Von der Pilotroute zum 2R Studio.',
-    studio_p='Wir beginnen bewusst mit wenigen Routen, die gemeinsam mit ihren Anbietern entstehen. Daraus kann ein Studio wachsen, in dem Organisationen Routen, Quellen und Kapitel selbst verwalten — während 2R Qualität, Stimme und Distribution sichert.',
+    studio_p='Wir möchten bewusst klein anfangen, mit wenigen Routen, die wir gemeinsam mit den Verantwortlichen erstellen. Aus dieser Erfahrung wächst 2R Studio, mit dem Organisationen später Routen, Quellen und Kapitel selbst verwalten können. 2R sichert Qualität, Stimme und Verbreitung.',
     final_h='Welche Route verdient zuerst eine Stimme?',
     final_p='Senden Sie uns GPX-Datei, Führer oder Routenseite. Gemeinsam wählen wir eine Route, an der Inhalt, Technik und Publikumsreaktion sichtbar werden.',
     final_cta='Eine Pilotroute erzählen lassen',
 ),
 'fr': dict(
     title='Pour les éditeurs de routes — 2R (Second Route)',
-    description="Transformez une randonnée ou un itinéraire cyclable en récit audio vivant et multilingue, avec carte, chapitres, sources et voix chaleureuse.",
+    description="Transformez une randonnée ou un itinéraire cyclable en récit audio, avec carte, chapitres, sources et voix chaleureuse.",
     eyebrow='Pour les gestionnaires, éditeurs et acteurs du patrimoine',
     h1='Votre route montre le chemin.<br>2R lui donne une voix.',
     lede="Un fichier GPX indique où marcher ou pédaler. 2R ajoute pourquoi ce chemin compte — sous la forme d'un récit audio soigneusement construit.",
-    primary='Parler d’une route pilote', secondary='Écouter notre première route',
-    proof_label='Du sentier au récit', proof_h='Une randonnée démontre toute la chaîne.',
-    proof_p="Pour le sentier forestier Stulp et Jardin du Château, nous avons réuni la route officielle, les sources locales et les géodonnées OpenStreetMap dans un carnet rythmé pour la marche.",
+    primary='Parler d’une route pilote', secondary='Voir les routes audio',
+    proof_label='Du sentier au récit', proof_h='Comment nous créons un itinéraire.',
+    proof_p="Nous partons de votre itinéraire existant et du balisage sur le terrain. À partir de vos brochures, plans de gestion et autres sources, complétés par OpenStreetMap, nous écrivons de courts récits au rythme de la marche. L’application les lance automatiquement au bon endroit et reste silencieuse entre les récits.",
     facts=[],
     process_label='La méthode', process_h="Des sources à l'itinéraire vivant.",
     process=[
         ("L'itinéraire", 'Vous fournissez un fichier GPX, une description ou un guide. Nous cartographions le tracé réel et son environnement pertinent.'),
         ('Les connaissances', 'Sources locales, archives patrimoniales et informations du gestionnaire forment la matière. Chaque fait reste traçable.'),
-        ('Le carnet de route', 'Les chapitres reçoivent un fil rouge, le bon rythme de marche ou de vélo et une relecture humaine finale.'),
-        ("L'expérience", 'Publication dans 2R, sur le web ou par QR code — avec carte, audio, texte et sources.'),
+        ('Le carnet de route', 'Les chapitres suivent un fil conducteur et le bon rythme pour marcher ou pédaler. Vous relisez tout avant que l’itinéraire soit rendu public.'),
+        ("L'expérience", 'Les promeneurs écoutent avec l’application gratuite 2R sur leur téléphone, avec carte, audio, texte et sources. Ils suivent votre balisage existant ; aucun panneau supplémentaire ni code à scanner en chemin n’est nécessaire.'),
     ],
     audience_label='Pour qui', audience_h='Des routes existantes, un nouveau public.',
     audiences=[
         ('Organisations de marche et de vélo', "Transformez GPX, réseaux et guides papier en expérience qui commence d'elle-même."),
-        ('Nature et patrimoine', 'Faites du paysage, des monuments et des voix locales une histoire fiable.'),
-        ('Villes et régions', 'Accueillez les visiteurs dans leur langue sans devoir construire une application complète.'),
+        ('Nature et patrimoine', 'Faites du paysage, des monuments et des voix locales une histoire fiable. Un guide numérique toujours disponible, qui complète vos visites guidées sans les remplacer.'),
+        ('Villes et régions', 'Proposez aux visiteurs des récits en chemin sans devoir créer votre propre application.'),
         ('Éditeurs', "Ajoutez une édition audio à un guide existant ou créez un nouveau carnet de route numérique."),
     ],
     principle='Un fichier GPX montre le chemin. 2R raconte l’histoire de ce chemin.',
     studio_label="L'horizon suivant", studio_h='De la route pilote au 2R Studio.',
-    studio_p="Nous commençons volontairement par quelques routes créées avec leurs gestionnaires. Cette pratique pourra devenir un Studio où les organisations gèrent routes, sources et chapitres, tandis que 2R veille à la qualité, à la voix et à la diffusion.",
+    studio_p="Nous souhaitons commencer modestement, avec quelques itinéraires créés avec leurs gestionnaires. Cette expérience fera grandir 2R Studio, qui permettra ensuite aux organisations de gérer elles-mêmes itinéraires, sources et chapitres. 2R veillera à la qualité, à la voix et à la diffusion.",
     final_h='Quelle route mérite une voix en premier ?',
     final_p='Envoyez-nous un fichier GPX, un guide ou une page de route. Ensemble, choisissons un itinéraire pour éprouver le contenu, la technologie et la réaction du public.',
     final_cta='Faire raconter une route pilote',
 ),
 'es': dict(
     title='Para editores de rutas — 2R (Second Route)',
-    description='Convierte una ruta a pie o en bicicleta en un relato sonoro vivo y multilingüe, con mapa, capítulos, fuentes y una voz cálida.',
+    description='Convierte una ruta a pie o en bicicleta en un relato sonoro con mapa, capítulos, fuentes y una voz cálida.',
     eyebrow='Para gestores de rutas, editores y creadores de patrimonio',
     h1='Tu ruta muestra el camino.<br>2R le da voz.',
     lede='Un archivo GPX indica por dónde caminar o pedalear. 2R añade por qué ese camino importa, como un relato sonoro cuidadosamente construido.',
-    primary='Hablar de una ruta piloto', secondary='Escuchar nuestra primera ruta',
-    proof_label='Del camino a la historia', proof_h='Una caminata demuestra toda la cadena.',
-    proof_p='Para el Boswachterspad Stulp en Kasteeltuin reunimos la ruta oficial, fuentes locales y geodatos de OpenStreetMap en un libro de ruta al ritmo del caminante.',
+    primary='Hablar de una ruta piloto', secondary='Ver las rutas sonoras',
+    proof_label='Del camino a la historia', proof_h='Así creamos una ruta.',
+    proof_p='Partimos de tu ruta existente y de la señalización sobre el terreno. Con tus folletos, planes de gestión y otras fuentes, complementados con OpenStreetMap, escribimos relatos breves al ritmo del caminante. La aplicación los inicia automáticamente en el lugar adecuado y guarda silencio entre ellos.',
     facts=[],
     process_label='El método', process_h='Del material de origen a una ruta viva.',
     process=[
         ('La ruta', 'Aportas un archivo GPX, una descripción o una guía. Trazamos el recorrido real y su entorno relevante.'),
         ('El conocimiento', 'Fuentes locales, archivos patrimoniales e información del gestor forman la materia prima. Cada dato sigue siendo rastreable.'),
-        ('El libro de ruta', 'Los capítulos reciben un hilo conductor, el ritmo adecuado para caminar o pedalear y una revisión humana final.'),
-        ('La experiencia', 'Publicación en 2R, en la web o mediante QR — con mapa, audio, texto y fuentes.'),
+        ('El libro de ruta', 'Los capítulos comparten un hilo conductor y el ritmo adecuado para caminar o pedalear. Revisas todo antes de que la ruta se haga pública.'),
+        ('La experiencia', 'Los caminantes escuchan con la aplicación gratuita 2R en su teléfono, con mapa, audio, texto y fuentes. Siguen tu señalización existente; no hacen falta carteles adicionales ni códigos que escanear por el camino.'),
     ],
     audience_label='Para quién', audience_h='Rutas existentes, un público nuevo.',
     audiences=[
         ('Organizaciones de senderismo y ciclismo', 'Convierte GPX, redes y guías impresas en una experiencia que comienza sola.'),
-        ('Naturaleza y patrimonio', 'Haz que paisaje, monumentos y voces locales formen una historia fiable.'),
-        ('Ciudades y regiones', 'Recibe a los visitantes en su idioma sin tener que construir una aplicación completa.'),
+        ('Naturaleza y patrimonio', 'Haz que paisaje, monumentos y voces locales formen una historia fiable. Una guía digital siempre disponible, que complementa tus visitas guiadas sin sustituirlas.'),
+        ('Ciudades y regiones', 'Ofrece a los visitantes relatos por el camino sin tener que crear tu propia aplicación.'),
         ('Editoriales', 'Añade una edición sonora a una guía existente o crea un nuevo libro de ruta digital.'),
     ],
     principle='Un archivo GPX muestra el camino. 2R cuenta la historia de ese camino.',
     studio_label='El siguiente horizonte', studio_h='De la ruta piloto a 2R Studio.',
-    studio_p='Empezamos deliberadamente con unas pocas rutas creadas junto a sus gestores. De esa práctica puede crecer un Studio donde las organizaciones gestionen rutas, fuentes y capítulos, mientras 2R cuida la calidad, la voz y la distribución.',
+    studio_p='Queremos empezar poco a poco, con unas pocas rutas que creemos junto a sus gestores. De esa experiencia crecerá 2R Studio, con el que las organizaciones podrán gestionar sus rutas, fuentes y capítulos más adelante. 2R cuidará la calidad, la voz y la difusión.',
     final_h='¿Qué ruta merece una voz primero?',
     final_p='Envíanos un archivo GPX, una guía o una página de ruta. Juntos elegiremos una ruta para demostrar el contenido, la tecnología y la respuesta del público.',
     final_cta='Deja que narremos una ruta piloto',
 ),
 'pt': dict(
     title='Para editores de rotas — 2R (Second Route)',
-    description='Transforme um percurso pedestre ou de bicicleta numa história sonora viva e multilingue, com mapa, capítulos, fontes e uma voz calorosa.',
+    description='Transforme um percurso pedestre ou de bicicleta numa história sonora com mapa, capítulos, fontes e uma voz calorosa.',
     eyebrow='Para gestores de rotas, editores e criadores de património',
     h1='A sua rota mostra o caminho.<br>O 2R dá-lhe voz.',
     lede='Um ficheiro GPX indica onde caminhar ou pedalar. O 2R acrescenta porque esse caminho importa — como uma história sonora cuidadosamente construída.',
-    primary='Conversar sobre uma rota-piloto', secondary='Ouvir a nossa primeira rota',
-    proof_label='Do caminho à história', proof_h='Uma caminhada demonstra toda a cadeia.',
-    proof_p='Para o Boswachterspad Stulp en Kasteeltuin reunimos a rota oficial, fontes locais e geodados OpenStreetMap num livro de rota ao ritmo da caminhada.',
+    primary='Conversar sobre uma rota-piloto', secondary='Ver os percursos sonoros',
+    proof_label='Do caminho à história', proof_h='Como criamos um percurso.',
+    proof_p='Começamos pelo seu percurso existente e pela sinalização no terreno. A partir dos seus folhetos, planos de gestão e outras fontes, complementados pelo OpenStreetMap, escrevemos relatos curtos ao ritmo da caminhada. A aplicação inicia-os automaticamente no local certo e fica em silêncio nos intervalos.',
     facts=[],
     process_label='O método', process_h='Das fontes a uma rota viva.',
     process=[
         ('A rota', 'Fornece um ficheiro GPX, descrição ou guia. Mapeamos o percurso real e o contexto relevante.'),
         ('O conhecimento', 'Fontes locais, arquivos patrimoniais e informação do gestor formam a matéria-prima. Cada facto permanece rastreável.'),
-        ('O livro de rota', 'Os capítulos ganham um fio condutor, o ritmo certo para caminhar ou pedalar e uma revisão humana final.'),
-        ('A experiência', 'Publicação no 2R, na web ou por QR code — com mapa, áudio, texto e fontes.'),
+        ('O livro de rota', 'Os capítulos ganham um fio condutor e o ritmo certo para caminhar ou pedalar. Revê tudo antes de o percurso se tornar público.'),
+        ('A experiência', 'Os caminhantes ouvem com a aplicação gratuita 2R no telemóvel, com mapa, áudio, texto e fontes. Seguem a sua sinalização existente; não são necessárias placas adicionais nem códigos para ler pelo caminho.'),
     ],
     audience_label='Para quem', audience_h='Rotas existentes, um novo público.',
     audiences=[
         ('Organizações pedestres e de ciclismo', 'Transforme GPX, redes e guias impressos numa experiência que começa sozinha.'),
-        ('Natureza e património', 'Faça da paisagem, dos monumentos e das vozes locais uma história fiável.'),
-        ('Cidades e regiões', 'Receba visitantes na sua língua sem construir uma aplicação inteira.'),
+        ('Natureza e património', 'Faça da paisagem, dos monumentos e das vozes locais uma história fiável. Um guia digital sempre disponível, que complementa as suas visitas guiadas sem as substituir.'),
+        ('Cidades e regiões', 'Ofereça aos visitantes relatos pelo caminho sem ter de criar a sua própria aplicação.'),
         ('Editoras', 'Acrescente uma edição sonora a um guia ou crie um novo livro de rota digital.'),
     ],
     principle='Um ficheiro GPX mostra o caminho. O 2R conta a história desse caminho.',
     studio_label='O horizonte seguinte', studio_h='Da rota-piloto ao 2R Studio.',
-    studio_p='Começamos de propósito com algumas rotas feitas em conjunto com os gestores. Dessa prática poderá crescer um Studio onde as organizações gerem rotas, fontes e capítulos, enquanto o 2R protege a qualidade, a voz e a distribuição.',
+    studio_p='Queremos começar com calma, com alguns percursos criados em conjunto com os seus gestores. Dessa experiência crescerá o 2R Studio, com o qual as organizações poderão mais tarde gerir percursos, fontes e capítulos. O 2R cuidará da qualidade, da voz e da distribuição.',
     final_h='Que rota merece primeiro uma voz?',
     final_p='Envie-nos um ficheiro GPX, guia ou página de rota. Juntos escolhemos uma rota para provar o conteúdo, a tecnologia e a reação do público.',
     final_cta='Deixe-nos narrar uma rota-piloto',
@@ -2964,15 +2965,13 @@ PARTNER_HERO_ALT = {
 
 def build_partners(lang):
     t = PARTNER_TXT[lang]
-    facts = ''.join(f'''<div class="partner-fact"><b>{value}</b><span>{label}</span></div>'''
-                    for value, label in t['facts'])
     process = ''.join(f'''<article class="partner-step">
         <span>{i:02d}</span><div><h3>{title}</h3><p>{copy}</p></div>
       </article>''' for i, (title, copy) in enumerate(t['process'], 1))
     audiences = ''.join(f'''<article class="partner-audience">
         <span class="num-mark">{i:02d}</span><h3>{title}</h3><p>{copy}</p>
       </article>''' for i, (title, copy) in enumerate(t['audiences'], 1))
-    mail = 'mailto:nimco@nentjes.nl?subject=Pilotroute%20voor%202R'
+    mail = f'mailto:{CONTACT_EMAIL}?subject=Pilotroute%20voor%202R'
     body = f'''  <section class="partner-hero">
     <img src="/images/2r-partners-hero-v1.jpg" alt="{PARTNER_HERO_ALT[lang]}" width="1672" height="941" fetchpriority="high" decoding="async">
     <div class="hero-shade" aria-hidden="true"></div>
@@ -2982,7 +2981,7 @@ def build_partners(lang):
       <p>{t['lede']}</p>
       <div class="partner-actions">
         <a class="btn-primary" href="{mail}">{t['primary']} <span>↗</span></a>
-        <a class="text-link" href="/{lang}/routes/drakensteyn/">{t['secondary']} →</a>
+        <a class="text-link" href="/{lang}/routes/">{t['secondary']} →</a>
       </div>
     </div>
   </section>
@@ -2992,9 +2991,8 @@ def build_partners(lang):
       <p class="section-label">{t['proof_label']}</p>
       <h2>{t['proof_h']}</h2>
       <p>{t['proof_p']}</p>
-      <a class="text-link on-paper" href="/{lang}/routes/drakensteyn/">{t['secondary']} →</a>
+      <a class="text-link on-paper" href="/{lang}/routes/">{t['secondary']} →</a>
     </div>
-    <div class="partner-facts">{facts}</div>
   </div></section>
 
   <section class="partner-process"><div class="wrap">
@@ -3176,6 +3174,8 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
     scope = parser.add_mutually_exclusive_group()
+    scope.add_argument('--partners-only', action='store_true',
+                        help='Werk alleen de zes partnerpagina’s bij; behoud alle andere bestanden.')
     scope.add_argument('--privacy-only', action='store_true',
                         help='Bouw alleen de zes privacypagina’s; behoud alle andere publieke bestanden.')
     scope.add_argument('--urls-only', action='store_true',
@@ -3183,7 +3183,11 @@ if __name__ == "__main__":
     scope.add_argument('--route-guidance-only', action='store_true',
                        help='Werk alleen volgtekst en startlinks bij in bestaande routetegels en routepagina’s.')
     args = parser.parse_args()
-    if args.urls_only:
+    if args.partners_only:
+        for lang in LANGS:
+            write(f'{lang}/partners/index.html', build_partners(lang))
+        print(f'Partnerpagina bijgewerkt in {len(LANGS)} talen; overige bestanden behouden.')
+    elif args.urls_only:
         build_urls_only()
     elif args.route_guidance_only:
         build_route_guidance_only()
