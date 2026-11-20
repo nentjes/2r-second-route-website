@@ -78,6 +78,12 @@ onbekende volgtekst wordt buiten het Nederlands pas na vertaling getoond.
 
 ## Publiceren
 
+`python3 build.py --brand-name-only` werkt uitsluitend de product-/vertellernaam
+bij in de bestaande pagina’s. `PRODUCT_NAME` is daarvoor de centrale schrijfwijze.
+De gerichte bouw gebruikt volledige merkzinnen uit de vertalingen, zodat gewone
+route-aanduidingen behouden blijven en geen nieuwe routes gepubliceerd worden.
+Een volgende uitvoering wijzigt reeds bijgewerkte teksten niet opnieuw.
+
 De statische bestanden worden als Cloudflare Worker Assets gepubliceerd. Bouw
 altijd eerst opnieuw, controleer `public/` en leg wijzigingen vast in Git vóór
 een deploy.
