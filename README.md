@@ -45,6 +45,15 @@ Voor een tekstcorrectie op de partnerpagina gebruikt u `python3 build.py
 --partners-only`. Deze gerichte bouw werkt uitsluitend de zes partnerpagina’s
 bij en behoudt alle andere bestanden, inclusief de bestaande routepublicatie.
 
+`python3 build.py --discovery-only` werkt de routeoverzichten en downloadpagina’s
+bij en laat bestaande algemene downloadknoppen naar de platformkeuze wijzen.
+Er komen daarmee geen nieuwe routepagina’s online. De overzichtskaart en de
+routetegels gebruiken dezelfde selectie: openbare routes die al een pagina
+hebben. Startpunten, afstanden en aantallen komen uit de routegegevens.
+De Android-winkelpagina staat op één plek in `PLAY_STORE_URL`; zolang
+`ANDROID_IN_REVIEW` waar is, vermeldt de downloadpagina dat Google de app nog
+beoordeelt en dat beschikbaarheid binnen enkele dagen wordt verwacht.
+
 Cloudflare serveert HTML met schone adressen: `index.html` als mapadres en
 andere HTML-bestanden zonder `.html`. `public_url()` in `build.py` bepaalt
 deze adressen voor sitemap, canonical, hreflang en interne links. Een gewone

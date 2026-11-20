@@ -5,7 +5,7 @@
 in zes talen uit de data hieronder. Nieuw verhaal toevoegen? Voeg een
 item toe aan STORIES en run: python3 build.py
 """
-import os, html, json
+import os, html, json, hashlib
 from html.parser import HTMLParser
 import re
 from urllib.parse import urlsplit, urlunsplit
@@ -13,6 +13,13 @@ from urllib.parse import urlsplit, urlunsplit
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, 'public')
 LANGS = ['nl', 'en', 'de', 'fr', 'es', 'pt']
+
+
+def asset_url(path):
+    path = path.lstrip('/')
+    with open(os.path.join(OUT, path), 'rb') as source:
+        version = hashlib.sha256(source.read()).hexdigest()[:12]
+    return f'/{path}?v={version}'
 
 # B-125: de gratis natuurlijke verhalen komen uit het gedeelde register.
 # 'honderd' is alleen de Nederlandse schrijfwijze, geen aparte productlimiet.
@@ -25,6 +32,9 @@ VLOER_VERHALEN_NL = {100: 'honderd'}.get(VLOER_VERHALEN_PER_MAAND, str(VLOER_VER
 # Enige waarheid voor alle publieke downloadknoppen. De volledige, door Apple
 # gepubliceerde URL voorkomt dat de verkorte landloze link onderweg strandt.
 APP_STORE_URL = 'https://apps.apple.com/nl/app/2r-second-route/id6802613397'
+# Publieke winkelpagina van het Android-pakket uit het Android-register.
+PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=nl.nentjes.secondroute'
+ANDROID_IN_REVIEW = True  # Roel, 20 november 2026: ingediend bij Google.
 CONTACT_EMAIL = 'hulp@2route.nl'
 
 LANG_LABEL = {'nl': 'NL', 'en': 'EN', 'de': 'DE', 'fr': 'FR', 'es': 'ES', 'pt': 'PT'}
@@ -1134,7 +1144,7 @@ def build_howto(lang):
     <div class="howto-cta">
       <h2>{h['cta_h']}</h2>
       <p>{h['cta_p']}</p>
-      <a class="nav-cta" href="{APP_STORE_URL}">{h['cta_btn']}</a>
+      <a class="nav-cta" href="/{lang}/download/">{h['cta_btn']}</a>
     </div>
   </div></section>
 '''
@@ -1168,7 +1178,7 @@ def nav(lang, active):
         {link(public_url(lang, 'zo-werkt-het.html'), NAV_HOWTO[lang], 'howto')}
       </span>
       <div class="lang-switch">{others}</div>
-      <a class="nav-cta" href="{APP_STORE_URL}">{h['nav_cta']}</a>
+      <a class="nav-cta" href="/{lang}/download/">{h['nav_cta']}</a>
     </nav>
   </div>
   <div class="mobile-panel" id="mobile-panel">
@@ -1180,7 +1190,7 @@ def nav(lang, active):
       {link(public_url(lang, 'zo-werkt-het.html'), NAV_HOWTO[lang], 'howto')}
     </div>
     <div class="lang-switch">{others}</div>
-    <a class="nav-cta" href="{APP_STORE_URL}">{h['nav_cta']}</a>
+    <a class="nav-cta" href="/{lang}/download/">{h['nav_cta']}</a>
   </div>
 </header>
 <script>
@@ -1503,6 +1513,73 @@ def page_shell(lang, title, description, active, body, extra_head='', path=None,
 </html>
 '''
 
+DOWNLOAD_TXT = {
+    'nl': dict(title='Neem 2R mee', lede='Kies de app voor uw telefoon.', available='Nu beschikbaar', pending='Ter beoordeling bij Google',
+               ios='De gratis 2R-app voor de iPhone is beschikbaar in de App Store.',
+               review='De Android-app ligt ter beoordeling bij Google en is naar verwachting binnen enkele dagen beschikbaar.',
+               android='De gratis 2R-app voor Android is beschikbaar in Google Play.',
+               ios_link='Download in de App Store', play_link='Bekijk Google Play', play_live='Download in Google Play', routes='Bekijk de luisterroutes'),
+    'en': dict(title='Take 2R with you', lede='Choose the app for your phone.', available='Available now', pending='Under review by Google',
+               ios='The free 2R app for iPhone is available in the App Store.',
+               review='The Android app is under review by Google and is expected to become available within a few days.',
+               android='The free 2R app for Android is available on Google Play.',
+               ios_link='Download on the App Store', play_link='View on Google Play', play_live='Download on Google Play', routes='Browse the listening routes'),
+    'de': dict(title='2R mitnehmen', lede='Wählen Sie die App für Ihr Telefon.', available='Jetzt verfügbar', pending='Wird von Google geprüft',
+               ios='Die kostenlose 2R-App für das iPhone ist im App Store verfügbar.',
+               review='Die Android-App wird von Google geprüft und ist voraussichtlich in wenigen Tagen verfügbar.',
+               android='Die kostenlose 2R-App für Android ist bei Google Play verfügbar.',
+               ios_link='Im App Store herunterladen', play_link='Bei Google Play ansehen', play_live='Bei Google Play herunterladen', routes='Hörrouten ansehen'),
+    'fr': dict(title='Emporter 2R', lede='Choisissez l’application pour votre téléphone.', available='Disponible maintenant', pending='En cours d’examen par Google',
+               ios='L’application gratuite 2R pour iPhone est disponible sur l’App Store.',
+               review='L’application Android est en cours d’examen par Google et devrait être disponible dans quelques jours.',
+               android='L’application gratuite 2R pour Android est disponible sur Google Play.',
+               ios_link='Télécharger sur l’App Store', play_link='Voir sur Google Play', play_live='Télécharger sur Google Play', routes='Voir les routes audio'),
+    'es': dict(title='Lleva 2R contigo', lede='Elige la aplicación para tu teléfono.', available='Ya disponible', pending='En revisión por Google',
+               ios='La aplicación gratuita 2R para iPhone está disponible en la App Store.',
+               review='La aplicación para Android está en revisión por Google y se espera que esté disponible dentro de unos días.',
+               android='La aplicación gratuita 2R para Android está disponible en Google Play.',
+               ios_link='Descargar en la App Store', play_link='Ver en Google Play', play_live='Descargar en Google Play', routes='Ver las rutas sonoras'),
+    'pt': dict(title='Levar o 2R consigo', lede='Escolha a aplicação para o seu telemóvel.', available='Já disponível', pending='Em análise pela Google',
+               ios='A aplicação gratuita 2R para iPhone está disponível na App Store.',
+               review='A aplicação Android está em análise pela Google e deverá estar disponível dentro de alguns dias.',
+               android='A aplicação gratuita 2R para Android está disponível no Google Play.',
+               ios_link='Descarregar na App Store', play_link='Ver no Google Play', play_live='Descarregar no Google Play', routes='Ver os percursos sonoros'),
+}
+
+
+def build_download(lang):
+    t = DOWNLOAD_TXT[lang]
+    status = t['pending'] if ANDROID_IN_REVIEW else t['available']
+    android = t['review'] if ANDROID_IN_REVIEW else t['android']
+    android_link = t['play_link'] if ANDROID_IN_REVIEW else t['play_live']
+    pending_class = ' pending' if ANDROID_IN_REVIEW else ''
+    body = f'''  <section class="download-intro"><div class="wrap">
+    <p class="eyebrow">2R · Second Route</p>
+    <h1>{html.escape(t['title'])}</h1>
+    <p class="lede">{html.escape(t['lede'])}</p>
+  </div></section>
+  <section class="block"><div class="wrap">
+    <div class="download-platforms">
+      <article class="download-platform">
+        <span class="download-status">{html.escape(t['available'])}</span>
+        <h2>iPhone</h2>
+        <p>{html.escape(t['ios'])}</p>
+        <a class="btn-primary" href="{APP_STORE_URL}">{html.escape(t['ios_link'])}</a>
+      </article>
+      <article class="download-platform">
+        <span class="download-status{pending_class}">{html.escape(status)}</span>
+        <h2>Android</h2>
+        <p>{html.escape(android)}</p>
+        <a class="btn-primary" href="{PLAY_STORE_URL}">{html.escape(android_link)}</a>
+      </article>
+    </div>
+    <p class="download-back"><a href="/{lang}/routes/">{html.escape(t['routes'])}</a></p>
+  </div></section>'''
+    return page_shell(lang, t['title'] + ' — 2R', t['ios'] + ' ' + android,
+                      'download', body, extra_head=f'<link rel="stylesheet" href="{asset_url("download.css")}">',
+                      path='download/index.html')
+
+
 def story_card(lang, st):
     s = SITE[lang]
     cat = CATEGORIES[st['category']][lang]
@@ -1546,7 +1623,7 @@ def build_city_story(lang, index):
   <section class="block"><div class="wrap" style="max-width:660px;">
     <p><a href="/{lang}/" style="color:var(--text-faint); text-decoration:none; font-size:14px;">&larr; {html.escape(s['nav_product'])}</a></p>
     <div class="city-story-body">{alineas}</div>
-    <p style="margin-top:34px;"><a class="btn-primary" href="{APP_STORE_URL}">{s['invite_btn']} <span>&#8599;</span></a></p>
+    <p style="margin-top:34px;"><a class="btn-primary" href="/{lang}/download/">{s['invite_btn']} <span>&#8599;</span></a></p>
   </div></section>
 '''
     return page_shell(lang, f"{html.escape(title)} — 2R (Second Route)", teaser, 'product', body, path=f'stad/{CITY_SLUGS[index]}.html', immersive=True)
@@ -1883,7 +1960,7 @@ def build_home(lang):
       <p class="eyebrow on-photo">{s['invite_label']}</p>
       <h2>{s['invite_h2']}</h2>
       <p>{s['invite_p']}</p>
-      <a class="btn-primary" href="{APP_STORE_URL}">{s['invite_btn']} <span>↗</span></a>
+      <a class="btn-primary" href="/{lang}/download/">{s['invite_btn']} <span>↗</span></a>
     </div>
   </section>
 '''
@@ -2264,7 +2341,7 @@ def build_story_detail(lang, st):
   <section class="story-invite"><div class="wrap">
     <h2>{se['invite_h']}</h2>
     <p>{s['invite_p']}</p>
-    <a class="btn-primary" href="{APP_STORE_URL}">{s['invite_btn']} <span aria-hidden="true">&#8599;</span></a>
+    <a class="btn-primary" href="/{lang}/download/">{s['invite_btn']} <span aria-hidden="true">&#8599;</span></a>
   </div></section>
 '''
     return page_shell(lang, f"{st['title'][lang]} — 2R", st['text'][lang][:150], 'stories', body, path=f'stories/{st["slug"]}.html')
@@ -2705,11 +2782,98 @@ ROUTES_HERO_ALT = {
     'pt': 'Dois caminhantes adultos percorrem juntos dunas soalheiras com o mar ao fundo.',
 }
 
+ROUTES_MAP_TXT = {
+    'nl': ('Luisterroutes op de kaart', 'Kies een route op de kaart. Bij ieder punt vind je de naam, de lengte en een link naar de route.', 'Nederland in beeld'),
+    'en': ('Listening routes on the map', 'Choose a route on the map. Each point shows its name, length and a link to the route.', 'Show the Netherlands'),
+    'de': ('Hörrouten auf der Karte', 'Wählen Sie eine Route auf der Karte. Jeder Punkt zeigt Name, Länge und einen Link zur Route.', 'Niederlande anzeigen'),
+    'fr': ('Les routes audio sur la carte', 'Choisissez un itinéraire sur la carte. Chaque point indique son nom, sa longueur et un lien vers le parcours.', 'Afficher les Pays-Bas'),
+    'es': ('Rutas sonoras en el mapa', 'Elige una ruta en el mapa. Cada punto muestra su nombre, distancia y un enlace a la ruta.', 'Mostrar los Países Bajos'),
+    'pt': ('Percursos sonoros no mapa', 'Escolha um percurso no mapa. Cada ponto mostra o nome, a distância e uma ligação para o percurso.', 'Mostrar os Países Baixos'),
+}
+
+
+def published_route_items(lang):
+    """Het overzicht toont alleen openbare routes met een bestaande pagina.
+
+    De app-index bevat ook besloten proefroutes en nog niet gepubliceerde
+    routes. Deze gerichte websitewijziging geeft die niet alsnog vrij.
+    """
+    return [meta for meta in ROUTE_ITEMS if meta.get('toegang') == 'open'
+            and os.path.isfile(os.path.join(OUT, lang, 'routes', meta['slug'], 'index.html'))]
+
+
+def routes_map_section(lang, items):
+    heading, intro, reset = ROUTES_MAP_TXT[lang]
+    points = []
+    for meta in items:
+        route = ROUTES[meta['slug']]
+        start = route.get('start') or route['hoofdstukken'][0]
+        lat, lng = float(start['lat']), float(start['lng'])
+        if not (-90 <= lat <= 90 and -180 <= lng <= 180):
+            raise ValueError(f'Ongeldig startpunt voor {meta["slug"]}')
+        points.append(dict(lat=lat, lng=lng, name=route['naam'], region=route['provincie'],
+                           detail=f"{format_km(meta['lengte_km'], lang)} km · {meta['hoofdstukken']} {ROUTES_TXT[lang]['hoofdstukken']}",
+                           href=f"/{lang}/routes/{meta['slug']}/"))
+    payload = json.dumps(points, ensure_ascii=False).replace('<', '\\u003c')
+    open_label = json.dumps(ROUTE_UI[lang]['open'], ensure_ascii=False)
+    return f'''  <section class="block routes-map-section"><div class="wrap">
+    <div class="routes-map-heading">
+      <div><h2>{html.escape(heading)}</h2><p>{html.escape(intro)}</p></div>
+      <button type="button" class="routes-map-reset" id="routes-map-reset" hidden>{html.escape(reset)}</button>
+    </div>
+    <div id="routes-map" class="routes-map" role="region" aria-label="{html.escape(heading)}" hidden></div>
+  </div></section>
+  <link rel="stylesheet" href="/leaflet.css">
+  <link rel="stylesheet" href="{asset_url('routes-map.css')}">
+  <script src="/leaflet.js"></script>
+  <script>
+  (function () {{
+    var container = document.getElementById('routes-map');
+    var reset = document.getElementById('routes-map-reset');
+    if (!container || !window.L) return;
+    var routes = {payload};
+    container.hidden = false;
+    reset.hidden = false;
+    var map = L.map(container, {{scrollWheelZoom: false, zoomSnap: 0.25}});
+    L.tileLayer('https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 19
+    }}).addTo(map);
+    var bounds = L.latLngBounds([[50.7, 3.2], [53.6, 7.3]]);
+    routes.forEach(function (route) {{
+      var position = [route.lat, route.lng];
+      bounds.extend(position);
+      var popup = document.createElement('div');
+      var title = document.createElement('h3'); title.textContent = route.name;
+      var region = document.createElement('p'); region.textContent = route.region;
+      var detail = document.createElement('p'); detail.textContent = route.detail;
+      var link = document.createElement('a'); link.href = route.href; link.textContent = {open_label};
+      popup.append(title, region, detail, link);
+      L.marker(position, {{
+        title: route.name, alt: route.name,
+        icon: L.divIcon({{className: 'routes-map-marker', html: '<span></span>', iconSize: [44, 44], iconAnchor: [22, 22], popupAnchor: [0, -15]}})
+      }}).addTo(map).bindPopup(popup, {{maxWidth: 290}});
+    }});
+    function showAll() {{ map.fitBounds(bounds, {{padding: [20, 20]}}); }}
+    reset.addEventListener('click', showAll);
+    showAll();
+    var observer = window.ResizeObserver ? new ResizeObserver(function () {{ map.invalidateSize(false); }}) : null;
+    if (observer) observer.observe(container);
+    window.__2rCleanup = function () {{
+      if (observer) observer.disconnect();
+      reset.removeEventListener('click', showAll);
+      map.remove();
+    }};
+  }})();
+  </script>'''
+
+
 def build_routes_index(lang):
     t = ROUTES_TXT[lang]
     ui = ROUTE_UI[lang]
+    items = published_route_items(lang)
     kaarten = ''
-    for meta in ROUTE_ITEMS:
+    for meta in items:
         r = ROUTES[meta['slug']]
         access = accessibility_values(meta, lang)
         access_html = ''.join(f'<span>{html.escape(value)}</span>' for value in access)
@@ -2726,8 +2890,9 @@ def build_routes_index(lang):
         <span class="prov-cta">{html.escape(ui['open'])} →</span>
       </a>\n'''
     stappen = ''.join(f'<li>{step}</li>' for step in t['kwaliteit'])
-    title = ui['library_h'].format(routes=ROUTE_COUNT, provinces=PROVINCE_COUNT)
-    lede = ui['library_p'].format(routes=ROUTE_COUNT, provinces=PROVINCE_COUNT)
+    provinces = len({meta['provincie'] for meta in items})
+    title = ui['library_h'].format(routes=len(items), provinces=provinces)
+    lede = ui['library_p'].format(routes=len(items), provinces=provinces)
     quality_metric = ui['quality_metric'].format(checked=EDITORIAL_FACTS_CHECKED, removed=EDITORIAL_FACTS_REMOVED)
     body = f'''  <section class="routes-hero routes-library-hero">
     <img class="routes-hero-photo" src="/images/2r-luisterroutes-hero-v1.jpg" alt="{html.escape(ROUTES_HERO_ALT[lang])}" width="1672" height="941" fetchpriority="high" decoding="async">
@@ -2738,6 +2903,7 @@ def build_routes_index(lang):
       <p class="routes-lede">{html.escape(lede)}</p>
     </div>
   </section>
+{routes_map_section(lang, items)}
   <section class="block"><div class="wrap">
     <div class="prov-grid">
 {kaarten}    </div>
@@ -3051,6 +3217,7 @@ def build_site():
         write(f'{lang}/stories/index.html', build_stories_index(lang))
         write(f'{lang}/routes/index.html', build_routes_index(lang))
         write(f'{lang}/partners/index.html', build_partners(lang))
+        write(f'{lang}/download/index.html', build_download(lang))
         write(f'{lang}/kwaliteit/index.html', build_quality(lang))
         for _r in ROUTES.values():
             write(f'{lang}/routes/{_r["slug"]}/index.html', build_route_page(lang, _r))
@@ -3060,7 +3227,7 @@ def build_site():
             write(f'{lang}/stad/{CITY_SLUGS[i]}.html', build_city_story(lang, i))
 
     # Sitemap + robots: alle publieke pagina's in zes talen
-    _paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/', 'partners/', 'kwaliteit/']
+    _paden = ['', 'roadmap.html', 'zo-werkt-het.html', 'privacy.html', 'stories/', 'routes/', 'partners/', 'kwaliteit/', 'download/']
     _paden += [f'routes/{sl}/' for sl in ROUTES]
     _paden += [f'stories/{st["slug"]}.html' for st in STORIES]
     _paden += [f'stad/{sl}.html' for sl in CITY_SLUGS]
@@ -3071,8 +3238,34 @@ def build_site():
           + '</urlset>\n')
     write('robots.txt', f'User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n')
 
-    PAGES_PER_LANG = 8 + len(ROUTES) + len(STORIES) + len(CITY_SLUGS)
+    PAGES_PER_LANG = len(_paden)
     print(f"Klaar: {len(LANGS)} talen x {PAGES_PER_LANG} pagina\x27s = {len(LANGS) * PAGES_PER_LANG} bestanden")
+
+
+def build_discovery_only():
+    """Voeg de routekaart en platformkeuze toe zonder nieuwe routes vrij te geven."""
+    from pathlib import Path
+    load_routes()
+    changed = 0
+    for lang in LANGS:
+        # Werk alleen bestaande winkelknoppen bij; behoud alle overige inhoud.
+        for path in (Path(OUT) / lang).rglob('*.html'):
+            if path == Path(OUT) / lang / 'download' / 'index.html':
+                continue
+            document = path.read_text(encoding='utf-8')
+            updated = document.replace(f'href="{APP_STORE_URL}"', f'href="/{lang}/download/"')
+            if updated != document:
+                path.write_text(updated, encoding='utf-8')
+                changed += 1
+        write(f'{lang}/routes/index.html', build_routes_index(lang))
+        write(f'{lang}/download/index.html', build_download(lang))
+    sitemap = Path(OUT) / 'sitemap.xml'
+    document = sitemap.read_text(encoding='utf-8')
+    additions = ''.join(f'  <url><loc>{public_url(lang, "download/", absolute=True)}</loc></url>\n'
+                        for lang in LANGS
+                        if f'<loc>{public_url(lang, "download/", absolute=True)}</loc>' not in document)
+    sitemap.write_text(document.replace('</urlset>', additions + '</urlset>'), encoding='utf-8')
+    print(f'Routekaart en downloadkeuze in {len(LANGS)} talen; {changed} pagina’s met bijgewerkte winkelknoppen. Bestaande routepublicatie behouden.')
 
 
 def build_urls_only():
@@ -3174,6 +3367,8 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
     scope = parser.add_mutually_exclusive_group()
+    scope.add_argument('--discovery-only', action='store_true',
+                       help='Voeg routekaart en downloadkeuze toe; behoud de bestaande routepublicatie.')
     scope.add_argument('--partners-only', action='store_true',
                         help='Werk alleen de zes partnerpagina’s bij; behoud alle andere bestanden.')
     scope.add_argument('--privacy-only', action='store_true',
@@ -3183,7 +3378,9 @@ if __name__ == "__main__":
     scope.add_argument('--route-guidance-only', action='store_true',
                        help='Werk alleen volgtekst en startlinks bij in bestaande routetegels en routepagina’s.')
     args = parser.parse_args()
-    if args.partners_only:
+    if args.discovery_only:
+        build_discovery_only()
+    elif args.partners_only:
         for lang in LANGS:
             write(f'{lang}/partners/index.html', build_partners(lang))
         print(f'Partnerpagina bijgewerkt in {len(LANGS)} talen; overige bestanden behouden.')

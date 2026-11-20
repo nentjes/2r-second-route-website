@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Levar o 2R consigo — 2R</title>
+<meta name="description" content="A aplicação gratuita 2R para iPhone está disponível na App Store. A aplicação Android está em análise pela Google e deverá estar disponível dentro de alguns dias.">
+<link rel="icon" type="image/svg+xml" href="/brand/2r-mark-micro.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0B2525">
+<link rel="stylesheet" href="/style.css">
+<meta property="og:title" content="Levar o 2R consigo — 2R">
+<meta property="og:description" content="A aplicação gratuita 2R para iPhone está disponível na App Store. A aplicação Android está em análise pela Google e deverá estar disponível dentro de alguns dias.">
+<meta property="og:image" content="https://2route.nl/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://2route.nl/pt/download/">
+<link rel="alternate" hreflang="nl" href="https://2route.nl/nl/download/">
+<link rel="alternate" hreflang="en" href="https://2route.nl/en/download/">
+<link rel="alternate" hreflang="de" href="https://2route.nl/de/download/">
+<link rel="alternate" hreflang="fr" href="https://2route.nl/fr/download/">
+<link rel="alternate" hreflang="es" href="https://2route.nl/es/download/">
+<link rel="alternate" hreflang="pt" href="https://2route.nl/pt/download/">
+<link rel="alternate" hreflang="x-default" href="https://2route.nl/nl/download/">
+<meta property="og:url" content="https://2route.nl/pt/download/">
+</head>
+<body class="nav-paper">
+<header class="site">
+  <div class="site-nav">
+    <a class="brand" href="/pt/">
+      <img class="brand-mark" src="/brand/2r-mark-primary.svg" width="38" height="38" alt="" aria-hidden="true">
+      <span class="brand-lockup"><strong>2R</strong><small>Second Route</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <span class="nav-only-links">
+        <a href="/pt/">Descobrir 2R</a>
+        <a href="/pt/routes/">Rotas de áudio</a>
+        <a href="/pt/stories/">Histórias</a>
+        <a href="/pt/partners/">Para editores de rotas</a>
+        <a href="/pt/zo-werkt-het">Como funciona</a>
+      </span>
+      <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/" class="active">PT</a></div>
+      <a class="nav-cta" href="/pt/download/">Levar 2R consigo →</a>
+    </nav>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <div class="mobile-panel-links">
+      <a href="/pt/">Descobrir 2R</a>
+      <a href="/pt/routes/">Rotas de áudio</a>
+      <a href="/pt/stories/">Histórias</a>
+      <a href="/pt/partners/">Para editores de rotas</a>
+      <a href="/pt/zo-werkt-het">Como funciona</a>
+    </div>
+    <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/" class="active">PT</a></div>
+    <a class="nav-cta" href="/pt/download/">Levar 2R consigo →</a>
+  </div>
+</header>
+<script>
+(function(){
+  var btn = document.getElementById('menu-toggle');
+  var panel = document.getElementById('mobile-panel');
+  var header = document.querySelector('header.site');
+  if (!btn || !panel) return;
+  function syncHeader(){
+    if (header) header.classList.toggle('is-scrolled', window.scrollY > 24);
+  }
+  window.addEventListener('scroll', syncHeader, { passive: true });
+  syncHeader();
+  btn.addEventListener('click', function(){
+    var open = !panel.classList.contains('open');
+    panel.classList.toggle('open', open);
+    btn.classList.toggle('open', open);
+    if (header) header.classList.toggle('menu-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  panel.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      panel.classList.remove('open');
+      btn.classList.remove('open');
+      if (header) header.classList.remove('menu-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
+<main>
+  <section class="download-intro"><div class="wrap">
+    <p class="eyebrow">2R · Second Route</p>
+    <h1>Levar o 2R consigo</h1>
+    <p class="lede">Escolha a aplicação para o seu telemóvel.</p>
+  </div></section>
+  <section class="block"><div class="wrap">
+    <div class="download-platforms">
+      <article class="download-platform">
+        <span class="download-status">Já disponível</span>
+        <h2>iPhone</h2>
+        <p>A aplicação gratuita 2R para iPhone está disponível na App Store.</p>
+        <a class="btn-primary" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Descarregar na App Store</a>
+      </article>
+      <article class="download-platform">
+        <span class="download-status pending">Em análise pela Google</span>
+        <h2>Android</h2>
+        <p>A aplicação Android está em análise pela Google e deverá estar disponível dentro de alguns dias.</p>
+        <a class="btn-primary" href="https://play.google.com/store/apps/details?id=nl.nentjes.secondroute">Ver no Google Play</a>
+      </article>
+    </div>
+    <p class="download-back"><a href="/pt/routes/">Ver os percursos sonoros</a></p>
+  </div></section>
+</main>
+<footer class="site">
+  <div class="footer-grid">
+    <a class="footer-brand" href="/pt/">
+      <img class="brand-mark" src="/brand/2r-mark-primary.svg" width="28" height="28" alt="" aria-hidden="true">
+      <span>Second Route</span>
+    </a>
+    <div class="footer-links">
+      <a href="/pt/routes/">Rotas de áudio</a>
+      <a href="/pt/partners/">Para editores de rotas</a>
+      <a href="/pt/roadmap">Roadmap</a>
+      <a href="/pt/stories/">Histórias</a>
+      <a href="/pt/kwaliteit/">Qualidade e honestidade</a>
+      <a href="/pt/privacy">Privacidade</a>
+      <a href="mailto:hulp@2route.nl">Contato</a>
+    </div>
+  </div>
+  <p class="footer-family">Não o destino — a viagem é o que nos torna sábios.</p>
+  <p class="footer-credit">Criado por Roel Nentjes, com a Claude (Anthropic). <a href="https://github.com/nentjes/2r-second-route-website">GitHub</a></p>
+</footer>
+<link rel="stylesheet" href="/download.css?v=976f121c796f">
+
+</body>
+</html>

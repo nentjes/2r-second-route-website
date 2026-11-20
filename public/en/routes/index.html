@@ -45,7 +45,7 @@
         <a href="/en/zo-werkt-het">How it works</a>
       </span>
       <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/" class="active">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
-      <a class="nav-cta" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Take 2R with you →</a>
+      <a class="nav-cta" href="/en/download/">Take 2R with you →</a>
     </nav>
   </div>
   <div class="mobile-panel" id="mobile-panel">
@@ -57,7 +57,7 @@
       <a href="/en/zo-werkt-het">How it works</a>
     </div>
     <div class="lang-switch"><a href="/nl/">NL</a><a href="/en/" class="active">EN</a><a href="/de/">DE</a><a href="/fr/">FR</a><a href="/es/">ES</a><a href="/pt/">PT</a></div>
-    <a class="nav-cta" href="https://apps.apple.com/nl/app/2r-second-route/id6802613397">Take 2R with you →</a>
+    <a class="nav-cta" href="/en/download/">Take 2R with you →</a>
   </div>
 </header>
 <script>
@@ -94,10 +94,60 @@
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="wrap routes-hero-copy">
       <p class="eyebrow on-dark">The living route book</p>
-      <h1>14 routes. 12 provinces. One living route book.</h1>
+      <h1>13 routes. 12 provinces. One living route book.</h1>
       <p class="routes-lede">Every province now has a complete listening route, plus one neighbourhood route. Before setting out, check the honest distance, ascent, surface and resting points.</p>
     </div>
   </section>
+  <section class="block routes-map-section"><div class="wrap">
+    <div class="routes-map-heading">
+      <div><h2>Listening routes on the map</h2><p>Choose a route on the map. Each point shows its name, length and a link to the route.</p></div>
+      <button type="button" class="routes-map-reset" id="routes-map-reset" hidden>Show the Netherlands</button>
+    </div>
+    <div id="routes-map" class="routes-map" role="region" aria-label="Listening routes on the map" hidden></div>
+  </div></section>
+  <link rel="stylesheet" href="/leaflet.css">
+  <link rel="stylesheet" href="/routes-map.css?v=322ead88be5c">
+  <script src="/leaflet.js"></script>
+  <script>
+  (function () {
+    var container = document.getElementById('routes-map');
+    var reset = document.getElementById('routes-map-reset');
+    if (!container || !window.L) return;
+    var routes = [{"lat": 52.196446, "lng": 4.386856, "name": "Boswachterspad Berkheide (Hollands Duin)", "region": "Zuid-Holland", "detail": "5.9 km · 11 chapters", "href": "/en/routes/berkheide/"}, {"lat": 53.008668, "lng": 7.189475, "name": "Westerwolde Wandelroute 16: Rondom de Vesting Bourtange", "region": "Groningen", "detail": "6.5 km · 12 chapters", "href": "/en/routes/bourtange/"}, {"lat": 53.326245, "lng": 6.005017, "name": "Stadswandeling Dokkum (Vestingstad Dokkum)", "region": "Friesland", "detail": "4.2 km · 12 chapters", "href": "/en/routes/dokkum/"}, {"lat": 52.178435, "lng": 5.231123, "name": "Boswachterspad Stulp en Kasteeltuin", "region": "Utrecht", "detail": "6.3 km · 12 chapters", "href": "/en/routes/drakensteyn/"}, {"lat": 52.10156, "lng": 6.27899, "name": "Eeuwenoud landgoed met kasteel Hackfort", "region": "Gelderland", "detail": "4.3 km · 11 chapters", "href": "/en/routes/hackfort/"}, {"lat": 52.132401, "lng": 5.229107, "name": "De Julianalaan — bosrand van Bilthoven", "region": "Utrecht", "detail": "3.0 km · 5 chapters", "href": "/en/routes/julianalaan/"}, {"lat": 52.647991, "lng": 5.76865, "name": "Vluchthavenroute Schokland", "region": "Flevoland", "detail": "5.5 km · 12 chapters", "href": "/en/routes/schokland/"}, {"lat": 50.836377, "lng": 5.684413, "name": "Wandelroute Sint-Pietersberg bij Maastricht (groene route)", "region": "Limburg", "detail": "4.8 km · 10 chapters", "href": "/en/routes/sint-pietersberg/"}, {"lat": 52.424008, "lng": 4.672435, "name": "Fortenroute (Spaarndam – Velserbroek)", "region": "Noord-Holland", "detail": "6.0 km · 11 chapters", "href": "/en/routes/spaarndam/"}, {"lat": 52.2695, "lng": 6.71533, "name": "Twickel Kasteelwandeling", "region": "Overijssel", "detail": "4.5 km · 11 chapters", "href": "/en/routes/twickel/"}, {"lat": 53.040782, "lng": 6.387636, "name": "Fochteloërveenroute: wandeling met cultuurhistorie en natuur", "region": "Drenthe", "detail": "5.5 km · 12 chapters", "href": "/en/routes/veenhuizen/"}, {"lat": 51.52714, "lng": 3.43588, "name": "Parelroute 'Verdediging' — Westkapelle", "region": "Zeeland", "detail": "5.4 km · 11 chapters", "href": "/en/routes/westkapelle/"}, {"lat": 51.65645, "lng": 5.151532, "name": "Wandelroute Zwarte Berg (Loonse en Drunense Duinen)", "region": "Noord-Brabant", "detail": "4.3 km · 10 chapters", "href": "/en/routes/zwarte-berg/"}];
+    container.hidden = false;
+    reset.hidden = false;
+    var map = L.map(container, {scrollWheelZoom: false, zoomSnap: 0.25});
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      maxZoom: 19
+    }).addTo(map);
+    var bounds = L.latLngBounds([[50.7, 3.2], [53.6, 7.3]]);
+    routes.forEach(function (route) {
+      var position = [route.lat, route.lng];
+      bounds.extend(position);
+      var popup = document.createElement('div');
+      var title = document.createElement('h3'); title.textContent = route.name;
+      var region = document.createElement('p'); region.textContent = route.region;
+      var detail = document.createElement('p'); detail.textContent = route.detail;
+      var link = document.createElement('a'); link.href = route.href; link.textContent = "Open the route";
+      popup.append(title, region, detail, link);
+      L.marker(position, {
+        title: route.name, alt: route.name,
+        icon: L.divIcon({className: 'routes-map-marker', html: '<span></span>', iconSize: [44, 44], iconAnchor: [22, 22], popupAnchor: [0, -15]})
+      }).addTo(map).bindPopup(popup, {maxWidth: 290});
+    });
+    function showAll() { map.fitBounds(bounds, {padding: [20, 20]}); }
+    reset.addEventListener('click', showAll);
+    showAll();
+    var observer = window.ResizeObserver ? new ResizeObserver(function () { map.invalidateSize(false); }) : null;
+    if (observer) observer.observe(container);
+    window.__2rCleanup = function () {
+      if (observer) observer.disconnect();
+      reset.removeEventListener('click', showAll);
+      map.remove();
+    };
+  })();
+  </script>
   <section class="block"><div class="wrap">
     <div class="prov-grid">
       <a class="prov-kaart live" href="/en/routes/berkheide/">
@@ -146,14 +196,6 @@
         <span class="prov-meta">3.0 km · 5 chapters</span>
         <span class="prov-access" aria-label="Accessibility"><span>15 m ascent</span><span>paved</span><span>1 bench</span><span class="route-follow">Follow the map in the app</span></span>
         <span class="prov-feasible haalbaar">Manageable with a walking stick</span>
-        <span class="prov-cta">Open the route →</span>
-      </a>
-      <a class="prov-kaart live" href="/en/routes/ridderoordse-bos/">
-        <span class="prov-topline"><span class="prov-naam">Utrecht</span><span class="prov-kind">Route book</span></span>
-        <span class="prov-route">Ridderoordse Bos</span>
-        <span class="prov-meta">4.7 km · 8 chapters</span>
-        <span class="prov-access" aria-label="Accessibility"><span>11 m ascent</span><span>paved</span><span>1 bench</span><span class="route-follow">Follow the map in the app</span></span>
-        <span class="prov-feasible zwaar">Too demanding for short-distance walkers</span>
         <span class="prov-cta">Open the route →</span>
       </a>
       <a class="prov-kaart live" href="/en/routes/schokland/">
@@ -238,7 +280,7 @@
       <a href="/en/stories/">Stories</a>
       <a href="/en/kwaliteit/">Quality & honesty</a>
       <a href="/en/privacy">Privacy</a>
-      <a href="mailto:nimco@nentjes.nl">Contact</a>
+      <a href="mailto:hulp@2route.nl">Contact</a>
     </div>
   </div>
   <p class="footer-family">Not the destination — the journey makes us wise.</p>
