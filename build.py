@@ -1473,6 +1473,25 @@ def rewrite_public_urls(document):
         document = document[:start] + replacement + document[end:]
     return document
 
+def download_navigation():
+    # Staat bewust in <main>: ook een al geopende versie van de NL-router
+    # voert dit na navigatie uit en herstelt zo zijn blijvende menubalk.
+    return '''<script id="download-navigation">
+  (function () {
+    if (!window.__2rSyncDownloads) {
+      window.__2rSyncDownloads = function () {
+        var lang = document.documentElement.lang || 'nl';
+        document.querySelectorAll('header.site a.nav-cta').forEach(function (link) {
+          link.setAttribute('href', '/' + lang + '/download/');
+        });
+      };
+      window.addEventListener('pageshow', window.__2rSyncDownloads);
+    }
+    window.__2rSyncDownloads();
+  })();
+  </script>'''
+
+
 def page_shell(lang, title, description, active, body, extra_head='', path=None, immersive=False):
     seo = ''
     if path is not None:
@@ -1505,6 +1524,7 @@ def page_shell(lang, title, description, active, body, extra_head='', path=None,
 {nav(lang, active)}
 <main>
 {body}
+{download_navigation()}
 </main>
 {footer(lang)}
 {extra_head}
@@ -2833,36 +2853,53 @@ def routes_map_section(lang, items):
     if (!container || !window.L) return;
     var routes = {payload};
     container.hidden = false;
-    reset.hidden = false;
-    var map = L.map(container, {{scrollWheelZoom: false, zoomSnap: 0.25}});
-    L.tileLayer('https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxZoom: 19
-    }}).addTo(map);
+    var map = null, disposed = false;
     var bounds = L.latLngBounds([[50.7, 3.2], [53.6, 7.3]]);
-    routes.forEach(function (route) {{
-      var position = [route.lat, route.lng];
-      bounds.extend(position);
-      var popup = document.createElement('div');
-      var title = document.createElement('h3'); title.textContent = route.name;
-      var region = document.createElement('p'); region.textContent = route.region;
-      var detail = document.createElement('p'); detail.textContent = route.detail;
-      var link = document.createElement('a'); link.href = route.href; link.textContent = {open_label};
-      popup.append(title, region, detail, link);
-      L.marker(position, {{
-        title: route.name, alt: route.name,
-        icon: L.divIcon({{className: 'routes-map-marker', html: '<span></span>', iconSize: [44, 44], iconAnchor: [22, 22], popupAnchor: [0, -15]}})
-      }}).addTo(map).bindPopup(popup, {{maxWidth: 290}});
-    }});
-    function showAll() {{ map.fitBounds(bounds, {{padding: [20, 20]}}); }}
+    routes.forEach(function (route) {{ bounds.extend([route.lat, route.lng]); }});
+    function showAll() {{
+      if (map) {{
+        map.invalidateSize(false);
+        map.fitBounds(bounds, {{padding: [20, 20], animate: false}});
+      }}
+    }}
+    function initialize() {{
+      if (disposed || !container.clientWidth || !container.clientHeight) return;
+      if (map) {{ map.invalidateSize(false); return; }}
+      map = L.map(container, {{scrollWheelZoom: false, zoomSnap: 0.25}});
+      L.tileLayer('https://tile.openstreetmap.org/{{z}}/{{x}}/{{y}}.png', {{
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 19
+      }}).addTo(map);
+      routes.forEach(function (route) {{
+        var popup = document.createElement('div');
+        var title = document.createElement('h3'); title.textContent = route.name;
+        var region = document.createElement('p'); region.textContent = route.region;
+        var detail = document.createElement('p'); detail.textContent = route.detail;
+        var link = document.createElement('a'); link.href = route.href; link.textContent = {open_label};
+        popup.append(title, region, detail, link);
+        L.marker([route.lat, route.lng], {{
+          title: route.name, alt: route.name,
+          icon: L.divIcon({{className: 'routes-map-marker', html: '<span></span>', iconSize: [44, 44], iconAnchor: [22, 22], popupAnchor: [0, -15]}})
+        }}).addTo(map).bindPopup(popup, {{maxWidth: 290}});
+      }});
+      reset.hidden = false;
+      showAll();
+    }}
     reset.addEventListener('click', showAll);
-    showAll();
-    var observer = window.ResizeObserver ? new ResizeObserver(function () {{ map.invalidateSize(false); }}) : null;
+    // Bij interne navigatie kan de kaartstijl nog onderweg zijn. Initialiseer
+    // pas op echte afmetingen, zodat de eerste uitsnede dezelfde is als de knop.
+    var observer = window.ResizeObserver ? new ResizeObserver(initialize) : null;
     if (observer) observer.observe(container);
+    window.addEventListener('load', initialize);
+    var frame = requestAnimationFrame(initialize);
+    initialize();
     window.__2rCleanup = function () {{
+      disposed = true;
+      cancelAnimationFrame(frame);
+      window.removeEventListener('load', initialize);
       if (observer) observer.disconnect();
       reset.removeEventListener('click', showAll);
-      map.remove();
+      if (map) map.remove();
     }};
   }})();
   </script>'''
@@ -3254,6 +3291,11 @@ def build_discovery_only():
                 continue
             document = path.read_text(encoding='utf-8')
             updated = document.replace(f'href="{APP_STORE_URL}"', f'href="/{lang}/download/"')
+            if 'id="download-navigation"' in updated:
+                updated = re.sub(r'<script id="download-navigation">.*?</script>',
+                                 lambda match: download_navigation(), updated, flags=re.S)
+            else:
+                updated = updated.replace('</main>', download_navigation() + '\n</main>', 1)
             if updated != document:
                 path.write_text(updated, encoding='utf-8')
                 changed += 1

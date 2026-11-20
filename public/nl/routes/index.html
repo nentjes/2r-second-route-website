@@ -115,36 +115,53 @@
     if (!container || !window.L) return;
     var routes = [{"lat": 52.196446, "lng": 4.386856, "name": "Boswachterspad Berkheide (Hollands Duin)", "region": "Zuid-Holland", "detail": "5,9 km · 11 hoofdstukken", "href": "/nl/routes/berkheide/"}, {"lat": 53.008668, "lng": 7.189475, "name": "Westerwolde Wandelroute 16: Rondom de Vesting Bourtange", "region": "Groningen", "detail": "6,5 km · 12 hoofdstukken", "href": "/nl/routes/bourtange/"}, {"lat": 53.326245, "lng": 6.005017, "name": "Stadswandeling Dokkum (Vestingstad Dokkum)", "region": "Friesland", "detail": "4,2 km · 12 hoofdstukken", "href": "/nl/routes/dokkum/"}, {"lat": 52.178435, "lng": 5.231123, "name": "Boswachterspad Stulp en Kasteeltuin", "region": "Utrecht", "detail": "6,3 km · 12 hoofdstukken", "href": "/nl/routes/drakensteyn/"}, {"lat": 52.10156, "lng": 6.27899, "name": "Eeuwenoud landgoed met kasteel Hackfort", "region": "Gelderland", "detail": "4,3 km · 11 hoofdstukken", "href": "/nl/routes/hackfort/"}, {"lat": 52.132401, "lng": 5.229107, "name": "De Julianalaan — bosrand van Bilthoven", "region": "Utrecht", "detail": "3,0 km · 5 hoofdstukken", "href": "/nl/routes/julianalaan/"}, {"lat": 52.647991, "lng": 5.76865, "name": "Vluchthavenroute Schokland", "region": "Flevoland", "detail": "5,5 km · 12 hoofdstukken", "href": "/nl/routes/schokland/"}, {"lat": 50.836377, "lng": 5.684413, "name": "Wandelroute Sint-Pietersberg bij Maastricht (groene route)", "region": "Limburg", "detail": "4,8 km · 10 hoofdstukken", "href": "/nl/routes/sint-pietersberg/"}, {"lat": 52.424008, "lng": 4.672435, "name": "Fortenroute (Spaarndam – Velserbroek)", "region": "Noord-Holland", "detail": "6,0 km · 11 hoofdstukken", "href": "/nl/routes/spaarndam/"}, {"lat": 52.2695, "lng": 6.71533, "name": "Twickel Kasteelwandeling", "region": "Overijssel", "detail": "4,5 km · 11 hoofdstukken", "href": "/nl/routes/twickel/"}, {"lat": 53.040782, "lng": 6.387636, "name": "Fochteloërveenroute: wandeling met cultuurhistorie en natuur", "region": "Drenthe", "detail": "5,5 km · 12 hoofdstukken", "href": "/nl/routes/veenhuizen/"}, {"lat": 51.52714, "lng": 3.43588, "name": "Parelroute 'Verdediging' — Westkapelle", "region": "Zeeland", "detail": "5,4 km · 11 hoofdstukken", "href": "/nl/routes/westkapelle/"}, {"lat": 51.65645, "lng": 5.151532, "name": "Wandelroute Zwarte Berg (Loonse en Drunense Duinen)", "region": "Noord-Brabant", "detail": "4,3 km · 10 hoofdstukken", "href": "/nl/routes/zwarte-berg/"}];
     container.hidden = false;
-    reset.hidden = false;
-    var map = L.map(container, {scrollWheelZoom: false, zoomSnap: 0.25});
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxZoom: 19
-    }).addTo(map);
+    var map = null, disposed = false;
     var bounds = L.latLngBounds([[50.7, 3.2], [53.6, 7.3]]);
-    routes.forEach(function (route) {
-      var position = [route.lat, route.lng];
-      bounds.extend(position);
-      var popup = document.createElement('div');
-      var title = document.createElement('h3'); title.textContent = route.name;
-      var region = document.createElement('p'); region.textContent = route.region;
-      var detail = document.createElement('p'); detail.textContent = route.detail;
-      var link = document.createElement('a'); link.href = route.href; link.textContent = "Open de route";
-      popup.append(title, region, detail, link);
-      L.marker(position, {
-        title: route.name, alt: route.name,
-        icon: L.divIcon({className: 'routes-map-marker', html: '<span></span>', iconSize: [44, 44], iconAnchor: [22, 22], popupAnchor: [0, -15]})
-      }).addTo(map).bindPopup(popup, {maxWidth: 290});
-    });
-    function showAll() { map.fitBounds(bounds, {padding: [20, 20]}); }
+    routes.forEach(function (route) { bounds.extend([route.lat, route.lng]); });
+    function showAll() {
+      if (map) {
+        map.invalidateSize(false);
+        map.fitBounds(bounds, {padding: [20, 20], animate: false});
+      }
+    }
+    function initialize() {
+      if (disposed || !container.clientWidth || !container.clientHeight) return;
+      if (map) { map.invalidateSize(false); return; }
+      map = L.map(container, {scrollWheelZoom: false, zoomSnap: 0.25});
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 19
+      }).addTo(map);
+      routes.forEach(function (route) {
+        var popup = document.createElement('div');
+        var title = document.createElement('h3'); title.textContent = route.name;
+        var region = document.createElement('p'); region.textContent = route.region;
+        var detail = document.createElement('p'); detail.textContent = route.detail;
+        var link = document.createElement('a'); link.href = route.href; link.textContent = "Open de route";
+        popup.append(title, region, detail, link);
+        L.marker([route.lat, route.lng], {
+          title: route.name, alt: route.name,
+          icon: L.divIcon({className: 'routes-map-marker', html: '<span></span>', iconSize: [44, 44], iconAnchor: [22, 22], popupAnchor: [0, -15]})
+        }).addTo(map).bindPopup(popup, {maxWidth: 290});
+      });
+      reset.hidden = false;
+      showAll();
+    }
     reset.addEventListener('click', showAll);
-    showAll();
-    var observer = window.ResizeObserver ? new ResizeObserver(function () { map.invalidateSize(false); }) : null;
+    // Bij interne navigatie kan de kaartstijl nog onderweg zijn. Initialiseer
+    // pas op echte afmetingen, zodat de eerste uitsnede dezelfde is als de knop.
+    var observer = window.ResizeObserver ? new ResizeObserver(initialize) : null;
     if (observer) observer.observe(container);
+    window.addEventListener('load', initialize);
+    var frame = requestAnimationFrame(initialize);
+    initialize();
     window.__2rCleanup = function () {
+      disposed = true;
+      cancelAnimationFrame(frame);
+      window.removeEventListener('load', initialize);
       if (observer) observer.disconnect();
       reset.removeEventListener('click', showAll);
-      map.remove();
+      if (map) map.remove();
     };
   })();
   </script>
@@ -266,6 +283,20 @@
     </div>
   </div></section>
 
+<script id="download-navigation">
+  (function () {
+    if (!window.__2rSyncDownloads) {
+      window.__2rSyncDownloads = function () {
+        var lang = document.documentElement.lang || 'nl';
+        document.querySelectorAll('header.site a.nav-cta').forEach(function (link) {
+          link.setAttribute('href', '/' + lang + '/download/');
+        });
+      };
+      window.addEventListener('pageshow', window.__2rSyncDownloads);
+    }
+    window.__2rSyncDownloads();
+  })();
+  </script>
 </main>
 <footer class="site">
   <div class="footer-grid">

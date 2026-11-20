@@ -111,6 +111,20 @@
     </div>
     <p class="download-back"><a href="/pt/routes/">Ver os percursos sonoros</a></p>
   </div></section>
+<script id="download-navigation">
+  (function () {
+    if (!window.__2rSyncDownloads) {
+      window.__2rSyncDownloads = function () {
+        var lang = document.documentElement.lang || 'nl';
+        document.querySelectorAll('header.site a.nav-cta').forEach(function (link) {
+          link.setAttribute('href', '/' + lang + '/download/');
+        });
+      };
+      window.addEventListener('pageshow', window.__2rSyncDownloads);
+    }
+    window.__2rSyncDownloads();
+  })();
+  </script>
 </main>
 <footer class="site">
   <div class="footer-grid">
